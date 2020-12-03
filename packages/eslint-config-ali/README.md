@@ -7,7 +7,7 @@
 ### JavaScript 项目
 
 | 项目类型 | 配置文件 | 依赖 |
-| ----------- | ----------- | ----------- | ----------- |
+| ----------- | ----------- | ----------- |
 | 一般项目 | eslint-config-ali | [babel-eslint](https://www.npmjs.com/package/babel-eslint)@^10.1.0 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 |
 | React 项目 | eslint-config-ali/react <br /> eslint-config-ali/jsx-a11y（可选） | [babel-eslint](https://www.npmjs.com/package/babel-eslint)@^10.1.0 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4   <br /> [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选） |
 | [Rax 项目](https://rax.js.org/) | eslint-config-ali/rax | [babel-eslint](https://www.npmjs.com/package/babel-eslint)@^10.1.0 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4 |
