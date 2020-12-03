@@ -1,0 +1,12 @@
+@mixin colorTag ($color1, $color2) {
+  color: $color1;
+  border-color: $color2;
+}
+
+//css注释
+.a {
+  width: $default-width /2;
+
+  @include colorTag(#abc,#bcd);
+  @unkown colorTag(#abc);
+}

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@unknown {}
+
+.a {
+  color: #fff1az;
+
+  /**/
+
+  font-weight: 400;
+  color: #fff;
+
+  padding-left: 10px;
+  padding: 20px;
+
+  font-family: 'Times', Times, serif;
+
+  font-family: Helvetica, Arial, Verdana, Tahoma;
+
+  top: calc(1px +2px);
+
+  background: linear-gradient(bottom, #fff, #000);
+}
+
+@keyframes important1 {
+  from {
+    margin-top: 50px;
+  }
+  to {
+    margin-top: 100px !important;
+  }
+}
+
+@media screen and (unknown) {
+  .a {
+    color: #fff;
+  }
+}
+
+@import 'a.css';
+@import 'a.css';
+
+.a {
+  background: #000;;
+  colr: blue;
+}
+// css注释
+.b:unknown {
+  background: #000;
+}
+.b::unknown {
+  background: #000;
+}
+unknown {
+  content: "first
+    second";
+  width: 10pixels;
+  background: #000
+}

@@ -1,0 +1,40 @@
+.selector1 {
+  width: 15rpx;
+}
+
+page,
+view,
+swiper,
+swiper-item,
+scroll-view,
+cover-view,
+cover-image,
+movable-view,
+movable-area,
+text,
+icon,
+progress,
+rich-text,
+radio,
+checkbox,
+radio-group,
+checkbox-group,
+switch,
+slider,
+picker-view,
+picker,
+navigator,
+map,
+web-view,
+lifestyle,
+contact-button,
+aria-component {
+  color: #fff;
+}
+
+button,
+form,
+label,
+input {
+  margin-top: 32rpx;
+}

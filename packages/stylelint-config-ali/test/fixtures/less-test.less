@@ -1,0 +1,25 @@
+@nice-bg: #abc;
+
+.normal {
+  background: @nice-bg;
+
+  .nest {
+    font-size: 60px
+  }
+}
+
+.my-hover-mixin() {
+  &:hover {
+    border: 1px solid red;
+  }
+}
+.btn {
+  .my-hover-mixin();
+  width: $default-width /2;
+  :global(.ant-table) {
+    font-size: 10px;
+  }
+}
+.extProp:extend(.btn) {
+  background-color:yellowgreen;
+}

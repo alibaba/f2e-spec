@@ -1,0 +1,47 @@
+.commits {
+  padding: 0;
+
+  :global(.ant-timeline-item-content) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff1aa;
+
+    &>span {
+      margin-right: 20px;
+      white-space: nowrap;
+      user-select: none;
+    }
+  }
+}
+
+:global(.tree-node-yellow) {
+  :global(.ant-tree-node-content-wrapper) {
+    color: var(--color-yellow) !important;
+  }
+}
+
+:global(.ant-tree-treenode-switcher-close), :global(.tree-node-file) {
+  display: flex;
+  overflow: hidden;
+
+  :global(.ant-tree-switcher) {
+    flex-shrink: 0;
+  }
+  
+  :global(.ant-tree-node-content-wrapper) {
+    flex-shrink: 1;
+    display: inline-flex !important;
+    overflow: hidden;
+
+    :global(.ant-tree-iconEle) {
+      flex-shrink: 0;
+    }
+   
+    :global(.ant-tree-title) {
+      flex-shrink: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
