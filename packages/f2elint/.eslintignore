@@ -1,0 +1,10 @@
+# 忽略目录
+node_modules/
+build/
+dist/
+test/
+
+# 忽略文件
+**/*.min.js
+**/*-min.js
+**/*.bundle.js

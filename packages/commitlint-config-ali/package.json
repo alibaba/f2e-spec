@@ -1,0 +1,34 @@
+{
+  "name": "commitlint-config-ali",
+  "version": "0.1.3",
+  "description": "Commitlint shareable configuration for Alibaba F2E Guidelines",
+  "main": "index.js",
+  "keywords": [
+    "commitlint",
+    "commitlint-config",
+    "f2elint",
+    "Alibaba F2E Guidelines"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba/f2e-spec"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
+  "homepage": "https://github.com/alibaba/f2e-spec",
+  "author": {
+    "name": "Sabo",
+    "email": "bowei.jbw@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Xat_MassacrE",
+      "email": "xxat.massacre@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.5.0"
+  }
+}

@@ -1,0 +1,17 @@
+# 忽略目录
+node_modules/
+build/
+dist/
+zip/
+demo/
+coverage/
+vendor/
+lib/
+sea-modules/
+APP-META/
+test/fixtures/
+
+# 忽略文件
+**/*.min.js
+**/*-min.js
+**/*.bundle.js

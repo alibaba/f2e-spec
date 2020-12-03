@@ -1,0 +1,7 @@
+node_modules
+.editorconfig
+codealike.json
+coverage/
+.nyc_output/
+test/fixtures/testground/
+test/fixtures/.vscode/

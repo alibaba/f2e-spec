@@ -1,0 +1,28 @@
+{
+  "name": "markdownlint-config-ali",
+  "version": "0.1.1",
+  "description": "markdownlint shareable configuration for Alibaba F2E Guidelines",
+  "main": "index.json",
+  "keywords": [
+    "markdownlint",
+    "markdownlint-config",
+    "f2elint",
+    "Alibaba F2E Guidelines"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba/f2e-spec"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
+  "homepage": "https://github.com/alibaba/f2e-spec",
+  "author": {
+    "name": "undead25",
+    "email": "shuanglong525@gmail.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "markdownlint": "^0.21.1"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "name": "f2elint",
+  "version": "0.4.3",
+  "description": "Linter for Alibaba F2E Guidelines",
+  "bin": "./cli.js",
+  "main": "./index.js",
+  "files": [
+    "index.js",
+    "utils",
+    "lib"
+  ],
+  "keywords": [
+    "Alibaba F2E Guidelines"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba/f2e-spec"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
+  "homepage": "https://github.com/alibaba/f2e-spec",
+  "author": {
+    "name": "Sabo",
+    "email": "bowei.jbw@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "cstyles",
+      "email": "cstyles@qq.com"
+    },
+    {
+      "name": "lakerswgq",
+      "email": "lakerswgq@gmail.com"
+    },
+    {
+      "name": "undead25",
+      "email": "shuanglong525@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --silent --forceExit",
+    "coverage": "nyc jest --silent --forceExit",
+    "prepublishOnly": "npm run test"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "babel-eslint": "^10.1.0",
+    "chalk": "^2.4.2",
+    "command-exists": "^1.2.9",
+    "commander": "^6.1.0",
+    "commitlint-config-ali": "^0.1.0",
+    "cross-spawn": "^7.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-ali": "^11.1.0",
+    "eslint-config-egg": "^9.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-vue": "^6.1.2",
+    "execa": "^1.0.0",
+    "fs-extra": "^8.1.0",
+    "glob": "^7.1.6",
+    "husky": "^3.0.9",
+    "ignore": "^5.1.4",
+    "inquirer": "^7.0.3",
+    "is-docker": "^2.1.1",
+    "lint-staged": "^10.0.1",
+    "lodash.mergewith": "^4.6.2",
+    "markdownlint": "^0.21.1",
+    "markdownlint-config-ali": "^0.1.0",
+    "ora": "^5.1.0",
+    "safe-eval": "^0.4.1",
+    "strip-ansi": "^6.0.0",
+    "stylelint": "^12.0.1",
+    "stylelint-config-ali": "^0.3.0",
+    "stylelint-scss": "^3.13.0",
+    "terminal-link": "^2.1.1",
+    "text-table": "^0.2.0",
+    "typescript": "^4.0.3",
+    "vue-eslint-parser": "^7.0.0",
+    "yargs-parser": "^13.1.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.1",
+    "nyc": "^15.1.0"
+  }
+}

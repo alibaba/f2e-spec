@@ -1,0 +1,62 @@
+{
+  "name": "eslint-config-ali",
+  "version": "11.4.0",
+  "description": "ESLint Shareable Config for Alibaba F2E Guidelines",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "f2elint",
+    "Alibaba F2E Guidelines"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba/f2e-spec"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
+  "homepage": "https://github.com/alibaba/f2e-spec",
+  "author": {
+    "name": "Sabo",
+    "email": "bowei.jbw@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Jeason",
+      "email": "me@jeasonstudio.cn"
+    },
+    {
+      "name": "lakerswgq",
+      "email": "lakerswgq@gmail.com"
+    },
+    {
+      "name": "cstyles",
+      "email": "cstyles@qq.com"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "mocha ./test/*.test.js --timeout 5000",
+    "print-config": "eslint --print-config ./index.js > ./print-config.json"
+  },
+  "peerDependencies": {
+    "eslint": ">=6.8.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-egg": "^9.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-vue": "^6.0.1",
+    "mocha": "^5.2.0",
+    "typescript": "^3.5.3",
+    "vue-eslint-parser": "^7.0.0"
+  }
+}
