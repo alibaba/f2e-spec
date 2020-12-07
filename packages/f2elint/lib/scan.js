@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs-extra');
 const glob = require('glob');
-const { CLIEngine } = require('eslint');
+const { ESLint } = require('eslint');
 const stylelint = require('stylelint');
 const markdownlint = require('markdownlint');
 const { execSync, spawnSync } = require('child_process');
@@ -335,16 +335,16 @@ module.exports = async (options) => {
       await installDepsIfThereNo(cwd);
     }
 
-    const cli = new CLIEngine({
+    const cli = new ESLint({
       ...lintConfig,
       cwd,
       fix,
       ignore,
       extensions: ESLINT_FILE_EXT,
     });
-    const report = cli.executeOnFiles([include]);
-    if (fix) CLIEngine.outputFixes(report);
-    results = results.concat(formatESLintResults(report.results));
+    const reports = await cli.lintFiles([include]);
+    if (fix) await ESLint.outputFixes(reports);
+    results = results.concat(formatESLintResults(reports));
   } catch (e) {
     if (e.messageTemplate !== 'file-not-found') {
       if (
@@ -353,15 +353,15 @@ module.exports = async (options) => {
       ) {
         log.info(e.message);
         log.info('使用项目 eslintrc 执行失败，尝试使用 f2elint 默认配置执行');
-        const cli = new CLIEngine({
+        const cli = new ESLint({
           ...getESLintDefaultConfig(cwd),
           cwd,
           fix,
           extensions: ESLINT_FILE_EXT,
         });
-        const report = cli.executeOnFiles([include]);
-        if (fix) CLIEngine.outputFixes(report);
-        results = results.concat(formatESLintResults(report.results));
+        const reports = await cli.lintFiles([include]);
+        if (fix) await ESLint.outputFixes(reports);
+        results = results.concat(formatESLintResults(reports));
       } else {
         log.error('执行 ESLint 失败：');
         log.error(e.stack);

@@ -48,15 +48,15 @@
     "@typescript-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/parser": "^4.4.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.15.0",
     "eslint-config-egg": "^9.0.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^4.0.4",
-    "eslint-plugin-vue": "^6.0.1",
-    "mocha": "^5.2.0",
-    "typescript": "^3.5.3",
+    "eslint-plugin-vue": "^7.2.0",
+    "mocha": "^8.2.1",
+    "typescript": "^4.1.2",
     "vue-eslint-parser": "^7.0.0"
   }
 }
