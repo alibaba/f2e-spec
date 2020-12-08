@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-ali",
-  "version": "0.0.1",
-  "description": "common eslint rules for Alibaba",
+  "version": "1.0.0",
+  "description": "custom eslint rules for Alibaba",
   "scripts": {
     "test": "jest",
     "prepublishOnly": "npm run test"

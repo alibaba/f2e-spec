@@ -2,7 +2,7 @@ const docsUrl = require('../docsUrl');
 
 const RULE_NAME = 'no-secret-info';
 
-const DANGEROUS_KEYS = ['secret', 'token', 'password'];
+const DEFAULT_DANGEROUS_KEYS = ['secret', 'token', 'password'];
 
 module.exports = {
   meta: {
@@ -18,7 +18,8 @@ module.exports = {
   },
 
   create(context) {
-    const reg = new RegExp(DANGEROUS_KEYS.join('|'));
+    const dangerousKeys = context.options[0] || defaultStatus;
+    const reg = new RegExp(dangerousKeys.join('|'));
 
     return {
       Literal: function handleRequires(node) {

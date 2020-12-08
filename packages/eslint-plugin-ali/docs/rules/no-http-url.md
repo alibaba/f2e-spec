@@ -1,16 +1,16 @@
 # no-http-url
 
-Recommended the http url switch to HTTPS.
+推荐将 Http 链接换为 Https 链接。
 
-## Rule Details
+## 规则内容
 
-Examples of **incorrect** code for this rule:
+**错误代码**示例:
 
 ```js
 var test = 'http://test.com';
 var jsx = <img src="http://test.com">;
 ```
 
-## When Not To Use It
+## 什么时候不适用
 
-If your website only support http.
+如果你的网站只支持 Http 时

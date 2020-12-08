@@ -1,9 +1,9 @@
 # no-broad-semantic-versioning
 
-package.json is not recommended to use \*, x and > x in a wide range of semantic versioning.
+不推荐在 `package.json` 中使用类似 `*`，`x` 和 `> x` 太过宽泛的版本指定方式。
 
-## Rule Details
+## 规则内容
 
-See [https://docs.npmjs.com/about-semantic-versioning](https://docs.npmjs.com/about-semantic-versioning).
+参照 [https://docs.npmjs.com/about-semantic-versioning](https://docs.npmjs.com/about-semantic-versioning).
 
-The package's semantic versioning with `*`, `x` and `> x` will be warned.
+使用 `*`, `x` 和 `> x` 指定版本会被警告。

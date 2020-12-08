@@ -1,10 +1,9 @@
 # no-js-in-ts-project
 
-It is not recommended to use js and ts files at the same time
+不推荐在项目中同时存在 `js` 和 `ts` 文件。
+## 规则内容
 
-## Rule Details
-
-Examples of **incorrect** directory for this rule:(contains xx.js in ts project)
+**错误示例**，ts 项目中包含 js 文件:
 
 ```Bash
 .
@@ -13,7 +12,7 @@ Examples of **incorrect** directory for this rule:(contains xx.js in ts project)
 └── tsconfig.json
 ```
 
-Examples of **correct** code for this rule:
+ **正确示例**:
 
 ```Bash
 .

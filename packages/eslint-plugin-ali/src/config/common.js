@@ -9,7 +9,6 @@ module.exports = {
   rules: {
     'ali/no-http-url': 'warn',
     'ali/no-secret-info': 'error',
-    'ali/recommend-add-line-height-unit': 'error',
     'ali/no-broad-semantic-versioning': 'error',
   },
 }

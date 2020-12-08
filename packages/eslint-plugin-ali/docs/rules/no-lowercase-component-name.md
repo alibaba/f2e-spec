@@ -1,11 +1,11 @@
 # no-lowercase-component-name
 
-It is not recommended to name components in lower case.
-See: https://github.com/airbnb/javascript/tree/master/react#naming
+组件命名不推荐小写
+参照: https://github.com/airbnb/javascript/tree/master/react#naming
 
-## Rule Details
+## 规则内容
 
-Examples of **incorrect** code for this rule:
+**错误代码**示例:
 
 ```jsx
 // src/components/app/index.jsx
@@ -16,7 +16,7 @@ const app = () => {
 export default app;
 ```
 
-Examples of **correct** code for this rule:
+**正确代码**示例:
 
 ```jsx
 // src/components/App/index.jsx
