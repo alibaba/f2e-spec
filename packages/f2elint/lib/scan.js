@@ -5,10 +5,8 @@ const { ESLint } = require('eslint');
 const stylelint = require('stylelint');
 const markdownlint = require('markdownlint');
 const { execSync, spawnSync } = require('child_process');
-
 const log = require('../utils/log');
 const npmType = require('../utils/npmType');
-const printReport = require('../utils/printReport');
 const {
   PKG_NAME,
   ESLINT_FILE_EXT,
@@ -321,8 +319,6 @@ module.exports = async (options) => {
     config = require(configPath);
   }
 
-  log.info(`执行 ${PKG_NAME} 检查: `);
-
   // eslint
   try {
     // 判断使用默认配置还是项目的配置文件。若使用项目的，在未安装依赖时帮其安装
@@ -449,9 +445,6 @@ module.exports = async (options) => {
       if (err) log.error(err);
     });
   }
-
-  // 打印报告
-  console.log(printReport(results, fix));
 
   return results;
 };

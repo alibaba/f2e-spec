@@ -262,12 +262,7 @@ const apiInit = async (options = {}) => {
     };
   }
   targetPkg.husky.hooks['commit-msg'] = `${PKG_NAME} exec commitlint -E HUSKY_GIT_PARAMS`;
-  targetPkg.husky.hooks['pre-commit'] = `${PKG_NAME} exec lint-staged`;
-  targetPkg['lint-staged'] = {};
-  targetPkg['lint-staged'][`**/${ESLINT_FILE_MATCH}`] = `${PKG_NAME} exec eslint`;
-  if (config.enableStylelint) {
-    targetPkg['lint-staged'][`**/${STYLELINT_FILE_MATCH}`] = `${PKG_NAME} exec stylelint`;
-  }
+  targetPkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-scan`;
   fs.writeFileSync(targetPkgPath, JSON.stringify(targetPkg, null, 2));
   log.success('Step 7. 配置 git commit 卡点成功 :D');
 
