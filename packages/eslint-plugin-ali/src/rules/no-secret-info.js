@@ -18,7 +18,7 @@ module.exports = {
   },
 
   create(context) {
-    const dangerousKeys = context.options[0] || defaultStatus;
+    const dangerousKeys = context.options[0] || DEFAULT_DANGEROUS_KEYS;
     const reg = new RegExp(dangerousKeys.join('|'));
 
     return {
