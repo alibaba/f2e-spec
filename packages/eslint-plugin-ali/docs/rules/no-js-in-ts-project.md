@@ -20,3 +20,11 @@
 ├── home.ts
 └── tsconfig.json
 ```
+
+## 规则选项
+
+默认当存在 `commitlint.config.js`, `eslintrc.js`, `prettierrc.js`, `stylelintrc.js` 文件时不会报错，支持自定义设置文件白名单：
+
+```json
+"ali/no-secret-info": [<enabled>, ['customFileName']]
+```
