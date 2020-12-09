@@ -402,10 +402,7 @@ module.exports = async (options) => {
     const useDefaultConfig = lintFiles.length === 0 && !pkg.markdownlint;
 
     if (useDefaultConfig) {
-      lintConfigFile = path.resolve(
-        __dirname,
-        '../node_modules/markdownlint-config-ali/index.json',
-      );
+      lintConfigFile = require.resolve('markdownlint-config-ali/index.json');
     } else {
       lintConfigFile = path.resolve(cwd, '.markdownlint.json');
       await installDepsIfThereNo(cwd);

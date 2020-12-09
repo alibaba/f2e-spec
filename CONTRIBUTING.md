@@ -39,7 +39,7 @@
 
 PR 的标题和 git commit message header 请遵循以下约定：
 
-```
+```bash
 <type>[optional scope]: <subject>
 ```
 
@@ -58,7 +58,7 @@ scope 用来描述本次提交所涉及到的改动范围（例如模块、功�
 
 以下示例都是符合规范的：
 
-```
+```markdown
 fix(f2elint): 修复 xxx 问题
 feat(eslint-config-ali): 新增 xxx 规则
 docs(stylelint-config-ali): 优化 README
