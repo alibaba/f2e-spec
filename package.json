@@ -4,10 +4,10 @@
   "description": "阿里巴巴前端规约及配套工具",
   "license": "Apache-2.0",
   "scripts": {
-    "lint": "markdownlint --config .markdownlint.json README.md */**.md"
+    "lint": "markdownlint -c .markdownlint.json README.md **/*.md"
   },
   "devDependencies": {
-    "markdownlint": "^0.20.4",
-    "markdownlint-cli": "^0.23.2"
+    "markdownlint": "^0.22.0",
+    "markdownlint-config-ali": "^0.1.1"
   }
 }

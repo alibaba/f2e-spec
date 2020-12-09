@@ -112,7 +112,7 @@ const initByType = {
     const markdownlintTargetPath = path.resolve(cwd, '.markdownlint.json');
     fs.writeFileSync(
       markdownlintTargetPath,
-      fs.readFileSync(markdownlintSourcePath, 'utf8').replace('${extends}', `./node_modules/${PKG_NAME}/node_modules/markdownlint-config-ali/index.json`),
+      fs.readFileSync(markdownlintSourcePath, 'utf8').replace('${extends}', `./node_modules/markdownlint-config-ali/index.json`),
     );
 
     const markdownlintIgnoreTargetPath = path.resolve(cwd, '.markdownlintignore');
