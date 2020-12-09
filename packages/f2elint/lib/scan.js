@@ -403,8 +403,8 @@ module.exports = async (options) => {
 
     if (useDefaultConfig) {
       lintConfigFile = path.resolve(
-        cwd,
-        'node_modules/markdownlint-config-ali/index.json',
+        __dirname,
+        '../node_modules/markdownlint-config-ali/index.json',
       );
     } else {
       lintConfigFile = path.resolve(cwd, '.markdownlint.json');
