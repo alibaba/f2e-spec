@@ -12,7 +12,6 @@ module.exports = {
     },
     fixable: null,
     messages: {
-      // eslint-disable-next-line
       noSecretInfo: 'Detect that the "{{secret}}" might be a secret token, Please check!',
     },
   },
@@ -25,13 +24,11 @@ module.exports = {
       Literal: function handleRequires(node) {
         if (
           node.value && node.parent && (
-            // var secret = 'test';
             (node.parent.type === 'VariableDeclarator' &&
               node.parent.id &&
               node.parent.id.name &&
               reg.test(node.parent.id.name.toLocaleLowerCase())
             ) ||
-            // { secret: 'test' };
             (node.parent.type === 'Property' &&
               node.parent.key &&
               node.parent.key.name &&

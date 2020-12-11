@@ -11,10 +11,10 @@ module.exports = {
     docs: {
       url: docsUrl(RULE_NAME),
     },
-    fixable: 'code',
+    fixable: null,
     messages: {
       noBroadSemanticVersioning:
-        'The "{{dependencyName}}" is not recommended to use "{{versioning}}", and it is recommend using "{{newVersioning}}"',
+        'The "{{dependencyName}}" is not recommended to use "{{versioning}}"',
     },
   },
 

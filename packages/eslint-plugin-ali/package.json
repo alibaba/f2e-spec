@@ -16,6 +16,25 @@
     "eslint-plugin"
   ],
   "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba/f2e-spec"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
+  "homepage": "https://github.com/alibaba/f2e-spec",
+  "author": {
+    "name": "Sabo",
+    "email": "bowei.jbw@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "lakerswgq",
+      "email": "lakerswgq@gmail.com"
+    }
+  ],
+  "license": "MIT",
   "dependencies": {
     "fs-extra": "^9.0.1",
     "require-all": "^3.0.0"

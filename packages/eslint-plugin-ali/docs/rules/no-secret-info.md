@@ -2,9 +2,9 @@
 
 不在代码中直接通过纯文本值设置 `password` `token` 和 `secret` 信息。
 
-## 规则细节
+## 规则内容
 
-在包含 `password` `token` and `secret` 名称的 key 中禁止使用纯文本值.
+在包含 `password` `token` and `secret` 名称的 key 中禁止使用纯文本值。
 
 **错误**代码示例:
 

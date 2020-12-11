@@ -1,4 +1,3 @@
-/* eslint-disable @iceworks/best-practices/no-http-url */
 const docsUrl = require('../docsUrl');
 
 const RULE_NAME = 'no-http-url';
@@ -10,7 +9,7 @@ module.exports = {
     docs: {
       url: docsUrl(RULE_NAME),
     },
-    fixable: 'code',
+    fixable: null,
     messages: {
       noHttpUrl: 'Recommended "{{url}}" switch to HTTPS',
     },
@@ -24,9 +23,6 @@ module.exports = {
             messageId: 'noHttpUrl',
             data: {
               url: node.value,
-            },
-            fix: (fixer) => {
-              return fixer.replaceText(node, `'${node.value.replace('http:', 'https:')}'`);
             },
           });
         }

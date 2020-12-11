@@ -19,7 +19,7 @@ module.exports = {
     },
     fixable: null,
     messages: {
-      noJSInTSProject: "The '{{fileName}}' is not recommended in TS project",
+      noJSInTSProject: 'The "{{fileName}}" is not recommended in TS project',
     },
   },
 
