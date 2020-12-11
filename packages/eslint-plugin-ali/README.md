@@ -28,6 +28,7 @@ module.exports = {
 // .eslintrc.js
 module.exports = {
   // 包含通用规则
+  // https://github.com/alibaba/f2e-spec/tree/main/packages/eslint-plugin-ali/src/configs/recommended.js
   extends: "plugin:ali/recommended"
 }
 ```
