@@ -17,7 +17,13 @@ module.exports = {
   },
 
   create(context) {
-    const dangerousKeys = context.options[0] || DEFAULT_DANGEROUS_KEYS;
+    const ruleOptions = context.options[0] || {};
+    let { dangerousKeys = [], autoMerge = true } = ruleOptions;
+    if (dangerousKeys.length === 0) {
+      dangerousKeys = DEFAULT_DANGEROUS_KEYS;
+    } else if (autoMerge) {
+      dangerousKeys = [...new Set(...DEFAULT_DANGEROUS_KEYS, ...dangerousKeys)];
+    }
     const reg = new RegExp(dangerousKeys.join('|'));
 
     return {

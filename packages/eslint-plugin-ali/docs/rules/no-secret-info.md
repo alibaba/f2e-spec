@@ -31,5 +31,9 @@ var client = {
 默认会检查名称包含 `password`，`token`，`secret` 字段 key 的值，支持自定义设置字段名称：
 
 ```json
-"ali/no-secret-info": [<enabled>, ['customKey']]
+"ali/no-secret-info": [<enabled>, {
+  'dangerousKeys': [<string>],
+  // 是否 merge 默认配置，默认为 true
+  'autoMerge': <boolean>
+}]
 ```
