@@ -1,4 +1,3 @@
-const fs = require('fs-extra');
 const path = require('path');
 const docsUrl = require('../docsUrl');
 
@@ -46,25 +45,12 @@ module.exports = {
                 // > x
                 dependencyVersion.indexOf('>') > -1
               ) {
-                let newVersioning = '^1.0.0';
-                const dependencyPackageFile = path.join(
-                  cwd,
-                  'node_modules',
-                  dependencyName,
-                  'package.json',
-                );
-                if (fs.existsSync(dependencyPackageFile)) {
-                  const dependencyPackage = fs.readJSONSync(dependencyPackageFile);
-                  newVersioning = `^${dependencyPackage.version}`;
-                }
-
                 context.report({
                   loc: property.loc,
                   messageId: 'noBroadSemanticVersioning',
                   data: {
                     dependencyName,
                     versioning: dependencyVersion,
-                    newVersioning,
                   },
                 });
               }

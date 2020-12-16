@@ -25,13 +25,14 @@
   },
   "homepage": "https://github.com/alibaba/f2e-spec",
   "author": {
-    "name": "Sabo",
-    "email": "bowei.jbw@gmail.com"
+    "name": "lakerswgq",
+    "email": "lakerswgq@gmail.com"
+    
   },
   "contributors": [
     {
-      "name": "lakerswgq",
-      "email": "lakerswgq@gmail.com"
+      "name": "Sabo",
+      "email": "bowei.jbw@gmail.com"
     }
   ],
   "license": "MIT",

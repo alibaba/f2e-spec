@@ -3,12 +3,9 @@ const docsUrl = require('../docsUrl');
 
 const RULE_NAME = 'no-js-in-ts-project';
 
-// const TS_REG = /\.tsx?$/;
 const JS_REG = /\.jsx?$/;
 
 const DEFAULT_WHITE_LIST = ['commitlint.config.js', 'eslintrc.js', 'prettierrc.js', 'stylelintrc.js'];
-
-// let isTSProject = true;
 
 module.exports = {
   name: RULE_NAME,
@@ -34,10 +31,6 @@ module.exports = {
       whiteList = [...new Set([...DEFAULT_WHITE_LIST, ...whiteList])]
     }
     const whiteListReg = new RegExp(`(${whiteList.join('|')})$`);
-
-    // if (TS_REG.test(extName)) {
-    //   isTSProject = true;
-    // }
 
     if (!whiteListReg.test(fileName) && JS_REG.test(extName)) {
       context.report({
