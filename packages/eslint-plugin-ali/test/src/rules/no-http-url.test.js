@@ -15,7 +15,7 @@ ruleTester.run('no-http-url', rule, {
   invalid: [
     {
       code: "var test = 'http://test.com';",
-      output: "var test = 'https://test.com';",
+      output: "var test = 'http://test.com';",
       errors: [
         {
           message: 'Recommended "http://test.com" switch to HTTPS',
@@ -24,7 +24,7 @@ ruleTester.run('no-http-url', rule, {
     },
     {
       code: "<img src='http://test.com' />",
-      output: "<img src='https://test.com' />",
+      output: "<img src='http://test.com' />",
       parserOptions: {
         ecmaFeatures: {
           jsx: true,

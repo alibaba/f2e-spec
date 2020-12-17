@@ -23,7 +23,7 @@ ruleTester.run('no-broad-semantic-versioning', rule, {
       code: `module.exports = ${JSON.stringify({ devDependencies: { 'eslint-plugin-ali': '*' } })}`,
       errors: [
         {
-          message: 'The "eslint-plugin-ali" is not recommended to use "*", and it is recommend using "^1.0.0"',
+          message: 'The "eslint-plugin-ali" is not recommended to use "*"',
         },
       ],
     },
