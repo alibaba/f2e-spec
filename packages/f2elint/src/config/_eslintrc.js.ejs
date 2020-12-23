@@ -1,0 +1,8 @@
+module.exports = {
+  extends: [
+    '<%= eslintType === 'index' ? 'eslint-config-ali' : `eslint-config-ali/${eslintType}` %>',
+    <%_ if (enablePrettier) { _%>
+    'prettier/@typescript-eslint',
+    <%_ } _%>
+  ],
+};

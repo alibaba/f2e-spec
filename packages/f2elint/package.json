@@ -1,90 +1,79 @@
 {
   "name": "f2elint",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "Linter for Alibaba F2E Guidelines",
-  "bin": "./cli.js",
-  "main": "./index.js",
+  "bin": "./lib/cli.js",
+  "main": "./lib/index.js",
+  "scripts": {
+    "dev": "npm run copyfiles && tsc -w",
+    "build": "npm run copyfiles && tsc ",
+    "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
+    "link": "tnpm link && tnpm link -g f2elint",
+    "lint": "eslint ."
+  },
   "files": [
-    "index.js",
-    "utils",
-    "lib"
+    "lib/"
   ],
   "keywords": [
-    "Alibaba F2E Guidelines"
+    "Alibaba",
+    "F2E",
+    "Guidelines"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alibaba/f2e-spec"
-  },
-  "bugs": {
-    "url": "https://github.com/alibaba/f2e-spec/issues"
-  },
-  "homepage": "https://github.com/alibaba/f2e-spec",
-  "author": {
-    "name": "Sabo",
-    "email": "bowei.jbw@gmail.com"
-  },
-  "contributors": [
-    {
-      "name": "cstyles",
-      "email": "cstyles@qq.com"
-    },
-    {
-      "name": "lakerswgq",
-      "email": "lakerswgq@gmail.com"
-    },
-    {
-      "name": "undead25",
-      "email": "shuanglong525@gmail.com"
-    }
-  ],
-  "license": "MIT",
-  "scripts": {
-    "test": "jest --silent --forceExit",
-    "coverage": "nyc jest --silent --forceExit",
-    "prepublishOnly": "npm run test"
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/command-exists": "^1.2.0",
+    "@types/cross-spawn": "^6.0.2",
+    "@types/ejs": "^3.0.5",
+    "@types/eslint": "^7.2.6",
+    "@types/fs-extra": "^9.0.4",
+    "@types/glob": "^7.1.3",
+    "@types/lodash": "^4.14.165",
+    "@types/node": "^14.14.11",
+    "@types/prettier": "^2.1.5",
+    "@types/stylelint": "^9.10.1",
+    "@types/text-table": "^0.2.1",
+    "copyfiles": "^2.4.1",
+    "typescript": "^4.1.2"
   },
   "dependencies": {
     "@commitlint/cli": "^11.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.4.0",
-    "@typescript-eslint/parser": "^4.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.0",
     "babel-eslint": "^10.1.0",
     "chalk": "^4.1.0",
     "command-exists": "^1.2.9",
-    "commander": "^6.1.0",
-    "commitlint-config-ali": "^0.1.0",
-    "cross-spawn": "^7.0.1",
+    "commander": "^6.2.1",
+    "commitlint-config-ali": "^0.1.3",
+    "cross-spawn": "^7.0.3",
+    "ejs": "^3.1.5",
     "eslint": "^7.15.0",
-    "eslint-config-ali": "^11.1.0",
+    "eslint-config-ali": "^11.4.1",
     "eslint-config-egg": "^9.0.0",
-    "eslint-plugin-import": "^2.20.0",
-    "eslint-plugin-react": "^7.18.0",
-    "eslint-plugin-react-hooks": "^4.0.4",
-    "eslint-plugin-vue": "^7.2.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-vue": "^7.3.0",
     "execa": "^5.0.0",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.6",
-    "husky": "^4.3.0",
-    "ignore": "^5.1.4",
-    "inquirer": "^7.0.3",
+    "inquirer": "^7.3.3",
     "is-docker": "^2.1.1",
-    "lodash.mergewith": "^4.6.2",
+    "lodash": "^4.17.20",
     "markdownlint": "^0.22.0",
-    "markdownlint-config-ali": "^0.1.0",
+    "markdownlint-config-ali": "^0.1.1",
+    "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
-    "safe-eval": "^0.4.1",
+    "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
     "stylelint": "^13.8.0",
     "stylelint-config-ali": "^0.4.1",
-    "stylelint-scss": "^3.13.0",
+    "stylelint-scss": "^3.18.0",
     "terminal-link": "^2.1.1",
     "text-table": "^0.2.0",
-    "typescript": "^4.0.3",
-    "vue-eslint-parser": "^7.0.0",
-    "yargs-parser": "^20.2.4"
-  },
-  "devDependencies": {
-    "jest": "^26.6.1",
-    "nyc": "^15.1.0"
+    "vue-eslint-parser": "^7.3.0"
   }
 }
