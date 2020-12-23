@@ -43,11 +43,11 @@ npm install f2elint -g
 
 - 安装各种依赖：包括 Linter 依赖，如 [ESLint](https://eslint.org/)、[stylelint](https://stylelint.io/)、[commitlint](https://commitlint.js.org/#/)、[markdownlint](https://github.com/DavidAnson/markdownlint) 等；配置依赖，如 [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali)、[stylelint-config-ali](https://www.npmjs.com/package/stylelint-config-ali)、[commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali)、[markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali) 等
 - 写入各种配置文件，包括：
-  - `.eslintrc.js.ejs`、`.eslintignore`：ESLint 配置（继承 eslint-config-ali）及黑名单文件
+  - `.eslintrc.js`、`.eslintignore`：ESLint 配置（继承 eslint-config-ali）及黑名单文件
   - `.stylelintrc.js`、`.stylelintignore`：stylelint 配置（继承 stylelint-config-ali）及黑名单文件
   - `commitlint.config.js`：commitlint 配置（继承 commitlint-config-ali）
   - `.markdownlint.json`、`.markdownlintignore`：markdownlint 配置及黑名单文件
-  - `.prettierrc`：符合规约的 [Prettier 配置](https://prettier.io/docs/en/configuration.html)
+  - `.prettierrc.js`：符合规约的 [Prettier 配置](https://prettier.io/docs/en/configuration.html)
   - `.editorconfig`：符合规约的 [editorconfig](https://editorconfig.org/)
   - `.vscode/extensions.json`：写入规约相关的 [VSCode 插件推荐](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)，包括 ESLint、stylelint、markdownlint、prettier 等
   - `.vscode/settings.json`：写入规约相关的 [VSCode 设置](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)，设置 ESLint 和 stylelint 插件的 validate 及**保存时自动运行 fix**，同时将 prettier-vscode 插件设置为各前端语言的 defaultFormatter（但保存时不会执行，需要手动调用 `CMD + Shift + P -> Format Document` 执行。这样设置的原因是我们推荐在保存时使用 ESLint 和 stylelint 的 fix 进行格式化，如果遇到少部分格式不符合预期的情况，再手动调用 prettier）

@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import path from 'path';
 import fs from 'fs-extra';
+import { execSync } from 'child_process';
 import { program } from 'commander';
 import ora from 'ora';
 import glob from 'glob';
-import execa from 'execa';
 import init from './actions/init';
 import update from './actions/update';
 import scan from './actions/scan';
@@ -32,7 +32,7 @@ const installDepsIfThereNo = async () => {
   if (!fs.existsSync(nodeModulesPath) && lintConfigFiles.length > 0) {
     const npm = await npmType;
     log.info(`使用项目 Lint 配置，检测到项目未安装依赖，将进行安装（执行 ${npm} install）`);
-    execa.sync(`cd ${cwd} && ${npm} i`);
+    execSync(`cd ${cwd} && ${npm} i`);
   }
 };
 
