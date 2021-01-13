@@ -10,7 +10,7 @@ import update from './actions/update';
 import scan from './actions/scan';
 import exec from './actions/exec';
 import printReport from './utils/printReport';
-import getGitCommitFiles from './utils/getGitCommitFiles';
+import { getCommitFiles, getAmendFiles } from './utils/git';
 import generateTemplate from './utils/generateTemplate';
 import npmType from './utils/npmType';
 import log from './utils/log';
@@ -100,6 +100,10 @@ program
   .action(async (cmd) => {
     await installDepsIfThereNo();
 
+    // git add 检查
+    const files = await getAmendFiles();
+    if (files) log.warn(`[${PKG_NAME}] changes not staged for commit: \n${files}\n`);
+
     const checking = ora();
     checking.start(`执行 ${PKG_NAME} 代码提交检查`);
 
@@ -107,7 +111,7 @@ program
       cwd,
       include: cwd,
       quiet: !cmd.strict,
-      files: await getGitCommitFiles(),
+      files: await getCommitFiles(),
     });
 
     if (errorCount > 0 || (cmd.strict && warningCount > 0)) {
