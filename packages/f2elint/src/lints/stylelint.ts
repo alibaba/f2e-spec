@@ -58,27 +58,30 @@ export const getLintConfig = (opts: ScanOptions, pkg: PKG, config: Config): Lint
 /**
  * 格式化 lint result
  * @param results
+ * @param quiet
  */
-export const formatResults = (results: LintResult[]): ScanResult[] => {
+export const formatResults = (results: LintResult[], quiet: boolean): ScanResult[] => {
   return results.map(({ source, warnings }) => {
     let errorCount = 0;
     let warningCount = 0;
-    const messages = warnings.map((item) => {
-      const { line = 0, column = 0, rule, severity, text } = item;
-      if (severity === 'error') {
-        errorCount++;
-      } else {
-        warningCount++;
-      }
-      return {
-        line,
-        column,
-        rule,
-        url: getRuleDocUrl(rule),
-        message: text.replace(/([^ ])\.$/u, '$1').replace(new RegExp(`\\(${rule}\\)`), ''),
-        errored: severity === 'error',
-      };
-    });
+    const messages = warnings
+      .filter((item) => !quiet || item.severity === 'error')
+      .map((item) => {
+        const { line = 0, column = 0, rule, severity, text } = item;
+        if (severity === 'error') {
+          errorCount++;
+        } else {
+          warningCount++;
+        }
+        return {
+          line,
+          column,
+          rule,
+          url: getRuleDocUrl(rule),
+          message: text.replace(/([^ ])\.$/u, '$1').replace(new RegExp(`\\(${rule}\\)`), ''),
+          errored: severity === 'error',
+        };
+      });
 
     return {
       filePath: source,

@@ -9,7 +9,9 @@
     "build": "npm run copyfiles && tsc ",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
     "link": "tnpm link && tnpm link -g f2elint",
-    "lint": "eslint ."
+    "test": "jest",
+    "coverage": "nyc jest --silent --forceExit",
+    "prepublishOnly": "npm run test"
   },
   "files": [
     "lib/"
@@ -19,8 +21,7 @@
     "F2E",
     "Guidelines"
   ],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/command-exists": "^1.2.0",
     "@types/cross-spawn": "^6.0.2",
@@ -34,6 +35,8 @@
     "@types/stylelint": "^9.10.1",
     "@types/text-table": "^0.2.1",
     "copyfiles": "^2.4.1",
+    "jest": "^24.9.0",
+    "nyc": "^15.1.0",
     "typescript": "^4.1.2"
   },
   "dependencies": {

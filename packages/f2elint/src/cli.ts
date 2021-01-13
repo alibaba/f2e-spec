@@ -73,6 +73,7 @@ program
 
     const { results, errorCount, warningCount, runErrors } = await scan({
       cwd,
+      fix: false,
       include: cmd.include || cwd,
       quiet: Boolean(cmd.quiet),
       outputReport: Boolean(cmd.outputReport),
@@ -95,20 +96,21 @@ program
 program
   .command('commit-scan')
   .description('代码提交检查: git commit 时对项目进行代码规约问题扫描')
-  .action(async () => {
+  .option('-s, --strict', '严格模式，对 warn 和 error 都卡口')
+  .action(async (cmd) => {
     await installDepsIfThereNo();
 
     const checking = ora();
     checking.start(`执行 ${PKG_NAME} 代码提交检查`);
 
-    const { results, errorCount } = await scan({
+    const { results, errorCount, warningCount } = await scan({
       cwd,
       include: cwd,
-      quiet: true,
+      quiet: !cmd.strict,
       files: await getGitCommitFiles(),
     });
 
-    if (errorCount > 0) {
+    if (errorCount > 0 || (cmd.strict && warningCount > 0)) {
       checking.fail();
       printReport(results, false);
       process.exitCode = 1;

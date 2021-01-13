@@ -4,7 +4,7 @@
 
 ### 优化
 
-- 修改 package.json 和 README
+- 修改 JSON 和 README
 
 ## 0.4.2 (2020-11-24)
 

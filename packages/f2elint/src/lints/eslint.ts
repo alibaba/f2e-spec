@@ -102,6 +102,7 @@ export const getLintConfig = (opts: ScanOptions, pkg: PKG, config: Config): ESLi
     fix,
     ignore,
     extensions: ESLINT_FILE_EXT,
+    errorOnUnmatchedPattern: false,
   };
 
   // 使用默认的 lint 配置
@@ -119,7 +120,7 @@ export const getLintConfig = (opts: ScanOptions, pkg: PKG, config: Config): ESLi
   }
 
   // 使用默认的 ignore 配置
-  const lintIgnoreFile = path.resolve(cwd, '_eslintignore.ejs');
+  const lintIgnoreFile = path.resolve(cwd, '.eslintignore');
   if (!fs.existsSync(lintIgnoreFile) && !pkg.eslintIgnore) {
     lintConfig.ignorePath = path.resolve(__dirname, '../config/_eslintignore.ejs');
   }

@@ -34,12 +34,13 @@ export const getLintConfig = (opts: ScanOptions): LintOptions => {
 /**
  * 格式化 lint result
  * @param results
+ * @param quiet
  */
-export const formatResults = (results: markdownLint.LintResults): ScanResult[] => {
+export const formatResults = (results: markdownLint.LintResults, quiet: boolean): ScanResult[] => {
   const parsedResults = [];
 
   for (const file in results) {
-    if (!Object.prototype.hasOwnProperty.call(results, file)) continue;
+    if (!Object.prototype.hasOwnProperty.call(results, file) || quiet) continue;
 
     let warningCount = 0;
     let fixableWarningCount = 0;

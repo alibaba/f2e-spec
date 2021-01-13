@@ -10,18 +10,18 @@ import generateTemplate from '../utils/generateTemplate';
 import { PROJECT_TYPES, PKG_NAME } from '../utils/constants';
 import type { InitOptions, PKG } from '../types';
 
+let step = 0;
+
 /**
  * 选择项目语言和框架
  */
 const chooseEslintType = async (): Promise<string> => {
-  const { type } = await inquirer.prompt([
-    {
-      type: 'list',
-      name: 'type',
-      message: 'Step 1. 请选择项目的语言（JS/TS）和框架（React/Vue）类型：',
-      choices: PROJECT_TYPES,
-    },
-  ]);
+  const { type } = await inquirer.prompt({
+    type: 'list',
+    name: 'type',
+    message: `Step ${++step}. 请选择项目的语言（JS/TS）和框架（React/Vue）类型：`,
+    choices: PROJECT_TYPES,
+  });
 
   return type;
 };
@@ -31,14 +31,12 @@ const chooseEslintType = async (): Promise<string> => {
  * @param defaultValue
  */
 const chooseEnableStylelint = async (defaultValue: boolean): Promise<boolean> => {
-  const { enable } = await inquirer.prompt([
-    {
-      type: 'confirm',
-      name: 'enable',
-      message: 'Step 2. 是否需要使用 stylelint（若没有样式文件则不需要）：',
-      default: defaultValue,
-    },
-  ]);
+  const { enable } = await inquirer.prompt({
+    type: 'confirm',
+    name: 'enable',
+    message: `Step ${++step}. 是否需要使用 stylelint（若没有样式文件则不需要）：`,
+    default: defaultValue,
+  });
 
   return enable;
 };
@@ -47,14 +45,12 @@ const chooseEnableStylelint = async (defaultValue: boolean): Promise<boolean> =>
  * 选择是否启用 markdownlint
  */
 const chooseEnableMarkdownLint = async (): Promise<boolean> => {
-  const { enable } = await inquirer.prompt([
-    {
-      type: 'confirm',
-      name: 'enable',
-      message: 'Step 3. 是否需要使用 markdownlint（若没有 Markdown 文件则不需要）：',
-      default: true,
-    },
-  ]);
+  const { enable } = await inquirer.prompt({
+    type: 'confirm',
+    name: 'enable',
+    message: `Step ${++step}. 是否需要使用 markdownlint（若没有 Markdown 文件则不需要）：`,
+    default: true,
+  });
 
   return enable;
 };
@@ -63,27 +59,26 @@ const chooseEnableMarkdownLint = async (): Promise<boolean> => {
  * 选择是否启用 prettier
  */
 const chooseEnablePrettier = async (): Promise<boolean> => {
-  const { enable } = await inquirer.prompt([
-    {
-      type: 'confirm',
-      name: 'enable',
-      message: 'Step 4. 是否需要使用 prettier 格式化代码：',
-      default: true,
-    },
-  ]);
+  const { enable } = await inquirer.prompt({
+    type: 'confirm',
+    name: 'enable',
+    message: `Step ${++step}. 是否需要使用 prettier 格式化代码：`,
+    default: true,
+  });
 
   return enable;
 };
 
 export default async (options: InitOptions) => {
   const cwd = options.cwd || process.cwd();
+  const isTest = process.env.NODE_ENV === 'test';
   const checkVersionUpdate = options.checkVersionUpdate || false;
   const config: Record<string, any> = {};
   const pkgPath = path.resolve(cwd, 'package.json');
   let pkg: PKG = fs.readJSONSync(pkgPath);
 
   // 版本检查
-  if (checkVersionUpdate) {
+  if (!isTest && checkVersionUpdate) {
     await update(false);
   }
 
@@ -126,33 +121,35 @@ export default async (options: InitOptions) => {
     pkg.scripts[`${PKG_NAME}-fix`] = `${PKG_NAME} fix`;
   }
 
-  log.info('Step 5. 检查并处理项目中可能存在的依赖和配置冲突');
+  log.info(`Step ${++step}. 检查并处理项目中可能存在的依赖和配置冲突`);
   pkg = await conflictResolve(cwd);
-  log.success('Step 5. 已完成项目依赖和配置冲突检查处理 :D');
+  log.success(`Step ${step}. 已完成项目依赖和配置冲突检查处理 :D`);
 
-  log.info('Step 6. 安装依赖');
-  const npm = await npmType;
-  spawn.sync(
-    npm,
-    ['i', '-D', PKG_NAME, ...(config.enablePrettier ? ['eslint-config-prettier'] : [])],
-    { stdio: 'inherit', cwd },
-  );
+  log.info(`Step ${++step}. 安装依赖`);
+  if (!isTest) {
+    const npm = await npmType;
+    spawn.sync(
+      npm,
+      ['i', '-D', PKG_NAME, ...(config.enablePrettier ? ['eslint-config-prettier'] : [])],
+      { stdio: 'inherit', cwd },
+    );
+  }
   // 更新 dependencies
   pkg = fs.readJSONSync(pkgPath);
-  log.success('Step 6. 安装依赖成功 :D');
+  log.success(`Step ${step}. 安装依赖成功 :D`);
 
   // 配置 commit 卡点
-  log.info('Step 7. 配置 git commit 卡点');
+  log.info(`Step ${++step}. 配置 git commit 卡点`);
   if (!pkg.husky) pkg.husky = {};
   if (!pkg.husky.hooks) pkg.husky.hooks = {};
   pkg.husky.hooks['commit-msg'] = `${PKG_NAME} exec commitlint -E HUSKY_GIT_PARAMS`;
   pkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-scan`;
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
-  log.success('Step 7. 配置 git commit 卡点成功 :D');
+  log.success(`Step ${step}. 配置 git commit 卡点成功 :D`);
 
-  log.info('Step 8. 写入配置文件');
+  log.info(`Step ${++step}. 写入配置文件`);
   generateTemplate(cwd, config);
-  log.success('Step 8. 写入配置文件成功 :D');
+  log.success(`Step ${step}. 写入配置文件成功 :D`);
 
   // 完成信息。
   const logs = [`${PKG_NAME} 初始化完成 :D`].join('\r\n');

@@ -5,8 +5,6 @@ import glob from 'glob';
 import * as eslint from '../lints/eslint';
 import * as stylelint from '../lints/stylelint';
 import * as markdownLint from '../lints/markdownlint';
-import log from '../utils/log';
-import npmType from '../utils/npmType';
 import {
   PKG_NAME,
   ESLINT_FILE_EXT,
@@ -16,7 +14,7 @@ import {
 import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from '../types';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
-  const { cwd, include, quiet, fix } = options;
+  const { cwd, include, quiet, fix, outputReport } = options;
   const getLintFiles = (ext: string[]): string | string[] => {
     const { files } = options;
     if (files) return files.filter((name) => ext.includes(path.extname(name)));
@@ -40,7 +38,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     fix && (await eslint.ESLint.outputFixes(reports));
     results = results.concat(eslint.formatResults(reports, quiet));
   } catch (e) {
-    if (e.messageTemplate !== 'file-not-found') runErrors.push(e);
+    runErrors.push(e);
   }
 
   // stylelint
@@ -51,7 +49,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
         ...stylelint.getLintConfig(options, pkg, config),
         files,
       });
-      results = results.concat(stylelint.formatResults(data.results));
+      results = results.concat(stylelint.formatResults(data.results, quiet));
     } catch (e) {
       runErrors.push(e);
     }
@@ -67,7 +65,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
         ...markdownLint.getLintConfig(options),
         files,
       });
-      results = results.concat(markdownLint.formatResults(data));
+      results = results.concat(markdownLint.formatResults(data, quiet));
     } catch (e) {
       runErrors.push(e);
     }
@@ -87,6 +85,12 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     } catch (e) {
       runErrors.push(e);
     }
+  }
+
+  // 生成报告报告文件
+  if (outputReport) {
+    const reportPath = path.resolve(process.cwd(), `./${PKG_NAME}-report.json`);
+    fs.outputFile(reportPath, JSON.stringify(results, null, 2), () => {});
   }
 
   return {
