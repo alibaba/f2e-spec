@@ -1,10 +1,16 @@
 # 更新日志
 
+## 0.4.4 (2020-12-09)
+
+### 修复
+
+- f2elint：修复找不到 `markdownlint` 的拓展文件（[#3](https://github.com/alibaba/f2e-spec/issues/3)）
+
 ## 0.4.3 (2020-12-03)
 
 ### 优化
 
-- 修改 JSON 和 README
+- 修改 `package.json` 和 README
 
 ## 0.4.2 (2020-11-24)
 

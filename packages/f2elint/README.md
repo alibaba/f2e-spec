@@ -156,9 +156,14 @@ await f2elint.scan({
 
 ## 配置
 
-F2ELint 基于一份配置进行扫描，包括仓库类型、忽略目录等。但你也可以零配置使用，无配置时 F2ELint 会嗅探仓库的情况使用一份默认配置。
+F2ELint 基于一份配置进行扫描（但你也可以零配置使用），支持的配置参数有：
 
-使用 CLI 时，F2ELint 会读取执行目录下的 `f2elint.config.js` 文件作为配置，执行 `f2elint init` 会在项目根目录下新增如下的 `f2elint.config.js` 文件：
+| 参数 | 类型 | 默认值 | 说明 |
+| -------- | -------- | -------- | -------- |
+| enableStylelint | boolean | true | 是否启用 stylelint |
+| enableMarkdownlint | boolean | true | 是否启用 markdownlint |
+
+F2ELint 会读取执行目录下的 `f2elint.config.js` 作为配置文件。`f2elint init` 会在执行目录下新增如下的 `f2elint.config.js` 文件：
 
 ```js
 module.exports = {
@@ -166,10 +171,3 @@ module.exports = {
   enableMarkdownlint: true,
 };
 ```
-
-支持的配置参数有：
-
-| 参数 | 类型 | 默认值 | 说明 |
-| -------- | -------- | -------- | -------- |
-| enableStylelint | boolean | true | 是否启用 stylelint |
-| enableMarkdownlint | boolean | true | 是否启用 markdownlint |
