@@ -70,6 +70,7 @@ npm install f2elint -g
 - `-q` `--quiet` 仅报告 error 级别的问题
 - `-o` `--output-report` 输出扫描出的规约问题日志
 - `-i` `--include <dirpath>` 指定要进行规约扫描的目录
+- `--no-ignore` 忽略 eslint 的 ignore 配置文件和 ignore 规则
 
 > 注 1：事实上，你可以在任意目录执行 `f2elint scan`，F2ELint 会根据文件类型、JSON 等特征嗅探项目类型。但我们还是推荐在执行过 `f2elint init` 的项目根目录执行 `f2elint scan`，以得到最准确的扫描结果。
 >
@@ -84,8 +85,17 @@ npm install f2elint -g
 支持下列参数：
 
 - `-i` `--include <dirpath>` 指定要进行修复扫描的目录
+- `--no-ignore` 忽略 eslint 的 ignore 配置文件和 ignore 规则
 
 注意请 review 下修复前后的代码，以免工具误修的情况。
+
+#### `f2elint commit-scan` 提交扫描
+
+git commit 时对提交代码进行规约问题扫描
+
+支持下列参数：
+
+- `-s` `--strict` 严格模式，对 warn 和 error 问题都卡口，默认仅对 error 问题卡口
 
 ## Node.js API 使用
 

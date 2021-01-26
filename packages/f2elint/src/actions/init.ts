@@ -62,7 +62,7 @@ const chooseEnablePrettier = async (): Promise<boolean> => {
   const { enable } = await inquirer.prompt({
     type: 'confirm',
     name: 'enable',
-    message: `Step ${++step}. 是否需要使用 prettier 格式化代码：`,
+    message: `Step ${++step}. 是否需要使用 Prettier 格式化代码：`,
     default: true,
   });
 
@@ -110,6 +110,26 @@ export default async (options: InitOptions) => {
     config.enablePrettier = await chooseEnablePrettier();
   }
 
+  if (options.checkSettingCompatibility && !isTest) {
+    log.info(`Step ${++step}. 检查并处理项目中可能存在的依赖和配置冲突`);
+    pkg = await conflictResolve(cwd);
+    log.success(`Step ${step}. 已完成项目依赖和配置冲突检查处理 :D`);
+  }
+
+  if (!isTest) {
+    log.info(`Step ${++step}. 安装依赖`);
+    const npm = await npmType;
+    spawn.sync(
+      npm,
+      ['i', '-D', PKG_NAME, ...(config.enablePrettier ? ['eslint-config-prettier'] : [])],
+      { stdio: 'inherit', cwd },
+    );
+  }
+
+  // 更新 dependencies
+  pkg = fs.readJSONSync(pkgPath);
+  log.success(`Step ${step}. 安装依赖成功 :D`);
+
   // 在 `package.json` 中写入 `scripts`。
   if (!pkg.scripts) {
     pkg.scripts = {};
@@ -120,23 +140,6 @@ export default async (options: InitOptions) => {
   if (!pkg.scripts[`${PKG_NAME}-fix`]) {
     pkg.scripts[`${PKG_NAME}-fix`] = `${PKG_NAME} fix`;
   }
-
-  log.info(`Step ${++step}. 检查并处理项目中可能存在的依赖和配置冲突`);
-  pkg = await conflictResolve(cwd);
-  log.success(`Step ${step}. 已完成项目依赖和配置冲突检查处理 :D`);
-
-  log.info(`Step ${++step}. 安装依赖`);
-  if (!isTest) {
-    const npm = await npmType;
-    spawn.sync(
-      npm,
-      ['i', '-D', PKG_NAME, ...(config.enablePrettier ? ['eslint-config-prettier'] : [])],
-      { stdio: 'inherit', cwd },
-    );
-  }
-  // 更新 dependencies
-  pkg = fs.readJSONSync(pkgPath);
-  log.success(`Step ${step}. 安装依赖成功 :D`);
 
   // 配置 commit 卡点
   log.info(`Step ${++step}. 配置 git commit 卡点`);

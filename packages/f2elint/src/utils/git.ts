@@ -9,13 +9,10 @@ export const getCommitFiles = async (options: execa.Options = {}): Promise<strin
     const { stdout } = await execa(
       'git',
       [
-        '-c',
-        'submodule.recurse=false',
         'diff',
-        '--staged',
-        '--diff-filter=ACMR',
-        '--name-only',
-        '-z',
+        '--staged', // 比较 暂缓区 与 last commit 的差别
+        '--diff-filter=ACMR', // 只显示 added、copied、modified、renamed
+        '--name-only', // 只显示更改文件的名称
       ],
       {
         ...options,
@@ -24,7 +21,7 @@ export const getCommitFiles = async (options: execa.Options = {}): Promise<strin
       },
     );
 
-    return stdout ? stdout.replace(/\u0000$/, '').split('\u0000') : [];
+    return stdout ? stdout.split(/\s/).filter(Boolean) : [];
   } catch (e) {
     return [];
   }
@@ -36,11 +33,18 @@ export const getCommitFiles = async (options: execa.Options = {}): Promise<strin
  */
 export const getAmendFiles = async (options: execa.Options = {}): Promise<string> => {
   try {
-    const { stdout } = await execa('git', ['diff', '--name-only'], {
-      ...options,
-      all: true,
-      cwd: options.cwd || process.cwd(),
-    });
+    const { stdout } = await execa(
+      'git',
+      [
+        'diff', // 比较 工作区 与 暂缓区的差别
+        '--name-only',
+      ],
+      {
+        ...options,
+        all: true,
+        cwd: options.cwd || process.cwd(),
+      },
+    );
 
     return stdout;
   } catch (e) {

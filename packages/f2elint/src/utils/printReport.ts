@@ -3,7 +3,7 @@ import table from 'text-table';
 import terminalLink from 'terminal-link';
 import isDocker from 'is-docker';
 import stripAnsi from 'strip-ansi';
-import { PKG_NAME } from './constants';
+import { PKG_NAME, UNICODE } from './constants';
 import type { ScanResult } from '../types';
 
 /**
@@ -70,7 +70,7 @@ export default (results: ScanResult[], fix: boolean): void => {
   if (!fix && total > 0) {
     output += chalk[summaryColor].bold(
       [
-        '\u2716 ',
+        `${UNICODE.failure} `,
         total,
         pluralize(' problem', total),
         ' (',
@@ -96,7 +96,7 @@ export default (results: ScanResult[], fix: boolean): void => {
       );
     }
   }
-  if (!fix && total === 0) output = chalk.green.bold('\u2714 no problems');
+  if (!fix && total === 0) output = chalk.green.bold(`${UNICODE.success} no problems`);
 
   console.log(chalk.reset(output));
 };

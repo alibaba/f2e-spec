@@ -54,6 +54,7 @@ program
       await init({
         cwd,
         checkVersionUpdate: true,
+        checkSettingCompatibility: true,
       });
     }
   });
@@ -95,8 +96,8 @@ program
 
 program
   .command('commit-scan')
-  .description('代码提交检查: git commit 时对项目进行代码规约问题扫描')
-  .option('-s, --strict', '严格模式，对 warn 和 error 都卡口')
+  .description('代码提交检查: git commit 时对提交代码进行规约问题扫描')
+  .option('-s, --strict', '严格模式，对 warn 和 error 问题都卡口，默认仅对 error 问题卡口')
   .action(async (cmd) => {
     await installDepsIfThereNo();
 

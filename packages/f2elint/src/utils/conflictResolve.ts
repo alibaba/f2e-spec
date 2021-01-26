@@ -10,7 +10,7 @@ import type { PKG } from '../types';
 const DEPENDENCIES_REG = /(^(eslint|stylelint|babel-eslint|markdownlint|@commitlint\/cli)$|^(eslint|vue-eslint|stylelint|markdownlint|commitlint)-\S+$|^@typescript-eslint\/\S+$)/;
 
 /**
- * 待删除的无用配置，参考官方配置，移除.js后缀以外的配置文件，放置生效混乱
+ * 待删除的无用配置
  * @param cwd
  */
 const checkUselessConfig = (cwd: string): string[] => {

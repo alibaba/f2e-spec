@@ -37,7 +37,7 @@ const mergeVSCodeConfig = (filepath: string, content: string) => {
 };
 
 /**
- * 实例化化模板
+ * 实例化模板
  * @param cwd
  * @param data
  * @param vscode

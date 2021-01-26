@@ -5,9 +5,15 @@ import { PKG_NAME } from './utils/constants';
 import printReport from './utils/printReport';
 import type { InitOptions, ScanOptions } from './types';
 
+type IInitOptions = Omit<Omit<InitOptions, 'checkSettingCompatibility'>, 'checkVersionUpdate'>;
+
 export default {
-  async init(options: InitOptions) {
-    return await init(options);
+  async init(options: IInitOptions) {
+    return await init({
+      ...options,
+      checkSettingCompatibility: false,
+      checkVersionUpdate: false,
+    });
   },
   async scan(options: ScanOptions) {
     const checking = ora();

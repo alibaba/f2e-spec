@@ -8,6 +8,7 @@ describe('init', () => {
 
   beforeEach(() => {
     fs.copySync(templatePath, outputPath);
+    fs.renameSync(`${outputPath}/_vscode`, `${outputPath}/.vscode`);
   });
 
   test('node api init should work as expected', async () => {
@@ -19,6 +20,14 @@ describe('init', () => {
       enableMarkdownlint: true,
       enablePrettier: true,
     });
+
+    const pkg = require(`${outputPath}/package.json`);
+    const settings = require(`${outputPath}/.vscode/settings.json`);
+
+    expect(pkg.scripts['f2elint-scan']).toBe('f2elint scan');
+    expect(settings['editor.defaultFormatter']).toBe('esbenp.prettier-vscode');
+    expect(settings['eslint.validate'].includes('233')).toBeTruthy();
+    expect(settings.test).toBeTruthy();
   });
 
   afterEach(() => {

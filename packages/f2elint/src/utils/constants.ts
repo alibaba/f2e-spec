@@ -6,6 +6,11 @@ const pkg: Record<string, any> = JSON.parse(
   fs.readFileSync(path.join(__dirname, '../../package.json'), 'utf8'),
 );
 
+export enum UNICODE {
+  success = '\u2714', // ✔
+  failure = '\u2716', // ✖
+}
+
 /**
  * 包名
  */
@@ -19,7 +24,7 @@ export const PKG_VERSION: string = pkg.version;
 /**
  * 项目类型
  */
-export const PROJECT_TYPES: { name: string; value: string }[] = [
+export const PROJECT_TYPES: Array<{ name: string; value: string }> = [
   {
     name: '未使用 React、Vue、Node.js 的项目（JavaScript）',
     value: 'index',

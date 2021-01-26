@@ -1,6 +1,6 @@
 {
   "name": "f2elint",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Linter for Alibaba F2E Guidelines",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -8,8 +8,8 @@
     "dev": "npm run copyfiles && tsc -w",
     "build": "npm run copyfiles && tsc ",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
-    "link": "tnpm link && tnpm link -g f2elint",
-    "test": "jest",
+    "link": "npm run build && npm link && npm link -g f2elint",
+    "test": "npm run build && jest",
     "coverage": "nyc jest --silent --forceExit",
     "prepublishOnly": "npm run test"
   },
@@ -20,6 +20,24 @@
     "Alibaba",
     "F2E",
     "Guidelines"
+  ],
+  "author": {
+    "name": "Sabo",
+    "email": "bowei.jbw@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "cstyles",
+      "email": "cstyles@qq.com"
+    },
+    {
+      "name": "lakerswgq",
+      "email": "lakerswgq@gmail.com"
+    },
+    {
+      "name": "undead25",
+      "email": "shuanglong525@gmail.com"
+    }
   ],
   "license": "MIT",
   "devDependencies": {

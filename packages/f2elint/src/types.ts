@@ -64,7 +64,8 @@ export interface ScanReport {
 
 export interface InitOptions {
   cwd: string;
-  checkVersionUpdate?: boolean;
+  checkSettingCompatibility: boolean;
+  checkVersionUpdate: boolean;
   eslintType?: string;
   enableStylelint?: boolean;
   enableMarkdownlint?: boolean;
