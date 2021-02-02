@@ -5,13 +5,12 @@ import { PKG_NAME } from './utils/constants';
 import printReport from './utils/printReport';
 import type { InitOptions, ScanOptions } from './types';
 
-type IInitOptions = Omit<Omit<InitOptions, 'checkSettingCompatibility'>, 'checkVersionUpdate'>;
+type IInitOptions = Omit<InitOptions, 'checkVersionUpdate'>;
 
 export default {
   async init(options: IInitOptions) {
     return await init({
       ...options,
-      checkSettingCompatibility: false,
       checkVersionUpdate: false,
     });
   },

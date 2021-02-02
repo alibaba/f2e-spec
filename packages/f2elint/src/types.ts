@@ -64,11 +64,17 @@ export interface ScanReport {
 
 export interface InitOptions {
   cwd: string;
-  checkSettingCompatibility: boolean;
+  // 是否检查并升级 f2elint 的版本
   checkVersionUpdate: boolean;
+  // 是否需要自动重写 lint 配置
+  rewriteConfig?: boolean;
+  // eslint 类型
   eslintType?: string;
+  // 是否启用 stylelint
   enableStylelint?: boolean;
+  // 是否启用 markdownlint
   enableMarkdownlint?: boolean;
+  // 是否启用 prettier
   enablePrettier?: boolean;
 }
 

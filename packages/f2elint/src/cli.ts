@@ -3,12 +3,12 @@ import path from 'path';
 import fs from 'fs-extra';
 import { execSync } from 'child_process';
 import { program } from 'commander';
+import spawn from 'cross-spawn';
 import ora from 'ora';
 import glob from 'glob';
 import init from './actions/init';
 import update from './actions/update';
 import scan from './actions/scan';
-import exec from './actions/exec';
 import printReport from './utils/printReport';
 import { getCommitFiles, getAmendFiles } from './utils/git';
 import generateTemplate from './utils/generateTemplate';
@@ -54,7 +54,6 @@ program
       await init({
         cwd,
         checkVersionUpdate: true,
-        checkSettingCompatibility: true,
       });
     }
   });
@@ -95,7 +94,22 @@ program
   });
 
 program
-  .command('commit-scan')
+  .command('commit-msg-scan')
+  .description('commit message 检查: git commit 时对 commit message 进行检查')
+  .action(() => {
+    const result = spawn.sync(
+      path.resolve(cwd, `./node_modules/${PKG_NAME}/node_modules/.bin/commitlint`),
+      ['-E', 'HUSKY_GIT_PARAMS'],
+      { stdio: 'inherit' },
+    );
+
+    if (result.status !== 0) {
+      process.exit(result.status);
+    }
+  });
+
+program
+  .command('commit-file-scan')
   .description('代码提交检查: git commit 时对提交代码进行规约问题扫描')
   .option('-s, --strict', '严格模式，对 warn 和 error 问题都卡口，默认仅对 error 问题卡口')
   .action(async (cmd) => {
@@ -145,12 +159,6 @@ program
     checking.succeed();
     if (results.length > 0) printReport(results, true);
   });
-
-program
-  .command('exec <linter>')
-  .allowUnknownOption()
-  .description(`执行 eslint / stylelint / commitlint 等 ${PKG_NAME} 依赖包命令`)
-  .action((linter, cmd) => exec(linter, cmd));
 
 program
   .command('update')

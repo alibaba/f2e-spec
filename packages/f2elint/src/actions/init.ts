@@ -110,13 +110,11 @@ export default async (options: InitOptions) => {
     config.enablePrettier = await chooseEnablePrettier();
   }
 
-  if (options.checkSettingCompatibility && !isTest) {
-    log.info(`Step ${++step}. 检查并处理项目中可能存在的依赖和配置冲突`);
-    pkg = await conflictResolve(cwd);
-    log.success(`Step ${step}. 已完成项目依赖和配置冲突检查处理 :D`);
-  }
-
   if (!isTest) {
+    log.info(`Step ${++step}. 检查并处理项目中可能存在的依赖和配置冲突`);
+    pkg = await conflictResolve(cwd, options.rewriteConfig);
+    log.success(`Step ${step}. 已完成项目依赖和配置冲突检查处理 :D`);
+
     log.info(`Step ${++step}. 安装依赖`);
     const npm = await npmType;
     spawn.sync(
@@ -145,8 +143,8 @@ export default async (options: InitOptions) => {
   log.info(`Step ${++step}. 配置 git commit 卡点`);
   if (!pkg.husky) pkg.husky = {};
   if (!pkg.husky.hooks) pkg.husky.hooks = {};
-  pkg.husky.hooks['commit-msg'] = `${PKG_NAME} exec commitlint -E HUSKY_GIT_PARAMS`;
-  pkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-scan`;
+  pkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-file-scan`;
+  pkg.husky.hooks['commit-msg'] = `${PKG_NAME} commit-msg-scan -E HUSKY_GIT_PARAMS`;
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
   log.success(`Step ${step}. 配置 git commit 卡点成功 :D`);
 

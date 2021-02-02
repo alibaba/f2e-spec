@@ -34,7 +34,7 @@ const checkReWriteConfig = (cwd: string) => {
     .filter((filename) => fs.existsSync(path.resolve(cwd, filename)));
 };
 
-export default async (cwd: string) => {
+export default async (cwd: string, rewriteConfig?: boolean) => {
   const pkgPath = path.resolve(cwd, 'package.json');
   const pkg: PKG = fs.readJSONSync(pkgPath);
   const dependencies = [].concat(
@@ -65,13 +65,17 @@ export default async (cwd: string) => {
       log.warn(JSON.stringify(reWriteConfig, null, 2));
     }
 
-    const { isOverWrite } = await inquirer.prompt({
-      type: 'confirm',
-      name: 'isOverWrite',
-      message: '请确认是否继续：',
-    });
+    if (typeof rewriteConfig === 'undefined') {
+      const { isOverWrite } = await inquirer.prompt({
+        type: 'confirm',
+        name: 'isOverWrite',
+        message: '请确认是否继续：',
+      });
 
-    if (!isOverWrite) process.exit(0);
+      if (!isOverWrite) process.exit(0);
+    } else if (!reWriteConfig) {
+      process.exit(0);
+    }
   }
 
   // 删除配置文件

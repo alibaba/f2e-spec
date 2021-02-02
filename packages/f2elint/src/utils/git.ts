@@ -13,6 +13,7 @@ export const getCommitFiles = async (options: execa.Options = {}): Promise<strin
         '--staged', // 比较 暂缓区 与 last commit 的差别
         '--diff-filter=ACMR', // 只显示 added、copied、modified、renamed
         '--name-only', // 只显示更改文件的名称
+        '--ignore-submodules',
       ],
       {
         ...options,

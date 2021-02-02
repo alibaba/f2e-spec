@@ -1,5 +1,12 @@
 # 更新日志
 
+## 1.0.0
+
+### 优化
+
+- 使用 TypeScript 进行重构
+- 优化 commit 时检查，新增 commit-msg-scan 以及 commit-file-scan 命令
+
 ## 0.4.4 (2020-12-09)
 
 ### 修复
