@@ -1,11 +1,16 @@
 # 更新日志
 
-## 1.0.0
+## 1.0.0 (2021-02-03)
+
+### 新增
+
+- 增加对 Prettier 的集成，`f2elint init` 时用户可选择使用 Prettier 格式化代码
+- 新增 `f2elint commit-file-scan` 和 `f2elint commit-msg-scan` 两个命令供 husky 调用，移除了 lint-staged 依赖
 
 ### 优化
 
-- 使用 TypeScript 进行重构
-- 优化 commit 时检查，新增 commit-msg-scan 以及 commit-file-scan 命令
+- 使用 TypeScript 重构了代码
+- 所有依赖升级到最新
 
 ## 0.4.4 (2020-12-09)
 
