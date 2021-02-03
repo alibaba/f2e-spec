@@ -17,6 +17,9 @@ export default {
     console.error(red(text));
   },
   result(text: string, pass: boolean) {
-    console.info(blue(`[${PKG_NAME}] ${text}`), pass ? green(UNICODE.success) : red(UNICODE.failure));
+    console.info(
+      blue(`[${PKG_NAME}] ${text}`),
+      pass ? green(UNICODE.success) : red(UNICODE.failure),
+    );
   },
 };
