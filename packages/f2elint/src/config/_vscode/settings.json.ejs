@@ -1,0 +1,17 @@
+{
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
+  <%_ if (enableStylelint) { _%>
+  "stylelint.validate": [<%- stylelintExt.map((ext) => `"${ext.replace(/^\./, '')}"`).join(',') %>],
+  <%_ } _%>
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true<%= enableStylelint || enableMarkdownlint ? ',' : ''%>
+    <%_ if (enableStylelint) { _%>
+    "source.fixAll.stylelint": true<%= enableMarkdownlint ? ',' : ''%>
+    <%_ } _%>
+    <%_ if (enableMarkdownlint) { _%>
+    "source.fixAll.markdownlint": true
+    <%_ } _%>
+  },
+  "editor.formatOnSave": <%= enablePrettier ? 'true' : 'false' %>,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

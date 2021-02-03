@@ -1,56 +1,50 @@
 const path = require('path');
-const fs = require('fs');
+const fs = require('fs-extra');
 const execa = require('execa');
-
-const { fixtureFolder } = require('./const');
-
+const inquirer = require('inquirer');
 const packageJson = require('../package.json');
 
-const cli = (args, options) => execa(path.resolve(__dirname, '../cli.js'), args, options);
+const cli = (args, options) => {
+  return execa('node', [path.resolve(__dirname, '../lib/cli.js'), ...args], options);
+};
 
-// folder with test files
-const folderWithWarning = path.resolve(__dirname, './fixtures/warning');
-
-test.only('--version should output right version', async () => {
+test('--version should output right version', async () => {
   const { stdout } = await cli(['--version']);
-
   expect(stdout).toBe(packageJson.version);
 });
 
 describe(`'scan' command`, () => {
+  const dir = path.resolve(__dirname, './fixtures/warning');
 
   test(`should output rule problems`, async () => {
-    const { stdout } = await cli(['scan', '--no-ignore', '--include', folderWithWarning]);
-  
+    const { stdout } = await cli(['scan', '--no-ignore', '--include', dir]);
     expect(stdout).toMatch(/\d+ problem/);
-  })
+  });
 
   test(`should ignore warning`, async () => {
-    const { stdout } = await cli(['scan', '--no-ignore', '--quiet', '--include', folderWithWarning]);
+    const { stdout } = await cli(['scan', '--no-ignore', '--quiet', '--include', dir]);
     expect(stdout).toMatch(/no problems/);
-  })
-})
+  });
+});
 
 describe(`'fix' command`, () => {
-  const autofixFolder = path.resolve(__dirname, './fixtures/autofix');
-  const tempFilePath = path.join(autofixFolder, 'result/temp.js');
-  const errorCodeText = fs.readFileSync(`${autofixFolder}/semi-error.js`).toString();
-  const expectedCodeText = fs.readFileSync(`${autofixFolder}/semi-expected.js`).toString();
+  const dir = path.resolve(__dirname, './fixtures/autofix');
+  const outputFilePath = path.resolve(dir, './temp/temp.js');
+  const errorFileContent = fs.readFileSync(path.resolve(dir, './semi-error.js'), 'utf8');
+  const expectedFileContent = fs.readFileSync(path.resolve(dir, './semi-expected.js'), 'utf8');
 
-  
   beforeEach(() => {
-    fs.writeFileSync(tempFilePath, errorCodeText);
-  })
+    fs.outputFileSync(outputFilePath, errorFileContent, 'utf8');
+  });
 
   test('should autofix problematic code', async () => {
-    const res = await cli(['fix', '--no-ignore', '--include', path.dirname(tempFilePath)]);
-    const resultCodeText = fs.readFileSync(tempFilePath).toString();
-    expect(resultCodeText).toEqual(expectedCodeText);
+    await cli(['fix', '--include', path.dirname(`${dir}/result`)]);
+    expect(fs.readFileSync(outputFilePath, 'utf8')).toEqual(expectedFileContent);
   });
 
   afterEach(() => {
-    fs.unlinkSync(tempFilePath);
-  })
+    fs.removeSync(`${dir}/temp`);
+  });
 });
 
 describe(`'exec' command`, () => {
@@ -59,16 +53,15 @@ describe(`'exec' command`, () => {
   test(`'exec eslint' should work as expected`, async () => {
     const { stdout } = await cli(['exec', 'eslint', '--version']);
     expect(stdout).toMatch(semverRegex);
-  })
+  });
 
   test(`'exec stylelint' should work as expected`, async () => {
     const { stdout } = await cli(['exec', 'stylelint', '--version']);
     expect(stdout).toMatch(semverRegex);
-  })
+  });
 
   test(`'exec commitlint' should work as expected`, async () => {
     const { stdout } = await cli(['exec', 'commitlint', '--version']);
     expect(stdout).toMatch(semverRegex);
-  })
-})
-
+  });
+});

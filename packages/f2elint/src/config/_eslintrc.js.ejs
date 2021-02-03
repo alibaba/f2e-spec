@@ -1,0 +1,17 @@
+module.exports = {
+  extends: [
+    '<%= eslintType === 'index' ? 'eslint-config-ali' : `eslint-config-ali/${eslintType}` %>',
+    <%_ if (enablePrettier) { _%>
+    "prettier",
+    <%_ if (/typescript/.test(eslintType)) { _%>
+    'prettier/@typescript-eslint',
+    <%_ } _%>
+    <%_ if (/react/.test(eslintType)) { _%>
+    'prettier/react',
+    <%_ } _%>
+    <%_ if (/vue/.test(eslintType)) { _%>
+    'prettier/vue',
+    <%_ } _%>
+    <%_ } _%>
+  ],
+};

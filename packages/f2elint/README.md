@@ -50,9 +50,9 @@ npm install f2elint -g
   - `.prettierrc.js`：符合规约的 [Prettier 配置](https://prettier.io/docs/en/configuration.html)
   - `.editorconfig`：符合规约的 [editorconfig](https://editorconfig.org/)
   - `.vscode/extensions.json`：写入规约相关的 [VSCode 插件推荐](https://code.visualstudio.com/docs/editor/extension-gallery#_workspace-recommended-extensions)，包括 ESLint、stylelint、markdownlint、prettier 等
-  - `.vscode/settings.json`：写入规约相关的 [VSCode 设置](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)，设置 ESLint 和 stylelint 插件的 validate 及**保存时自动运行 fix**，同时将 prettier-vscode 插件设置为各前端语言的 defaultFormatter（但保存时不会执行，需要手动调用 `CMD + Shift + P -> Format Document` 执行。这样设置的原因是我们推荐在保存时使用 ESLint 和 stylelint 的 fix 进行格式化，如果遇到少部分格式不符合预期的情况，再手动调用 prettier）
+  - `.vscode/settings.json`：写入规约相关的 [VSCode 设置](https://code.visualstudio.com/docs/getstarted/settings#_settings-file-locations)，设置 ESLint 和 stylelint 插件的 validate 及**保存时自动运行 fix**，如果选择使用 Prettier，会同时将 prettier-vscode 插件设置为各前端语言的 defaultFormatter，并配置**保存时自动格式化**
   - `f2elint.config.js`：f2elint 包的一些配置，如启用的功能等
-- 配置 git commit 卡口：使用 [husky](https://www.npmjs.com/package/husky) + [lint-staged](https://www.npmjs.com/package/lint-staged) 设置代码提交卡口，在 git commit 时会运行 `f2elint scan`，若有 error 级别的问题则阻止提交
+- 配置 git commit 卡口：使用 [husky](https://www.npmjs.com/package/husky) 设置代码提交卡口，在 git commit 时会运行 `f2elint commit-file-scan` 和 `f2elint commit-msg-scan` 分别对提交文件和提交信息进行规约检查。`f2elint commit-file-scan` 默认仅对 error 问题卡口，如果你想对 warn 问题也卡口，可以增加 `--strict` 参数以开启严格模式
 
 > 注 1：如果项目已经配置过 ESLint、stylelint 等 Linter，执行 `f2elint init` 将会提示存在冲突的依赖和配置，并在得到确认后进行覆盖：
 > ![conflict resolve](https://img.alicdn.com/tfs/TB1HWvjhsieb18jSZFvXXaI3FXa-1538-749.png)
@@ -70,8 +70,9 @@ npm install f2elint -g
 - `-q` `--quiet` 仅报告 error 级别的问题
 - `-o` `--output-report` 输出扫描出的规约问题日志
 - `-i` `--include <dirpath>` 指定要进行规约扫描的目录
+- `--no-ignore` 忽略 eslint 的 ignore 配置文件和 ignore 规则
 
-> 注 1：事实上，你可以在任意目录执行 `f2elint scan`，F2ELint 会根据文件类型、package.json 等特征嗅探项目类型。但我们还是推荐在执行过 `f2elint init` 的项目根目录执行 `f2elint scan`，以得到最准确的扫描结果。
+> 注 1：事实上，你可以在任意目录执行 `f2elint scan`，F2ELint 会根据文件类型、JSON 等特征嗅探项目类型。但我们还是推荐在执行过 `f2elint init` 的项目根目录执行 `f2elint scan`，以得到最准确的扫描结果。
 >
 > 注 2：F2ELint 会根据项目内有无 eslint 和 stylelint 配置文件判断使用项目的配置文件还是 F2ELint 默认配置进行扫描。若使用项目的，在未安装依赖时会帮其安装（执行 npm i）。若使用项目配置扫描失败，则使用默认配置扫描
 
@@ -84,8 +85,21 @@ npm install f2elint -g
 支持下列参数：
 
 - `-i` `--include <dirpath>` 指定要进行修复扫描的目录
+- `--no-ignore` 忽略 eslint 的 ignore 配置文件和 ignore 规则
 
 注意请 review 下修复前后的代码，以免工具误修的情况。
+
+#### `f2elint commit-file-scan` 提交文件扫描
+
+在 git commit 时对提交文件进行规约问题扫描，需配合 git 的 pre-commit 钩子使用。
+
+支持下列参数：
+
+- `-s` `--strict` 严格模式，对 warn 和 error 问题都卡口，默认仅对 error 问题卡口
+
+#### `f2elint commit-msg-scan` 提交信息扫描
+
+git commit 时对 commit message 的格式进行扫描（使用 commitlint），需配合 [husky](https://www.npmjs.com/package/husky) 的 commit-msg 钩子使用。
 
 ## Node.js API 使用
 
@@ -108,6 +122,7 @@ await f2elint.init({
   eslintType: 'react',
   enableStylelint: true,
   enableMarkdownlint: true,
+  enablePrettier: true,
 });
 ```
 
@@ -119,6 +134,7 @@ config参数如下：
 | eslintType | ESLintType | - | 语言和框架类型，如果不配置，等同于 f2elint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
 | enableStylelint | boolean | - | 是否启用 stylelint，如果不配置，等同于 f2elint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
 | enableMarkdownlint | boolean | - | 是否启用 markdownlint，如果不配置，等同于 f2elint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
+| enablePrettier | boolean | - | 是否启用 Prettier |
 
 ##### ESLintType
 
@@ -162,6 +178,7 @@ F2ELint 基于一份配置进行扫描（但你也可以零配置使用），支
 | -------- | -------- | -------- | -------- |
 | enableStylelint | boolean | true | 是否启用 stylelint |
 | enableMarkdownlint | boolean | true | 是否启用 markdownlint |
+| enablePrettier | boolean | - | 是否启用 Prettier |
 
 F2ELint 会读取执行目录下的 `f2elint.config.js` 作为配置文件。`f2elint init` 会在执行目录下新增如下的 `f2elint.config.js` 文件：
 
@@ -169,5 +186,6 @@ F2ELint 会读取执行目录下的 `f2elint.config.js` 作为配置文件。`f2
 module.exports = {
   enableStylelint: true,
   enableMarkdownlint: true,
+  enablePrettier: true,
 };
 ```
