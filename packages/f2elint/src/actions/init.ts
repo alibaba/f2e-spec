@@ -119,15 +119,14 @@ export default async (options: InitOptions) => {
     const npm = await npmType;
     spawn.sync(
       npm,
-      ['i', '-D', PKG_NAME, ...(config.enablePrettier ? ['eslint-config-prettier'] : [])],
+      ['i', '-D', PKG_NAME],
       { stdio: 'inherit', cwd },
     );
+    log.success(`Step ${step}. 安装依赖成功 :D`);
   }
 
-  // 更新 dependencies
+  // 更新 pkg.json
   pkg = fs.readJSONSync(pkgPath);
-  log.success(`Step ${step}. 安装依赖成功 :D`);
-
   // 在 `package.json` 中写入 `scripts`。
   if (!pkg.scripts) {
     pkg.scripts = {};

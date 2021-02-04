@@ -1,5 +1,11 @@
 # 更新日志
 
+## 1.0.3 (2021-02-04)
+
+### 修复
+
+- `f2elint init` 不再向 package.json 写入 devDependencies.eslint-config-prettier
+
 ## 1.0.2 (2021-02-04)
 
 ### 修复
