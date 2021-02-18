@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.1.0 (2021-02-18)
+- default exports 改为 named exports，方便在 commonjs 环境下引用
+- fix test case
+
 ## 1.0.3 (2021-02-04)
 
 ### 修复
