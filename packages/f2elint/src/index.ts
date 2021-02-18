@@ -12,7 +12,7 @@ export const init = async (options: IInitOptions) => {
     ...options,
     checkVersionUpdate: false,
   });
-}
+};
 
 export const scan = async (options: ScanOptions) => {
   const checking = ora();
@@ -31,4 +31,4 @@ export const scan = async (options: ScanOptions) => {
   if (results.length > 0) printReport(results, false);
 
   return report;
-}
+};
