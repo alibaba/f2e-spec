@@ -1,6 +1,8 @@
 const path = require('path');
 const fs = require('fs-extra');
-const lint = require('../lib/index').default;
+const f2elint = require('../lib/index');
+
+const { init } = f2elint;
 
 describe('init', () => {
   const templatePath = path.resolve(__dirname, './fixtures/template/init');
@@ -12,7 +14,7 @@ describe('init', () => {
   });
 
   test('node api init should work as expected', async () => {
-    await lint.init({
+    await init({
       cwd: outputPath,
       checkVersionUpdate: false,
       eslintType: 'index',

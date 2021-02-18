@@ -3,6 +3,8 @@
     "rootDir": "./src",
     "baseUrl": "./src",
     "outDir": "./lib",
+    "target": "ES5",
+    "module": "commonjs",
     "esModuleInterop": true,
     "removeComments": true,
     "resolveJsonModule": true,
@@ -10,6 +12,7 @@
     "downlevelIteration": true,
     "types": [
       "node"
-    ]
-  }
+    ],
+  },
+  "include": ["src"],
 }

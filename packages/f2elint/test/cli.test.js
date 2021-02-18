@@ -38,7 +38,9 @@ describe(`'fix' command`, () => {
   });
 
   test('should autofix problematic code', async () => {
-    await cli(['fix', '--include', path.dirname(`${dir}/result`)]);
+    await cli(['fix'], {
+      cwd: path.dirname(`${dir}/result`)
+    });
     expect(fs.readFileSync(outputFilePath, 'utf8')).toEqual(expectedFileContent);
   });
 
