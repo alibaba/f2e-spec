@@ -1,5 +1,20 @@
 # 更新日志
 
+## 12.0.1 (2021-02-24)
+
+### 文档
+
+- 修复 v12 readme 中依赖版本未修改改的问题
+
+## 12.0.0 (2021-02-03)
+
+### 变更
+
+- 升级依赖
+  - eslint [v6 -> v7](https://eslint.org/docs/user-guide/migrating-to-7.0.0)
+  - eslint-plugin-vue v6 -> v7
+  - typescript v3 -> v4
+
 ## 11.4.1 (2020-12-03)
 
 ### 文档
