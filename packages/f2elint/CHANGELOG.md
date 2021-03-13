@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.1.2 (2021-03-13)
+
+- fix: 修复 init 生成 stylelintignore 和 markdownlintignore 文件的空格问题 
+
 ## 1.1.1 (2021-02-24)
 
 - 升级 eslint-config-ali 版本至 v12
