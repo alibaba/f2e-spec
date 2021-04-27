@@ -1,5 +1,5 @@
 import { createElement } from 'rax';
-import Image from 'rax-image';
+import Text from 'rax-text';
 
 import './index.css';
 
@@ -9,15 +9,10 @@ interface LogoProps {
 
 export default (props: LogoProps) => {
   const { uri } = props;
-  const source = { uri };
+  const test = ['hello', 'world', uri];
   return (
-    <Image
-      style={{
-        width: '200rpx',
-        height: '180rpx',
-        marginBottom: '20rpx',
-      }}
-      source={source}
-    />
+    <Text x-for={item in test} key={item}>
+      {item}
+    </Text>
   );
 };
