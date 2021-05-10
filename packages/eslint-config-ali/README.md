@@ -87,7 +87,7 @@ npm install --save-dev eslint-plugin-jsx-a11y
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 babel-eslint@^10.1.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4
+npm install --save-dev eslint-config-ali eslint@^7.15.0 babel-eslint@^10.1.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 eslint-plugin-jsx-plus@^0.1.0
 ```
 
 #### 使用
@@ -221,7 +221,7 @@ npm install --save-dev eslint-plugin-jsx-a11y
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 eslint-plugin-jsx-plus@^0.1.0 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
 ```
 
 
