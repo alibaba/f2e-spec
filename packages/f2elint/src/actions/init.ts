@@ -73,7 +73,7 @@ export default async (options: InitOptions) => {
   const cwd = options.cwd || process.cwd();
   const isTest = process.env.NODE_ENV === 'test';
   const checkVersionUpdate = options.checkVersionUpdate || false;
-  const disableAutoInstall = options.disableAutoInstall || false;
+  const disableNpmInstall = options.disableNpmInstall || false;
   const config: Record<string, any> = {};
   const pkgPath = path.resolve(cwd, 'package.json');
   let pkg: PKG = fs.readJSONSync(pkgPath);
@@ -116,7 +116,7 @@ export default async (options: InitOptions) => {
     pkg = await conflictResolve(cwd, options.rewriteConfig);
     log.success(`Step ${step}. 已完成项目依赖和配置冲突检查处理 :D`);
 
-    if(!disableAutoInstall){
+    if(!disableNpmInstall){
       log.info(`Step ${++step}. 安装依赖`);
       const npm = await npmType;
       spawn.sync(

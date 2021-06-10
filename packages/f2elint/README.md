@@ -123,7 +123,7 @@ await f2elint.init({
   enableStylelint: true,
   enableMarkdownlint: true,
   enablePrettier: true,
-  disableAutoInstall: false
+  disableNpmInstall: false
 });
 ```
 
@@ -136,7 +136,7 @@ config参数如下：
 | enableStylelint | boolean | - | 是否启用 stylelint，如果不配置，等同于 f2elint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
 | enableMarkdownlint | boolean | - | 是否启用 markdownlint，如果不配置，等同于 f2elint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
 | enablePrettier | boolean | - | 是否启用 Prettier |
-| disableAutoInstall | boolean | false | 是否禁用自动在初始化完成后安装依赖 |
+| disableNpmInstall | boolean | false | 是否禁用自动在初始化完成后安装依赖 |
 
 ##### ESLintType
 

@@ -77,7 +77,7 @@ export interface InitOptions {
   // 是否启用 prettier
   enablePrettier?: boolean;
   // 是否禁用自动在初始化完成后安装依赖
-  disableAutoInstall?: boolean;
+  disableNpmInstall?: boolean;
 }
 
 export interface IGetLintConfig {
