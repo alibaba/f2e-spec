@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.2.0 (2021-03-13)
+
+- feat: init 增加 disableNpmInstall 参数，以支持禁用自动在初始化完成后安装依赖
+
 ## 1.1.2 (2021-03-13)
 
 - fix: 修复 init 生成 stylelintignore 和 markdownlintignore 文件的空格问题 
