@@ -1,5 +1,23 @@
 # 更新日志
 
+## 12.2.1 (2021-08-11)
+
+### 变更
+
+- TS 规范 parserOptions 加回 createDefaultProgram 配置，兼容所有 tsconfig 配置。已知多包仓库 ESLint 检测速度会变慢。若检测速度非常慢，可考虑增量扫描或者添加下面配置加速：
+
+```js
+{
+  parserOptions: {
+    project: [],
+    createDefaultProgram: false,
+  },
+  rules: {
+    '@typescript-eslint/dot-notation': 'off'
+  }
+}
+```
+
 ## 12.2.0 (2021-08-05)
 
 ### 变更
