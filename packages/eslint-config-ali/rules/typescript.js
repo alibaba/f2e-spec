@@ -22,7 +22,6 @@ module.exports = {
   },
   parserOptions: {
     project: './tsconfig.json', // default project config
-    createDefaultProgram: true, // 兼容未在 tsconfig.json 中 included 的文件，如 *.js
     extraFileExtensions: ['.vue'],
   },
   rules: {
