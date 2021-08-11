@@ -4,7 +4,7 @@
 
 ### 变更
 
-- TS 规范 parserOptions 加回 createDefaultProgram 配置，兼容所有 tsconfig 配置。已知多包仓库 ESLint 检测速度会变慢。若检测速度非常慢，可考虑增量扫描或者添加下面配置加速：
+- TS 规范 parserOptions 加回 createDefaultProgram 配置，兼容所有 tsconfig 配置。已知多包仓库 ESLint 检测速度会变慢。若检测速度非常慢，可考虑增量扫描或者使用下面配置加速：
 
 ```js
 {

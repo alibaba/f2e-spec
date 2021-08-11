@@ -25,7 +25,7 @@ module.exports = {
     createDefaultProgram: true, // 兼容未在 tsconfig.json 中 provided 的文件
     extraFileExtensions: ['.vue'],
   },
-  rules: {  
+  rules: {
     /**
      * 【强制】将重载的函数写在一起以增加代码可读性
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/adjacent-overload-signatures.md
