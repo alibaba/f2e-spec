@@ -119,12 +119,6 @@ module.exports = {
     // @unessential
     'react/no-deprecated': 'error',
 
-    // 不要在 componentDidMount 使用 setState。
-    'react/no-did-mount-set-state': 'warn',
-
-    // 不要在 componentDidUpdate 使用 setState。
-    'react/no-did-update-set-state': 'warn',
-
     // 不要在 componentWillUpdate 内改变 state 值
     'react/no-will-update-set-state': 'error',
 
