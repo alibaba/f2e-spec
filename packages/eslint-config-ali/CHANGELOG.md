@@ -18,6 +18,13 @@
 }
 ```
 
+## 12.2.2 (2021-09-14)
+
+### 删除
+
+  - `react/no-did-mount-set-state`
+  - `react/no-did-update-set-state`
+
 ## 12.2.0 (2021-08-05)
 
 ### 变更
