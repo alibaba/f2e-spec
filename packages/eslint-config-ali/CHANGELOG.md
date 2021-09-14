@@ -1,5 +1,12 @@
 # 更新日志
 
+## 12.2.2 (2021-09-14)
+
+### 删除
+
+  - `react/no-did-mount-set-state`
+  - `react/no-did-update-set-state`
+
 ## 12.2.1 (2021-08-12)
 
 ### 变更
