@@ -1,5 +1,5 @@
 const path = require('path');
-const docsUrl = require('../docsUrl');
+const docsUrl = require('../docs-url');
 
 const RULE_NAME = 'no-js-in-ts-project';
 
