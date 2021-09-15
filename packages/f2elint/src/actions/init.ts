@@ -3,10 +3,10 @@ import fs from 'fs-extra';
 import inquirer from 'inquirer';
 import spawn from 'cross-spawn';
 import update from './update';
-import npmType from '../utils/npmType';
+import npmType from '../utils/npm-type';
 import log from '../utils/log';
-import conflictResolve from '../utils/conflictResolve';
-import generateTemplate from '../utils/generateTemplate';
+import conflictResolve from '../utils/conflict-resolve';
+import generateTemplate from '../utils/generate-template';
 import { PROJECT_TYPES, PKG_NAME } from '../utils/constants';
 import type { InitOptions, PKG } from '../types';
 

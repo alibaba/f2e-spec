@@ -1,7 +1,7 @@
 import { execSync } from 'child_process';
 import ora from 'ora';
 import log from '../utils/log';
-import npmType from '../utils/npmType';
+import npmType from '../utils/npm-type';
 import { PKG_NAME, PKG_VERSION } from '../utils/constants';
 
 /**
