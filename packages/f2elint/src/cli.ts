@@ -9,10 +9,10 @@ import glob from 'glob';
 import init from './actions/init';
 import update from './actions/update';
 import scan from './actions/scan';
-import printReport from './utils/printReport';
+import printReport from './utils/print-report';
 import { getCommitFiles, getAmendFiles } from './utils/git';
-import generateTemplate from './utils/generateTemplate';
-import npmType from './utils/npmType';
+import generateTemplate from './utils/generate-template';
+import npmType from './utils/npm-type';
 import log from './utils/log';
 import { PKG_NAME, PKG_VERSION } from './utils/constants';
 
