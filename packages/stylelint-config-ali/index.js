@@ -66,12 +66,7 @@ module.exports = {
     'block-opening-brace-space-before': 'always',
     'block-opening-brace-space-after': 'always-single-line',
     'color-hex-case': 'lower',
-    'color-hex-length': [
-      'short',
-      {
-        severity: 'error',
-      },
-    ],
+    'color-hex-length': 'short',
     'comment-whitespace-inside': 'always',
     'declaration-colon-space-before': 'never',
     'declaration-colon-space-after': 'always',
