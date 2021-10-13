@@ -1,5 +1,8 @@
 # 更新日志
 
+## 12.3.0 (2021-10-13)
+- 更新 `@typescript-eslint/eslint-plugin` 及 `@typescript-eslint/parser` 版本（[说明](https://github.com/typescript-eslint/typescript-eslint/issues/3738)），支持 ESLint 8.x
+
 ## 12.2.2 (2021-09-14)
 
 ### 删除
