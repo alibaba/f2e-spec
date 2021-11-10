@@ -21,17 +21,7 @@ export const getLintConfig = (opts: ScanOptions): LintOptions => {
   // 使用默认的 lint 配置
   const lintConfigFiles = glob.sync('.markdownlint(.@(yaml|yml|json))', { cwd });
   if (lintConfigFiles.length === 0) {
-    try {
-      // markdownlint-config-ali 与 f2elint 位于同一级 node_modules
-      lintConfig.config = markdownLint.readConfigSync(
-        path.resolve(__dirname, '../../../markdownlint-config-ali/index.json'),
-      );
-    } catch (e) {
-      // markdownlint-config-ali 位于 f2elint 下面的 node_modules
-      lintConfig.config = markdownLint.readConfigSync(
-        path.resolve(__dirname, '../../node_modules/markdownlint-config-ali/index.json'),
-      );
-    }
+    lintConfig.config = markdownLint.readConfigSync(require.resolve('markdownlint-config-ali'));
   } else {
     lintConfig.config = markdownLint.readConfigSync(path.resolve(cwd, lintConfigFiles[0]));
   }
