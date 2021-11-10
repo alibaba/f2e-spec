@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.2.2 (2021-11-10)
+
+- 修复 markdownlint-config-ali 导入错误
+
 ## 1.2.1 (2021-09-15)
 
 - 统一项目文件命名规范
@@ -10,7 +14,7 @@
 
 ## 1.1.2 (2021-03-13)
 
-- fix: 修复 init 生成 stylelintignore 和 markdownlintignore 文件的空格问题 
+- fix: 修复 init 生成 stylelintignore 和 markdownlintignore 文件的空格问题
 
 ## 1.1.1 (2021-02-24)
 
