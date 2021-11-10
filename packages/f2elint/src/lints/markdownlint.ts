@@ -2,6 +2,7 @@ import path from 'path';
 import fs from 'fs-extra';
 import glob from 'glob';
 import markdownLint from 'markdownlint';
+import markdownLintConfigAli from 'markdownlint-config-ali';
 import markdownLintRuleHelpers from 'markdownlint-rule-helpers';
 import type { ScanOptions, ScanResult } from '../types';
 
@@ -21,7 +22,7 @@ export const getLintConfig = (opts: ScanOptions): LintOptions => {
   // 使用默认的 lint 配置
   const lintConfigFiles = glob.sync('.markdownlint(.@(yaml|yml|json))', { cwd });
   if (lintConfigFiles.length === 0) {
-    lintConfig.config = require('markdownlint-config-ali');
+    lintConfig.config = markdownLintConfigAli;
   } else {
     lintConfig.config = markdownLint.readConfigSync(path.resolve(cwd, lintConfigFiles[0]));
   }
