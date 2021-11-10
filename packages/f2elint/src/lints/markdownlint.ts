@@ -21,7 +21,7 @@ export const getLintConfig = (opts: ScanOptions): LintOptions => {
   // 使用默认的 lint 配置
   const lintConfigFiles = glob.sync('.markdownlint(.@(yaml|yml|json))', { cwd });
   if (lintConfigFiles.length === 0) {
-    lintConfig.config = markdownLint.readConfigSync(require.resolve('markdownlint-config-ali'));
+    lintConfig.config = require('markdownlint-config-ali');
   } else {
     lintConfig.config = markdownLint.readConfigSync(path.resolve(cwd, lintConfigFiles[0]));
   }
