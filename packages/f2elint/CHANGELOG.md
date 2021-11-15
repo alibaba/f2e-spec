@@ -1,5 +1,8 @@
 # 更新日志
 
+## 1.2.3 (2021-11-16)
+- 修复 scan 不显示 fatal error, close #48
+
 ## 1.2.2 (2021-11-10)
 
 - 修复 markdownlint-config-ali 导入错误

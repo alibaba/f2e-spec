@@ -160,8 +160,9 @@ export const formatResults = (results: ESLint.LintResult[], quiet: boolean): Sca
               message: message.replace(/([^ ])\.$/u, '$1'),
               errored: fatal || severity === 2,
             };
-          })
-          .filter(({ rule, errored }) => rule && (quiet ? errored : true)),
+          }) // dont check ruleId, which can be null
+             // https://eslint.org/docs/developer-guide/nodejs-api.html#-lintmessage-type
+          .filter(({ errored }) => (quiet ? errored : true)),
       }),
     );
 };
