@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.3.0 (2021-11-15)
+
+- 将 babel-eslint 替换为 @babel/eslint-parser
+
 ## 1.2.2 (2021-11-10)
 
 - 修复 markdownlint-config-ali 导入错误
