@@ -3,6 +3,7 @@
 ## 1.3.0 (2021-11-15)
 
 - 将 babel-eslint 替换为 @babel/eslint-parser
+- 修复 scan 不显示 fatal error, close #48
 
 ## 1.2.2 (2021-11-10)
 

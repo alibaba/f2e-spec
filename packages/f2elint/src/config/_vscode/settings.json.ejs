@@ -4,13 +4,14 @@
   "stylelint.validate": [<%- stylelintExt.map((ext) => `"${ext.replace(/^\./, '')}"`).join(',') %>],
   <%_ } _%>
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true<%= enableStylelint || enableMarkdownlint ? ',' : ''%>
+    "source.fixAll.eslint": true,
     <%_ if (enableStylelint) { _%>
-    "source.fixAll.stylelint": true<%= enableMarkdownlint ? ',' : ''%>
+    "source.fixAll.stylelint": true,
     <%_ } _%>
     <%_ if (enableMarkdownlint) { _%>
-    "source.fixAll.markdownlint": true
+    "source.fixAll.markdownlint": true,
     <%_ } _%>
+    "source.organizeImports": true
   },
   "editor.formatOnSave": <%= enablePrettier ? 'true' : 'false' %>,
   "editor.defaultFormatter": "esbenp.prettier-vscode"
