@@ -3,4 +3,9 @@ module.exports = {
     './index',
     './rules/rax',
   ].map(require.resolve),
+  parserOptions: {
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
+  },
 };

@@ -39,7 +39,8 @@
   "scripts": {
     "lint": "eslint ./",
     "test": "mocha ./test/*.test.js --timeout 5000",
-    "print-config": "eslint --print-config ./index.js > ./print-config.json"
+    "print-config": "eslint --print-config ./index.js > ./print-config.json",
+    "prepublishOnly": "npm run test"
   },
   "peerDependencies": {
     "eslint": ">=6.8.0"
