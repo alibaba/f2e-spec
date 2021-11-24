@@ -19,11 +19,11 @@
 
 | 项目类型 | 配置文件 | 依赖 |
 | ----------- | ----------- | ----------- |
-| 一般项目 | eslint-config-ali/typescript | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 |
-| React 项目 | eslint-config-ali/typescript/react <br /> eslint-config-ali/jsx-a11y（可选） | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4   <br /> [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选） |
-| [Rax 项目](https://rax.js.org/) | eslint-config-ali/typescript/rax | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4 <br /> [eslint-plugin-jsx-plus](https://www.npmjs.com/package/eslint-plugin-jsx-plus)@^0.1.0  |
-| Vue 项目 | eslint-config-ali/typescript/vue | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser)@^7.0.0 <br /> [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)@^7.3.0 |
-| Node.js 项目 | eslint-config-ali/typescript/node | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br/> [eslint-config-egg](https://www.npmjs.com/package/eslint-config-egg)@^9.0.0 |
+| 一般项目 | eslint-config-ali/typescript | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 |
+| React 项目 | eslint-config-ali/typescript/react <br /> eslint-config-ali/jsx-a11y（可选） | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4   <br /> [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选） |
+| [Rax 项目](https://rax.js.org/) | eslint-config-ali/typescript/rax | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4 <br /> [eslint-plugin-jsx-plus](https://www.npmjs.com/package/eslint-plugin-jsx-plus)@^0.1.0  |
+| Vue 项目 | eslint-config-ali/typescript/vue | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser)@^7.0.0 <br /> [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)@^7.3.0 |
+| Node.js 项目 | eslint-config-ali/typescript/node | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br/> [eslint-config-egg](https://www.npmjs.com/package/eslint-config-egg)@^9.0.0 |
 
 ## 安装与使用
 
@@ -159,7 +159,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0
 ```
 
 #### 使用
@@ -188,7 +188,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0
 ```
 
 #### 使用
@@ -221,7 +221,7 @@ npm install --save-dev eslint-plugin-jsx-a11y
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 eslint-plugin-jsx-plus@^0.1.0 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 eslint-plugin-jsx-plus@^0.1.0 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0
 ```
 
 
@@ -240,7 +240,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-vue@^7.3.0 vue-eslint-parser@^7.0.0 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-vue@^7.3.0 vue-eslint-parser@^7.0.0 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0
 ```
 
 #### 使用
@@ -258,7 +258,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0 eslint-config-egg@^9.0.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0 eslint-config-egg@^9.0.0
 ```
 
 
