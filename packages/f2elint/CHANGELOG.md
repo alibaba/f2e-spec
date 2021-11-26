@@ -3,6 +3,7 @@
 ## 1.3.0 (2021-11-17)
 
 - 将 babel-eslint 替换为 @babel/eslint-parser
+- 强化 VS Code 的 Prettier 格式化，防止被用户设置覆盖，产生冲突
 
 ## 1.2.3 (2021-11-16)
 
