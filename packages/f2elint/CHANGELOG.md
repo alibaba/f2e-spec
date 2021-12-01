@@ -1,9 +1,10 @@
 # 更新日志
 
-## 1.3.0 (2021-11-17)
+## 2.0.0 (2021-12-01)
 
-- 将 babel-eslint 替换为 @babel/eslint-parser
-- 强化 VS Code 的 Prettier 格式化，防止被用户设置覆盖，产生冲突
+- `babel-eslint` 替换为 `@babel/eslint-parser`
+- `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser` 升级到 5.x，支持 ESlint 8
+- VSCode 的 formatter 配置改为根据语言设置，防止被用户设置覆盖
 
 ## 1.2.3 (2021-11-16)
 
