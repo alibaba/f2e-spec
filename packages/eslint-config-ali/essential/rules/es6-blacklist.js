@@ -34,8 +34,7 @@ module.exports = {
 
     // 模板字符串中的大括号内部两侧无空格
     // @unessential
-    // FIXME 因这个关闭 https://github.com/babel/babel-eslint/issues/799#issuecomment-568195009
-    'template-curly-spacing': 'off',
+    'template-curly-spacing': 'warn',
 
     // yield* 表达式的 * 号前面无空格，后面有一个空格
     // @unessential
