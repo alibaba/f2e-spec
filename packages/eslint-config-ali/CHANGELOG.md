@@ -2,8 +2,9 @@
 
 ## 13.0.0 (2021-11-15)
 
-- 将 babel-eslint 替换为 @babel/eslint-parser
+- 将 `babel-eslint` 替换为 `@babel/eslint-parser`
 - 更新 `@typescript-eslint/eslint-plugin` 及 `@typescript-eslint/parser` 版本（[说明](https://github.com/typescript-eslint/typescript-eslint/issues/3738)），支持 ESLint 8.x
+- 升级 `eslint-config-egg` 到 10.x
 
 ## 12.2.2 (2021-09-14)
 
