@@ -7,7 +7,8 @@ import { PKG_NAME } from './constants';
 import type { PKG } from '../types';
 
 // lint 相关依赖包匹配正则
-const DEPENDENCIES_REG = /(^(eslint|stylelint|babel-eslint|markdownlint|@commitlint\/cli)$|^(eslint|vue-eslint|stylelint|markdownlint|commitlint)-\S+$|^@typescript-eslint\/\S+$)/;
+const DEPENDENCIES_REG =
+  /(^(eslint|stylelint|@babel\/eslint-parser|markdownlint|@commitlint\/cli)$|^(eslint|vue-eslint|stylelint|markdownlint|commitlint)-\S+$|^@typescript-eslint\/\S+$)/;
 
 /**
  * 待删除的无用配置

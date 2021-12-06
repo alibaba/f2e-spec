@@ -8,22 +8,22 @@
 
 | 项目类型 | 配置文件 | 依赖 |
 | ----------- | ----------- | ----------- |
-| 一般项目 | eslint-config-ali | [babel-eslint](https://www.npmjs.com/package/babel-eslint)@^10.1.0 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 |
-| React 项目 | eslint-config-ali/react <br /> eslint-config-ali/jsx-a11y（可选） | [babel-eslint](https://www.npmjs.com/package/babel-eslint)@^10.1.0 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4   <br /> [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选） |
-| [Rax 项目](https://rax.js.org/) | eslint-config-ali/rax | [babel-eslint](https://www.npmjs.com/package/babel-eslint)@^10.1.0 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4 <br /> [eslint-plugin-jsx-plus](https://www.npmjs.com/package/eslint-plugin-jsx-plus)@^0.1.0 |
-| Vue 项目 | eslint-config-ali/vue | [babel-eslint](https://www.npmjs.com/package/babel-eslint)@^10.1.0 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser)@^7.0.0 <br/> [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)@^7.3.0 |
-| Node.js 项目 | eslint-config-ali/node | [babel-eslint](https://www.npmjs.com/package/babel-eslint)@^10.1.0 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-config-egg](https://www.npmjs.com/package/eslint-config-egg)@^9.0.0 |
+| 一般项目 | eslint-config-ali | [@babel/core](https://www.npmjs.com/package/@babel/core)@^7.16.0 <br/> [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser)@^7.16.3 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 |
+| React 项目 | eslint-config-ali/react <br /> eslint-config-ali/jsx-a11y（可选） | [@babel/core](https://www.npmjs.com/package/@babel/core)@^7.16.0 <br/> [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser)@^7.16.3 <br/> [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react)@^7.16.0 <br/>  [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4   <br /> [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选） |
+| [Rax 项目](https://rax.js.org/) | eslint-config-ali/rax | [@babel/core](https://www.npmjs.com/package/@babel/core)@^7.16.0 <br/> [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser)@^7.16.3 <br/> [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react)@^7.16.0 <br/>  [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4 <br /> [eslint-plugin-jsx-plus](https://www.npmjs.com/package/eslint-plugin-jsx-plus)@^0.1.0 |
+| Vue 项目 | eslint-config-ali/vue | [@babel/core](https://www.npmjs.com/package/@babel/core)@^7.16.0 <br/> [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser)@^7.16.3 <br/> [@babel/preset-react](https://www.npmjs.com/package/@babel/preset-react)@^7.16.0 <br/>  [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser)@^7.0.0 <br/> [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)@^7.3.0 |
+| Node.js 项目 | eslint-config-ali/node | [@babel/core](https://www.npmjs.com/package/@babel/core)@^7.16.0 <br/> [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser)@^7.16.3 <br/> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-config-egg](https://www.npmjs.com/package/eslint-config-egg)@^9.0.0 |
 | ES5 项目 | eslint-config-ali/es5 | 无 |
 
 ### TypeScript 项目
 
 | 项目类型 | 配置文件 | 依赖 |
 | ----------- | ----------- | ----------- |
-| 一般项目 | eslint-config-ali/typescript | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 |
-| React 项目 | eslint-config-ali/typescript/react <br /> eslint-config-ali/jsx-a11y（可选） | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4   <br /> [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选） |
-| [Rax 项目](https://rax.js.org/) | eslint-config-ali/typescript/rax | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4 <br /> [eslint-plugin-jsx-plus](https://www.npmjs.com/package/eslint-plugin-jsx-plus)@^0.1.0  |
-| Vue 项目 | eslint-config-ali/typescript/vue | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser)@^7.0.0 <br /> [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)@^7.3.0 |
-| Node.js 项目 | eslint-config-ali/typescript/node | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^4.4.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^4.4.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br/> [eslint-config-egg](https://www.npmjs.com/package/eslint-config-egg)@^9.0.0 |
+| 一般项目 | eslint-config-ali/typescript | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 |
+| React 项目 | eslint-config-ali/typescript/react <br /> eslint-config-ali/jsx-a11y（可选） | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4   <br /> [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选） |
+| [Rax 项目](https://rax.js.org/) | eslint-config-ali/typescript/rax | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0 <br /> [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4 <br /> [eslint-plugin-jsx-plus](https://www.npmjs.com/package/eslint-plugin-jsx-plus)@^0.1.0  |
+| Vue 项目 | eslint-config-ali/typescript/vue | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br /> [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser)@^7.0.0 <br /> [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)@^7.3.0 |
+| Node.js 项目 | eslint-config-ali/typescript/node | [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser)@^5.0.0 <br/> [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin)@^5.0.0 <br /> [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1 <br/> [eslint-config-egg](https://www.npmjs.com/package/eslint-config-egg)@^9.0.0 |
 
 ## 安装与使用
 
@@ -31,12 +31,12 @@
 
 ### 一般项目（JavaScript）
 
-针对未使用 React 或 Vue 的一般 JavaScript 项目，使用 ESLint 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [babel-eslint](https://www.npmjs.com/package/babel-eslint) 作为 [parser](https://eslint.org/docs/user-guide/configuring#specifying-parser)，是本包的默认配置。
+针对未使用 React 或 Vue 的一般 JavaScript 项目，使用 ESLint 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 [parser](https://eslint.org/docs/user-guide/configuring#specifying-parser)，是本包的默认配置。
 
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 babel-eslint@^10.1.0 eslint-plugin-import@^2.19.1
+npm install --save-dev eslint-config-ali eslint@^7.15.0 @babel/eslint-parser@^7.16.3 @babel/core@^7.16.0  eslint-plugin-import@^2.19.1
 ```
 
 #### 使用
@@ -54,7 +54,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0 babel-eslint@^10.1.0 esl
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 babel-eslint@^10.1.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4
+npm install --save-dev eslint-config-ali eslint@^7.15.0 @babel/core@^7.16.0 @babel/eslint-parser@^7.16.3 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4
 ```
 
 #### 使用
@@ -87,7 +87,7 @@ npm install --save-dev eslint-plugin-jsx-a11y
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 babel-eslint@^10.1.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 eslint-plugin-jsx-plus@^0.1.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 @babel/core@^7.16.0 @babel/eslint-parser@^7.16.3 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 eslint-plugin-jsx-plus@^0.1.0
 ```
 
 #### 使用
@@ -105,7 +105,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0 babel-eslint@^10.1.0 esl
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 vue-eslint-parser@^7.0.0 babel-eslint@^10.1.0 eslint-plugin-import@^2.19.1 eslint-plugin-vue@^7.3.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 vue-eslint-parser@^7.0.0 @babel/core@^7.16.0 @babel/eslint-parser@^7.16.3 eslint-plugin-import@^2.19.1 eslint-plugin-vue@^7.3.0
 ```
 
 #### 使用
@@ -123,7 +123,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0 vue-eslint-parser@^7.0.0
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 babel-eslint@^10.1.0 eslint-plugin-import@^2.19.1 eslint-config-egg@^9.0.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 @babel/core@^7.16.0 @babel/eslint-parser@^7.16.3 eslint-plugin-import@^2.19.1 eslint-config-egg@^10.0.0
 ```
 
 #### 使用
@@ -159,7 +159,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0
 ```
 
 #### 使用
@@ -188,7 +188,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0
 ```
 
 #### 使用
@@ -221,7 +221,7 @@ npm install --save-dev eslint-plugin-jsx-a11y
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 eslint-plugin-jsx-plus@^0.1.0 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-react@^7.17.0 eslint-plugin-react-hooks@^4.0.4 eslint-plugin-jsx-plus@^0.1.0 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0
 ```
 
 
@@ -240,7 +240,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-vue@^7.3.0 vue-eslint-parser@^7.0.0 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 eslint-plugin-vue@^7.3.0 vue-eslint-parser@^7.0.0 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0
 ```
 
 #### 使用
@@ -258,7 +258,7 @@ npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.
 #### 安装
 
 ```sh
-npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 @typescript-eslint/eslint-plugin@^4.4.0 @typescript-eslint/parser@^4.4.0 eslint-config-egg@^9.0.0
+npm install --save-dev eslint-config-ali eslint@^7.15.0 eslint-plugin-import@^2.19.1 @typescript-eslint/eslint-plugin@^5.0.0 @typescript-eslint/parser@^5.0.0 eslint-config-egg@^9.0.0
 ```
 
 
@@ -314,7 +314,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 - 了解如何在继承本包的基础上对项目 ESLint 进行个性化配置，可参考官网的 [Configuring ESLint](https://eslint.org/docs/user-guide/configuring)。下面简介下 ESLint 配置中的几个常用字段：
   - `extends`: 继承一组规则集。`"extends": "eslint-config-ali",` 表示继承本包定义的规则配置。
   - `rules`: 配置规则，这里定义的规则会覆盖 `extends` 的规则。如果觉得本包开启的某条规则过于严格，你可以暂时在这里将其关闭。
-  - `parser`: 设置 ESLint 的解析器。ESLint 使用 espree 作为默认的解析器，可以通过这个参数指定其他的解析器。比如指定为 [babel-eslint](https://npmjs.com/package/babel-eslint)，以解析 Babel 支持但 ESLint 默认解析器不支持的语法（本包不同配置文件使用的解析器可在简介表格中的「依赖 parser」一列查看）。
+  - `parser`: 设置 ESLint 的解析器。ESLint 使用 espree 作为默认的解析器，可以通过这个参数指定其他的解析器。比如指定为 [@babel/eslint-parser](https://npmjs.com/package/@babel/eslint-parser)，以解析 Babel 支持但 ESLint 默认解析器不支持的语法（本包不同配置文件使用的解析器可在简介表格中的「依赖 parser」一列查看）。
   - `globals`: 指定代码中可能用到的全局变量，以免全局变量被 [no-undef](http://eslint.org/docs/rules/no-undef) 规则报错。
   - `env`: 指定代码的运行环境，每个环境预定义了一组对应的全局变量，本包已开启的环境有 browser、node、jquery、es6 及几个测试框架的环境。
 - 了解常用的 ESLint 命令，如 `--fix`、`--ext`，可参考官网的 [Command Line Interface](http://eslint.org/docs/user-guide/command-line-interface)。

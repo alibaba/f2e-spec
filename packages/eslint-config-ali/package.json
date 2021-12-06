@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ali",
-  "version": "12.2.2",
+  "version": "13.0.0",
   "description": "ESLint Shareable Config for Alibaba F2E Guidelines",
   "main": "index.js",
   "keywords": [
@@ -39,17 +39,20 @@
   "scripts": {
     "lint": "eslint ./",
     "test": "mocha ./test/*.test.js --timeout 5000",
-    "print-config": "eslint --print-config ./index.js > ./print-config.json"
+    "print-config": "eslint --print-config ./index.js > ./print-config.json",
+    "prepublishOnly": "npm run test"
   },
   "peerDependencies": {
     "eslint": ">=6.8.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.10.0",
-    "@typescript-eslint/parser": "^4.10.0",
-    "babel-eslint": "^10.1.0",
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-react": "^7.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "eslint": "^7.15.0",
-    "eslint-config-egg": "^9.0.0",
+    "eslint-config-egg": "^10.0.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-jsx-plus": "^0.1.0",

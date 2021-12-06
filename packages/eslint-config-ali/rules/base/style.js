@@ -100,7 +100,6 @@ module.exports = {
         flatTernaryExpressions: false,
         // list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
         ignoredNodes: [
-          'TemplateLiteral', // FIXME https://github.com/babel/babel-eslint/issues/799#issuecomment-568195009
           'JSXElement',
           'JSXElement > *',
           'JSXAttribute',

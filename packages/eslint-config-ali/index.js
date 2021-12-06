@@ -8,8 +8,9 @@ module.exports = {
     './rules/base/strict',
     './rules/imports',
   ].map(require.resolve),
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
+    requireConfigFile: false,
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {

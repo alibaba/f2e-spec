@@ -1,6 +1,13 @@
 # 更新日志
 
+## 2.0.0 (2021-12-01)
+
+- `babel-eslint` 替换为 `@babel/eslint-parser`
+- `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser` 升级到 5.x，支持 ESlint 8
+- VSCode 的 formatter 配置改为根据语言设置，防止被用户设置覆盖
+
 ## 1.2.3 (2021-11-16)
+
 - 修复 scan 不显示 fatal error, close #48
 
 ## 1.2.2 (2021-11-10)
