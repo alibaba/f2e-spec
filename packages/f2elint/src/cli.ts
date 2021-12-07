@@ -98,7 +98,7 @@ program
   .description('commit message 检查: git commit 时对 commit message 进行检查')
   .action(() => {
     const result = spawn.sync(
-      path.resolve(cwd, `./node_modules/${PKG_NAME}/node_modules/.bin/commitlint`),
+      'commitlint',
       ['-E', 'HUSKY_GIT_PARAMS'],
       { stdio: 'inherit' },
     );
