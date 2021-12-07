@@ -1,5 +1,8 @@
 # 更新日志
 
+## 2.0.1 (2021-12-07)
+- 修复 `commitlint` 硬编码路径的问题
+
 ## 2.0.0 (2021-12-01)
 
 - `babel-eslint` 替换为 `@babel/eslint-parser`
