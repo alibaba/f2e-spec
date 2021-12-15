@@ -11,11 +11,9 @@ module.exports = {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.d.ts'],
     },
-    // Append 'ts' extensions to 'import/resolver' setting
+    // Use eslint-import-resolver-typescript
     'import/resolver': {
-      node: {
-        extensions: ['.mjs', '.js', '.ts', '.json'],
-      },
+      typescript: {},
     },
     // Append 'ts' extensions to 'import/extensions' setting
     'import/extensions': ['.js', '.ts', '.mjs'],

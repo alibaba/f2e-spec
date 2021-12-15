@@ -1,6 +1,12 @@
 # 更新日志
 
+## 2.1.0 (2021-12-15)
+
+- 增加依赖 `eslint-import-resolver-typescript`
+- 升级依赖 `eslint-config-ali@14.0.0`
+
 ## 2.0.1 (2021-12-07)
+
 - 修复 `commitlint` 硬编码路径的问题
 
 ## 2.0.0 (2021-12-01)
