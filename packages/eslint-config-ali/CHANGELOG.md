@@ -3,6 +3,7 @@
 ## 14.0.0 (2021-12-15)
 
 - 使用 `eslint-import-resolver-typescript` 解析路径以支持 `tsconfig.json` 的 `paths`
+- 更新 `eslint-config-prettier` 以及相应配置
 
 ## 13.0.0 (2021-11-15)
 
