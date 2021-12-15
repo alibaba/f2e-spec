@@ -5,6 +5,7 @@ import glob from 'glob';
 import * as eslint from '../lints/eslint';
 import * as stylelint from '../lints/stylelint';
 import * as markdownLint from '../lints/markdownlint';
+import { lint } from 'stylelint';
 import {
   PKG_NAME,
   ESLINT_FILE_EXT,
@@ -45,7 +46,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   if (config.enableStylelint !== false) {
     try {
       const files = getLintFiles(STYLELINT_FILE_EXT);
-      const data = await stylelint.lint({
+      const data = await lint({
         ...stylelint.getLintConfig(options, pkg, config),
         files,
       });

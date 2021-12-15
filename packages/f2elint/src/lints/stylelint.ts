@@ -93,5 +93,3 @@ export const formatResults = (results: LintResult[], quiet: boolean): ScanResult
     };
   });
 };
-
-export * from 'stylelint';
