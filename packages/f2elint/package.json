@@ -1,6 +1,6 @@
 {
   "name": "f2elint",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Linter for Alibaba F2E Guidelines",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -81,7 +81,7 @@
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.5",
     "eslint": "^7.15.0",
-    "eslint-config-ali": "^13.0.0",
+    "eslint-config-ali": "^14.0.0",
     "eslint-config-egg": "^9.0.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-import-resolver-typescript": "^2.5.0",
