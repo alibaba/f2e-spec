@@ -7,13 +7,14 @@
 - 升级依赖 `@commitlint/cli` 11 -> 15
 - 升级依赖 `commander` 6 -> 8
 - 升级依赖 `eslint` 7 -> 8
-- 升级依赖 `eslint-config-egg` 9 -> 10
 - 升级依赖 `eslint-config-prettier` 7 -> 8
 - 升级依赖 `eslint-plugin-prettier` 3 -> 4
 - 升级依赖 `eslint-plugin-vue` 7 -> 8
 - 升级依赖 `stylelint` 13 -> 14
 - 升级依赖 `stylelint-scss` 3 -> 4
 - 升级依赖 `vue-eslint-parser` 7 -> 8
+## 2.0.2 (2021-12-15)
+- 升级 `eslint-config-egg` 到 10.x
 
 ## 2.0.1 (2021-12-07)
 
