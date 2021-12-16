@@ -13,7 +13,9 @@
 - 升级依赖 `stylelint` 13 -> 14
 - 升级依赖 `stylelint-scss` 3 -> 4
 - 升级依赖 `vue-eslint-parser` 7 -> 8
+
 ## 2.0.2 (2021-12-15)
+
 - 升级 `eslint-config-egg` 到 10.x
 
 ## 2.0.1 (2021-12-07)
