@@ -1,5 +1,9 @@
 # 更新日志
 
+## 2.1.0 (2021-12-17)
+
+- 增加 `build-scripts` 产物路径到 `.eslintignore` (`coverage/`, `es/`, `lib/`)
+
 ## 2.0.2 (2021-12-15)
 - 升级 `eslint-config-egg` 到 10.x
 
