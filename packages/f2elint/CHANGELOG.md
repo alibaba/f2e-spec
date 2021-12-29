@@ -1,6 +1,6 @@
 # 更新日志
 
-## 3.0.0 (2021-12-15)
+## 3.0.0 (2021-12-29)
 
 - 增加依赖 `eslint-import-resolver-typescript`
 - 升级依赖 `eslint-config-ali` 13 -> 14
@@ -13,6 +13,10 @@
 - 升级依赖 `stylelint` 13 -> 14
 - 升级依赖 `stylelint-scss` 3 -> 4
 - 升级依赖 `vue-eslint-parser` 7 -> 8
+
+## 2.1.0 (2021-12-17)
+
+- 增加 `build-scripts` 产物路径到 `.eslintignore` (`coverage/`, `es/`, `lib/`)
 
 ## 2.0.2 (2021-12-15)
 
