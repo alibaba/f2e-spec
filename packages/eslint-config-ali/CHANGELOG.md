@@ -1,6 +1,6 @@
 # 更新日志
 
-## 14.0.0 (2021-12-15)
+## 14.0.0 (2021-12-29)
 
 - 使用 `eslint-import-resolver-typescript` 解析路径以支持 `tsconfig.json` 的 `paths`
 - 更新 `eslint-config-prettier` 以及相应配置
