@@ -1,6 +1,5 @@
 import path from 'path';
 import fs from 'fs-extra';
-import execa from 'execa';
 import glob from 'glob';
 import prettier from 'prettier';
 import * as eslint from '../lints/eslint';
@@ -11,6 +10,8 @@ import {
   ESLINT_FILE_EXT,
   STYLELINT_FILE_EXT,
   MARKDOWN_LINT_FILE_EXT,
+  PRETTIER_FILE_EXT,
+  PRETTIER_IGNORE_PATTERN,
 } from '../utils/constants';
 import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from '../types';
 
@@ -26,35 +27,24 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     const localPath = path.resolve(cwd, pth);
     return fs.existsSync(localPath) ? require(localPath) : {};
   };
-  const readIgnore = (filepath: string): string[] => {
-    const localPath = path.resolve(cwd, filepath);
-    if (fs.existsSync(localPath)) {
-      const content = fs.readFileSync(localPath, 'utf8') || '';
-      return content
-        .split(/\r?\n/)
-        .map((str) => str.trim())
-        .filter((str) => str && !str.startsWith('#'));
-    }
-    return [];
-  };
   const pkg: PKG = readConfigFile('package.json');
   const config: Config = readConfigFile(`${PKG_NAME}.config.js`);
   const runErrors: Error[] = [];
-  const eslintIgnore = readIgnore('.eslintignore');
-  const stylelintIgnore = readIgnore('.stylelintignore');
   let results: ScanResult[] = [];
 
   // prettier
   if (fix && config.enablePrettier !== false) {
-    let files = getLintFiles([...ESLINT_FILE_EXT, ...STYLELINT_FILE_EXT]);
-    if (typeof files === 'string') {
-      files = glob.sync(files, { cwd, ignore: [...eslintIgnore, ...stylelintIgnore] });
-    }
-    files.forEach((filePath) => {
-      const text = fs.readFileSync(filePath, 'utf8');
-      prettier.resolveConfig(filePath).then((options) => {
-        const formatted = prettier.format(text, options);
-        fs.writeFileSync(filePath, formatted, 'utf8');
+    const files = options.files
+      ? (getLintFiles(PRETTIER_FILE_EXT) as string[])
+      : glob.sync(`**/*.{${PRETTIER_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`, {
+          cwd,
+          ignore: PRETTIER_IGNORE_PATTERN,
+        });
+    files.forEach((filepath) => {
+      const text = fs.readFileSync(filepath, 'utf8');
+      prettier.resolveConfig(filepath).then((options) => {
+        const formatted = prettier.format(text, { ...options, filepath });
+        fs.writeFileSync(filepath, formatted, 'utf8');
       });
     });
   }
@@ -95,22 +85,6 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
         files,
       });
       results = results.concat(markdownLint.formatResults(data, quiet));
-    } catch (e) {
-      runErrors.push(e);
-    }
-  }
-
-  // prettier 格式化
-  if (config.enablePrettier && options.fix) {
-    try {
-      const ext = [...ESLINT_FILE_EXT, ...STYLELINT_FILE_EXT];
-      const files = options.files
-        ? getLintFiles(ext)
-        : glob.sync(`**/*.{${ext.map((t) => t.replace(/^\./, '')).join(',')}}`, {
-            cwd,
-            ignore: 'node_modules/**',
-          });
-      execa.sync(path.resolve(__dirname, '../../node_modules/.bin/prettier'), ['-w', ...files]);
     } catch (e) {
       runErrors.push(e);
     }

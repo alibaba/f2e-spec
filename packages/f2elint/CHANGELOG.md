@@ -2,7 +2,8 @@
 
 ## 2.2.0 (2022-01-06)
 
-- 如果启用了 Prettier，运行 `f2elint-fix` 时先执行 Prettier 格式化
+- 运行 `f2elint-fix` 时提前执行 Prettier 格式化，避免 Prettier 已修复的问题出现在 ESLint/Stylelint 结果中
+- 修复 Prettier 命令运行失败的问题（Command failed with ENOENT 被 catch 了没有输出）改用 Node API 模式
 
 ## 2.1.0 (2021-12-17)
 
