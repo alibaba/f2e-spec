@@ -2,6 +2,7 @@ import path from 'path';
 import fs from 'fs-extra';
 import execa from 'execa';
 import glob from 'glob';
+import prettier from 'prettier';
 import * as eslint from '../lints/eslint';
 import * as stylelint from '../lints/stylelint';
 import * as markdownLint from '../lints/markdownlint';
@@ -25,10 +26,38 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     const localPath = path.resolve(cwd, pth);
     return fs.existsSync(localPath) ? require(localPath) : {};
   };
+  const readIgnore = (filepath: string): string[] => {
+    const localPath = path.resolve(cwd, filepath);
+    if (fs.existsSync(localPath)) {
+      const content = fs.readFileSync(localPath, 'utf8') || '';
+      return content
+        .split(/\r?\n/)
+        .map((str) => str.trim())
+        .filter((str) => str && !str.startsWith('#'));
+    }
+    return [];
+  };
   const pkg: PKG = readConfigFile('package.json');
   const config: Config = readConfigFile(`${PKG_NAME}.config.js`);
   const runErrors: Error[] = [];
+  const eslintIgnore = readIgnore('.eslintignore');
+  const stylelintIgnore = readIgnore('.stylelintignore');
   let results: ScanResult[] = [];
+
+  // prettier
+  if (fix && config.enablePrettier !== false) {
+    let files = getLintFiles([...ESLINT_FILE_EXT, ...STYLELINT_FILE_EXT]);
+    if (typeof files === 'string') {
+      files = glob.sync(files, { cwd, ignore: [...eslintIgnore, ...stylelintIgnore] });
+    }
+    files.forEach((filePath) => {
+      const text = fs.readFileSync(filePath, 'utf8');
+      prettier.resolveConfig(filePath).then((options) => {
+        const formatted = prettier.format(text, options);
+        fs.writeFileSync(filePath, formatted, 'utf8');
+      });
+    });
+  }
 
   // eslint
   try {

@@ -1,13 +1,19 @@
 # 更新日志
 
+## 2.2.0 (2022-01-06)
+
+- 如果启用了 Prettier，运行 `f2elint-fix` 时先执行 Prettier 格式化
+
 ## 2.1.0 (2021-12-17)
 
 - 增加 `build-scripts` 产物路径到 `.eslintignore` (`coverage/`, `es/`, `lib/`)
 
 ## 2.0.2 (2021-12-15)
+
 - 升级 `eslint-config-egg` 到 10.x
 
 ## 2.0.1 (2021-12-07)
+
 - 修复 `commitlint` 硬编码路径的问题
 
 ## 2.0.0 (2021-12-01)
