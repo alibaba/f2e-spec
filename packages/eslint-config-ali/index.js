@@ -18,6 +18,10 @@ module.exports = {
       impliedStrict: true,
       jsx: true,
     },
+    babelOptions: {
+      presets: ['@babel/preset-env'],
+      plugins: [['@babel/plugin-proposal-decorators', { decoratorsBeforeExport: true }]],
+    },
   },
   root: true,
 };

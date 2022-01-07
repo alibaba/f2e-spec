@@ -1,5 +1,9 @@
 # 更新日志
 
+## 13.1.0 (2022-01-07)
+
+- 增加 `babelOptions` 配置支持 JS 修饰器语法
+
 ## 13.0.0 (2021-11-15)
 
 - 将 `babel-eslint` 替换为 `@babel/eslint-parser`
@@ -11,8 +15,8 @@
 
 ### 删除
 
-  - `react/no-did-mount-set-state`
-  - `react/no-did-update-set-state`
+- `react/no-did-mount-set-state`
+- `react/no-did-update-set-state`
 
 ## 12.2.1 (2021-08-12)
 
@@ -184,124 +188,169 @@
 - 增加 parserOptions.project 链接
 
 ## 10.2.2 (2020-09-27)
+
 - fix: spaced-comment markers 增加 /，以支持 ts 三斜线指令
 
 ## 10.2.1 (2020-09-25)
+
 - docs: xima 链接替换为 f2elint
 
 ## 10.2.0 (2020-09-10)
+
 - feat: 新增 jsx-a11y 规则集
 
 ## 10.1.1 (2020-08-03)
+
 - fix: 修改规则
   - `'import/prefer-default-export': 'off'`
   - `'require-yield': 'error'`
 
 ## 10.1.0 (2020-07-29)
+
 - 新启用规则
   - `'react/no-access-state-in-setstate': 'error'`
   - `'react/jsx-props-no-multi-spaces': 'error'`，essential 中为 `'warn'`
 
 ## 10.0.0 (2020-07-06)
+
 - feat: 引入 babel-eslint 作为 JS 项目默认 parser
 - feat: [settings.react.version](https://www.npmjs.com/package/eslint-plugin-react#configuration) 改为 detect（如果本地没有装 react，CLI 会报一个 Warning）
 - feat: ecmaVersion 升到 2020
 
 ## 9.1.2 (2020-07-01)
-- fix: 增加peerDependencies声明 "eslint": ">=6.8.0"
+
+- fix: 增加 peerDependencies 声明 "eslint": ">=6.8.0"
 
 ## 9.1.1 (2020-06-28)
+
 - fix: 删除 @typescript-eslint/ban-ts-ignore 规则
 
 ## 9.1.0 (2020-06-28)
+
 - chore: @typescript-eslint 和 eslint-plugin-react-hooks 依赖版本升至最新
 - docs: 增加 xima 链接
 
 ## 9.0.2 (2019-12-23)
+
 ### 文档
+
 - 修改 Changlog，补充对 v9 版本 comma-dangle 规则带来的 Breaking changes
 
 ## 9.0.1 (2019-12-23)
+
 ### 修复
+
 - 移除规则：@typescript-eslint/no-angle-bracket-type-assertion
 
 ## 9.0.0 (2019-12-23)
+
 ### Breaking Changes
+
 - 依赖升级：eslint v6 及其他依赖升级
 - comma-dangle 规则对函数参数也生效，即多行的函数参数末尾需要使用逗号
 
 ### 新增
+
 - 新启用规则：no-useless-catch
 
 ## 8.0.2 (2019-07-23)
+
 ### 修复
+
 - @typescript-eslint/no-use-before-define 规则调整为跟 no-use-before-define 一致
 
 ## 8.0.1 (2019-07-17)
+
 ### 变更
+
 - ecmaVersion 升级到 2019
 
 ## 8.0.0 (2019-07-17)
+
 ### Breaking Changes
+
 - 依赖的 plugin 和 parser 不再以 peerDependencies 声明，而是让用户完全根据文档手动安装：因为本包支持的项目类型变多，比如用户是 JS + React 的项目，那提示他装 ts、vue 的 plugin 和 parser 就不太合理，后面可能提供一个 cli 工具
 
 ### 新增
+
 - 增加 TypeScript 支持
 
 ## 7.1.0 (2019-07-10)
+
 ### 新增
+
 - env（全局变量环境）增加几个测试框架：mocha、jasmine、jest
 
 ### 变更
+
 - react/default-props-match-prop-types 级别由 error 降为 warn
 - 以下规则在 essential 中进行降级为 warn：
-    - no-prototype-builtins
-    - object-shorthand
-    - no-var
+  - no-prototype-builtins
+  - object-shorthand
+  - no-var
 
 ## 7.0.0 (2019-07-04)
+
 ### 新增
+
 - 增加 Vue 支持，通过 eslint-config-ali/vue 使用
 
 ### Breaking Changes
+
 - 新增依赖 eslint-plugin-vue 和 vue-eslint-parser 两个依赖
 
 ## 6.1.1 (2019-07-03)
+
 ### 修复
+
 - essential 中降级一些未降级的规则
 
 ## 6.1.0 (2019-06-25)
+
 ### 新增
+
 - 增加 essential 级别出口：该级别更加宽松，仅将「必要」的规则设置为 error 级别，默认出口中大部分不会引起 bug 的规则（如风格问题）级别从 error 被降级为 warn
 
 ## 6.0.0 (2019-04-03)
+
 ### Breaking Changes
+
 - 新增依赖 [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)，以支持 [react hooks 规则](https://reactjs.org/docs/hooks-rules.html)。升级 v6 后，需手动安装 eslint-plugin-react-hooks 依赖
 
 ### 新增
+
 - 新启用 2 条 react-hooks 规则：`react-hooks/rules-of-hooks`、`react-hooks/exhaustive-deps`
 
 ## 5.0.1 (2019-01-10)
+
 ### 变更
+
 - docs: README 修改
 
 ## 5.0.0 (2019-01-10)
+
 ### Breaking Changes
+
 - v5 版本相比 v4 对大量规则的错误级别进行了调整，以与 JS 规约中的规则级别对齐。升级后代码的 lint 结果可能有些变化，需进行人工 check
 
 ### 新增
+
 - 新增 /essential 级别出口文件，关闭部分有争议的或因业务无法规避的问题。以供某些卡点场景使用
 - test: 增加测试
 
 ### 变更
+
 - docs: 大部分规则增加中文注释说明
 
 ## 4.1.0 (2018-12-17)
+
 ### 新增
+
 - 新启用规则：
-    - 'react/no-this-in-sfc': 'error'
+  - 'react/no-this-in-sfc': 'error'
 
 ### 变更
+
 - 调整规则：
   - `react/jsx-closing-tag-location` 由 off 改为 error
   - `react/no-did-mount-set-state` 由 off 改为 warn
@@ -311,10 +360,13 @@
   - `newline-per-chained-call` 由 error 改为 warning
 
 ## 4.0.0 (2018-09-14)
+
 ### Breaking Changes
+
 - ESLint 依赖升级到 [v5](https://eslint.org/docs/user-guide/migrating-to-5.0.0)
 
 ### 新增
+
 - 新启用规则：
   - 'no-async-promise-executor': 'error'
   - 'no-misleading-character-class': 'error'
@@ -324,6 +376,7 @@
   - 'import/no-useless-path-segments': 'error'
 
 ### 变更
+
 - `parserOptions.ecmaVersion` 参数由 `2017` 升级到 `2018`，去除废弃的 experimentalObjectRestSpread 参数（对非 es5 规则包）
 - 调整规则：
   - `function-paren-newline` 由 off 改为 ['error', 'consistent']
@@ -331,101 +384,128 @@
   - `implicit-arrow-linebreak` 由 off 改为 ['warn', 'beside']
 
 ## 3.2.0 (2018-09-14)
+
 ### 变更
+
 - 调整规则：
-  - 关闭了2个阈值限定的规则，包括 `complexity` 和 `max-depth`。此类问题在编码过程中会引起大片段报错，让人想关掉它们。这类问题比较适合做后置检查
+  - 关闭了 2 个阈值限定的规则，包括 `complexity` 和 `max-depth`。此类问题在编码过程中会引起大片段报错，让人想关掉它们。这类问题比较适合做后置检查
   - `import/first` 由 ['error', 'absolute-first'] 调整为 error
-  - `react/react-in-jsx-scope` 由 error 改为 off：如rax这类包装过的框架此规则不适用
+  - `react/react-in-jsx-scope` 由 error 改为 off：如 rax 这类包装过的框架此规则不适用
   - `react/sort-comp` 由 error 改为 warn，并细化 lifecycle、增加 instance-variables 和 instance-methods
   - `react/jsx-no-target-blank` 由 error 改为 warn
 
 ## 3.1.0 (2018-03-13)
+
 ### 新增
+
 - 新启用规则：
   - complexity 开启为 `['warn', 20]`
   - max-depth 开启为 `['warn', 4]`
 
 ### 变更
+
 - 调整规则：
   - react/jsx-filename-extension 增加`.js`类型
-  - default-case 降为warn警告级别 `['warn', { commentPattern: '^no default$' }]`
-  - arrow-parens 降为warn级别
+  - default-case 降为 warn 警告级别 `['warn', { commentPattern: '^no default$' }]`
+  - arrow-parens 降为 warn 级别
 
 ## 3.0.1 (2018-01-19)
+
 ### 变更
+
 - 调整规则：
-  - class-methods-use-this 由warn改为off
-  - vars-on-top 由warn改为off
+  - class-methods-use-this 由 warn 改为 off
+  - vars-on-top 由 warn 改为 off
 
 ## 3.0.0 (2018-01-18)
+
 ### Breaking Changes
+
 - v3 版本开启了一批 ESLint 官方和 react 插件新增的规则，同时对原有规则做了一些调整。另外，调整了包的代码结构。
 
 ### 新增
+
 - 新启用规则：
-    - lines-between-class-members error
-    - no-useless-return error
-    - no-restricted-globals error
-    - prefer-destructuring warn
-    - react/no-unused-state error
-    - react/default-props-match-prop-types error
-    - react/no-redundant-should-component-update error
-    - react/no-typos error
+  - lines-between-class-members error
+  - no-useless-return error
+  - no-restricted-globals error
+  - prefer-destructuring warn
+  - react/no-unused-state error
+  - react/default-props-match-prop-types error
+  - react/no-redundant-should-component-update error
+  - react/no-typos error
 
 ### 变更
+
 - 调整规则：
-    - no-param-reassign off改为warn
-    - guard-for-in off改为warn
-    - no-floating-decimal warn改为error
-    - no-else-return 由warn改为off
-    - newline-per-chained-call: 由off改为 ['error', { ignoreChainWithDepth: 4 }],
-    - max-len 由120行调整为100行，增加对包含字符串、模板字符串、正则的行的忽略
-    - new-cap 由warn改为error
-    - import/no-amd 由off改为error
-    - react/prefer-stateless-function 由warn改为off
-    - react/require-default-props 由warn改为off
+  - no-param-reassign off 改为 warn
+  - guard-for-in off 改为 warn
+  - no-floating-decimal warn 改为 error
+  - no-else-return 由 warn 改为 off
+  - newline-per-chained-call: 由 off 改为 ['error', { ignoreChainWithDepth: 4 }],
+  - max-len 由 120 行调整为 100 行，增加对包含字符串、模板字符串、正则的行的忽略
+  - new-cap 由 warn 改为 error
+  - import/no-amd 由 off 改为 error
+  - react/prefer-stateless-function 由 warn 改为 off
+  - react/require-default-props 由 warn 改为 off
 
 ## 2.0.3 (2017-09-05)
+
 ### 变更
+
 - 调整规则：
-    - linebreak-style: 报错级别由['error', 'unix']改为off
+  - linebreak-style: 报错级别由['error', 'unix']改为 off
 
 ## 2.0.2 (2017-09-05)
+
 ### 变更
+
 - 调整规则：
-    - react/forbid-prop-types: 报错级别由"error"调整为"warn"
-    - new-cap: 报错级别由"error"调整为"warn"
+  - react/forbid-prop-types: 报错级别由"error"调整为"warn"
+  - new-cap: 报错级别由"error"调整为"warn"
 
 ## 2.0.1 (2017-08-01)
+
 ### 变更
+
 - 调整规则：
-    - no-plusplus: 由"error"调整为["error", { allowForLoopAfterthoughts: true }]
+  - no-plusplus: 由"error"调整为["error", { allowForLoopAfterthoughts: true }]
 
 ## 2.0.0 (2017-06-28)
+
 ### Breaking Changes
+
 - 升级如下依赖：
-    - ESLint 版本从 v3 升级到 v4
-    - eslint-plugin-react从^6.3.0 升级到^7.1.0
-    - eslint-plugin-import从^1.16.0 升级到^2.6.0
+  - ESLint 版本从 v3 升级到 v4
+  - eslint-plugin-react 从^6.3.0 升级到^7.1.0
+  - eslint-plugin-import 从^1.16.0 升级到^2.6.0
 
 ## 1.0.3 (2017-06-28)
+
 ### 修复
+
 - v1 版本继续支持 ESLint v3
 
 ## 1.0.2 (2017-06-28)
+
 ### 变更
+
 - 依赖升级到 ESLint v4
 - 调整规则：
-  - max-len: 由200调整为120
-  - comma-dangle: es6使用"always-multiline", es5使用"never"
+  - max-len: 由 200 调整为 120
+  - comma-dangle: es6 使用"always-multiline", es5 使用"never"
 - style: 错误等级由数字改为字符串
-- fix: 去掉top-level的ecmaFeatures属性，以修复 [ESLint v4 报错](https://github.com/eslint/eslint/issues/8726)
+- fix: 去掉 top-level 的 ecmaFeatures 属性，以修复 [ESLint v4 报错](https://github.com/eslint/eslint/issues/8726)
 
 ## 1.0.1 (2017-05-16)
+
 ### 变更
+
 - docs: README 中安装方式更新
 - 调整规则：consistent-return, radix
 
 ## 1.0.0 (2016-12-06)
+
 ### 新增
+
 - 基于 [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) v.12.0.0 封装一层规则
