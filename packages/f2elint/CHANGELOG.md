@@ -1,6 +1,6 @@
 # 更新日志
 
-## 3.0.0 (2021-12-29)
+## 3.0.0 (2022-01-07)
 
 - 增加依赖 `eslint-import-resolver-typescript`
 - 升级依赖 `eslint-config-ali` 13 -> 14
@@ -13,6 +13,10 @@
 - 升级依赖 `stylelint` 13 -> 14
 - 升级依赖 `stylelint-scss` 3 -> 4
 - 升级依赖 `vue-eslint-parser` 7 -> 8
+## 2.2.0 (2022-01-06)
+
+- 运行 `f2elint-fix` 时提前执行 Prettier 格式化，避免 Prettier 已修复的问题出现在 ESLint/Stylelint 结果中
+- 修复 Prettier 命令运行失败的问题（Command failed with ENOENT 被 catch 了没有输出）改用 Node API 模式
 
 ## 2.1.0 (2021-12-17)
 
