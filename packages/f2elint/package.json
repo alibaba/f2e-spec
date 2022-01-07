@@ -1,6 +1,6 @@
 {
   "name": "f2elint",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Linter for Alibaba F2E Guidelines",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -70,6 +70,8 @@
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.3",
+    "@babel/plugin-proposal-decorators": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
     "@babel/preset-react": "^7.16.0",
     "@commitlint/cli": "^11.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
@@ -81,7 +83,7 @@
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.5",
     "eslint": "^7.15.0",
-    "eslint-config-ali": "^13.0.0",
+    "eslint-config-ali": "^14.0.0",
     "eslint-config-egg": "^10.0.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",

@@ -1,5 +1,10 @@
 # 更新日志
 
+## 2.3.0 (2022-01-06)
+
+- 新增 `@babel/preset-env` 和 `@babel/plugin-proposal-decorators` 依赖
+- 升级 `eslint-config-ali` 14.0.0
+
 ## 2.2.0 (2022-01-06)
 
 - 运行 `f2elint-fix` 时提前执行 Prettier 格式化，避免 Prettier 已修复的问题出现在 ESLint/Stylelint 结果中

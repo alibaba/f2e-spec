@@ -1,7 +1,8 @@
 # 更新日志
 
-## 13.1.0 (2022-01-07)
+## 14.0.0 (2022-01-07)
 
+- **破坏性变更**：新增 `@babel/preset-env` 和 `@babel/plugin-proposal-decorators` 依赖
 - 增加 `babelOptions` 配置支持 JS 修饰器语法
 
 ## 13.0.0 (2021-11-15)
