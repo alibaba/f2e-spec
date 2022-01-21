@@ -1,5 +1,9 @@
 # 更新日志
 
+## 13.1.0 (2022-01-21)
+
+- `no-param-reassign` 增加对 `immer` 的支持
+
 ## 13.0.0 (2021-11-15)
 
 - 将 `babel-eslint` 替换为 `@babel/eslint-parser`
