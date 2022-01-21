@@ -179,6 +179,7 @@ module.exports = {
           'acc', // for reduce accumulators
           'e', // for e.returnvalue
           'ctx', // for Koa routing
+          'draft', // for immer
           'req', // for Express requests
           'request', // for Express requests
           'res', // for Express responses
