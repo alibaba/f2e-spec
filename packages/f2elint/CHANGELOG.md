@@ -1,5 +1,10 @@
 # 更新日志
 
+## 3.0.0 (2022-01-26)
+
+- 升级 `stylelint` 13 到 14
+- 升级 `stylelint-scss` 3 到 4
+
 ## 2.2.0 (2022-01-06)
 
 - 运行 `f2elint-fix` 时提前执行 Prettier 格式化，避免 Prettier 已修复的问题出现在 ESLint/Stylelint 结果中
