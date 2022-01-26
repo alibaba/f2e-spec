@@ -1,5 +1,11 @@
 # 更新日志
 
+## 3.0.0 (2022-01-26)
+
+- 升级依赖 `eslint-config-prettier` 7 -> 8
+- 升级依赖 `eslint-plugin-prettier` 3 -> 4
+- 去掉 `.eslintrc` 中已废弃的 `prettier/react`, `prettier/typescript` 和 `prettier/vue`
+
 ## 2.2.0 (2022-01-06)
 
 - 运行 `f2elint-fix` 时提前执行 Prettier 格式化，避免 Prettier 已修复的问题出现在 ESLint/Stylelint 结果中
