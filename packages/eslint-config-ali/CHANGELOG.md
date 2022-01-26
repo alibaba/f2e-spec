@@ -1,5 +1,9 @@
 # 更新日志
 
+## 14.0.0 (2022-01-26)
+
+- 使用 `eslint-import-resolver-typescript` 解析路径以支持 `tsconfig.json` 的 `paths`
+
 ## 13.1.0 (2022-01-21)
 
 - `no-param-reassign` 增加对 `immer` 的支持
