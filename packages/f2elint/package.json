@@ -1,6 +1,6 @@
 {
   "name": "f2elint",
-  "version": "3.0.0",
+  "version": "2.3.0",
   "description": "Linter for Alibaba F2E Guidelines",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
