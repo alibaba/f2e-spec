@@ -1,6 +1,6 @@
 # 更新日志
 
-## 3.0.0 (2022-01-26)
+## 2.3.0 (2022-01-26)
 
 - 增加依赖 `eslint-import-resolver-typescript`
 - 升级依赖 `eslint-config-ali` 13 -> 14
