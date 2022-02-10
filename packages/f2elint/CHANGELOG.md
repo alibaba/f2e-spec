@@ -2,7 +2,7 @@
 
 ## 3.0.0 (2022-01-26)
 
-- 升级依赖 `eslint` 7 -> 8
+- 升级依赖 `eslint` 7 -> 8，参见 [ESLint 变更日志](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)
 
 ## 2.2.0 (2022-01-06)
 
