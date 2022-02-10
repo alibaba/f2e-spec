@@ -46,7 +46,7 @@ npm i -D eslint-config-ali @babel/core @babel/eslint-parser eslint-plugin-import
 #### 安装
 
 ```
-npm i -D eslint-config-ali @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+npm i -D eslint-config-ali @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 #### 配置
@@ -58,6 +58,10 @@ npm i -D eslint-config-ali @babel/core @babel/eslint-parser eslint-plugin-import
 ```
 
 如果需要无障碍能力：
+
+```
+npm i -D eslint-plugin-jsx-a11y
+```
 
 ```json
 {
@@ -76,13 +80,12 @@ npm i -D eslint-config-ali @babel/core @babel/eslint-parser eslint-plugin-import
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)@^2.19.1
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4
-- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选）
 - [eslint-plugin-jsx-plus](https://www.npmjs.com/package/eslint-plugin-jsx-plus)@^0.1.0
 
 #### 安装
 
 ```
-npm i -D eslint-config-ali @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-jsx-plus
+npm i -D eslint-config-ali @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-plus
 ```
 
 #### 配置
@@ -197,7 +200,7 @@ npm i -D eslint-config-ali @typescript-eslint/parser @typescript-eslint/eslint-p
 #### 安装
 
 ```
-npm i -D eslint-config-ali @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y
+npm i -D eslint-config-ali @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 #### 配置
@@ -209,6 +212,10 @@ npm i -D eslint-config-ali @typescript-eslint/parser @typescript-eslint/eslint-p
 ```
 
 如果需要无障碍能力：
+
+```
+npm i -D  eslint-plugin-jsx-a11y
+```
 
 ```json
 {
@@ -231,13 +238,12 @@ npm i -D eslint-config-ali @typescript-eslint/parser @typescript-eslint/eslint-p
 - [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript)@2
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)@^7.17.0
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)@^4.0.4
-- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)@^6.3.1（可选）
 - [eslint-plugin-jsx-plus](https://www.npmjs.com/package/eslint-plugin-jsx-plus)@^0.1.0
 
 #### 安装
 
 ```
-npm i -D eslint-config-ali @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-jsx-plus
+npm i -D eslint-config-ali @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-plus
 ```
 
 #### 配置
