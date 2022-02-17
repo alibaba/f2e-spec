@@ -1,5 +1,14 @@
 # 更新日志
 
+## 13.2.0 (2022-02-17)
+
+- 与 `eslint-plugin-import` 的推荐配置对齐：
+  - `import/no-unresolved` 从 `off` 改为 `error`
+  - `import/named` 从 `off` 改为 `error`
+  - `import/default` 从 `off` 改为 `error`
+  - `import/namespace` 从 `off` 改为 `error`
+  - `import/export` 从 `off` 改为 `error`
+
 ## 13.1.0 (2022-01-21)
 
 - `no-param-reassign` 增加对 `immer` 的支持
