@@ -1,5 +1,9 @@
 # 更新日志
 
+## 2.2.1 (2022-02-25)
+
+- 修复 prettier 和 eslint 顺序执行问题，避免互相覆盖
+
 ## 2.2.0 (2022-01-06)
 
 - 运行 `f2elint-fix` 时提前执行 Prettier 格式化，避免 Prettier 已修复的问题出现在 ESLint/Stylelint 结果中
