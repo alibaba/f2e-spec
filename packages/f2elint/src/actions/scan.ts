@@ -41,24 +41,20 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
           ignore: PRETTIER_IGNORE_PATTERN,
         });
     for (const filepath of files) {
-      console.log('do prettier');
       const text = fs.readFileSync(filepath, 'utf8');
       const options = await prettier.resolveConfig(filepath);
       const formatted = prettier.format(text, { ...options, filepath });
       fs.writeFileSync(filepath, formatted, 'utf8');
-      console.log('done prettier');
     }
   }
 
   // eslint
   try {
-    console.log('do eslint');
     const files = getLintFiles(ESLINT_FILE_EXT);
     const cli = new eslint.ESLint(eslint.getLintConfig(options, pkg, config));
     const reports = await cli.lintFiles(files);
     fix && (await eslint.ESLint.outputFixes(reports));
     results = results.concat(eslint.formatResults(reports, quiet));
-    console.log('done eslint');
   } catch (e) {
     runErrors.push(e);
   }
