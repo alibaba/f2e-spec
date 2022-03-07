@@ -1,14 +1,14 @@
 # eslint-config-ali
 
-本包是《阿里巴巴前端规约》配套的 [ESLint 可共享配置](http://eslint.org/docs/developer-guide/shareable-configs.html)，我们提供了多套配置文件以支持 JavaScript、TypeScript、React、Vue、Node.js 等多种项目类型。
+本包是[《阿里巴巴前端规约》](https://github.com/alibaba/f2e-spec)配套的 [ESLint 可共享配置](http://eslint.org/docs/developer-guide/shareable-configs.html)，提供了多套配置文件以支持 JavaScript、TypeScript、React、Vue、Node.js 等多种项目类型。
 
 ## 使用
 
-推荐使用《阿里巴巴前端规约》配套的 CLI 工具 [f2elint](https://www.npmjs.com/package/f2elint) 接入本包。如果想自己手动接入，可以在上面表格中找到自己项目类型对应的配置文件，在 [ESLint 配置](https://eslint.org/docs/user-guide/configuring) 中 [extends](https://eslint.org/docs/user-guide/configuring#extending-configuration-files)，并安装所需依赖。下面对各项目类型的安装和使用进行详细介绍：
+推荐使用《阿里巴巴前端规约》配套的 CLI 工具 [f2elint](https://www.npmjs.com/package/f2elint) 接入本包。如果想自己手动接入，可以在下方查找自己项目类型所需的安装的依赖和 [ESLint 配置](https://eslint.org/docs/user-guide/configuring)：
 
 ### JavaScript 项目 - eslint-config-ali
 
-针对未使用 React 或 Vue 的一般 JavaScript 项目，使用 ESLint 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 [parser](https://eslint.org/docs/user-guide/configuring#specifying-parser)，是本包的默认配置。
+针对未使用 React 或 Vue 的原生 JavaScript 项目，使用 ESLint 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 parser，是本包的默认配置。
 
 #### 依赖
 
@@ -71,7 +71,7 @@ npm i -D eslint-plugin-jsx-a11y
 
 ### JavaScript + Rax 项目 - eslint-config-ali/rax
 
-针对 JS [Rax](https://rax.js.org/) 项目，Rax 工程和 React 工程语法相近，继承了默认配置，并启用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) 和 [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) 的规则。
+针对 JS [Rax](https://rax.js.org/) 项目，Rax 和 React 语法相近，因此同样继承了默认配置，启用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) 和 [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) 的规则，并通过 [eslint-plugin-jsx-plus](https://www.npmjs.com/package/eslint-plugin-jsx-plus) 校验 JSX+ 语法。
 
 #### 依赖
 
@@ -149,7 +149,7 @@ npm i -D eslint-config-ali @babel/core @babel/eslint-parser eslint-plugin-import
 
 ### TypeScript 项目 - eslint-config-ali/typescript
 
-针对未使用 React 或 Vue 的一般 TypeScript 项目，继承了默认配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
+针对未使用 React 或 Vue 的 TypeScript 项目，继承了默认配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
 
 #### 依赖
 
@@ -228,7 +228,7 @@ npm i -D  eslint-plugin-jsx-a11y
 
 ### TypeScript + Rax 项目 - eslint-config-ali/typescript/rax
 
-针对 TS [Rax](https://rax.js.org/) 项目，继承了 JS Rax 的配置，语法与 React 相近，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
+针对 TS [Rax](https://rax.js.org/) 项目，继承了 JS Rax 的配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
 
 #### 依赖
 
