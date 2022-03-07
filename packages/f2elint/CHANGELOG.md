@@ -1,5 +1,13 @@
 # 更新日志
 
+## 2.3.0 (2022-03-07)
+
+- 增加初始化时移除的冲突依赖
+  - `@ali/kyle`
+  - `@ali/eslint-config-ot-browser`
+  - `@iceworks/spec`
+  - `prettier`
+
 ## 2.2.1 (2022-02-28)
 
 - 修复 prettier 和 eslint 顺序执行问题，避免互相覆盖
