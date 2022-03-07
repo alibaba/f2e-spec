@@ -40,13 +40,12 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
           cwd,
           ignore: PRETTIER_IGNORE_PATTERN,
         });
-    files.forEach((filepath) => {
+    for (const filepath of files) {
       const text = fs.readFileSync(filepath, 'utf8');
-      prettier.resolveConfig(filepath).then((options) => {
-        const formatted = prettier.format(text, { ...options, filepath });
-        fs.writeFileSync(filepath, formatted, 'utf8');
-      });
-    });
+      const options = await prettier.resolveConfig(filepath);
+      const formatted = prettier.format(text, { ...options, filepath });
+      fs.writeFileSync(filepath, formatted, 'utf8');
+    }
   }
 
   // eslint
