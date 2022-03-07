@@ -43,7 +43,9 @@ const checkUselessConfig = (cwd: string): string[] => {
     .concat(glob.sync('.markdownlint@(rc|.@(yaml|yml|jsonc))', { cwd }))
     .concat(
       glob.sync('.prettierrc?(.@(cjs|config.js|config.cjs|yaml|yml|json|json5|toml))', { cwd }),
-    );
+    )
+    .concat(glob.sync('tslint.@(yaml|yml|json)', { cwd }))
+    .concat(glob.sync('.kylerc?(.@(yaml|yml|json))', { cwd }));
 };
 
 /**

@@ -7,6 +7,10 @@
   - `@ali/eslint-config-ot-browser`
   - `@iceworks/spec`
   - `prettier`
+  - `tslint`
+- 增加初始化时移除的无用配置
+  - `.kylerc`
+  - `tslint.json`, `tslint.yaml`
 
 ## 2.2.1 (2022-02-28)
 
