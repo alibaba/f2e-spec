@@ -4,7 +4,7 @@
 
 ## 使用
 
-推荐使用《阿里巴巴前端规约》配套的 CLI 工具 [f2elint](https://www.npmjs.com/package/f2elint) 接入本包。如果想自己手动接入，可以在下方查找自己项目类型所需的安装的依赖和 [ESLint 配置](https://eslint.org/docs/user-guide/configuring)：
+推荐使用《阿里巴巴前端规约》配套的 CLI 工具 [f2elint](https://www.npmjs.com/package/f2elint) 接入本包。如果想自己手动接入，可以在下方查找自己项目类型所需安装的依赖和 [ESLint 配置](https://eslint.org/docs/user-guide/configuring)：
 
 ### JavaScript 项目 - eslint-config-ali
 
