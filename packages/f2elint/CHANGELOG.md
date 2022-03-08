@@ -6,6 +6,7 @@
   - `@ali/kyle`
   - `@ali/eslint-config-ot-browser`
   - `@iceworks/spec`
+  - `husky`
   - `prettier`
   - `tslint`
 - 增加初始化时移除的无用配置

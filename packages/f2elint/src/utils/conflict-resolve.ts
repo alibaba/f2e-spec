@@ -15,6 +15,7 @@ const packageNamesToRemove = [
   '@iceworks/spec',
   'babel-eslint',
   'eslint',
+  'husky',
   'markdownlint',
   'prettier',
   'stylelint',
