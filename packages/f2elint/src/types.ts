@@ -37,6 +37,8 @@ export interface ScanOptions {
   fix?: boolean;
   // 生成报告文件
   outputReport?: boolean;
+  // scan 时指定要运行的 linter，优先级高于 f2elint.config.js
+  config?: Config;
 }
 
 export interface ScanResult {
@@ -70,6 +72,8 @@ export interface InitOptions {
   rewriteConfig?: boolean;
   // eslint 类型
   eslintType?: string;
+  // 是否启用 ESLint
+  enableESLint?: boolean;
   // 是否启用 stylelint
   enableStylelint?: boolean;
   // 是否启用 markdownlint
