@@ -49,14 +49,16 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   }
 
   // eslint
-  try {
-    const files = getLintFiles(ESLINT_FILE_EXT);
-    const cli = new eslint.ESLint(eslint.getLintConfig(options, pkg, config));
-    const reports = await cli.lintFiles(files);
-    fix && (await eslint.ESLint.outputFixes(reports));
-    results = results.concat(eslint.formatResults(reports, quiet));
-  } catch (e) {
-    runErrors.push(e);
+  if (config.enableESLint !== false) {
+    try {
+      const files = getLintFiles(ESLINT_FILE_EXT);
+      const cli = new eslint.ESLint(eslint.getLintConfig(options, pkg, config));
+      const reports = await cli.lintFiles(files);
+      fix && (await eslint.ESLint.outputFixes(reports));
+      results = results.concat(eslint.formatResults(reports, quiet));
+    } catch (e) {
+      runErrors.push(e);
+    }
   }
 
   // stylelint

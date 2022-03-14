@@ -14,6 +14,8 @@ export interface PKG {
 }
 
 export interface Config {
+  // 是否启用 ESLint
+  enableESLint?: boolean;
   // 是否启用 stylelint
   enableStylelint?: boolean;
   // 是否启用 markdown lint

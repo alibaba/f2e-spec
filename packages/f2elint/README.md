@@ -120,6 +120,7 @@ npm install f2elint --save
 ```js
 await f2elint.init({
   eslintType: 'react',
+  enableESLint: true,
   enableStylelint: true,
   enableMarkdownlint: true,
   enablePrettier: true,
@@ -133,6 +134,7 @@ config参数如下：
 | -------- | -------- | -------- | -------- |
 | cwd | string | - | 项目绝对路径 |
 | eslintType | ESLintType | - | 语言和框架类型，如果不配置，等同于 f2elint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
+| enableESLint | boolean | true | 是否启用 ESLint，如果不配置默认值为 true，即默认启用 ESLint |
 | enableStylelint | boolean | - | 是否启用 stylelint，如果不配置，等同于 f2elint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
 | enableMarkdownlint | boolean | - | 是否启用 markdownlint，如果不配置，等同于 f2elint init，控制台会出现选择器，如果配置，控制台就不会出现选择器 |
 | enablePrettier | boolean | - | 是否启用 Prettier |
@@ -171,6 +173,7 @@ await f2elint.scan({
 | quiet | boolean | false | 仅报告错误信息 |
 | fix |  boolean | false | 是否自动修复扫描到问题 |
 | outputReport | boolean | false | 输出扫描出的规约问题日志 |
+| config | [Config](https://github.com/alibaba/f2e-spec/blob/main/packages/f2elint/src/types.ts#L16) | - | 指定要运行的 linter，优先级高于 f2elint.config.js，不传该参数则默认读取 f2elint.config.js 作为 config |
 
 ## 配置
 
@@ -178,6 +181,7 @@ F2ELint 基于一份配置进行扫描（但你也可以零配置使用），支
 
 | 参数 | 类型 | 默认值 | 说明 |
 | -------- | -------- | -------- | -------- |
+| enableESLint | boolean | true | 是否启用 ESLint |
 | enableStylelint | boolean | true | 是否启用 stylelint |
 | enableMarkdownlint | boolean | true | 是否启用 markdownlint |
 | enablePrettier | boolean | - | 是否启用 Prettier |
@@ -186,6 +190,7 @@ F2ELint 会读取执行目录下的 `f2elint.config.js` 作为配置文件。`f2
 
 ```js
 module.exports = {
+  enableESLint: true,
   enableStylelint: true,
   enableMarkdownlint: true,
   enablePrettier: true,

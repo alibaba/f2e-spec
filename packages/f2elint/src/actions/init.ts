@@ -83,28 +83,35 @@ export default async (options: InitOptions) => {
     await update(false);
   }
 
-  // 初始化 `eslintType`。
+  // 初始化 `enableESLint`，默认为 true，无需让用户选择
+  if (typeof options.enableESLint === 'boolean') {
+    config.enableESLint = options.enableESLint;
+  } else {
+    config.enableESLint = true;
+  }
+
+  // 初始化 `eslintType`
   if (options.eslintType && PROJECT_TYPES.find((choice) => choice.value === options.eslintType)) {
     config.eslintType = options.eslintType;
   } else {
     config.eslintType = await chooseEslintType();
   }
 
-  // 初始化 `enableStylelint`。
+  // 初始化 `enableStylelint`
   if (typeof options.enableStylelint === 'boolean') {
     config.enableStylelint = options.enableStylelint;
   } else {
     config.enableStylelint = await chooseEnableStylelint(!/node/.test(config.eslintType));
   }
 
-  // 初始化 `enableMarkdownlint`。
+  // 初始化 `enableMarkdownlint`
   if (typeof options.enableMarkdownlint === 'boolean') {
     config.enableMarkdownlint = options.enableMarkdownlint;
   } else {
     config.enableMarkdownlint = await chooseEnableMarkdownLint();
   }
 
-  // 初始化 `enablePrettier`。
+  // 初始化 `enablePrettier`
   if (typeof options.enablePrettier === 'boolean') {
     config.enablePrettier = options.enablePrettier;
   } else {
@@ -130,7 +137,7 @@ export default async (options: InitOptions) => {
 
   // 更新 pkg.json
   pkg = fs.readJSONSync(pkgPath);
-  // 在 `package.json` 中写入 `scripts`。
+  // 在 `package.json` 中写入 `scripts`
   if (!pkg.scripts) {
     pkg.scripts = {};
   }
@@ -154,7 +161,7 @@ export default async (options: InitOptions) => {
   generateTemplate(cwd, config);
   log.success(`Step ${step}. 写入配置文件成功 :D`);
 
-  // 完成信息。
+  // 完成信息
   const logs = [`${PKG_NAME} 初始化完成 :D`].join('\r\n');
   log.success(logs);
 };
