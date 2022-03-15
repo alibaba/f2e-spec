@@ -22,6 +22,12 @@ export interface Config {
   enableMarkdownlint?: boolean;
   // 是否启用 prettier
   enablePrettier?: boolean;
+  // ESLint 配置项
+  eslintOptions?: ESLint.Options;
+  // stylelint 配置项
+  stylelintOptions?: stylelint.LinterOptions;
+  // markdownlint 配置项
+  markdownlintOptions?: markdownlint.Options;
 }
 
 export interface ScanOptions {

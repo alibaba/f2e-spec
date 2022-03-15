@@ -82,7 +82,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
         ? getLintFiles(MARKDOWN_LINT_FILE_EXT)
         : glob.sync('**/*.md', { cwd, ignore: 'node_modules/**' });
       const data = await markdownLint.lint({
-        ...markdownLint.getLintConfig(options),
+        ...markdownLint.getLintConfig(options, pkg, config),
         files,
       });
       results = results.concat(markdownLint.formatResults(data, quiet));

@@ -185,6 +185,9 @@ F2ELint 基于一份配置进行扫描（但你也可以零配置使用），支
 | enableStylelint | boolean | true | 是否启用 stylelint |
 | enableMarkdownlint | boolean | true | 是否启用 markdownlint |
 | enablePrettier | boolean | - | 是否启用 Prettier |
+| eslintOptions | ESLint.Options | - | ESLint 配置项，若未设置将使用执行目录下或内置的默认 eslintrc 和 eslintignore 进行扫描 |
+| stylelintOptions | stylelint.LinterOptions | - | stylelint 配置项，若未设置将使用执行目录下或内置的默认 stylelintrc 和 stylelintignore 进行扫描 |
+| markdownlintOptions | markdownlint.Options | - | markdownlint 配置项，若未设置将使用执行目录下或内置的默认 markdownlint 配置文件进行扫描 |
 
 F2ELint 会读取执行目录下的 `f2elint.config.js` 作为配置文件。`f2elint init` 会在执行目录下新增如下的 `f2elint.config.js` 文件：
 

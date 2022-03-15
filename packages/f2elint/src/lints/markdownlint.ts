@@ -4,27 +4,33 @@ import glob from 'glob';
 import markdownLint from 'markdownlint';
 import markdownLintConfigAli from 'markdownlint-config-ali';
 import markdownLintRuleHelpers from 'markdownlint-rule-helpers';
-import type { ScanOptions, ScanResult } from '../types';
+import type { ScanOptions, ScanResult, PKG, Config } from '../types';
 
 type LintOptions = markdownLint.Options & { fix?: boolean };
 
 /**
  * 获取 lint 配置
  * @param opts
+ * @param pkg
+ * @param config
  */
-export const getLintConfig = (opts: ScanOptions): LintOptions => {
+export const getLintConfig = (opts: ScanOptions, pkg: PKG, config: Config): LintOptions => {
   const { cwd } = opts;
   const lintConfig: LintOptions = {
     fix: Boolean(opts.fix),
     resultVersion: 3,
   };
 
-  // 使用默认的 lint 配置
-  const lintConfigFiles = glob.sync('.markdownlint(.@(yaml|yml|json))', { cwd });
-  if (lintConfigFiles.length === 0) {
-    lintConfig.config = markdownLintConfigAli;
+  if (config.markdownlintOptions) {
+    // 若用户传入了 markdownlintOptions，则用用户的
+    Object.assign(lintConfig, config.markdownlintOptions);
   } else {
-    lintConfig.config = markdownLint.readConfigSync(path.resolve(cwd, lintConfigFiles[0]));
+    const lintConfigFiles = glob.sync('.markdownlint(.@(yaml|yml|json))', { cwd });
+    if (lintConfigFiles.length === 0) {
+      lintConfig.config = markdownLintConfigAli;
+    } else {
+      lintConfig.config = markdownLint.readConfigSync(path.resolve(cwd, lintConfigFiles[0]));
+    }
   }
 
   return lintConfig;

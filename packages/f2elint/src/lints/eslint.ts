@@ -105,24 +105,29 @@ export const getLintConfig = (opts: ScanOptions, pkg: PKG, config: Config): ESLi
     errorOnUnmatchedPattern: false,
   };
 
-  // 使用默认的 lint 配置
-  const lintConfigFiles = glob.sync('.eslintrc?(.@(js|yaml|yml|json))', { cwd });
-  if (lintConfigFiles.length === 0 && !pkg.eslintConfig) {
-    lintConfig.resolvePluginsRelativeTo = path.resolve(__dirname, '../../');
-    lintConfig.useEslintrc = false;
-    lintConfig.baseConfig = {
-      extends: [
-        path.resolve(__dirname, `../../node_modules/${getConfigType(cwd, pkg)}`),
-        //  ESLint 不再管格式问题，直接使用 Prettier 进行格式化
-        ...(config.enablePrettier ? ['prettier/@typescript-eslint'] : []),
-      ],
-    };
-  }
-
-  // 使用默认的 ignore 配置
-  const lintIgnoreFile = path.resolve(cwd, '.eslintignore');
-  if (!fs.existsSync(lintIgnoreFile) && !pkg.eslintIgnore) {
-    lintConfig.ignorePath = path.resolve(__dirname, '../config/_eslintignore.ejs');
+  if (config.eslintOptions) {
+    // 若用户传入了 eslintOptions，则用用户的
+    Object.assign(lintConfig, config.eslintOptions);
+  } else {
+    // 根据扫描目录下有无lintrc文件，若无则使用默认的 lint 配置
+    const lintConfigFiles = glob.sync('.eslintrc?(.@(js|yaml|yml|json))', { cwd });
+    if (lintConfigFiles.length === 0 && !pkg.eslintConfig) {
+      lintConfig.resolvePluginsRelativeTo = path.resolve(__dirname, '../../');
+      lintConfig.useEslintrc = false;
+      lintConfig.baseConfig = {
+        extends: [
+          path.resolve(__dirname, `../../node_modules/${getConfigType(cwd, pkg)}`),
+          //  ESLint 不再管格式问题，直接使用 Prettier 进行格式化
+          ...(config.enablePrettier ? ['prettier/@typescript-eslint'] : []),
+        ],
+      };
+    }
+  
+    // 根据扫描目录下有无lintignore文件，若无则使用默认的 ignore 配置
+    const lintIgnoreFile = path.resolve(cwd, '.eslintignore');
+    if (!fs.existsSync(lintIgnoreFile) && !pkg.eslintIgnore) {
+      lintConfig.ignorePath = path.resolve(__dirname, '../config/_eslintignore.ejs');
+    }
   }
 
   return lintConfig;
