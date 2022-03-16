@@ -2,7 +2,7 @@
 
 ## 14.0.0 (2022-03-16)
 
-- 与 `eslint-plugin-import` 的推荐配置对齐：
+- 与 `eslint-plugin-import` 的推荐配置对齐，升级后若有由 alias 和 external 引起的报错，[解决方法见此](https://github.com/alibaba/f2e-spec/pull/72)：
   - `import/no-unresolved` 从 `off` 改为 `error`
   - `import/named` 从 `off` 改为 `error`
   - `import/default` 从 `off` 改为 `error`
