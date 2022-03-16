@@ -13,6 +13,10 @@
 其他：
 - 去掉 `.eslintrc` 中已废弃的 `prettier/react`, `prettier/typescript` 和 `prettier/vue`
 
+## 3.0.0 (2022-03-07)
+
+- 升级依赖 `@commitlint/cli` 11 -> 16
+
 ## 2.2.1 (2022-02-28)
 
 - 修复 prettier 和 eslint 顺序执行问题，避免互相覆盖
