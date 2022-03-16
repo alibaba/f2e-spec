@@ -41,6 +41,12 @@ describe('Validate TS configs', () => {
       return result.ruleId && result.ruleId.indexOf('@typescript-eslint/') !== -1;
     });
     assert.notEqual(errorReportedByReactPlugin.length, 0);
+
+    // 验证 eslint-import-resolver-typescript 工作是否正常
+    const filePath2 = path.join(__dirname, './fixtures/ts-import-a.ts');
+    const filePath3 = path.join(__dirname, './fixtures/ts-import-b.ts');
+    const reports2 = cli.executeOnFiles([filePath2, filePath3]);
+    assert.ok(reports2.errorCount !== 0 || reports2.warnCount !== 0);
   });
 
   it('Validate eslint-config-ali/typescript/react', () => {

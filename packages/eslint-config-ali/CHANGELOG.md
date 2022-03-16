@@ -1,6 +1,6 @@
 # 更新日志
 
-## 14.0.0 (2022-02-18)
+## 14.0.0 (2022-03-16)
 
 - 与 `eslint-plugin-import` 的推荐配置对齐：
   - `import/no-unresolved` 从 `off` 改为 `error`
@@ -8,6 +8,7 @@
   - `import/default` 从 `off` 改为 `error`
   - `import/namespace` 从 `off` 改为 `error`
   - `import/export` 从 `off` 改为 `error`
+- 使用 `eslint-import-resolver-typescript` 解析路径以支持 `tsconfig.json` 的 `paths`
 
 ## 13.1.0 (2022-01-21)
 

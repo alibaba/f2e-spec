@@ -1,5 +1,24 @@
 # 更新日志
 
+## 3.0.0 (2022-03-16)
+
+依赖升级：
+- 增加依赖 `eslint-import-resolver-typescript`
+- 升级依赖 `eslint` 7 -> 8，参见 [ESLint 变更日志](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)
+- 升级依赖 `eslint-config-ali` 13 -> 14
+- 升级依赖 `eslint-config-prettier` 7 -> 8
+- 升级依赖 `eslint-plugin-prettier` 3 -> 4
+- 升级依赖 `stylelint` 13 到 14
+- 升级依赖 `stylelint-scss` 3 到 4
+- 升级依赖 `@commitlint/cli` 11 -> 16
+
+其他：
+- 去掉 `.eslintrc` 中已废弃的 `prettier/react`, `prettier/typescript` 和 `prettier/vue`
+
+## 2.2.1 (2022-02-28)
+
+- 修复 prettier 和 eslint 顺序执行问题，避免互相覆盖
+
 ## 2.2.0 (2022-01-06)
 
 - 运行 `f2elint-fix` 时提前执行 Prettier 格式化，避免 Prettier 已修复的问题出现在 ESLint/Stylelint 结果中
