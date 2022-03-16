@@ -14,6 +14,16 @@
 
 其他：
 - 去掉 `.eslintrc` 中已废弃的 `prettier/react`, `prettier/typescript` 和 `prettier/vue`
+- 增加初始化时移除的冲突依赖
+  - `@ali/kyle`
+  - `@ali/eslint-config-ot-browser`
+  - `@iceworks/spec`
+  - `husky`
+  - `prettier`
+  - `tslint`
+- 增加初始化时移除的无用配置
+  - `.kylerc`
+  - `tslint.json`, `tslint.yaml`
 
 ## 2.2.1 (2022-02-28)
 
