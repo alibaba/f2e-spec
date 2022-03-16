@@ -1,6 +1,8 @@
 /**
  * 本文件的规则由 eslint-plugin-import 提供
- * @link https://github.com/benmosher/eslint-plugin-import
+ * 与 eslint-plugin-import 推荐配置对齐
+ * @see https://github.com/import-js/eslint-plugin-import
+ * @see https://github.com/import-js/eslint-plugin-import/blob/main/config/recommended.js
  */
 
 module.exports = {
@@ -19,25 +21,23 @@ module.exports = {
      */
 
     // ensure imports point to files/modules that can be resolved
-    // @reason 使用 webpack 的 externals、alias 时需要安装额外的插件
-    'import/no-unresolved': 'off',
+    'import/no-unresolved': 'error',
 
     // ensure named imports coupled with named exports
-    'import/named': 'off',
+    'import/named': 'error',
 
     // ensure default import coupled with default export
-    'import/default': 'off',
+    'import/default': 'error',
 
     // ensure imported namespaces contain dereferenced properties as they are dereferenced
-    'import/namespace': 'off',
+    'import/namespace': 'error',
 
     /**
      * Helpful warnings
      */
 
     // disallow invalid exports, e.g. multiple defaults
-    // @reason eslint 原生已支持，会报 Parsing error: `foo` has already been exported.
-    'import/export': 'off',
+    'import/export': 'error',
 
     // import 一个文件时，禁止 default import 的名字跟文件内的命名 export 相同
     'import/no-named-as-default': 'error',

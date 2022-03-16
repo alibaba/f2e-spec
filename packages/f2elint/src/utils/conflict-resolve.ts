@@ -6,9 +6,32 @@ import log from './log';
 import { PKG_NAME } from './constants';
 import type { PKG } from '../types';
 
-// lint 相关依赖包匹配正则
-const DEPENDENCIES_REG =
-  /(^(eslint|stylelint|@babel\/eslint-parser|markdownlint|@commitlint\/cli)$|^(eslint|vue-eslint|stylelint|markdownlint|commitlint)-\S+$|^@typescript-eslint\/\S+$)/;
+// 精确移除依赖
+const packageNamesToRemove = [
+  '@ali/kyle',
+  '@ali/eslint-config-ot-browser',
+  '@babel/eslint-parser',
+  '@commitlint/cli',
+  '@iceworks/spec',
+  'babel-eslint',
+  'eslint',
+  'husky',
+  'markdownlint',
+  'prettier',
+  'stylelint',
+  'tslint',
+];
+
+// 按前缀移除依赖
+const packagePrefixesToRemove = [
+  '@ali/kyle-',
+  '@commitlint/',
+  '@typescript-eslint/',
+  'eslint-',
+  'stylelint-',
+  'markdownlint-',
+  'commitlint-',
+];
 
 /**
  * 待删除的无用配置
@@ -21,7 +44,9 @@ const checkUselessConfig = (cwd: string): string[] => {
     .concat(glob.sync('.markdownlint@(rc|.@(yaml|yml|jsonc))', { cwd }))
     .concat(
       glob.sync('.prettierrc?(.@(cjs|config.js|config.cjs|yaml|yml|json|json5|toml))', { cwd }),
-    );
+    )
+    .concat(glob.sync('tslint.@(yaml|yml|json)', { cwd }))
+    .concat(glob.sync('.kylerc?(.@(yaml|yml|json))', { cwd }));
 };
 
 /**
@@ -42,7 +67,11 @@ export default async (cwd: string, rewriteConfig?: boolean) => {
     Object.keys(pkg.dependencies || {}),
     Object.keys(pkg.devDependencies || []),
   );
-  const willRemovePackage = dependencies.filter((name) => DEPENDENCIES_REG.test(name));
+  const willRemovePackage = dependencies.filter(
+    (name) =>
+      packageNamesToRemove.includes(name) ||
+      packagePrefixesToRemove.some((prefix) => name.startsWith(prefix)),
+  );
   const uselessConfig = checkUselessConfig(cwd);
   const reWriteConfig = checkReWriteConfig(cwd);
   const willChangeCount = willRemovePackage.length + uselessConfig.length + reWriteConfig.length;
