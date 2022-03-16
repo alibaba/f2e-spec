@@ -45,7 +45,7 @@ export interface ScanOptions {
   fix?: boolean;
   // 生成报告文件
   outputReport?: boolean;
-  // scan 时指定要运行的 linter，优先级高于 f2elint.config.js
+  // scan 时指定 f2elint config，优先级高于 f2elint.config.js
   config?: Config;
 }
 
