@@ -1,4 +1,5 @@
 # 更新日志
+
 ## 3.0.0 (2022-03-16)
 
 依赖升级：
@@ -7,15 +8,12 @@
 - 升级依赖 `eslint-config-ali` 13 -> 14
 - 升级依赖 `eslint-config-prettier` 7 -> 8
 - 升级依赖 `eslint-plugin-prettier` 3 -> 4
-- 升级 `stylelint` 13 到 14
-- 升级 `stylelint-scss` 3 到 4
+- 升级依赖 `stylelint` 13 到 14
+- 升级依赖 `stylelint-scss` 3 到 4
+- 升级依赖 `@commitlint/cli` 11 -> 16
 
 其他：
 - 去掉 `.eslintrc` 中已废弃的 `prettier/react`, `prettier/typescript` 和 `prettier/vue`
-
-## 3.0.0 (2022-03-07)
-
-- 升级依赖 `@commitlint/cli` 11 -> 16
 
 ## 2.2.1 (2022-02-28)
 
