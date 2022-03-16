@@ -1,6 +1,6 @@
 {
   "name": "f2elint",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "Linter for Alibaba F2E Guidelines",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -104,9 +104,9 @@
     "ora": "^5.1.0",
     "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
-    "stylelint": "^13.8.0",
+    "stylelint": "^14.3.0",
     "stylelint-config-ali": "^0.4.1",
-    "stylelint-scss": "^3.18.0",
+    "stylelint-scss": "^4.1.0",
     "terminal-link": "^2.1.1",
     "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
