@@ -24,9 +24,6 @@
   - Git 规约
   - 文档通用规约
   - 更新日志规约
-  - 前后端协作规约
-
-规约文档目前暂未对外开放，敬请期待……
 
 ### 配套工具
 
@@ -48,3 +45,34 @@
 ## 如何参与
 
 非常欢迎大家通过 [Issues](https://github.com/alibaba/f2e-spec/issues) 反馈问题和需求，或者通过 [PRs](https://github.com/alibaba/f2e-spec/pulls) 参与贡献，请参考 [CONTRIBUTING.md](/CONTRIBUTING.md)。
+
+## 贡献者信息
+
+撰写人员（排名不分先后）：邦彦、尘弦、迟帆、大果、氐宿、法海、姬无、倞羽、连木、林熠、零弌、墨止、牧曈、霂之、年翼、清锐、萨波、释然、双龙、苏青、阎罗、扬炀、洋风、云谦、载天、梓骞
+
+审阅人员（排名不分先后）：大貘、九十、狼叔、龙归、秦粤、上坡、死月、苏千、吞吞、潕量、艺璇、游鹿、裕波、张挺、知忧
+
+## 引用信息及鸣谢
+
+本项目的文档部分参考或引用了许多优秀的业界开源规范、标准化文档和技术官网，它们主要包括：
+
+- [Airbnb Style Guide](https://github.com/airbnb/javascript)
+- [Google Style Guide](https://google.github.io/styleguide)
+- [Code Guide by @mdo](http://codeguide.co)
+- [ecomfe/spec](https://github.com/ecomfe/spec)
+- [Conventional Commits](https://www.conventionalcommits.org)
+- [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog/CHANGELOG.md)
+- [MDN Web 开发者文档](https://developer.mozilla.org/zh-CN/docs/Web)
+- [React 官方文档](https://reactjs.org/docs/)
+- [谷歌 Web 开发者文档](https://reactjs.org/docs/)
+
+更详细的引用说明请参见各规约文档的「参考资料」章节。
+
+本项目的配套工具使用了多个优秀的 Linter、Formatter 及社区生态，主要包括：
+
+- [ESLint](https://eslint.org)，及[多个 plugin 和 parser]((https://github.com/alibaba/f2e-spec/tree/main/packages/eslint-config-ali#%E7%AE%80%E4%BB%8B))
+- [stylelint](https://stylelint.io/)，及 [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
+- [commitlint](https://commitlint.js.org/#/)，及 [conventional-changelog-conventionalcommits](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-conventionalcommits)
+- [markdownlint](https://github.com/DavidAnson/markdownlint)
+
+在此表示感谢，如有侵权行为，敬请联系我们 :-)
