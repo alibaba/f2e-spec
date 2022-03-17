@@ -13,6 +13,10 @@
 - 升级依赖 `@commitlint/cli` 11 -> 16
 
 其他：
+- Node.js API 变更：
+  - scan 支持 config 参数，优先级高于 f2elint.config.js
+  - config 增加 enableESLint 参数，以支持开关 eslint 扫描
+  - config 增加 eslintOptions、stylelintOptions 和 markdownlintOptions
 - 去掉 `.eslintrc` 中已废弃的 `prettier/react`, `prettier/typescript` 和 `prettier/vue`
 - 增加初始化时移除的冲突依赖
   - `@ali/kyle`

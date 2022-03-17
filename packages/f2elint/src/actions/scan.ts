@@ -16,7 +16,7 @@ import {
 import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from '../types';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
-  const { cwd, include, quiet, fix, outputReport } = options;
+  const { cwd, include, quiet, fix, outputReport, config: scanConfig } = options;
   const getLintFiles = (ext: string[]): string | string[] => {
     const { files } = options;
     if (files) return files.filter((name) => ext.includes(path.extname(name)));
@@ -28,7 +28,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     return fs.existsSync(localPath) ? require(localPath) : {};
   };
   const pkg: PKG = readConfigFile('package.json');
-  const config: Config = readConfigFile(`${PKG_NAME}.config.js`);
+  const config: Config = scanConfig || readConfigFile(`${PKG_NAME}.config.js`);
   const runErrors: Error[] = [];
   let results: ScanResult[] = [];
 
@@ -49,14 +49,16 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   }
 
   // eslint
-  try {
-    const files = getLintFiles(ESLINT_FILE_EXT);
-    const cli = new eslint.ESLint(eslint.getLintConfig(options, pkg, config));
-    const reports = await cli.lintFiles(files);
-    fix && (await eslint.ESLint.outputFixes(reports));
-    results = results.concat(eslint.formatResults(reports, quiet));
-  } catch (e) {
-    runErrors.push(e);
+  if (config.enableESLint !== false) {
+    try {
+      const files = getLintFiles(ESLINT_FILE_EXT);
+      const cli = new eslint.ESLint(eslint.getLintConfig(options, pkg, config));
+      const reports = await cli.lintFiles(files);
+      fix && (await eslint.ESLint.outputFixes(reports));
+      results = results.concat(eslint.formatResults(reports, quiet));
+    } catch (e) {
+      runErrors.push(e);
+    }
   }
 
   // stylelint
@@ -80,7 +82,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
         ? getLintFiles(MARKDOWN_LINT_FILE_EXT)
         : glob.sync('**/*.md', { cwd, ignore: 'node_modules/**' });
       const data = await markdownLint.lint({
-        ...markdownLint.getLintConfig(options),
+        ...markdownLint.getLintConfig(options, pkg, config),
         files,
       });
       results = results.concat(markdownLint.formatResults(data, quiet));

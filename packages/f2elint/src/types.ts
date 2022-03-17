@@ -14,12 +14,20 @@ export interface PKG {
 }
 
 export interface Config {
+  // 是否启用 ESLint
+  enableESLint?: boolean;
   // 是否启用 stylelint
   enableStylelint?: boolean;
   // 是否启用 markdown lint
   enableMarkdownlint?: boolean;
   // 是否启用 prettier
   enablePrettier?: boolean;
+  // ESLint 配置项
+  eslintOptions?: ESLint.Options;
+  // stylelint 配置项
+  stylelintOptions?: stylelint.LinterOptions;
+  // markdownlint 配置项
+  markdownlintOptions?: markdownlint.Options;
 }
 
 export interface ScanOptions {
@@ -37,6 +45,8 @@ export interface ScanOptions {
   fix?: boolean;
   // 生成报告文件
   outputReport?: boolean;
+  // scan 时指定 f2elint config，优先级高于 f2elint.config.js
+  config?: Config;
 }
 
 export interface ScanResult {
@@ -70,6 +80,8 @@ export interface InitOptions {
   rewriteConfig?: boolean;
   // eslint 类型
   eslintType?: string;
+  // 是否启用 ESLint
+  enableESLint?: boolean;
   // 是否启用 stylelint
   enableStylelint?: boolean;
   // 是否启用 markdownlint
