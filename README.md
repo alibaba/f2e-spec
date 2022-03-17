@@ -13,17 +13,17 @@
 规约文档主要分为编码规约和工程规约两大类，包括：
 
 - 编码规约
-  - HTML 编码规约
-  - CSS 编码规约
-  - JavaScript 编码规约
-  - TypeScript 编码规约
-  - React 编码规约
-  - Rax 编码规约
-  - Node.js 开发规约
+  - [HTML 编码规约](docs/coding/1.html-style-guide.md)
+  - [CSS 编码规约](docs/coding/2.css-style-guide.md)
+  - [JavaScript 编码规约](docs/coding/3.javascript-style-guide.md)
+  - [React 编码规约](docs/coding/4.react-style-guide.md)
+  - [Node.js 开发规约](docs/coding/5.node-style-guide.md)
+  - [TypeScript 编码规约](docs/coding/6.typescript-style-guide.md)
+  - [Rax 编码规约](docs/coding/7.rax-style-guide.md)
 - 工程规约
-  - Git 规约
-  - 文档通用规约
-  - 更新日志规约
+  - [Git 规约](docs/engineering/1.git.md)
+  - [文档通用规约](docs/engineering/2.doc-writing-practice.md)
+  - [更新日志规约](docs/engineering/3.doc-changelog.md)
 
 ### 配套工具
 
