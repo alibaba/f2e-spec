@@ -3,7 +3,8 @@ import fs from 'fs-extra';
 import glob from 'glob';
 import prettier from 'prettier';
 import * as eslint from '../lints/eslint';
-import * as stylelint from '../lints/stylelint';
+import { getLintConfig, formatResults } from '../lints/stylelint';
+import stylelint from 'stylelint';
 import * as markdownLint from '../lints/markdownlint';
 import {
   PKG_NAME,
@@ -66,10 +67,10 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     try {
       const files = getLintFiles(STYLELINT_FILE_EXT);
       const data = await stylelint.lint({
-        ...stylelint.getLintConfig(options, pkg, config),
+        ...getLintConfig(options, pkg, config),
         files,
       });
-      results = results.concat(stylelint.formatResults(data.results, quiet));
+      results = results.concat(formatResults(data.results, quiet));
     } catch (e) {
       runErrors.push(e);
     }

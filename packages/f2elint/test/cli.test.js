@@ -1,7 +1,6 @@
 const path = require('path');
 const fs = require('fs-extra');
 const execa = require('execa');
-const inquirer = require('inquirer');
 const packageJson = require('../package.json');
 
 const cli = (args, options) => {
@@ -39,7 +38,7 @@ describe(`'fix' command`, () => {
 
   test('should autofix problematic code', async () => {
     await cli(['fix'], {
-      cwd: path.dirname(`${dir}/result`)
+      cwd: path.dirname(`${dir}/result`),
     });
     expect(fs.readFileSync(outputFilePath, 'utf8')).toEqual(expectedFileContent);
   });
