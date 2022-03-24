@@ -2,11 +2,9 @@ import path from 'path';
 import fs from 'fs-extra';
 import glob from 'glob';
 import prettier from 'prettier';
-import { getMarkdownlintConfig, formatMarkdownlintResults } from '../lints/markdownlint';
-import markdownLintRuleHelpers from 'markdownlint-rule-helpers';
-import { getESLintConfig, formatESLintResults } from '../lints/eslint';
-import { getStylelintConfig, formatStylelintResults } from '../lints/stylelint';
 import { ESLint } from 'eslint';
+import markdownlint from 'markdownlint';
+import markdownlintRuleHelpers from 'markdownlint-rule-helpers';
 import stylelint from 'stylelint';
 import {
   PKG_NAME,
@@ -16,8 +14,15 @@ import {
   PRETTIER_FILE_EXT,
   PRETTIER_IGNORE_PATTERN,
 } from '../utils/constants';
+import {
+  getESLintConfig,
+  formatESLintResults,
+  getMarkdownlintConfig,
+  formatMarkdownlintResults,
+  getStylelintConfig,
+  formatStylelintResults,
+} from '../lints';
 import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from '../types';
-import markdownlint from 'markdownlint';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
   const { cwd, include, quiet, fix, outputReport, config: scanConfig } = options;
@@ -98,7 +103,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
 
           if (fixes.length > 0) {
             const originalText = fs.readFileSync(file, 'utf8');
-            const fixedText = markdownLintRuleHelpers.applyFixes(originalText, fixes);
+            const fixedText = markdownlintRuleHelpers.applyFixes(originalText, fixes);
             if (originalText !== fixedText) {
               fs.writeFileSync(file, fixedText, 'utf8');
               result[file] = result[file].filter((error) => !error.fixInfo);
