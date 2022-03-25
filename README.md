@@ -64,7 +64,7 @@
 - [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog/blob/master/packages/conventional-changelog/CHANGELOG.md)
 - [MDN Web 开发者文档](https://developer.mozilla.org/zh-CN/docs/Web)
 - [React 官方文档](https://reactjs.org/docs/)
-- [谷歌 Web 开发者文档](https://reactjs.org/docs/)
+- [谷歌 Web 开发者文档](https://developers.google.com/web)
 
 更详细的引用说明请参见各规约文档的「参考资料」章节。
 
