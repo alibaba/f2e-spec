@@ -1,10 +1,10 @@
-import { Config, PKG, ScanOptions } from 'types';
-import { STYLELINT_FILE_EXT, STYLELINT_IGNORE_PATTERN } from 'utils/constants';
 import fg from 'fast-glob';
 import { extname, join } from 'path';
 import stylelint from 'stylelint';
-import { getStylelintConfig } from './getStylelintConfig';
+import { PKG, ScanOptions } from '../../types';
+import { STYLELINT_FILE_EXT, STYLELINT_IGNORE_PATTERN } from '../../utils/constants';
 import { formatStylelintResults } from './formatStylelintResults';
+import { getStylelintConfig } from './getStylelintConfig';
 
 export interface DoStylelintOptions extends ScanOptions {
   pkg: PKG;

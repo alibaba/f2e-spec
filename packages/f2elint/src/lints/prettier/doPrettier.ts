@@ -1,9 +1,9 @@
-import { ScanOptions } from 'types';
-import { PRETTIER_FILE_EXT, PRETTIER_IGNORE_PATTERN } from 'utils/constants';
 import fg from 'fast-glob';
+import { readFile, writeFile } from 'fs-extra';
 import { extname, join } from 'path';
 import prettier from 'prettier';
-import { writeFile, readFile } from 'fs-extra';
+import { ScanOptions } from '../../types';
+import { PRETTIER_FILE_EXT, PRETTIER_IGNORE_PATTERN } from '../../utils/constants';
 
 export interface DoPrettierOptions extends ScanOptions {}
 

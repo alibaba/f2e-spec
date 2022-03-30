@@ -1,8 +1,8 @@
-import path from 'path';
 import fs from 'fs-extra';
-import { PKG_NAME } from 'utils/constants';
-import { doStylelint, doMarkdownlint, doPrettier, doESLint } from 'lints';
-import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from 'types';
+import path from 'path';
+import { doESLint, doMarkdownlint, doPrettier, doStylelint } from '../lints';
+import type { Config, PKG, ScanOptions, ScanReport, ScanResult } from '../types';
+import { PKG_NAME } from '../utils/constants';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
   const { cwd, fix, outputReport, config: scanConfig } = options;
