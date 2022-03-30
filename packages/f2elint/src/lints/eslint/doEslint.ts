@@ -8,7 +8,7 @@ import { formatESLintResults } from './formatESLintResults';
 
 export interface DoESLintOptions extends ScanOptions {
   pkg: PKG;
-  config: Config;
+  config?: Config;
 }
 
 export async function doESLint(options: DoESLintOptions) {

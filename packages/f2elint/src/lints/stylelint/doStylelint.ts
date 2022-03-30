@@ -8,7 +8,6 @@ import { formatStylelintResults } from './formatStylelintResults';
 
 export interface DoStylelintOptions extends ScanOptions {
   pkg: PKG;
-  config: Config;
 }
 
 export async function doStylelint(options: DoStylelintOptions) {

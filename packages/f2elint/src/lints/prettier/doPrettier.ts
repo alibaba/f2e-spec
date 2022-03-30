@@ -5,9 +5,7 @@ import { extname, join } from 'path';
 import prettier from 'prettier';
 import { writeFile, readFile } from 'fs-extra';
 
-export interface DoPrettierOptions extends ScanOptions {
-  cwd: string;
-}
+export interface DoPrettierOptions extends ScanOptions {}
 
 export async function doPrettier(options: DoPrettierOptions) {
   let files: string[] = [];

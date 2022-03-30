@@ -1,28 +1,12 @@
 import path from 'path';
 import fs from 'fs-extra';
-import glob from 'glob';
-import markdownlint from 'markdownlint';
-import markdownlintRuleHelpers from 'markdownlint-rule-helpers';
-import stylelint from 'stylelint';
-import { PKG_NAME, STYLELINT_FILE_EXT, MARKDOWN_LINT_FILE_EXT } from 'utils/constants';
-import {
-  getMarkdownlintConfig,
-  formatMarkdownlintResults,
-  getStylelintConfig,
-  formatStylelintResults,
-  doStylelint,
-} from 'lints';
+import { PKG_NAME } from 'utils/constants';
+import { doStylelint, doMarkdownlint, doPrettier, doESLint } from 'lints';
 import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from 'types';
-import { doPrettier, doESLint } from 'lints';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
-  const { cwd, include, quiet, fix, outputReport, config: scanConfig } = options;
-  const getLintFiles = (ext: string[]): string | string[] => {
-    const { files } = options;
-    if (files) return files.filter((name) => ext.includes(path.extname(name)));
-    const pattern = `**/*.{${ext.map((t) => t.replace(/^\./, '')).join(',')}}`;
-    return path.resolve(cwd, include, pattern);
-  };
+  const { cwd, fix, outputReport, config: scanConfig } = options;
+
   const readConfigFile = (pth: string): any => {
     const localPath = path.resolve(cwd, pth);
     return fs.existsSync(localPath) ? require(localPath) : {};
@@ -50,8 +34,8 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   // stylelint
   if (config.enableStylelint !== false) {
     try {
-      const stylelintResult = await doStylelint({ ...options, pkg, config });
-      results = results.concat(stylelintResult);
+      const stylelintResults = await doStylelint({ ...options, pkg, config });
+      results = results.concat(stylelintResults);
     } catch (e) {
       runErrors.push(e);
     }
@@ -60,31 +44,8 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   // markdown
   if (config.enableMarkdownlint !== false) {
     try {
-      const files = options.files
-        ? getLintFiles(MARKDOWN_LINT_FILE_EXT)
-        : glob.sync('**/*.md', { cwd, ignore: 'node_modules/**' });
-      const result = await markdownlint.promises.markdownlint({
-        ...getMarkdownlintConfig(options, pkg, config),
-        files,
-      });
-      // 修复
-      if (options.fix) {
-        for (const file in result) {
-          if (!Object.prototype.hasOwnProperty.call(result, file)) continue;
-
-          const fixes = result[file].filter((error) => error.fixInfo);
-
-          if (fixes.length > 0) {
-            const originalText = fs.readFileSync(file, 'utf8');
-            const fixedText = markdownlintRuleHelpers.applyFixes(originalText, fixes);
-            if (originalText !== fixedText) {
-              fs.writeFileSync(file, fixedText, 'utf8');
-              result[file] = result[file].filter((error) => !error.fixInfo);
-            }
-          }
-        }
-      }
-      results = results.concat(formatMarkdownlintResults(result, quiet));
+      const markdownlintResults = await doMarkdownlint({ ...options, pkg, config });
+      results = results.concat(markdownlintResults);
     } catch (e) {
       runErrors.push(e);
     }
