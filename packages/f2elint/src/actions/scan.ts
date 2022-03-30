@@ -1,7 +1,6 @@
 import path from 'path';
 import fs from 'fs-extra';
 import glob from 'glob';
-import prettier from 'prettier';
 import { ESLint } from 'eslint';
 import markdownlint from 'markdownlint';
 import markdownlintRuleHelpers from 'markdownlint-rule-helpers';
@@ -11,8 +10,6 @@ import {
   ESLINT_FILE_EXT,
   STYLELINT_FILE_EXT,
   MARKDOWN_LINT_FILE_EXT,
-  PRETTIER_FILE_EXT,
-  PRETTIER_IGNORE_PATTERN,
 } from '../utils/constants';
 import {
   getESLintConfig,
@@ -23,6 +20,7 @@ import {
   formatStylelintResults,
 } from '../lints';
 import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from '../types';
+import { doPrettier } from 'lints/prettier';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
   const { cwd, include, quiet, fix, outputReport, config: scanConfig } = options;
@@ -43,18 +41,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
 
   // prettier
   if (fix && config.enablePrettier !== false) {
-    const files = options.files
-      ? (getLintFiles(PRETTIER_FILE_EXT) as string[])
-      : glob.sync(`**/*.{${PRETTIER_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`, {
-          cwd,
-          ignore: PRETTIER_IGNORE_PATTERN,
-        });
-    for (const filepath of files) {
-      const text = fs.readFileSync(filepath, 'utf8');
-      const options = await prettier.resolveConfig(filepath);
-      const formatted = prettier.format(text, { ...options, filepath });
-      fs.writeFileSync(filepath, formatted, 'utf8');
-    }
+    doPrettier(options);
   }
 
   // eslint
