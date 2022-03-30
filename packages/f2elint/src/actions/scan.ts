@@ -33,7 +33,7 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
 
   // prettier
   if (fix && config.enablePrettier !== false) {
-    doPrettier(options);
+    await doPrettier(options);
   }
 
   // eslint
