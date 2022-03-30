@@ -1,26 +1,18 @@
 import path from 'path';
 import fs from 'fs-extra';
 import glob from 'glob';
-import { ESLint } from 'eslint';
 import markdownlint from 'markdownlint';
 import markdownlintRuleHelpers from 'markdownlint-rule-helpers';
 import stylelint from 'stylelint';
+import { PKG_NAME, STYLELINT_FILE_EXT, MARKDOWN_LINT_FILE_EXT } from 'utils/constants';
 import {
-  PKG_NAME,
-  ESLINT_FILE_EXT,
-  STYLELINT_FILE_EXT,
-  MARKDOWN_LINT_FILE_EXT,
-} from '../utils/constants';
-import {
-  getESLintConfig,
-  formatESLintResults,
   getMarkdownlintConfig,
   formatMarkdownlintResults,
   getStylelintConfig,
   formatStylelintResults,
-} from '../lints';
-import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from '../types';
-import { doPrettier } from 'lints/prettier';
+} from 'lints';
+import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from 'types';
+import { doPrettier, doESLint } from 'lints';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
   const { cwd, include, quiet, fix, outputReport, config: scanConfig } = options;
@@ -47,11 +39,8 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   // eslint
   if (config.enableESLint !== false) {
     try {
-      const files = getLintFiles(ESLINT_FILE_EXT);
-      const cli = new ESLint(getESLintConfig(options, pkg, config));
-      const reports = await cli.lintFiles(files);
-      fix && (await ESLint.outputFixes(reports));
-      results = results.concat(formatESLintResults(reports, quiet));
+      const eslintResults = await doESLint({ ...options, pkg, config });
+      results = results.concat(eslintResults);
     } catch (e) {
       runErrors.push(e);
     }
