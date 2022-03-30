@@ -10,6 +10,7 @@ import {
   formatMarkdownlintResults,
   getStylelintConfig,
   formatStylelintResults,
+  doStylelint,
 } from 'lints';
 import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from 'types';
 import { doPrettier, doESLint } from 'lints';
@@ -49,12 +50,8 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   // stylelint
   if (config.enableStylelint !== false) {
     try {
-      const files = getLintFiles(STYLELINT_FILE_EXT);
-      const data = await stylelint.lint({
-        ...getStylelintConfig(options, pkg, config),
-        files,
-      });
-      results = results.concat(formatStylelintResults(data.results, quiet));
+      const stylelintResult = await doStylelint({ ...options, pkg, config });
+      results = results.concat(stylelintResult);
     } catch (e) {
       runErrors.push(e);
     }

@@ -1,3 +1,3 @@
 export * from './getESLintConfig';
 export * from './formatESLintResults';
-export * from './doEslint';
+export * from './doESLint';
