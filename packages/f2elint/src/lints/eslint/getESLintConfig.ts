@@ -1,9 +1,9 @@
-import path from 'path';
+import { ESLint } from 'eslint';
 import fs from 'fs-extra';
 import glob from 'glob';
-import { ESLint } from 'eslint';
+import path from 'path';
+import type { Config, PKG, ScanOptions } from '../../types';
 import { ESLINT_FILE_EXT } from '../../utils/constants';
-import type { ScanOptions, PKG, Config } from '../../types';
 import { getESLintConfigType } from './getESLintConfigType';
 
 /**
@@ -32,7 +32,7 @@ export function getESLintConfig(opts: ScanOptions, pkg: PKG, config: Config): ES
         extends: [
           path.resolve(__dirname, `../../node_modules/${getESLintConfigType(cwd, pkg)}`),
           //  ESLint 不再管格式问题，直接使用 Prettier 进行格式化
-          ...(config.enablePrettier ? ['prettier/@typescript-eslint'] : []),
+          ...(config.enablePrettier ? ['prettier'] : []),
         ],
       };
     }
