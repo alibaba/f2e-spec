@@ -1,9 +1,9 @@
-import path from 'path';
 import fs from 'fs-extra';
 import glob from 'glob';
+import path from 'path';
 import { LinterOptions } from 'stylelint';
+import type { Config, PKG, ScanOptions } from '../../types';
 import { STYLELINT_IGNORE_PATTERN } from '../../utils/constants';
-import type { ScanOptions, PKG, Config } from '../../types';
 
 /**
  * 获取 Stylelint 配置
@@ -24,7 +24,6 @@ export function getStylelintConfig(opts: ScanOptions, pkg: PKG, config: Config):
     // 根据扫描目录下有无lintrc文件，若无则使用默认的 lint 配置
     const lintConfigFiles = glob.sync('.stylelintrc?(.@(js|yaml|yml|json))', { cwd });
     if (lintConfigFiles.length === 0 && !pkg.stylelint) {
-      lintConfig.configBasedir = path.resolve(__dirname, '../../node_modules/');
       lintConfig.config = {
         extends: 'stylelint-config-ali',
       };

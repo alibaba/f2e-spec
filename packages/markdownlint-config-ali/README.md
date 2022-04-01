@@ -16,6 +16,6 @@ npm install markdownlint-config-ali markdownlint --save-dev
 
 ```json
 {
-  "extends": "./node_modules/markdownlint-config-ali/index.json"
+  "extends": "markdownlint-config-ali"
 }
 ```

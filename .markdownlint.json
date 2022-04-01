@@ -1,3 +1,3 @@
 {
-  "extends": "./node_modules/markdownlint-config-ali/index.json"
+  "extends": "./packages/markdownlint-config-ali/index.json"
 }

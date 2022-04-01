@@ -30,7 +30,7 @@ export function getESLintConfig(opts: ScanOptions, pkg: PKG, config: Config): ES
       lintConfig.useEslintrc = false;
       lintConfig.baseConfig = {
         extends: [
-          path.resolve(__dirname, `../../node_modules/${getESLintConfigType(cwd, pkg)}`),
+          getESLintConfigType(cwd, pkg),
           //  ESLint 不再管格式问题，直接使用 Prettier 进行格式化
           ...(config.enablePrettier ? ['prettier'] : []),
         ],
