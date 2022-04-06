@@ -244,7 +244,7 @@
 
 ### 文档
 
-- 修改 Changlog，补充对 v9 版本 comma-dangle 规则带来的 Breaking changes
+- 修改 Changelog，补充对 v9 版本 comma-dangle 规则带来的 Breaking changes
 
 ## 9.0.1 (2019-12-23)
 

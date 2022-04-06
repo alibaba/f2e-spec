@@ -10,7 +10,7 @@ F2ELint 是《阿里巴巴前端规约》的配套 Lint 工具，可以为项目
 
 | 规约 | Lint 工具 | 规则包 |
 | -------- | -------- | -------- |
-| 《JavaScript 编码规约》 <br/> 《TypeScript 编码规约》 <br/> 《React 编码规约》 <br/> 《Rax 编码规约》 <br/> 《Vue 编码规约》 <br/> 《Node.js 开发规约》     |  [ESLint](https://eslint.org/)   | [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali) |
+| 《JavaScript 编码规约》 <br/> 《TypeScript 编码规约》 <br/> 《React 编码规约》 <br/> 《Rax 编码规约》 <br/> 《Node.js 开发规约》     |  [ESLint](https://eslint.org/)   | [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali) |
 | 《CSS 编码规约》     |  [stylelint](https://stylelint.io/)  | [stylelint-config-ali](https://www.npmjs.com/package/stylelint-config-ali) |
 | 《Git 规约》     |  [commitlint](https://commitlint.js.org/#/)  | [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali) |
 | 《文档通用规约》     |  [markdownlint](https://github.com/DavidAnson/markdownlint)  | [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali) |

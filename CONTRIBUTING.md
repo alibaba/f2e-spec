@@ -6,10 +6,13 @@
 
 ```markdown
 .
-├── docs 规约文档（Comming soon...）
+├── docs 规约文档
+│   ├── coding 编码规约目录
+│   └── engineering 工程规约目录
 ├── packages 配套工具
 │   ├── commitlint-config-ali commitlint配置包
 │   ├── eslint-config-ali ESLint配置包
+│   ├── eslint-plugin-ali ESLint plugin，目前未在ESLint配置包中默认引入
 │   ├── f2elint 一键工具
 │   ├── markdownlint-config-ali markdownlint配置包
 │   └── stylelint-config-ali stylelint配置包
@@ -18,13 +21,13 @@
 └── README.md
 ```
 
-目前 `docs/` 目录还未开放，请主要关注 `packages/` 目录，其中有 5 个 npm 包的源码，分别是 4 个 `xx-config-ali` 和 `f2elint`。
+`docs/` 目录还未开放。`packages/` 目录，其中有 6 个 npm 包的源码，分别是 `f2elint`、4 个 `xx-config-ali` 以及 `eslint-plugin-ali`。
 
 4 个 `xx-config-ali` 是不同规约对应的 Linter 的规则配置包，它们和规约文档及 Lint 工具对应关系如下：
 
 | 规约 | Lint 工具 | 规则包 |
 | -------- | -------- | -------- |
-| 《JavaScript 编码规约》 <br/> 《TypeScript 编码规约》 <br/> 《React 编码规约》 <br/> 《Rax 编码规约》 <br/> 《Vue 编码规约》 <br/> 《Node.js 开发规约》     |  [ESLint](https://eslint.org/)   | [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali) |
+| 《JavaScript 编码规约》 <br/> 《TypeScript 编码规约》 <br/> 《React 编码规约》 <br/> 《Rax 编码规约》 <br/> 《Node.js 开发规约》     |  [ESLint](https://eslint.org/)   | [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali) |
 | 《CSS 编码规约》     |  [stylelint](https://stylelint.io/)  | [stylelint-config-ali](https://www.npmjs.com/package/stylelint-config-ali) |
 | 《Git 规约》     |  [commitlint](https://commitlint.js.org/#/)  | [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali) |
 | 《文档通用规约》     |  [markdownlint](https://github.com/DavidAnson/markdownlint)  | [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali) |
