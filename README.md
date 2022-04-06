@@ -25,48 +25,6 @@
   - [文档通用规约](docs/engineering/2.doc-writing-practice.md)
   - [更新日志规约](docs/engineering/3.doc-changelog.md)
 
-### 单条规约的说明
-
-#### 规约级别
-
-根据约束力强弱，一条规约依次分为强制、推荐、参考三个级别：
-
-- 【强制】必须遵守。是不得不遵守的约定，违反本约定或将会引起严重的后果。
-- 【推荐】尽量遵守。长期遵守这样的规定，有助于系统稳定性和合作效率的提升。
-- 【参考】充分理解。技术意识的引导，是个人学习、团队沟通、项目合作的方向。
-
-在规约描述的开头会标注它的级别，例如：
-
-- 1.1.1【强制】使用 2 个空格缩进。eslint: [indent](https://eslint.org/docs/rules/indent)
-
-#### 代码示例
-
-为了更加直观，规约描述之后通常会配上代码示例，例如：
-
-```javascript
-// bad
-function foo() {
-∙∙∙∙let name;
-}
-
-// good
-function foo() {
-∙∙let name;
-}
-```
-
-我们约定用 `bad` 注释表示反例，用 `good` 注释表示正例。
-
-除了 `bad` 和 `good`，有时你还会看到 `disallowed`、`allowed`、`best` 这几种注释，它们的含义如下：
-
-```javascript
-// disallowed - 禁止（用于部分明令禁止的用法）
-// bad - 反例
-// allowed - 中例（用于允许但不推荐的用法）
-// good - 正例
-// best - 最佳正例（多个正例中最好的实现）
-```
-
 ### 配套工具
 
 我们引入了多个业界流行的 Linter 作为规约文档的配套工具，并根据规约内容定制了对应的规则包，它们包括：
