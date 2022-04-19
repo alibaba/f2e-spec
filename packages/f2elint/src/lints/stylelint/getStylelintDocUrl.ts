@@ -8,7 +8,7 @@ export function getStylelintRuleDocUrl(rule: string): string {
     return `https://github.com/kristerkari/stylelint-scss/tree/master/src/rules/${match[1]}`;
   }
 
-  if (rule !== 'CssSyntaxError') return `https://stylelint.io/user-guide/rules/${rule}`;
+  if (rule !== 'CssSyntaxError') return `https://stylelint.io/user-guide/rules/list/${rule}`;
 
   return '';
 }
