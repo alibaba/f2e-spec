@@ -25,10 +25,11 @@ export async function doESLint(options: DoESLintOptions) {
       ignore: ESLINT_IGNORE_PATTERN,
     });
   }
-  const cli = new ESLint(getESLintConfig(options, options.pkg, options.config));
-  const reports = await cli.lintFiles(files);
+  const eslint = new ESLint(getESLintConfig(options, options.pkg, options.config));
+  const reports = await eslint.lintFiles(files);
   if (options.fix) {
     await ESLint.outputFixes(reports);
   }
-  return formatESLintResults(reports, options.quiet);
+
+  return formatESLintResults(reports, options.quiet, eslint);
 }

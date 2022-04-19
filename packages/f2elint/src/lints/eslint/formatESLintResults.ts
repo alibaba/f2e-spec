@@ -1,11 +1,12 @@
 import { ESLint } from 'eslint';
 import type { ScanResult } from '../../types';
-import { getESLintRuleDocUrl } from './getESLintRuleDocUrl';
 
 /**
  * 格式化 ESLint 输出结果
  */
-export function formatESLintResults(results: ESLint.LintResult[], quiet: boolean): ScanResult[] {
+export function formatESLintResults(results: ESLint.LintResult[], quiet: boolean, eslint: ESLint): ScanResult[] {
+  const rulesMeta = eslint.getRulesMetaForResults(results);
+
   return results
     .filter(({ warningCount, errorCount }) => errorCount || warningCount)
     .map(
@@ -28,7 +29,7 @@ export function formatESLintResults(results: ESLint.LintResult[], quiet: boolean
               line,
               column,
               rule: ruleId,
-              url: getESLintRuleDocUrl(ruleId),
+              url: rulesMeta[ruleId]?.docs?.url || '',
               message: message.replace(/([^ ])\.$/u, '$1'),
               errored: fatal || severity === 2,
             };
