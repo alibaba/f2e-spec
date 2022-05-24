@@ -2,6 +2,6 @@
 // 详见 issue: https://github.com/facebook/jest/issues/3190
 module.exports = {
   collectCoverage: true,
-  verbose: false,
+  verbose: true,
   coverageReporters: ['none'],
 };

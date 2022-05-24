@@ -1,28 +1,12 @@
-import path from 'path';
 import fs from 'fs-extra';
-import glob from 'glob';
-import prettier from 'prettier';
-import * as eslint from '../lints/eslint';
-import * as stylelint from '../lints/stylelint';
-import * as markdownLint from '../lints/markdownlint';
-import {
-  PKG_NAME,
-  ESLINT_FILE_EXT,
-  STYLELINT_FILE_EXT,
-  MARKDOWN_LINT_FILE_EXT,
-  PRETTIER_FILE_EXT,
-  PRETTIER_IGNORE_PATTERN,
-} from '../utils/constants';
-import type { ScanOptions, ScanResult, PKG, Config, ScanReport } from '../types';
+import path from 'path';
+import { doESLint, doMarkdownlint, doPrettier, doStylelint } from '../lints';
+import type { Config, PKG, ScanOptions, ScanReport, ScanResult } from '../types';
+import { PKG_NAME } from '../utils/constants';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
-  const { cwd, include, quiet, fix, outputReport, config: scanConfig } = options;
-  const getLintFiles = (ext: string[]): string | string[] => {
-    const { files } = options;
-    if (files) return files.filter((name) => ext.includes(path.extname(name)));
-    const pattern = `**/*.{${ext.map((t) => t.replace(/^\./, '')).join(',')}}`;
-    return path.resolve(cwd, include, pattern);
-  };
+  const { cwd, fix, outputReport, config: scanConfig } = options;
+
   const readConfigFile = (pth: string): any => {
     const localPath = path.resolve(cwd, pth);
     return fs.existsSync(localPath) ? require(localPath) : {};
@@ -34,28 +18,14 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
 
   // prettier
   if (fix && config.enablePrettier !== false) {
-    const files = options.files
-      ? (getLintFiles(PRETTIER_FILE_EXT) as string[])
-      : glob.sync(`**/*.{${PRETTIER_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`, {
-          cwd,
-          ignore: PRETTIER_IGNORE_PATTERN,
-        });
-    for (const filepath of files) {
-      const text = fs.readFileSync(filepath, 'utf8');
-      const options = await prettier.resolveConfig(filepath);
-      const formatted = prettier.format(text, { ...options, filepath });
-      fs.writeFileSync(filepath, formatted, 'utf8');
-    }
+    await doPrettier(options);
   }
 
   // eslint
   if (config.enableESLint !== false) {
     try {
-      const files = getLintFiles(ESLINT_FILE_EXT);
-      const cli = new eslint.ESLint(eslint.getLintConfig(options, pkg, config));
-      const reports = await cli.lintFiles(files);
-      fix && (await eslint.ESLint.outputFixes(reports));
-      results = results.concat(eslint.formatResults(reports, quiet));
+      const eslintResults = await doESLint({ ...options, pkg, config });
+      results = results.concat(eslintResults);
     } catch (e) {
       runErrors.push(e);
     }
@@ -64,12 +34,8 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   // stylelint
   if (config.enableStylelint !== false) {
     try {
-      const files = getLintFiles(STYLELINT_FILE_EXT);
-      const data = await stylelint.lint({
-        ...stylelint.getLintConfig(options, pkg, config),
-        files,
-      });
-      results = results.concat(stylelint.formatResults(data.results, quiet));
+      const stylelintResults = await doStylelint({ ...options, pkg, config });
+      results = results.concat(stylelintResults);
     } catch (e) {
       runErrors.push(e);
     }
@@ -78,14 +44,8 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
   // markdown
   if (config.enableMarkdownlint !== false) {
     try {
-      const files = options.files
-        ? getLintFiles(MARKDOWN_LINT_FILE_EXT)
-        : glob.sync('**/*.md', { cwd, ignore: 'node_modules/**' });
-      const data = await markdownLint.lint({
-        ...markdownLint.getLintConfig(options, pkg, config),
-        files,
-      });
-      results = results.concat(markdownLint.formatResults(data, quiet));
+      const markdownlintResults = await doMarkdownlint({ ...options, pkg, config });
+      results = results.concat(markdownlintResults);
     } catch (e) {
       runErrors.push(e);
     }

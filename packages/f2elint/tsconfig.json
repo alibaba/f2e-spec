@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
-    "baseUrl": "./src",
     "outDir": "./lib",
     "target": "ES5",
     "module": "commonjs",
@@ -10,9 +8,7 @@
     "resolveJsonModule": true,
     "declaration": true,
     "downlevelIteration": true,
-    "types": [
-      "node"
-    ],
+    "types": ["node"]
   },
-  "include": ["src"],
+  "include": ["src"]
 }
