@@ -94,4 +94,14 @@ module.exports = {
     'scss/double-slash-comment-whitespace-inside': 'always',
   },
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+  overrides: [
+    {
+      files: ['**/*.scss'],
+      customSyntax: require('postcss-scss'),
+    },
+    {
+      files: ['**/*.less'],
+      customSyntax: require('postcss-less'),
+    },
+  ],
 };

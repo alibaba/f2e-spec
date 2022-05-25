@@ -33,11 +33,15 @@
   },
   "peerDependencies": {
     "stylelint": ">=8.3.0",
-    "stylelint-scss": ">=2.0.0"
+    "stylelint-scss": ">=4.2.0"
   },
   "devDependencies": {
     "mocha": "^6.1.4",
     "stylelint": "^14.3.0",
     "stylelint-scss": "^4.1.0"
+  },
+  "dependencies": {
+    "postcss-less": "^6.0.0",
+    "postcss-scss": "^4.0.4"
   }
 }

@@ -3,7 +3,7 @@
 ## 3.0.1 (2022-05-25)
 
 - 修复 glob 方法错误解析到 node_modules 的问题
-- 补充 Stylelint 13->14 去掉的 postcss 依赖：`postcss-less`, `postcss-scss`, `postcss-html`
+- 补充 Stylelint 13->14 去掉的 SCSS 语法解析功能
 
 ## 3.0.0 (2022-03-16)
 
