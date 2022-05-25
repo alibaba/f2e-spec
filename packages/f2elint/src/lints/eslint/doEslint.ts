@@ -1,6 +1,6 @@
 import { ESLint } from 'eslint';
 import fg from 'fast-glob';
-import { extname, join } from 'path';
+import { extname } from 'path';
 import { Config, PKG, ScanOptions } from '../../types';
 import { ESLINT_FILE_EXT, ESLINT_IGNORE_PATTERN } from '../../utils/constants';
 import { formatESLintResults } from './formatESLintResults';
@@ -16,13 +16,10 @@ export async function doESLint(options: DoESLintOptions) {
   if (options.files) {
     files = options.files.filter((name) => ESLINT_FILE_EXT.includes(extname(name)));
   } else {
-    const pattern = join(
-      options.include,
-      `**/*.{${ESLINT_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`,
-    );
+    const pattern = `**/*.{${ESLINT_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`;
     files = await fg(pattern, {
-      cwd: options.cwd,
-      ignore: ESLINT_IGNORE_PATTERN,
+      cwd: options.include,
+      ignore: ESLINT_IGNORE_PATTERN.map((p) => (p.endsWith('/') ? `${p}**/*` : p)),
     });
   }
   const eslint = new ESLint(getESLintConfig(options, options.pkg, options.config));
