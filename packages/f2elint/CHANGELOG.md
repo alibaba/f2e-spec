@@ -1,8 +1,14 @@
 # 更新日志
 
+## 3.0.1 (2022-05-25)
+
+- 修复 glob 方法错误解析到 node_modules 的问题
+- 补充 Stylelint 13->14 去掉的 postcss 依赖：`postcss-less`, `postcss-scss`, `postcss-html`
+
 ## 3.0.0 (2022-03-16)
 
 依赖升级：
+
 - 增加依赖 `eslint-import-resolver-typescript`
 - 升级依赖 `eslint` 7 -> 8，参见 [ESLint 变更日志](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)
 - 升级依赖 `eslint-config-ali` 13 -> 14
@@ -13,6 +19,7 @@
 - 升级依赖 `@commitlint/cli` 11 -> 16
 
 其他：
+
 - Node.js API 变更：
   - scan 支持 config 参数，优先级高于 f2elint.config.js
   - config 增加 enableESLint 参数，以支持开关 eslint 扫描
