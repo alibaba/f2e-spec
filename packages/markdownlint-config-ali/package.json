@@ -1,6 +1,6 @@
 {
   "name": "markdownlint-config-ali",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "markdownlint shareable configuration for Alibaba F2E Guidelines",
   "main": "index.json",
   "keywords": [
@@ -23,6 +23,6 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "markdownlint": "^0.21.1"
+    "markdownlint": "^0.25.1"
   }
 }
