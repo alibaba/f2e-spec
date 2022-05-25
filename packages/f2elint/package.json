@@ -99,7 +99,7 @@
     "inquirer": "^7.3.3",
     "is-docker": "^2.1.1",
     "lodash": "^4.17.20",
-    "markdownlint": "^0.25.1",
+    "markdownlint": "0.x",
     "markdownlint-config-ali": "^0.1.1",
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",

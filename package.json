@@ -7,6 +7,6 @@
     "lint": "markdownlint -c .markdownlint.json README.md **/*.md"
   },
   "devDependencies": {
-    "markdownlint": "^0.25.1"
+    "markdownlint": "0.x"
   }
 }

@@ -23,6 +23,6 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "markdownlint": "^0.25.1"
+    "markdownlint": "0.x"
   }
 }
