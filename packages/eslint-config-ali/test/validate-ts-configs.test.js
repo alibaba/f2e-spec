@@ -47,6 +47,11 @@ describe('Validate TS configs', () => {
     });
     assert.notEqual(errorReportedByReactPlugin.length, 0);
 
+    const errorReportedByNoRedeclare = messages.filter((result) => {
+      return result.ruleId === 'no-redeclare';
+    });
+    assert.equal(errorReportedByNoRedeclare.length, 0);
+
     // 验证 eslint-import-resolver-typescript 工作是否正常
     const filePath2 = path.join(__dirname, './fixtures/ts-import-a.ts');
     const filePath3 = path.join(__dirname, './fixtures/ts-import-b.ts');

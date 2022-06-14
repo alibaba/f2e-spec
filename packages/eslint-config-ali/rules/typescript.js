@@ -778,6 +778,14 @@ module.exports = {
      * 【推荐】定义函数时，优先使用参数的联合类型而不是函数的类型重载
      */
     '@typescript-eslint/unified-signatures': 'warn',
+
+    /**
+     * 不允许重复申明
+     * no-redeclare 会导致 typescript 的函数重载报错，详见：
+     * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-redeclare.md
+     */
+    'no-redeclare': 'off',
+    '@typescript-eslint/no-redeclare': ['error'],
   },
   overrides: [
     {
