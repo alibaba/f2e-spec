@@ -20,7 +20,7 @@ export function getMarkdownlintConfig(opts: ScanOptions, pkg: PKG, config: Confi
     // 若用户传入了 markdownlintOptions，则用用户的
     Object.assign(lintConfig, config.markdownlintOptions);
   } else {
-    const lintConfigFiles = glob.sync('.markdownlint(.@(yaml|yml|json))', { cwd });
+    const lintConfigFiles = glob.sync('.markdownlint?(.@(yaml|yml|json))', { cwd });
     if (lintConfigFiles.length === 0) {
       lintConfig.config = markdownLintConfigAli;
     } else {
