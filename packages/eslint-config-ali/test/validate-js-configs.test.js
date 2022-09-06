@@ -103,6 +103,11 @@ describe('Validate JS configs', () => {
       return result.ruleId && result.ruleId.indexOf('react-hooks/') !== -1;
     });
     assert.equal(errorReportedByReactPlugin2.length, 2);
+
+    // 验证 react/display-name 规则是否正常
+    const reactDisplayNameDemo = path.join(__dirname, './fixtures/react-display-name.js');
+    const displayNameResult = await cli.lintFiles([reactDisplayNameDemo]);
+    assert.notEqual(sumBy(displayNameResult, 'warningCount'), 0);
   });
 
   it('Validate eslint-config-ali/rax', async () => {

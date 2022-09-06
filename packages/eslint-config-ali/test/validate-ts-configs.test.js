@@ -127,6 +127,7 @@ describe('Validate TS configs', () => {
 
     // 验证对 tsx 工作是否正常
     const results = await cli.lintFiles([filePath]);
+
     assert.equal(sumBy(results, 'fatalErrorCount'), 0);
     assert.equal(sumBy(results, 'errorCount'), 0);
     assert.equal(sumBy(results, 'warningCount'), 0);

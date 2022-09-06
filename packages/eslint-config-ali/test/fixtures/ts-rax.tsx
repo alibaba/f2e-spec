@@ -7,7 +7,7 @@ interface LogoProps {
   uri: string;
 }
 
-export default (props: LogoProps) => {
+export default function RaxDemo(props: LogoProps) {
   const { uri } = props;
   const test = ['hello', 'world', uri];
   return (
@@ -15,4 +15,4 @@ export default (props: LogoProps) => {
       {item}
     </Text>
   );
-};
+}
