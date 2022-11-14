@@ -217,10 +217,10 @@ module.exports = {
     'react/jsx-wrap-multilines': [
       'error',
       {
-        declaration: true,
-        assignment: true,
-        return: true,
-        arrow: true,
+        declaration: 'parens-new-line',
+        assignment: 'parens-new-line',
+        return: 'parens-new-line',
+        arrow: 'parens-new-line',
       },
     ],
 
