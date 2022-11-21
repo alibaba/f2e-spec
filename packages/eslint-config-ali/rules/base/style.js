@@ -113,6 +113,7 @@ module.exports = {
           'JSXText',
           'JSXEmptyExpression',
           'JSXSpreadChild',
+          'PropertyDefinition',
         ],
         ignoreComments: false,
       },
