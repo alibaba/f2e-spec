@@ -86,7 +86,6 @@ module.exports = {
       files: ['*.scss', '**/*.scss'],
       customSyntax: 'postcss-scss',
       plugins: ['stylelint-scss'],
-      extends: ['stylelint-config-standard-scss'],
       rules: {
         // conflict css rules to disable
         // turn off CSS @ rule check, to support @include, @mixin usage in scss
