@@ -2,14 +2,7 @@ const miniappTags = require('./miniapp-tags');
 
 module.exports = {
   defaultSeverity: 'warning',
-  plugins: ['stylelint-scss'],
   rules: {
-    /**
-     * Possible errors
-     * @link https://stylelint.io/user-guide/rules/#possible-errors
-     */
-    'at-rule-no-unknown': null,
-    'scss/at-rule-no-unknown': true,
     'block-no-empty': null,
     'color-no-invalid-hex': true,
     'comment-no-empty': true,
@@ -86,12 +79,43 @@ module.exports = {
     'max-line-length': 100,
     'selector-max-id': 0,
     'value-list-comma-space-after': 'always-single-line',
-
-    /**
-     * stylelint-scss rules
-     * @link https://www.npmjs.com/package/stylelint-scss
-     */
-    'scss/double-slash-comment-whitespace-inside': 'always',
   },
+  overrides: [
+    // scss language support
+    {
+      files: ['*.scss', '**/*.scss'],
+      customSyntax: 'postcss-scss',
+      plugins: ['stylelint-scss'],
+      extends: ['stylelint-config-standard-scss'],
+      rules: {
+        // conflict css rules to disable
+        // turn off CSS @ rule check, to support @include, @mixin usage in scss
+        'at-rule-no-unknown': null,
+
+        // stylelint-scss rules
+        // https://github.com/stylelint-less/stylelint-less
+
+        'scss/double-slash-comment-whitespace-inside': 'always',
+      },
+    },
+    // less language support
+    {
+      files: ['*.less', '**/*.less'],
+      customSyntax: 'postcss-less',
+      plugins: ['stylelint-less'],
+      rules: {
+        // conflict css rules to disable
+        // turn off CSS @ rule check, to support @ variable usage in less
+        'at-rule-no-unknown': null,
+
+        // stylelint-less rules
+        // https://github.com/stylelint-less/stylelint-less
+
+        // don't allow duplicate variable declarations
+        'less/no-duplicate-variables': true,
+      },
+    },
+  ],
+  // don't support css-in-js because there are too many different implementations
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
 };
