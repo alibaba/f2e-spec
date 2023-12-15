@@ -1,5 +1,13 @@
 # 更新日志
 
+## 2.0.0 (2023-12-15)
+
+**破坏性变更：**
+
+- 更新 stylelint 15.x 到 16.x
+- 更新 stylelint-scss 5.x 到 6.x
+- 更新 stylelint-less 2.x 到 3.x
+
 ## 1.1.0 (2023-10-11)
 
 - 移除废弃的 stylelint 规则
