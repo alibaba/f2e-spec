@@ -1,9 +1,21 @@
 # 更新日志
 
-## 14.0.2（2022-09-06）
+## 14.1.0 (2023-12-18)
+
+- 将插件和配置添加到依赖
+  - eslint-import-resolver-typescript
+  - eslint-plugin-import
+  - eslint-plugin-react
+  - eslint-plugin-react-hooks
+  - @typescript-eslint/eslint-plugin
+  - @typescript-eslint/parser
+
+## 14.0.2 (2022-09-06)
+
 - react 规约 `react/display-name` 调整为 `warn`
 
 ## 14.0.1 (2022-06-16)
+
 - ts 规约 `no-redeclare` 规则调整，增加对函数重载的支持
 
 ## 14.0.0 (2022-03-16)
