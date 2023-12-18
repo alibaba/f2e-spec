@@ -76,11 +76,7 @@ module.exports = {
      * @extend
      */
     'brace-style': 'off',
-    '@typescript-eslint/brace-style': [
-      'error',
-      '1tbs',
-      { allowSingleLine: true },
-    ],
+    '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: true }],
 
     /**
      * 【推荐】类的属性如果是字面量，则必须是只读属性而不能用 getter
@@ -94,10 +90,7 @@ module.exports = {
      * @extend
      */
     'comma-spacing': 'off',
-    '@typescript-eslint/comma-spacing': [
-      'error',
-      { before: false, after: true },
-    ],
+    '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
 
     /**
      * 【强制】类型断言必须使用 as Type 而非 <T>，对象字面量禁止类型断言（断言成 any 除外）
@@ -143,10 +136,7 @@ module.exports = {
      * 【推荐】设置类的成员的可访问性，public 可省略
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md
      */
-    '@typescript-eslint/explicit-member-accessibility': [
-      'warn',
-      { accessibility: 'no-public' },
-    ],
+    '@typescript-eslint/explicit-member-accessibility': ['warn', { accessibility: 'no-public' }],
 
     /**
      * 【关闭】导出的函数或类中的 public 方法必须定义输入输出参数的类型
@@ -791,13 +781,15 @@ module.exports = {
     {
       files: ['*.ts', '*.tsx'],
       rules: {
-        // Disable `no-undef` rule within TypeScript files because it incorrectly errors when exporting default interfaces
-        // https://github.com/iamturns/eslint-config-airbnb-typescript/issues/50
-        // This will be caught by TypeScript compiler if `strictNullChecks` (or `strict`) is enabled
-        // fixed: https://github.com/typescript-eslint/typescript-eslint/issues/342
-        // 'no-undef': 'off',
-
         /* Using TypeScript makes it safe enough to disable the checks below */
+
+        /**
+         * ESLint has trouble when deal with TypeScript global declarations.
+         * According to ESLint's document:
+         * > It is safe to disable this rule when using TypeScript because
+         * > TypeScript's compiler enforces this check.
+         */
+        'no-undef': 'off',
 
         // Disable ESLint-based module resolution check for improved monorepo support
         // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
