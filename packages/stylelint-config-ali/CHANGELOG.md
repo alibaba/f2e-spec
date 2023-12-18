@@ -1,5 +1,9 @@
 # 更新日志
 
+## 2.1.0 (2023-12-18)
+
+- 将 postcss 从 peerDependencies 改为 dependencies
+
 ## 2.0.0 (2023-12-15)
 
 **破坏性变更：**

@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-ali",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "stylelint shareable config for Alibaba F2E Guidelines",
   "main": "index.js",
   "keywords": [
@@ -37,18 +37,17 @@
     "test": "mocha ./test/*.test.js"
   },
   "dependencies": {
+    "postcss": "^8.4.29",
     "postcss-less": "^6.0.0",
     "postcss-scss": "^4.0.0",
     "stylelint-less": "^3.0.0",
     "stylelint-scss": "^6.0.0"
   },
   "peerDependencies": {
-    "postcss": "^8.0.0",
     "stylelint": "^16.0.0"
   },
   "devDependencies": {
     "mocha": "^10.2.0",
-    "postcss": "^8.4.29",
     "stylelint": "^16.0.0",
     "stylelint-scss": "^6.0.0"
   }
