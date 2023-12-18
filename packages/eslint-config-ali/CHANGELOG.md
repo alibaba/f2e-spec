@@ -1,5 +1,13 @@
 # 更新日志
 
+## 14.2.0 (2023-12-18)
+
+- 将插件和配置添加到依赖
+  - @babel/core
+  - @babel/eslint-parser
+  - @babel/preset-react
+  - eslint-config-egg
+
 ## 14.1.0 (2023-12-18)
 
 - 将插件和配置添加到依赖
