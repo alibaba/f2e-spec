@@ -1,0 +1,31 @@
+{
+  "name": "prettier-config-ali",
+  "version": "1.0.0",
+  "description": "Prettier shareable configuration for Alibaba F2E Guidelines",
+  "main": "index.js",
+  "keywords": [
+    "prettier",
+    "prettier-config",
+    "f2elint",
+    "Alibaba F2E Guidelines"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba/f2e-spec"
+  },
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
+  "homepage": "https://github.com/alibaba/f2e-spec",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "prettier-plugin-packagejson": "^2.4.7"
+  }
+}
