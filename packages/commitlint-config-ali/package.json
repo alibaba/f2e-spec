@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-ali",
-  "version": "0.1.3",
+  "version": "1.0.0",
   "description": "Commitlint shareable configuration for Alibaba F2E Guidelines",
   "main": "index.js",
   "keywords": [
