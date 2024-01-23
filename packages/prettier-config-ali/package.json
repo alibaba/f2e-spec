@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-ali",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Prettier shareable configuration for Alibaba F2E Guidelines",
   "main": "index.js",
   "keywords": [
@@ -25,7 +25,5 @@
   "devDependencies": {
     "prettier": "^2.2.1"
   },
-  "dependencies": {
-    "prettier-plugin-packagejson": "^2.4.7"
-  }
+  "dependencies": {}
 }

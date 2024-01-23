@@ -9,6 +9,6 @@ module.exports = {
   // Prettier 2.x 可以自动加载 prettier-plugin- 开头的插件
   // 但是从 Prettier 3.x 开始，插件必须配置才能生效
   plugins: [
-    'prettier-plugin-packagejson', // 排序 package.json 中的属性
+    // 'prettier-plugin-packagejson', // 排序 package.json 中的属性，ESM 项目报错，暂时禁用
   ],
 };
