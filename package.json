@@ -4,9 +4,21 @@
   "description": "阿里巴巴前端规约及配套工具",
   "license": "Apache-2.0",
   "scripts": {
+    "start": "rive start",
+    "build": "rive build",
     "lint": "markdownlint -c .markdownlint.json README.md **/*.md"
   },
   "devDependencies": {
-    "markdownlint": "~0.33.0"
+    "@mdx-js/react": "^3.0.0",
+    "markdownlint": "~0.33.0",
+    "react": "^18.2.0",
+    "react-doc-ui": "^2.2.1",
+    "react-dom": "^18.2.0",
+    "rive": "^2.0.22",
+    "typescript": "^5.3.3"
+  },
+  "rive": {
+    "title": "阿里巴巴前端规约",
+    "basename": "/f2e-spec/"
   }
 }
