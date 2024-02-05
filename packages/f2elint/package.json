@@ -16,9 +16,6 @@
   "files": [
     "lib/"
   ],
-  "engines": {
-    "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
-  },
   "keywords": [
     "f2elint",
     "Alibaba F2E Guidelines"
@@ -65,7 +62,8 @@
     "copyfiles": "^2.4.1",
     "jest": "^27.5.1",
     "nyc": "^15.1.0",
-    "typescript": "^4.6.2"
+    "rive": "^2.0.22",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "@babel/core": "^7.16.0",

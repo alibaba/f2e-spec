@@ -1,8 +1,27 @@
 # 更新日志
 
+## 4.0.0 (2024-02-05)
+
+升级方法：
+
+```bash
+npx f2elint
+```
+
+**破坏性变更:**
+
+- 移除了内置的的 lint 命令，直接采用 eslint，style 和 prettier 命令行工具
+
+**一般变更:**
+
+- 配置统一放在 package.json，减少配置文件数量
+- 升级 `stylelint` 14 到 16
+- 移除 `package.json` 中的 `engines` 字段，不再人为限制 Node.js 版本
+
 ## 3.0.0 (2022-03-16)
 
 依赖升级：
+
 - 增加依赖 `eslint-import-resolver-typescript`
 - 升级依赖 `eslint` 7 -> 8，参见 [ESLint 变更日志](https://github.com/eslint/eslint/blob/main/CHANGELOG.md)
 - 升级依赖 `eslint-config-ali` 13 -> 14
@@ -13,6 +32,7 @@
 - 升级依赖 `@commitlint/cli` 11 -> 16
 
 其他：
+
 - Node.js API 变更：
   - scan 支持 config 参数，优先级高于 f2elint.config.js
   - config 增加 enableESLint 参数，以支持开关 eslint 扫描
