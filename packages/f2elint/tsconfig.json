@@ -1,14 +1,30 @@
 {
   "compilerOptions": {
-    "outDir": "./lib",
-    "target": "ES5",
-    "module": "commonjs",
+    "target": "es2015",
+    "module": "esnext",
     "esModuleInterop": true,
-    "removeComments": true,
     "resolveJsonModule": true,
-    "declaration": true,
-    "downlevelIteration": true,
-    "types": ["node"]
+    "types": [
+      "node",
+      "rive/globals"
+    ],
+    "lib": [
+      "esnext"
+    ],
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "isolatedModules": true
   },
-  "include": ["src"]
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    ".rive",
+    "build",
+    "coverage",
+    "dist",
+    "node_modules"
+  ]
 }

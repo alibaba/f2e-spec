@@ -1,6 +1,8 @@
-node_modules
-lib
-.DS_Store
-.idea
-.vscode
+.rive
+build
 coverage
+dist
+node_modules
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
