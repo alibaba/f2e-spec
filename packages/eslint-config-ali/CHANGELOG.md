@@ -4,6 +4,7 @@
 
 - **BREAKING CHANGE** `node` 和 `typescript/node` 不再提供 egg 相关的配置，请使用 `egg` 和 `typescript/egg` 替代
 - **BREAKING CHANGE** 升级 `vue-eslint-parser` 7.x 到 9.x
+- **BREAKING CHANGE** 升级 `eslint-plugin-vue` 7.x 到 9.x
 
 ## 14.2.1 (2023-12-18)
 
