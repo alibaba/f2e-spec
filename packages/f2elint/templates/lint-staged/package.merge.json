@@ -1,6 +1,13 @@
 {
+  "scripts": {
+    "prepare": "husky install"
+  },
   "lint-staged": {
     "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint",
     "*.{css,less,scss}": "stylelint"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.2"
   }
 }

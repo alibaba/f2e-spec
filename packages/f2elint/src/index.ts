@@ -26,9 +26,6 @@ export async function f2elint(project: string | null, options: F2elintOptions = 
   if (options.prettier) {
     await initTemplate('prettier');
   }
-  if (options.lintStaged || options.commitlint) {
-    await initTemplate('husky');
-  }
   if (options.lintStaged) {
     await initTemplate('lint-staged');
   }

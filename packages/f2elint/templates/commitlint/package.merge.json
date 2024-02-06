@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "commitlint": {
+    "extends": ["ali"]
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "@commitlint/cli": "^18.4.3",
+    "commitlint-config-ali": "^1.0.0"
+  }
+}
