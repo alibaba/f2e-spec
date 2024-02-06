@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@mdx-js/react": "^3.0.0",
+    "@types/node": "^20.11.16",
     "markdownlint": "~0.33.0",
     "prettier": "^3.2.5",
     "react": "^18.2.0",

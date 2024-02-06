@@ -1,8 +1,16 @@
 {
   "compilerOptions": {
     "target": "es2015",
-    "module": "es2015",
-    "moduleResolution": "node16",
-    "jsx": "react-jsx"
-  }
+    "module": "esnext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "types": ["node", "rive/globals"],
+    "lib": ["esnext"],
+    "allowJs": true,
+    "checkJs": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "isolatedModules": true
+  },
+  "exclude": [".rive", "build", "coverage", "dist", "node_modules"]
 }

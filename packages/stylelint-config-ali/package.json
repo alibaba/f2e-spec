@@ -35,7 +35,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "test": "mocha ./test/*.test.js"
+    "test": "rive test"
   },
   "dependencies": {
     "postcss": "^8.4.29",
@@ -48,7 +48,6 @@
     "stylelint": "^16.0.0"
   },
   "devDependencies": {
-    "mocha": "^10.2.0",
     "stylelint": "^16.0.0",
     "stylelint-scss": "^6.0.0"
   }
