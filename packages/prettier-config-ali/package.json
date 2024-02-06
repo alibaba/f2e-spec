@@ -19,7 +19,8 @@
   "homepage": "https://github.com/alibaba/f2e-spec",
   "author": {
     "name": "Guo Yunhe",
-    "email": "i@guoyunhe.me"
+    "email": "i@guoyunhe.me",
+    "url": "https://guoyunhe.me/"
   },
   "license": "MIT",
   "devDependencies": {
