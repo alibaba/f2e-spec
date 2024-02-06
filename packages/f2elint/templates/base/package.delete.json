@@ -3,24 +3,17 @@
   "jest": null,
   "just": null,
   "teleport": null,
-  "dependencies": {
-    "@alife/next": null
+  "eslintConfig": {
+    "extends": null
+  },
+  "stylelint": {
+    "extends": null
+  },
+  "commitlint": {
+    "extends": null
   },
   "devDependencies": {
-    "@types/jest": null,
-    "@alib/build-scripts": null,
-    "@alife/eslint-config-crated": null,
-    "@alife/jest-preset-crated": null,
-    "@alife/next": null,
-    "@alife/tsconfig-crated": null,
-    "build-scripts": null,
-    "build-plugin-component": null,
-    "build-plugin-fusion": null,
-    "build-plugin-moment-locales": null,
-    "ice.js": null,
     "f2elint": null,
-    "jest": null,
-    "jest-environment-jsdom": null,
-    "ts-jest": null
+    "tslint": null
   }
 }
