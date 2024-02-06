@@ -16,6 +16,7 @@ npx f2elint
 
 - 配置统一放在 package.json，减少配置文件数量
 - 升级 `stylelint` 14 到 16
+- 升级 `@commitlint/cli` 16 到 18
 - 移除 `package.json` 中的 `engines` 字段，不再人为限制 Node.js 版本
 
 ## 3.0.0 (2022-03-16)

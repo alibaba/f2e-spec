@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "husky": "^8.0.0",
-    "@commitlint/cli": "^18.4.3",
+    "@commitlint/cli": "^18.6.0",
     "commitlint-config-ali": "^1.0.0"
   }
 }
