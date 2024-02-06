@@ -11,6 +11,7 @@
   "devDependencies": {
     "@mdx-js/react": "^3.0.0",
     "markdownlint": "~0.33.0",
+    "prettier": "^3.2.5",
     "react": "^18.2.0",
     "react-doc-ui": "^2.2.1",
     "react-dom": "^18.2.0",

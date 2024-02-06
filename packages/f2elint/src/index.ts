@@ -15,8 +15,24 @@ export async function f2elint(project: string | null, options: F2elintOptions = 
   const projectFullPath = project?.startsWith('/') ? project : join(process.cwd(), project || '.');
 
   const __dirname = dirname(fileURLToPath(import.meta.url));
-  const template = options?.template || 'react';
-  const templateFullPath = join(__dirname, '..', 'templates', template);
+  const template = options?.template || 'base-js';
+  const initTemplate = (t: string) => init(join(__dirname, '..', 'templates', t), projectFullPath, options);
 
-  await init(templateFullPath, projectFullPath, options);
+  await initTemplate('base');
+  await initTemplate(template);
+  if (options.stylelint) {
+    await initTemplate('stylelint');
+  }
+  if (options.prettier) {
+    await initTemplate('prettier');
+  }
+  if (options.lintStaged || options.commitlint) {
+    await initTemplate('husky');
+  }
+  if (options.lintStaged) {
+    await initTemplate('lint-staged');
+  }
+  if (options.lintStaged) {
+    await initTemplate('commitlint');
+  }
 }
