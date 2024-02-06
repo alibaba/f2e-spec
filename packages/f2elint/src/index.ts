@@ -1,34 +1,22 @@
-import ora from 'ora';
-import scanAction from './actions/scan';
-import initAction from './actions/init';
-import { PKG_NAME } from './utils/constants';
-import printReport from './utils/print-report';
-import type { InitOptions, ScanOptions } from './types';
+import { init } from 'init-roll';
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
+import { TemplateType } from './types';
 
-type IInitOptions = Omit<InitOptions, 'checkVersionUpdate'>;
+export interface F2elintOptions {
+  template?: TemplateType;
+  stylelint?: boolean;
+  prettier?: boolean;
+  commitlint?: boolean;
+  lintStaged?: boolean;
+}
 
-export const init = async (options: IInitOptions) => {
-  return await initAction({
-    ...options,
-    checkVersionUpdate: false,
-  });
-};
+export async function f2elint(project: string | null, options: F2elintOptions = {}) {
+  const projectFullPath = project?.startsWith('/') ? project : join(process.cwd(), project || '.');
 
-export const scan = async (options: ScanOptions) => {
-  const checking = ora();
-  checking.start(`执行 ${PKG_NAME} 代码检查`);
+  const __dirname = dirname(fileURLToPath(import.meta.url));
+  const template = options?.template || 'react';
+  const templateFullPath = join(__dirname, '..', 'templates', template);
 
-  const report = await scanAction(options);
-  const { results, errorCount, warningCount } = report;
-  let type = 'succeed';
-  if (errorCount > 0) {
-    type = 'fail';
-  } else if (warningCount > 0) {
-    type = 'warn';
-  }
-
-  checking[type]();
-  if (results.length > 0) printReport(results, false);
-
-  return report;
-};
+  await init(templateFullPath, projectFullPath, options);
+}

@@ -1,168 +1,136 @@
 #!/usr/bin/env node
-import path from 'path';
-import fs from 'fs-extra';
-import { execSync } from 'child_process';
-import { program } from 'commander';
-import spawn from 'cross-spawn';
-import ora from 'ora';
-import glob from 'glob';
-import init from './actions/init';
-import update from './actions/update';
-import scan from './actions/scan';
-import printReport from './utils/print-report';
-import { getCommitFiles, getAmendFiles } from './utils/git';
-import generateTemplate from './utils/generate-template';
-import npmType from './utils/npm-type';
-import log from './utils/log';
-import { PKG_NAME, PKG_VERSION } from './utils/constants';
 
-const cwd = process.cwd();
+import { cancel, confirm, intro, isCancel, outro, select, spinner, text } from '@clack/prompts';
+import chalk from 'chalk';
+import { Command } from 'commander';
+import { readFileSync } from 'fs';
+import { dirname, join, resolve } from 'path';
+import { fileURLToPath } from 'url';
+import { f2elint } from '.';
+import { TemplateType } from './types';
 
-/**
- * 若无 node_modules，则帮用户 install（否则会找不到 config）
- */
-const installDepsIfThereNo = async () => {
-  const lintConfigFiles = [].concat(
-    glob.sync('.eslintrc?(.@(js|yaml|yml|json))', { cwd }),
-    glob.sync('.stylelintrc?(.@(js|yaml|yml|json))', { cwd }),
-    glob.sync('.markdownlint(.@(yaml|yml|json))', { cwd }),
-  );
-  const nodeModulesPath = path.resolve(cwd, 'node_modules');
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const packageJson = JSON.parse(readFileSync(join(__dirname, '../package.json'), 'utf-8'));
 
-  if (!fs.existsSync(nodeModulesPath) && lintConfigFiles.length > 0) {
-    const npm = await npmType;
-    log.info(`使用项目 Lint 配置，检测到项目未安装依赖，将进行安装（执行 ${npm} install）`);
-    execSync(`cd ${cwd} && ${npm} i`);
-  }
-};
+if (process.argv.length > 2) {
+  // Non-interactive
 
-program
-  .version(PKG_VERSION)
-  .description(
-    `${PKG_NAME} 是《阿里巴巴前端规约》的配套 Lint 工具，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡点，降低项目实施规约的成本`,
-  );
+  const program = new Command('f2elint');
 
-program
-  .command('init')
-  .description('一键接入：为项目初始化规约工具和配置，可以根据项目类型和需求进行定制')
-  .option('--vscode', '写入.vscode/setting.json配置')
-  .action(async (cmd) => {
-    if (cmd.vscode) {
-      const configPath = path.resolve(cwd, `${PKG_NAME}.config.js`);
-      generateTemplate(cwd, require(configPath), true);
-    } else {
-      await init({
-        cwd,
-        checkVersionUpdate: true,
-      });
-    }
-  });
+  program
+    .argument('[project]', '项目位置')
+    .option('--template <template>', '模版类型')
+    .option('--stylelint', '启用 Stylelint')
+    .option('--prettier', '启用 Prettier')
+    .option('--lint-staged', '启用 Lint-Staged')
+    .option('--commitlint', '启用 Commitlint')
+    .action(f2elint);
 
-program
-  .command('scan')
-  .description('一键扫描：对项目进行代码规约问题扫描')
-  .option('-q, --quiet', '仅报告错误信息 - 默认: false')
-  .option('-o, --output-report', '输出扫描出的规约问题日志')
-  .option('-i, --include <dirpath>', '指定要进行规约扫描的目录')
-  .option('--no-ignore', '忽略 eslint 的 ignore 配置文件和 ignore 规则')
-  .action(async (cmd) => {
-    await installDepsIfThereNo();
+  program.helpOption('-h, --help', '显示帮助');
 
-    const checking = ora();
-    checking.start(`执行 ${PKG_NAME} 代码检查`);
+  program.version(packageJson.version, '-v, --version', '显示版本');
 
-    const { results, errorCount, warningCount, runErrors } = await scan({
-      cwd,
-      fix: false,
-      include: cmd.include || cwd,
-      quiet: Boolean(cmd.quiet),
-      outputReport: Boolean(cmd.outputReport),
-      ignore: cmd.ignore, // 对应 --no-ignore
-    });
-    let type = 'succeed';
-    if (runErrors.length > 0 || errorCount > 0) {
-      type = 'fail';
-    } else if (warningCount > 0) {
-      type = 'warn';
-    }
+  program.parse();
+} else {
+  // Interactive
 
-    checking[type]();
-    if (results.length > 0) printReport(results, false);
+  (async () => {
+    // 空行
+    console.log(' ');
 
-    // 输出 lint 运行错误
-    runErrors.forEach((e) => console.log(e));
-  });
+    intro(`${chalk.bold(chalk.cyan('🚀 阿里巴巴前端规约'))} ${chalk.dim(packageJson.version)}`);
 
-program
-  .command('commit-msg-scan')
-  .description('commit message 检查: git commit 时对 commit message 进行检查')
-  .action(() => {
-    const result = spawn.sync(
-      'commitlint',
-      ['-E', 'HUSKY_GIT_PARAMS'],
-      { stdio: 'inherit' },
-    );
-
-    if (result.status !== 0) {
-      process.exit(result.status);
-    }
-  });
-
-program
-  .command('commit-file-scan')
-  .description('代码提交检查: git commit 时对提交代码进行规约问题扫描')
-  .option('-s, --strict', '严格模式，对 warn 和 error 问题都卡口，默认仅对 error 问题卡口')
-  .action(async (cmd) => {
-    await installDepsIfThereNo();
-
-    // git add 检查
-    const files = await getAmendFiles();
-    if (files) log.warn(`[${PKG_NAME}] changes not staged for commit: \n${files}\n`);
-
-    const checking = ora();
-    checking.start(`执行 ${PKG_NAME} 代码提交检查`);
-
-    const { results, errorCount, warningCount } = await scan({
-      cwd,
-      include: cwd,
-      quiet: !cmd.strict,
-      files: await getCommitFiles(),
+    const project = await text({
+      message: '📁 选择项目位置',
+      initialValue: process.cwd(),
+      validate: (value) => {
+        if (!value || value.length === 0) {
+          return '根目录路径必填！';
+        } else {
+          return undefined;
+        }
+      },
     });
 
-    if (errorCount > 0 || (cmd.strict && warningCount > 0)) {
-      checking.fail();
-      printReport(results, false);
-      process.exitCode = 1;
-    } else {
-      checking.succeed();
+    if (isCancel(project)) {
+      cancel('👋 已取消');
+      process.exit(0);
     }
-  });
 
-program
-  .command('fix')
-  .description('一键修复：自动修复项目的代码规约扫描问题')
-  .option('-i, --include <dirpath>', '指定要进行修复扫描的目录')
-  .option('--no-ignore', '忽略 eslint 的 ignore 配置文件和 ignore 规则')
-  .action(async (cmd) => {
-    await installDepsIfThereNo();
+    const projectPath = resolve(project || '.');
 
-    const checking = ora();
-    checking.start(`执行 ${PKG_NAME} 代码修复`);
-
-    const { results } = await scan({
-      cwd,
-      fix: true,
-      include: cmd.include || cwd,
-      ignore: cmd.ignore, // 对应 --no-ignore
+    const template = await select<any, TemplateType>({
+      message: '🧰 选择预设模版',
+      options: [
+        { value: 'react-ts', label: 'React (TypeScript)' },
+        { value: 'react-js', label: 'React (JavaScript)' },
+        { value: 'vue-ts', label: 'Vue (TypeScript)' },
+        { value: 'vue-js', label: 'Vue (JavaScript)' },
+        { value: 'egg-ts', label: 'Egg (TypeScript)' },
+        { value: 'egg-js', label: 'Egg (JavaScript)' },
+        { value: 'node-ts', label: 'Node (TypeScript)' },
+        { value: 'node-js', label: 'Node (JavaScript)' },
+        { value: 'base-ts', label: 'Base (TypeScript)' },
+        { value: 'base-js', label: 'Base (JavaScript)' },
+      ],
     });
 
-    checking.succeed();
-    if (results.length > 0) printReport(results, true);
-  });
+    if (isCancel(template)) {
+      cancel('👋 已取消');
+      process.exit(0);
+    }
 
-program
-  .command('update')
-  .description(`更新 ${PKG_NAME} 至最新版本`)
-  .action(() => update(true));
+    const prettier = await confirm({
+      message: '💅 启用 Prettier 代码格式化',
+    });
 
-program.parse(process.argv);
+    if (isCancel(prettier)) {
+      cancel('👋 已取消');
+      process.exit(0);
+    }
+
+    const lintStaged = await confirm({
+      message: '👮‍ 启用 Lint Staged 检查',
+    });
+
+    if (isCancel(lintStaged)) {
+      cancel('👋 已取消');
+      process.exit(0);
+    }
+
+    const commitlint = await confirm({
+      message: '👮‍ 启用 Commitlint 检查',
+    });
+
+    if (isCancel(commitlint)) {
+      cancel('👋 已取消');
+      process.exit(0);
+    }
+
+    const s1 = spinner();
+    s1.start('🚧 正在初始化项目');
+
+    try {
+      await f2elint(projectPath, { template, prettier, lintStaged, commitlint });
+      s1.stop('🎉 初始化项目完成');
+    } catch (error) {
+      s1.stop('❌ 初始化项目失败');
+      console.error(error);
+      process.exit(1);
+    }
+
+    const s2 = spinner();
+    s2.start('🚧 正在安装依赖');
+
+    try {
+      await install(projectPath);
+      s2.stop('🎉 安装依赖成功');
+    } catch (error) {
+      s2.stop('❌ 安装依赖失败');
+      console.error(error);
+      process.exit(1);
+    }
+
+    outro('🎉 规约初始化完成，建议安装推荐插件并重启 VS Code');
+  })();
+}
