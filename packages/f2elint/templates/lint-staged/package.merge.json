@@ -4,7 +4,9 @@
   },
   "lint-staged": {
     "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint",
-    "*.{css,less,scss}": "stylelint"
+    <% if (stylejs) { %>
+    "*.{css,less,scss}": "stylelint",
+    <% } %>
   },
   "devDependencies": {
     "husky": "^8.0.0",
