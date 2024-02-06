@@ -5,6 +5,6 @@
   },
   "devDependencies": {
     "eslint": "^8.56.0",
-    "eslint-config-ali": "^14.2.1"
+    "eslint-config-ali": "^15.0.0"
   }
 }
