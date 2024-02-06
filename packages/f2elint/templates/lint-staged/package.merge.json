@@ -4,7 +4,7 @@
   },
   "lint-staged": {
     "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint",
-    <% if (stylejs) { %>
+    <% if (stylelint) { %>
     "*.{css,less,scss}": "stylelint",
     <% } %>
   },
