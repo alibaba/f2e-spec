@@ -122,7 +122,7 @@ if (process.argv.length > 2) {
 
     try {
       await f2elint(projectPath, { template, stylelint, prettier, lintStaged, commitlint });
-      s1.stop('🎉 初始化项目完成');
+      s1.stop('✅ 初始化项目完成');
     } catch (error) {
       s1.stop('❌ 初始化项目失败');
       console.error(error);
@@ -134,7 +134,7 @@ if (process.argv.length > 2) {
 
     try {
       await install(projectPath);
-      s2.stop('🎉 安装依赖成功');
+      s2.stop('✅ 安装依赖成功');
     } catch (error) {
       s2.stop('❌ 安装依赖失败');
       console.error(error);
