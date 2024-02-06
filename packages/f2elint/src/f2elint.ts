@@ -7,6 +7,7 @@ import { readFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { f2elint } from '.';
+import { install } from './private/install';
 import { TemplateType } from './types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -80,6 +81,15 @@ if (process.argv.length > 2) {
       process.exit(0);
     }
 
+    const stylelint = await confirm({
+      message: '💅 启用 Stylelint 样式检查',
+    });
+
+    if (isCancel(stylelint)) {
+      cancel('👋 已取消');
+      process.exit(0);
+    }
+
     const prettier = await confirm({
       message: '💅 启用 Prettier 代码格式化',
     });
@@ -111,7 +121,7 @@ if (process.argv.length > 2) {
     s1.start('🚧 正在初始化项目');
 
     try {
-      await f2elint(projectPath, { template, prettier, lintStaged, commitlint });
+      await f2elint(projectPath, { template, stylelint, prettier, lintStaged, commitlint });
       s1.stop('🎉 初始化项目完成');
     } catch (error) {
       s1.stop('❌ 初始化项目失败');
