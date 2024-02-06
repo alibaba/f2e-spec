@@ -17,7 +17,7 @@ describe('test/use-babel-eslint.test.js', () => {
     const { messages, errorCount, fatalErrorCount, warningCount } = results[0];
 
     assert.equal(fatalErrorCount, 0);
-    assert.equal(errorCount, 27);
+    assert.equal(errorCount, 26);
     assert.equal(warningCount, 7);
 
     const errorReportedByReactPlugin = messages.filter((result) => {
