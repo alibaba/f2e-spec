@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "custom eslint rules for Alibaba",
   "scripts": {
-    "test": "jest",
+    "test": "rive test",
     "prepublishOnly": "npm run test"
   },
   "files": [
@@ -27,9 +27,14 @@
   "author": {
     "name": "lakerswgq",
     "email": "lakerswgq@gmail.com"
-    
+
   },
   "contributors": [
+    {
+      "name": "Guo Yunhe",
+      "email": "i@guoyunhe.me",
+      "url": "https://guoyunhe.me/"
+    },
     {
       "name": "Sabo",
       "email": "bowei.jbw@gmail.com"
@@ -41,7 +46,6 @@
     "require-all": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.7.0",
-    "jest": "^26.6.3"
+    "eslint": "^8.7.0"
   }
 }
