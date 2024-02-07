@@ -3,6 +3,8 @@ import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { TemplateType } from './types';
 
+export { TemplateType };
+
 export interface F2elintOptions {
   template?: TemplateType;
   stylelint?: boolean;
