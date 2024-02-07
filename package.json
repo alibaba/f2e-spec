@@ -2,17 +2,51 @@
   "name": "f2e-spec",
   "private": true,
   "description": "阿里巴巴前端规约及配套工具",
+  "homepage": "https://github.com/alibaba/f2e-spec#readme",
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alibaba/f2e-spec.git"
+  },
   "license": "Apache-2.0",
   "scripts": {
-    "start": "rive start",
     "build": "rive build",
-    "lint": "markdownlint -c .markdownlint.json README.md **/*.md"
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install",
+    "start": "rive start"
+  },
+  "commitlint": {
+    "extends": [
+      "ali"
+    ]
+  },
+  "lint-staged": {
+    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint"
+  },
+  "prettier": "prettier-config-ali",
+  "eslintConfig": {
+    "extends": [
+      "ali/typescript/node",
+      "plugin:prettier/recommended"
+    ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.6.0",
     "@mdx-js/react": "^3.0.0",
     "@types/node": "^20.11.16",
+    "commitlint-config-ali": "^1.0.0",
+    "eslint": "^8.56.0",
+    "eslint-config-ali": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.2",
     "markdownlint": "~0.33.0",
     "prettier": "^3.2.5",
+    "prettier-config-ali": "^1.1.0",
     "react": "^18.2.0",
     "react-doc-ui": "^2.2.1",
     "react-dom": "^18.2.0",
