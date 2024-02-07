@@ -8155,4 +8155,4 @@ var client = {
   // 是否 merge 默认配置，默认为 true
   'autoMerge': <boolean>
 }]
-`})})]})}function sg(t={}){const{wrapper:e}={...te(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(xy,{...t})}):xy(t)}sg.displayName="MDXContent";const J2=Object.freeze(Object.defineProperty({__proto__:null,default:sg,filepath:V2,frontmatter:X2,title:G2},Symbol.toStringTag,{value:"Module"}));function K2(){return n.jsx(kI,{docs:[AI,FI,zI,WI,JI,ZI,rk,ak,uk,Ok,gk,wk,Ek,Ck,Lk,$k,Hk,Gk,Qk,t2,l2,f2,d2,b2,x2,S2,k2,A2,F2,z2,W2,J2],basename:"/",languages:void 0})}Dh(document.getElementById("root")).render(n.jsx(K2,{}));
+`})})]})}function sg(t={}){const{wrapper:e}={...te(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(xy,{...t})}):xy(t)}sg.displayName="MDXContent";const J2=Object.freeze(Object.defineProperty({__proto__:null,default:sg,filepath:V2,frontmatter:X2,title:G2},Symbol.toStringTag,{value:"Module"}));function K2(){return n.jsx(kI,{docs:[AI,FI,zI,WI,JI,ZI,rk,ak,uk,Ok,gk,wk,Ek,Ck,Lk,$k,Hk,Gk,Qk,t2,l2,f2,d2,b2,x2,S2,k2,A2,F2,z2,W2,J2],basename:"/f2e-spec/",languages:void 0})}Dh(document.getElementById("root")).render(n.jsx(K2,{}));
