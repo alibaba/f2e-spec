@@ -50,7 +50,7 @@
     "react": "^18.2.0",
     "react-doc-ui": "^2.2.1",
     "react-dom": "^18.2.0",
-    "rive": "^2.0.22",
+    "rive": "^2.0.23",
     "typescript": "^5.3.3"
   },
   "rive": {
