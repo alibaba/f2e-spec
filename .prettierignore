@@ -4,6 +4,7 @@
 /build
 /coverage
 /dist
+/docs/coding
 /es
 /lib
 node_modules
