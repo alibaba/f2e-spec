@@ -12,7 +12,7 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "build": "rive build",
+    "build": "rive build --no-lib",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky install",
@@ -50,7 +50,7 @@
     "react": "^18.2.0",
     "react-doc-ui": "^2.2.1",
     "react-dom": "^18.2.0",
-    "rive": "^2.0.23",
+    "rive": "^2.0.24",
     "typescript": "^5.3.3"
   },
   "rive": {
