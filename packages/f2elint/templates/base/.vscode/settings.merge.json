@@ -6,6 +6,7 @@
     "source.fixAll.stylelint": "explicit",
     "source.organizeImports": "explicit"
   },
+  "editor.rulers": [100],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
