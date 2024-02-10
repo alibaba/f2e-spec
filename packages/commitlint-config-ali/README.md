@@ -14,7 +14,7 @@ npm install commitlint-config-ali @commitlint/cli --save-dev
 
 在你的 `commitlint.config.js` 中继承本包:
 
-```javascript
+```js
 module.exports = {
   extends: ['ali'],
 };

@@ -1,4 +1,4 @@
-# Alibaba Front-end Specification
+# 阿里巴巴前端规约
 
 ## 前言
 

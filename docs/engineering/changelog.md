@@ -1,8 +1,9 @@
 ---
-group: 工程实践
+group: Engineering
+order: 1.2
 ---
 
-# 更新日志规约
+# Changelog Specification
 
 ## 前言
 

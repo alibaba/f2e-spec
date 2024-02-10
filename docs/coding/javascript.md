@@ -1,8 +1,9 @@
 ---
-group: 代码规约
+group: Coding Style
+order: 3
 ---
 
-# JavaScript 编码规约
+# JavaScript Coding Specification
 
 ## 前言
 
@@ -20,7 +21,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   统一使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进：
 
-  ```javascript
+  ```js
   // bad
   function foo() {
   ∙∙∙∙let name;
@@ -40,7 +41,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   > 自动分号插入机制（即 [Automatic Semicolon Insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion)，简称 ASI） 是当 JS 遇到不带分号的语句时判断是否自动添加分号的机制，它在个别情况下的行为比较怪异，可能导致意想不到的效果。此外随着 JS 新特性的增加，异常的情况可能变得更加复杂。
 
-  ```javascript
+  ```js
   // bad - 导致 Uncaught ReferenceError 报错
   const luke = {}
   const leia = {}
@@ -81,7 +82,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 1.3.1【强制】对于逗号分隔的多行结构，不使用行首逗号。eslint: [comma-style](https://eslint.org/docs/rules/comma-style)
 
-  ```javascript
+  ```js
   // bad
   const story = [
       once
@@ -132,7 +133,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
   };
   ```
 
-  ```javascript
+  ```js
   // bad
   const hero = {
     firstName: 'Dana',
@@ -202,7 +203,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   多行代码块必须用大括号包裹：
 
-  ```javascript
+  ```js
   // bad
   if (foo)
     bar();
@@ -217,7 +218,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   代码块只有一条语句时，可以省略大括号，并跟控制语句写在同一行。但出于一致性和可读性考虑，不推荐这样做：
 
-  ```javascript
+  ```js
   // bad
   if (foo)
     return false;
@@ -243,7 +244,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
     - 如果 `}` 终结了整个语句，如条件语句、函数或类的主体，则需要换行
     - 如果 `}` 后面存在 `else`、`catch`、`while` 等语句，或存在逗号、分号、右小括号（`)`），则不需要换行
 
-  ```javascript
+  ```js
   // bad - else 应与 if 的 } 放在同一行
   if (foo) {
     thing1();
@@ -264,14 +265,14 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   对于空的代码块，且不在类似 `if..else..` 或 `try..catch..finally..` 的多块结构中时，可以立即将大括号闭合：
 
-  ```javascript
+  ```js
   // good
   function doNothing() {}
   ```
 
   但如果空代码块在多块结构中，仍建议按上一条非空块的 Egyptian Brackets 风格换行：
 
-  ```javascript
+  ```js
   // bad
   if (condition) {
     // …
@@ -303,7 +304,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   不要让代码中出现空代码块，这会使阅读者感到困惑。如果必须使用空块，需在块内写明注释。
 
-  ```javascript
+  ```js
   // bad
   if (condition) {
     thing1();
@@ -326,7 +327,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   块的左大括号 `{` 前有一个空格：
 
-  ```javascript
+  ```js
   // bad
   function test(){
     console.log('test');
@@ -352,7 +353,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   控制语句（`if`、`while` 等）的左小括号 `(` 前有一个空格：
 
-  ```javascript
+  ```js
   // bad
   if(isJedi) {
     fight ();
@@ -366,7 +367,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   声明函数时，函数名和参数列表之间无空格：
 
-  ```javascript
+  ```js
   // bad
   function fight () {
     console.log ('Swooosh!');
@@ -380,7 +381,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   小括号内部两侧无空格：
 
-  ```javascript
+  ```js
   // bad
   function bar( foo ) {
     return foo;
@@ -404,7 +405,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   方括号内部两侧无空格：
 
-  ```javascript
+  ```js
   // bad
   const foo = [ 1, 2, 3 ];
   console.log(foo[ 0 ]);
@@ -416,7 +417,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   大括号内部两侧有空格：
 
-  ```javascript
+  ```js
   // bad
   const foo = {clark: 'kent'};
 
@@ -426,7 +427,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   运算符两侧有空格，除了一元运算符：
 
-  ```javascript
+  ```js
   // bad
   const x=y+5;
 
@@ -448,7 +449,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   定义对象字面量时， key, value 之间有且只有一个空格，不允许所谓的「水平对齐」：
 
-  ```javascript
+  ```js
   // bad
   {
     a:            'short',
@@ -478,7 +479,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   我们统一在文件末尾保留一行空行，即用一个换行符结束文件：
 
-  ```javascript
+  ```js
   // bad - 文件末尾未保留换行符
   import { foo } from './Foo';
   // ...
@@ -499,7 +500,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 1.6.2【强制】块的开始和结束不能是空行。eslint: [padded-blocks](https://eslint.org/docs/rules/padded-blocks)
 
-  ```javascript
+  ```js
   // bad
   function bar() {
 
@@ -531,7 +532,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 1.6.3【参考】在块末和新语句间插入一个空行。
 
-  ```javascript
+  ```js
   // bad
   if (foo) {
     return bar;
@@ -577,7 +578,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
   - 字符串和模板字符串
   - 正则表达式
 
-  ```javascript
+  ```js
   // bad
   const foo = jsonData && jsonData.foo && jsonData.foo.bar && jsonData.foo.bar.baz && jsonData.foo.bar.baz.quux && jsonData.foo.bar.baz.quux.xyzzy;
 
@@ -620,7 +621,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   不要使用 `var`：
 
-  ```javascript
+  ```js
   // bad
   var foo = 'foo';
   var bar;
@@ -632,7 +633,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   更不要什么都不用（这将产生全局变量，从而污染全局命名空间）：
 
-  ```javascript
+  ```js
   // bad
   foo = 'foo';
 
@@ -644,7 +645,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   声明变量时，应优先使用 `const`，只有当变量会被重新赋值时才使用 `let`：
 
-  ```javascript
+  ```js
   // bad - 声明后未发生重新赋值，应使用 const
   let flag = true;
   if (flag) {
@@ -660,7 +661,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   需注意，数组和对象是一个引用，对数组某项和对象某属性的修改并不是重新赋值，因此多数情况下应用 `const` 声明：
 
-  ```javascript
+  ```js
   // bad
   let arr = [];
   let obj = {};
@@ -678,7 +679,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   这样做更易于追加新的声明语句（你不需要总去把最后的 `;` 改成 `,` 了），也更易于进行单步调试。
 
-  ```javascript
+  ```js
   // bad
   const foo = 1,
         bar = 2;
@@ -692,7 +693,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   声明而未使用的变量、表达式可能带来潜在的问题，也会给维护者造成困扰，应将它们删除。
 
-  ```javascript
+  ```js
   // bad - 未使用变量 foo
   const foo = 1;
 
@@ -726,7 +727,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   在 ES5 中，由于 `var` 的声明提升作用，变量可以在声明前使用，但这样做可能给人带来疑惑和隐患，所以不要在声明前就使用变量：
 
-  ```javascript
+  ```js
   // bad
   console.log(foo); // => undefined
   var foo = 'foo';
@@ -738,7 +739,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   在 ES6 中，由于 `const` 和 `let` 没有声明提升作用，如果在声明前就使用变量，会直接报错：
 
-  ```javascript
+  ```js
   // bad
   console.log(foo); // => Uncaught ReferenceError: foo is not defined
   const foo = 'foo';
@@ -754,7 +755,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   ES6 提供的 `let` 和 `const` 是块级作用域，不存在类似 `var` 的声明提升的问题。因此我们可以把声明写在更合理的地方（一般是变量被使用前），而不是统一在块开始处进行声明。
 
-  ```javascript
+  ```js
   // bad - 如果权限校验（checkUserPermission）失败，fetchData 是不必要的
   function getData(id) {
     const data = fetchData(id);
@@ -790,7 +791,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   如果变量与外层已存在变量同名，会降低可读性，也会导致内层作用域无法读取外层作用域的同名变量。
 
-  ```javascript
+  ```js
   // bad
   const foo = 1;
   if (someCondition) {
@@ -811,7 +812,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   在 ES5 中，尽管使用 `var` 重复声明不会报错，但这样做会令人疑惑，降低程序的可维护性。同理，函数的声明也不要与已存在的变量和函数重名：
 
-  ```javascript
+  ```js
   // bad
   var a = 'foo';
   var a = 'bar';
@@ -841,7 +842,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   在 ES6 中，使用 `const` 或 `let` 重复声明变量会直接报错：
 
-  ```javascript
+  ```js
   // bad
   const a = 'foo';
   function a() {} // => Uncaught SyntaxError: Identifier 'a' has already been declared
@@ -869,7 +870,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   变量的连续赋值让人难以阅读和理解，并且可能导致意想不到的结果（如产生全局变量）。
 
-  ```javascript
+  ```js
   // bad - 本例的结果是 let 仅对 a 起到了预想效果，b 和 c 都成了全局变量
   (function test() {
     let a = b = c = 1; // 相当于 let a = (b = (c = 1));
@@ -895,7 +896,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   将 `let` 和 `const` 归类写在一起，可以提高代码整洁性。此外，如果你想按变量的含义排序分组也是允许的。
 
-  ```javascript
+  ```js
   // bad
   let a;
   const b = 2;
@@ -919,7 +920,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   使用 new Number/String//Boolean 声明不会有任何好处，还会导致变量成为 `object` 类型，可能引起 bug。
 
-  ```javascript
+  ```js
   // bad
   const num = new Number(0);
   const str = new String('foo');
@@ -945,7 +946,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   【数字】使用 `Number()` 或 `parseInt()` ：
 
-    ```javascript
+    ```js
     const str = '1';
 
     // bad
@@ -962,7 +963,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   【字符串】使用 `String()`：
 
-    ```javascript
+    ```js
     const num = 1;
 
     // bad
@@ -976,7 +977,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   【布尔值】使用 `!!`：
 
-    ```javascript
+    ```js
     const age = 0;
 
     // bad
@@ -999,7 +1000,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   因此，推荐始终给 `parseInt()` 方法加上基数，除非可以保证代码的执行环境不受上述特性的影响。
 
-  ```javascript
+  ```js
   // bad
   parseInt("071"); // => ES5 前的执行环境中得到的是 57
 
@@ -1011,7 +1012,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   在 `if` 等条件语句中，将表达式的结果强制转换成布尔值是多余的：
 
-  ```javascript
+  ```js
   // bad
   if (!!foo) {
     // ...
@@ -1039,7 +1040,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 2.2.5.1【强制】字符串优先使用单引号。eslint: [quotes](https://eslint.org/docs/rules/quotes)
 
-  ```javascript
+  ```js
   // bad
   const name = "tod";
   const name = `tod`; // 模板字符串中应包含变量或换行，否则需用单引号
@@ -1052,7 +1053,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   模板字符串让代码更简洁，可读性更强
 
-  ```javascript
+  ```js
   // bad
   function getDisplayName({ nickName, realName }) {
     return nickName + ' (' + realName + ')';
@@ -1068,7 +1069,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   转义字符会大大降低代码的可读性，因此尽量不要滥用它们。
 
-  ```javascript
+  ```js
   // bad
   const foo = '\'this\' \i\s \"quoted\"';
 
@@ -1083,7 +1084,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   不要使用 `new Array()` 和 `Array()` 创建数组，除非为了构造某一长度的空数组。
 
-  ```javascript
+  ```js
   // bad
   const a = new Array(1, 2, 3);
   const b = Array(1, 2, 3);
@@ -1100,7 +1101,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   一个常见的误用是，本该用 `forEach` 的场景却用了 `map`：
 
-  ```javascript
+  ```js
   // 欲将 ['a', 'b', 'c'] 转换成 {a: 0, b: 1, c: 2}
   const myArray = ['a', 'b', 'c'];
   const myObj = {};
@@ -1118,7 +1119,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   某些方法漏掉 `return` 还可能引起错误：
 
-  ```javascript
+  ```js
   // 欲将 ['a', 'b', 'c'] 转换成 {a: 0, b: 1, c: 2}
   const myArray = ['a', 'b', 'c'];
 
@@ -1140,7 +1141,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   数组复制：
 
-  ```javascript
+  ```js
   // bad
   const array1 = [];
   for (let i = 0; i < array.length; i += 1) {
@@ -1156,7 +1157,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   将类数组结构（有 Iterator 接口的对象）转换为数组：
 
-  ```javascript
+  ```js
   // bad
   const foo = document.querySelectorAll('.foo');
 
@@ -1170,7 +1171,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   数组拼接：
 
-  ```javascript
+  ```js
   // bad
   const array1 = [1, 2].concat(array);
 
@@ -1180,7 +1181,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   用 `...` 替代 `apply`：
 
-  ```javascript
+  ```js
   // bad
   const args = [1, 2, 3, 4];
   Math.max.apply(Math, args);
@@ -1192,7 +1193,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   特殊的，遍历可迭代对象时，使用 `Array.from` 而不是 `...`，以免创建一个临时数组：
 
-  ```javascript
+  ```js
   // bad
   const baz = [...foo].map(bar);
 
@@ -1204,7 +1205,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   使用 ES6 提供的解构方法获取数组元素：
 
-  ```javascript
+  ```js
   // bad
   const arr = [1, 2, 3, 4];
   const first = arr[0];
@@ -1217,7 +1218,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   函数有多个返回值时，应使用对象解构而不是数组解构，因为数组解构需要考虑返回值的位置：
 
-  ```javascript
+  ```js
   // bad
   function giveMeDivPosition(div) {
     return [left, right, top, bottom];
@@ -1235,7 +1236,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 2.4.1【强制】使用字面量创建对象。eslint: [no-new-object](https://eslint.org/docs/rules/no-new-object)
 
-  ```javascript
+  ```js
   // bad
   const obj = new Object();
 
@@ -1247,7 +1248,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   ES6 提供了对象属性和方法的简写语法，可以使代码更加简洁：
 
-  ```javascript
+  ```js
   const value = 'foo';
 
   // bad
@@ -1271,7 +1272,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   将简写的属性写在一起，置于对象的起始或末尾，可以提高代码整洁性。当然，如果你出于属性的含义或其他考虑进行排序也是允许的。
 
-  ```javascript
+  ```js
   const anakinSkywalker = 'Anakin Skywalker';
   const lukeSkywalker = 'Luke Skywalker';
 
@@ -1300,7 +1301,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   这样更加简洁，也有助于语法高亮和一些 JS 引擎的优化。
 
-  ```javascript
+  ```js
   // bad
   const bad = {
     'foo': 3,
@@ -1322,7 +1323,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   这样可以提高代码可读性。`[]` 仅应在访问动态属性名或包含特殊字符的属性名时被使用。
 
-  ```javascript
+  ```js
   const obj = {
     active: true,
     [getDynamicKey()]: 'foo',
@@ -1342,7 +1343,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   替代 `Object.assign` 方法，来进行对象的浅拷贝：
 
-  ```javascript
+  ```js
   // very bad - original 会被影响
   const original = { a: 1, b: 2 };
   const copy = Object.assign(original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }  original => { a: 1, b: 2, c: 3 }
@@ -1359,7 +1360,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   获取排除某些属性的新对象：
 
-  ```javascript
+  ```js
   // good
   const copy = { a: 1, b: 2, c: 3 };
   const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
@@ -1369,7 +1370,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   获取对象的同名属性、多个属性时，使用解构让代码更简洁，也可以减少为了使用属性而创建的临时引用。
 
-  ```javascript
+  ```js
   // bad
   function getFullName(user) {
     const firstName = user.firstName;
@@ -1394,7 +1395,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   ES6 允许在新建对象字面量时使用表达式作为属性名，这样可以将所有属性定义在一个地方。
 
-  ```javascript
+  ```js
   function getKey(k) {
     return `a key named ${k}`;
   }
@@ -1420,7 +1421,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   这些方法可能会被对象上的属性覆盖，导致错误：
 
-  ```javascript
+  ```js
   const obj = {
     foo: 'foo',
     hasOwnProperty: false,
@@ -1442,7 +1443,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   使用 `new Function` 创建函数会像 `eval()` 方法一样执行字符串，带来安全隐患
 
-  ```javascript
+  ```js
   // bad
   const sum = new Function('a', 'b', 'return a + b');
 
@@ -1454,7 +1455,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   在非函数块（如 `if`、`while` 等）中，不要使用函数声明：
 
-  ```javascript
+  ```js
   // bad - 函数声明不是块作用域而是函数作用域，因此在块外也能使用函数，容易引起误解
   if (true) {
     function test() {
@@ -1488,7 +1489,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   函数声明会被提升到当前作用域的顶部，因此函数可以在声明语句前就被调用，这会影响代码的可读性与可维护性。
 
-  ```javascript
+  ```js
   // bad
   function foo() {
     // ...
@@ -1514,7 +1515,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   ES6 提供的箭头函数可以解决 `this` 指向的问题，而且语法更简洁。
 
-  ```javascript
+  ```js
   // bad
   [1, 2, 3].map(function (x) {
     const y = x + 1;
@@ -1538,7 +1539,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
     我们推荐使用这个 ES6 提供的语法糖，它可以让书写和阅读更简洁。但你也可以选择始终加上大括号和 `return`，以方便后续在函数体内增加语句。
 
-    ```javascript
+    ```js
     // good - 函数体包含多条语句时，始终加上大括号
     [1, 2, 3].map((number) => {
       const nextNumber = number + 1;
@@ -1556,7 +1557,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
     当 `return` 的内容为对象或者有多行时，需要用小括号包裹：
 
-    ```javascript
+    ```js
     // bad - Uncaught SyntaxError: Unexpected token
     [1, 2, 3].map((item) => {
       foo: item,
@@ -1591,7 +1592,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
     我们建议仅在这种情况下省略包裹参数的小括号，其余情况都不要省略小括号。但你也可以选择始终加上小括号，以方便后续可能要增加参数。
 
-    ```javascript
+    ```js
     // good - 未使用 return 简写语法时，参数始终加上小括号
     [1, 2, 3].map((number) => {
       const nextNumber = number + 1;
@@ -1609,7 +1610,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   这会覆盖掉函数作用域中的 `arguments` 对象。
 
-  ```javascript
+  ```js
   // bad
   function foo(name, options, arguments) {
     // ...
@@ -1627,7 +1628,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   ES6 提供了 rest 操作符 `...`，与 `arguments` 相比可以更清晰地聚合函数的剩余参数。此外， `...` 得到的是一个真正的数组，而 `arguments` 得到的则是类数组结构。
 
-  ```javascript
+  ```js
   // bad
   function foo(a, b) {
     const args = Array.prototype.slice.call(arguments, foo.length);
@@ -1648,7 +1649,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   因此，当函数参数需要默认值时，使用默认参数语法，而不是去修改参数：
 
-  ```javascript
+  ```js
   // bad
   const multiple = (a, b) => {
     a = a || 0;
@@ -1666,7 +1667,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   否则你将无法享受到默认参数的便利，只能通过传 `undefined` 触发参数使用默认值。
 
-  ```javascript
+  ```js
   // bad
   function multiply(a = 1, b) {
     return a * b;
@@ -1685,7 +1686,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   不要修改引用类型的参数，这可能导致作为入参的原变量发生变化：
 
-  ```javascript
+  ```js
   // bad
   const f1 = function f1(obj) {
     obj.key = 1;
@@ -1702,7 +1703,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   更不要给参数重新赋值，这可能导致意外的行为和内核优化问题：
 
-  ```javascript
+  ```js
   // bad
   function foo(bar, baz) {
     if (!baz) {
@@ -1723,7 +1724,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   IIFE 是一个独立的执行单元，将它用小括号包裹可以更清晰的体现这点。需要提醒的是，由于 ES6 模块语法的引入，你可能不再需要使用 IIFE 了。
 
-  ```javascript
+  ```js
   (function () {
     console.log('Welcome to the Internet. Please follow me.');
   }());
@@ -1741,7 +1742,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   如果必须使用过多的参数，可以考虑用对象代替参数列表：
 
-  ```javascript
+  ```js
   // bad
   function doSomething(param1, param2, param3, param4, param5, param6, param7, param8) {
     // ...
@@ -1759,7 +1760,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   如果一个 `generator` 中没有 `yield` 语句，那么这个 `generator` 就不是必须的。
 
-  ```javascript
+  ```js
   // bad
   function* foo() {
     return 10;
@@ -1778,7 +1779,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   如使用 map() / every() / filter() / find() / findIndex() / reduce() / some() / ... 来迭代数组，使用 Object.keys() / Object.values() / Object.entries() 方法来迭代对象
 
-  ```javascript
+  ```js
   const numbers = [1, 2, 3, 4, 5];
 
   // bad
@@ -1821,7 +1822,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   `class` 语句是 ES6 中引入的用于声明类的语法糖，更加简洁易维护。
 
-  ```javascript
+  ```js
   // bad
   function Person() {
     this.age = 1;
@@ -1845,7 +1846,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   `extends` 是用于原型继承的内建方法，不会破坏 `instanceof`。
 
-  ```javascript
+  ```js
   // bad
   const inherits = require('inherits');
   function PeekableQueue(contents) {
@@ -1868,7 +1869,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   ES6 class 会提供一个默认的 `constructor`，空 `constructor` 或者只调用父类的  `constructor` 是不必要的。eslint: [no-useless-constructor](https://eslint.org/docs/rules/no-useless-constructor)
 
-  ```javascript
+  ```js
   // bad - 以下两种 constructor 可以省略
   class Parent {
     constructor() {
@@ -1908,7 +1909,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
   - 子类的 `constructor` 中必须使用 `super()`，且必须在 `this` 和 `super` 关键词前调用
   - 非子类的 `constructor` 中不能使用 `super()`
 
-  ```javascript
+  ```js
   // bad - 非子类不能使用 super
   class Parent {
     constructor() {
@@ -1952,7 +1953,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   重复的类成员声明最终生效的将是最后一个：
 
-  ```javascript
+  ```js
   // bad
   class Foo {
     bar() { console.log('bar'); }
@@ -1975,7 +1976,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   ES6 modules 作为标准代表着未来，让我们拥抱未来吧。
 
-  ```javascript
+  ```js
   // bad
   const React = require('react');
   module.exports = React.Component;
@@ -1989,7 +1990,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   多条 `import` 语句引入了同一模块会降低可维护性，你需要将它们合成一条语句。
 
-  ```javascript
+  ```js
   // bad
   import React from 'react';
   import { Component }  from 'react';
@@ -2002,7 +2003,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   由于 `import` 语句会被声明提升，将它们放到模块的最上方以防止异常行为。
 
-  ```javascript
+  ```js
   // bad
   import foo from 'foo';
   foo.init();
@@ -2020,7 +2021,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 2.7.4【强制】禁止 default import 的名字跟文件内的其他 export 命名相同。eslint: [import/no-named-as-default](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md)
 
-  ```javascript
+  ```js
   // foo.js
   export default 'foo';
   export const bar = 'bar';
@@ -2038,7 +2039,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 2.7.7【推荐】不要在 default export 上使用一个已导出的名称作为属性。eslint: [import/no-named-as-default-member](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md)
 
-  ```javascript
+  ```js
   // foo.js
   export default 'foo';
   export const bar = 'bar';
@@ -2054,7 +2055,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 2.7.8【推荐】在模块导入之后保留一个空行。eslint: [import/newline-after-import](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md)
 
-  ```javascript
+  ```js
   // bad
   import foo from './foo.js';
   const FOO = 'FOO'
@@ -2072,7 +2073,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
   - 先 `import` 第三方模块，再 `import` 自己工程里的模块
   - 先 `import` 绝对路径，再 `import` 相对路径
 
-  ```javascript
+  ```js
   // bad
   import foo from 'components/foo';
   import './index.scss';
@@ -2088,7 +2089,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   我们也建议文件内只包含一个 export，这有利于代码的可维护性。
 
-  ```javascript
+  ```js
   // bad
   export function foo() {}
 
@@ -2100,7 +2101,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   虽然一行代码更简洁，但这不利于代码的可读性和一致性。
 
-  ```javascript
+  ```js
   // bad
   export { Com as Component } from 'react';
 
@@ -2123,7 +2124,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   因此，一般情况下我们应该使用严格比较运算符（ `===` 和 `!==`）进行比较。如果要比较的两个值类型不同，应该显性地将其转换成相同类型再进行严格比较，而不是依赖于 `==` 和 `!=` 的隐式类型转换。
 
-  ```javascript
+  ```js
   const id = '83949';
 
   // bad - 为了兼容 id 可能是字符串的情况，而有意使用 == 与数字比较
@@ -2143,7 +2144,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   `++` 和 `--` 会带来值是否会提前变化带来的理解成本，也可能因为自动添加分号机制导致一些错误，因此我们推荐使用 `num += 1` 来代替 `num++`。但出于习惯，在 `for` 循环的条件中依然可以使用自增自减运算符。
 
-  ```javascript
+  ```js
   let num = 1;
 
   // bad
@@ -2160,7 +2161,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   在很老版本的 JS 中，`undefined` 值是可变的，因此使用 `void` 语句一般是用来得到一个 `undefined` 值。而在新版本的 JS 中，上面的问题已不复存在。因此出于程序可读性的考虑，禁止使用 `void` 运算符。
 
-  ```javascript
+  ```js
   // bad
   const foo = void 0;
 
@@ -2172,7 +2173,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   嵌套的三元表达式会降低代码可读性。
 
-  ```javascript
+  ```js
   // bad
   const foo = bar ? baz : qux === quxx ? bing : bam;
 
@@ -2183,7 +2184,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 2.8.5【强制】避免不必要的三元表达式。eslint: [no-unneeded-ternary](https://eslint.org/docs/rules/no-unneeded-ternary)
 
-  ```javascript
+  ```js
   // bad
   const foo = a ? a : b;
   const bar = c ? true : false;
@@ -2199,7 +2200,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   这可以更清晰地表达代码意图，提高可读性。四则运算符（`+`, `-`, `*`, `/`）可以不包裹，因为大多数人熟知它们的优先级。
 
-  ```javascript
+  ```js
   // bad
   const foo = a && b < 0 || c > 0 || d + 1 === 0;
 
@@ -2230,7 +2231,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 2.9.1【强制】switch 语句中的 case 需要以 break 结尾。eslint: [no-fallthrough](https://eslint.org/docs/rules/no-fallthrough)
 
-  ```javascript
+  ```js
   // bad
   switch(foo) {
     case 1:
@@ -2258,7 +2259,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   在使用 `switch` 语句时，有时会出现因开发者忘记设置 `default` 而导致错误，因此建议总是给出 `default`。如果有意省略 `default`，请在 `switch` 语句末尾用 `// no default` 注释指明：
 
-  ```javascript
+  ```js
   // bad
   let foo;
   switch (bar) {
@@ -2291,7 +2292,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   `switch` 语句在有许多条件分支的情况下可以使代码结构更清晰。但对于只有一个或两个条件分支的情况，更适合使用 `if` 语句，`if` 语句更易于书写和阅读。
 
-  ```javascript
+  ```js
   // bad
   let foo;
   switch (bar) {
@@ -2315,7 +2316,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   控制语句的嵌套层级不要超过 **4** 级，否则将难以阅读和维护：
 
-  ```javascript
+  ```js
   // bad
   if (condition1) {
     // depth = 1
@@ -2339,7 +2340,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   当 `for` 循环中更新子句的计数器朝着错误的方向移动时，循环的终止条件将永远无法达到，这会导致死循环的出现。这时要么是程序出现了错误，要么应将 `for` 循环改为 `while` 循环。
 
-  ```javascript
+  ```js
   // bad
   for (let i = 0; i < length; i--) {
     // do something
@@ -2355,7 +2356,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   使用 `for-in` 循环时需要避免对象从原型链上继承来的属性也被遍历出来，因此保险的做法是对 key 是否是对象自身的属性进行验证：
 
-  ```javascript
+  ```js
   // bad
   for (const key in foo) {
     doSomething(key);
@@ -2371,7 +2372,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 2.9.7【参考】如果一个 if 语句的结果总是返回一个 return 语句，那么最后的 else 是不必要的。eslint: [no-else-return](https://eslint.org/docs/rules/no-else-return)
 
-  ```javascript
+  ```js
   // bad
   function foo() {
     if (x) {
@@ -2402,7 +2403,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
   - **数字** 如果是 **+0、-0 或 NaN** 被计算为 **false**，否则为 **true**
   - **字符串** 如果是空字符串 `''` 被计算为 **false**，否则为 **true**
 
-  ```javascript
+  ```js
   if ({}) { // => true
   }
 
@@ -2425,7 +2426,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   `eval` 语句存在安全风险，可能导致注入攻击。
 
-  ```javascript
+  ```js
   // bad
   const obj = { x: 'foo' };
   const key = 'x';
@@ -2441,7 +2442,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   `debugger` 语句会让程序暂停，并在当前位置开启调试器。它通常在程序调试阶段使用，不应发布到线上。
 
-  ```javascript
+  ```js
   // bad
   function isTruthy(x) {
     debugger;
@@ -2454,7 +2455,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   `alert` 语句会使浏览器弹出原生警告框，这可能让人感觉你的程序出错了。如果需要对用户弹出警告信息，好的做法是使用第三方的弹窗组件或自己定义警告框样式。同理，`confirm` 和 `prompt` 语句也不应被使用。
 
-  ```javascript
+  ```js
   // bad
   alert('Oops!');
 
@@ -2466,7 +2467,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   `console` 语句通常在调试阶段使用，发布上线前，应该去掉代码里所有的 `console` 语句。
 
-  ```javascript
+  ```js
   // bad
   console.log('Some debug messages..');
 
@@ -2486,7 +2487,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   JS 执行环境中会包含一些全局变量和原生对象，如浏览器环境中的 `window`，node 环境中的 `global` 、`process`，`Object`，`undefined` 等。除了像 `window` 这样的众所周知的对象，JS 还提供了数百个内置全局对象，你可能在定义全局变量时无意对它们进行了重新赋值，因此最好的做法是不要定义全局变量。
 
-  ```javascript
+  ```js
   // bad
   window = {};
   Object = null;
@@ -2502,7 +2503,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   注释应单独一行写在被注释对象的上方，不要追加在某条语句的后面：
 
-  ```javascript
+  ```js
   // bad
   const active = true;  // is current tab
 
@@ -2513,7 +2514,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   注释行上方需要有一个空行（除非注释行上方是一个块的顶部），以增加可读性：
 
-  ```javascript
+  ```js
   // bad - 注释行上方需要一个空行
   function getType() {
     console.log('fetching type...');
@@ -2553,7 +2554,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 3.2【推荐】多行注释使用 /** ... */，而不是多行的 //。
 
-  ```javascript
+  ```js
   // bad
   // make() returns a new element
   // based on the passed in tag name
@@ -2579,7 +2580,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   注释内容和注释符之间需要有一个空格，以增加可读性：
 
-  ```javascript
+  ```js
   // bad
   //is current tab
   const active = true;
@@ -2620,7 +2621,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   一个我们不愿看到却很普遍的情况是，我们给代码标记 `FIXME` 或 `TODO` 后却一直没找到时间处理。所以当你做了特殊标记，你应该为它负责，在某个时间把它解决。
 
-  ```javascript
+  ```js
   class Calculator extends Abacus {
     constructor() {
       super();
@@ -2640,7 +2641,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   例如：
 
-  ```javascript
+  ```js
   /**
    * Book类，代表一个书本.
    * @constructor
@@ -2681,7 +2682,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 4.2【参考】使用小驼峰（camelCase）命名原始类型、对象、函数、实例。[camelcase](https://eslint.org/docs/rules/camelcase)
 
-  ```javascript
+  ```js
   // bad
   const this_is_my_string = 'foo';
   const this_is_my_object = {};
@@ -2695,7 +2696,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
 - 4.3【强制】使用大驼峰（PascalCase）命名类和构造函数。eslint: [new-cap](https://eslint.org/docs/rules/new-cap)
 
-  ```javascript
+  ```js
   // bad
   function user(options) {
     this.name = options.name;
@@ -2726,7 +2727,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   ES6 后 `const` 关键字用于声明常量，被广泛使用，如果所有用 `const` 声明的值都用 UPPERCASE_VARIABLES 模式命名会使可读性变差，是没有必要的。因此我们约定 UPPERCASE_VARIABLES 命名模式只用于 export 给其他文件用的常量，如果只在同文件内使用，依然使用正常的命名风格。
 
-  ```javascript
+  ```js
   // bad - 在本文件中使用的常量，不需使用 UPPERCASE_VARIABLES 风格
   const PRIVATE_VARIABLE = 'should not be unnecessarily uppercased within a file';
 
@@ -2739,7 +2740,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   此外，如果 `export` 一个对象，只有对象本身需要使用 UPPERCASE_VARIABLES ，对象属性的 key 仍然使用正常命名风格：
 
-  ```javascript
+  ```js
   // bad - unnecessarily uppercases key while adding no semantic value
   export const AN_OBJECT = {
     KEY: 'value',
@@ -2755,7 +2756,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   使用小驼峰（camelCase）命名 `export` 的函数：
 
-  ```javascript
+  ```js
   function makeStyleGuide() {
     // ...
   }
@@ -2765,7 +2766,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   使用大驼峰（PascalCase）命名 `export` 的 class、函数库、字面量对象：
 
-  ```javascript
+  ```js
   const AnObject = {
     foo: {
       // ...
@@ -2779,7 +2780,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   JS 没有私有属性或私有方法的概念，这样的命名可能会让人误解。
 
-  ```javascript
+  ```js
   // bad
   this.__firstName__ = 'Panda';
   this.firstName_ = 'Panda';
@@ -2797,14 +2798,14 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   使用 `var` 进行声明：
 
-  ```javascript
+  ```js
   // good
   var foo = 'foo';
   ```
 
   需注意，`var` 声明的变量不是块作用域而是函数作用域：
 
-  ```javascript
+  ```js
   // 将打印 2, 2, 2，而非 0, 1, 2
   for (var i = 0; i < 3; ++i) {
     var iteration = i;
@@ -2814,7 +2815,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   另外，`var` 声明的变量会被提升到其作用域顶部：
 
-  ```javascript
+  ```js
   // 变量声明会被提升到函数顶部，但赋值不会被提升
   function example() {
     console.log(declaredButNotAssigned); // => undefined
@@ -2827,7 +2828,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   不要在声明前就使用变量，这样做可能给人带来疑惑和隐患。eslint: [`no-use-before-define`](https://eslint.org/docs/rules/no-use-before-define.html)
 
-  ```javascript
+  ```js
   // bad
   console.log(foo); // => undefined
   var foo = 'foo';
@@ -2841,7 +2842,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   这样做会在 IE6/7 和 IE9 怪异模式下引起问题。另外，多余的逗号在某些 ES3 的实现里会增加数组的长度。
 
-  ```javascript
+  ```js
   // bad
   var hero = {
     firstName: 'Kevin',
@@ -2859,7 +2860,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   数组复制：
 
-  ```javascript
+  ```js
   var items = [1, 2, 3];
 
   // bad
@@ -2874,7 +2875,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   将类数组对象转换成数组：
 
-  ```javascript
+  ```js
   function trigger() {
     var args = Array.prototype.slice.call(arguments);
     // ...
@@ -2885,7 +2886,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
 
   不要使用[保留字](http://es5.github.io/#x7.6.1)作为对象的属性名，它们在 IE8 中不工作
 
-  ```javascript
+  ```js
   // bad
   var superman = {
     class: 'alien',

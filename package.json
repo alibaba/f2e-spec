@@ -50,9 +50,9 @@
     "prettier": "^3.2.5",
     "prettier-config-ali": "link:packages/prettier-config-ali",
     "react": "^18.2.0",
-    "react-doc-ui": "^2.2.3",
+    "react-doc-ui": "^2.2.6",
     "react-dom": "^18.2.0",
-    "rive": "^2.0.26",
+    "rive": "^2.0.27",
     "typescript": "^5.3.3"
   },
   "rive": {
@@ -61,6 +61,16 @@
       "basename": "/f2e-spec/",
       "include": [
         "docs/**/*.md"
+      ],
+      "languages": [
+        {
+          "code": "en",
+          "name": "English"
+        },
+        {
+          "code": "zh",
+          "name": "中文"
+        }
       ]
     }
   }

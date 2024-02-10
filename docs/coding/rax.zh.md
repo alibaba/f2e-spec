@@ -1,5 +1,6 @@
 ---
-group: 代码规约
+group: 代码风格
+order: 7
 ---
 
 # Rax 编码规约

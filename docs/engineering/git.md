@@ -1,8 +1,9 @@
 ---
-group: 工程实践
+group: Engineering
+order: 1.0
 ---
 
-# Git 相关规约
+# Git Specification
 
 ## 1 Git 提交日志格式规约
 

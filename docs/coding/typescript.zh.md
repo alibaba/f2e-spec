@@ -1,5 +1,6 @@
 ---
-group: 代码规约
+group: 代码风格
+order: 4
 ---
 
 # TypeScript 编码规约
@@ -18,7 +19,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   自然相关的项组合在一起将提高代码可读性和组织性。
 
-  ```typescript
+  ```ts
   // bad
   declare namespace Foo {
     export function foo(s: string): void;
@@ -36,7 +37,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
   }
   ```
 
-  ```typescript
+  ```ts
   // bad
   type Foo = {
     foo(s: string): void;
@@ -82,7 +83,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
   }
   ```
 
-  ```typescript
+  ```ts
   // bad
   export function foo(s: string): void;
   export function foo(n: number): void;
@@ -102,7 +103,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   简单类型（数字、字符串、布尔等）请使用 `T[]` 或 `readonly T[]` ，其他复杂类型（联合、交叉、对象、函数等）请使用 `Array<T>` 或 `ReadonlyArray<T>`
 
-  ```typescript
+  ```ts
   // bad
   const a: (string | number)[] = ['a', 1];
   const b: { prop: string }[] = [{ prop: 'a' }];
@@ -124,7 +125,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   TS 提供了一些指令注释，可用于忽略 TypeScript 编译器在编译阶段的错误，如下：
 
-  ```typescript
+  ```ts
   // @ts-expect-error
   // @ts-ignore
   // @ts-nocheck
@@ -133,7 +134,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   我们允许在代码中使用指令注释，但需要跟随一定长度的描述说明。
 
-  ```typescript
+  ```ts
   // bad
   // @ts-expect-error
   console.log('my code');
@@ -153,7 +154,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   tslint 已经被废弃，对应的指令注释也不应再出现。
 
-  ```typescript
+  ```ts
   // bad
   /* tslint:disable */
   /* tslint:enable */
@@ -172,7 +173,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
 
 
-  ```typescript
+  ```ts
   // bad
   class Mx {
     public static get myField1() {
@@ -205,7 +206,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
 
 
-  ```typescript
+  ```ts
   // bad
   const foo = <string>'bar';
 
@@ -213,7 +214,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
   const foo = 'bar' as string;
   ```
 
-  ```typescript
+  ```ts
   // bad
   const x = { ... } as T;
   const y = { ... } as object;
@@ -228,7 +229,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   interface 支持 extend/implement/union 等等类型能力，同时也可以用于描述普通对象。
 
-  ```typescript
+  ```ts
   // bad
   type T = { x: number };
 
@@ -244,7 +245,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   将非公开成员的可访问性设置为「私有」，可以增强代码可理解性，同时也能避免一些非法调用，公开的成员可省略 `public` 修饰符。
 
-  ```typescript
+  ```ts
   // bad
   class Foo {
     static foo = 'foo';
@@ -283,7 +284,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
 - 【强制】interface/type 类型中使用一致的成员分隔符 `;` [@typescript-eslint/member-delimiter-style](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md)
 
-  ```typescript
+  ```ts
   // bad: comma style(JSON style)
   interface Foo {
     name: string,
@@ -325,7 +326,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
   2. 属性（field）优先于构造函数（constructor），优先于方法（method）
   3. 公开的成员（public）优先于受保护的成员（protected），优先于私有的成员（private）
 
-  ```typescript
+  ```ts
   // good
   class Foo {
     public static foo1 = 'foo1';
@@ -355,7 +356,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   使用属性去定义接口中的方法，可以获得更严格的检查。
 
-  ```typescript
+  ```ts
   // bad
   interface T1 {
     func(arg: string): number;
@@ -388,7 +389,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   在相等比较运算符（`==` 或 `===`）前使用非空断言（`!`）很容易和不等运算符（`!=` 或 `!==`）混淆，不建议使用。
 
-  ```typescript
+  ```ts
   interface Foo {
     bar?: string;
     num?: number;
@@ -409,7 +410,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   空的接口类型等效于空对象，若它只继承另一个接口类型，那么该类型与被继承的类型等效。在代码中应减少定义无意义的接口类型。
 
-  ```typescript
+  ```ts
   // bad
   // an empty interface
   interface Foo {}
@@ -440,7 +441,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   对于容易类型推倒出的变量、参数，再次的显式声明类型会带来代码冗余。
 
-  ```typescript
+  ```ts
   // bad
   const foo: number = 1;
   const bar: string = '';
@@ -464,7 +465,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   void 类型代表「无」或函数「不返回任何值」，隐式未定义类型代表函数返回「未定义的值 undefined」，所以 void 类型无法与除了 never 外的其他类型做联合、交叉。
 
-  ```typescript
+  ```ts
   // bad
   type PossibleValues = string | number | void;
   type MorePossibleValues = string | ((number & any) | (string | void));
@@ -491,7 +492,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   自定义 TypeScript 模块（module）和命名空间（namespace）已经不再推荐使用，首选 ES2015 的模块语法来导入导出。此规则仍然允许定义外部的模块或命名空间。
 
-  ```typescript
+  ```ts
   // bad
   module foo {}
   namespace foo {}
@@ -512,7 +513,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   `optional chaining` 被设计为返回 `undefined`，在之后使用非空断言是错误的，会引入严重的类型安全问题。
 
-  ```typescript
+  ```ts
   // bad
   foo?.bar!;
   foo?.bar!.baz;
@@ -535,7 +536,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
 - 【推荐】使用 ES2015 import 语法引入模块 [@typescript-eslint/no-require-imports](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-require-imports.md)
 
-  ```typescript
+  ```ts
   // bad
   const fs = require('fs');
 
@@ -547,7 +548,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   通过变量赋值为 this 的方式来管理函数作用域不是我们推荐的最佳实践，应使用箭头函数保留函数作用域。此规则中允许对 this 的解构赋值。
 
-  ```typescript
+  ```ts
   // bad
   function foo() {
     const self = this;
@@ -566,7 +567,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
 - 【推荐】当变量的值与类型声明相等时，优先使用 `as const` [@typescript-eslint/prefer-as-const](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md)
 
-  ```typescript
+  ```ts
   // bad
   let bar: 2 = 2;
   let foo = <'bar'>'bar';
@@ -585,7 +586,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   module 已经成为 JS 语言的关键字，应避免 TypeScript 模块与 ES2015 模块混淆。`declare module` 不做限制。
 
-  ```typescript
+  ```ts
   // bad
   module Foo {}
 
@@ -596,7 +597,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
 - 【强制】字符串字面量使用单引号包裹 [@typescript-eslint/quotes](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md)
 
-  ```typescript
+  ```ts
   // bad
   const foo = "bar";
 
@@ -608,7 +609,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   数字与字符串的连接往往会导致一些预期外的问题。
 
-  ```typescript
+  ```ts
   // bad
   var foo = '5.5' + 5;
   var foo = 1n + 1;
@@ -622,7 +623,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
   三斜杠语法已经被废弃，声明文件（d.ts）以外禁止使用。
 
-  ```typescript
+  ```ts
   // bad
   /// <reference path="./my-module" />
 
@@ -637,7 +638,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
   1. 冒号前无空格，冒号后保留一个空格
   2. 箭头前后都保留一个空格
 
-  ```typescript
+  ```ts
   // bad
   let foo:string = 'bar';
   let foo :string = 'bar';
@@ -675,7 +676,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
 - 【强制】interface 和 type 定义时必须声明成员的类型 [@typescript-eslint/typedef](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/typedef.md)
 
-  ```typescript
+  ```ts
   // bad
   type Members = {
     member;
@@ -691,7 +692,7 @@ TypeScript 是微软开发的一款开源编程语言，它是 JavaScript 的超
 
 - 【推荐】定义函数时，优先使用参数的联合类型而不是函数的类型重载 [@typescript-eslint/unified-signatures](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unified-signatures.md)
 
-  ```typescript
+  ```ts
   // bad
   function f(x: number): void;
   function f(x: string): void;

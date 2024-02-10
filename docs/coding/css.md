@@ -1,8 +1,9 @@
 ---
-group: 代码规约
+group: Coding Style
+order: 2
 ---
 
-# CSS 编码规约
+# CSS Coding Specification
 
 本规约涉及 CSS 及其预编译语言（Sass、Less）的编码风格和最佳实践，部分规则可通过 [stylelint](https://stylelint.io/) 工具落地。
 

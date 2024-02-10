@@ -1,8 +1,9 @@
 ---
-group: 代码规约
+group: Coding Style
+order: 5
 ---
 
-# React 编码规约
+# React Coding Specification
 
 ## 1 编码风格
 

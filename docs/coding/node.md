@@ -1,8 +1,9 @@
 ---
-group: 代码规约
+group: Coding Style
+order: 6
 ---
 
-# Node.js 编码规约
+# Node.js Coding Specification
 
 ## 前言
 
@@ -12,7 +13,7 @@ Node.js 规约主要包含编码风格、安全规约、最佳实践等几个部
 
 - 1.1【推荐】使用 Node.js 内置的全局变量。eslint: [node/prefer-global](https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/prefer-global)
 
-```javascript
+```js
 // bad
 const { Buffer } = require('buffer');
 const b = Buffer.alloc(16);
@@ -60,7 +61,7 @@ console.log('hello');
 
 Node.js 从 v11.14.0 开始支持 `require('dns').promises` 和 `require('fs').promises` API。
 
-```javascript
+```js
 // bad
 const dns = require('dns');
 const fs = require('fs');
@@ -96,7 +97,7 @@ async function readData(filePath) {
 
 如无特殊需求（如动态 require），模块引用声明需要放在文件顶端。引用顺序如无特殊需求，按以下顺序来引入依赖：node 内置模块、npm 包、本地文件或其他，几类文件代码块之间各空一行，每类文件代码块中的引用顺序按照字典排序，如有解构引用情况，字典序以解构的第一个为准，解构内部按照字典排序。
 
-```javascript
+```js
 // bad
 const Car = require('./models/car');
 const moment = require('moment');
@@ -140,7 +141,7 @@ import Car from './models/car';
 
 - 1.4【推荐】抛出异常时，使用原生 `Error` 对象。eslint: [no-throw-literal](https://eslint.org/docs/rules/no-throw-literal)
 
-```javascript
+```js
 // bad
 throw 'error';
 
@@ -175,7 +176,7 @@ try {
 
 这样会阻塞 Node.js 应用的进程，导致不能继续处理新的请求，或当前正在处理的请求超时。推荐使用 `require('fs').promises` 方式或使用 [mz](https://www.npmjs.com/package/mz)。
 
-```javascript
+```js
 // bad
 const fs = require('fs');
 
@@ -256,7 +257,7 @@ Node.js 应用不合适做 CPU 密集型任务（例如 gzip，SSL），请尽�
 
 - 3.5【推荐】使用 `util.promisify` 处理回调函数，使其返回 `Promise`。
 
-```javascript
+```js
 const util = require('util');
 const fs = require('fs');
 
@@ -272,7 +273,7 @@ async function callStat() {
 
 - 3.7【推荐】在类方法中返回 `this` 方便链式调用。
 
-```javascript
+```js
 class Jedi {
   jump() {
     this.jumping = true;
