@@ -71,7 +71,9 @@
     "init-roll": "^1.0.10"
   },
   "devDependencies": {
-    "@types/command-exists": "^1.2.3"
+    "@types/command-exists": "^1.2.3",
+    "@types/node": "^20.11.17",
+    "rive": "^2.0.27"
   },
   "rive": {
     "template": "cli",
