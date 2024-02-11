@@ -17,7 +17,8 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky install",
-    "start": "rive start"
+    "start": "rive start",
+    "test": "rive test"
   },
   "commitlint": {
     "extends": [
