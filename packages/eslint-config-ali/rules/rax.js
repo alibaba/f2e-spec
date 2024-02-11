@@ -1,8 +1,5 @@
 module.exports = {
-  extends: [
-    require.resolve('./react.js'),
-    'plugin:jsx-plus/recommended',
-  ],
+  extends: [require.resolve('./react.js'), 'plugin:jsx-plus/recommended'],
   settings: {
     react: {
       // For Rax

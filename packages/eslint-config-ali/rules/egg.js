@@ -5,7 +5,5 @@
  */
 
 module.exports = {
-  extends: [
-    'eslint-config-egg/lib/rules/node',
-  ],
+  extends: ['eslint-config-egg/lib/rules/node'],
 };

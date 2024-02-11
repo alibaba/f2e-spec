@@ -6,14 +6,9 @@
  */
 
 module.exports = {
-  plugins: [
-    'import',
-  ],
+  plugins: ['import'],
   settings: {
-    'import/ignore': [
-      'node_modules',
-      '\\.(coffee|scss|css|less|hbs|svg|json)$',
-    ],
+    'import/ignore': ['node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$'],
   },
   rules: {
     /**
@@ -88,10 +83,13 @@ module.exports = {
     'import/extensions': 'off',
 
     // import 语句的排序
-    'import/order': ['off', {
-      groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-      'newlines-between': 'never',
-    }],
+    'import/order': [
+      'off',
+      {
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+        'newlines-between': 'never',
+      },
+    ],
 
     // 在最后一个 import / require 语句后保留一个空行
     'import/newline-after-import': 'warn',
@@ -112,9 +110,12 @@ module.exports = {
     'import/no-dynamic-require': 'off',
 
     // prevent importing the submodules of other modules
-    'import/no-internal-modules': ['off', {
-      allow: [],
-    }],
+    'import/no-internal-modules': [
+      'off',
+      {
+        allow: [],
+      },
+    ],
 
     // Forbid Webpack loader syntax in imports
     'import/no-webpack-loader-syntax': 'off',
@@ -128,14 +129,17 @@ module.exports = {
     'import/no-named-default': 'off',
 
     // Reports if a module's default export is unnamed
-    'import/no-anonymous-default-export': ['off', {
-      allowArray: false,
-      allowArrowFunction: false,
-      allowAnonymousClass: false,
-      allowAnonymousFunction: false,
-      allowLiteral: false,
-      allowObject: false,
-    }],
+    'import/no-anonymous-default-export': [
+      'off',
+      {
+        allowArray: false,
+        allowArrowFunction: false,
+        allowAnonymousClass: false,
+        allowAnonymousFunction: false,
+        allowLiteral: false,
+        allowObject: false,
+      },
+    ],
 
     // This rule enforces that all exports are declared at the bottom of the file.
     'import/exports-last': 'off',
@@ -156,10 +160,13 @@ module.exports = {
     'import/no-useless-path-segments': 'off',
 
     // dynamic imports require a leading comment with a webpackChunkName
-    'import/dynamic-import-chunkname': ['off', {
-      importFunctions: [],
-      webpackChunknameFormat: '[0-9a-zA-Z-_/.]+',
-    }],
+    'import/dynamic-import-chunkname': [
+      'off',
+      {
+        importFunctions: [],
+        webpackChunknameFormat: '[0-9a-zA-Z-_/.]+',
+      },
+    ],
 
     // Use this rule to prevent imports to folders in relative parent paths.
     'import/no-relative-parent-imports': 'off',

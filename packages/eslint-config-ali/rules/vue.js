@@ -40,10 +40,13 @@ module.exports = {
 
     // 禁止出现语法错误
     // @link https://html.spec.whatwg.org/multipage/parsing.html#parse-errors
-    'vue/no-parsing-error': ['error', {
-      'x-invalid-end-tag': false,
-      'invalid-first-character-of-tag-name': false,
-    }],
+    'vue/no-parsing-error': [
+      'error',
+      {
+        'x-invalid-end-tag': false,
+        'invalid-first-character-of-tag-name': false,
+      },
+    ],
 
     // 禁止使用 vue 中的关键字
     'vue/no-reserved-keys': 'error',
