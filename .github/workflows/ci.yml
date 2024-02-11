@@ -1,6 +1,8 @@
 name: CI
 
-on: push
+on:
+  - push
+  - pull_request
 
 jobs:
   lint:
@@ -31,12 +33,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
         with:
-          version: 7
+          version: 8
       - run: pnpm install
       - run: pnpm run build
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+      - run: cd packages/f2elint && pnpm run build
