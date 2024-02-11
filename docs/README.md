@@ -14,7 +14,7 @@ the following:
   - [CSS Coding Specification](coding/css.md)
   - [JavaScript Coding Specification](coding/javascript.md)
   - [React Coding Specification](coding/react.md)
-  - [Node.js 开发规约](coding/node.md)
+  - [Node.js Coding Specification](coding/node.md)
   - [TypeScript Coding Specification](coding/typescript.md)
   - [Rax Coding Specification](coding/rax.md)
 - Engineering
@@ -31,6 +31,12 @@ Tools help you to quickly integrate code checking into your projects. Tools incl
 - [prettier-config-ali](https://www.npmjs.com/package/prettier-config-ali)
 - [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali)
 - [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali)
+
+## Getting Started
+
+Run `npx f2elint` (if you use pnpm, run `pnpx f2elint`) in project root, and follow the promption:
+
+![screenshot](https://github.com/alibaba/f2e-spec/assets/5836790/80b5c4fd-6ab1-4423-8ae5-0572777db0a7)
 
 ## 单条规约格式说明
 

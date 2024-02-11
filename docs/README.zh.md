@@ -29,6 +29,12 @@
 - [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali)
 - [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali)
 
+## 快速开始
+
+在项目根目录运行 `npx f2elint` (如果您使用 pnpm 则是 `pnpx f2elint`)，并按照命令行指示操作：
+
+![screenshot](https://github.com/alibaba/f2e-spec/assets/5836790/80b5c4fd-6ab1-4423-8ae5-0572777db0a7)
+
 ## 单条规约格式说明
 
 ### 规约级别和对应的 Lint 规则
