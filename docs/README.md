@@ -32,7 +32,7 @@ Tools help you to quickly integrate code checking into your projects. Tools incl
 - [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali)
 - [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali)
 
-## Getting Started
+## Getting started
 
 Run `npx f2elint` (if you use pnpm, run `pnpx f2elint`) in project root, and follow the promption:
 
@@ -80,11 +80,12 @@ function foo() {
 // best - 最佳正例（多个正例中最好的实现）
 ```
 
-## 如何参与
+## How to participate
 
-非常欢迎大家通过 [Issues](https://github.com/alibaba/f2e-spec/issues) 反馈问题和需求，或者通过 [PRs](https://github.com/alibaba/f2e-spec/pulls) 参与贡献，请参考 [CONTRIBUTING.md](/CONTRIBUTING.md)。
+[Issues](https://github.com/alibaba/f2e-spec/issues) and [pull requests](https://github.com/alibaba/f2e-spec/pulls)
+are welcome. You can read more information at [CONTRIBUTING.md](https://github.com/alibaba/f2e-spec/blob/main/CONTRIBUTING.md).
 
-## Contribution Credits
+## Contribution credits
 
 Document writing & review (in no particular order):
 
