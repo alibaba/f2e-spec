@@ -406,7 +406,7 @@ are welcome. You can read more information at `,n.jsx(e.a,{href:"https://github.
 `]}),`
 `,n.jsx(e.p,{children:"一条规约的级别会在规约描述的开头标注，如有对应的 Lint 规则会在结尾标注，例如："}),`
 `,n.jsxs(e.blockquote,{children:[`
-`,n.jsxs(e.p,{children:["1.1.1【强制】使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/indent",children:"indent"})]}),`
+`,n.jsxs(e.p,{children:["1.1.1 ",n.jsx(e.code,{children:"强制"})," 使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/indent",children:"indent"})]}),`
 `]}),`
 `,n.jsx(e.h3,{children:"代码示例"}),`
 `,n.jsx(e.p,{children:"为了更加直观，规约描述之后通常会配上代码示例，例如："}),`
@@ -561,7 +561,7 @@ indent_size = 2
 `,n.jsx(e.p,{children:"上图是一张符合规约要求编码风格的速览图，详细规则如下："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.1【强制】所有声明都应该以分号结尾，不能省略。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-trailing-semicolon",children:"declaration-block-trailing-semicolon"})]}),`
+`,n.jsxs(e.p,{children:["1.1.1 ",n.jsx(e.code,{children:"mandatory"})," 所有声明都应该以分号结尾，不能省略。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-trailing-semicolon",children:"declaration-block-trailing-semicolon"})]}),`
 `,n.jsx(e.p,{children:"虽然 CSS 语法中最后一条声明的分号是可选的，但是使用分号可以增加代码的一致性和易用性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
@@ -577,7 +577,7 @@ indent_size = 2
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.2【推荐】使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/indentation",children:"indentation"})]}),`
+`,n.jsxs(e.p,{children:["1.1.2 ",n.jsx(e.code,{children:"recommended"})," 使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/indentation",children:"indentation"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
     padding-left: 15px;
@@ -590,7 +590,7 @@ indent_size = 2
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.3【推荐】选择器和 ",n.jsx(e.code,{children:"{"})," 之间保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/block-opening-brace-space-before",children:"block-opening-brace-space-before"})]}),`
+`,n.jsxs(e.p,{children:["1.1.3 ",n.jsx(e.code,{children:"recommended"})," 选择器和 ",n.jsx(e.code,{children:"{"})," 之间保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/block-opening-brace-space-before",children:"block-opening-brace-space-before"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector{
   padding-left: 15px;
@@ -603,7 +603,7 @@ indent_size = 2
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.4【推荐】属性名和 ",n.jsx(e.code,{children:":"})," 之前无空格，",n.jsx(e.code,{children:":"})," 和属性值之间保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-colon-space-after",children:"declaration-colon-space-after"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-colon-space-before",children:"declaration-colon-space-before"})]}),`
+`,n.jsxs(e.p,{children:["1.1.4 ",n.jsx(e.code,{children:"recommended"})," 属性名和 ",n.jsx(e.code,{children:":"})," 之前无空格，",n.jsx(e.code,{children:":"})," 和属性值之间保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-colon-space-after",children:"declaration-colon-space-after"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-colon-space-before",children:"declaration-colon-space-before"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   margin-top : 10px;
@@ -618,7 +618,7 @@ indent_size = 2
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.5【推荐】",n.jsx(e.code,{children:">"}),"、",n.jsx(e.code,{children:"+"}),"、",n.jsx(e.code,{children:"~"})," 、",n.jsx(e.code,{children:"||"})," 等组合器前后各保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-combinator-space-before",children:"selector-combinator-space-before"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-combinator-space-after",children:"selector-combinator-space-after"})]}),`
+`,n.jsxs(e.p,{children:["1.1.5 ",n.jsx(e.code,{children:"recommended"})," ",n.jsx(e.code,{children:">"}),"、",n.jsx(e.code,{children:"+"}),"、",n.jsx(e.code,{children:"~"})," 、",n.jsx(e.code,{children:"||"})," 等组合器前后各保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-combinator-space-before",children:"selector-combinator-space-before"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-combinator-space-after",children:"selector-combinator-space-after"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector>.children {
   padding-left: 15px;
@@ -637,7 +637,7 @@ indent_size = 2
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.6【推荐】在使用 ",n.jsx(e.code,{children:","})," 分隔的属性值中，",n.jsx(e.code,{children:","})," 之后保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/value-list-comma-space-after",children:"value-list-comma-space-after"})]}),`
+`,n.jsxs(e.p,{children:["1.1.6 ",n.jsx(e.code,{children:"recommended"})," 在使用 ",n.jsx(e.code,{children:","})," 分隔的属性值中，",n.jsx(e.code,{children:","})," 之后保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/value-list-comma-space-after",children:"value-list-comma-space-after"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   background-color: rgba(0,0,0,0.5);
@@ -652,7 +652,7 @@ indent_size = 2
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.7【推荐】注释内容和注释符之间留有一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/comment-whitespace-inside",children:"comment-whitespace-inside"})]}),`
+`,n.jsxs(e.p,{children:["1.1.7 ",n.jsx(e.code,{children:"recommended"})," 注释内容和注释符之间留有一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/comment-whitespace-inside",children:"comment-whitespace-inside"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   /*comment*/
@@ -674,7 +674,7 @@ indent_size = 2
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.8【推荐】声明块的右大括号 ",n.jsx(e.code,{children:"}"})," 应单独成行。"]}),`
+`,n.jsxs(e.p,{children:["1.1.8 ",n.jsx(e.code,{children:"recommended"})," 声明块的右大括号 ",n.jsx(e.code,{children:"}"})," 应单独成行。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   padding-left: 15px;}
@@ -686,7 +686,7 @@ indent_size = 2
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.9【推荐】属性声明应单独成行。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations",children:"declaration-block-single-line-max-declarations"})]}),`
+`,n.jsxs(e.p,{children:["1.1.9 ",n.jsx(e.code,{children:"recommended"})," 属性声明应单独成行。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations",children:"declaration-block-single-line-max-declarations"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   padding-left: 15px;  margin-left: 10px;
@@ -700,7 +700,7 @@ indent_size = 2
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.10【推荐】单行代码最多不要超过 100 个字符。 stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/max-line-length",children:"max-line-length"})," 除了以下两种情况："]}),`
+`,n.jsxs(e.p,{children:["1.1.10 ",n.jsx(e.code,{children:"recommended"})," 单行代码最多不要超过 100 个字符。 stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/max-line-length",children:"max-line-length"})," 除了以下两种情况："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["使用 ",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/url",children:n.jsx(e.code,{children:"url()"})})," 函数时"]}),`
 `,n.jsx(e.li,{children:"CSS 属性值本身无法换行时，即属性值内无空格或逗号时"}),`
@@ -719,7 +719,7 @@ background-image: -webkit-gradient(
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.11【参考】使用多个选择器时，每个选择器应该单独成行。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-list-comma-newline-after",children:"selector-list-comma-newline-after"})]}),`
+`,n.jsxs(e.p,{children:["1.1.11 ",n.jsx(e.code,{children:"referenced"})," 使用多个选择器时，每个选择器应该单独成行。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-list-comma-newline-after",children:"selector-list-comma-newline-after"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector, .selector-secondary, .selector-third {
   padding: 15px;
@@ -736,7 +736,7 @@ background-image: -webkit-gradient(
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.1.12【参考】声明块内只有一条语句时，也应该写成多行。"}),`
+`,n.jsxs(e.p,{children:["1.1.12 ",n.jsx(e.code,{children:"referenced"})," 声明块内只有一条语句时，也应该写成多行。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector { padding-left: 15px; }
 
@@ -747,7 +747,7 @@ background-image: -webkit-gradient(
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.13【参考】注释行上方需留有一行空行，除非上一行是注释或块的顶部。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/comment-empty-line-before",children:"comment-empty-line-before"})]}),`
+`,n.jsxs(e.p,{children:["1.1.13 ",n.jsx(e.code,{children:"referenced"})," 注释行上方需留有一行空行，除非上一行是注释或块的顶部。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/comment-empty-line-before",children:"comment-empty-line-before"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
 
@@ -771,7 +771,7 @@ background-image: -webkit-gradient(
 `,n.jsx(e.h3,{children:"1.2 选择器"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.1【参考】不要使用 id 选择器。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-max-id",children:"selector-max-id"})]}),`
+`,n.jsxs(e.p,{children:["1.2.1 ",n.jsx(e.code,{children:"referenced"})," 不要使用 id 选择器。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-max-id",children:"selector-max-id"})]}),`
 `,n.jsxs(e.p,{children:["id 会带来过高的",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity",children:"选择器优先级"}),"，使得后续很难进行样式覆盖（继而引发使用 ",n.jsx(e.code,{children:"!important"})," 覆盖样式的恶性循环）。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .normal {
@@ -791,7 +791,7 @@ background-image: -webkit-gradient(
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.2【参考】属性选择器的值始终用双引号包裹。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-attribute-quotes",children:"selector-attribute-quotes"})]}),`
+`,n.jsxs(e.p,{children:["1.2.2 ",n.jsx(e.code,{children:"referenced"})," 属性选择器的值始终用双引号包裹。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-attribute-quotes",children:"selector-attribute-quotes"})]}),`
 `,n.jsxs(e.p,{children:["属性选择器的值的引号只有在",n.jsx(e.a,{href:"https://mathiasbynens.be/notes/unquoted-attribute-values#css",children:"某些情况下"}),"可以省略。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 input[type=text] {
@@ -805,7 +805,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.2.3【参考】使用 CSS 选择器时，应注意以下性能问题："}),`
+`,n.jsxs(e.p,{children:["1.2.3 ",n.jsx(e.code,{children:"referenced"})," 使用 CSS 选择器时，应注意以下性能问题："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
 `,n.jsx(e.p,{children:"使用 class 而不是原生元素标签"}),`
@@ -836,7 +836,7 @@ input[type="text"] {
 `,n.jsx(e.h3,{children:"1.3 属性和属性值"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.1【推荐】使用尽可能短的十六进制值。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/color-hex-length",children:"color-hex-length"})]}),`
+`,n.jsxs(e.p,{children:["1.3.1 ",n.jsx(e.code,{children:"recommended"})," 使用尽可能短的十六进制值。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/color-hex-length",children:"color-hex-length"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   color: #ffffff;
@@ -849,10 +849,10 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.3.2【推荐】不要使用 !important 重写样式。"}),`
+`,n.jsxs(e.p,{children:["1.3.2 ",n.jsx(e.code,{children:"recommended"})," 不要使用 !important 重写样式。"]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.3【推荐】十六进制值统一使用小写字母（小写字母更容易分辨）。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/color-hex-case",children:"color-hex-case"})]}),`
+`,n.jsxs(e.p,{children:["1.3.3 ",n.jsx(e.code,{children:"recommended"})," 十六进制值统一使用小写字母（小写字母更容易分辨）。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/color-hex-case",children:"color-hex-case"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   color: #FEFEFE;
@@ -865,7 +865,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.4【推荐】长度值为 0 时，省略掉长度单位。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/length-zero-no-unit",children:"length-zero-no-unit"})]}),`
+`,n.jsxs(e.p,{children:["1.3.4 ",n.jsx(e.code,{children:"recommended"})," 长度值为 0 时，省略掉长度单位。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/length-zero-no-unit",children:"length-zero-no-unit"})]}),`
 `,n.jsx(e.p,{children:"在 CSS 中，长度值为 0 时，它的单位是可选的（长度单位包括：em, ex, ch, vw, vh, cm, mm, in, pt, pc, px, rem, vmin, and vmax）。省略长度单位可以使代码更简洁："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
@@ -881,7 +881,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.5【参考】保留小数点前的 0。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/number-leading-zero",children:"number-leading-zero"})]}),`
+`,n.jsxs(e.p,{children:["1.3.5 ",n.jsx(e.code,{children:"referenced"})," 保留小数点前的 0。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/number-leading-zero",children:"number-leading-zero"})]}),`
 `,n.jsx(e.p,{children:"在 CSS 中，大于 -1 小于 1 的小数，小数点前的 0 可以省略："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
@@ -904,7 +904,7 @@ input[type="text"] {
 `,n.jsx(e.p,{children:"我们推荐保留 0，因为当今很多 CSS 压缩工具会在压缩时帮我们去掉 0，不存在多占用一个字符的问题。保留 0 能增强代码的可读性和一致性。"}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.3.6【参考】属性声明的顺序。"}),`
+`,n.jsxs(e.p,{children:["1.3.6 ",n.jsx(e.code,{children:"referenced"})," 属性声明的顺序。"]}),`
 `,n.jsx(e.p,{children:"相关联的属性声明最好写成一组，并按如下顺序排序："}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.strong,{children:"定位"}),"：如 position、left、right、top、bottom、z-index"]}),`
@@ -948,7 +948,7 @@ input[type="text"] {
 `,n.jsxs(e.table,{children:[n.jsx(e.thead,{children:n.jsxs(e.tr,{children:[n.jsx(e.th,{children:"第一组"}),n.jsx(e.th,{children:"第二组"}),n.jsx(e.th,{children:"第三组"}),n.jsx(e.th,{children:"第四组"}),n.jsx(e.th,{children:"第五组"}),n.jsx(e.th,{children:"第六组"}),n.jsx(e.th,{children:"第七组"})]})}),n.jsxs(e.tbody,{children:[n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"content"}),n.jsx(e.td,{children:"box-sizing"}),n.jsx(e.td,{children:"background*"}),n.jsx(e.td,{children:"font*"}),n.jsx(e.td,{children:"opacity"}),n.jsx(e.td,{children:"unicode-bidi"}),n.jsx(e.td,{children:"transition*"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"position"}),n.jsx(e.td,{children:"*width"}),n.jsx(e.td,{children:"color"}),n.jsx(e.td,{children:"src"}),n.jsx(e.td,{children:"visibility"}),n.jsx(e.td,{children:"direction"}),n.jsx(e.td,{children:"transform*"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"top"}),n.jsx(e.td,{children:"*height"}),n.jsx(e.td,{children:"box-decoration-break"}),n.jsx(e.td,{children:"line-height"}),n.jsx(e.td,{children:"filter"}),n.jsx(e.td,{children:"columns"}),n.jsx(e.td,{children:"animation*"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"right"}),n.jsx(e.td,{children:"margin*"}),n.jsx(e.td,{children:"box-shadow"}),n.jsx(e.td,{children:"letter-spacing"}),n.jsx(e.td,{children:"resize"}),n.jsx(e.td,{children:"column-*"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"bottom"}),n.jsx(e.td,{children:"padding*"}),n.jsx(e.td,{children:"outline*"}),n.jsx(e.td,{children:"quotes"}),n.jsx(e.td,{children:"cursor"}),n.jsx(e.td,{children:"break-*"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"left"}),n.jsx(e.td,{children:"border*"}),n.jsx(e.td,{children:"table-layout"}),n.jsx(e.td,{children:"counter-*"}),n.jsx(e.td,{children:"pointer-events"}),n.jsx(e.td,{children:"page-break-*"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"z-index"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"caption-side"}),n.jsx(e.td,{children:"-ms-writing-mode"}),n.jsx(e.td,{children:"user-select"}),n.jsx(e.td,{children:"orphans"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"display"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"empty-cells"}),n.jsx(e.td,{children:"text-*"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"widows"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"vertical-align"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"list-style*"}),n.jsx(e.td,{children:"white-space"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"*zoom"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"flex*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"word-*"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"orientation"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"grid*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"overflow-wrap"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"fill"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"*gap"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"tab-size"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"stroke"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"align-*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"hyphens"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"justify-*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"interpolation-mode"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"order"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"float"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"clear"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"object-fit"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"overflow*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"clip"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]})]})]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.7【参考】适时使用简写属性。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides",children:"declaration-block-no-shorthand-property-overrides"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-no-redundant-longhand-properties",children:"declaration-block-no-redundant-longhand-properties"})]}),`
+`,n.jsxs(e.p,{children:["1.3.7 ",n.jsx(e.code,{children:"referenced"})," 适时使用简写属性。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides",children:"declaration-block-no-shorthand-property-overrides"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-no-redundant-longhand-properties",children:"declaration-block-no-redundant-longhand-properties"})]}),`
 `,n.jsxs(e.p,{children:["常见的",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties",children:"简写属性"}),"包括："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:n.jsx(e.code,{children:"font"})}),`
@@ -975,7 +975,7 @@ input[type="text"] {
 `,n.jsx(e.h3,{children:"1.4 其他"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4.1【推荐】不要使用 CSS 的 @import。"}),`
+`,n.jsxs(e.p,{children:["1.4.1 ",n.jsx(e.code,{children:"recommended"})," 不要使用 CSS 的 @import。"]}),`
 `,n.jsxs(e.p,{children:["与 ",n.jsx(e.code,{children:"<link>"})," 相比，",n.jsx(e.code,{children:"@import"})," 会在关键渲染路径上增加更多的往返（即关键路径的深度变长），这样会导致浏览器处理 CSS 文件速度变慢，因此我们应该避免使用 ",n.jsx(e.code,{children:"@import"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`<!-- bad -->
 <style>
@@ -998,7 +998,7 @@ input[type="text"] {
 `]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1【推荐】四则运算符两侧各保留一个空格："}),`
+`,n.jsxs(e.p,{children:["2.1 ",n.jsx(e.code,{children:"recommended"})," 四则运算符两侧各保留一个空格："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   width: $default-width/2;
@@ -1011,7 +1011,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2【推荐】Mixin 名称和括号 ",n.jsx(e.code,{children:"()"})," 间无空格，在拥有多个参数的表达式中， ",n.jsx(e.code,{children:","})," 之前无空格，",n.jsx(e.code,{children:","})," 之后保留一个空格："]}),`
+`,n.jsxs(e.p,{children:["2.2 ",n.jsx(e.code,{children:"recommended"})," Mixin 名称和括号 ",n.jsx(e.code,{children:"()"})," 间无空格，在拥有多个参数的表达式中， ",n.jsx(e.code,{children:","})," 之前无空格，",n.jsx(e.code,{children:","})," 之后保留一个空格："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   .size(30px,20px);
@@ -1026,7 +1026,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3【推荐】按如下顺序组织 Sass / Less 代码："}),`
+`,n.jsxs(e.p,{children:["2.3 ",n.jsx(e.code,{children:"recommended"})," 按如下顺序组织 Sass / Less 代码："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"@import"})," 语句"]}),`
 `,n.jsx(e.li,{children:"全局变量声明"}),`
@@ -1042,7 +1042,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4【推荐】对于 Sass 和 Less，块内的属性声明按如下顺序排序："}),`
+`,n.jsxs(e.p,{children:["2.4 ",n.jsx(e.code,{children:"recommended"})," 对于 Sass 和 Less，块内的属性声明按如下顺序排序："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"标准属性声明：除了 mixin 调用、extend 子级选择器的声明，其他属性声明的顺序与「属性声明的顺序」章节的规则一致"}),`
 `,n.jsxs(e.li,{children:["mixin 调用：Sass 的 ",n.jsx(e.code,{children:"@include"})," 声明、Less 的 mixin 调用"]}),`
@@ -1060,7 +1060,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5【推荐】嵌套选择器的深度不要超过 3 层，否则可能带来一些副作用："}),`
+`,n.jsxs(e.p,{children:["2.5 ",n.jsx(e.code,{children:"recommended"})," 嵌套选择器的深度不要超过 3 层，否则可能带来一些副作用："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"与 HTML 结构强耦合，难以复用"}),`
 `,n.jsxs(e.li,{children:["过高的",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity",children:"选择器优先级"})]}),`
@@ -1075,7 +1075,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6【推荐】可以使用双斜杠注释。但需要注意的是，编译为 CSS 后，代码中的双斜杠注释会被删除，而 ",n.jsx(e.code,{children:"/* */"})," 会被保留。"]}),`
+`,n.jsxs(e.p,{children:["2.6 ",n.jsx(e.code,{children:"recommended"})," 可以使用双斜杠注释。但需要注意的是，编译为 CSS 后，代码中的双斜杠注释会被删除，而 ",n.jsx(e.code,{children:"/* */"})," 会被保留。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`// 单行注释
 .selector-a {
   padding-left: 15px;
@@ -1104,7 +1104,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.7【推荐】使用 Mixin (@mixin 和 @include 指令) 来让代码遵循 DRY 原则（Don't Repeat Yourself）、增加抽象性和降低复杂度。"}),`
+`,n.jsxs(e.p,{children:["2.7 ",n.jsx(e.code,{children:"recommended"})," 使用 Mixin (@mixin 和 @include 指令) 来让代码遵循 DRY 原则（Don't Repeat Yourself）、增加抽象性和降低复杂度。"]}),`
 `,n.jsx(e.p,{children:"应避免使用 @extend 指令，它不够直观且具有潜在风险，尤其是在嵌套选择器中。即使继承的是顶层选择器，如果选择器的顺序发生变化，也可能引起问题（比如，如果它们存在于其他文件，而加载顺序发生了变化）。"}),`
 `,n.jsx(e.p,{children:"Extend  相比 Mixin 的好处是，如果无参数的 mixin 被多处使用，编译后会输出多段重复的代码。这时如果使用 @extend，可以避免这个问题。但是 gzip 等压缩工具就可以解决重复代码的问题，因此大多数情况下，你只需要使用 mixin 来让代码符合 DRY 原则。"}),`
 `]}),`
@@ -1127,7 +1127,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.p,{children:"上图是一张符合规约要求编码风格的速览图，详细规则如下："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.1【强制】所有声明都应该以分号结尾，不能省略。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-trailing-semicolon",children:"declaration-block-trailing-semicolon"})]}),`
+`,n.jsxs(e.p,{children:["1.1.1 ",n.jsx(e.code,{children:"强制"})," 所有声明都应该以分号结尾，不能省略。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-trailing-semicolon",children:"declaration-block-trailing-semicolon"})]}),`
 `,n.jsx(e.p,{children:"虽然 CSS 语法中最后一条声明的分号是可选的，但是使用分号可以增加代码的一致性和易用性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
@@ -1143,7 +1143,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.2【推荐】使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/indentation",children:"indentation"})]}),`
+`,n.jsxs(e.p,{children:["1.1.2 ",n.jsx(e.code,{children:"推荐"})," 使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/indentation",children:"indentation"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
     padding-left: 15px;
@@ -1156,7 +1156,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.3【推荐】选择器和 ",n.jsx(e.code,{children:"{"})," 之间保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/block-opening-brace-space-before",children:"block-opening-brace-space-before"})]}),`
+`,n.jsxs(e.p,{children:["1.1.3 ",n.jsx(e.code,{children:"推荐"})," 选择器和 ",n.jsx(e.code,{children:"{"})," 之间保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/block-opening-brace-space-before",children:"block-opening-brace-space-before"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector{
   padding-left: 15px;
@@ -1169,7 +1169,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.4【推荐】属性名和 ",n.jsx(e.code,{children:":"})," 之前无空格，",n.jsx(e.code,{children:":"})," 和属性值之间保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-colon-space-after",children:"declaration-colon-space-after"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-colon-space-before",children:"declaration-colon-space-before"})]}),`
+`,n.jsxs(e.p,{children:["1.1.4 ",n.jsx(e.code,{children:"推荐"})," 属性名和 ",n.jsx(e.code,{children:":"})," 之前无空格，",n.jsx(e.code,{children:":"})," 和属性值之间保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-colon-space-after",children:"declaration-colon-space-after"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-colon-space-before",children:"declaration-colon-space-before"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   margin-top : 10px;
@@ -1184,7 +1184,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.5【推荐】",n.jsx(e.code,{children:">"}),"、",n.jsx(e.code,{children:"+"}),"、",n.jsx(e.code,{children:"~"})," 、",n.jsx(e.code,{children:"||"})," 等组合器前后各保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-combinator-space-before",children:"selector-combinator-space-before"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-combinator-space-after",children:"selector-combinator-space-after"})]}),`
+`,n.jsxs(e.p,{children:["1.1.5 ",n.jsx(e.code,{children:"推荐"})," ",n.jsx(e.code,{children:">"}),"、",n.jsx(e.code,{children:"+"}),"、",n.jsx(e.code,{children:"~"})," 、",n.jsx(e.code,{children:"||"})," 等组合器前后各保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-combinator-space-before",children:"selector-combinator-space-before"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-combinator-space-after",children:"selector-combinator-space-after"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector>.children {
   padding-left: 15px;
@@ -1203,7 +1203,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.6【推荐】在使用 ",n.jsx(e.code,{children:","})," 分隔的属性值中，",n.jsx(e.code,{children:","})," 之后保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/value-list-comma-space-after",children:"value-list-comma-space-after"})]}),`
+`,n.jsxs(e.p,{children:["1.1.6 ",n.jsx(e.code,{children:"推荐"})," 在使用 ",n.jsx(e.code,{children:","})," 分隔的属性值中，",n.jsx(e.code,{children:","})," 之后保留一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/value-list-comma-space-after",children:"value-list-comma-space-after"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   background-color: rgba(0,0,0,0.5);
@@ -1218,7 +1218,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.7【推荐】注释内容和注释符之间留有一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/comment-whitespace-inside",children:"comment-whitespace-inside"})]}),`
+`,n.jsxs(e.p,{children:["1.1.7 ",n.jsx(e.code,{children:"推荐"})," 注释内容和注释符之间留有一个空格。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/comment-whitespace-inside",children:"comment-whitespace-inside"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   /*comment*/
@@ -1240,7 +1240,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.8【推荐】声明块的右大括号 ",n.jsx(e.code,{children:"}"})," 应单独成行。"]}),`
+`,n.jsxs(e.p,{children:["1.1.8 ",n.jsx(e.code,{children:"推荐"})," 声明块的右大括号 ",n.jsx(e.code,{children:"}"})," 应单独成行。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   padding-left: 15px;}
@@ -1252,7 +1252,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.9【推荐】属性声明应单独成行。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations",children:"declaration-block-single-line-max-declarations"})]}),`
+`,n.jsxs(e.p,{children:["1.1.9 ",n.jsx(e.code,{children:"推荐"})," 属性声明应单独成行。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations",children:"declaration-block-single-line-max-declarations"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   padding-left: 15px;  margin-left: 10px;
@@ -1266,7 +1266,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.10【推荐】单行代码最多不要超过 100 个字符。 stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/max-line-length",children:"max-line-length"})," 除了以下两种情况："]}),`
+`,n.jsxs(e.p,{children:["1.1.10 ",n.jsx(e.code,{children:"推荐"})," 单行代码最多不要超过 100 个字符。 stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/max-line-length",children:"max-line-length"})," 除了以下两种情况："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["使用 ",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/url",children:n.jsx(e.code,{children:"url()"})})," 函数时"]}),`
 `,n.jsx(e.li,{children:"CSS 属性值本身无法换行时，即属性值内无空格或逗号时"}),`
@@ -1285,7 +1285,7 @@ background-image: -webkit-gradient(
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.11【参考】使用多个选择器时，每个选择器应该单独成行。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-list-comma-newline-after",children:"selector-list-comma-newline-after"})]}),`
+`,n.jsxs(e.p,{children:["1.1.11 ",n.jsx(e.code,{children:"参考"})," 使用多个选择器时，每个选择器应该单独成行。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-list-comma-newline-after",children:"selector-list-comma-newline-after"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector, .selector-secondary, .selector-third {
   padding: 15px;
@@ -1302,7 +1302,7 @@ background-image: -webkit-gradient(
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.1.12【参考】声明块内只有一条语句时，也应该写成多行。"}),`
+`,n.jsxs(e.p,{children:["1.1.12 ",n.jsx(e.code,{children:"参考"})," 声明块内只有一条语句时，也应该写成多行。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector { padding-left: 15px; }
 
@@ -1313,7 +1313,7 @@ background-image: -webkit-gradient(
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.13【参考】注释行上方需留有一行空行，除非上一行是注释或块的顶部。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/comment-empty-line-before",children:"comment-empty-line-before"})]}),`
+`,n.jsxs(e.p,{children:["1.1.13 ",n.jsx(e.code,{children:"参考"})," 注释行上方需留有一行空行，除非上一行是注释或块的顶部。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/comment-empty-line-before",children:"comment-empty-line-before"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
 
@@ -1337,7 +1337,7 @@ background-image: -webkit-gradient(
 `,n.jsx(e.h3,{children:"1.2 选择器"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.1【参考】不要使用 id 选择器。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-max-id",children:"selector-max-id"})]}),`
+`,n.jsxs(e.p,{children:["1.2.1 ",n.jsx(e.code,{children:"参考"})," 不要使用 id 选择器。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-max-id",children:"selector-max-id"})]}),`
 `,n.jsxs(e.p,{children:["id 会带来过高的",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity",children:"选择器优先级"}),"，使得后续很难进行样式覆盖（继而引发使用 ",n.jsx(e.code,{children:"!important"})," 覆盖样式的恶性循环）。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .normal {
@@ -1357,7 +1357,7 @@ background-image: -webkit-gradient(
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.2【参考】属性选择器的值始终用双引号包裹。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-attribute-quotes",children:"selector-attribute-quotes"})]}),`
+`,n.jsxs(e.p,{children:["1.2.2 ",n.jsx(e.code,{children:"参考"})," 属性选择器的值始终用双引号包裹。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/selector-attribute-quotes",children:"selector-attribute-quotes"})]}),`
 `,n.jsxs(e.p,{children:["属性选择器的值的引号只有在",n.jsx(e.a,{href:"https://mathiasbynens.be/notes/unquoted-attribute-values#css",children:"某些情况下"}),"可以省略。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 input[type=text] {
@@ -1371,7 +1371,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.2.3【参考】使用 CSS 选择器时，应注意以下性能问题："}),`
+`,n.jsxs(e.p,{children:["1.2.3 ",n.jsx(e.code,{children:"参考"})," 使用 CSS 选择器时，应注意以下性能问题："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
 `,n.jsx(e.p,{children:"使用 class 而不是原生元素标签"}),`
@@ -1402,7 +1402,7 @@ input[type="text"] {
 `,n.jsx(e.h3,{children:"1.3 属性和属性值"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.1【推荐】使用尽可能短的十六进制值。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/color-hex-length",children:"color-hex-length"})]}),`
+`,n.jsxs(e.p,{children:["1.3.1 ",n.jsx(e.code,{children:"推荐"})," 使用尽可能短的十六进制值。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/color-hex-length",children:"color-hex-length"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   color: #ffffff;
@@ -1415,10 +1415,10 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.3.2【推荐】不要使用 !important 重写样式。"}),`
+`,n.jsxs(e.p,{children:["1.3.2 ",n.jsx(e.code,{children:"推荐"})," 不要使用 !important 重写样式。"]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.3【推荐】十六进制值统一使用小写字母（小写字母更容易分辨）。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/color-hex-case",children:"color-hex-case"})]}),`
+`,n.jsxs(e.p,{children:["1.3.3 ",n.jsx(e.code,{children:"推荐"})," 十六进制值统一使用小写字母（小写字母更容易分辨）。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/color-hex-case",children:"color-hex-case"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   color: #FEFEFE;
@@ -1431,7 +1431,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.4【推荐】长度值为 0 时，省略掉长度单位。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/length-zero-no-unit",children:"length-zero-no-unit"})]}),`
+`,n.jsxs(e.p,{children:["1.3.4 ",n.jsx(e.code,{children:"推荐"})," 长度值为 0 时，省略掉长度单位。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/length-zero-no-unit",children:"length-zero-no-unit"})]}),`
 `,n.jsx(e.p,{children:"在 CSS 中，长度值为 0 时，它的单位是可选的（长度单位包括：em, ex, ch, vw, vh, cm, mm, in, pt, pc, px, rem, vmin, and vmax）。省略长度单位可以使代码更简洁："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
@@ -1447,7 +1447,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.5【参考】保留小数点前的 0。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/number-leading-zero",children:"number-leading-zero"})]}),`
+`,n.jsxs(e.p,{children:["1.3.5 ",n.jsx(e.code,{children:"参考"})," 保留小数点前的 0。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/number-leading-zero",children:"number-leading-zero"})]}),`
 `,n.jsx(e.p,{children:"在 CSS 中，大于 -1 小于 1 的小数，小数点前的 0 可以省略："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
@@ -1470,7 +1470,7 @@ input[type="text"] {
 `,n.jsx(e.p,{children:"我们推荐保留 0，因为当今很多 CSS 压缩工具会在压缩时帮我们去掉 0，不存在多占用一个字符的问题。保留 0 能增强代码的可读性和一致性。"}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.3.6【参考】属性声明的顺序。"}),`
+`,n.jsxs(e.p,{children:["1.3.6 ",n.jsx(e.code,{children:"参考"})," 属性声明的顺序。"]}),`
 `,n.jsx(e.p,{children:"相关联的属性声明最好写成一组，并按如下顺序排序："}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.strong,{children:"定位"}),"：如 position、left、right、top、bottom、z-index"]}),`
@@ -1514,7 +1514,7 @@ input[type="text"] {
 `,n.jsxs(e.table,{children:[n.jsx(e.thead,{children:n.jsxs(e.tr,{children:[n.jsx(e.th,{children:"第一组"}),n.jsx(e.th,{children:"第二组"}),n.jsx(e.th,{children:"第三组"}),n.jsx(e.th,{children:"第四组"}),n.jsx(e.th,{children:"第五组"}),n.jsx(e.th,{children:"第六组"}),n.jsx(e.th,{children:"第七组"})]})}),n.jsxs(e.tbody,{children:[n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"content"}),n.jsx(e.td,{children:"box-sizing"}),n.jsx(e.td,{children:"background*"}),n.jsx(e.td,{children:"font*"}),n.jsx(e.td,{children:"opacity"}),n.jsx(e.td,{children:"unicode-bidi"}),n.jsx(e.td,{children:"transition*"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"position"}),n.jsx(e.td,{children:"*width"}),n.jsx(e.td,{children:"color"}),n.jsx(e.td,{children:"src"}),n.jsx(e.td,{children:"visibility"}),n.jsx(e.td,{children:"direction"}),n.jsx(e.td,{children:"transform*"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"top"}),n.jsx(e.td,{children:"*height"}),n.jsx(e.td,{children:"box-decoration-break"}),n.jsx(e.td,{children:"line-height"}),n.jsx(e.td,{children:"filter"}),n.jsx(e.td,{children:"columns"}),n.jsx(e.td,{children:"animation*"})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"right"}),n.jsx(e.td,{children:"margin*"}),n.jsx(e.td,{children:"box-shadow"}),n.jsx(e.td,{children:"letter-spacing"}),n.jsx(e.td,{children:"resize"}),n.jsx(e.td,{children:"column-*"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"bottom"}),n.jsx(e.td,{children:"padding*"}),n.jsx(e.td,{children:"outline*"}),n.jsx(e.td,{children:"quotes"}),n.jsx(e.td,{children:"cursor"}),n.jsx(e.td,{children:"break-*"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"left"}),n.jsx(e.td,{children:"border*"}),n.jsx(e.td,{children:"table-layout"}),n.jsx(e.td,{children:"counter-*"}),n.jsx(e.td,{children:"pointer-events"}),n.jsx(e.td,{children:"page-break-*"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"z-index"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"caption-side"}),n.jsx(e.td,{children:"-ms-writing-mode"}),n.jsx(e.td,{children:"user-select"}),n.jsx(e.td,{children:"orphans"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"display"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"empty-cells"}),n.jsx(e.td,{children:"text-*"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"widows"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"vertical-align"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"list-style*"}),n.jsx(e.td,{children:"white-space"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"*zoom"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"flex*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"word-*"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"orientation"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"grid*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"overflow-wrap"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"fill"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"*gap"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"tab-size"}),n.jsx(e.td,{}),n.jsx(e.td,{children:"stroke"}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"align-*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"hyphens"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"justify-*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{children:"interpolation-mode"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"order"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"float"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"clear"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"object-fit"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"overflow*"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]}),n.jsxs(e.tr,{children:[n.jsx(e.td,{children:"clip"}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{}),n.jsx(e.td,{})]})]})]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.7【参考】适时使用简写属性。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides",children:"declaration-block-no-shorthand-property-overrides"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-no-redundant-longhand-properties",children:"declaration-block-no-redundant-longhand-properties"})]}),`
+`,n.jsxs(e.p,{children:["1.3.7 ",n.jsx(e.code,{children:"参考"})," 适时使用简写属性。stylelint: ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides",children:"declaration-block-no-shorthand-property-overrides"})," ",n.jsx(e.a,{href:"https://stylelint.io/user-guide/rules/declaration-block-no-redundant-longhand-properties",children:"declaration-block-no-redundant-longhand-properties"})]}),`
 `,n.jsxs(e.p,{children:["常见的",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties",children:"简写属性"}),"包括："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:n.jsx(e.code,{children:"font"})}),`
@@ -1541,7 +1541,7 @@ input[type="text"] {
 `,n.jsx(e.h3,{children:"1.4 其他"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4.1【推荐】不要使用 CSS 的 @import。"}),`
+`,n.jsxs(e.p,{children:["1.4.1 ",n.jsx(e.code,{children:"推荐"})," 不要使用 CSS 的 @import。"]}),`
 `,n.jsxs(e.p,{children:["与 ",n.jsx(e.code,{children:"<link>"})," 相比，",n.jsx(e.code,{children:"@import"})," 会在关键渲染路径上增加更多的往返（即关键路径的深度变长），这样会导致浏览器处理 CSS 文件速度变慢，因此我们应该避免使用 ",n.jsx(e.code,{children:"@import"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`<!-- bad -->
 <style>
@@ -1564,7 +1564,7 @@ input[type="text"] {
 `]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1【推荐】四则运算符两侧各保留一个空格："}),`
+`,n.jsxs(e.p,{children:["2.1 ",n.jsx(e.code,{children:"推荐"})," 四则运算符两侧各保留一个空格："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   width: $default-width/2;
@@ -1577,7 +1577,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2【推荐】Mixin 名称和括号 ",n.jsx(e.code,{children:"()"})," 间无空格，在拥有多个参数的表达式中， ",n.jsx(e.code,{children:","})," 之前无空格，",n.jsx(e.code,{children:","})," 之后保留一个空格："]}),`
+`,n.jsxs(e.p,{children:["2.2 ",n.jsx(e.code,{children:"推荐"})," Mixin 名称和括号 ",n.jsx(e.code,{children:"()"})," 间无空格，在拥有多个参数的表达式中， ",n.jsx(e.code,{children:","})," 之前无空格，",n.jsx(e.code,{children:","})," 之后保留一个空格："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`/* bad */
 .selector {
   .size(30px,20px);
@@ -1592,7 +1592,7 @@ input[type="text"] {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3【推荐】按如下顺序组织 Sass / Less 代码："}),`
+`,n.jsxs(e.p,{children:["2.3 ",n.jsx(e.code,{children:"推荐"})," 按如下顺序组织 Sass / Less 代码："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"@import"})," 语句"]}),`
 `,n.jsx(e.li,{children:"全局变量声明"}),`
@@ -1608,7 +1608,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4【推荐】对于 Sass 和 Less，块内的属性声明按如下顺序排序："}),`
+`,n.jsxs(e.p,{children:["2.4 ",n.jsx(e.code,{children:"推荐"})," 对于 Sass 和 Less，块内的属性声明按如下顺序排序："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"标准属性声明：除了 mixin 调用、extend 子级选择器的声明，其他属性声明的顺序与「属性声明的顺序」章节的规则一致"}),`
 `,n.jsxs(e.li,{children:["mixin 调用：Sass 的 ",n.jsx(e.code,{children:"@include"})," 声明、Less 的 mixin 调用"]}),`
@@ -1626,7 +1626,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5【推荐】嵌套选择器的深度不要超过 3 层，否则可能带来一些副作用："}),`
+`,n.jsxs(e.p,{children:["2.5 ",n.jsx(e.code,{children:"推荐"})," 嵌套选择器的深度不要超过 3 层，否则可能带来一些副作用："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"与 HTML 结构强耦合，难以复用"}),`
 `,n.jsxs(e.li,{children:["过高的",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity",children:"选择器优先级"})]}),`
@@ -1641,7 +1641,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6【推荐】可以使用双斜杠注释。但需要注意的是，编译为 CSS 后，代码中的双斜杠注释会被删除，而 ",n.jsx(e.code,{children:"/* */"})," 会被保留。"]}),`
+`,n.jsxs(e.p,{children:["2.6 ",n.jsx(e.code,{children:"推荐"})," 可以使用双斜杠注释。但需要注意的是，编译为 CSS 后，代码中的双斜杠注释会被删除，而 ",n.jsx(e.code,{children:"/* */"})," 会被保留。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-css",children:`// 单行注释
 .selector-a {
   padding-left: 15px;
@@ -1670,7 +1670,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.7【推荐】使用 Mixin (@mixin 和 @include 指令) 来让代码遵循 DRY 原则（Don't Repeat Yourself）、增加抽象性和降低复杂度。"}),`
+`,n.jsxs(e.p,{children:["2.7 ",n.jsx(e.code,{children:"推荐"})," 使用 Mixin (@mixin 和 @include 指令) 来让代码遵循 DRY 原则（Don't Repeat Yourself）、增加抽象性和降低复杂度。"]}),`
 `,n.jsx(e.p,{children:"应避免使用 @extend 指令，它不够直观且具有潜在风险，尤其是在嵌套选择器中。即使继承的是顶层选择器，如果选择器的顺序发生变化，也可能引起问题（比如，如果它们存在于其他文件，而加载顺序发生了变化）。"}),`
 `,n.jsx(e.p,{children:"Extend  相比 Mixin 的好处是，如果无参数的 mixin 被多处使用，编译后会输出多段重复的代码。这时如果使用 @extend，可以避免这个问题。但是 gzip 等压缩工具就可以解决重复代码的问题，因此大多数情况下，你只需要使用 mixin 来让代码符合 DRY 原则。"}),`
 `]}),`
@@ -1693,7 +1693,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.1 文档类型"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.1.1【强制】使用 HTML5 DOCTYPE。"}),`
+`,n.jsxs(e.p,{children:["1.1.1 ",n.jsx(e.code,{children:"mandatory"})," 使用 HTML5 DOCTYPE。"]}),`
 `,n.jsxs(e.p,{children:["在 HTML 文档的开头使用 ",n.jsx(e.code,{children:"<!DOCTYPE html>"})," 来声明文档的 HTML 版本。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad - 非 HTML 5 DOCTYPE -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -1710,7 +1710,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.2 语言"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.1【推荐】指定 ",n.jsx(e.code,{children:"html"})," 标签上的 ",n.jsx(e.code,{children:"lang"})," 属性。"]}),`
+`,n.jsxs(e.p,{children:["1.2.1 ",n.jsx(e.code,{children:"recommended"})," 指定 ",n.jsx(e.code,{children:"html"})," 标签上的 ",n.jsx(e.code,{children:"lang"})," 属性。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.a,{href:"http://w3c.github.io/html/semantics.html#the-html-element",children:"HTML5 规范"}),"中提到："]}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsxs(e.p,{children:["推荐开发者在 ",n.jsx(e.code,{children:"html"})," 元素上指定 ",n.jsx(e.code,{children:"lang"})," 属性，以指出文档的语言。这有助于读屏、翻译等工具的工作。"]}),`
@@ -1725,7 +1725,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.3 元数据"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.3.1【推荐】使用 UTF-8 字符编码。"}),`
+`,n.jsxs(e.p,{children:["1.3.1 ",n.jsx(e.code,{children:"recommended"})," 使用 UTF-8 字符编码。"]}),`
 `,n.jsx(e.p,{children:"声明一个明确的字符编码，可以让浏览器更快速高效地确定适合网页内容的渲染方式。"}),`
 `,n.jsx(e.p,{children:"由于历史原因，不同浏览器采用了不同的字符编码。但对于新业务，如无特殊要求，统一使用 UTF-8 字符编码，以便统一。"}),`
 `,n.jsxs(e.p,{children:["在 HTML 中使用 ",n.jsx(e.code,{children:'<meta charset="utf-8" />'})," 声明文档的编码方式："]}),`
@@ -1735,7 +1735,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.2【推荐】页面提供给移动设备使用时，需要设置 ",n.jsx(e.a,{href:"https://drafts.csswg.org/css-device-adapt/#viewport-meta",children:"viewport"}),"。"]}),`
+`,n.jsxs(e.p,{children:["1.3.2 ",n.jsx(e.code,{children:"recommended"})," 页面提供给移动设备使用时，需要设置 ",n.jsx(e.a,{href:"https://drafts.csswg.org/css-device-adapt/#viewport-meta",children:"viewport"}),"。"]}),`
 `,n.jsxs(e.p,{children:["设置 viewport-fit 设置为“cover”来兼容 iPhone X 的刘海屏，",n.jsx(e.a,{href:"https://webkit.org/blog/7929/designing-websites-for-iphone-x/",children:"了解更多"})," 。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
 `})}),`
@@ -1744,7 +1744,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.4 资源加载"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:[`1.4.1【推荐】引入 CSS 和 JavaScript 时无需指定 type。
+`,n.jsxs(e.p,{children:["1.4.1 ",n.jsx(e.code,{children:"recommended"}),` 引入 CSS 和 JavaScript 时无需指定 type。
 根据 HTML5 规范，引入 CSS 和 JavaScript 时通常不需要指明 type，因为 `,n.jsx(e.a,{href:"https://html.spec.whatwg.org/multipage/obsolete.html#attr-style-type",children:"text/css"})," 和 ",n.jsx(e.a,{href:"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type",children:"text/javascript"})," 分别是他们的默认值。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <link type="text/css" rel="stylesheet" href="example.css" />
@@ -1762,7 +1762,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4.2【推荐】在 head 标签内引入 CSS，在 body 结束标签前引入 JS。"}),`
+`,n.jsxs(e.p,{children:["1.4.2 ",n.jsx(e.code,{children:"recommended"})," 在 head 标签内引入 CSS，在 body 结束标签前引入 JS。"]}),`
 `,n.jsxs(e.p,{children:["在 ",n.jsx(e.code,{children:"<body></body>"})," 中指定外部样式表和嵌入式样式块可能会导致页面的重排和重绘，对页面的渲染造成影响。因此，一般情况下，CSS 应在 ",n.jsx(e.code,{children:"<head></head>"})," 标签里引入，",n.jsx(e.a,{href:"https://developer.yahoo.com/performance/rules.html#css_top",children:"了解更多"}),"。"]}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsxs(e.p,{children:["在 HTTP2（Chrome 浏览器 69 版本之后，Firefox 和 Edge）中可以在 body 中使用 link 标签引入样式文件，但不推荐在 body 中使用 ",n.jsx(e.code,{children:"<style>"})," 标签的内联样式。",n.jsxs(e.strong,{children:[n.jsx(e.code,{children:'<link rel="stylesheet">'})," 将会阻止后续内容的渲染，而不是整个页面"]}),"。"]}),`
@@ -1802,18 +1802,18 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4.3【推荐】外部资源的引用地址跟随页面协议，省略协议部分。"}),`
+`,n.jsxs(e.p,{children:["1.4.3 ",n.jsx(e.code,{children:"recommended"})," 外部资源的引用地址跟随页面协议，省略协议部分。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<link rel="stylesheet" href="//g.alicdn.com/lib/style/index-min.css" />
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.4【推荐】使用 preload 预加载关键资源，",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Web/HTML/Preloading_content",children:"了解更多"}),"。"]}),`
+`,n.jsxs(e.p,{children:["1.4.4 ",n.jsx(e.code,{children:"recommended"})," 使用 preload 预加载关键资源，",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Web/HTML/Preloading_content",children:"了解更多"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<link rel="preload" href="style.css" as="style" />
 <link rel="preload" href="main.js" as="script" />
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.5【推荐】使用 dns-prefetch 和 preconnect 处理 DNS 解析延迟问题，提高网页加载性能，",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Web/Performance/dns-prefetch",children:"了解更多"}),"。"]}),`
+`,n.jsxs(e.p,{children:["1.4.5 ",n.jsx(e.code,{children:"recommended"})," 使用 dns-prefetch 和 preconnect 处理 DNS 解析延迟问题，提高网页加载性能，",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Web/Performance/dns-prefetch",children:"了解更多"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin />
 <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
 `})}),`
@@ -1822,7 +1822,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.5 页面标题"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.5.1【强制】页面需要指定 title 标签，有且仅有 1 个。"}),`
+`,n.jsxs(e.p,{children:["1.5.1 ",n.jsx(e.code,{children:"mandatory"})," 页面需要指定 title 标签，有且仅有 1 个。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<head>
   <meta charset="utf-8" />
   <title>淘宝网 - 淘！我喜欢</title>
@@ -1834,7 +1834,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.1 缩进"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1.1【推荐】统一使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。"}),`
+`,n.jsxs(e.p,{children:["2.1.1 ",n.jsx(e.code,{children:"recommended"})," 统一使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!DOCTYPE html>
 <html>
   <head>
@@ -1851,7 +1851,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.2 注释"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.1【强制】在 HTML 注释代码中，不允许出现任何敏感信息。"}),`
+`,n.jsxs(e.p,{children:["2.2.1 ",n.jsx(e.code,{children:"mandatory"})," 在 HTML 注释代码中，不允许出现任何敏感信息。"]}),`
 `,n.jsx(e.p,{children:"常见的敏感信息包括："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"业务相关敏感信息，例如业务规则"}),`
@@ -1863,12 +1863,12 @@ $color-red: #f0f0f0;
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.2【推荐】单行注释，需在注释内容和注释符之间需留有一个空格，以增强可读性。"}),`
+`,n.jsxs(e.p,{children:["2.2.2 ",n.jsx(e.code,{children:"recommended"})," 单行注释，需在注释内容和注释符之间需留有一个空格，以增强可读性。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- 单行注释 -->
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.3【推荐】多行注释，注释符单独占一行，注释内容 2 个空格缩进。"}),`
+`,n.jsxs(e.p,{children:["2.2.3 ",n.jsx(e.code,{children:"recommended"})," 多行注释，注释符单独占一行，注释内容 2 个空格缩进。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!--
   多行注释
   多行注释
@@ -1879,7 +1879,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.3 标签"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3.1【强制】标签名统一使用小写。"}),`
+`,n.jsxs(e.p,{children:["2.3.1 ",n.jsx(e.code,{children:"mandatory"})," 标签名统一使用小写。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <H1>Hello, world!</H1>
 
@@ -1888,7 +1888,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3.2【推荐】不要省略自闭合标签结尾处的斜线，且斜线前需留有一个空格。"}),`
+`,n.jsxs(e.p,{children:["2.3.2 ",n.jsx(e.code,{children:"recommended"})," 不要省略自闭合标签结尾处的斜线，且斜线前需留有一个空格。"]}),`
 `,n.jsxs(e.p,{children:["虽然 ",n.jsx(e.a,{href:"https://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag",children:"HTML5 规范"})," 中指出结尾的斜线是可选的，但保留它们可以明确表达该标签已闭合的语义，更易于维护和理解。"]}),`
 `,n.jsxs(e.p,{children:["同时，在 React 被广泛使用的今天，这与 ",n.jsx(e.a,{href:"https://react-cn.github.io/react/tips/self-closing-tag.html",children:"JSX 的规范"})," 相一致，JSX 中自闭合标签必须保留结尾的斜线。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
@@ -1904,7 +1904,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.4 属性"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.1【强制】属性值使用双引号，不要使用单引号。"}),`
+`,n.jsxs(e.p,{children:["2.4.1 ",n.jsx(e.code,{children:"mandatory"})," 属性值使用双引号，不要使用单引号。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <link rel='stylesheet' href='example.css'>
 
@@ -1913,7 +1913,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.2【推荐】不要为 Boolean 属性添加取值。"}),`
+`,n.jsxs(e.p,{children:["2.4.2 ",n.jsx(e.code,{children:"recommended"})," 不要为 Boolean 属性添加取值。"]}),`
 `,n.jsxs(e.p,{children:["XHTML 需要每个属性声明取值，但是 HTML5 并不需要。一个元素中 Boolean 属性存在即表示取值 ",n.jsx(e.code,{children:"true"}),"，不存在则表示取值 ",n.jsx(e.code,{children:"false"}),"，",n.jsx(e.a,{href:"http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes",children:"了解更多"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <input type="text" disabled="disabled" />
@@ -1931,7 +1931,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.3【推荐】自定义属性的命名：以 data- 为前缀。"}),`
+`,n.jsxs(e.p,{children:["2.4.3 ",n.jsx(e.code,{children:"recommended"})," 自定义属性的命名：以 data- 为前缀。"]}),`
 `,n.jsxs(e.p,{children:["建议自定义属性的命名都以 ",n.jsx(e.code,{children:"data-"})," 为前缀，以便区分。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <a modal="toggle" href="#">
@@ -1948,7 +1948,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.5 语义化"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.1【参考】尽量根据语义使用 HTML 标签。"}),`
+`,n.jsxs(e.p,{children:["2.5.1 ",n.jsx(e.code,{children:"referenced"})," 尽量根据语义使用 HTML 标签。"]}),`
 `,n.jsxs(e.p,{children:["HTML 标签（更严谨的叫法是 HTML 元素）都有其语义，例如 ",n.jsx(e.code,{children:"p"})," 标签即“paragraphs”用于章节，",n.jsx(e.code,{children:"a"})," 标签即“anchors”用于锚点链接，",n.jsx(e.a,{href:"https://www.w3.org/TR/2018/WD-html53-20181018/fullindex.html#index-elements",children:"了解更多"}),"。"]}),`
 `,n.jsxs(e.p,{children:["我们应优先选取符合当下所需语义的标签，这既有助于",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/learn/Accessibility",children:"可访问性（Accessibility）"}),"，也可以在 CSS 加载失败时获得较好的展示效果。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
@@ -1970,7 +1970,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.6 可访问性"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.6.1【参考】注意 HTML 的可访问性（Accessibility）。"}),`
+`,n.jsxs(e.p,{children:["2.6.1 ",n.jsx(e.code,{children:"referenced"})," 注意 HTML 的可访问性（Accessibility）。"]}),`
 `,n.jsx(e.p,{children:"网页可访问性使网页内容落实“无障碍”，让不同程度或需求的用户可以顺畅的获取网站上的信息。传统上我们认为这只与残疾人士有关，但提升网站的可访问性也可以让其他用户群体受益，比如使用移动设备的人群或低速网络的人群。"}),`
 `,n.jsx(e.p,{children:"例如，为 img 标签设置 alt 属性："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad - 缺少 alt 属性，无法被无障碍阅读器识别 -->
@@ -2018,7 +2018,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.1 文档类型"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.1.1【强制】使用 HTML5 DOCTYPE。"}),`
+`,n.jsxs(e.p,{children:["1.1.1 ",n.jsx(e.code,{children:"强制"})," 使用 HTML5 DOCTYPE。"]}),`
 `,n.jsxs(e.p,{children:["在 HTML 文档的开头使用 ",n.jsx(e.code,{children:"<!DOCTYPE html>"})," 来声明文档的 HTML 版本。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad - 非 HTML 5 DOCTYPE -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -2035,7 +2035,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.2 语言"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.1【推荐】指定 ",n.jsx(e.code,{children:"html"})," 标签上的 ",n.jsx(e.code,{children:"lang"})," 属性。"]}),`
+`,n.jsxs(e.p,{children:["1.2.1 ",n.jsx(e.code,{children:"推荐"})," 指定 ",n.jsx(e.code,{children:"html"})," 标签上的 ",n.jsx(e.code,{children:"lang"})," 属性。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.a,{href:"http://w3c.github.io/html/semantics.html#the-html-element",children:"HTML5 规范"}),"中提到："]}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsxs(e.p,{children:["推荐开发者在 ",n.jsx(e.code,{children:"html"})," 元素上指定 ",n.jsx(e.code,{children:"lang"})," 属性，以指出文档的语言。这有助于读屏、翻译等工具的工作。"]}),`
@@ -2050,7 +2050,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.3 元数据"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.3.1【推荐】使用 UTF-8 字符编码。"}),`
+`,n.jsxs(e.p,{children:["1.3.1 ",n.jsx(e.code,{children:"推荐"})," 使用 UTF-8 字符编码。"]}),`
 `,n.jsx(e.p,{children:"声明一个明确的字符编码，可以让浏览器更快速高效地确定适合网页内容的渲染方式。"}),`
 `,n.jsx(e.p,{children:"由于历史原因，不同浏览器采用了不同的字符编码。但对于新业务，如无特殊要求，统一使用 UTF-8 字符编码，以便统一。"}),`
 `,n.jsxs(e.p,{children:["在 HTML 中使用 ",n.jsx(e.code,{children:'<meta charset="utf-8" />'})," 声明文档的编码方式："]}),`
@@ -2060,7 +2060,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.2【推荐】页面提供给移动设备使用时，需要设置 ",n.jsx(e.a,{href:"https://drafts.csswg.org/css-device-adapt/#viewport-meta",children:"viewport"}),"。"]}),`
+`,n.jsxs(e.p,{children:["1.3.2 ",n.jsx(e.code,{children:"推荐"})," 页面提供给移动设备使用时，需要设置 ",n.jsx(e.a,{href:"https://drafts.csswg.org/css-device-adapt/#viewport-meta",children:"viewport"}),"。"]}),`
 `,n.jsxs(e.p,{children:["设置 viewport-fit 设置为“cover”来兼容 iPhone X 的刘海屏，",n.jsx(e.a,{href:"https://webkit.org/blog/7929/designing-websites-for-iphone-x/",children:"了解更多"})," 。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
 `})}),`
@@ -2069,7 +2069,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.4 资源加载"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:[`1.4.1【推荐】引入 CSS 和 JavaScript 时无需指定 type。
+`,n.jsxs(e.p,{children:["1.4.1 ",n.jsx(e.code,{children:"推荐"}),` 引入 CSS 和 JavaScript 时无需指定 type。
 根据 HTML5 规范，引入 CSS 和 JavaScript 时通常不需要指明 type，因为 `,n.jsx(e.a,{href:"https://html.spec.whatwg.org/multipage/obsolete.html#attr-style-type",children:"text/css"})," 和 ",n.jsx(e.a,{href:"https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type",children:"text/javascript"})," 分别是他们的默认值。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <link type="text/css" rel="stylesheet" href="example.css" />
@@ -2087,7 +2087,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4.2【推荐】在 head 标签内引入 CSS，在 body 结束标签前引入 JS。"}),`
+`,n.jsxs(e.p,{children:["1.4.2 ",n.jsx(e.code,{children:"推荐"})," 在 head 标签内引入 CSS，在 body 结束标签前引入 JS。"]}),`
 `,n.jsxs(e.p,{children:["在 ",n.jsx(e.code,{children:"<body></body>"})," 中指定外部样式表和嵌入式样式块可能会导致页面的重排和重绘，对页面的渲染造成影响。因此，一般情况下，CSS 应在 ",n.jsx(e.code,{children:"<head></head>"})," 标签里引入，",n.jsx(e.a,{href:"https://developer.yahoo.com/performance/rules.html#css_top",children:"了解更多"}),"。"]}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsxs(e.p,{children:["在 HTTP2（Chrome 浏览器 69 版本之后，Firefox 和 Edge）中可以在 body 中使用 link 标签引入样式文件，但不推荐在 body 中使用 ",n.jsx(e.code,{children:"<style>"})," 标签的内联样式。",n.jsxs(e.strong,{children:[n.jsx(e.code,{children:'<link rel="stylesheet">'})," 将会阻止后续内容的渲染，而不是整个页面"]}),"。"]}),`
@@ -2127,18 +2127,18 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4.3【推荐】外部资源的引用地址跟随页面协议，省略协议部分。"}),`
+`,n.jsxs(e.p,{children:["1.4.3 ",n.jsx(e.code,{children:"推荐"})," 外部资源的引用地址跟随页面协议，省略协议部分。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<link rel="stylesheet" href="//g.alicdn.com/lib/style/index-min.css" />
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.4【推荐】使用 preload 预加载关键资源，",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Web/HTML/Preloading_content",children:"了解更多"}),"。"]}),`
+`,n.jsxs(e.p,{children:["1.4.4 ",n.jsx(e.code,{children:"推荐"})," 使用 preload 预加载关键资源，",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Web/HTML/Preloading_content",children:"了解更多"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<link rel="preload" href="style.css" as="style" />
 <link rel="preload" href="main.js" as="script" />
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.5【推荐】使用 dns-prefetch 和 preconnect 处理 DNS 解析延迟问题，提高网页加载性能，",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Web/Performance/dns-prefetch",children:"了解更多"}),"。"]}),`
+`,n.jsxs(e.p,{children:["1.4.5 ",n.jsx(e.code,{children:"推荐"})," 使用 dns-prefetch 和 preconnect 处理 DNS 解析延迟问题，提高网页加载性能，",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Web/Performance/dns-prefetch",children:"了解更多"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin />
 <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
 `})}),`
@@ -2147,7 +2147,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.5 页面标题"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.5.1【强制】页面需要指定 title 标签，有且仅有 1 个。"}),`
+`,n.jsxs(e.p,{children:["1.5.1 ",n.jsx(e.code,{children:"强制"})," 页面需要指定 title 标签，有且仅有 1 个。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<head>
   <meta charset="utf-8" />
   <title>淘宝网 - 淘！我喜欢</title>
@@ -2159,7 +2159,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.1 缩进"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1.1【推荐】统一使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。"}),`
+`,n.jsxs(e.p,{children:["2.1.1 ",n.jsx(e.code,{children:"推荐"})," 统一使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!DOCTYPE html>
 <html>
   <head>
@@ -2176,7 +2176,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.2 注释"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.1【强制】在 HTML 注释代码中，不允许出现任何敏感信息。"}),`
+`,n.jsxs(e.p,{children:["2.2.1 ",n.jsx(e.code,{children:"强制"})," 在 HTML 注释代码中，不允许出现任何敏感信息。"]}),`
 `,n.jsx(e.p,{children:"常见的敏感信息包括："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"业务相关敏感信息，例如业务规则"}),`
@@ -2188,12 +2188,12 @@ $color-red: #f0f0f0;
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.2【推荐】单行注释，需在注释内容和注释符之间需留有一个空格，以增强可读性。"}),`
+`,n.jsxs(e.p,{children:["2.2.2 ",n.jsx(e.code,{children:"推荐"})," 单行注释，需在注释内容和注释符之间需留有一个空格，以增强可读性。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- 单行注释 -->
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.3【推荐】多行注释，注释符单独占一行，注释内容 2 个空格缩进。"}),`
+`,n.jsxs(e.p,{children:["2.2.3 ",n.jsx(e.code,{children:"推荐"})," 多行注释，注释符单独占一行，注释内容 2 个空格缩进。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!--
   多行注释
   多行注释
@@ -2204,7 +2204,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.3 标签"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3.1【强制】标签名统一使用小写。"}),`
+`,n.jsxs(e.p,{children:["2.3.1 ",n.jsx(e.code,{children:"强制"})," 标签名统一使用小写。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <H1>Hello, world!</H1>
 
@@ -2213,7 +2213,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3.2【推荐】不要省略自闭合标签结尾处的斜线，且斜线前需留有一个空格。"}),`
+`,n.jsxs(e.p,{children:["2.3.2 ",n.jsx(e.code,{children:"推荐"})," 不要省略自闭合标签结尾处的斜线，且斜线前需留有一个空格。"]}),`
 `,n.jsxs(e.p,{children:["虽然 ",n.jsx(e.a,{href:"https://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag",children:"HTML5 规范"})," 中指出结尾的斜线是可选的，但保留它们可以明确表达该标签已闭合的语义，更易于维护和理解。"]}),`
 `,n.jsxs(e.p,{children:["同时，在 React 被广泛使用的今天，这与 ",n.jsx(e.a,{href:"https://react-cn.github.io/react/tips/self-closing-tag.html",children:"JSX 的规范"})," 相一致，JSX 中自闭合标签必须保留结尾的斜线。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
@@ -2229,7 +2229,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.4 属性"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.1【强制】属性值使用双引号，不要使用单引号。"}),`
+`,n.jsxs(e.p,{children:["2.4.1 ",n.jsx(e.code,{children:"强制"})," 属性值使用双引号，不要使用单引号。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <link rel='stylesheet' href='example.css'>
 
@@ -2238,7 +2238,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.2【推荐】不要为 Boolean 属性添加取值。"}),`
+`,n.jsxs(e.p,{children:["2.4.2 ",n.jsx(e.code,{children:"推荐"})," 不要为 Boolean 属性添加取值。"]}),`
 `,n.jsxs(e.p,{children:["XHTML 需要每个属性声明取值，但是 HTML5 并不需要。一个元素中 Boolean 属性存在即表示取值 ",n.jsx(e.code,{children:"true"}),"，不存在则表示取值 ",n.jsx(e.code,{children:"false"}),"，",n.jsx(e.a,{href:"http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes",children:"了解更多"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <input type="text" disabled="disabled" />
@@ -2256,7 +2256,7 @@ $color-red: #f0f0f0;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.3【推荐】自定义属性的命名：以 data- 为前缀。"}),`
+`,n.jsxs(e.p,{children:["2.4.3 ",n.jsx(e.code,{children:"推荐"})," 自定义属性的命名：以 data- 为前缀。"]}),`
 `,n.jsxs(e.p,{children:["建议自定义属性的命名都以 ",n.jsx(e.code,{children:"data-"})," 为前缀，以便区分。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
 <a modal="toggle" href="#">
@@ -2273,7 +2273,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.5 语义化"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.1【参考】尽量根据语义使用 HTML 标签。"}),`
+`,n.jsxs(e.p,{children:["2.5.1 ",n.jsx(e.code,{children:"参考"})," 尽量根据语义使用 HTML 标签。"]}),`
 `,n.jsxs(e.p,{children:["HTML 标签（更严谨的叫法是 HTML 元素）都有其语义，例如 ",n.jsx(e.code,{children:"p"})," 标签即“paragraphs”用于章节，",n.jsx(e.code,{children:"a"})," 标签即“anchors”用于锚点链接，",n.jsx(e.a,{href:"https://www.w3.org/TR/2018/WD-html53-20181018/fullindex.html#index-elements",children:"了解更多"}),"。"]}),`
 `,n.jsxs(e.p,{children:["我们应优先选取符合当下所需语义的标签，这既有助于",n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/learn/Accessibility",children:"可访问性（Accessibility）"}),"，也可以在 CSS 加载失败时获得较好的展示效果。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
@@ -2295,7 +2295,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"2.6 可访问性"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.6.1【参考】注意 HTML 的可访问性（Accessibility）。"}),`
+`,n.jsxs(e.p,{children:["2.6.1 ",n.jsx(e.code,{children:"参考"})," 注意 HTML 的可访问性（Accessibility）。"]}),`
 `,n.jsx(e.p,{children:"网页可访问性使网页内容落实“无障碍”，让不同程度或需求的用户可以顺畅的获取网站上的信息。传统上我们认为这只与残疾人士有关，但提升网站的可访问性也可以让其他用户群体受益，比如使用移动设备的人群或低速网络的人群。"}),`
 `,n.jsx(e.p,{children:"例如，为 img 标签设置 alt 属性："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad - 缺少 alt 属性，无法被无障碍阅读器识别 -->
@@ -2344,7 +2344,7 @@ $color-red: #f0f0f0;
 `,n.jsx(e.h3,{children:"1.1 缩进"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.1【强制】使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/indent",children:"indent"})]}),`
+`,n.jsxs(e.p,{children:["1.1.1 ",n.jsx(e.code,{children:"mandatory"})," 使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/indent",children:"indent"})]}),`
 `,n.jsx(e.p,{children:"统一使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function foo() {
@@ -2361,7 +2361,7 @@ function foo() {
 `,n.jsx(e.h3,{children:"1.2 分号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.1【强制】使用分号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/semi",children:"semi"})]}),`
+`,n.jsxs(e.p,{children:["1.2.1 ",n.jsx(e.code,{children:"mandatory"})," 使用分号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/semi",children:"semi"})]}),`
 `,n.jsx(e.p,{children:"统一以分号结束语句，可以避免 JS 引擎自动分号插入机制的怪异行为，在语义上也更加明确。"}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsxs(e.p,{children:["自动分号插入机制（即 ",n.jsx(e.a,{href:"https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion",children:"Automatic Semicolon Insertion"}),"，简称 ASI） 是当 JS 遇到不带分号的语句时判断是否自动添加分号的机制，它在个别情况下的行为比较怪异，可能导致意想不到的效果。此外随着 JS 新特性的增加，异常的情况可能变得更加复杂。"]}),`
@@ -2406,7 +2406,7 @@ function foo() {
 `,n.jsx(e.h3,{children:"1.3 逗号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.1【强制】对于逗号分隔的多行结构，不使用行首逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-style",children:"comma-style"})]}),`
+`,n.jsxs(e.p,{children:["1.3.1 ",n.jsx(e.code,{children:"mandatory"})," 对于逗号分隔的多行结构，不使用行首逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-style",children:"comma-style"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const story = [
     once
@@ -2437,7 +2437,7 @@ const hero = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.2【强制】对于逗号分隔的多行结构，始终加上最后一个逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-dangle",children:"comma-dangle"})]}),`
+`,n.jsxs(e.p,{children:["1.3.2 ",n.jsx(e.code,{children:"mandatory"})," 对于逗号分隔的多行结构，始终加上最后一个逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-dangle",children:"comma-dangle"})]}),`
 `,n.jsx(e.p,{children:"这样可以使增删行更加容易，也会使 git diffs 更清晰。Babel 等编译器会在编译后的代码里帮我们去掉最后额外的逗号，因此不必担心在旧浏览器中的问题。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-diff",children:`// bad - 没有结尾逗号时，新增一行的 git diff 示例
 const hero = {
@@ -2522,7 +2522,7 @@ function createHero(
 `]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.1【推荐】始终使用大括号包裹代码块。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/curly",children:"curly"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/nonblock-statement-body-position",children:"nonblock-statement-body-position"})]}),`
+`,n.jsxs(e.p,{children:["1.4.1 ",n.jsx(e.code,{children:"recommended"})," 始终使用大括号包裹代码块。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/curly",children:"curly"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/nonblock-statement-body-position",children:"nonblock-statement-body-position"})]}),`
 `,n.jsx(e.p,{children:"多行代码块必须用大括号包裹："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (foo)
@@ -2553,7 +2553,7 @@ if (foo) {
 `,n.jsx(e.h4,{children:"1.4.2 大括号换行风格"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.2.1【强制】对于非空代码块，采用 Egyptian Brackets 风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/brace-style",children:"brace-style"})]}),`
+`,n.jsxs(e.p,{children:["1.4.2.1 ",n.jsx(e.code,{children:"mandatory"})," 对于非空代码块，采用 Egyptian Brackets 风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/brace-style",children:"brace-style"})]}),`
 `,n.jsxs(e.p,{children:["对于非空的代码块，大括号的换行方式采用 ",n.jsx(e.a,{href:"https://blog.codinghorror.com/new-programming-jargon/",children:"Egyptian Brackets"})," 风格，具体规则如下："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["左大括号 ",n.jsx(e.code,{children:"{"})," 前面不换行，后面换行"]}),`
@@ -2582,7 +2582,7 @@ if (foo) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4.2.2【参考】对于空代码块，可以将大括号直接闭合。"}),`
+`,n.jsxs(e.p,{children:["1.4.2.2 ",n.jsx(e.code,{children:"referenced"})," 对于空代码块，可以将大括号直接闭合。"]}),`
 `,n.jsxs(e.p,{children:["对于空的代码块，且不在类似 ",n.jsx(e.code,{children:"if..else.."})," 或 ",n.jsx(e.code,{children:"try..catch..finally.."})," 的多块结构中时，可以立即将大括号闭合："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// good
 function doNothing() {}
@@ -2616,7 +2616,7 @@ try {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.3【强制】不要使用空代码块。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-empty",children:"no-empty"})]}),`
+`,n.jsxs(e.p,{children:["1.4.3 ",n.jsx(e.code,{children:"mandatory"})," 不要使用空代码块。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-empty",children:"no-empty"})]}),`
 `,n.jsx(e.p,{children:"不要让代码中出现空代码块，这会使阅读者感到困惑。如果必须使用空块，需在块内写明注释。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (condition) {
@@ -2637,7 +2637,7 @@ if (condition) {
 `,n.jsx(e.p,{children:"合理并一致地使用空格有助于提升代码的可读性和可维护性。具体来说，我们采用如下的空格风格："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.1【强制】空格风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-before-blocks",children:"space-before-blocks"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/keyword-spacing",children:"keyword-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-in-parens",children:"space-in-parens"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/array-bracket-spacing",children:"array-bracket-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/object-curly-spacing",children:"object-curly-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-infix-ops",children:"space-infix-ops"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/key-spacing",children:"key-spacing"})]}),`
+`,n.jsxs(e.p,{children:["1.5.1 ",n.jsx(e.code,{children:"mandatory"})," 空格风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-before-blocks",children:"space-before-blocks"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/keyword-spacing",children:"keyword-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-in-parens",children:"space-in-parens"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/array-bracket-spacing",children:"array-bracket-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/object-curly-spacing",children:"object-curly-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-infix-ops",children:"space-infix-ops"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/key-spacing",children:"key-spacing"})]}),`
 `,n.jsxs(e.p,{children:["块的左大括号 ",n.jsx(e.code,{children:"{"})," 前有一个空格："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function test(){
@@ -2763,7 +2763,7 @@ const x = !y;
 `,n.jsx(e.h3,{children:"1.6 空行"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.6.1【推荐】在文件末尾保留一行空行。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/eol-last",children:"eol-last"})]}),`
+`,n.jsxs(e.p,{children:["1.6.1 ",n.jsx(e.code,{children:"recommended"})," 在文件末尾保留一行空行。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/eol-last",children:"eol-last"})]}),`
 `,n.jsx(e.p,{children:"在非空文件中保留拖尾换行是一种常见的 UNIX 风格。它的好处同输出文件到终端一样，方便在串联和追加文件时不会打断 shell 的提示。"}),`
 `,n.jsx(e.p,{children:"我们统一在文件末尾保留一行空行，即用一个换行符结束文件："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 文件末尾未保留换行符
@@ -2784,7 +2784,7 @@ export default foo;↵
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.6.2【强制】块\b的开始和结束不能是空行。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/padded-blocks",children:"padded-blocks"})]}),`
+`,n.jsxs(e.p,{children:["1.6.2 ",n.jsx(e.code,{children:"mandatory"})," 块\b的开始和结束不能是空行。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/padded-blocks",children:"padded-blocks"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function bar() {
 
@@ -2815,7 +2815,7 @@ if (baz) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.6.3【参考】在块末和新语句间插入一个空行。"}),`
+`,n.jsxs(e.p,{children:["1.6.3 ",n.jsx(e.code,{children:"referenced"})," 在块末和新语句间插入一个空行。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (foo) {
   return bar;
@@ -2854,7 +2854,7 @@ return obj;
 `,n.jsx(e.h3,{children:"1.7 最大字符数和最大行数"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.7.1【推荐】单行最大字符数：100。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-len",children:"max-len"})]}),`
+`,n.jsxs(e.p,{children:["1.7.1 ",n.jsx(e.code,{children:"recommended"})," 单行最大字符数：100。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-len",children:"max-len"})]}),`
 `,n.jsx(e.p,{children:"过长的单行代码不易阅读和维护，需要进行合理换行。"}),`
 `,n.jsx(e.p,{children:"我们推荐单行代码最多不要超过 100 个字符，除了以下两种情况："}),`
 `,n.jsxs(e.ul,{children:[`
@@ -2886,11 +2886,11 @@ $.ajax({
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.7.2【参考】文件最大行数：1000。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-lines",children:"max-lines"})]}),`
+`,n.jsxs(e.p,{children:["1.7.2 ",n.jsx(e.code,{children:"referenced"})," 文件最大行数：1000。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-lines",children:"max-lines"})]}),`
 `,n.jsx(e.p,{children:"过长的文件不易阅读和维护，最好对其进行拆分。"}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.7.3【参考】函数最大行数：80。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-lines-per-function",children:"max-lines-per-function"})]}),`
+`,n.jsxs(e.p,{children:["1.7.3 ",n.jsx(e.code,{children:"referenced"})," 函数最大行数：80。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-lines-per-function",children:"max-lines-per-function"})]}),`
 `,n.jsx(e.p,{children:"过长的函数不易阅读和维护，最好对其进行拆分。"}),`
 `]}),`
 `]}),`
@@ -2898,7 +2898,7 @@ $.ajax({
 `,n.jsx(e.h3,{children:"2.1 变量声明"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.1【强制】使用 const 或 let 声明变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-var",children:"no-var"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-undef",children:"no-undef"})]}),`
+`,n.jsxs(e.p,{children:["2.1.1 ",n.jsx(e.code,{children:"mandatory"})," 使用 const 或 let 声明变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-var",children:"no-var"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-undef",children:"no-undef"})]}),`
 `,n.jsxs(e.p,{children:["从 ES6 开始，可以使用 ",n.jsx(e.code,{children:"let"})," 和 ",n.jsx(e.code,{children:"const"})," 关键字在块级作用域下声明变量。块级作用域在很多其他编程语言中都有使用，这样声明的变量不会污染全局命名空间。"]}),`
 `,n.jsxs(e.p,{children:["不要使用 ",n.jsx(e.code,{children:"var"}),"："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -2918,7 +2918,7 @@ const foo = 'foo';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.2【强制】正确地使用 const 和 let。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-const",children:"prefer-const"})]}),`
+`,n.jsxs(e.p,{children:["2.1.2 ",n.jsx(e.code,{children:"mandatory"})," 正确地使用 const 和 let。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-const",children:"prefer-const"})]}),`
 `,n.jsxs(e.p,{children:["声明变量时，应优先使用 ",n.jsx(e.code,{children:"const"}),"，只有当变量会被重新赋值时才使用 ",n.jsx(e.code,{children:"let"}),"："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 声明后未发生重新赋值，应使用 const
 let flag = true;
@@ -2947,7 +2947,7 @@ obj.name = 'bar';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.3【强制】一条声明语句声明一个变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/one-var",children:"one-var"})]}),`
+`,n.jsxs(e.p,{children:["2.1.3 ",n.jsx(e.code,{children:"mandatory"})," 一条声明语句声明一个变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/one-var",children:"one-var"})]}),`
 `,n.jsxs(e.p,{children:["这样做更易于追加新的声明语句（你不需要总去把最后的 ",n.jsx(e.code,{children:";"})," 改成 ",n.jsx(e.code,{children:","})," 了），也更易于进行单步调试。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = 1,
@@ -2959,7 +2959,7 @@ const bar = 2;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.4【强制】声明的变量必须被使用。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-unused-vars",children:"no-unused-vars"})]}),`
+`,n.jsxs(e.p,{children:["2.1.4 ",n.jsx(e.code,{children:"mandatory"})," 声明的变量必须被使用。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-unused-vars",children:"no-unused-vars"})]}),`
 `,n.jsx(e.p,{children:"声明而未使用的变量、表达式可能带来潜在的问题，也会给维护者造成困扰，应将它们删除。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 未使用变量 foo
 const foo = 1;
@@ -2991,7 +2991,7 @@ function getXPlusY(x, y) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.5【强制】不要在声明前就使用变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-use-before-define",children:"no-use-before-define"})]}),`
+`,n.jsxs(e.p,{children:["2.1.5 ",n.jsx(e.code,{children:"mandatory"})," 不要在声明前就使用变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-use-before-define",children:"no-use-before-define"})]}),`
 `,n.jsxs(e.p,{children:["在 ES5 中，由于 ",n.jsx(e.code,{children:"var"})," 的声明提升作用，变量可以在\b声明前\b使用，但这样做可能给人带来疑惑和隐患，所以不要在声明前就使用变量："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 console.log(foo); // => undefined
@@ -3012,7 +3012,7 @@ console.log(foo); // => foo
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1.6【参考】哪里使用，哪里声明。"}),`
+`,n.jsxs(e.p,{children:["2.1.6 ",n.jsx(e.code,{children:"referenced"})," 哪里使用，哪里声明。"]}),`
 `,n.jsx(e.p,{children:"在变量被使用前再进行声明，而不是统一在块开始处进行声明。"}),`
 `,n.jsxs(e.p,{children:["ES6 提供的 ",n.jsx(e.code,{children:"let"})," 和 ",n.jsx(e.code,{children:"const"})," 是块级作用域，不存在类似 ",n.jsx(e.code,{children:"var"})," 的声明提升的问题。因此我们可以把声明写在更合理\b的地方（\b一般是变量被使用前），而不是统一在块开始处进行声明。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 如果权限校验（checkUserPermission）失败，fetchData 是不必要的
@@ -3047,7 +3047,7 @@ function getData(id) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.7【强制】变量不要与外层作用域已存在的变量同名。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-shadow",children:"no-shadow"})]}),`
+`,n.jsxs(e.p,{children:["2.1.7 ",n.jsx(e.code,{children:"mandatory"})," 变量不要与外层作用域已存在的变量同名。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-shadow",children:"no-shadow"})]}),`
 `,n.jsx(e.p,{children:"如果变量与外层已存在变量同名，会降低可读性，也会导致内层作用域无法读取外层作用域的同名变量。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = 1;
@@ -3066,7 +3066,7 @@ if (someCondition) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.8【强制】不要重复声明变量和函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-redeclare",children:"no-redeclare"})]}),`
+`,n.jsxs(e.p,{children:["2.1.8 ",n.jsx(e.code,{children:"mandatory"})," 不要重复声明变量和函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-redeclare",children:"no-redeclare"})]}),`
 `,n.jsxs(e.p,{children:["在 ES5 中，尽管使用 ",n.jsx(e.code,{children:"var"})," 重复声明不会报错，但这样做会令人疑惑，降低程序的可维护性。同理，函数的声明也不要与已存在的变量和函数重名："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 var a = 'foo';
@@ -3119,7 +3119,7 @@ myFunc('bar'); // => 'bar'
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.9【强制】禁止连续赋值。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-multi-assign",children:"no-multi-assign"})]}),`
+`,n.jsxs(e.p,{children:["2.1.9 ",n.jsx(e.code,{children:"mandatory"})," 禁止连续赋值。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-multi-assign",children:"no-multi-assign"})]}),`
 `,n.jsx(e.p,{children:"变量的连续赋值让人难以阅读和理解，并且可能导致意想不到的结果（如产生全局变量）。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 本例的结果是 let 仅对 a 起到\b\b了预想效果，b 和 c 都成了全局变量
 (function test() {
@@ -3143,7 +3143,7 @@ console.log(c); // throws ReferenceError
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1.10【参考】将 let 和 const 分别归类。"}),`
+`,n.jsxs(e.p,{children:["2.1.10 ",n.jsx(e.code,{children:"referenced"})," 将 let 和 const 分别归类。"]}),`
 `,n.jsxs(e.p,{children:["将 ",n.jsx(e.code,{children:"let"})," 和 ",n.jsx(e.code,{children:"const"})," 归类写在一起，可以提高代码整洁性。此外，\b如果你想按变量的含义排序分组也是允许的。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 let a;
@@ -3167,7 +3167,7 @@ let e;
 `]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.1【强制】不要使用 new Number/String/Boolean。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-wrappers",children:"no-new-wrappers"})]}),`
+`,n.jsxs(e.p,{children:["2.2.1 ",n.jsx(e.code,{children:"mandatory"})," 不要使用 new Number/String/Boolean。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-wrappers",children:"no-new-wrappers"})]}),`
 `,n.jsxs(e.p,{children:["使用 new Number/String//Boolean 声明不会有任何好处，还会导致变量成为 ",n.jsx(e.code,{children:"object"})," 类型，可能引起 bug。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const num = new Number(0);
@@ -3191,7 +3191,7 @@ if (bool) { // false
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.2【推荐】类型转换。"}),`
+`,n.jsxs(e.p,{children:["2.2.2 ",n.jsx(e.code,{children:"recommended"})," 类型转换。"]}),`
 `,n.jsxs(e.p,{children:["【数字】使用 ",n.jsx(e.code,{children:"Number()"})," 或 ",n.jsx(e.code,{children:"parseInt()"})," ："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const str = '1';
 
@@ -3229,7 +3229,7 @@ const hasAge = !!age;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.3【推荐】使用 parseInt() 方法时总是带上基数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/radix",children:"radix"})]}),`
+`,n.jsxs(e.p,{children:["2.2.3 ",n.jsx(e.code,{children:"recommended"})," 使用 parseInt() 方法时总是带上基数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/radix",children:"radix"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"parseInt"})," 方法的第一个参数是\b待转换的字符串，第二个参数是转换基数。当第二个参数省略时，",n.jsx(e.code,{children:"parseInt"})," 会根据第一个参数自动判断基数："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"如果\b以 0x 开头，则使用 16 作基数"}),`
@@ -3246,7 +3246,7 @@ parseInt("071", 10); // => 71
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.4【强制】避免不必要的布尔\b类型转换。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-extra-boolean-cast",children:"no-extra-boolean-cast"})]}),`
+`,n.jsxs(e.p,{children:["2.2.4 ",n.jsx(e.code,{children:"mandatory"})," 避免不必要的布尔\b类型转换。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-extra-boolean-cast",children:"no-extra-boolean-cast"})]}),`
 `,n.jsxs(e.p,{children:["在 ",n.jsx(e.code,{children:"if"})," 等条件语句中，将表达式的结果强制转换成布尔值是多余的："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (!!foo) {
@@ -3275,7 +3275,7 @@ const a = flag ? b : c;
 `,n.jsx(e.h4,{children:"2.2.5 字符串"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.5.1【强制】字符串优先使用单引号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/quotes",children:"quotes"})]}),`
+`,n.jsxs(e.p,{children:["2.2.5.1 ",n.jsx(e.code,{children:"mandatory"})," 字符串优先使用单引号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/quotes",children:"quotes"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const name = "tod";
 const name = \`tod\`; // 模板字符串中应包含变量或换行，否则需用单引号
@@ -3285,7 +3285,7 @@ const name = 'tod';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.5.2【推荐】使用模板字符串替代字符串拼接。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-template",children:"prefer-template"})]}),`
+`,n.jsxs(e.p,{children:["2.2.5.2 ",n.jsx(e.code,{children:"recommended"})," 使用模板字符串替代字符串拼接。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-template",children:"prefer-template"})]}),`
 `,n.jsx(e.p,{children:"模板字符串让代码更简洁，可读性更强"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function getDisplayName({ nickName, realName }) {
@@ -3299,7 +3299,7 @@ function getDisplayName({ nickName, realName }) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.5.3【强制】禁止不必要的转义字符。",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-useless-escape",children:"no-useless-escape"})]}),`
+`,n.jsxs(e.p,{children:["2.2.5.3 ",n.jsx(e.code,{children:"mandatory"})," 禁止不必要的转义字符。",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-useless-escape",children:"no-useless-escape"})]}),`
 `,n.jsx(e.p,{children:"转义字符会大大降低代码的可读性，因此尽量不要滥用它们。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = '\\'this\\' \\i\\s \\"quoted\\"';
@@ -3313,7 +3313,7 @@ const foo = \`'this' is "quoted"\`;
 `,n.jsx(e.h3,{children:"2.3 数组"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.1【强制】使用字面量创建数组。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-array-constructor",children:"no-array-constructor"})]}),`
+`,n.jsxs(e.p,{children:["2.3.1 ",n.jsx(e.code,{children:"mandatory"})," 使用字面量创建数组。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-array-constructor",children:"no-array-constructor"})]}),`
 `,n.jsxs(e.p,{children:["不要使用 ",n.jsx(e.code,{children:"new Array()"})," 和 ",n.jsx(e.code,{children:"Array()"})," 创建数组，除非为了构造某一长度的空数组。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const a = new Array(1, 2, 3);
@@ -3325,7 +3325,7 @@ const b = new Array(500); // 构造长度为 500 的空数组
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.2【强制】某些数组方法的回调函数中必须包含 return 语句。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/array-callback-return",children:"array-callback-return"})]}),`
+`,n.jsxs(e.p,{children:["2.3.2 ",n.jsx(e.code,{children:"mandatory"})," 某些数组方法的回调函数中必须包含 return 语句。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/array-callback-return",children:"array-callback-return"})]}),`
 `,n.jsxs(e.p,{children:["以下数组方法：",n.jsx(e.code,{children:"map"}),", ",n.jsx(e.code,{children:"filter"}),", ",n.jsx(e.code,{children:"from "}),", ",n.jsx(e.code,{children:"every"}),", ",n.jsx(e.code,{children:"find"}),", ",n.jsx(e.code,{children:"findIndex"}),", ",n.jsx(e.code,{children:"reduce"}),", ",n.jsx(e.code,{children:"reduceRight"}),", ",n.jsx(e.code,{children:"some"}),", ",n.jsx(e.code,{children:"sort"})," 的回调函数中必须包含 ",n.jsx(e.code,{children:"return"})," 语句，否则可能会产生误用或错误。"]}),`
 `,n.jsxs(e.p,{children:["一个常见的误用是，本该用 ",n.jsx(e.code,{children:"forEach"})," 的场景却用了 ",n.jsx(e.code,{children:"map"}),"："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// 欲将 ['a', 'b', 'c'] 转换成 {a: 0, b: 1, c: 2}
@@ -3359,7 +3359,7 @@ const myObj = myArray.reduce((memo, item, index) => {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3.3【推荐】使用扩展运算符 ... 处理数组。"}),`
+`,n.jsxs(e.p,{children:["2.3.3 ",n.jsx(e.code,{children:"recommended"})," 使用扩展运算符 ... 处理数组。"]}),`
 `,n.jsxs(e.p,{children:["ES6 提供了扩展运算符 ",n.jsx(e.code,{children:"..."}),"，可以简化一些数组操作。"]}),`
 `,n.jsx(e.p,{children:"数组复制："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -3410,7 +3410,7 @@ const baz = Array.from(foo, bar);
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3.4【推荐】使用解构获取数组元素。"}),`
+`,n.jsxs(e.p,{children:["2.3.4 ",n.jsx(e.code,{children:"recommended"})," 使用解构获取数组元素。"]}),`
 `,n.jsx(e.p,{children:"使用 ES6 提供的解构方法获取数组元素："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const arr = [1, 2, 3, 4];
@@ -3439,7 +3439,7 @@ const { left, top } = giveMeDivPosition(div);
 `,n.jsx(e.h3,{children:"2.4 对象"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.1【强制】使用字面量创建对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-object",children:"no-new-object"})]}),`
+`,n.jsxs(e.p,{children:["2.4.1 ",n.jsx(e.code,{children:"mandatory"})," 使用字面量创建对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-object",children:"no-new-object"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const obj = new Object();
 
@@ -3448,7 +3448,7 @@ const obj = {};
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.2【强制】使用对象属性和方法的简写语法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/object-shorthand",children:"object-shorthand"})]}),`
+`,n.jsxs(e.p,{children:["2.4.2 ",n.jsx(e.code,{children:"mandatory"})," 使用对象属性和方法的简写语法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/object-shorthand",children:"object-shorthand"})]}),`
 `,n.jsx(e.p,{children:"ES6 提供了对象属性和方法的简写语法，可以使代码更加简洁："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const value = 'foo';
 
@@ -3470,7 +3470,7 @@ const atom = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.3【参考】将对象的简写属性写在一起。"}),`
+`,n.jsxs(e.p,{children:["2.4.3 ",n.jsx(e.code,{children:"referenced"})," 将对象的简写属性写在一起。"]}),`
 `,n.jsx(e.p,{children:"将简写的属性写在一起，置于对象的起始或末尾，可以提高代码整洁性。当然，如果你出于属性的含义或其他考虑进行排序也是允许的。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const anakinSkywalker = 'Anakin Skywalker';
 const lukeSkywalker = 'Luke Skywalker';
@@ -3497,7 +3497,7 @@ const obj = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.4【强制】对象的属性名不要用引号包裹，除非包含特殊字符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/quote-props",children:"quote-props"})]}),`
+`,n.jsxs(e.p,{children:["2.4.4 ",n.jsx(e.code,{children:"mandatory"})," 对象的属性名不要用引号包裹，除非包含特殊字符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/quote-props",children:"quote-props"})]}),`
 `,n.jsx(e.p,{children:"这样更加简洁，也有助于语法高亮和一些 JS 引擎的优化。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const bad = {
@@ -3517,7 +3517,7 @@ const good = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.5【强制】优先使用 . 访问对象的属性。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/dot-notation",children:"dot-notation"})]}),`
+`,n.jsxs(e.p,{children:["2.4.5 ",n.jsx(e.code,{children:"mandatory"})," 优先使用 . 访问对象的属性。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/dot-notation",children:"dot-notation"})]}),`
 `,n.jsxs(e.p,{children:["这样可以提高代码可读性。",n.jsx(e.code,{children:"[]"})," \b仅应在访问动态属性名\b或包含特殊字符的属性名时被使用。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const obj = {
   active: true,
@@ -3535,7 +3535,7 @@ const bar = obj['data-bar'];
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.6【推荐】使用扩展运算符 ... 处理对象。"}),`
+`,n.jsxs(e.p,{children:["2.4.6 ",n.jsx(e.code,{children:"recommended"})," 使用扩展运算符 ... 处理对象。"]}),`
 `,n.jsxs(e.p,{children:["替代 ",n.jsx(e.code,{children:"Object.assign"})," 方法，来进行对象\b的浅拷贝："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// very bad - original 会被影响
 const original = { a: 1, b: 2 };
@@ -3557,7 +3557,7 @@ const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.7【推荐】使用解构获取对象属性。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-destructuring",children:"prefer-destructuring"})]}),`
+`,n.jsxs(e.p,{children:["2.4.7 ",n.jsx(e.code,{children:"recommended"})," 使用解构获取对象属性。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-destructuring",children:"prefer-destructuring"})]}),`
 `,n.jsx(e.p,{children:"获取对象的同名属性、多个属性时，使用解构让代码更简洁，也可以减少为了使用属性而创建的临时引用。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function getFullName(user) {
@@ -3580,7 +3580,7 @@ function getFullName({ firstName, lastName }) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.8【参考】对象的动态属性名应直接写在字面量定义中。"}),`
+`,n.jsxs(e.p,{children:["2.4.8 ",n.jsx(e.code,{children:"referenced"})," 对象的动态属性名应直接写在字面量定义中。"]}),`
 `,n.jsx(e.p,{children:"ES6 允许在新建对象字面量时使用表达式作为属性名，这样可以将所有属性定义在一个地方。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`function getKey(k) {
   return \`a key named \${k}\`;
@@ -3602,7 +3602,7 @@ const obj = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.9【强制】不要直接在对象上调用 Object.prototypes 上的方法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-prototype-builtins",children:"no-prototype-builtins"})]}),`
+`,n.jsxs(e.p,{children:["2.4.9 ",n.jsx(e.code,{children:"mandatory"})," 不要直接在对象上调用 Object.prototypes 上的方法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-prototype-builtins",children:"no-prototype-builtins"})]}),`
 `,n.jsxs(e.p,{children:["不要直接在对象上调用 ",n.jsx(e.code,{children:"Object.prototypes"})," 上的方法，例如 ",n.jsx(e.code,{children:"hasOwnProperty"}),"、",n.jsx(e.code,{children:"propertyIsEnumerable"}),"、",n.jsx(e.code,{children:"isPrototypeOf"}),"。"]}),`
 `,n.jsx(e.p,{children:"这些方法可能会被对象上的属性覆盖，导致错误："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const obj = {
@@ -3624,7 +3624,7 @@ console.log(Object.prototype.hasOwnProperty.call(objNull, 'foo'));
 `,n.jsx(e.h3,{children:"2.5 函数"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.1【强制】不要用 Function 构造函数创建函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-func",children:"no-new-func"})]}),`
+`,n.jsxs(e.p,{children:["2.5.1 ",n.jsx(e.code,{children:"mandatory"})," 不要用 Function 构造函数创建函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-func",children:"no-new-func"})]}),`
 `,n.jsxs(e.p,{children:["使用 ",n.jsx(e.code,{children:"new Function"})," 创建函数会像 ",n.jsx(e.code,{children:"eval()"})," 方法一样执行字符串，带来安全隐患"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const sum = new Function('a', 'b', 'return a + b');
@@ -3634,7 +3634,7 @@ const sum = (a, b) => (a + b);
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.2【强制】不要在块中使用函数声明。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-inner-declarations",children:"no-inner-declarations"})]}),`
+`,n.jsxs(e.p,{children:["2.5.2 ",n.jsx(e.code,{children:"mandatory"})," 不要在块中使用函数声明。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-inner-declarations",children:"no-inner-declarations"})]}),`
 `,n.jsxs(e.p,{children:["在非函数块（如 ",n.jsx(e.code,{children:"if"}),"、",n.jsx(e.code,{children:"while"})," 等）中，不要使用函数声明："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 函数声明不是块作用域而是函数作用域，因此在块外也能使用函数，容易引起误解
 if (true) {
@@ -3664,7 +3664,7 @@ test(); // => test
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.3【参考】使用函数表达式替代函数声明。"}),`
+`,n.jsxs(e.p,{children:["2.5.3 ",n.jsx(e.code,{children:"referenced"})," 使用函数表达式替代函数声明。"]}),`
 `,n.jsx(e.p,{children:"这样可以保证函数不能在\b定义前\b被调用。"}),`
 `,n.jsx(e.p,{children:"函数声明会被提升到当前作用域的顶部，\b因此函数可以在声明语句前就被调用，这会影响\b代码的可读性\b与可维护性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -3689,7 +3689,7 @@ const foo = function foo_more_descriptive_name() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.4【强制】使用箭头函数代替匿名函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-arrow-callback",children:"prefer-arrow-callback"})]}),`
+`,n.jsxs(e.p,{children:["2.5.4 ",n.jsx(e.code,{children:"mandatory"})," 使用箭头函数代替匿名函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-arrow-callback",children:"prefer-arrow-callback"})]}),`
 `,n.jsxs(e.p,{children:["ES6 提供的箭头函数可以解决 ",n.jsx(e.code,{children:"this"})," 指向的问题，而且语法更简洁。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 [1, 2, 3].map(function (x) {
@@ -3705,7 +3705,7 @@ const foo = function foo_more_descriptive_name() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.5【推荐】箭头函数编码风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/arrow-parens",children:"arrow-parens"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/arrow-body-style",children:"arrow-body-style"})]}),`
+`,n.jsxs(e.p,{children:["2.5.5 ",n.jsx(e.code,{children:"recommended"})," 箭头函数编码风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/arrow-parens",children:"arrow-parens"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/arrow-body-style",children:"arrow-body-style"})]}),`
 `,n.jsx(e.p,{children:"箭头函数参数的小括号、函数体的大括号在某些时候可以省略，这可能导致风格的不统一，因此需要规范其编码风格："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
@@ -3762,7 +3762,7 @@ const foo = function foo_more_descriptive_name() {
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.6【强制】不要将函数参数命名为 arguments。"}),`
+`,n.jsxs(e.p,{children:["2.5.6 ",n.jsx(e.code,{children:"mandatory"})," 不要将函数参数命名为 arguments。"]}),`
 `,n.jsxs(e.p,{children:["这会覆盖掉函数作用域中的 ",n.jsx(e.code,{children:"arguments"})," 对象。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function foo(name, options, arguments) {
@@ -3776,7 +3776,7 @@ function foo(name, options, args) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.7【强制】不要使用 arguments 对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-rest-params",children:"prefer-rest-params"})]}),`
+`,n.jsxs(e.p,{children:["2.5.7 ",n.jsx(e.code,{children:"mandatory"})," 不要使用 arguments 对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-rest-params",children:"prefer-rest-params"})]}),`
 `,n.jsxs(e.p,{children:["不要使用 ",n.jsx(e.code,{children:"arguments"})," 对象，使用剩余参数操作符 ",n.jsx(e.code,{children:"..."})," 代替。"]}),`
 `,n.jsxs(e.p,{children:["ES6 提供了 rest 操作符 ",n.jsx(e.code,{children:"..."}),"，与 ",n.jsx(e.code,{children:"arguments"})," 相比可以更清晰\b地聚合函数的剩余参数。此外， ",n.jsx(e.code,{children:"..."})," 得到的是一个真正的数组，而 ",n.jsx(e.code,{children:"arguments"})," 得到的则是类数组结构。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -3794,7 +3794,7 @@ foo(1, 2, 3, 4); // => [3, 4]
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.8【推荐】使用默认参数语法。"}),`
+`,n.jsxs(e.p,{children:["2.5.8 ",n.jsx(e.code,{children:"recommended"})," 使用默认参数语法。"]}),`
 `,n.jsxs(e.p,{children:["ES6 中引入了默认参数语法，相比之前为参数赋默认值的方法更加简洁、可读性更好。重新对参数赋值是不推荐的行为，且当参数的布尔类型转换结果是 ",n.jsx(e.code,{children:"false"})," 时可能会错误地被赋予默认值。"]}),`
 `,n.jsx(e.p,{children:"因此，当函数参数需要默认值时，使用默认参数语法，而不是去修改参数："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -3811,7 +3811,7 @@ const multiple = (a = 0, b = 0) => {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.9【推荐】有默认值的函数参数需要放到参数列表的最后。"}),`
+`,n.jsxs(e.p,{children:["2.5.9 ",n.jsx(e.code,{children:"recommended"})," 有默认值的函数参数需要放到参数列表的最后。"]}),`
 `,n.jsxs(e.p,{children:["否则你将无法享受到\b\b默认参数的便利，只能通过传 ",n.jsx(e.code,{children:"undefined"})," 触发参数使用默认值。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function multiply(a = 1, b) {
@@ -3828,7 +3828,7 @@ const x = multiply(42); // => 42
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.10【推荐】不要修改函数参数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-param-reassign",children:"no-param-reassign"})]}),`
+`,n.jsxs(e.p,{children:["2.5.10 ",n.jsx(e.code,{children:"recommended"})," 不要修改函数参数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-param-reassign",children:"no-param-reassign"})]}),`
 `,n.jsx(e.p,{children:"不要修改引用类型的参数，这可能导致作为入参的原变量发生变化："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const f1 = function f1(obj) {
@@ -3861,7 +3861,7 @@ function foo(bar, baz) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.11【强制】将立即执行函数表达式（IIFE）用小括号包裹。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/wrap-iife",children:"wrap-iife"})]}),`
+`,n.jsxs(e.p,{children:["2.5.11 ",n.jsx(e.code,{children:"mandatory"})," 将立即执行函数表达式（IIFE）用小括号包裹。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/wrap-iife",children:"wrap-iife"})]}),`
 `,n.jsx(e.p,{children:"IIFE 是一个独立的执行单元，将它用小括号包裹可以更清晰的体现这点。需要提醒的是，由于 ES6 模块语法的引入，你可能不再需要使用 IIFE 了。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`(function () {
   console.log('Welcome to the Internet. Please follow me.');
@@ -3869,7 +3869,7 @@ function foo(bar, baz) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.12【参考】函数的复杂度不应过高。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/complexity",children:"complexity"})]}),`
+`,n.jsxs(e.p,{children:["2.5.12 ",n.jsx(e.code,{children:"referenced"})," 函数的复杂度不应过高。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/complexity",children:"complexity"})]}),`
 `,n.jsx(e.p,{children:"过高的复杂度意味着代码难以维护和测试。我们推荐函数的复杂度不要超过以下阈值："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["圈复杂度不超过 ",n.jsx(e.strong,{children:"10"})]}),`
@@ -3877,7 +3877,7 @@ function foo(bar, baz) {
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.13【参考】函数的参数不应过多。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-params",children:"max-params"}),`
+`,n.jsxs(e.p,{children:["2.5.13 ",n.jsx(e.code,{children:"referenced"})," 函数的参数不应过多。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-params",children:"max-params"}),`
 如果函数的参数过多，将不利于函数的维护和调用。这时你需要考虑是否函数做了太多的事情，是否有必要对其进行拆分。`]}),`
 `,n.jsx(e.p,{children:"如果必须使用过多的参数，可以考虑用对象代替参数列表："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -3894,7 +3894,7 @@ doSomething({ param1: 1, param2: 2, param3: 3, param4: 4, param5: 5, param6: 6, 
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.14【强制】generator 函数内必须有 yield 语句。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/require-yield",children:"require-yield"})]}),`
+`,n.jsxs(e.p,{children:["2.5.14 ",n.jsx(e.code,{children:"mandatory"})," generator 函数内必须有 yield 语句。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/require-yield",children:"require-yield"})]}),`
 `,n.jsxs(e.p,{children:["如果一个 ",n.jsx(e.code,{children:"generator"})," 中没有 ",n.jsx(e.code,{children:"yield"})," 语句，那么这个 ",n.jsx(e.code,{children:"generator"})," 就不是必须的。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function* foo() {
@@ -3909,7 +3909,7 @@ function* foo() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.15【参考】优先使用 JS 提供的高阶函数进行迭代运算。"}),`
+`,n.jsxs(e.p,{children:["2.5.15 ",n.jsx(e.code,{children:"referenced"})," 优先使用 JS 提供的高阶函数进行迭代运算。"]}),`
 `,n.jsx(e.p,{children:"需要迭代运算时，应优先使用 JS 提供的高阶函数，减少直接使用 for 循环（包括 for-in 和 for-of）。"}),`
 `,n.jsx(e.p,{children:"如使用 map() / every() / filter() / find() / findIndex() / reduce() / some() / ... 来迭代数组，使用 Object.keys() / Object.values() / Object.entries() 方法来迭代对象"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const numbers = [1, 2, 3, 4, 5];
@@ -3952,7 +3952,7 @@ const increasedByOne = numbers.map(num => num + 1);
 `,n.jsx(e.h3,{children:"2.6 类"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.6.1【推荐】使用 class 语句声明类，而不是使用 prototype。"}),`
+`,n.jsxs(e.p,{children:["2.6.1 ",n.jsx(e.code,{children:"recommended"})," 使用 class 语句声明类，而不是使用 prototype。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"class"})," 语句是 ES6 中引入的用于声明类的语法糖，更加简洁易维护。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function Person() {
@@ -3974,7 +3974,7 @@ class Person {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.6.2【推荐】使用 extends 语句进行类的继承。"}),`
+`,n.jsxs(e.p,{children:["2.6.2 ",n.jsx(e.code,{children:"recommended"})," 使用 extends 语句进行类的继承。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"extends"})," 是用于原型继承的内建方法，不会破坏 ",n.jsx(e.code,{children:"instanceof"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const inherits = require('inherits');
@@ -3995,7 +3995,7 @@ class PeekableQueue extends Queue {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.6.3【强制】避免不必要的 constructor。"}),`
+`,n.jsxs(e.p,{children:["2.6.3 ",n.jsx(e.code,{children:"mandatory"})," 避免不必要的 constructor。"]}),`
 `,n.jsxs(e.p,{children:["ES6 class 会提供一个默认的 ",n.jsx(e.code,{children:"constructor"}),"，空 ",n.jsx(e.code,{children:"constructor"})," 或者只调用父类的  ",n.jsx(e.code,{children:"constructor"})," 是不必要的。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-useless-constructor",children:"no-useless-constructor"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 以下两种\b constructor 可以省略
 class Parent {
@@ -4032,7 +4032,7 @@ class Child extends Parent {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6.4【强制】正确地使用 super 方法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/constructor-super",children:"constructor-super"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-this-before-super",children:"no-this-before-super"})]}),`
+`,n.jsxs(e.p,{children:["2.6.4 ",n.jsx(e.code,{children:"mandatory"})," 正确地使用 super 方法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/constructor-super",children:"constructor-super"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-this-before-super",children:"no-this-before-super"})]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["子类的 ",n.jsx(e.code,{children:"constructor"})," 中必须使用 ",n.jsx(e.code,{children:"super()"}),"，且必须在 ",n.jsx(e.code,{children:"this"})," 和 ",n.jsx(e.code,{children:"super"})," 关键词前调用"]}),`
 `,n.jsxs(e.li,{children:["非\b子类的 ",n.jsx(e.code,{children:"constructor"})," 中不能使用 ",n.jsx(e.code,{children:"super()"})]}),`
@@ -4077,7 +4077,7 @@ class Child extends Parent {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6.5【强制】避免重复的类成员命名。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-dupe-class-members",children:"no-dupe-class-members"})]}),`
+`,n.jsxs(e.p,{children:["2.6.5 ",n.jsx(e.code,{children:"mandatory"})," 避免重复的类成员命名。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-dupe-class-members",children:"no-dupe-class-members"})]}),`
 `,n.jsx(e.p,{children:"重复的类成员声明最终生效的将是最后一个："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 class Foo {
@@ -4097,7 +4097,7 @@ class Foo {
 `,n.jsx(e.h3,{children:"2.7 模块"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.1【推荐】使用 ES6 modules 而非其他非标准的模块系统。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import#module-systems",children:"import/module-systems"})]}),`
+`,n.jsxs(e.p,{children:["2.7.1 ",n.jsx(e.code,{children:"recommended"})," 使用 ES6 modules 而非其他非标准的模块系统。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import#module-systems",children:"import/module-systems"})]}),`
 `,n.jsxs(e.p,{children:["使用 ES6 modules (",n.jsx(e.code,{children:"import"}),"/",n.jsx(e.code,{children:"export"}),")，而不是其他非标准的模块系统，如 CommonJS、AMD、CMD。"]}),`
 `,n.jsx(e.p,{children:"ES6 modules 作为标准代表着未来，让我们拥抱未来吧。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -4110,7 +4110,7 @@ export default Component;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.2【强制】不要用多个 import 引入同一模块。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md",children:"import/no-duplicates"})]}),`
+`,n.jsxs(e.p,{children:["2.7.2 ",n.jsx(e.code,{children:"mandatory"})," 不要用多个 import 引入同一模块。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md",children:"import/no-duplicates"})]}),`
 `,n.jsxs(e.p,{children:["多条 ",n.jsx(e.code,{children:"import"})," 语句引入了同一模块会降低可维护性，你需要将它们合成一条语句。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 import React from 'react';
@@ -4121,7 +4121,7 @@ import React, { Component } from 'react';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.3【强制】import 语句需要放到模块的最上方。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md",children:"import/first"})]}),`
+`,n.jsxs(e.p,{children:["2.7.3 ",n.jsx(e.code,{children:"mandatory"})," import 语句需要放到模块的最上方。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md",children:"import/first"})]}),`
 `,n.jsxs(e.p,{children:["由于 ",n.jsx(e.code,{children:"import"})," 语句会被声明提升，将它们放到模块的最上方以防止异常行为。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 import foo from 'foo';
@@ -4139,7 +4139,7 @@ bar.init();
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.4【强制】禁止 default import 的名字跟文件内的其他 export 命名相同。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md",children:"import/no-named-as-default"})]}),`
+`,n.jsxs(e.p,{children:["2.7.4 ",n.jsx(e.code,{children:"mandatory"})," 禁止 default import 的名字跟文件内的其他 export 命名相同。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md",children:"import/no-named-as-default"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// foo.js
 export default 'foo';
 export const bar = 'bar';
@@ -4152,13 +4152,13 @@ import foo from './foo.js';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.5【强制】禁止引用自身。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md",children:"import/no-self-import"})]}),`
+`,n.jsxs(e.p,{children:["2.7.5 ",n.jsx(e.code,{children:"mandatory"})," 禁止引用自身。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md",children:"import/no-self-import"})]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.6【强制】禁止循环引用。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md",children:"import/no-cycle"})]}),`
+`,n.jsxs(e.p,{children:["2.7.6 ",n.jsx(e.code,{children:"mandatory"})," 禁止循环引用。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md",children:"import/no-cycle"})]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.7【推荐】不要在 default export 上使用一个已导出的名称作为属性。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md",children:"import/no-named-as-default-member"})]}),`
+`,n.jsxs(e.p,{children:["2.7.7 ",n.jsx(e.code,{children:"recommended"})," 不要在 default export 上使用一个已导出的名称作为属性。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md",children:"import/no-named-as-default-member"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// foo.js
 export default 'foo';
 export const bar = 'bar';
@@ -4173,7 +4173,7 @@ import foo, { bar } from './foo.js';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.8【推荐】在模块导入之后保留一个空行。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md",children:"import/newline-after-import"})]}),`
+`,n.jsxs(e.p,{children:["2.7.8 ",n.jsx(e.code,{children:"recommended"})," 在模块导入之后保留一个空行。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md",children:"import/newline-after-import"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 import foo from './foo.js';
 const FOO = 'FOO'
@@ -4185,7 +4185,7 @@ const FOO = 'FOO'
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.9【参考】import 语句的排序。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md",children:"import/order"})]}),`
+`,n.jsxs(e.p,{children:["2.7.9 ",n.jsx(e.code,{children:"referenced"})," import 语句的排序。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md",children:"import/order"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"import"})," 语句建议按以下规则排序："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["先 ",n.jsx(e.code,{children:"import"})," 第三方模块，再 ",n.jsx(e.code,{children:"import"})," 自己工程里的模块"]}),`
@@ -4203,7 +4203,7 @@ import './index.scss';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.10【参考】当模块内只有一个 export 时，使用 default export。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md",children:"import/prefer-default-export"})]}),`
+`,n.jsxs(e.p,{children:["2.7.10 ",n.jsx(e.code,{children:"referenced"})," 当模块内只有一个 export 时，使用 default export。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md",children:"import/prefer-default-export"})]}),`
 `,n.jsx(e.p,{children:"我们也建议文件内只包含\b一个 export，这有利于代码的可维护性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 export function foo() {}
@@ -4213,7 +4213,7 @@ export default function foo() {}
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.7.11【参考】不要在 import 时直接 export。"}),`
+`,n.jsxs(e.p,{children:["2.7.11 ",n.jsx(e.code,{children:"referenced"})," 不要在 import 时直接 export。"]}),`
 `,n.jsx(e.p,{children:"虽然一行代码更\b简洁，\b但这不利于代码的可读性和一致性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 export { Com as Component } from 'react';
@@ -4225,14 +4225,14 @@ export default Component;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.12【参考】模块开发者选择EMS和CJS时，需要判断运行时环境：如果你的模块是只面向浏览器的则选择ESM；如果你的模块是只面向Node.js的则选择CJS，并且确定遵循",n.jsx(e.a,{href:"https://nodejs.org/api/esm.html#esm_commonjs_namespaces",children:"CJS命名空间规则"}),"；如果你的模块是2者都要兼容的，则ESM和CJS都要支持。"]}),`
+`,n.jsxs(e.p,{children:["2.7.12 ",n.jsx(e.code,{children:"referenced"})," 模块开发者选择EMS和CJS时，需要判断运行时环境：如果你的模块是只面向浏览器的则选择ESM；如果你的模块是只面向Node.js的则选择CJS，并且确定遵循",n.jsx(e.a,{href:"https://nodejs.org/api/esm.html#esm_commonjs_namespaces",children:"CJS命名空间规则"}),"；如果你的模块是2者都要兼容的，则ESM和CJS都要支持。"]}),`
 `,n.jsxs(e.p,{children:["Node.js的模块，历史上Node.js遵循的是CommonJS，因此ES6 Module会有比较严重的兼容性问题。暂时没有特别好的解法，只能在Node.js中跟进运行时环境，判断使用模块标准。",n.jsx(e.a,{href:"https://github.com/nodejs/node/issues/33954",children:"讨论issue"})]}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h3,{children:"2.8 操作符"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.1【推荐】使用严格相等运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/eqeqeq",children:"eqeqeq"})]}),`
+`,n.jsxs(e.p,{children:["2.8.1 ",n.jsx(e.code,{children:"recommended"})," 使用严格相等运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/eqeqeq",children:"eqeqeq"})]}),`
 `,n.jsxs(e.p,{children:["非严格相等运算符（",n.jsx(e.code,{children:"=="})," 和 ",n.jsx(e.code,{children:"!="}),"）会在比较前将被比较值转换为相同类型\b，对于不熟悉 JS 语言特性的人来说，这可能造成不小的隐患。",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness",children:"了解更多"})]}),`
 `,n.jsxs(e.p,{children:["因此，一般情况下我们应该使用严格比较运算符（ ",n.jsx(e.code,{children:"==="})," 和 ",n.jsx(e.code,{children:"!=="}),"）进行比较。\b如果要比较的两个值类型不同，应该显性地将其转换成相同类型再进行严格比较，而不是依赖于 ",n.jsx(e.code,{children:"=="})," 和 ",n.jsx(e.code,{children:"!="})," 的隐式类型转换。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const id = '83949';
@@ -4249,7 +4249,7 @@ if (Number(id) === 83949) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.2【强制】不要使用一元自增自减运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-plusplus",children:"no-plusplus"})]}),`
+`,n.jsxs(e.p,{children:["2.8.2 ",n.jsx(e.code,{children:"mandatory"})," 不要使用一元自增自减运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-plusplus",children:"no-plusplus"})]}),`
 `,n.jsxs(e.p,{children:["不要使用一元自增自减运算符（",n.jsx(e.code,{children:"++"})," 和 ",n.jsx(e.code,{children:"--"}),"），除非在 ",n.jsx(e.code,{children:"for"})," 循环条件中。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"++"})," 和 ",n.jsx(e.code,{children:"--"})," 会带来值\b是否会提前变化带来的理解成本，也可能因为自动添加分号机制导致一些错误，因此我们推荐使用 ",n.jsx(e.code,{children:"num += 1"})," 来代替 ",n.jsx(e.code,{children:"num++"}),"。但出于习惯，在 ",n.jsx(e.code,{children:"for"})," 循环的条件中依然可以使用自增自减运算符。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`let num = 1;
@@ -4264,7 +4264,7 @@ num -= 1;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.3【强制】不要使用 void 运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-void",children:"no-void"})]}),`
+`,n.jsxs(e.p,{children:["2.8.3 ",n.jsx(e.code,{children:"mandatory"})," 不要使用 void 运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-void",children:"no-void"})]}),`
 `,n.jsxs(e.p,{children:["在很老版本的 JS 中，",n.jsx(e.code,{children:"undefined"})," 值是可变的，因此使用 ",n.jsx(e.code,{children:"void"})," 语句一般是用来得到一个 ",n.jsx(e.code,{children:"undefined"})," 值。而在新版本的 JS 中，上面的问题已不复存在。因此出于程序可读性的考虑，禁止使用 ",n.jsx(e.code,{children:"void"})," 运算符。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = void 0;
@@ -4274,7 +4274,7 @@ const foo = undefined;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.4【强制】避免嵌套的三元表达式。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-nested-ternary",children:"no-nested-ternary"})]}),`
+`,n.jsxs(e.p,{children:["2.8.4 ",n.jsx(e.code,{children:"mandatory"})," 避免嵌套的三元表达式。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-nested-ternary",children:"no-nested-ternary"})]}),`
 `,n.jsx(e.p,{children:"嵌套的三元表达式会降低代码可读性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = bar ? baz : qux === quxx ? bing : bam;
@@ -4285,7 +4285,7 @@ const foo = bar ? baz : qu;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.5【强制】避免不必要的三元表达式。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-unneeded-ternary",children:"no-unneeded-ternary"})]}),`
+`,n.jsxs(e.p,{children:["2.8.5 ",n.jsx(e.code,{children:"mandatory"})," 避免不必要的三元表达式。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-unneeded-ternary",children:"no-unneeded-ternary"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = a ? a : b;
 const bar = c ? true : false;
@@ -4298,7 +4298,7 @@ const baz = !c;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.6【强制】混合使用多种操作符时，用小括号包裹分组。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-mixed-operators",children:"no-mixed-operators"})]}),`
+`,n.jsxs(e.p,{children:["2.8.6 ",n.jsx(e.code,{children:"mandatory"})," 混合使用多种操作符时，用小括号包裹分组。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-mixed-operators",children:"no-mixed-operators"})]}),`
 `,n.jsxs(e.p,{children:["这可以更清晰地表达代码意图，提高可读性。四则运算符（",n.jsx(e.code,{children:"+"}),", ",n.jsx(e.code,{children:"-"}),", ",n.jsx(e.code,{children:"*"}),", ",n.jsx(e.code,{children:"/"}),"）可以不包裹，因为\b大多数人熟知它们的优先级。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = a && b < 0 || c > 0 || d + 1 === 0;
@@ -4330,7 +4330,7 @@ const bar = a + b / c * d;
 `,n.jsx(e.h3,{children:"2.9 控制语句"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.1【强制】switch 语句中的 case 需要以 break 结尾。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-fallthrough",children:"no-fallthrough"})]}),`
+`,n.jsxs(e.p,{children:["2.9.1 ",n.jsx(e.code,{children:"mandatory"})," switch 语句中的 case 需要以 break 结尾。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-fallthrough",children:"no-fallthrough"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 switch(foo) {
   case 1:
@@ -4355,7 +4355,7 @@ switch(foo) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.2【推荐】switch 语句需要始终包含 default 分支。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/default-case",children:"default-case"})]}),`
+`,n.jsxs(e.p,{children:["2.9.2 ",n.jsx(e.code,{children:"recommended"})," switch 语句需要始终包含 default 分支。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/default-case",children:"default-case"})]}),`
 `,n.jsxs(e.p,{children:["在使用 ",n.jsx(e.code,{children:"switch"})," 语句时，有时会出现因开发者忘记设置 ",n.jsx(e.code,{children:"default"})," 而导致错误，因此建议总是给出 ",n.jsx(e.code,{children:"default"}),"。如果有意省略 ",n.jsx(e.code,{children:"default"}),"，请在\b ",n.jsx(e.code,{children:"switch"})," 语句末尾用 ",n.jsx(e.code,{children:"// no default"})," 注释指明："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 let foo;
@@ -4386,7 +4386,7 @@ switch (bar) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.9.3【参考】switch 语句应包含至少 3 个条件分支。"}),`
+`,n.jsxs(e.p,{children:["2.9.3 ",n.jsx(e.code,{children:"referenced"})," switch 语句应包含至少 3 个条件分支。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"switch"})," 语句在有许多条件分支的情况下可以使代码结构更清晰。但对于只有一个或两个条件分支的情况，更适合使用 ",n.jsx(e.code,{children:"if"})," 语句，",n.jsx(e.code,{children:"if"})," 语句更易于书写和阅读。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 let foo;
@@ -4408,7 +4408,7 @@ if (bar === 1) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.4【参考】控制语句的嵌套层级不要过深。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-depth",children:"max-depth"})]}),`
+`,n.jsxs(e.p,{children:["2.9.4 ",n.jsx(e.code,{children:"referenced"})," 控制语句的嵌套层级不要过深。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-depth",children:"max-depth"})]}),`
 `,n.jsxs(e.p,{children:["控制语句的嵌套层级不要超过 ",n.jsx(e.strong,{children:"4"})," 级，否则将难以阅读和维护："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (condition1) {
@@ -4430,7 +4430,7 @@ if (condition1) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.5【强制】for 循环中的计数器应朝着正确方向移动。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/for-direction",children:"for-direction"})]}),`
+`,n.jsxs(e.p,{children:["2.9.5 ",n.jsx(e.code,{children:"mandatory"})," for 循环中的计数器应朝着正确方向移动。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/for-direction",children:"for-direction"})]}),`
 `,n.jsxs(e.p,{children:["当 ",n.jsx(e.code,{children:"for"})," 循环中更新子句的计数器朝着错误的方向移动时，循环的终止条件将永远无法达到，这会导致死循环的出现。这时要么是程序出现了错误，要么应将 ",n.jsx(e.code,{children:"for"})," 循环改为 ",n.jsx(e.code,{children:"while"})," 循环。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 for (let i = 0; i < length; i--) {
@@ -4444,7 +4444,7 @@ for (let i = 0; i < length; i++) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.6【推荐】for-in 循环中需要对 key 进行验证。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/guard-for-in",children:"guard-for-in"})]}),`
+`,n.jsxs(e.p,{children:["2.9.6 ",n.jsx(e.code,{children:"recommended"})," for-in 循环中需要对 key 进行验证。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/guard-for-in",children:"guard-for-in"})]}),`
 `,n.jsxs(e.p,{children:["使用 ",n.jsx(e.code,{children:"for-in"})," 循环时需要\b\b避免对象从原型链上继承来的属性也被遍历出来，因此保险的做法是对 key 是否是对象自身的属性进行验证："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 for (const key in foo) {
@@ -4460,7 +4460,7 @@ for (const key in foo) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.7【参考】如果一个 if 语句的结果总是返回一个 return 语句，那么最后的 else 是不必要的。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-else-return",children:"no-else-return"})]}),`
+`,n.jsxs(e.p,{children:["2.9.7 ",n.jsx(e.code,{children:"referenced"})," 如果一个 if 语句的结果总是返回一个 return 语句，那么最后的 else 是不必要的。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-else-return",children:"no-else-return"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function foo() {
   if (x) {
@@ -4481,7 +4481,7 @@ function foo() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.9.8【参考】条件表达式的计算结果。"}),`
+`,n.jsxs(e.p,{children:["2.9.8 ",n.jsx(e.code,{children:"referenced"})," 条件表达式的计算结果。"]}),`
 `,n.jsxs(e.p,{children:["条件表达式（例如 ",n.jsx(e.code,{children:"if"})," 语句的条件）的值为通过抽象方法 ",n.jsx(e.code,{children:"ToBoolean"})," \b进行强制转换所得，计算结果遵守下面的规则："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.strong,{children:"对象"}),"、",n.jsx(e.strong,{children:"数组"})," 被计算为 ",n.jsx(e.strong,{children:"true"})]}),`
@@ -4511,7 +4511,7 @@ if ('') { // => false
 `,n.jsx(e.h3,{children:"2.10 其他"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.1【强制】禁止使用 eval。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-eval",children:"no-eval"})]}),`
+`,n.jsxs(e.p,{children:["2.10.1 ",n.jsx(e.code,{children:"mandatory"})," 禁止使用 eval。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-eval",children:"no-eval"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"eval"})," 语句存在安全风险，可能导致注入攻击。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const obj = { x: 'foo' };
@@ -4525,7 +4525,7 @@ const value = obj[key];
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.2【强制】禁止使用 debugger。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-debugger",children:"no-debugger"})]}),`
+`,n.jsxs(e.p,{children:["2.10.2 ",n.jsx(e.code,{children:"mandatory"})," 禁止使用 debugger。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-debugger",children:"no-debugger"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"debugger"})," 语句会让程序暂停，并在当前位置开启调试器。它通常在程序调试阶段使用，不应发布到线上。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function isTruthy(x) {
@@ -4535,7 +4535,7 @@ function isTruthy(x) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.3【推荐】禁止使用 alert。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-alert",children:"no-alert"})]}),`
+`,n.jsxs(e.p,{children:["2.10.3 ",n.jsx(e.code,{children:"recommended"})," 禁止使用 alert。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-alert",children:"no-alert"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"alert"})," 语句会使浏览器弹出原生警告框，这可能让人感觉你的程序出错了。如果需要对用户弹出警告信息，好的做法是使用第三方的弹窗组件或自己定义警告框样式。同理，",n.jsx(e.code,{children:"confirm"})," 和 ",n.jsx(e.code,{children:"prompt"})," 语句也不应\b被使用。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 alert('Oops!');
@@ -4545,7 +4545,7 @@ Alert('Oops!');
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.4【推荐】生产环境\b禁止使用 console。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-console",children:"no-console"})]}),`
+`,n.jsxs(e.p,{children:["2.10.4 ",n.jsx(e.code,{children:"recommended"})," 生产环境\b禁止使用 console。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-console",children:"no-console"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"console"})," 语句通常在调试阶段使用，发布上线前，应该去掉代码里所有的 ",n.jsx(e.code,{children:"console"})," 语句。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 console.log('Some debug messages..');
@@ -4563,7 +4563,7 @@ utils.log('Some debug messages..');
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.5【强制】禁止对原生对象或只读的全局对象进行赋值。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-global-assign",children:"no-global-assign"})]}),`
+`,n.jsxs(e.p,{children:["2.10.5 ",n.jsx(e.code,{children:"mandatory"})," 禁止对原生对象或只读的全局对象进行赋值。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-global-assign",children:"no-global-assign"})]}),`
 `,n.jsxs(e.p,{children:["JS 执行环境中会包含一些全局变量和原生对象，如浏览器环境中的 ",n.jsx(e.code,{children:"window"}),"，node 环境中的 ",n.jsx(e.code,{children:"global"})," 、",n.jsx(e.code,{children:"process"}),"，",n.jsx(e.code,{children:"Object"}),"，",n.jsx(e.code,{children:"undefined"})," 等。除了像 ",n.jsx(e.code,{children:"window"})," 这样的众所周知的对象，JS 还提供了数百个内置全局对象，你可能在定义全局变量时无意对它们进行了重新赋值，因此最好的做法是不要定义全局变量。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 window = {};
@@ -4579,7 +4579,7 @@ undefined = 1;
 `]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.1【推荐】单行注释使用 //。"}),`
+`,n.jsxs(e.p,{children:["3.1 ",n.jsx(e.code,{children:"recommended"})," 单行注释使用 //。"]}),`
 `,n.jsx(e.p,{children:"注释应单独一行写在被注释对象的上方，不要追加在某条语句的后面："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const active = true;  // is current tab
@@ -4627,7 +4627,7 @@ function getType() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.2【推荐】多行注释使用 /** ... */，而不是多行的 //。"}),`
+`,n.jsxs(e.p,{children:["3.2 ",n.jsx(e.code,{children:"recommended"})," 多行注释使用 /** ... */，而不是多行的 //。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 // make() returns a new element
 // based on the passed in tag name
@@ -4650,7 +4650,7 @@ function make(tag) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.3【强制】注释内容和注释符之间需要有一个空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/spaced-comment",children:"spaced-comment"})]}),`
+`,n.jsxs(e.p,{children:["3.3 ",n.jsx(e.code,{children:"mandatory"})," 注释内容和注释符之间需要有一个空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/spaced-comment",children:"spaced-comment"})]}),`
 `,n.jsx(e.p,{children:"注释内容和注释符之间需要有一个空格，以增加可读性："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 //is current tab
@@ -4684,7 +4684,7 @@ function make(tag) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.4【参考】合理使用特殊注释标记。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-warning-comments",children:"no-warning-comments"})]}),`
+`,n.jsxs(e.p,{children:["3.4 ",n.jsx(e.code,{children:"referenced"})," 合理使用特殊注释标记。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-warning-comments",children:"no-warning-comments"})]}),`
 `,n.jsx(e.p,{children:"有时我们发现某个可能的 bug，但因为一些原因还没法修复；或者某个地方还有一些待完成的功能，这时我们需要使用相应的特殊标记注释来告知未来的自己或合作者。最常用的特殊标记有两种："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:n.jsx(e.code,{children:"// FIXME: 说明问题是什么"})}),`
@@ -4705,7 +4705,7 @@ function make(tag) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.5【参考】文档类注释使用 jsdoc 规范。"}),`
+`,n.jsxs(e.p,{children:["3.5 ",n.jsx(e.code,{children:"referenced"})," 文档类注释使用 jsdoc 规范。"]}),`
 `,n.jsxs(e.p,{children:["文档类注释，如函数、类、文件、事件等，推荐使用 ",n.jsx(e.a,{href:"http://usejsdoc.org/",children:"jsdoc"})," 规范或类 jsdoc 的规范。"]}),`
 `,n.jsx(e.p,{children:"例如："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`/**
@@ -4739,17 +4739,17 @@ Book.prototype = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.6【参考】无用的代码注释应被即时删除。"}),`
+`,n.jsxs(e.p,{children:["3.6 ",n.jsx(e.code,{children:"referenced"})," 无用的代码注释应被即时删除。"]}),`
 `,n.jsx(e.p,{children:"无用的注释代码会使程序变得臃肿并降低可读性，应被即时删除。你可以通过版本控制系统找回被删除的代码。"}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h2,{children:"4 命名"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.1【参考】文件名：使用小写字母命名。考虑到部分操作系统（如 Windows, MacOS）下文件系统大小写不敏感，推荐使用 ",n.jsx(e.code,{children:"-"})," 连接。例如：hello-world.js。"]}),`
+`,n.jsxs(e.p,{children:["4.1 ",n.jsx(e.code,{children:"referenced"})," 文件名：使用小写字母命名。考虑到部分操作系统（如 Windows, MacOS）下文件系统大小写不敏感，推荐使用 ",n.jsx(e.code,{children:"-"})," 连接。例如：hello-world.js。"]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.2【参考】使用小驼峰（camelCase）命名原始类型、对象、函数、实例。",n.jsx(e.a,{href:"https://eslint.org/docs/rules/camelcase",children:"camelcase"})]}),`
+`,n.jsxs(e.p,{children:["4.2 ",n.jsx(e.code,{children:"referenced"})," 使用小驼峰（camelCase）命名原始类型、对象、函数、实例。",n.jsx(e.a,{href:"https://eslint.org/docs/rules/camelcase",children:"camelcase"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const this_is_my_string = 'foo';
 const this_is_my_object = {};
@@ -4762,7 +4762,7 @@ function thisIsMyFunction() {}
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.3【强制】使用大驼峰（PascalCase）命名类和构造函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/new-cap",children:"new-cap"})]}),`
+`,n.jsxs(e.p,{children:["4.3 ",n.jsx(e.code,{children:"mandatory"})," 使用大驼峰（PascalCase）命名类和构造函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/new-cap",children:"new-cap"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function user(options) {
   this.name = options.name;
@@ -4785,7 +4785,7 @@ const good = new User({
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"4.4【参考】全部大写字母&单词间用下划线分割的命名模式（UPPERCASE_VARIABLES）。"}),`
+`,n.jsxs(e.p,{children:["4.4 ",n.jsx(e.code,{children:"referenced"})," 全部大写字母&单词间用下划线分割的命名模式（UPPERCASE_VARIABLES）。"]}),`
 `,n.jsx(e.p,{children:"全大写字母、单词间使用下划线分割的命名模式（UPPERCASE_VARIABLES），仅用于命名常量，且该常量需同时满足如下条件："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["使用 ",n.jsx(e.code,{children:"const"})," 关键字声明"]}),`
@@ -4814,7 +4814,7 @@ export const AN_OBJECT = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"4.5【参考】模块相关的命名规范。"}),`
+`,n.jsxs(e.p,{children:["4.5 ",n.jsx(e.code,{children:"referenced"})," 模块相关的命名规范。"]}),`
 `,n.jsxs(e.p,{children:["使用小驼峰（camelCase）命名 ",n.jsx(e.code,{children:"export"})," 的函数："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`function makeStyleGuide() {
   // ...
@@ -4833,7 +4833,7 @@ export default AnObject;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.6【参考】命名不要以下划线开头或结尾。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-underscore-dangle",children:"no-underscore-dangle"})]}),`
+`,n.jsxs(e.p,{children:["4.6 ",n.jsx(e.code,{children:"referenced"})," 命名不要以下划线开头或结尾。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-underscore-dangle",children:"no-underscore-dangle"})]}),`
 `,n.jsx(e.p,{children:"JS 没有私有属性或私有方法的概念，这样的命名可能会让人误解。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 this.__firstName__ = 'Panda';
@@ -4849,7 +4849,7 @@ this.firstName = 'Panda';
 `,n.jsx(e.p,{children:"这个章节是为还在使用 ES5 及之前版本 JS 的同学准备。因为本规约以 ES6 编写，你可以通过阅读本章节来了解 ES5 中有哪些需要额外注意的地方。"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"5.1【推荐】ES5 中的变量声明。"}),`
+`,n.jsxs(e.p,{children:["5.1 ",n.jsx(e.code,{children:"recommended"})," ES5 中的变量声明。"]}),`
 `,n.jsxs(e.p,{children:["使用 ",n.jsx(e.code,{children:"var"})," 进行声明："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// good
 var foo = 'foo';
@@ -4881,7 +4881,7 @@ console.log(foo); // => foo
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.2【强制】对于逗号分隔的多行结构，不要加上最后一个\b行末逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-dangle",children:"comma-dangle"})]}),`
+`,n.jsxs(e.p,{children:["5.2 ",n.jsx(e.code,{children:"mandatory"})," 对于逗号分隔的多行结构，不要加上最后一个\b行末逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-dangle",children:"comma-dangle"})]}),`
 `,n.jsx(e.p,{children:"这样做会在 IE6/7 和 IE9 怪异模式下引起问题。另外，多余的逗号在某些 ES3 的实现里会增加数组的长度。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 var hero = {
@@ -4897,7 +4897,7 @@ var hero = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"5.3【参考】使用 Array 的 slice 方法进行数组复制和类数组对象转换。"}),`
+`,n.jsxs(e.p,{children:["5.3 ",n.jsx(e.code,{children:"referenced"})," 使用 Array 的 slice 方法进行数组复制和类数组对象转换。"]}),`
 `,n.jsx(e.p,{children:"数组复制："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`var items = [1, 2, 3];
 
@@ -4918,7 +4918,7 @@ var itemsCopy = items.slice();
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"5.4【推荐】不要使用保留字作为对象的属性名。"}),`
+`,n.jsxs(e.p,{children:["5.4 ",n.jsx(e.code,{children:"recommended"})," 不要使用保留字作为对象的属性名。"]}),`
 `,n.jsxs(e.p,{children:["不要使用",n.jsx(e.a,{href:"http://es5.github.io/#x7.6.1",children:"保留字"}),"作为对象的属性名，它们在 IE8 中不工作"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 var superman = {
@@ -4954,7 +4954,7 @@ var superman = {
 `,n.jsx(e.h3,{children:"1.1 缩进"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.1【强制】使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/indent",children:"indent"})]}),`
+`,n.jsxs(e.p,{children:["1.1.1 ",n.jsx(e.code,{children:"强制"})," 使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/indent",children:"indent"})]}),`
 `,n.jsx(e.p,{children:"统一使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function foo() {
@@ -4971,7 +4971,7 @@ function foo() {
 `,n.jsx(e.h3,{children:"1.2 分号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.1【强制】使用分号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/semi",children:"semi"})]}),`
+`,n.jsxs(e.p,{children:["1.2.1 ",n.jsx(e.code,{children:"强制"})," 使用分号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/semi",children:"semi"})]}),`
 `,n.jsx(e.p,{children:"统一以分号结束语句，可以避免 JS 引擎自动分号插入机制的怪异行为，在语义上也更加明确。"}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsxs(e.p,{children:["自动分号插入机制（即 ",n.jsx(e.a,{href:"https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion",children:"Automatic Semicolon Insertion"}),"，简称 ASI） 是当 JS 遇到不带分号的语句时判断是否自动添加分号的机制，它在个别情况下的行为比较怪异，可能导致意想不到的效果。此外随着 JS 新特性的增加，异常的情况可能变得更加复杂。"]}),`
@@ -5016,7 +5016,7 @@ function foo() {
 `,n.jsx(e.h3,{children:"1.3 逗号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.1【强制】对于逗号分隔的多行结构，不使用行首逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-style",children:"comma-style"})]}),`
+`,n.jsxs(e.p,{children:["1.3.1 ",n.jsx(e.code,{children:"强制"})," 对于逗号分隔的多行结构，不使用行首逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-style",children:"comma-style"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const story = [
     once
@@ -5047,7 +5047,7 @@ const hero = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.2【强制】对于逗号分隔的多行结构，始终加上最后一个逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-dangle",children:"comma-dangle"})]}),`
+`,n.jsxs(e.p,{children:["1.3.2 ",n.jsx(e.code,{children:"强制"})," 对于逗号分隔的多行结构，始终加上最后一个逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-dangle",children:"comma-dangle"})]}),`
 `,n.jsx(e.p,{children:"这样可以使增删行更加容易，也会使 git diffs 更清晰。Babel 等编译器会在编译后的代码里帮我们去掉最后额外的逗号，因此不必担心在旧浏览器中的问题。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-diff",children:`// bad - 没有结尾逗号时，新增一行的 git diff 示例
 const hero = {
@@ -5132,7 +5132,7 @@ function createHero(
 `]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.1【推荐】始终使用大括号包裹代码块。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/curly",children:"curly"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/nonblock-statement-body-position",children:"nonblock-statement-body-position"})]}),`
+`,n.jsxs(e.p,{children:["1.4.1 ",n.jsx(e.code,{children:"推荐"})," 始终使用大括号包裹代码块。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/curly",children:"curly"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/nonblock-statement-body-position",children:"nonblock-statement-body-position"})]}),`
 `,n.jsx(e.p,{children:"多行代码块必须用大括号包裹："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (foo)
@@ -5163,7 +5163,7 @@ if (foo) {
 `,n.jsx(e.h4,{children:"1.4.2 大括号换行风格"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.2.1【强制】对于非空代码块，采用 Egyptian Brackets 风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/brace-style",children:"brace-style"})]}),`
+`,n.jsxs(e.p,{children:["1.4.2.1 ",n.jsx(e.code,{children:"强制"})," 对于非空代码块，采用 Egyptian Brackets 风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/brace-style",children:"brace-style"})]}),`
 `,n.jsxs(e.p,{children:["对于非空的代码块，大括号的换行方式采用 ",n.jsx(e.a,{href:"https://blog.codinghorror.com/new-programming-jargon/",children:"Egyptian Brackets"})," 风格，具体规则如下："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["左大括号 ",n.jsx(e.code,{children:"{"})," 前面不换行，后面换行"]}),`
@@ -5192,7 +5192,7 @@ if (foo) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4.2.2【参考】对于空代码块，可以将大括号直接闭合。"}),`
+`,n.jsxs(e.p,{children:["1.4.2.2 ",n.jsx(e.code,{children:"参考"})," 对于空代码块，可以将大括号直接闭合。"]}),`
 `,n.jsxs(e.p,{children:["对于空的代码块，且不在类似 ",n.jsx(e.code,{children:"if..else.."})," 或 ",n.jsx(e.code,{children:"try..catch..finally.."})," 的多块结构中时，可以立即将大括号闭合："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// good
 function doNothing() {}
@@ -5226,7 +5226,7 @@ try {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.3【强制】不要使用空代码块。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-empty",children:"no-empty"})]}),`
+`,n.jsxs(e.p,{children:["1.4.3 ",n.jsx(e.code,{children:"强制"})," 不要使用空代码块。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-empty",children:"no-empty"})]}),`
 `,n.jsx(e.p,{children:"不要让代码中出现空代码块，这会使阅读者感到困惑。如果必须使用空块，需在块内写明注释。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (condition) {
@@ -5247,7 +5247,7 @@ if (condition) {
 `,n.jsx(e.p,{children:"合理并一致地使用空格有助于提升代码的可读性和可维护性。具体来说，我们采用如下的空格风格："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.1【强制】空格风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-before-blocks",children:"space-before-blocks"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/keyword-spacing",children:"keyword-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-in-parens",children:"space-in-parens"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/array-bracket-spacing",children:"array-bracket-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/object-curly-spacing",children:"object-curly-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-infix-ops",children:"space-infix-ops"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/key-spacing",children:"key-spacing"})]}),`
+`,n.jsxs(e.p,{children:["1.5.1 ",n.jsx(e.code,{children:"强制"})," 空格风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-before-blocks",children:"space-before-blocks"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/keyword-spacing",children:"keyword-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-in-parens",children:"space-in-parens"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/array-bracket-spacing",children:"array-bracket-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/object-curly-spacing",children:"object-curly-spacing"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/space-infix-ops",children:"space-infix-ops"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/key-spacing",children:"key-spacing"})]}),`
 `,n.jsxs(e.p,{children:["块的左大括号 ",n.jsx(e.code,{children:"{"})," 前有一个空格："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function test(){
@@ -5373,7 +5373,7 @@ const x = !y;
 `,n.jsx(e.h3,{children:"1.6 空行"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.6.1【推荐】在文件末尾保留一行空行。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/eol-last",children:"eol-last"})]}),`
+`,n.jsxs(e.p,{children:["1.6.1 ",n.jsx(e.code,{children:"推荐"})," 在文件末尾保留一行空行。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/eol-last",children:"eol-last"})]}),`
 `,n.jsx(e.p,{children:"在非空文件中保留拖尾换行是一种常见的 UNIX 风格。它的好处同输出文件到终端一样，方便在串联和追加文件时不会打断 shell 的提示。"}),`
 `,n.jsx(e.p,{children:"我们统一在文件末尾保留一行空行，即用一个换行符结束文件："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 文件末尾未保留换行符
@@ -5394,7 +5394,7 @@ export default foo;↵
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.6.2【强制】块\b的开始和结束不能是空行。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/padded-blocks",children:"padded-blocks"})]}),`
+`,n.jsxs(e.p,{children:["1.6.2 ",n.jsx(e.code,{children:"强制"})," 块\b的开始和结束不能是空行。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/padded-blocks",children:"padded-blocks"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function bar() {
 
@@ -5425,7 +5425,7 @@ if (baz) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.6.3【参考】在块末和新语句间插入一个空行。"}),`
+`,n.jsxs(e.p,{children:["1.6.3 ",n.jsx(e.code,{children:"参考"})," 在块末和新语句间插入一个空行。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (foo) {
   return bar;
@@ -5464,7 +5464,7 @@ return obj;
 `,n.jsx(e.h3,{children:"1.7 最大字符数和最大行数"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.7.1【推荐】单行最大字符数：100。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-len",children:"max-len"})]}),`
+`,n.jsxs(e.p,{children:["1.7.1 ",n.jsx(e.code,{children:"推荐"})," 单行最大字符数：100。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-len",children:"max-len"})]}),`
 `,n.jsx(e.p,{children:"过长的单行代码不易阅读和维护，需要进行合理换行。"}),`
 `,n.jsx(e.p,{children:"我们推荐单行代码最多不要超过 100 个字符，除了以下两种情况："}),`
 `,n.jsxs(e.ul,{children:[`
@@ -5496,11 +5496,11 @@ $.ajax({
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.7.2【参考】文件最大行数：1000。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-lines",children:"max-lines"})]}),`
+`,n.jsxs(e.p,{children:["1.7.2 ",n.jsx(e.code,{children:"参考"})," 文件最大行数：1000。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-lines",children:"max-lines"})]}),`
 `,n.jsx(e.p,{children:"过长的文件不易阅读和维护，最好对其进行拆分。"}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.7.3【参考】函数最大行数：80。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-lines-per-function",children:"max-lines-per-function"})]}),`
+`,n.jsxs(e.p,{children:["1.7.3 ",n.jsx(e.code,{children:"参考"})," 函数最大行数：80。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-lines-per-function",children:"max-lines-per-function"})]}),`
 `,n.jsx(e.p,{children:"过长的函数不易阅读和维护，最好对其进行拆分。"}),`
 `]}),`
 `]}),`
@@ -5508,7 +5508,7 @@ $.ajax({
 `,n.jsx(e.h3,{children:"2.1 变量声明"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.1【强制】使用 const 或 let 声明变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-var",children:"no-var"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-undef",children:"no-undef"})]}),`
+`,n.jsxs(e.p,{children:["2.1.1 ",n.jsx(e.code,{children:"强制"})," 使用 const 或 let 声明变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-var",children:"no-var"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-undef",children:"no-undef"})]}),`
 `,n.jsxs(e.p,{children:["从 ES6 开始，可以使用 ",n.jsx(e.code,{children:"let"})," 和 ",n.jsx(e.code,{children:"const"})," 关键字在块级作用域下声明变量。块级作用域在很多其他编程语言中都有使用，这样声明的变量不会污染全局命名空间。"]}),`
 `,n.jsxs(e.p,{children:["不要使用 ",n.jsx(e.code,{children:"var"}),"："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -5528,7 +5528,7 @@ const foo = 'foo';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.2【强制】正确地使用 const 和 let。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-const",children:"prefer-const"})]}),`
+`,n.jsxs(e.p,{children:["2.1.2 ",n.jsx(e.code,{children:"强制"})," 正确地使用 const 和 let。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-const",children:"prefer-const"})]}),`
 `,n.jsxs(e.p,{children:["声明变量时，应优先使用 ",n.jsx(e.code,{children:"const"}),"，只有当变量会被重新赋值时才使用 ",n.jsx(e.code,{children:"let"}),"："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 声明后未发生重新赋值，应使用 const
 let flag = true;
@@ -5557,7 +5557,7 @@ obj.name = 'bar';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.3【强制】一条声明语句声明一个变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/one-var",children:"one-var"})]}),`
+`,n.jsxs(e.p,{children:["2.1.3 ",n.jsx(e.code,{children:"强制"})," 一条声明语句声明一个变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/one-var",children:"one-var"})]}),`
 `,n.jsxs(e.p,{children:["这样做更易于追加新的声明语句（你不需要总去把最后的 ",n.jsx(e.code,{children:";"})," 改成 ",n.jsx(e.code,{children:","})," 了），也更易于进行单步调试。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = 1,
@@ -5569,7 +5569,7 @@ const bar = 2;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.4【强制】声明的变量必须被使用。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-unused-vars",children:"no-unused-vars"})]}),`
+`,n.jsxs(e.p,{children:["2.1.4 ",n.jsx(e.code,{children:"强制"})," 声明的变量必须被使用。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-unused-vars",children:"no-unused-vars"})]}),`
 `,n.jsx(e.p,{children:"声明而未使用的变量、表达式可能带来潜在的问题，也会给维护者造成困扰，应将它们删除。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 未使用变量 foo
 const foo = 1;
@@ -5601,7 +5601,7 @@ function getXPlusY(x, y) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.5【强制】不要在声明前就使用变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-use-before-define",children:"no-use-before-define"})]}),`
+`,n.jsxs(e.p,{children:["2.1.5 ",n.jsx(e.code,{children:"强制"})," 不要在声明前就使用变量。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-use-before-define",children:"no-use-before-define"})]}),`
 `,n.jsxs(e.p,{children:["在 ES5 中，由于 ",n.jsx(e.code,{children:"var"})," 的声明提升作用，变量可以在\b声明前\b使用，但这样做可能给人带来疑惑和隐患，所以不要在声明前就使用变量："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 console.log(foo); // => undefined
@@ -5622,7 +5622,7 @@ console.log(foo); // => foo
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1.6【参考】哪里使用，哪里声明。"}),`
+`,n.jsxs(e.p,{children:["2.1.6 ",n.jsx(e.code,{children:"参考"})," 哪里使用，哪里声明。"]}),`
 `,n.jsx(e.p,{children:"在变量被使用前再进行声明，而不是统一在块开始处进行声明。"}),`
 `,n.jsxs(e.p,{children:["ES6 提供的 ",n.jsx(e.code,{children:"let"})," 和 ",n.jsx(e.code,{children:"const"})," 是块级作用域，不存在类似 ",n.jsx(e.code,{children:"var"})," 的声明提升的问题。因此我们可以把声明写在更合理\b的地方（\b一般是变量被使用前），而不是统一在块开始处进行声明。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 如果权限校验（checkUserPermission）失败，fetchData 是不必要的
@@ -5657,7 +5657,7 @@ function getData(id) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.7【强制】变量不要与外层作用域已存在的变量同名。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-shadow",children:"no-shadow"})]}),`
+`,n.jsxs(e.p,{children:["2.1.7 ",n.jsx(e.code,{children:"强制"})," 变量不要与外层作用域已存在的变量同名。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-shadow",children:"no-shadow"})]}),`
 `,n.jsx(e.p,{children:"如果变量与外层已存在变量同名，会降低可读性，也会导致内层作用域无法读取外层作用域的同名变量。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = 1;
@@ -5676,7 +5676,7 @@ if (someCondition) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.8【强制】不要重复声明变量和函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-redeclare",children:"no-redeclare"})]}),`
+`,n.jsxs(e.p,{children:["2.1.8 ",n.jsx(e.code,{children:"强制"})," 不要重复声明变量和函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-redeclare",children:"no-redeclare"})]}),`
 `,n.jsxs(e.p,{children:["在 ES5 中，尽管使用 ",n.jsx(e.code,{children:"var"})," 重复声明不会报错，但这样做会令人疑惑，降低程序的可维护性。同理，函数的声明也不要与已存在的变量和函数重名："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 var a = 'foo';
@@ -5729,7 +5729,7 @@ myFunc('bar'); // => 'bar'
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.9【强制】禁止连续赋值。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-multi-assign",children:"no-multi-assign"})]}),`
+`,n.jsxs(e.p,{children:["2.1.9 ",n.jsx(e.code,{children:"强制"})," 禁止连续赋值。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-multi-assign",children:"no-multi-assign"})]}),`
 `,n.jsx(e.p,{children:"变量的连续赋值让人难以阅读和理解，并且可能导致意想不到的结果（如产生全局变量）。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 本例的结果是 let 仅对 a 起到\b\b了预想效果，b 和 c 都成了全局变量
 (function test() {
@@ -5753,7 +5753,7 @@ console.log(c); // throws ReferenceError
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1.10【参考】将 let 和 const 分别归类。"}),`
+`,n.jsxs(e.p,{children:["2.1.10 ",n.jsx(e.code,{children:"参考"})," 将 let 和 const 分别归类。"]}),`
 `,n.jsxs(e.p,{children:["将 ",n.jsx(e.code,{children:"let"})," 和 ",n.jsx(e.code,{children:"const"})," 归类写在一起，可以提高代码整洁性。此外，\b如果你想按变量的含义排序分组也是允许的。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 let a;
@@ -5777,7 +5777,7 @@ let e;
 `]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.1【强制】不要使用 new Number/String/Boolean。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-wrappers",children:"no-new-wrappers"})]}),`
+`,n.jsxs(e.p,{children:["2.2.1 ",n.jsx(e.code,{children:"强制"})," 不要使用 new Number/String/Boolean。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-wrappers",children:"no-new-wrappers"})]}),`
 `,n.jsxs(e.p,{children:["使用 new Number/String//Boolean 声明不会有任何好处，还会导致变量成为 ",n.jsx(e.code,{children:"object"})," 类型，可能引起 bug。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const num = new Number(0);
@@ -5801,7 +5801,7 @@ if (bool) { // false
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.2【推荐】类型转换。"}),`
+`,n.jsxs(e.p,{children:["2.2.2 ",n.jsx(e.code,{children:"推荐"})," 类型转换。"]}),`
 `,n.jsxs(e.p,{children:["【数字】使用 ",n.jsx(e.code,{children:"Number()"})," 或 ",n.jsx(e.code,{children:"parseInt()"})," ："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const str = '1';
 
@@ -5839,7 +5839,7 @@ const hasAge = !!age;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.3【推荐】使用 parseInt() 方法时总是带上基数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/radix",children:"radix"})]}),`
+`,n.jsxs(e.p,{children:["2.2.3 ",n.jsx(e.code,{children:"推荐"})," 使用 parseInt() 方法时总是带上基数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/radix",children:"radix"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"parseInt"})," 方法的第一个参数是\b待转换的字符串，第二个参数是转换基数。当第二个参数省略时，",n.jsx(e.code,{children:"parseInt"})," 会根据第一个参数自动判断基数："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"如果\b以 0x 开头，则使用 16 作基数"}),`
@@ -5856,7 +5856,7 @@ parseInt("071", 10); // => 71
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.4【强制】避免不必要的布尔\b类型转换。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-extra-boolean-cast",children:"no-extra-boolean-cast"})]}),`
+`,n.jsxs(e.p,{children:["2.2.4 ",n.jsx(e.code,{children:"强制"})," 避免不必要的布尔\b类型转换。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-extra-boolean-cast",children:"no-extra-boolean-cast"})]}),`
 `,n.jsxs(e.p,{children:["在 ",n.jsx(e.code,{children:"if"})," 等条件语句中，将表达式的结果强制转换成布尔值是多余的："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (!!foo) {
@@ -5885,7 +5885,7 @@ const a = flag ? b : c;
 `,n.jsx(e.h4,{children:"2.2.5 字符串"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.5.1【强制】字符串优先使用单引号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/quotes",children:"quotes"})]}),`
+`,n.jsxs(e.p,{children:["2.2.5.1 ",n.jsx(e.code,{children:"强制"})," 字符串优先使用单引号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/quotes",children:"quotes"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const name = "tod";
 const name = \`tod\`; // 模板字符串中应包含变量或换行，否则需用单引号
@@ -5895,7 +5895,7 @@ const name = 'tod';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.5.2【推荐】使用模板字符串替代字符串拼接。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-template",children:"prefer-template"})]}),`
+`,n.jsxs(e.p,{children:["2.2.5.2 ",n.jsx(e.code,{children:"推荐"})," 使用模板字符串替代字符串拼接。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-template",children:"prefer-template"})]}),`
 `,n.jsx(e.p,{children:"模板字符串让代码更简洁，可读性更强"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function getDisplayName({ nickName, realName }) {
@@ -5909,7 +5909,7 @@ function getDisplayName({ nickName, realName }) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.5.3【强制】禁止不必要的转义字符。",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-useless-escape",children:"no-useless-escape"})]}),`
+`,n.jsxs(e.p,{children:["2.2.5.3 ",n.jsx(e.code,{children:"强制"})," 禁止不必要的转义字符。",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-useless-escape",children:"no-useless-escape"})]}),`
 `,n.jsx(e.p,{children:"转义字符会大大降低代码的可读性，因此尽量不要滥用它们。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = '\\'this\\' \\i\\s \\"quoted\\"';
@@ -5923,7 +5923,7 @@ const foo = \`'this' is "quoted"\`;
 `,n.jsx(e.h3,{children:"2.3 数组"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.1【强制】使用字面量创建数组。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-array-constructor",children:"no-array-constructor"})]}),`
+`,n.jsxs(e.p,{children:["2.3.1 ",n.jsx(e.code,{children:"强制"})," 使用字面量创建数组。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-array-constructor",children:"no-array-constructor"})]}),`
 `,n.jsxs(e.p,{children:["不要使用 ",n.jsx(e.code,{children:"new Array()"})," 和 ",n.jsx(e.code,{children:"Array()"})," 创建数组，除非为了构造某一长度的空数组。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const a = new Array(1, 2, 3);
@@ -5935,7 +5935,7 @@ const b = new Array(500); // 构造长度为 500 的空数组
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.2【强制】某些数组方法的回调函数中必须包含 return 语句。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/array-callback-return",children:"array-callback-return"})]}),`
+`,n.jsxs(e.p,{children:["2.3.2 ",n.jsx(e.code,{children:"强制"})," 某些数组方法的回调函数中必须包含 return 语句。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/array-callback-return",children:"array-callback-return"})]}),`
 `,n.jsxs(e.p,{children:["以下数组方法：",n.jsx(e.code,{children:"map"}),", ",n.jsx(e.code,{children:"filter"}),", ",n.jsx(e.code,{children:"from "}),", ",n.jsx(e.code,{children:"every"}),", ",n.jsx(e.code,{children:"find"}),", ",n.jsx(e.code,{children:"findIndex"}),", ",n.jsx(e.code,{children:"reduce"}),", ",n.jsx(e.code,{children:"reduceRight"}),", ",n.jsx(e.code,{children:"some"}),", ",n.jsx(e.code,{children:"sort"})," 的回调函数中必须包含 ",n.jsx(e.code,{children:"return"})," 语句，否则可能会产生误用或错误。"]}),`
 `,n.jsxs(e.p,{children:["一个常见的误用是，本该用 ",n.jsx(e.code,{children:"forEach"})," 的场景却用了 ",n.jsx(e.code,{children:"map"}),"："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// 欲将 ['a', 'b', 'c'] 转换成 {a: 0, b: 1, c: 2}
@@ -5969,7 +5969,7 @@ const myObj = myArray.reduce((memo, item, index) => {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3.3【推荐】使用扩展运算符 ... 处理数组。"}),`
+`,n.jsxs(e.p,{children:["2.3.3 ",n.jsx(e.code,{children:"推荐"})," 使用扩展运算符 ... 处理数组。"]}),`
 `,n.jsxs(e.p,{children:["ES6 提供了扩展运算符 ",n.jsx(e.code,{children:"..."}),"，可以简化一些数组操作。"]}),`
 `,n.jsx(e.p,{children:"数组复制："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -6020,7 +6020,7 @@ const baz = Array.from(foo, bar);
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3.4【推荐】使用解构获取数组元素。"}),`
+`,n.jsxs(e.p,{children:["2.3.4 ",n.jsx(e.code,{children:"推荐"})," 使用解构获取数组元素。"]}),`
 `,n.jsx(e.p,{children:"使用 ES6 提供的解构方法获取数组元素："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const arr = [1, 2, 3, 4];
@@ -6049,7 +6049,7 @@ const { left, top } = giveMeDivPosition(div);
 `,n.jsx(e.h3,{children:"2.4 对象"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.1【强制】使用字面量创建对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-object",children:"no-new-object"})]}),`
+`,n.jsxs(e.p,{children:["2.4.1 ",n.jsx(e.code,{children:"强制"})," 使用字面量创建对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-object",children:"no-new-object"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const obj = new Object();
 
@@ -6058,7 +6058,7 @@ const obj = {};
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.2【强制】使用对象属性和方法的简写语法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/object-shorthand",children:"object-shorthand"})]}),`
+`,n.jsxs(e.p,{children:["2.4.2 ",n.jsx(e.code,{children:"强制"})," 使用对象属性和方法的简写语法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/object-shorthand",children:"object-shorthand"})]}),`
 `,n.jsx(e.p,{children:"ES6 提供了对象属性和方法的简写语法，可以使代码更加简洁："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const value = 'foo';
 
@@ -6080,7 +6080,7 @@ const atom = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.3【参考】将对象的简写属性写在一起。"}),`
+`,n.jsxs(e.p,{children:["2.4.3 ",n.jsx(e.code,{children:"参考"})," 将对象的简写属性写在一起。"]}),`
 `,n.jsx(e.p,{children:"将简写的属性写在一起，置于对象的起始或末尾，可以提高代码整洁性。当然，如果你出于属性的含义或其他考虑进行排序也是允许的。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const anakinSkywalker = 'Anakin Skywalker';
 const lukeSkywalker = 'Luke Skywalker';
@@ -6107,7 +6107,7 @@ const obj = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.4【强制】对象的属性名不要用引号包裹，除非包含特殊字符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/quote-props",children:"quote-props"})]}),`
+`,n.jsxs(e.p,{children:["2.4.4 ",n.jsx(e.code,{children:"强制"})," 对象的属性名不要用引号包裹，除非包含特殊字符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/quote-props",children:"quote-props"})]}),`
 `,n.jsx(e.p,{children:"这样更加简洁，也有助于语法高亮和一些 JS 引擎的优化。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const bad = {
@@ -6127,7 +6127,7 @@ const good = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.5【强制】优先使用 . 访问对象的属性。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/dot-notation",children:"dot-notation"})]}),`
+`,n.jsxs(e.p,{children:["2.4.5 ",n.jsx(e.code,{children:"强制"})," 优先使用 . 访问对象的属性。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/dot-notation",children:"dot-notation"})]}),`
 `,n.jsxs(e.p,{children:["这样可以提高代码可读性。",n.jsx(e.code,{children:"[]"})," \b仅应在访问动态属性名\b或包含特殊字符的属性名时被使用。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const obj = {
   active: true,
@@ -6145,7 +6145,7 @@ const bar = obj['data-bar'];
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.6【推荐】使用扩展运算符 ... 处理对象。"}),`
+`,n.jsxs(e.p,{children:["2.4.6 ",n.jsx(e.code,{children:"推荐"})," 使用扩展运算符 ... 处理对象。"]}),`
 `,n.jsxs(e.p,{children:["替代 ",n.jsx(e.code,{children:"Object.assign"})," 方法，来进行对象\b的浅拷贝："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// very bad - original 会被影响
 const original = { a: 1, b: 2 };
@@ -6167,7 +6167,7 @@ const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.7【推荐】使用解构获取对象属性。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-destructuring",children:"prefer-destructuring"})]}),`
+`,n.jsxs(e.p,{children:["2.4.7 ",n.jsx(e.code,{children:"推荐"})," 使用解构获取对象属性。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-destructuring",children:"prefer-destructuring"})]}),`
 `,n.jsx(e.p,{children:"获取对象的同名属性、多个属性时，使用解构让代码更简洁，也可以减少为了使用属性而创建的临时引用。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function getFullName(user) {
@@ -6190,7 +6190,7 @@ function getFullName({ firstName, lastName }) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4.8【参考】对象的动态属性名应直接写在字面量定义中。"}),`
+`,n.jsxs(e.p,{children:["2.4.8 ",n.jsx(e.code,{children:"参考"})," 对象的动态属性名应直接写在字面量定义中。"]}),`
 `,n.jsx(e.p,{children:"ES6 允许在新建对象字面量时使用表达式作为属性名，这样可以将所有属性定义在一个地方。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`function getKey(k) {
   return \`a key named \${k}\`;
@@ -6212,7 +6212,7 @@ const obj = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.9【强制】不要直接在对象上调用 Object.prototypes 上的方法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-prototype-builtins",children:"no-prototype-builtins"})]}),`
+`,n.jsxs(e.p,{children:["2.4.9 ",n.jsx(e.code,{children:"强制"})," 不要直接在对象上调用 Object.prototypes 上的方法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-prototype-builtins",children:"no-prototype-builtins"})]}),`
 `,n.jsxs(e.p,{children:["不要直接在对象上调用 ",n.jsx(e.code,{children:"Object.prototypes"})," 上的方法，例如 ",n.jsx(e.code,{children:"hasOwnProperty"}),"、",n.jsx(e.code,{children:"propertyIsEnumerable"}),"、",n.jsx(e.code,{children:"isPrototypeOf"}),"。"]}),`
 `,n.jsx(e.p,{children:"这些方法可能会被对象上的属性覆盖，导致错误："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const obj = {
@@ -6234,7 +6234,7 @@ console.log(Object.prototype.hasOwnProperty.call(objNull, 'foo'));
 `,n.jsx(e.h3,{children:"2.5 函数"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.1【强制】不要用 Function 构造函数创建函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-func",children:"no-new-func"})]}),`
+`,n.jsxs(e.p,{children:["2.5.1 ",n.jsx(e.code,{children:"强制"})," 不要用 Function 构造函数创建函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-new-func",children:"no-new-func"})]}),`
 `,n.jsxs(e.p,{children:["使用 ",n.jsx(e.code,{children:"new Function"})," 创建函数会像 ",n.jsx(e.code,{children:"eval()"})," 方法一样执行字符串，带来安全隐患"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const sum = new Function('a', 'b', 'return a + b');
@@ -6244,7 +6244,7 @@ const sum = (a, b) => (a + b);
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.2【强制】不要在块中使用函数声明。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-inner-declarations",children:"no-inner-declarations"})]}),`
+`,n.jsxs(e.p,{children:["2.5.2 ",n.jsx(e.code,{children:"强制"})," 不要在块中使用函数声明。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-inner-declarations",children:"no-inner-declarations"})]}),`
 `,n.jsxs(e.p,{children:["在非函数块（如 ",n.jsx(e.code,{children:"if"}),"、",n.jsx(e.code,{children:"while"})," 等）中，不要使用函数声明："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 函数声明不是块作用域而是函数作用域，因此在块外也能使用函数，容易引起误解
 if (true) {
@@ -6274,7 +6274,7 @@ test(); // => test
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.3【参考】使用函数表达式替代函数声明。"}),`
+`,n.jsxs(e.p,{children:["2.5.3 ",n.jsx(e.code,{children:"参考"})," 使用函数表达式替代函数声明。"]}),`
 `,n.jsx(e.p,{children:"这样可以保证函数不能在\b定义前\b被调用。"}),`
 `,n.jsx(e.p,{children:"函数声明会被提升到当前作用域的顶部，\b因此函数可以在声明语句前就被调用，这会影响\b代码的可读性\b与可维护性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -6299,7 +6299,7 @@ const foo = function foo_more_descriptive_name() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.4【强制】使用箭头函数代替匿名函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-arrow-callback",children:"prefer-arrow-callback"})]}),`
+`,n.jsxs(e.p,{children:["2.5.4 ",n.jsx(e.code,{children:"强制"})," 使用箭头函数代替匿名函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-arrow-callback",children:"prefer-arrow-callback"})]}),`
 `,n.jsxs(e.p,{children:["ES6 提供的箭头函数可以解决 ",n.jsx(e.code,{children:"this"})," 指向的问题，而且语法更简洁。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 [1, 2, 3].map(function (x) {
@@ -6315,7 +6315,7 @@ const foo = function foo_more_descriptive_name() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.5【推荐】箭头函数编码风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/arrow-parens",children:"arrow-parens"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/arrow-body-style",children:"arrow-body-style"})]}),`
+`,n.jsxs(e.p,{children:["2.5.5 ",n.jsx(e.code,{children:"推荐"})," 箭头函数编码风格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/arrow-parens",children:"arrow-parens"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/arrow-body-style",children:"arrow-body-style"})]}),`
 `,n.jsx(e.p,{children:"箭头函数参数的小括号、函数体的大括号在某些时候可以省略，这可能导致风格的不统一，因此需要规范其编码风格："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
@@ -6372,7 +6372,7 @@ const foo = function foo_more_descriptive_name() {
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.6【强制】不要将函数参数命名为 arguments。"}),`
+`,n.jsxs(e.p,{children:["2.5.6 ",n.jsx(e.code,{children:"强制"})," 不要将函数参数命名为 arguments。"]}),`
 `,n.jsxs(e.p,{children:["这会覆盖掉函数作用域中的 ",n.jsx(e.code,{children:"arguments"})," 对象。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function foo(name, options, arguments) {
@@ -6386,7 +6386,7 @@ function foo(name, options, args) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.7【强制】不要使用 arguments 对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-rest-params",children:"prefer-rest-params"})]}),`
+`,n.jsxs(e.p,{children:["2.5.7 ",n.jsx(e.code,{children:"强制"})," 不要使用 arguments 对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/prefer-rest-params",children:"prefer-rest-params"})]}),`
 `,n.jsxs(e.p,{children:["不要使用 ",n.jsx(e.code,{children:"arguments"})," 对象，使用剩余参数操作符 ",n.jsx(e.code,{children:"..."})," 代替。"]}),`
 `,n.jsxs(e.p,{children:["ES6 提供了 rest 操作符 ",n.jsx(e.code,{children:"..."}),"，与 ",n.jsx(e.code,{children:"arguments"})," 相比可以更清晰\b地聚合函数的剩余参数。此外， ",n.jsx(e.code,{children:"..."})," 得到的是一个真正的数组，而 ",n.jsx(e.code,{children:"arguments"})," 得到的则是类数组结构。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -6404,7 +6404,7 @@ foo(1, 2, 3, 4); // => [3, 4]
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.8【推荐】使用默认参数语法。"}),`
+`,n.jsxs(e.p,{children:["2.5.8 ",n.jsx(e.code,{children:"推荐"})," 使用默认参数语法。"]}),`
 `,n.jsxs(e.p,{children:["ES6 中引入了默认参数语法，相比之前为参数赋默认值的方法更加简洁、可读性更好。重新对参数赋值是不推荐的行为，且当参数的布尔类型转换结果是 ",n.jsx(e.code,{children:"false"})," 时可能会错误地被赋予默认值。"]}),`
 `,n.jsx(e.p,{children:"因此，当函数参数需要默认值时，使用默认参数语法，而不是去修改参数："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -6421,7 +6421,7 @@ const multiple = (a = 0, b = 0) => {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.9【推荐】有默认值的函数参数需要放到参数列表的最后。"}),`
+`,n.jsxs(e.p,{children:["2.5.9 ",n.jsx(e.code,{children:"推荐"})," 有默认值的函数参数需要放到参数列表的最后。"]}),`
 `,n.jsxs(e.p,{children:["否则你将无法享受到\b\b默认参数的便利，只能通过传 ",n.jsx(e.code,{children:"undefined"})," 触发参数使用默认值。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function multiply(a = 1, b) {
@@ -6438,7 +6438,7 @@ const x = multiply(42); // => 42
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.10【推荐】不要修改函数参数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-param-reassign",children:"no-param-reassign"})]}),`
+`,n.jsxs(e.p,{children:["2.5.10 ",n.jsx(e.code,{children:"推荐"})," 不要修改函数参数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-param-reassign",children:"no-param-reassign"})]}),`
 `,n.jsx(e.p,{children:"不要修改引用类型的参数，这可能导致作为入参的原变量发生变化："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const f1 = function f1(obj) {
@@ -6471,7 +6471,7 @@ function foo(bar, baz) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.11【强制】将立即执行函数表达式（IIFE）用小括号包裹。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/wrap-iife",children:"wrap-iife"})]}),`
+`,n.jsxs(e.p,{children:["2.5.11 ",n.jsx(e.code,{children:"强制"})," 将立即执行函数表达式（IIFE）用小括号包裹。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/wrap-iife",children:"wrap-iife"})]}),`
 `,n.jsx(e.p,{children:"IIFE 是一个独立的执行单元，将它用小括号包裹可以更清晰的体现这点。需要提醒的是，由于 ES6 模块语法的引入，你可能不再需要使用 IIFE 了。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`(function () {
   console.log('Welcome to the Internet. Please follow me.');
@@ -6479,7 +6479,7 @@ function foo(bar, baz) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.12【参考】函数的复杂度不应过高。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/complexity",children:"complexity"})]}),`
+`,n.jsxs(e.p,{children:["2.5.12 ",n.jsx(e.code,{children:"参考"})," 函数的复杂度不应过高。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/complexity",children:"complexity"})]}),`
 `,n.jsx(e.p,{children:"过高的复杂度意味着代码难以维护和测试。我们推荐函数的复杂度不要超过以下阈值："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["圈复杂度不超过 ",n.jsx(e.strong,{children:"10"})]}),`
@@ -6487,7 +6487,7 @@ function foo(bar, baz) {
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.13【参考】函数的参数不应过多。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-params",children:"max-params"}),`
+`,n.jsxs(e.p,{children:["2.5.13 ",n.jsx(e.code,{children:"参考"})," 函数的参数不应过多。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-params",children:"max-params"}),`
 如果函数的参数过多，将不利于函数的维护和调用。这时你需要考虑是否函数做了太多的事情，是否有必要对其进行拆分。`]}),`
 `,n.jsx(e.p,{children:"如果必须使用过多的参数，可以考虑用对象代替参数列表："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -6504,7 +6504,7 @@ doSomething({ param1: 1, param2: 2, param3: 3, param4: 4, param5: 5, param6: 6, 
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.14【强制】generator 函数内必须有 yield 语句。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/require-yield",children:"require-yield"})]}),`
+`,n.jsxs(e.p,{children:["2.5.14 ",n.jsx(e.code,{children:"强制"})," generator 函数内必须有 yield 语句。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/require-yield",children:"require-yield"})]}),`
 `,n.jsxs(e.p,{children:["如果一个 ",n.jsx(e.code,{children:"generator"})," 中没有 ",n.jsx(e.code,{children:"yield"})," 语句，那么这个 ",n.jsx(e.code,{children:"generator"})," 就不是必须的。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function* foo() {
@@ -6519,7 +6519,7 @@ function* foo() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.5.15【参考】优先使用 JS 提供的高阶函数进行迭代运算。"}),`
+`,n.jsxs(e.p,{children:["2.5.15 ",n.jsx(e.code,{children:"参考"})," 优先使用 JS 提供的高阶函数进行迭代运算。"]}),`
 `,n.jsx(e.p,{children:"需要迭代运算时，应优先使用 JS 提供的高阶函数，减少直接使用 for 循环（包括 for-in 和 for-of）。"}),`
 `,n.jsx(e.p,{children:"如使用 map() / every() / filter() / find() / findIndex() / reduce() / some() / ... 来迭代数组，使用 Object.keys() / Object.values() / Object.entries() 方法来迭代对象"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const numbers = [1, 2, 3, 4, 5];
@@ -6562,7 +6562,7 @@ const increasedByOne = numbers.map(num => num + 1);
 `,n.jsx(e.h3,{children:"2.6 类"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.6.1【推荐】使用 class 语句声明类，而不是使用 prototype。"}),`
+`,n.jsxs(e.p,{children:["2.6.1 ",n.jsx(e.code,{children:"推荐"})," 使用 class 语句声明类，而不是使用 prototype。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"class"})," 语句是 ES6 中引入的用于声明类的语法糖，更加简洁易维护。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function Person() {
@@ -6584,7 +6584,7 @@ class Person {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.6.2【推荐】使用 extends 语句进行类的继承。"}),`
+`,n.jsxs(e.p,{children:["2.6.2 ",n.jsx(e.code,{children:"推荐"})," 使用 extends 语句进行类的继承。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"extends"})," 是用于原型继承的内建方法，不会破坏 ",n.jsx(e.code,{children:"instanceof"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const inherits = require('inherits');
@@ -6605,7 +6605,7 @@ class PeekableQueue extends Queue {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.6.3【强制】避免不必要的 constructor。"}),`
+`,n.jsxs(e.p,{children:["2.6.3 ",n.jsx(e.code,{children:"强制"})," 避免不必要的 constructor。"]}),`
 `,n.jsxs(e.p,{children:["ES6 class 会提供一个默认的 ",n.jsx(e.code,{children:"constructor"}),"，空 ",n.jsx(e.code,{children:"constructor"})," 或者只调用父类的  ",n.jsx(e.code,{children:"constructor"})," 是不必要的。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-useless-constructor",children:"no-useless-constructor"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad - 以下两种\b constructor 可以省略
 class Parent {
@@ -6642,7 +6642,7 @@ class Child extends Parent {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6.4【强制】正确地使用 super 方法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/constructor-super",children:"constructor-super"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-this-before-super",children:"no-this-before-super"})]}),`
+`,n.jsxs(e.p,{children:["2.6.4 ",n.jsx(e.code,{children:"强制"})," 正确地使用 super 方法。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/constructor-super",children:"constructor-super"})," ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-this-before-super",children:"no-this-before-super"})]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["子类的 ",n.jsx(e.code,{children:"constructor"})," 中必须使用 ",n.jsx(e.code,{children:"super()"}),"，且必须在 ",n.jsx(e.code,{children:"this"})," 和 ",n.jsx(e.code,{children:"super"})," 关键词前调用"]}),`
 `,n.jsxs(e.li,{children:["非\b子类的 ",n.jsx(e.code,{children:"constructor"})," 中不能使用 ",n.jsx(e.code,{children:"super()"})]}),`
@@ -6687,7 +6687,7 @@ class Child extends Parent {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6.5【强制】避免重复的类成员命名。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-dupe-class-members",children:"no-dupe-class-members"})]}),`
+`,n.jsxs(e.p,{children:["2.6.5 ",n.jsx(e.code,{children:"强制"})," 避免重复的类成员命名。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-dupe-class-members",children:"no-dupe-class-members"})]}),`
 `,n.jsx(e.p,{children:"重复的类成员声明最终生效的将是最后一个："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 class Foo {
@@ -6707,7 +6707,7 @@ class Foo {
 `,n.jsx(e.h3,{children:"2.7 模块"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.1【推荐】使用 ES6 modules 而非其他非标准的模块系统。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import#module-systems",children:"import/module-systems"})]}),`
+`,n.jsxs(e.p,{children:["2.7.1 ",n.jsx(e.code,{children:"推荐"})," 使用 ES6 modules 而非其他非标准的模块系统。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import#module-systems",children:"import/module-systems"})]}),`
 `,n.jsxs(e.p,{children:["使用 ES6 modules (",n.jsx(e.code,{children:"import"}),"/",n.jsx(e.code,{children:"export"}),")，而不是其他非标准的模块系统，如 CommonJS、AMD、CMD。"]}),`
 `,n.jsx(e.p,{children:"ES6 modules 作为标准代表着未来，让我们拥抱未来吧。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -6720,7 +6720,7 @@ export default Component;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.2【强制】不要用多个 import 引入同一模块。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md",children:"import/no-duplicates"})]}),`
+`,n.jsxs(e.p,{children:["2.7.2 ",n.jsx(e.code,{children:"强制"})," 不要用多个 import 引入同一模块。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md",children:"import/no-duplicates"})]}),`
 `,n.jsxs(e.p,{children:["多条 ",n.jsx(e.code,{children:"import"})," 语句引入了同一模块会降低可维护性，你需要将它们合成一条语句。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 import React from 'react';
@@ -6731,7 +6731,7 @@ import React, { Component } from 'react';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.3【强制】import 语句需要放到模块的最上方。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md",children:"import/first"})]}),`
+`,n.jsxs(e.p,{children:["2.7.3 ",n.jsx(e.code,{children:"强制"})," import 语句需要放到模块的最上方。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/first.md",children:"import/first"})]}),`
 `,n.jsxs(e.p,{children:["由于 ",n.jsx(e.code,{children:"import"})," 语句会被声明提升，将它们放到模块的最上方以防止异常行为。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 import foo from 'foo';
@@ -6749,7 +6749,7 @@ bar.init();
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.4【强制】禁止 default import 的名字跟文件内的其他 export 命名相同。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md",children:"import/no-named-as-default"})]}),`
+`,n.jsxs(e.p,{children:["2.7.4 ",n.jsx(e.code,{children:"强制"})," 禁止 default import 的名字跟文件内的其他 export 命名相同。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default.md",children:"import/no-named-as-default"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// foo.js
 export default 'foo';
 export const bar = 'bar';
@@ -6762,13 +6762,13 @@ import foo from './foo.js';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.5【强制】禁止引用自身。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md",children:"import/no-self-import"})]}),`
+`,n.jsxs(e.p,{children:["2.7.5 ",n.jsx(e.code,{children:"强制"})," 禁止引用自身。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md",children:"import/no-self-import"})]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.6【强制】禁止循环引用。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md",children:"import/no-cycle"})]}),`
+`,n.jsxs(e.p,{children:["2.7.6 ",n.jsx(e.code,{children:"强制"})," 禁止循环引用。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-cycle.md",children:"import/no-cycle"})]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.7【推荐】不要在 default export 上使用一个已导出的名称作为属性。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md",children:"import/no-named-as-default-member"})]}),`
+`,n.jsxs(e.p,{children:["2.7.7 ",n.jsx(e.code,{children:"推荐"})," 不要在 default export 上使用一个已导出的名称作为属性。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-named-as-default-member.md",children:"import/no-named-as-default-member"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// foo.js
 export default 'foo';
 export const bar = 'bar';
@@ -6783,7 +6783,7 @@ import foo, { bar } from './foo.js';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.8【推荐】在模块导入之后保留一个空行。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md",children:"import/newline-after-import"})]}),`
+`,n.jsxs(e.p,{children:["2.7.8 ",n.jsx(e.code,{children:"推荐"})," 在模块导入之后保留一个空行。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md",children:"import/newline-after-import"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 import foo from './foo.js';
 const FOO = 'FOO'
@@ -6795,7 +6795,7 @@ const FOO = 'FOO'
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.9【参考】import 语句的排序。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md",children:"import/order"})]}),`
+`,n.jsxs(e.p,{children:["2.7.9 ",n.jsx(e.code,{children:"参考"})," import 语句的排序。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md",children:"import/order"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"import"})," 语句建议按以下规则排序："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["先 ",n.jsx(e.code,{children:"import"})," 第三方模块，再 ",n.jsx(e.code,{children:"import"})," 自己工程里的模块"]}),`
@@ -6813,7 +6813,7 @@ import './index.scss';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.10【参考】当模块内只有一个 export 时，使用 default export。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md",children:"import/prefer-default-export"})]}),`
+`,n.jsxs(e.p,{children:["2.7.10 ",n.jsx(e.code,{children:"参考"})," 当模块内只有一个 export 时，使用 default export。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md",children:"import/prefer-default-export"})]}),`
 `,n.jsx(e.p,{children:"我们也建议文件内只包含\b一个 export，这有利于代码的可维护性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 export function foo() {}
@@ -6823,7 +6823,7 @@ export default function foo() {}
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.7.11【参考】不要在 import 时直接 export。"}),`
+`,n.jsxs(e.p,{children:["2.7.11 ",n.jsx(e.code,{children:"参考"})," 不要在 import 时直接 export。"]}),`
 `,n.jsx(e.p,{children:"虽然一行代码更\b简洁，\b但这不利于代码的可读性和一致性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 export { Com as Component } from 'react';
@@ -6835,14 +6835,14 @@ export default Component;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7.12【参考】模块开发者选择EMS和CJS时，需要判断运行时环境：如果你的模块是只面向浏览器的则选择ESM；如果你的模块是只面向Node.js的则选择CJS，并且确定遵循",n.jsx(e.a,{href:"https://nodejs.org/api/esm.html#esm_commonjs_namespaces",children:"CJS命名空间规则"}),"；如果你的模块是2者都要兼容的，则ESM和CJS都要支持。"]}),`
+`,n.jsxs(e.p,{children:["2.7.12 ",n.jsx(e.code,{children:"参考"})," 模块开发者选择EMS和CJS时，需要判断运行时环境：如果你的模块是只面向浏览器的则选择ESM；如果你的模块是只面向Node.js的则选择CJS，并且确定遵循",n.jsx(e.a,{href:"https://nodejs.org/api/esm.html#esm_commonjs_namespaces",children:"CJS命名空间规则"}),"；如果你的模块是2者都要兼容的，则ESM和CJS都要支持。"]}),`
 `,n.jsxs(e.p,{children:["Node.js的模块，历史上Node.js遵循的是CommonJS，因此ES6 Module会有比较严重的兼容性问题。暂时没有特别好的解法，只能在Node.js中跟进运行时环境，判断使用模块标准。",n.jsx(e.a,{href:"https://github.com/nodejs/node/issues/33954",children:"讨论issue"})]}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h3,{children:"2.8 操作符"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.1【推荐】使用严格相等运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/eqeqeq",children:"eqeqeq"})]}),`
+`,n.jsxs(e.p,{children:["2.8.1 ",n.jsx(e.code,{children:"推荐"})," 使用严格相等运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/eqeqeq",children:"eqeqeq"})]}),`
 `,n.jsxs(e.p,{children:["非严格相等运算符（",n.jsx(e.code,{children:"=="})," 和 ",n.jsx(e.code,{children:"!="}),"）会在比较前将被比较值转换为相同类型\b，对于不熟悉 JS 语言特性的人来说，这可能造成不小的隐患。",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness",children:"了解更多"})]}),`
 `,n.jsxs(e.p,{children:["因此，一般情况下我们应该使用严格比较运算符（ ",n.jsx(e.code,{children:"==="})," 和 ",n.jsx(e.code,{children:"!=="}),"）进行比较。\b如果要比较的两个值类型不同，应该显性地将其转换成相同类型再进行严格比较，而不是依赖于 ",n.jsx(e.code,{children:"=="})," 和 ",n.jsx(e.code,{children:"!="})," 的隐式类型转换。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const id = '83949';
@@ -6859,7 +6859,7 @@ if (Number(id) === 83949) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.2【强制】不要使用一元自增自减运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-plusplus",children:"no-plusplus"})]}),`
+`,n.jsxs(e.p,{children:["2.8.2 ",n.jsx(e.code,{children:"强制"})," 不要使用一元自增自减运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-plusplus",children:"no-plusplus"})]}),`
 `,n.jsxs(e.p,{children:["不要使用一元自增自减运算符（",n.jsx(e.code,{children:"++"})," 和 ",n.jsx(e.code,{children:"--"}),"），除非在 ",n.jsx(e.code,{children:"for"})," 循环条件中。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"++"})," 和 ",n.jsx(e.code,{children:"--"})," 会带来值\b是否会提前变化带来的理解成本，也可能因为自动添加分号机制导致一些错误，因此我们推荐使用 ",n.jsx(e.code,{children:"num += 1"})," 来代替 ",n.jsx(e.code,{children:"num++"}),"。但出于习惯，在 ",n.jsx(e.code,{children:"for"})," 循环的条件中依然可以使用自增自减运算符。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`let num = 1;
@@ -6874,7 +6874,7 @@ num -= 1;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.3【强制】不要使用 void 运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-void",children:"no-void"})]}),`
+`,n.jsxs(e.p,{children:["2.8.3 ",n.jsx(e.code,{children:"强制"})," 不要使用 void 运算符。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-void",children:"no-void"})]}),`
 `,n.jsxs(e.p,{children:["在很老版本的 JS 中，",n.jsx(e.code,{children:"undefined"})," 值是可变的，因此使用 ",n.jsx(e.code,{children:"void"})," 语句一般是用来得到一个 ",n.jsx(e.code,{children:"undefined"})," 值。而在新版本的 JS 中，上面的问题已不复存在。因此出于程序可读性的考虑，禁止使用 ",n.jsx(e.code,{children:"void"})," 运算符。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = void 0;
@@ -6884,7 +6884,7 @@ const foo = undefined;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.4【强制】避免嵌套的三元表达式。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-nested-ternary",children:"no-nested-ternary"})]}),`
+`,n.jsxs(e.p,{children:["2.8.4 ",n.jsx(e.code,{children:"强制"})," 避免嵌套的三元表达式。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-nested-ternary",children:"no-nested-ternary"})]}),`
 `,n.jsx(e.p,{children:"嵌套的三元表达式会降低代码可读性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = bar ? baz : qux === quxx ? bing : bam;
@@ -6895,7 +6895,7 @@ const foo = bar ? baz : qu;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.5【强制】避免不必要的三元表达式。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-unneeded-ternary",children:"no-unneeded-ternary"})]}),`
+`,n.jsxs(e.p,{children:["2.8.5 ",n.jsx(e.code,{children:"强制"})," 避免不必要的三元表达式。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-unneeded-ternary",children:"no-unneeded-ternary"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = a ? a : b;
 const bar = c ? true : false;
@@ -6908,7 +6908,7 @@ const baz = !c;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.8.6【强制】混合使用多种操作符时，用小括号包裹分组。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-mixed-operators",children:"no-mixed-operators"})]}),`
+`,n.jsxs(e.p,{children:["2.8.6 ",n.jsx(e.code,{children:"强制"})," 混合使用多种操作符时，用小括号包裹分组。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-mixed-operators",children:"no-mixed-operators"})]}),`
 `,n.jsxs(e.p,{children:["这可以更清晰地表达代码意图，提高可读性。四则运算符（",n.jsx(e.code,{children:"+"}),", ",n.jsx(e.code,{children:"-"}),", ",n.jsx(e.code,{children:"*"}),", ",n.jsx(e.code,{children:"/"}),"）可以不包裹，因为\b大多数人熟知它们的优先级。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const foo = a && b < 0 || c > 0 || d + 1 === 0;
@@ -6940,7 +6940,7 @@ const bar = a + b / c * d;
 `,n.jsx(e.h3,{children:"2.9 控制语句"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.1【强制】switch 语句中的 case 需要以 break 结尾。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-fallthrough",children:"no-fallthrough"})]}),`
+`,n.jsxs(e.p,{children:["2.9.1 ",n.jsx(e.code,{children:"强制"})," switch 语句中的 case 需要以 break 结尾。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-fallthrough",children:"no-fallthrough"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 switch(foo) {
   case 1:
@@ -6965,7 +6965,7 @@ switch(foo) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.2【推荐】switch 语句需要始终包含 default 分支。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/default-case",children:"default-case"})]}),`
+`,n.jsxs(e.p,{children:["2.9.2 ",n.jsx(e.code,{children:"推荐"})," switch 语句需要始终包含 default 分支。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/default-case",children:"default-case"})]}),`
 `,n.jsxs(e.p,{children:["在使用 ",n.jsx(e.code,{children:"switch"})," 语句时，有时会出现因开发者忘记设置 ",n.jsx(e.code,{children:"default"})," 而导致错误，因此建议总是给出 ",n.jsx(e.code,{children:"default"}),"。如果有意省略 ",n.jsx(e.code,{children:"default"}),"，请在\b ",n.jsx(e.code,{children:"switch"})," 语句末尾用 ",n.jsx(e.code,{children:"// no default"})," 注释指明："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 let foo;
@@ -6996,7 +6996,7 @@ switch (bar) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.9.3【参考】switch 语句应包含至少 3 个条件分支。"}),`
+`,n.jsxs(e.p,{children:["2.9.3 ",n.jsx(e.code,{children:"参考"})," switch 语句应包含至少 3 个条件分支。"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"switch"})," 语句在有许多条件分支的情况下可以使代码结构更清晰。但对于只有一个或两个条件分支的情况，更适合使用 ",n.jsx(e.code,{children:"if"})," 语句，",n.jsx(e.code,{children:"if"})," 语句更易于书写和阅读。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 let foo;
@@ -7018,7 +7018,7 @@ if (bar === 1) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.4【参考】控制语句的嵌套层级不要过深。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-depth",children:"max-depth"})]}),`
+`,n.jsxs(e.p,{children:["2.9.4 ",n.jsx(e.code,{children:"参考"})," 控制语句的嵌套层级不要过深。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/max-depth",children:"max-depth"})]}),`
 `,n.jsxs(e.p,{children:["控制语句的嵌套层级不要超过 ",n.jsx(e.strong,{children:"4"})," 级，否则将难以阅读和维护："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 if (condition1) {
@@ -7040,7 +7040,7 @@ if (condition1) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.5【强制】for 循环中的计数器应朝着正确方向移动。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/for-direction",children:"for-direction"})]}),`
+`,n.jsxs(e.p,{children:["2.9.5 ",n.jsx(e.code,{children:"强制"})," for 循环中的计数器应朝着正确方向移动。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/for-direction",children:"for-direction"})]}),`
 `,n.jsxs(e.p,{children:["当 ",n.jsx(e.code,{children:"for"})," 循环中更新子句的计数器朝着错误的方向移动时，循环的终止条件将永远无法达到，这会导致死循环的出现。这时要么是程序出现了错误，要么应将 ",n.jsx(e.code,{children:"for"})," 循环改为 ",n.jsx(e.code,{children:"while"})," 循环。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 for (let i = 0; i < length; i--) {
@@ -7054,7 +7054,7 @@ for (let i = 0; i < length; i++) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.6【推荐】for-in 循环中需要对 key 进行验证。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/guard-for-in",children:"guard-for-in"})]}),`
+`,n.jsxs(e.p,{children:["2.9.6 ",n.jsx(e.code,{children:"推荐"})," for-in 循环中需要对 key 进行验证。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/guard-for-in",children:"guard-for-in"})]}),`
 `,n.jsxs(e.p,{children:["使用 ",n.jsx(e.code,{children:"for-in"})," 循环时需要\b\b避免对象从原型链上继承来的属性也被遍历出来，因此保险的做法是对 key 是否是对象自身的属性进行验证："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 for (const key in foo) {
@@ -7070,7 +7070,7 @@ for (const key in foo) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.9.7【参考】如果一个 if 语句的结果总是返回一个 return 语句，那么最后的 else 是不必要的。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-else-return",children:"no-else-return"})]}),`
+`,n.jsxs(e.p,{children:["2.9.7 ",n.jsx(e.code,{children:"参考"})," 如果一个 if 语句的结果总是返回一个 return 语句，那么最后的 else 是不必要的。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-else-return",children:"no-else-return"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function foo() {
   if (x) {
@@ -7091,7 +7091,7 @@ function foo() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.9.8【参考】条件表达式的计算结果。"}),`
+`,n.jsxs(e.p,{children:["2.9.8 ",n.jsx(e.code,{children:"参考"})," 条件表达式的计算结果。"]}),`
 `,n.jsxs(e.p,{children:["条件表达式（例如 ",n.jsx(e.code,{children:"if"})," 语句的条件）的值为通过抽象方法 ",n.jsx(e.code,{children:"ToBoolean"})," \b进行强制转换所得，计算结果遵守下面的规则："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.strong,{children:"对象"}),"、",n.jsx(e.strong,{children:"数组"})," 被计算为 ",n.jsx(e.strong,{children:"true"})]}),`
@@ -7121,7 +7121,7 @@ if ('') { // => false
 `,n.jsx(e.h3,{children:"2.10 其他"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.1【强制】禁止使用 eval。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-eval",children:"no-eval"})]}),`
+`,n.jsxs(e.p,{children:["2.10.1 ",n.jsx(e.code,{children:"强制"})," 禁止使用 eval。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-eval",children:"no-eval"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"eval"})," 语句存在安全风险，可能导致注入攻击。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const obj = { x: 'foo' };
@@ -7135,7 +7135,7 @@ const value = obj[key];
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.2【强制】禁止使用 debugger。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-debugger",children:"no-debugger"})]}),`
+`,n.jsxs(e.p,{children:["2.10.2 ",n.jsx(e.code,{children:"强制"})," 禁止使用 debugger。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-debugger",children:"no-debugger"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"debugger"})," 语句会让程序暂停，并在当前位置开启调试器。它通常在程序调试阶段使用，不应发布到线上。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function isTruthy(x) {
@@ -7145,7 +7145,7 @@ function isTruthy(x) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.3【推荐】禁止使用 alert。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-alert",children:"no-alert"})]}),`
+`,n.jsxs(e.p,{children:["2.10.3 ",n.jsx(e.code,{children:"推荐"})," 禁止使用 alert。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-alert",children:"no-alert"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"alert"})," 语句会使浏览器弹出原生警告框，这可能让人感觉你的程序出错了。如果需要对用户弹出警告信息，好的做法是使用第三方的弹窗组件或自己定义警告框样式。同理，",n.jsx(e.code,{children:"confirm"})," 和 ",n.jsx(e.code,{children:"prompt"})," 语句也不应\b被使用。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 alert('Oops!');
@@ -7155,7 +7155,7 @@ Alert('Oops!');
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.4【推荐】生产环境\b禁止使用 console。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-console",children:"no-console"})]}),`
+`,n.jsxs(e.p,{children:["2.10.4 ",n.jsx(e.code,{children:"推荐"})," 生产环境\b禁止使用 console。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-console",children:"no-console"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"console"})," 语句通常在调试阶段使用，发布上线前，应该去掉代码里所有的 ",n.jsx(e.code,{children:"console"})," 语句。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 console.log('Some debug messages..');
@@ -7173,7 +7173,7 @@ utils.log('Some debug messages..');
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.10.5【强制】禁止对原生对象或只读的全局对象进行赋值。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-global-assign",children:"no-global-assign"})]}),`
+`,n.jsxs(e.p,{children:["2.10.5 ",n.jsx(e.code,{children:"强制"})," 禁止对原生对象或只读的全局对象进行赋值。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-global-assign",children:"no-global-assign"})]}),`
 `,n.jsxs(e.p,{children:["JS 执行环境中会包含一些全局变量和原生对象，如浏览器环境中的 ",n.jsx(e.code,{children:"window"}),"，node 环境中的 ",n.jsx(e.code,{children:"global"})," 、",n.jsx(e.code,{children:"process"}),"，",n.jsx(e.code,{children:"Object"}),"，",n.jsx(e.code,{children:"undefined"})," 等。除了像 ",n.jsx(e.code,{children:"window"})," 这样的众所周知的对象，JS 还提供了数百个内置全局对象，你可能在定义全局变量时无意对它们进行了重新赋值，因此最好的做法是不要定义全局变量。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 window = {};
@@ -7189,7 +7189,7 @@ undefined = 1;
 `]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.1【推荐】单行注释使用 //。"}),`
+`,n.jsxs(e.p,{children:["3.1 ",n.jsx(e.code,{children:"推荐"})," 单行注释使用 //。"]}),`
 `,n.jsx(e.p,{children:"注释应单独一行写在被注释对象的上方，不要追加在某条语句的后面："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const active = true;  // is current tab
@@ -7237,7 +7237,7 @@ function getType() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.2【推荐】多行注释使用 /** ... */，而不是多行的 //。"}),`
+`,n.jsxs(e.p,{children:["3.2 ",n.jsx(e.code,{children:"推荐"})," 多行注释使用 /** ... */，而不是多行的 //。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 // make() returns a new element
 // based on the passed in tag name
@@ -7260,7 +7260,7 @@ function make(tag) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.3【强制】注释内容和注释符之间需要有一个空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/spaced-comment",children:"spaced-comment"})]}),`
+`,n.jsxs(e.p,{children:["3.3 ",n.jsx(e.code,{children:"强制"})," 注释内容和注释符之间需要有一个空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/spaced-comment",children:"spaced-comment"})]}),`
 `,n.jsx(e.p,{children:"注释内容和注释符之间需要有一个空格，以增加可读性："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 //is current tab
@@ -7294,7 +7294,7 @@ function make(tag) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.4【参考】合理使用特殊注释标记。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-warning-comments",children:"no-warning-comments"})]}),`
+`,n.jsxs(e.p,{children:["3.4 ",n.jsx(e.code,{children:"参考"})," 合理使用特殊注释标记。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-warning-comments",children:"no-warning-comments"})]}),`
 `,n.jsx(e.p,{children:"有时我们发现某个可能的 bug，但因为一些原因还没法修复；或者某个地方还有一些待完成的功能，这时我们需要使用相应的特殊标记注释来告知未来的自己或合作者。最常用的特殊标记有两种："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:n.jsx(e.code,{children:"// FIXME: 说明问题是什么"})}),`
@@ -7315,7 +7315,7 @@ function make(tag) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.5【参考】文档类注释使用 jsdoc 规范。"}),`
+`,n.jsxs(e.p,{children:["3.5 ",n.jsx(e.code,{children:"参考"})," 文档类注释使用 jsdoc 规范。"]}),`
 `,n.jsxs(e.p,{children:["文档类注释，如函数、类、文件、事件等，推荐使用 ",n.jsx(e.a,{href:"http://usejsdoc.org/",children:"jsdoc"})," 规范或类 jsdoc 的规范。"]}),`
 `,n.jsx(e.p,{children:"例如："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`/**
@@ -7349,17 +7349,17 @@ Book.prototype = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.6【参考】无用的代码注释应被即时删除。"}),`
+`,n.jsxs(e.p,{children:["3.6 ",n.jsx(e.code,{children:"参考"})," 无用的代码注释应被即时删除。"]}),`
 `,n.jsx(e.p,{children:"无用的注释代码会使程序变得臃肿并降低可读性，应被即时删除。你可以通过版本控制系统找回被删除的代码。"}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h2,{children:"4 命名"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.1【参考】文件名：使用小写字母命名。考虑到部分操作系统（如 Windows, MacOS）下文件系统大小写不敏感，推荐使用 ",n.jsx(e.code,{children:"-"})," 连接。例如：hello-world.js。"]}),`
+`,n.jsxs(e.p,{children:["4.1 ",n.jsx(e.code,{children:"参考"})," 文件名：使用小写字母命名。考虑到部分操作系统（如 Windows, MacOS）下文件系统大小写不敏感，推荐使用 ",n.jsx(e.code,{children:"-"})," 连接。例如：hello-world.js。"]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.2【参考】使用小驼峰（camelCase）命名原始类型、对象、函数、实例。",n.jsx(e.a,{href:"https://eslint.org/docs/rules/camelcase",children:"camelcase"})]}),`
+`,n.jsxs(e.p,{children:["4.2 ",n.jsx(e.code,{children:"参考"})," 使用小驼峰（camelCase）命名原始类型、对象、函数、实例。",n.jsx(e.a,{href:"https://eslint.org/docs/rules/camelcase",children:"camelcase"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const this_is_my_string = 'foo';
 const this_is_my_object = {};
@@ -7372,7 +7372,7 @@ function thisIsMyFunction() {}
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.3【强制】使用大驼峰（PascalCase）命名类和构造函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/new-cap",children:"new-cap"})]}),`
+`,n.jsxs(e.p,{children:["4.3 ",n.jsx(e.code,{children:"强制"})," 使用大驼峰（PascalCase）命名类和构造函数。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/new-cap",children:"new-cap"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 function user(options) {
   this.name = options.name;
@@ -7395,7 +7395,7 @@ const good = new User({
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"4.4【参考】全部大写字母&单词间用下划线分割的命名模式（UPPERCASE_VARIABLES）。"}),`
+`,n.jsxs(e.p,{children:["4.4 ",n.jsx(e.code,{children:"参考"})," 全部大写字母&单词间用下划线分割的命名模式（UPPERCASE_VARIABLES）。"]}),`
 `,n.jsx(e.p,{children:"全大写字母、单词间使用下划线分割的命名模式（UPPERCASE_VARIABLES），仅用于命名常量，且该常量需同时满足如下条件："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["使用 ",n.jsx(e.code,{children:"const"})," 关键字声明"]}),`
@@ -7424,7 +7424,7 @@ export const AN_OBJECT = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"4.5【参考】模块相关的命名规范。"}),`
+`,n.jsxs(e.p,{children:["4.5 ",n.jsx(e.code,{children:"参考"})," 模块相关的命名规范。"]}),`
 `,n.jsxs(e.p,{children:["使用小驼峰（camelCase）命名 ",n.jsx(e.code,{children:"export"})," 的函数："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`function makeStyleGuide() {
   // ...
@@ -7443,7 +7443,7 @@ export default AnObject;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.6【参考】命名不要以下划线开头或结尾。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-underscore-dangle",children:"no-underscore-dangle"})]}),`
+`,n.jsxs(e.p,{children:["4.6 ",n.jsx(e.code,{children:"参考"})," 命名不要以下划线开头或结尾。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-underscore-dangle",children:"no-underscore-dangle"})]}),`
 `,n.jsx(e.p,{children:"JS 没有私有属性或私有方法的概念，这样的命名可能会让人误解。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 this.__firstName__ = 'Panda';
@@ -7459,7 +7459,7 @@ this.firstName = 'Panda';
 `,n.jsx(e.p,{children:"这个章节是为还在使用 ES5 及之前版本 JS 的同学准备。因为本规约以 ES6 编写，你可以通过阅读本章节来了解 ES5 中有哪些需要额外注意的地方。"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"5.1【推荐】ES5 中的变量声明。"}),`
+`,n.jsxs(e.p,{children:["5.1 ",n.jsx(e.code,{children:"推荐"})," ES5 中的变量声明。"]}),`
 `,n.jsxs(e.p,{children:["使用 ",n.jsx(e.code,{children:"var"})," 进行声明："]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// good
 var foo = 'foo';
@@ -7491,7 +7491,7 @@ console.log(foo); // => foo
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.2【强制】对于逗号分隔的多行结构，不要加上最后一个\b行末逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-dangle",children:"comma-dangle"})]}),`
+`,n.jsxs(e.p,{children:["5.2 ",n.jsx(e.code,{children:"强制"})," 对于逗号分隔的多行结构，不要加上最后一个\b行末逗号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/comma-dangle",children:"comma-dangle"})]}),`
 `,n.jsx(e.p,{children:"这样做会在 IE6/7 和 IE9 怪异模式下引起问题。另外，多余的逗号在某些 ES3 的实现里会增加数组的长度。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 var hero = {
@@ -7507,7 +7507,7 @@ var hero = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"5.3【参考】使用 Array 的 slice 方法进行数组复制和类数组对象转换。"}),`
+`,n.jsxs(e.p,{children:["5.3 ",n.jsx(e.code,{children:"参考"})," 使用 Array 的 slice 方法进行数组复制和类数组对象转换。"]}),`
 `,n.jsx(e.p,{children:"数组复制："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`var items = [1, 2, 3];
 
@@ -7528,7 +7528,7 @@ var itemsCopy = items.slice();
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"5.4【推荐】不要使用保留字作为对象的属性名。"}),`
+`,n.jsxs(e.p,{children:["5.4 ",n.jsx(e.code,{children:"推荐"})," 不要使用保留字作为对象的属性名。"]}),`
 `,n.jsxs(e.p,{children:["不要使用",n.jsx(e.a,{href:"http://es5.github.io/#x7.6.1",children:"保留字"}),"作为对象的属性名，它们在 IE8 中不工作"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 var superman = {
@@ -7560,7 +7560,7 @@ var superman = {
 `,n.jsxs(e.p,{children:["Node.js 规约主要包含编码风格、安全规约、最佳实践等几个部分，目的是给业务同学提供研发过程中的实质性规范和指导。其中编码风格 follow ",n.jsx(e.a,{href:"https://github.com/eggjs/eslint-config-egg",children:"eslint-config-egg"}),"。"]}),`
 `,n.jsx(e.h2,{children:"1 编码风格"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["1.1【推荐】使用 Node.js 内置的全局变量。eslint: ",n.jsx(e.a,{href:"https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/prefer-global",children:"node/prefer-global"})]}),`
+`,n.jsxs(e.li,{children:["1.1 ",n.jsx(e.code,{children:"recommended"})," 使用 Node.js 内置的全局变量。eslint: ",n.jsx(e.a,{href:"https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/prefer-global",children:"node/prefer-global"})]}),`
 `]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const { Buffer } = require('buffer');
@@ -7605,7 +7605,7 @@ console.log('hello');
 console.log('hello');
 `})}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["1.2【推荐】使用模块内支持的 ",n.jsx(e.code,{children:"promises"})," API。eslint: ",n.jsx(e.a,{href:"https://github.com/mysticatea/eslint-plugin-node/tree/master/docs/rules/prefer-promises",children:"node/prefer-promises"})]}),`
+`,n.jsxs(e.li,{children:["1.2 ",n.jsx(e.code,{children:"recommended"})," 使用模块内支持的 ",n.jsx(e.code,{children:"promises"})," API。eslint: ",n.jsx(e.a,{href:"https://github.com/mysticatea/eslint-plugin-node/tree/master/docs/rules/prefer-promises",children:"node/prefer-promises"})]}),`
 `]}),`
 `,n.jsxs(e.p,{children:["Node.js 从 v11.14.0 开始支持 ",n.jsx(e.code,{children:"require('dns').promises"})," 和 ",n.jsx(e.code,{children:"require('fs').promises"})," API。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -7639,7 +7639,7 @@ async function readData(filePath) {
 }
 `})}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["1.3【推荐】如无特殊需求，模块引用声明放在文件顶端，注意引用顺序。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md",children:"import/order"})]}),`
+`,n.jsxs(e.li,{children:["1.3 ",n.jsx(e.code,{children:"recommended"})," 如无特殊需求，模块引用声明放在文件顶端，注意引用顺序。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md",children:"import/order"})]}),`
 `]}),`
 `,n.jsx(e.p,{children:"如无特殊需求（如动态 require），模块引用声明需要放在文件顶端。引用顺序如无特殊需求，按以下顺序来引入依赖：node 内置模块、npm 包、本地文件或其他，几类文件代码块之间各空一行，每类文件代码块中的引用顺序按照字典排序，如有解构引用情况，字典序以解构的第一个为准，解构内部按照字典排序。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -7683,7 +7683,7 @@ import note from 'note';
 import Car from './models/car';
 `})}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["1.4【推荐】抛出异常时，使用原生 ",n.jsx(e.code,{children:"Error"})," 对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-throw-literal",children:"no-throw-literal"})]}),`
+`,n.jsxs(e.li,{children:["1.4 ",n.jsx(e.code,{children:"recommended"})," 抛出异常时，使用原生 ",n.jsx(e.code,{children:"Error"})," 对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-throw-literal",children:"no-throw-literal"})]}),`
 `]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 throw 'error';
@@ -7714,7 +7714,7 @@ try {
   throw err;
 }
 `})}),`
-`,n.jsxs(e.p,{children:["1.5【推荐】线上环境尽量不要使用 ",n.jsx(e.code,{children:"fs/child_process"})," 模块的 ",n.jsx(e.code,{children:"sync"})," 方法，如 ",n.jsx(e.code,{children:"fs.readFileSync()"}),"、",n.jsx(e.code,{children:"cp.execSync()"})," 等。"]}),`
+`,n.jsxs(e.p,{children:["1.5 ",n.jsx(e.code,{children:"recommended"})," 线上环境尽量不要使用 ",n.jsx(e.code,{children:"fs/child_process"})," 模块的 ",n.jsx(e.code,{children:"sync"})," 方法，如 ",n.jsx(e.code,{children:"fs.readFileSync()"}),"、",n.jsx(e.code,{children:"cp.execSync()"})," 等。"]}),`
 `,n.jsxs(e.p,{children:["这样会阻塞 Node.js 应用的进程，导致不能继续处理新的请求，或当前正在处理的请求超时。推荐使用 ",n.jsx(e.code,{children:"require('fs').promises"})," 方式或使用 ",n.jsx(e.a,{href:"https://www.npmjs.com/package/mz",children:"mz"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const fs = require('fs');
@@ -7739,60 +7739,60 @@ async function test() {
 `})}),`
 `,n.jsx(e.h2,{children:"2 安全规约"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.1【强制】在客户端隐藏错误详情。"}),`
+`,n.jsxs(e.li,{children:["2.1 ",n.jsx(e.code,{children:"mandatory"})," 在客户端隐藏错误详情。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"错误提示有可能会暴露出敏感的系统信息，容易被利用去做进一步的攻击。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.2【强制】隐藏或伪造技术栈和框架标识。"}),`
+`,n.jsxs(e.li,{children:["2.2 ",n.jsx(e.code,{children:"mandatory"})," 隐藏或伪造技术栈和框架标识。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"隐藏或伪造 X-Powered-By 响应头，应用广泛的框架多有公开的漏洞，防止标识露出被恶意利用。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.3【强制】JSONP 跨域接口必须严格校验访问来源。"}),`
+`,n.jsxs(e.li,{children:["2.3 ",n.jsx(e.code,{children:"mandatory"})," JSONP 跨域接口必须严格校验访问来源。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"配置域名白名单，防止通过 JSONP 接口获取到敏感信息的风险。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.4【强制】禁止使用从参数或明文 cookie 中获取的用户标识进行敏感信息查询输出。"}),`
+`,n.jsxs(e.li,{children:["2.4 ",n.jsx(e.code,{children:"mandatory"})," 禁止使用从参数或明文 cookie 中获取的用户标识进行敏感信息查询输出。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"防止未授权访问/越权访问。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.5【强制】防止 SQL 注入。"}),`
+`,n.jsxs(e.li,{children:["2.5 ",n.jsx(e.code,{children:"mandatory"})," 防止 SQL 注入。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"含有用户输入内容的 SQL 语句必须使用预编译模式。若用户输入无法使用预编译模式(输入为表名/字段名等内容)，需要对用户输入进行转义/过滤之后再拼接到 SQL 中。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.6【推荐】定期检查过期依赖和依赖漏洞升级。"}),`
+`,n.jsxs(e.li,{children:["2.6 ",n.jsx(e.code,{children:"recommended"})," 定期检查过期依赖和依赖漏洞升级。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"检测依赖，对于有漏洞或者过期的依赖要及时升级或替换。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.7【推荐】用户上传文件不允许至服务器本地，需要上传到 OSS 等服务。"}),`
+`,n.jsxs(e.li,{children:["2.7 ",n.jsx(e.code,{children:"recommended"})," 用户上传文件不允许至服务器本地，需要上传到 OSS 等服务。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"任意文件上传漏洞，防止用户上传恶意文件，入侵服务器。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.8【推荐】服务端 URL 重定向需要设置白名单。"}),`
+`,n.jsxs(e.li,{children:["2.8 ",n.jsx(e.code,{children:"recommended"})," 服务端 URL 重定向需要设置白名单。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"若需要对用户输入内容作为目标 URL 进行重定向，需要对其进行域名白名单校验，不允许跳转至白名单外的域名。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.9【推荐】对接口入参严格校验。"}),`
+`,n.jsxs(e.li,{children:["2.9 ",n.jsx(e.code,{children:"recommended"})," 对接口入参严格校验。"]}),`
 `]}),`
 `,n.jsxs(e.p,{children:["使用 ",n.jsx(e.a,{href:"https://www.npmjs.com/package/jsonschema",children:"jsonschema"})," 或 ",n.jsx(e.a,{href:"https://www.npmjs.com/package/joi",children:"joi"})," 校验入参，减少意外输入造成的程序报错或崩溃，同时也能减少脏数据形成。"]}),`
 `,n.jsx(e.h2,{children:"3 最佳实践"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"3.1【推荐】应用不应该有状态。"}),`
+`,n.jsxs(e.li,{children:["3.1 ",n.jsx(e.code,{children:"recommended"})," 应用不应该有状态。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"使用外部数据存储。保证即使结束某个应用实例也不会影响数据和服务。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"3.2【推荐】尽量不要用 Node.js 应用去托管前端静态文件。"}),`
+`,n.jsxs(e.li,{children:["3.2 ",n.jsx(e.code,{children:"recommended"})," 尽量不要用 Node.js 应用去托管前端静态文件。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"应该把前端静态文件放到 CDN，当静态文件的访问量很大的时候，可能会阻塞其他服务的执行。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"3.3【推荐】把 CPU 密集型任务委托给反向代理。"}),`
+`,n.jsxs(e.li,{children:["3.3 ",n.jsx(e.code,{children:"recommended"})," 把 CPU 密集型任务委托给反向代理。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"Node.js 应用不合适做 CPU 密集型任务（例如 gzip，SSL），请尽量把这类任务代理给 nginx 或其他服务。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["3.4【推荐】使用 ",n.jsx(e.code,{children:"async/await"}),"，尽量避免使用回调函数。"]}),`
+`,n.jsxs(e.li,{children:["3.4 ",n.jsx(e.code,{children:"recommended"})," 使用 ",n.jsx(e.code,{children:"async/await"}),"，尽量避免使用回调函数。"]}),`
 `]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"async/await"})," 可以让你的代码看起来更简洁，可以规避掉回调地狱的问题，并且使异常处理也变得清晰简单。"]}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["3.5【推荐】使用 ",n.jsx(e.code,{children:"util.promisify"})," 处理回调函数，使其返回 ",n.jsx(e.code,{children:"Promise"}),"。"]}),`
+`,n.jsxs(e.li,{children:["3.5 ",n.jsx(e.code,{children:"recommended"})," 使用 ",n.jsx(e.code,{children:"util.promisify"})," 处理回调函数，使其返回 ",n.jsx(e.code,{children:"Promise"}),"。"]}),`
 `]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const util = require('util');
 const fs = require('fs');
@@ -7806,10 +7806,10 @@ async function callStat() {
 `})}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.6【推荐】使用 Node.js 原生 ",n.jsx(e.code,{children:"Promise"}),"，而不是三方库如 ",n.jsx(e.code,{children:"bluebird"}),"。"]}),`
+`,n.jsxs(e.p,{children:["3.6 ",n.jsx(e.code,{children:"recommended"})," 使用 Node.js 原生 ",n.jsx(e.code,{children:"Promise"}),"，而不是三方库如 ",n.jsx(e.code,{children:"bluebird"}),"。"]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.7【推荐】在类方法中返回 ",n.jsx(e.code,{children:"this"})," 方便链式调用。"]}),`
+`,n.jsxs(e.p,{children:["3.7 ",n.jsx(e.code,{children:"recommended"})," 在类方法中返回 ",n.jsx(e.code,{children:"this"})," 方便链式调用。"]}),`
 `]}),`
 `]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`class Jedi {
@@ -7830,7 +7830,7 @@ luke.jump()
   .setHeight(20);
 `})}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["3.8【推荐】使用 ",n.jsx(e.a,{href:"https://www.aliyun.com/product/nodejs",children:"阿里云 Node.js 性能平台"})," 作为应用的性能监控工具。"]}),`
+`,n.jsxs(e.li,{children:["3.8 ",n.jsx(e.code,{children:"recommended"})," 使用 ",n.jsx(e.a,{href:"https://www.aliyun.com/product/nodejs",children:"阿里云 Node.js 性能平台"})," 作为应用的性能监控工具。"]}),`
 `]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.a,{href:"https://www.aliyun.com/product/nodejs",children:"阿里云 Node.js 性能平台"}),"提供 Node.js 应用性能监控、管理及报警，性能快照远程截取与调优， 安全与依赖更新提示，异常日志与慢 HTTP 日志等功能，能有效帮助开发者监控和排查 Node.js 应用性能问题。"]}),`
 `,n.jsx(e.h2,{children:"配套工具"}),`
@@ -7847,7 +7847,7 @@ luke.jump()
 `,n.jsxs(e.p,{children:["Node.js 规约主要包含编码风格、安全规约、最佳实践等几个部分，目的是给业务同学提供研发过程中的实质性规范和指导。其中编码风格 follow ",n.jsx(e.a,{href:"https://github.com/eggjs/eslint-config-egg",children:"eslint-config-egg"}),"。"]}),`
 `,n.jsx(e.h2,{children:"1 编码风格"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["1.1【推荐】使用 Node.js 内置的全局变量。eslint: ",n.jsx(e.a,{href:"https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/prefer-global",children:"node/prefer-global"})]}),`
+`,n.jsxs(e.li,{children:["1.1 ",n.jsx(e.code,{children:"推荐"})," 使用 Node.js 内置的全局变量。eslint: ",n.jsx(e.a,{href:"https://github.com/mysticatea/eslint-plugin-node/blob/v11.1.0/docs/rules/prefer-global",children:"node/prefer-global"})]}),`
 `]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const { Buffer } = require('buffer');
@@ -7892,7 +7892,7 @@ console.log('hello');
 console.log('hello');
 `})}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["1.2【推荐】使用模块内支持的 ",n.jsx(e.code,{children:"promises"})," API。eslint: ",n.jsx(e.a,{href:"https://github.com/mysticatea/eslint-plugin-node/tree/master/docs/rules/prefer-promises",children:"node/prefer-promises"})]}),`
+`,n.jsxs(e.li,{children:["1.2 ",n.jsx(e.code,{children:"推荐"})," 使用模块内支持的 ",n.jsx(e.code,{children:"promises"})," API。eslint: ",n.jsx(e.a,{href:"https://github.com/mysticatea/eslint-plugin-node/tree/master/docs/rules/prefer-promises",children:"node/prefer-promises"})]}),`
 `]}),`
 `,n.jsxs(e.p,{children:["Node.js 从 v11.14.0 开始支持 ",n.jsx(e.code,{children:"require('dns').promises"})," 和 ",n.jsx(e.code,{children:"require('fs').promises"})," API。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -7926,7 +7926,7 @@ async function readData(filePath) {
 }
 `})}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["1.3【推荐】如无特殊需求，模块引用声明放在文件顶端，注意引用顺序。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md",children:"import/order"})]}),`
+`,n.jsxs(e.li,{children:["1.3 ",n.jsx(e.code,{children:"推荐"})," 如无特殊需求，模块引用声明放在文件顶端，注意引用顺序。eslint: ",n.jsx(e.a,{href:"https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md",children:"import/order"})]}),`
 `]}),`
 `,n.jsx(e.p,{children:"如无特殊需求（如动态 require），模块引用声明需要放在文件顶端。引用顺序如无特殊需求，按以下顺序来引入依赖：node 内置模块、npm 包、本地文件或其他，几类文件代码块之间各空一行，每类文件代码块中的引用顺序按照字典排序，如有解构引用情况，字典序以解构的第一个为准，解构内部按照字典排序。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
@@ -7970,7 +7970,7 @@ import note from 'note';
 import Car from './models/car';
 `})}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["1.4【推荐】抛出异常时，使用原生 ",n.jsx(e.code,{children:"Error"})," 对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-throw-literal",children:"no-throw-literal"})]}),`
+`,n.jsxs(e.li,{children:["1.4 ",n.jsx(e.code,{children:"推荐"})," 抛出异常时，使用原生 ",n.jsx(e.code,{children:"Error"})," 对象。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-throw-literal",children:"no-throw-literal"})]}),`
 `]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 throw 'error';
@@ -8001,7 +8001,7 @@ try {
   throw err;
 }
 `})}),`
-`,n.jsxs(e.p,{children:["1.5【推荐】线上环境尽量不要使用 ",n.jsx(e.code,{children:"fs/child_process"})," 模块的 ",n.jsx(e.code,{children:"sync"})," 方法，如 ",n.jsx(e.code,{children:"fs.readFileSync()"}),"、",n.jsx(e.code,{children:"cp.execSync()"})," 等。"]}),`
+`,n.jsxs(e.p,{children:["1.5 ",n.jsx(e.code,{children:"推荐"})," 线上环境尽量不要使用 ",n.jsx(e.code,{children:"fs/child_process"})," 模块的 ",n.jsx(e.code,{children:"sync"})," 方法，如 ",n.jsx(e.code,{children:"fs.readFileSync()"}),"、",n.jsx(e.code,{children:"cp.execSync()"})," 等。"]}),`
 `,n.jsxs(e.p,{children:["这样会阻塞 Node.js 应用的进程，导致不能继续处理新的请求，或当前正在处理的请求超时。推荐使用 ",n.jsx(e.code,{children:"require('fs').promises"})," 方式或使用 ",n.jsx(e.a,{href:"https://www.npmjs.com/package/mz",children:"mz"}),"。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`// bad
 const fs = require('fs');
@@ -8026,60 +8026,60 @@ async function test() {
 `})}),`
 `,n.jsx(e.h2,{children:"2 安全规约"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.1【强制】在客户端隐藏错误详情。"}),`
+`,n.jsxs(e.li,{children:["2.1 ",n.jsx(e.code,{children:"强制"})," 在客户端隐藏错误详情。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"错误提示有可能会暴露出敏感的系统信息，容易被利用去做进一步的攻击。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.2【强制】隐藏或伪造技术栈和框架标识。"}),`
+`,n.jsxs(e.li,{children:["2.2 ",n.jsx(e.code,{children:"强制"})," 隐藏或伪造技术栈和框架标识。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"隐藏或伪造 X-Powered-By 响应头，应用广泛的框架多有公开的漏洞，防止标识露出被恶意利用。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.3【强制】JSONP 跨域接口必须严格校验访问来源。"}),`
+`,n.jsxs(e.li,{children:["2.3 ",n.jsx(e.code,{children:"强制"})," JSONP 跨域接口必须严格校验访问来源。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"配置域名白名单，防止通过 JSONP 接口获取到敏感信息的风险。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.4【强制】禁止使用从参数或明文 cookie 中获取的用户标识进行敏感信息查询输出。"}),`
+`,n.jsxs(e.li,{children:["2.4 ",n.jsx(e.code,{children:"强制"})," 禁止使用从参数或明文 cookie 中获取的用户标识进行敏感信息查询输出。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"防止未授权访问/越权访问。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.5【强制】防止 SQL 注入。"}),`
+`,n.jsxs(e.li,{children:["2.5 ",n.jsx(e.code,{children:"强制"})," 防止 SQL 注入。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"含有用户输入内容的 SQL 语句必须使用预编译模式。若用户输入无法使用预编译模式(输入为表名/字段名等内容)，需要对用户输入进行转义/过滤之后再拼接到 SQL 中。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.6【推荐】定期检查过期依赖和依赖漏洞升级。"}),`
+`,n.jsxs(e.li,{children:["2.6 ",n.jsx(e.code,{children:"推荐"})," 定期检查过期依赖和依赖漏洞升级。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"检测依赖，对于有漏洞或者过期的依赖要及时升级或替换。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.7【推荐】用户上传文件不允许至服务器本地，需要上传到 OSS 等服务。"}),`
+`,n.jsxs(e.li,{children:["2.7 ",n.jsx(e.code,{children:"推荐"})," 用户上传文件不允许至服务器本地，需要上传到 OSS 等服务。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"任意文件上传漏洞，防止用户上传恶意文件，入侵服务器。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.8【推荐】服务端 URL 重定向需要设置白名单。"}),`
+`,n.jsxs(e.li,{children:["2.8 ",n.jsx(e.code,{children:"推荐"})," 服务端 URL 重定向需要设置白名单。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"若需要对用户输入内容作为目标 URL 进行重定向，需要对其进行域名白名单校验，不允许跳转至白名单外的域名。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"2.9【推荐】对接口入参严格校验。"}),`
+`,n.jsxs(e.li,{children:["2.9 ",n.jsx(e.code,{children:"推荐"})," 对接口入参严格校验。"]}),`
 `]}),`
 `,n.jsxs(e.p,{children:["使用 ",n.jsx(e.a,{href:"https://www.npmjs.com/package/jsonschema",children:"jsonschema"})," 或 ",n.jsx(e.a,{href:"https://www.npmjs.com/package/joi",children:"joi"})," 校验入参，减少意外输入造成的程序报错或崩溃，同时也能减少脏数据形成。"]}),`
 `,n.jsx(e.h2,{children:"3 最佳实践"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"3.1【推荐】应用不应该有状态。"}),`
+`,n.jsxs(e.li,{children:["3.1 ",n.jsx(e.code,{children:"推荐"})," 应用不应该有状态。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"使用外部数据存储。保证即使结束某个应用实例也不会影响数据和服务。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"3.2【推荐】尽量不要用 Node.js 应用去托管前端静态文件。"}),`
+`,n.jsxs(e.li,{children:["3.2 ",n.jsx(e.code,{children:"推荐"})," 尽量不要用 Node.js 应用去托管前端静态文件。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"应该把前端静态文件放到 CDN，当静态文件的访问量很大的时候，可能会阻塞其他服务的执行。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:"3.3【推荐】把 CPU 密集型任务委托给反向代理。"}),`
+`,n.jsxs(e.li,{children:["3.3 ",n.jsx(e.code,{children:"推荐"})," 把 CPU 密集型任务委托给反向代理。"]}),`
 `]}),`
 `,n.jsx(e.p,{children:"Node.js 应用不合适做 CPU 密集型任务（例如 gzip，SSL），请尽量把这类任务代理给 nginx 或其他服务。"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["3.4【推荐】使用 ",n.jsx(e.code,{children:"async/await"}),"，尽量避免使用回调函数。"]}),`
+`,n.jsxs(e.li,{children:["3.4 ",n.jsx(e.code,{children:"推荐"})," 使用 ",n.jsx(e.code,{children:"async/await"}),"，尽量避免使用回调函数。"]}),`
 `]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"async/await"})," 可以让你的代码看起来更简洁，可以规避掉回调地狱的问题，并且使异常处理也变得清晰简单。"]}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["3.5【推荐】使用 ",n.jsx(e.code,{children:"util.promisify"})," 处理回调函数，使其返回 ",n.jsx(e.code,{children:"Promise"}),"。"]}),`
+`,n.jsxs(e.li,{children:["3.5 ",n.jsx(e.code,{children:"推荐"})," 使用 ",n.jsx(e.code,{children:"util.promisify"})," 处理回调函数，使其返回 ",n.jsx(e.code,{children:"Promise"}),"。"]}),`
 `]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`const util = require('util');
 const fs = require('fs');
@@ -8093,10 +8093,10 @@ async function callStat() {
 `})}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.6【推荐】使用 Node.js 原生 ",n.jsx(e.code,{children:"Promise"}),"，而不是三方库如 ",n.jsx(e.code,{children:"bluebird"}),"。"]}),`
+`,n.jsxs(e.p,{children:["3.6 ",n.jsx(e.code,{children:"推荐"})," 使用 Node.js 原生 ",n.jsx(e.code,{children:"Promise"}),"，而不是三方库如 ",n.jsx(e.code,{children:"bluebird"}),"。"]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.7【推荐】在类方法中返回 ",n.jsx(e.code,{children:"this"})," 方便链式调用。"]}),`
+`,n.jsxs(e.p,{children:["3.7 ",n.jsx(e.code,{children:"推荐"})," 在类方法中返回 ",n.jsx(e.code,{children:"this"})," 方便链式调用。"]}),`
 `]}),`
 `]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-js",children:`class Jedi {
@@ -8117,7 +8117,7 @@ luke.jump()
   .setHeight(20);
 `})}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["3.8【推荐】使用 ",n.jsx(e.a,{href:"https://www.aliyun.com/product/nodejs",children:"阿里云 Node.js 性能平台"})," 作为应用的性能监控工具。"]}),`
+`,n.jsxs(e.li,{children:["3.8 ",n.jsx(e.code,{children:"推荐"})," 使用 ",n.jsx(e.a,{href:"https://www.aliyun.com/product/nodejs",children:"阿里云 Node.js 性能平台"})," 作为应用的性能监控工具。"]}),`
 `]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.a,{href:"https://www.aliyun.com/product/nodejs",children:"阿里云 Node.js 性能平台"}),"提供 Node.js 应用性能监控、管理及报警，性能快照远程截取与调优， 安全与依赖更新提示，异常日志与慢 HTTP 日志等功能，能有效帮助开发者监控和排查 Node.js 应用性能问题。"]}),`
 `,n.jsx(e.h2,{children:"配套工具"}),`
@@ -8184,7 +8184,7 @@ luke.jump()
 `,n.jsx(e.h3,{children:"1.1 缩进"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.1【强制】JSX 语法使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md",children:"react/jsx-indent"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md",children:"react/jsx-indent-props"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md",children:"react/jsx-closing-tag-location"})]}),`
+`,n.jsxs(e.p,{children:["1.1.1 ",n.jsx(e.code,{children:"mandatory"})," JSX 语法使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md",children:"react/jsx-indent"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md",children:"react/jsx-indent-props"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md",children:"react/jsx-closing-tag-location"})]}),`
 `,n.jsx(e.p,{children:"对于 JSX 语法，遵循与 JS 规约和 HTML 规约一致的 2 个空格缩进，不要使用 4 空格或 tab 缩进："}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo
@@ -8207,7 +8207,7 @@ luke.jump()
 `,n.jsx(e.h3,{children:"1.2 空格"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.1【强制】自闭合标签的斜线前有且仅有一个空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-multi-spaces",children:"no-multi-spaces"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md",children:"react/jsx-tag-spacing"})]}),`
+`,n.jsxs(e.p,{children:["1.2.1 ",n.jsx(e.code,{children:"mandatory"})," 自闭合标签的斜线前有且仅有一个空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-multi-spaces",children:"no-multi-spaces"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md",children:"react/jsx-tag-spacing"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo/>
 
@@ -8223,7 +8223,7 @@ luke.jump()
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.2【强制】JSX 行内属性之间仅有一个空格。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md",children:"react/jsx-props-no-multi-spaces"})]}),`
+`,n.jsxs(e.p,{children:["1.2.2 ",n.jsx(e.code,{children:"mandatory"})," JSX 行内属性之间仅有一个空格。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md",children:"react/jsx-props-no-multi-spaces"})]}),`
 `,n.jsx(e.p,{children:"同一行中标签和属性之间、属性之间只有一个空格。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <App  spacy />
@@ -8235,7 +8235,7 @@ luke.jump()
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.3【强制】JSX 属性的大括号内部两侧无空格。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md",children:"react/jsx-curly-spacing"})]}),`
+`,n.jsxs(e.p,{children:["1.2.3 ",n.jsx(e.code,{children:"mandatory"})," JSX 属性的大括号内部两侧无空格。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md",children:"react/jsx-curly-spacing"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo bar={ baz } />
 
@@ -8244,7 +8244,7 @@ luke.jump()
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.4【强制】不要在 JSX 属性的等号两边加空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/jsx-equals-spacing",children:"jsx-equals-spacing"})]}),`
+`,n.jsxs(e.p,{children:["1.2.4 ",n.jsx(e.code,{children:"mandatory"})," 不要在 JSX 属性的等号两边加空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/jsx-equals-spacing",children:"jsx-equals-spacing"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Hello name = {firstname} />;
 
@@ -8256,7 +8256,7 @@ luke.jump()
 `,n.jsx(e.h3,{children:"1.3 引号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.1【强制】JSX 属性使用双引号，不要使用单引号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/jsx-quotes",children:"jsx-quotes"})]}),`
+`,n.jsxs(e.p,{children:["1.3.1 ",n.jsx(e.code,{children:"mandatory"})," JSX 属性使用双引号，不要使用单引号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/jsx-quotes",children:"jsx-quotes"})]}),`
 `,n.jsx(e.p,{children:`为什么？HTML 属性通常使用双引号而不是单引号，因此 JSX 属性沿用了这种约定。
 其他 JS 使用单引号。`}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -8276,7 +8276,7 @@ luke.jump()
 `,n.jsx(e.h3,{children:"1.4 小括号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.1【强制】多行的 JSX 标签需用小括号包裹。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md",children:"react/jsx-wrap-multilines"})]}),`
+`,n.jsxs(e.p,{children:["1.4.1 ",n.jsx(e.code,{children:"mandatory"})," 多行的 JSX 标签需用小括号包裹。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md",children:"react/jsx-wrap-multilines"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 render() {
   return <MyComponent variant="long body" foo="bar">
@@ -8304,7 +8304,7 @@ render() {
 `,n.jsx(e.h3,{children:"1.5 标签"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.1【强制】无子元素的标签需写成自闭合标签。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md",children:"react/self-closing-comp"})]}),`
+`,n.jsxs(e.p,{children:["1.5.1 ",n.jsx(e.code,{children:"mandatory"})," 无子元素的标签需写成自闭合标签。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md",children:"react/self-closing-comp"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo variant="stuff"></Foo>
 
@@ -8313,7 +8313,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.2【强制】标签属性的换行。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md",children:"react/jsx-max-props-per-line"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md",children:"react/jsx-first-prop-new-line"})]}),`
+`,n.jsxs(e.p,{children:["1.5.2 ",n.jsx(e.code,{children:"mandatory"})," 标签属性的换行。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md",children:"react/jsx-max-props-per-line"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md",children:"react/jsx-first-prop-new-line"})]}),`
 `,n.jsx(e.p,{children:"对 JSX 标签属性的换行，遵循以下规则："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"标签名和它的属性可以写在一行，前提是不超过单行最大 100 字符数的限制"}),`
@@ -8349,7 +8349,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.3【强制】标签的属性有多行时，结束标签需另起一行。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md",children:"react/jsx-closing-bracket-location"})]}),`
+`,n.jsxs(e.p,{children:["1.5.3 ",n.jsx(e.code,{children:"mandatory"})," 标签的属性有多行时，结束标签需另起一行。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md",children:"react/jsx-closing-bracket-location"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo
   bar="bar"
@@ -8363,7 +8363,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.4【强制】禁止在有子节点的组件或 DOM 元素中使用 dangerouslySetInnerHTML 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md",children:"react/no-danger-with-children"})]}),`
+`,n.jsxs(e.p,{children:["1.5.4 ",n.jsx(e.code,{children:"mandatory"})," 禁止在有子节点的组件或 DOM 元素中使用 dangerouslySetInnerHTML 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md",children:"react/no-danger-with-children"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div dangerouslySetInnerHTML={{ __html: "HTML" }}>
   Children
@@ -8388,7 +8388,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.5【强制】HTML 自闭标签不能有子节点。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md",children:"react/void-dom-elements-no-children"})]}),`
+`,n.jsxs(e.p,{children:["1.5.5 ",n.jsx(e.code,{children:"mandatory"})," HTML 自闭标签不能有子节点。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md",children:"react/void-dom-elements-no-children"})]}),`
 `,n.jsx(e.p,{children:"HTML 自闭标签，比如 img，br，hr，被统称为空 DOM 元素，不能给他们定义子节点。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <br>Children</br>
@@ -8400,7 +8400,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.6【推荐】不要使用危险属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md",children:"react/no-danger"})]}),`
+`,n.jsxs(e.p,{children:["1.5.6 ",n.jsx(e.code,{children:"recommended"})," 不要使用危险属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md",children:"react/no-danger"})]}),`
 `,n.jsxs(e.p,{children:["React中的危险属性是指那些已知会引起应用程序漏洞的属性。这些属性命名为 ",n.jsx(e.code,{children:"dangerouslyXyz"})," 已经清楚地表明它们是危险的，应该尽量避免使用。",n.jsx(e.a,{href:"https://facebook.github.io/react/tips/dangerously-set-inner-html.html",children:"详细文档"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div dangerouslySetInnerHTML={{ __html: "Hello World" }}></div>;
@@ -8410,7 +8410,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.7【强制】JSX 语句的文本节点中不要使用注释字符串（例如，以//或/ *开头）。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md",children:"react/jsx-no-comment-textnodes"})]}),`
+`,n.jsxs(e.p,{children:["1.5.7 ",n.jsx(e.code,{children:"mandatory"})," JSX 语句的文本节点中不要使用注释字符串（例如，以//或/ *开头）。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md",children:"react/jsx-no-comment-textnodes"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class Hello extends React.Component {
   render() {
@@ -8451,7 +8451,7 @@ class Hello extends React.Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:[`1.5.8【强制】标签中禁止出现无意义字符，比如 > " } '。eslint: `,n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md",children:"react/no-unescaped-entities"})]}),`
+`,n.jsxs(e.p,{children:["1.5.8 ",n.jsx(e.code,{children:"mandatory"}),` 标签中禁止出现无意义字符，比如 > " } '。eslint: `,n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md",children:"react/no-unescaped-entities"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:">"})," 可用 ",n.jsx(e.code,{children:"&gt;"})," 替代"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:'"'})," 可用 ",n.jsx(e.code,{children:"&quot;"}),"，",n.jsx(e.code,{children:"&ldquo;"})," ， ",n.jsx(e.code,{children:"&#34; "})," 或者  ",n.jsx(e.code,{children:"&rdquo;"}),"  替代"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"'"})," 可用 ",n.jsx(e.code,{children:"&apos;"}),"，",n.jsx(e.code,{children:"&lsquo;"}),"，",n.jsx(e.code,{children:"&#39;"})," 或者 ",n.jsx(e.code,{children:"&rsquo;"})," 替代"]}),`
@@ -8474,7 +8474,7 @@ class Hello extends React.Component {
 `,n.jsx(e.h3,{children:"2.1 基本"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.1【参考】使用 ",n.jsx(e.code,{children:"JSX"})," 语法时，防止 ",n.jsx(e.code,{children:"React"})," 变量被标记为未使用，可以使用 ",n.jsx(e.code,{children:"@jsx"})," 标注来指定 ",n.jsx(e.code,{children:"React"})," 之外的变量。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md",children:"react/jsx-uses-react"})]}),`
+`,n.jsxs(e.p,{children:["2.1.1 ",n.jsx(e.code,{children:"referenced"})," 使用 ",n.jsx(e.code,{children:"JSX"})," 语法时，防止 ",n.jsx(e.code,{children:"React"})," 变量被标记为未使用，可以使用 ",n.jsx(e.code,{children:"@jsx"})," 标注来指定 ",n.jsx(e.code,{children:"React"})," 之外的变量。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md",children:"react/jsx-uses-react"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 var React = require('react');
 // nothing to do with React
@@ -8493,7 +8493,7 @@ var Hello = <div>Hello {this.props.name}</div>;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.2【强制】不要使用未声明的组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md",children:"react/jsx-no-undef"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md",children:"react/jsx-uses-vars"})]}),`
+`,n.jsxs(e.p,{children:["2.1.2 ",n.jsx(e.code,{children:"mandatory"})," 不要使用未声明的组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md",children:"react/jsx-no-undef"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md",children:"react/jsx-uses-vars"})]}),`
 `,n.jsx(e.p,{children:"不允许没有引用组件就直接使用，也可能是组件名拼写错误。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Hello name="John" />;
@@ -8505,11 +8505,11 @@ import Hello from './Hello';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.3【强制】每个文件只包含一个 React 组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md",children:"react/no-multi-comp"})]}),`
+`,n.jsxs(e.p,{children:["2.1.3 ",n.jsx(e.code,{children:"mandatory"})," 每个文件只包含一个 React 组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md",children:"react/no-multi-comp"})]}),`
 `,n.jsxs(e.p,{children:["但是可以包含多个",n.jsx(e.a,{href:"https://reactjs.org/docs/components-and-props.html#function-and-class-components",children:"函数组件"}),"。"]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.4【强制】不要在函数组件中使用 this。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md",children:"react/no-this-in-sfc"})]}),`
+`,n.jsxs(e.p,{children:["2.1.4 ",n.jsx(e.code,{children:"mandatory"})," 不要在函数组件中使用 this。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md",children:"react/no-this-in-sfc"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 function Foo(props, context) {
   return (
@@ -8530,7 +8530,7 @@ function Foo(props, context) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.5【强制】使用 ES6 class 创建组件 ，而不是 ",n.jsx(e.a,{href:"https://reactjs.org/docs/react-without-es6.html",children:"createReactClass"})," 。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md",children:"react/prefer-es6-class"})]}),`
+`,n.jsxs(e.p,{children:["2.1.5 ",n.jsx(e.code,{children:"mandatory"})," 使用 ES6 class 创建组件 ，而不是 ",n.jsx(e.a,{href:"https://reactjs.org/docs/react-without-es6.html",children:"createReactClass"})," 。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md",children:"react/prefer-es6-class"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const Listing = createReactClass({
  // ...
@@ -8549,7 +8549,7 @@ class Listing extends React.Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.6【参考】如果组件没有内部状态或 refs ，应使用函数组件，而不是类组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md",children:"react/prefer-stateless-function"})]}),`
+`,n.jsxs(e.p,{children:["2.1.6 ",n.jsx(e.code,{children:"referenced"})," 如果组件没有内部状态或 refs ，应使用函数组件，而不是类组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md",children:"react/prefer-stateless-function"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class Listing extends React.Component {
   render() {
@@ -8569,13 +8569,13 @@ function Listing({ hello }) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1.7【强制】不要使用 React.createElement，除非你不是用 JSX 文件初始化应用程序。"}),`
+`,n.jsxs(e.p,{children:["2.1.7 ",n.jsx(e.code,{children:"mandatory"})," 不要使用 React.createElement，除非你不是用 JSX 文件初始化应用程序。"]}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h3,{children:"2.2 方法"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.1【推荐】不要在 JSX 属性中使用 .bind()。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md",children:"react/jsx-no-bind"})]}),`
+`,n.jsxs(e.p,{children:["2.2.1 ",n.jsx(e.code,{children:"recommended"})," 不要在 JSX 属性中使用 .bind()。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md",children:"react/jsx-no-bind"})]}),`
 `,n.jsx(e.p,{children:"这不利于组件性能，每次 render 都会创建一个新的函数。"}),`
 `,n.jsx(e.p,{children:"有 2 种替代方案："}),`
 `,n.jsxs(e.ul,{children:[`
@@ -8627,7 +8627,7 @@ class extends React.Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.2【强制】render 方法必须要有返回值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md",children:"react/require-render-return"})]}),`
+`,n.jsxs(e.p,{children:["2.2.2 ",n.jsx(e.code,{children:"mandatory"})," render 方法必须要有返回值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md",children:"react/require-render-return"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 render() {
   (<div />);
@@ -8640,7 +8640,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.3【强制】禁止使用 ReactDOM.render 的返回值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md",children:"react/no-render-return-value"})]}),`
+`,n.jsxs(e.p,{children:["2.2.3 ",n.jsx(e.code,{children:"mandatory"})," 禁止使用 ReactDOM.render 的返回值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md",children:"react/no-render-return-value"})]}),`
 `,n.jsx(e.p,{children:"render()返回 ReactComponent 实例的引用。然而，应该避免使用这个返回值，因为在某些情况下，React 的未来版本中 render 方法可能会异步执行。如果需要引用 ReactComponent 实例，根元素需要增加 ref 回调。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const inst = ReactDOM.render(<App />, document.body);
@@ -8653,7 +8653,7 @@ ReactDOM.render(<App />, document.body, doSomethingWithInst);
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.4【强制】在扩展 React.PureComponent 时禁止使用 shouldComponentUpdate。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md",children:"react/no-redundant-should-component-update"})]}),`
+`,n.jsxs(e.p,{children:["2.2.4 ",n.jsx(e.code,{children:"mandatory"})," 在扩展 React.PureComponent 时禁止使用 shouldComponentUpdate。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md",children:"react/no-redundant-should-component-update"})]}),`
 `,n.jsx(e.p,{children:"定义 React.PureComponent 扩展组件时使用 shouldComponentUpdate 虽然有效，但是扩展 PureComponent 变得毫无意义。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class Foo extends React.PureComponent {
@@ -8709,7 +8709,7 @@ class Qux extends React.PureComponent {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.5【强制】禁止使用已经废弃的方法。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md",children:"react/no-deprecated"})]}),`
+`,n.jsxs(e.p,{children:["2.2.5 ",n.jsx(e.code,{children:"mandatory"})," 禁止使用已经废弃的方法。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md",children:"react/no-deprecated"})]}),`
 `,n.jsx(e.p,{children:"随着React版本升级，有些方法逐渐被弃用。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 React.render(<MyComponent />, root);
@@ -8770,7 +8770,7 @@ class Foo {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.6【强制】不要使用 findDOMNode。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md",children:"react/no-find-dom-node"})]}),`
+`,n.jsxs(e.p,{children:["2.2.6 ",n.jsx(e.code,{children:"mandatory"})," 不要使用 findDOMNode。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md",children:"react/no-find-dom-node"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.a,{href:"https://reactjs.org/docs/strict-mode.html#warning-about-deprecated-finddomnode-usage",children:"严格模式下已经弃用 findDOMNode"}),"。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class MyComponent extends Component {
@@ -8796,7 +8796,7 @@ class MyComponent extends Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.7【强制】不要使用 componentWillMount、componentWillReceiveProps、componentWillUpdate。"}),`
+`,n.jsxs(e.p,{children:["2.2.7 ",n.jsx(e.code,{children:"mandatory"})," 不要使用 componentWillMount、componentWillReceiveProps、componentWillUpdate。"]}),`
 `,n.jsxs(e.p,{children:["不要再使用 ",n.jsx(e.a,{href:"https://reactjs.org/docs/react-component.html#unsafe_componentwillmount",children:"componentWillMount"})," 、",n.jsx(e.a,{href:"https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops",children:"componentWillReceiveProps"}),"、",n.jsx(e.a,{href:"https://reactjs.org/docs/react-component.html#unsafe_componentwillupdate",children:"componentWillUpdate"}),"。使用这些生命周期方法通常会导致错误和不一致，因此React 计划在17版本删掉这些方法。"]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"componentWillMount() 可以用 constructor() 或 componentDidMount() 替代；"}),`
@@ -8811,7 +8811,7 @@ class MyComponent extends Component {
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.8【强制】不要在 componentWillUpdate 内改变 state 值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md",children:"react/no-will-update-set-state"})]}),`
+`,n.jsxs(e.p,{children:["2.2.8 ",n.jsx(e.code,{children:"mandatory"})," 不要在 componentWillUpdate 内改变 state 值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md",children:"react/no-will-update-set-state"})]}),`
 `,n.jsxs(e.p,{children:["首先，不要再使用 componentWillUpdate，",n.jsx(e.a,{href:"https://reactjs.org/docs/react-component.html#unsafe_componentwillupdate",children:"React 未来在17版本计划删掉 componentWillUpdate"}),"。通常可以用 componentDidUpdate() 替代。使用",n.jsx(e.a,{href:"https://github.com/reactjs/react-codemod#rename-unsafe-lifecycles",children:"rename-unsafe-lifecycles codemod"}),"自动更新组件。"]}),`
 `,n.jsxs(e.p,{children:["不要在 componentWillUpdate 调用 this.setState()。若你需要更新状态响应属性的变更，使用 ",n.jsx(e.a,{href:"https://react.docschina.org/docs/react-component.html#static-getderivedstatefromprops",children:"getDerivedStateFromProps()"})," 代替。在 componentWillUpdate 中改变 state 的值可能会引起组件的不确定状态。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -8857,7 +8857,7 @@ class Hello extends React.Component {
 `,n.jsx(e.h3,{children:"2.3 Props"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.1【强制】采用小驼峰风格命名 prop 。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md",children:"react/no-unknown-property"})]}),`
+`,n.jsxs(e.p,{children:["2.3.1 ",n.jsx(e.code,{children:"mandatory"})," 采用小驼峰风格命名 prop 。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md",children:"react/no-unknown-property"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo
   UserName="hello"
@@ -8872,7 +8872,7 @@ class Hello extends React.Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.2【强制】声明的 prop 必须被使用。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md",children:"react/no-unused-prop-types"})]}),`
+`,n.jsxs(e.p,{children:["2.3.2 ",n.jsx(e.code,{children:"mandatory"})," 声明的 prop 必须被使用。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md",children:"react/no-unused-prop-types"})]}),`
 `,n.jsx(e.p,{children:"声明而未使用的 prop 可能带来潜在的问题，也会给维护者造成困扰，应将它们删除。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 var Hello = createReactClass({
@@ -8907,7 +8907,7 @@ var Hello = createReactClass({
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.3【参考】 props，state 优先使用解构赋值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md",children:"react/destructuring-assignment"})]}),`
+`,n.jsxs(e.p,{children:["2.3.3 ",n.jsx(e.code,{children:"referenced"}),"  props，state 优先使用解构赋值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md",children:"react/destructuring-assignment"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const MyComponent = (props) => {
   return (<div id={props.id} />)
@@ -8925,7 +8925,7 @@ const MyComponent = (props, context) => {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.4【强制】prop 值为 true 时，可以省略它的值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md",children:"react/jsx-boolean-value"})]}),`
+`,n.jsxs(e.p,{children:["2.3.4 ",n.jsx(e.code,{children:"mandatory"})," prop 值为 true 时，可以省略它的值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md",children:"react/jsx-boolean-value"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo
   hidden={true}
@@ -8938,7 +8938,7 @@ const MyComponent = (props, context) => {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.5【推荐】prop 需要 propTypes 验证。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md",children:"react/prop-types"})]}),`
+`,n.jsxs(e.p,{children:["2.3.5 ",n.jsx(e.code,{children:"recommended"})," prop 需要 propTypes 验证。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md",children:"react/prop-types"})]}),`
 `,n.jsx(e.p,{children:"PropTypes 验证接收到的数据从而提高组件的可重用性。如果其他开发传入了不正确数据类型，可以及时警告。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class Greeting extends React.Component {
@@ -8964,7 +8964,7 @@ Greeting.propTypes = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.6【推荐】不要使用模糊的类型检查器。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md",children:"react/forbid-prop-types"})]}),`
+`,n.jsxs(e.p,{children:["2.3.6 ",n.jsx(e.code,{children:"recommended"})," 不要使用模糊的类型检查器。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md",children:"react/forbid-prop-types"})]}),`
 `,n.jsx(e.p,{children:"不要使用模糊的类型验证，比如 any, array, object。它们可以用其他明确的类型代替。any可以替换为任意类型，array 和 object 可以分别替换为 arrayOf 和 shape。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class MyComponent extends React.Component {
@@ -9000,7 +9000,7 @@ MyComponent.propTypes = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.7【参考】属性需要指定 defaultProps，除了 isRequired 的属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md",children:"react/require-default-props"})]}),`
+`,n.jsxs(e.p,{children:["2.3.7 ",n.jsx(e.code,{children:"referenced"})," 属性需要指定 defaultProps，除了 isRequired 的属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md",children:"react/require-default-props"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 function MyStatelessComponent({ foo, bar }) {
   return <div>{foo}{bar}</div>;
@@ -9024,7 +9024,7 @@ MyStatelessComponent.defaultProps = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.8【强制】如果属性有 isRequired 类型检查，不要在 defaultProps 内对其赋值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md",children:"react/default-props-match-prop-types"})]}),`
+`,n.jsxs(e.p,{children:["2.3.8 ",n.jsx(e.code,{children:"mandatory"})," 如果属性有 isRequired 类型检查，不要在 defaultProps 内对其赋值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md",children:"react/default-props-match-prop-types"})]}),`
 `,n.jsx(e.p,{children:"propTypes 类型检查发生在 defaultProps 解析之后，如果在 defaultProps 赋值，isRequired 类型检查没有实际意义。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 MyStatelessComponent.propTypes = {
@@ -9048,7 +9048,7 @@ MyStatelessComponent.defaultProps = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.9【推荐】不要用数组的索引值作为 map 生成元素的 key。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md",children:"react/no-array-index-key"})]}),`
+`,n.jsxs(e.p,{children:["2.3.9 ",n.jsx(e.code,{children:"recommended"})," 不要用数组的索引值作为 map 生成元素的 key。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md",children:"react/no-array-index-key"})]}),`
 `,n.jsxs(e.p,{children:["为什么？React 使用 key 来标识哪些项已更改，已添加或已删除， ",n.jsx(e.a,{href:"https://reactjs.org/docs/lists-and-keys.html#keys",children:"key 应该始终稳定"}),"。使用不稳定的 ID 是一种",n.jsx(e.a,{href:"https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318",children:"反模式"}),"，因为它不能唯一标识元素。如果数组重新排序或将元素添加到数组的开头，可能会更改索引导致不必要的渲染，对性能产生负面影响。"]}),`
 `,n.jsx(e.p,{children:"如果数组的顺序可能发生变化，我们不建议使用索引值作为 key。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -9069,7 +9069,7 @@ MyStatelessComponent.defaultProps = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.10【强制】禁止将 children 作为属性名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md",children:"react/no-children-prop"})]}),`
+`,n.jsxs(e.p,{children:["2.3.10 ",n.jsx(e.code,{children:"mandatory"})," 禁止将 children 作为属性名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md",children:"react/no-children-prop"})]}),`
 `,n.jsxs(e.p,{children:["使用 JSX 时，",n.jsx(e.code,{children:"children"})," 应嵌套在开始和结束标签之间。不使用JSX时，应将 ",n.jsx(e.code,{children:"children"})," 作为附加参数传递给 ",n.jsx(e.code,{children:"React.createElement"}),"。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div children='Children' />
@@ -9094,7 +9094,7 @@ React.createElement("div", 'Child 1', 'Child 2')
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.11【强制】不要声明重复的属性名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md",children:"react/jsx-no-duplicate-props"})]}),`
+`,n.jsxs(e.p,{children:["2.3.11 ",n.jsx(e.code,{children:"mandatory"})," 不要声明重复的属性名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md",children:"react/jsx-no-duplicate-props"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Hello name="John" name="John" />;
 
@@ -9103,7 +9103,7 @@ React.createElement("div", 'Child 1', 'Child 2')
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.12【强制】style 的属性值必须是一个对象。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md",children:"react/style-prop-object"})]}),`
+`,n.jsxs(e.p,{children:["2.3.12 ",n.jsx(e.code,{children:"mandatory"})," style 的属性值必须是一个对象。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md",children:"react/style-prop-object"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div style="color: 'red'" />
 <div style={true} />
@@ -9134,7 +9134,7 @@ React.createElement("div", { style: styles });
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.13【推荐】不要单独使用 target='_blank'。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md",children:"react/jsx-no-target-blank"})]}),`
+`,n.jsxs(e.p,{children:["2.3.13 ",n.jsx(e.code,{children:"recommended"})," 不要单独使用 target='_blank'。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md",children:"react/jsx-no-target-blank"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"target='_blank'"})," 常用于在新标签页打开。使用这个属性可能造成严重的安全问题。建议和 ",n.jsx(e.code,{children:"rel='noreferrer noopener'"})," 一起使用。",n.jsx(e.a,{href:"https://mathiasbynens.github.io/rel-noopener/",children:"详见"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const Hello = <a target='_blank' href="http://example.com/"></a>
@@ -9152,7 +9152,7 @@ const Hello = <a></a>
 `,n.jsx(e.h3,{children:"2.4 State"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.1【强制】不要在 setState 中使用 this.state。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md",children:"react/no-access-state-in-setstate"})]}),`
+`,n.jsxs(e.p,{children:["2.4.1 ",n.jsx(e.code,{children:"mandatory"})," 不要在 setState 中使用 this.state。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md",children:"react/no-access-state-in-setstate"})]}),`
 `,n.jsx(e.p,{children:`在 setState 中使用 this.state 可能导致错误，当两个 state 在同一个批处理中时，引用的是旧状态而不是新状态。
 为避免这种情况，请在回调中使用 preState 作为第一个参数。`}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -9175,7 +9175,7 @@ setState({ value: 2 + 1 })
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.2【强制】声明的 state 必须被使用。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-state.md",children:"react/no-unused-state"})]}),`
+`,n.jsxs(e.p,{children:["2.4.2 ",n.jsx(e.code,{children:"mandatory"})," 声明的 state 必须被使用。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-state.md",children:"react/no-unused-state"})]}),`
 `,n.jsx(e.p,{children:"声明而未使用的 state 可能带来潜在的问题，也会给维护者造成困扰，应将它们删除。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class MyComponent extends React.Component {
@@ -9218,7 +9218,7 @@ var UnusedGetInitialStateTest = createReactClass({
 `,n.jsx(e.h3,{children:"2.5 Refs"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.1【强制】使用 ref 回调函数或 React.createRef()，不要使用字符串。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md",children:"react/no-string-refs"})]}),`
+`,n.jsxs(e.p,{children:["2.5.1 ",n.jsx(e.code,{children:"mandatory"})," 使用 ref 回调函数或 React.createRef()，不要使用字符串。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md",children:"react/no-string-refs"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - 使用字符串
 class MyComponent extends React.Component {
   componentDidMount() {
@@ -9263,7 +9263,7 @@ class MyComponent extends React.Component {
 `,n.jsx(e.h3,{children:"2.6 顺序"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6.1【参考】组件方法的排序规则。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md",children:"react/sort-comp"})]}),`
+`,n.jsxs(e.p,{children:["2.6.1 ",n.jsx(e.code,{children:"referenced"})," 组件方法的排序规则。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md",children:"react/sort-comp"})]}),`
 `,n.jsx(e.p,{children:"React 组件内有声明周期方法、事件处理方法、render 方法等几类方法，指定这些方法按固定的顺序排序可以增强代码的一致性，方便查找和阅读。"}),`
 `,n.jsx(e.p,{children:"我们推荐的方法排序如下："}),`
 `,n.jsxs(e.ul,{children:[`
@@ -9287,17 +9287,17 @@ class MyComponent extends React.Component {
 `,n.jsx(e.h3,{children:"2.7 Mixins"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.7.1【强制】不要使用 mixins。"}),`
+`,n.jsxs(e.p,{children:["2.7.1 ",n.jsx(e.code,{children:"mandatory"})," 不要使用 mixins。"]}),`
 `,n.jsx(e.p,{children:"Mixins 引入了隐式依赖，可能导致命名冲突，并导致滚雪球式的复杂度。大多数使用 mixin 的场景都可以通过组件、高阶组件或工具模块以更好的方式完成。"}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h2,{children:"3 命名"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.1【强制】文件扩展名： 使用 .jsx、.tsx、.js 或 .ts 作为 React 组件的文件扩展名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md",children:"react/jsx-filename-extension"})]}),`
+`,n.jsxs(e.p,{children:["3.1 ",n.jsx(e.code,{children:"mandatory"})," 文件扩展名： 使用 .jsx、.tsx、.js 或 .ts 作为 React 组件的文件扩展名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md",children:"react/jsx-filename-extension"})]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.2【强制】引用名：使用大驼峰风格命名引用的组件，使用小驼峰风格命名引用组件的实例。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md",children:"react/jsx-pascal-case"})]}),`
+`,n.jsxs(e.p,{children:["3.2 ",n.jsx(e.code,{children:"mandatory"})," 引用名：使用大驼峰风格命名引用的组件，使用小驼峰风格命名引用组件的实例。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md",children:"react/jsx-pascal-case"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 import reservationCard from './reservation-card';
 
@@ -9312,7 +9312,7 @@ const reservationItem = <ReservationCard />;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.3【推荐】高阶组件命名：将高阶组件名和传入组件名组合作为 displayName。"}),`
+`,n.jsxs(e.p,{children:["3.3 ",n.jsx(e.code,{children:"recommended"})," 高阶组件命名：将高阶组件名和传入组件名组合作为 displayName。"]}),`
 `,n.jsxs(e.p,{children:["例如，高阶组件 ",n.jsx(e.code,{children:"withFoo()"})," ，当传入组件 ",n.jsx(e.code,{children:"Bar"})," 时，应该产生一个组件，应使用 withFoo(Bar) 作为生成组件的  displayName。"]}),`
 `,n.jsxs(e.p,{children:["组件的 ",n.jsx(e.code,{children:"displayName"})," 可被开发者工具和报错信息使用，这种组合的命名方式能清晰地表达高阶组件和被包裹组件的关系。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -9341,7 +9341,7 @@ export default function withFoo(WrappedComponent) {
 `,n.jsx(e.h2,{children:"4 Hooks"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.1【强制】只在最顶层调用 Hooks，不要在循环、条件和嵌套函数中调用 Hooks。eslint: ",n.jsx(e.a,{href:"https://reactjs.org/docs/hooks-rules.html#only-call-hooks-at-the-top-level",children:"rules of Hooks - only call Hooks at the top level"})]}),`
+`,n.jsxs(e.p,{children:["4.1 ",n.jsx(e.code,{children:"mandatory"})," 只在最顶层调用 Hooks，不要在循环、条件和嵌套函数中调用 Hooks。eslint: ",n.jsx(e.a,{href:"https://reactjs.org/docs/hooks-rules.html#only-call-hooks-at-the-top-level",children:"rules of Hooks - only call Hooks at the top level"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - call Hooks inside conditions
 function ComponentWithConditionalHook() {
   if (cond) {
@@ -9370,7 +9370,7 @@ function ComponentWithHook() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.2【强制】Hooks 命名必须以 ",n.jsx(e.code,{children:"use"})," 开头，小驼峰形式"]}),`
+`,n.jsxs(e.p,{children:["4.2 ",n.jsx(e.code,{children:"mandatory"})," Hooks 命名必须以 ",n.jsx(e.code,{children:"use"})," 开头，小驼峰形式"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const customHook = () => {}
 
@@ -9379,7 +9379,7 @@ const useCustomHook = () => {}
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.3【强制】只在 React 函数组件和自定义 Hooks 中调用 Hooks，不能在普通的 JavaScript 函数中调用 Hooks。eslint: ",n.jsx(e.a,{href:"https://reactjs.org/docs/hooks-rules.html#only-call-hooks-from-react-functions",children:"rules of Hooks - only call Hooks from React functions"})]}),`
+`,n.jsxs(e.p,{children:["4.3 ",n.jsx(e.code,{children:"mandatory"})," 只在 React 函数组件和自定义 Hooks 中调用 Hooks，不能在普通的 JavaScript 函数中调用 Hooks。eslint: ",n.jsx(e.a,{href:"https://reactjs.org/docs/hooks-rules.html#only-call-hooks-from-react-functions",children:"rules of Hooks - only call Hooks from React functions"})]}),`
 `,n.jsx(e.pre,{imports:{},children:n.jsx(e.code,{className:"language-jsx",children:`// bad - call Hooks inside class componennt
 class ClassComponentWithHook extends React.Component {
   render() {
@@ -9404,7 +9404,7 @@ function useHookWithHook() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.4【推荐】",n.jsx(e.code,{children:"useEffect"})," 及",n.jsx(e.a,{href:"https://github.com/facebook/react/blob/3c1a7ac87c5b4903aa0de02d11bd9ec2590ad598/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js#L1518",children:"类似 Hooks "}),"需要声明所有依赖。eslint: ",n.jsx(e.a,{href:"https://github.com/facebook/react/issues/14920",children:"exhaustive-deps"})]}),`
+`,n.jsxs(e.p,{children:["4.4 ",n.jsx(e.code,{children:"recommended"})," ",n.jsx(e.code,{children:"useEffect"})," 及",n.jsx(e.a,{href:"https://github.com/facebook/react/blob/3c1a7ac87c5b4903aa0de02d11bd9ec2590ad598/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js#L1518",children:"类似 Hooks "}),"需要声明所有依赖。eslint: ",n.jsx(e.a,{href:"https://github.com/facebook/react/issues/14920",children:"exhaustive-deps"})]}),`
 `,n.jsxs(e.p,{children:["此规则在某些场景下可能过于严格，并且 ESLint autofix 可能会造成一些",n.jsx(e.a,{href:"https://github.com/facebook/react/issues/16313",children:"问题"}),"，因此需注意："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["升级 ",n.jsx(e.code,{children:"eslint-plugin-react-hooks"})," 到 2.4.0 版本及以上，因为 ",n.jsx(e.a,{href:"https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/CHANGELOG.md#240",children:"2.4.0 版本后该规则的 autofix 被默认禁用"})]}),`
@@ -9439,7 +9439,7 @@ function MyComponent() {
 `,n.jsxs(e.p,{children:[n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Learn/Accessibility/WAI-ARIA_basics",children:"这篇文档"}),"对 WAI-ARIA 规范的内容和使用做了初步介绍。"]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.1【推荐】img 标签应包含 alt 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md",children:"jsx-a11y/alt-text"})]}),`
+`,n.jsxs(e.p,{children:["5.1 ",n.jsx(e.code,{children:"recommended"})," img 标签应包含 alt 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md",children:"jsx-a11y/alt-text"})]}),`
 `,n.jsxs(e.p,{children:["如果图片无需被无障碍阅读器识别(如作为 button 的 icon 使用)，你可以将 ",n.jsx(e.code,{children:"alt"})," 属性写为空字符串"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <img src="hello.jpg" />
@@ -9455,7 +9455,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:['5.2【推荐】img 标签的 alt 属性不要使用 "image"，"photo"，"picture" 之类的关键词。eslint: ',n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md",children:"jsx-a11y/img-redundant-alt"})]}),`
+`,n.jsxs(e.p,{children:["5.2 ",n.jsx(e.code,{children:"recommended"}),' img 标签的 alt 属性不要使用 "image"，"photo"，"picture" 之类的关键词。eslint: ',n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md",children:"jsx-a11y/img-redundant-alt"})]}),`
 `,n.jsxs(e.p,{children:["屏幕阅读器已会将 ",n.jsx(e.code,{children:"img"})," 元素识别成图片，再在 alt 中包含这类关键词没有意义。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <img src="hello.jpg" alt="Picture of me waving hello" />
@@ -9465,7 +9465,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.3【推荐】锚元素(即 ",n.jsx(e.code,{children:"<a>"})," 元素)必须含有内容，且内容必须对屏幕阅读器可见(这里指内容不能通过设置 ",n.jsx(e.code,{children:"aria-hidden"})," 属性隐藏)。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md",children:"jsx-a11y/anchor-has-content"})]}),`
+`,n.jsxs(e.p,{children:["5.3 ",n.jsx(e.code,{children:"recommended"})," 锚元素(即 ",n.jsx(e.code,{children:"<a>"})," 元素)必须含有内容，且内容必须对屏幕阅读器可见(这里指内容不能通过设置 ",n.jsx(e.code,{children:"aria-hidden"})," 属性隐藏)。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md",children:"jsx-a11y/anchor-has-content"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - empty content
 <a />
 
@@ -9478,7 +9478,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.4【推荐】禁止使用无效的 ARIA 属性，只能使用列在 ",n.jsx(e.a,{href:"https://www.w3.org/WAI/PF/aria-1.1/states_and_properties",children:"WAI-ARIA States and Properties spec"})," 中的 ",n.jsx(e.code,{children:"aria-*"})," 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-props.md",children:"jsx-a11y/aria-props"})]}),`
+`,n.jsxs(e.p,{children:["5.4 ",n.jsx(e.code,{children:"recommended"})," 禁止使用无效的 ARIA 属性，只能使用列在 ",n.jsx(e.a,{href:"https://www.w3.org/WAI/PF/aria-1.1/states_and_properties",children:"WAI-ARIA States and Properties spec"})," 中的 ",n.jsx(e.code,{children:"aria-*"})," 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-props.md",children:"jsx-a11y/aria-props"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - Labeled using incorrectly spelled aria-labeledby
 <div id="address_label">Enter your address</div>
 <input aria-labeledby="address_label">
@@ -9489,7 +9489,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.5【推荐】ARIA 属性、状态的值必须为有效值。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-proptypes.md",children:"jsx-a11y/aria-proptypes"})]}),`
+`,n.jsxs(e.p,{children:["5.5 ",n.jsx(e.code,{children:"recommended"})," ARIA 属性、状态的值必须为有效值。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-proptypes.md",children:"jsx-a11y/aria-proptypes"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - the aria-hidden state is of type true/false
 <span aria-hidden="yes">foo</span>
 
@@ -9498,7 +9498,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.6【推荐】禁止特定元素包含 ",n.jsx(e.code,{children:"role"})," 和 ",n.jsx(e.code,{children:"aria-*"})," 属性。一些保留的 DOM 元素不支持设置 ARIA 角色或者属性，通常是因为这些元素是不可见的，例如 ",n.jsx(e.code,{children:"meta, html, script, style"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md",children:"jsx-a11y/aria-unsupported-elements"})]}),`
+`,n.jsxs(e.p,{children:["5.6 ",n.jsx(e.code,{children:"recommended"})," 禁止特定元素包含 ",n.jsx(e.code,{children:"role"})," 和 ",n.jsx(e.code,{children:"aria-*"})," 属性。一些保留的 DOM 元素不支持设置 ARIA 角色或者属性，通常是因为这些元素是不可见的，例如 ",n.jsx(e.code,{children:"meta, html, script, style"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md",children:"jsx-a11y/aria-unsupported-elements"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - the meta element should not be given any ARIA attributes
 <meta charset="UTF-8" aria-hidden="false" />
 
@@ -9507,7 +9507,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.7【推荐】仅使用有效的、非抽象的 ARIA roles，",n.jsx(e.a,{href:"https://www.w3.org/TR/wai-aria/#roles_categorization",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md",children:"jsx-a11y/aria-role"})]}),`
+`,n.jsxs(e.p,{children:["5.7 ",n.jsx(e.code,{children:"recommended"})," 仅使用有效的、非抽象的 ARIA roles，",n.jsx(e.a,{href:"https://www.w3.org/TR/wai-aria/#roles_categorization",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md",children:"jsx-a11y/aria-role"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - not an ARIA role
 <div role="datepicker" />
 
@@ -9519,7 +9519,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.8【推荐】有 ARIA role 的元素必须也声明该 role 需要的属性，",n.jsx(e.a,{href:"https://www.w3.org/TR/wai-aria/#requiredState",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-has-required-aria-props.md",children:"jsx-a11y/role-has-required-aria-props"})]}),`
+`,n.jsxs(e.p,{children:["5.8 ",n.jsx(e.code,{children:"recommended"})," 有 ARIA role 的元素必须也声明该 role 需要的属性，",n.jsx(e.a,{href:"https://www.w3.org/TR/wai-aria/#requiredState",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-has-required-aria-props.md",children:"jsx-a11y/role-has-required-aria-props"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - the checkbox role requires the aria-checked state
 <span role="checkbox" aria-labelledby="foo" tabindex="0"></span>
 
@@ -9528,7 +9528,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.9【推荐】强制拥有显式或隐式 role 的元素，只能含有该 role 支持的 ",n.jsx(e.code,{children:"aria-*"})," 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-supports-aria-props.md",children:"jsx-a11y/role-supports-aria-props"})]}),`
+`,n.jsxs(e.p,{children:["5.9 ",n.jsx(e.code,{children:"recommended"})," 强制拥有显式或隐式 role 的元素，只能含有该 role 支持的 ",n.jsx(e.code,{children:"aria-*"})," 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-supports-aria-props.md",children:"jsx-a11y/role-supports-aria-props"})]}),`
 `,n.jsxs(e.p,{children:["一些元素会有隐式的 role ，譬如 ",n.jsx(e.code,{children:'<a href="#">'})," ，会被解析为 ",n.jsx(e.code,{children:'role="link"'}),"。很多 ARIA 属性只能在具有特定 role 的元素上使用"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - the radio role does not support the aria-required property
 <ul role="radiogroup" aria-labelledby="foo">
@@ -9546,7 +9546,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.10【推荐】",n.jsx(e.code,{children:"<iframe>"})," 元素必须有一个唯一的 title 属性，表示其内容。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/iframe-has-title.md",children:"jsx-a11y/iframe-has-title"})]}),`
+`,n.jsxs(e.p,{children:["5.10 ",n.jsx(e.code,{children:"recommended"})," ",n.jsx(e.code,{children:"<iframe>"})," 元素必须有一个唯一的 title 属性，表示其内容。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/iframe-has-title.md",children:"jsx-a11y/iframe-has-title"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <iframe />
 <iframe {...props} />
@@ -9561,7 +9561,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.11【推荐】不要使用 accessKey 属性。accessKey 属性提供了为当前元素生成快捷键的方式，不过 accessKey 值可能与系统或浏览器键盘快捷键或辅助技术功能相冲突，所以不建议使用。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md",children:"jsx-a11y/no-access-key"})]}),`
+`,n.jsxs(e.p,{children:["5.11 ",n.jsx(e.code,{children:"recommended"})," 不要使用 accessKey 属性。accessKey 属性提供了为当前元素生成快捷键的方式，不过 accessKey 值可能与系统或浏览器键盘快捷键或辅助技术功能相冲突，所以不建议使用。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md",children:"jsx-a11y/no-access-key"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div accessKey="h" />
 
@@ -9570,7 +9570,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.12【推荐】禁止使用会造成视觉分散的元素。一些会引起视觉注意力分散的元素对视觉障碍的用户会造成问题，例如 ",n.jsx(e.code,{children:"<marquee>"})," 和 ",n.jsx(e.code,{children:"<blink>"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-distracting-elements.md",children:"jsx-a11y/no-distracting-elements"})]}),`
+`,n.jsxs(e.p,{children:["5.12 ",n.jsx(e.code,{children:"recommended"})," 禁止使用会造成视觉分散的元素。一些会引起视觉注意力分散的元素对视觉障碍的用户会造成问题，例如 ",n.jsx(e.code,{children:"<marquee>"})," 和 ",n.jsx(e.code,{children:"<blink>"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-distracting-elements.md",children:"jsx-a11y/no-distracting-elements"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <marquee />
 <blink />
@@ -9580,7 +9580,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.13【推荐】scope 属性只能在 ",n.jsx(e.code,{children:"<th>"})," 元素上使用，",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced#The_scope_attribute",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/scope.md",children:"jsx-a11y/scope"})]}),`
+`,n.jsxs(e.p,{children:["5.13 ",n.jsx(e.code,{children:"recommended"})," scope 属性只能在 ",n.jsx(e.code,{children:"<th>"})," 元素上使用，",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced#The_scope_attribute",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/scope.md",children:"jsx-a11y/scope"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div scope />
 
@@ -9606,7 +9606,7 @@ function MyComponent() {
 `,n.jsx(e.h3,{children:"1.1 缩进"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1.1【强制】JSX 语法使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md",children:"react/jsx-indent"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md",children:"react/jsx-indent-props"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md",children:"react/jsx-closing-tag-location"})]}),`
+`,n.jsxs(e.p,{children:["1.1.1 ",n.jsx(e.code,{children:"强制"})," JSX 语法使用 2 个空格缩进。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent.md",children:"react/jsx-indent"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-indent-props.md",children:"react/jsx-indent-props"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-tag-location.md",children:"react/jsx-closing-tag-location"})]}),`
 `,n.jsx(e.p,{children:"对于 JSX 语法，遵循与 JS 规约和 HTML 规约一致的 2 个空格缩进，不要使用 4 空格或 tab 缩进："}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo
@@ -9629,7 +9629,7 @@ function MyComponent() {
 `,n.jsx(e.h3,{children:"1.2 空格"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.1【强制】自闭合标签的斜线前有且仅有一个空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-multi-spaces",children:"no-multi-spaces"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md",children:"react/jsx-tag-spacing"})]}),`
+`,n.jsxs(e.p,{children:["1.2.1 ",n.jsx(e.code,{children:"强制"})," 自闭合标签的斜线前有且仅有一个空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/no-multi-spaces",children:"no-multi-spaces"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md",children:"react/jsx-tag-spacing"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo/>
 
@@ -9645,7 +9645,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.2【强制】JSX 行内属性之间仅有一个空格。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md",children:"react/jsx-props-no-multi-spaces"})]}),`
+`,n.jsxs(e.p,{children:["1.2.2 ",n.jsx(e.code,{children:"强制"})," JSX 行内属性之间仅有一个空格。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-props-no-multi-spaces.md",children:"react/jsx-props-no-multi-spaces"})]}),`
 `,n.jsx(e.p,{children:"同一行中标签和属性之间、属性之间只有一个空格。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <App  spacy />
@@ -9657,7 +9657,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.3【强制】JSX 属性的大括号内部两侧无空格。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md",children:"react/jsx-curly-spacing"})]}),`
+`,n.jsxs(e.p,{children:["1.2.3 ",n.jsx(e.code,{children:"强制"})," JSX 属性的大括号内部两侧无空格。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-curly-spacing.md",children:"react/jsx-curly-spacing"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo bar={ baz } />
 
@@ -9666,7 +9666,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2.4【强制】不要在 JSX 属性的等号两边加空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/jsx-equals-spacing",children:"jsx-equals-spacing"})]}),`
+`,n.jsxs(e.p,{children:["1.2.4 ",n.jsx(e.code,{children:"强制"})," 不要在 JSX 属性的等号两边加空格。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/jsx-equals-spacing",children:"jsx-equals-spacing"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Hello name = {firstname} />;
 
@@ -9678,7 +9678,7 @@ function MyComponent() {
 `,n.jsx(e.h3,{children:"1.3 引号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3.1【强制】JSX 属性使用双引号，不要使用单引号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/jsx-quotes",children:"jsx-quotes"})]}),`
+`,n.jsxs(e.p,{children:["1.3.1 ",n.jsx(e.code,{children:"强制"})," JSX 属性使用双引号，不要使用单引号。eslint: ",n.jsx(e.a,{href:"https://eslint.org/docs/rules/jsx-quotes",children:"jsx-quotes"})]}),`
 `,n.jsx(e.p,{children:`为什么？HTML 属性通常使用双引号而不是单引号，因此 JSX 属性沿用了这种约定。
 其他 JS 使用单引号。`}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -9698,7 +9698,7 @@ function MyComponent() {
 `,n.jsx(e.h3,{children:"1.4 小括号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.4.1【强制】多行的 JSX 标签需用小括号包裹。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md",children:"react/jsx-wrap-multilines"})]}),`
+`,n.jsxs(e.p,{children:["1.4.1 ",n.jsx(e.code,{children:"强制"})," 多行的 JSX 标签需用小括号包裹。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-wrap-multilines.md",children:"react/jsx-wrap-multilines"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 render() {
   return <MyComponent variant="long body" foo="bar">
@@ -9726,7 +9726,7 @@ render() {
 `,n.jsx(e.h3,{children:"1.5 标签"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.1【强制】无子元素的标签需写成自闭合标签。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md",children:"react/self-closing-comp"})]}),`
+`,n.jsxs(e.p,{children:["1.5.1 ",n.jsx(e.code,{children:"强制"})," 无子元素的标签需写成自闭合标签。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/self-closing-comp.md",children:"react/self-closing-comp"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo variant="stuff"></Foo>
 
@@ -9735,7 +9735,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.2【强制】标签属性的换行。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md",children:"react/jsx-max-props-per-line"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md",children:"react/jsx-first-prop-new-line"})]}),`
+`,n.jsxs(e.p,{children:["1.5.2 ",n.jsx(e.code,{children:"强制"})," 标签属性的换行。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md",children:"react/jsx-max-props-per-line"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-first-prop-new-line.md",children:"react/jsx-first-prop-new-line"})]}),`
 `,n.jsx(e.p,{children:"对 JSX 标签属性的换行，遵循以下规则："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"标签名和它的属性可以写在一行，前提是不超过单行最大 100 字符数的限制"}),`
@@ -9771,7 +9771,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.3【强制】标签的属性有多行时，结束标签需另起一行。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md",children:"react/jsx-closing-bracket-location"})]}),`
+`,n.jsxs(e.p,{children:["1.5.3 ",n.jsx(e.code,{children:"强制"})," 标签的属性有多行时，结束标签需另起一行。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md",children:"react/jsx-closing-bracket-location"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo
   bar="bar"
@@ -9785,7 +9785,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.4【强制】禁止在有子节点的组件或 DOM 元素中使用 dangerouslySetInnerHTML 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md",children:"react/no-danger-with-children"})]}),`
+`,n.jsxs(e.p,{children:["1.5.4 ",n.jsx(e.code,{children:"强制"})," 禁止在有子节点的组件或 DOM 元素中使用 dangerouslySetInnerHTML 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger-with-children.md",children:"react/no-danger-with-children"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div dangerouslySetInnerHTML={{ __html: "HTML" }}>
   Children
@@ -9810,7 +9810,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.5【强制】HTML 自闭标签不能有子节点。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md",children:"react/void-dom-elements-no-children"})]}),`
+`,n.jsxs(e.p,{children:["1.5.5 ",n.jsx(e.code,{children:"强制"})," HTML 自闭标签不能有子节点。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md",children:"react/void-dom-elements-no-children"})]}),`
 `,n.jsx(e.p,{children:"HTML 自闭标签，比如 img，br，hr，被统称为空 DOM 元素，不能给他们定义子节点。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <br>Children</br>
@@ -9822,7 +9822,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.6【推荐】不要使用危险属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md",children:"react/no-danger"})]}),`
+`,n.jsxs(e.p,{children:["1.5.6 ",n.jsx(e.code,{children:"推荐"})," 不要使用危险属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-danger.md",children:"react/no-danger"})]}),`
 `,n.jsxs(e.p,{children:["React中的危险属性是指那些已知会引起应用程序漏洞的属性。这些属性命名为 ",n.jsx(e.code,{children:"dangerouslyXyz"})," 已经清楚地表明它们是危险的，应该尽量避免使用。",n.jsx(e.a,{href:"https://facebook.github.io/react/tips/dangerously-set-inner-html.html",children:"详细文档"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div dangerouslySetInnerHTML={{ __html: "Hello World" }}></div>;
@@ -9832,7 +9832,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.5.7【强制】JSX 语句的文本节点中不要使用注释字符串（例如，以//或/ *开头）。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md",children:"react/jsx-no-comment-textnodes"})]}),`
+`,n.jsxs(e.p,{children:["1.5.7 ",n.jsx(e.code,{children:"强制"})," JSX 语句的文本节点中不要使用注释字符串（例如，以//或/ *开头）。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md",children:"react/jsx-no-comment-textnodes"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class Hello extends React.Component {
   render() {
@@ -9873,7 +9873,7 @@ class Hello extends React.Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:[`1.5.8【强制】标签中禁止出现无意义字符，比如 > " } '。eslint: `,n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md",children:"react/no-unescaped-entities"})]}),`
+`,n.jsxs(e.p,{children:["1.5.8 ",n.jsx(e.code,{children:"强制"}),` 标签中禁止出现无意义字符，比如 > " } '。eslint: `,n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unescaped-entities.md",children:"react/no-unescaped-entities"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:">"})," 可用 ",n.jsx(e.code,{children:"&gt;"})," 替代"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:'"'})," 可用 ",n.jsx(e.code,{children:"&quot;"}),"，",n.jsx(e.code,{children:"&ldquo;"})," ， ",n.jsx(e.code,{children:"&#34; "})," 或者  ",n.jsx(e.code,{children:"&rdquo;"}),"  替代"]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"'"})," 可用 ",n.jsx(e.code,{children:"&apos;"}),"，",n.jsx(e.code,{children:"&lsquo;"}),"，",n.jsx(e.code,{children:"&#39;"})," 或者 ",n.jsx(e.code,{children:"&rsquo;"})," 替代"]}),`
@@ -9896,7 +9896,7 @@ class Hello extends React.Component {
 `,n.jsx(e.h3,{children:"2.1 基本"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.1【参考】使用 ",n.jsx(e.code,{children:"JSX"})," 语法时，防止 ",n.jsx(e.code,{children:"React"})," 变量被标记为未使用，可以使用 ",n.jsx(e.code,{children:"@jsx"})," 标注来指定 ",n.jsx(e.code,{children:"React"})," 之外的变量。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md",children:"react/jsx-uses-react"})]}),`
+`,n.jsxs(e.p,{children:["2.1.1 ",n.jsx(e.code,{children:"参考"})," 使用 ",n.jsx(e.code,{children:"JSX"})," 语法时，防止 ",n.jsx(e.code,{children:"React"})," 变量被标记为未使用，可以使用 ",n.jsx(e.code,{children:"@jsx"})," 标注来指定 ",n.jsx(e.code,{children:"React"})," 之外的变量。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md",children:"react/jsx-uses-react"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 var React = require('react');
 // nothing to do with React
@@ -9915,7 +9915,7 @@ var Hello = <div>Hello {this.props.name}</div>;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.2【强制】不要使用未声明的组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md",children:"react/jsx-no-undef"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md",children:"react/jsx-uses-vars"})]}),`
+`,n.jsxs(e.p,{children:["2.1.2 ",n.jsx(e.code,{children:"强制"})," 不要使用未声明的组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-undef.md",children:"react/jsx-no-undef"})," ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md",children:"react/jsx-uses-vars"})]}),`
 `,n.jsx(e.p,{children:"不允许没有引用组件就直接使用，也可能是组件名拼写错误。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Hello name="John" />;
@@ -9927,11 +9927,11 @@ import Hello from './Hello';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.3【强制】每个文件只包含一个 React 组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md",children:"react/no-multi-comp"})]}),`
+`,n.jsxs(e.p,{children:["2.1.3 ",n.jsx(e.code,{children:"强制"})," 每个文件只包含一个 React 组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md",children:"react/no-multi-comp"})]}),`
 `,n.jsxs(e.p,{children:["但是可以包含多个",n.jsx(e.a,{href:"https://reactjs.org/docs/components-and-props.html#function-and-class-components",children:"函数组件"}),"。"]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.4【强制】不要在函数组件中使用 this。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md",children:"react/no-this-in-sfc"})]}),`
+`,n.jsxs(e.p,{children:["2.1.4 ",n.jsx(e.code,{children:"强制"})," 不要在函数组件中使用 this。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-this-in-sfc.md",children:"react/no-this-in-sfc"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 function Foo(props, context) {
   return (
@@ -9952,7 +9952,7 @@ function Foo(props, context) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.5【强制】使用 ES6 class 创建组件 ，而不是 ",n.jsx(e.a,{href:"https://reactjs.org/docs/react-without-es6.html",children:"createReactClass"})," 。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md",children:"react/prefer-es6-class"})]}),`
+`,n.jsxs(e.p,{children:["2.1.5 ",n.jsx(e.code,{children:"强制"})," 使用 ES6 class 创建组件 ，而不是 ",n.jsx(e.a,{href:"https://reactjs.org/docs/react-without-es6.html",children:"createReactClass"})," 。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-es6-class.md",children:"react/prefer-es6-class"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const Listing = createReactClass({
  // ...
@@ -9971,7 +9971,7 @@ class Listing extends React.Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.1.6【参考】如果组件没有内部状态或 refs ，应使用函数组件，而不是类组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md",children:"react/prefer-stateless-function"})]}),`
+`,n.jsxs(e.p,{children:["2.1.6 ",n.jsx(e.code,{children:"参考"})," 如果组件没有内部状态或 refs ，应使用函数组件，而不是类组件。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md",children:"react/prefer-stateless-function"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class Listing extends React.Component {
   render() {
@@ -9991,13 +9991,13 @@ function Listing({ hello }) {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1.7【强制】不要使用 React.createElement，除非你不是用 JSX 文件初始化应用程序。"}),`
+`,n.jsxs(e.p,{children:["2.1.7 ",n.jsx(e.code,{children:"强制"})," 不要使用 React.createElement，除非你不是用 JSX 文件初始化应用程序。"]}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h3,{children:"2.2 方法"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.1【推荐】不要在 JSX 属性中使用 .bind()。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md",children:"react/jsx-no-bind"})]}),`
+`,n.jsxs(e.p,{children:["2.2.1 ",n.jsx(e.code,{children:"推荐"})," 不要在 JSX 属性中使用 .bind()。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md",children:"react/jsx-no-bind"})]}),`
 `,n.jsx(e.p,{children:"这不利于组件性能，每次 render 都会创建一个新的函数。"}),`
 `,n.jsx(e.p,{children:"有 2 种替代方案："}),`
 `,n.jsxs(e.ul,{children:[`
@@ -10049,7 +10049,7 @@ class extends React.Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.2【强制】render 方法必须要有返回值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md",children:"react/require-render-return"})]}),`
+`,n.jsxs(e.p,{children:["2.2.2 ",n.jsx(e.code,{children:"强制"})," render 方法必须要有返回值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-render-return.md",children:"react/require-render-return"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 render() {
   (<div />);
@@ -10062,7 +10062,7 @@ render() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.3【强制】禁止使用 ReactDOM.render 的返回值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md",children:"react/no-render-return-value"})]}),`
+`,n.jsxs(e.p,{children:["2.2.3 ",n.jsx(e.code,{children:"强制"})," 禁止使用 ReactDOM.render 的返回值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-render-return-value.md",children:"react/no-render-return-value"})]}),`
 `,n.jsx(e.p,{children:"render()返回 ReactComponent 实例的引用。然而，应该避免使用这个返回值，因为在某些情况下，React 的未来版本中 render 方法可能会异步执行。如果需要引用 ReactComponent 实例，根元素需要增加 ref 回调。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const inst = ReactDOM.render(<App />, document.body);
@@ -10075,7 +10075,7 @@ ReactDOM.render(<App />, document.body, doSomethingWithInst);
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.4【强制】在扩展 React.PureComponent 时禁止使用 shouldComponentUpdate。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md",children:"react/no-redundant-should-component-update"})]}),`
+`,n.jsxs(e.p,{children:["2.2.4 ",n.jsx(e.code,{children:"强制"})," 在扩展 React.PureComponent 时禁止使用 shouldComponentUpdate。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-redundant-should-component-update.md",children:"react/no-redundant-should-component-update"})]}),`
 `,n.jsx(e.p,{children:"定义 React.PureComponent 扩展组件时使用 shouldComponentUpdate 虽然有效，但是扩展 PureComponent 变得毫无意义。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class Foo extends React.PureComponent {
@@ -10131,7 +10131,7 @@ class Qux extends React.PureComponent {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.5【强制】禁止使用已经废弃的方法。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md",children:"react/no-deprecated"})]}),`
+`,n.jsxs(e.p,{children:["2.2.5 ",n.jsx(e.code,{children:"强制"})," 禁止使用已经废弃的方法。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-deprecated.md",children:"react/no-deprecated"})]}),`
 `,n.jsx(e.p,{children:"随着React版本升级，有些方法逐渐被弃用。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 React.render(<MyComponent />, root);
@@ -10192,7 +10192,7 @@ class Foo {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.6【强制】不要使用 findDOMNode。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md",children:"react/no-find-dom-node"})]}),`
+`,n.jsxs(e.p,{children:["2.2.6 ",n.jsx(e.code,{children:"强制"})," 不要使用 findDOMNode。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md",children:"react/no-find-dom-node"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.a,{href:"https://reactjs.org/docs/strict-mode.html#warning-about-deprecated-finddomnode-usage",children:"严格模式下已经弃用 findDOMNode"}),"。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class MyComponent extends Component {
@@ -10218,7 +10218,7 @@ class MyComponent extends Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2.7【强制】不要使用 componentWillMount、componentWillReceiveProps、componentWillUpdate。"}),`
+`,n.jsxs(e.p,{children:["2.2.7 ",n.jsx(e.code,{children:"强制"})," 不要使用 componentWillMount、componentWillReceiveProps、componentWillUpdate。"]}),`
 `,n.jsxs(e.p,{children:["不要再使用 ",n.jsx(e.a,{href:"https://reactjs.org/docs/react-component.html#unsafe_componentwillmount",children:"componentWillMount"})," 、",n.jsx(e.a,{href:"https://reactjs.org/docs/react-component.html#unsafe_componentwillreceiveprops",children:"componentWillReceiveProps"}),"、",n.jsx(e.a,{href:"https://reactjs.org/docs/react-component.html#unsafe_componentwillupdate",children:"componentWillUpdate"}),"。使用这些生命周期方法通常会导致错误和不一致，因此React 计划在17版本删掉这些方法。"]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"componentWillMount() 可以用 constructor() 或 componentDidMount() 替代；"}),`
@@ -10233,7 +10233,7 @@ class MyComponent extends Component {
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.2.8【强制】不要在 componentWillUpdate 内改变 state 值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md",children:"react/no-will-update-set-state"})]}),`
+`,n.jsxs(e.p,{children:["2.2.8 ",n.jsx(e.code,{children:"强制"})," 不要在 componentWillUpdate 内改变 state 值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-will-update-set-state.md",children:"react/no-will-update-set-state"})]}),`
 `,n.jsxs(e.p,{children:["首先，不要再使用 componentWillUpdate，",n.jsx(e.a,{href:"https://reactjs.org/docs/react-component.html#unsafe_componentwillupdate",children:"React 未来在17版本计划删掉 componentWillUpdate"}),"。通常可以用 componentDidUpdate() 替代。使用",n.jsx(e.a,{href:"https://github.com/reactjs/react-codemod#rename-unsafe-lifecycles",children:"rename-unsafe-lifecycles codemod"}),"自动更新组件。"]}),`
 `,n.jsxs(e.p,{children:["不要在 componentWillUpdate 调用 this.setState()。若你需要更新状态响应属性的变更，使用 ",n.jsx(e.a,{href:"https://react.docschina.org/docs/react-component.html#static-getderivedstatefromprops",children:"getDerivedStateFromProps()"})," 代替。在 componentWillUpdate 中改变 state 的值可能会引起组件的不确定状态。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -10279,7 +10279,7 @@ class Hello extends React.Component {
 `,n.jsx(e.h3,{children:"2.3 Props"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.1【强制】采用小驼峰风格命名 prop 。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md",children:"react/no-unknown-property"})]}),`
+`,n.jsxs(e.p,{children:["2.3.1 ",n.jsx(e.code,{children:"强制"})," 采用小驼峰风格命名 prop 。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md",children:"react/no-unknown-property"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo
   UserName="hello"
@@ -10294,7 +10294,7 @@ class Hello extends React.Component {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.2【强制】声明的 prop 必须被使用。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md",children:"react/no-unused-prop-types"})]}),`
+`,n.jsxs(e.p,{children:["2.3.2 ",n.jsx(e.code,{children:"强制"})," 声明的 prop 必须被使用。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-prop-types.md",children:"react/no-unused-prop-types"})]}),`
 `,n.jsx(e.p,{children:"声明而未使用的 prop 可能带来潜在的问题，也会给维护者造成困扰，应将它们删除。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 var Hello = createReactClass({
@@ -10329,7 +10329,7 @@ var Hello = createReactClass({
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.3【参考】 props，state 优先使用解构赋值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md",children:"react/destructuring-assignment"})]}),`
+`,n.jsxs(e.p,{children:["2.3.3 ",n.jsx(e.code,{children:"参考"}),"  props，state 优先使用解构赋值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/destructuring-assignment.md",children:"react/destructuring-assignment"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const MyComponent = (props) => {
   return (<div id={props.id} />)
@@ -10347,7 +10347,7 @@ const MyComponent = (props, context) => {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.4【强制】prop 值为 true 时，可以省略它的值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md",children:"react/jsx-boolean-value"})]}),`
+`,n.jsxs(e.p,{children:["2.3.4 ",n.jsx(e.code,{children:"强制"})," prop 值为 true 时，可以省略它的值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-boolean-value.md",children:"react/jsx-boolean-value"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Foo
   hidden={true}
@@ -10360,7 +10360,7 @@ const MyComponent = (props, context) => {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.5【推荐】prop 需要 propTypes 验证。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md",children:"react/prop-types"})]}),`
+`,n.jsxs(e.p,{children:["2.3.5 ",n.jsx(e.code,{children:"推荐"})," prop 需要 propTypes 验证。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prop-types.md",children:"react/prop-types"})]}),`
 `,n.jsx(e.p,{children:"PropTypes 验证接收到的数据从而提高组件的可重用性。如果其他开发传入了不正确数据类型，可以及时警告。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class Greeting extends React.Component {
@@ -10386,7 +10386,7 @@ Greeting.propTypes = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.6【推荐】不要使用模糊的类型检查器。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md",children:"react/forbid-prop-types"})]}),`
+`,n.jsxs(e.p,{children:["2.3.6 ",n.jsx(e.code,{children:"推荐"})," 不要使用模糊的类型检查器。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/forbid-prop-types.md",children:"react/forbid-prop-types"})]}),`
 `,n.jsx(e.p,{children:"不要使用模糊的类型验证，比如 any, array, object。它们可以用其他明确的类型代替。any可以替换为任意类型，array 和 object 可以分别替换为 arrayOf 和 shape。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class MyComponent extends React.Component {
@@ -10422,7 +10422,7 @@ MyComponent.propTypes = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.7【参考】属性需要指定 defaultProps，除了 isRequired 的属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md",children:"react/require-default-props"})]}),`
+`,n.jsxs(e.p,{children:["2.3.7 ",n.jsx(e.code,{children:"参考"})," 属性需要指定 defaultProps，除了 isRequired 的属性。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/require-default-props.md",children:"react/require-default-props"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 function MyStatelessComponent({ foo, bar }) {
   return <div>{foo}{bar}</div>;
@@ -10446,7 +10446,7 @@ MyStatelessComponent.defaultProps = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.8【强制】如果属性有 isRequired 类型检查，不要在 defaultProps 内对其赋值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md",children:"react/default-props-match-prop-types"})]}),`
+`,n.jsxs(e.p,{children:["2.3.8 ",n.jsx(e.code,{children:"强制"})," 如果属性有 isRequired 类型检查，不要在 defaultProps 内对其赋值。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/default-props-match-prop-types.md",children:"react/default-props-match-prop-types"})]}),`
 `,n.jsx(e.p,{children:"propTypes 类型检查发生在 defaultProps 解析之后，如果在 defaultProps 赋值，isRequired 类型检查没有实际意义。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 MyStatelessComponent.propTypes = {
@@ -10470,7 +10470,7 @@ MyStatelessComponent.defaultProps = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.9【推荐】不要用数组的索引值作为 map 生成元素的 key。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md",children:"react/no-array-index-key"})]}),`
+`,n.jsxs(e.p,{children:["2.3.9 ",n.jsx(e.code,{children:"推荐"})," 不要用数组的索引值作为 map 生成元素的 key。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md",children:"react/no-array-index-key"})]}),`
 `,n.jsxs(e.p,{children:["为什么？React 使用 key 来标识哪些项已更改，已添加或已删除， ",n.jsx(e.a,{href:"https://reactjs.org/docs/lists-and-keys.html#keys",children:"key 应该始终稳定"}),"。使用不稳定的 ID 是一种",n.jsx(e.a,{href:"https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318",children:"反模式"}),"，因为它不能唯一标识元素。如果数组重新排序或将元素添加到数组的开头，可能会更改索引导致不必要的渲染，对性能产生负面影响。"]}),`
 `,n.jsx(e.p,{children:"如果数组的顺序可能发生变化，我们不建议使用索引值作为 key。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -10491,7 +10491,7 @@ MyStatelessComponent.defaultProps = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.10【强制】禁止将 children 作为属性名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md",children:"react/no-children-prop"})]}),`
+`,n.jsxs(e.p,{children:["2.3.10 ",n.jsx(e.code,{children:"强制"})," 禁止将 children 作为属性名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-children-prop.md",children:"react/no-children-prop"})]}),`
 `,n.jsxs(e.p,{children:["使用 JSX 时，",n.jsx(e.code,{children:"children"})," 应嵌套在开始和结束标签之间。不使用JSX时，应将 ",n.jsx(e.code,{children:"children"})," 作为附加参数传递给 ",n.jsx(e.code,{children:"React.createElement"}),"。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div children='Children' />
@@ -10516,7 +10516,7 @@ React.createElement("div", 'Child 1', 'Child 2')
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.11【强制】不要声明重复的属性名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md",children:"react/jsx-no-duplicate-props"})]}),`
+`,n.jsxs(e.p,{children:["2.3.11 ",n.jsx(e.code,{children:"强制"})," 不要声明重复的属性名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-duplicate-props.md",children:"react/jsx-no-duplicate-props"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <Hello name="John" name="John" />;
 
@@ -10525,7 +10525,7 @@ React.createElement("div", 'Child 1', 'Child 2')
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.12【强制】style 的属性值必须是一个对象。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md",children:"react/style-prop-object"})]}),`
+`,n.jsxs(e.p,{children:["2.3.12 ",n.jsx(e.code,{children:"强制"})," style 的属性值必须是一个对象。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/style-prop-object.md",children:"react/style-prop-object"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div style="color: 'red'" />
 <div style={true} />
@@ -10556,7 +10556,7 @@ React.createElement("div", { style: styles });
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3.13【推荐】不要单独使用 target='_blank'。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md",children:"react/jsx-no-target-blank"})]}),`
+`,n.jsxs(e.p,{children:["2.3.13 ",n.jsx(e.code,{children:"推荐"})," 不要单独使用 target='_blank'。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-no-target-blank.md",children:"react/jsx-no-target-blank"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"target='_blank'"})," 常用于在新标签页打开。使用这个属性可能造成严重的安全问题。建议和 ",n.jsx(e.code,{children:"rel='noreferrer noopener'"})," 一起使用。",n.jsx(e.a,{href:"https://mathiasbynens.github.io/rel-noopener/",children:"详见"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const Hello = <a target='_blank' href="http://example.com/"></a>
@@ -10574,7 +10574,7 @@ const Hello = <a></a>
 `,n.jsx(e.h3,{children:"2.4 State"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.1【强制】不要在 setState 中使用 this.state。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md",children:"react/no-access-state-in-setstate"})]}),`
+`,n.jsxs(e.p,{children:["2.4.1 ",n.jsx(e.code,{children:"强制"})," 不要在 setState 中使用 this.state。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-access-state-in-setstate.md",children:"react/no-access-state-in-setstate"})]}),`
 `,n.jsx(e.p,{children:`在 setState 中使用 this.state 可能导致错误，当两个 state 在同一个批处理中时，引用的是旧状态而不是新状态。
 为避免这种情况，请在回调中使用 preState 作为第一个参数。`}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -10597,7 +10597,7 @@ setState({ value: 2 + 1 })
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.4.2【强制】声明的 state 必须被使用。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-state.md",children:"react/no-unused-state"})]}),`
+`,n.jsxs(e.p,{children:["2.4.2 ",n.jsx(e.code,{children:"强制"})," 声明的 state 必须被使用。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unused-state.md",children:"react/no-unused-state"})]}),`
 `,n.jsx(e.p,{children:"声明而未使用的 state 可能带来潜在的问题，也会给维护者造成困扰，应将它们删除。"}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 class MyComponent extends React.Component {
@@ -10640,7 +10640,7 @@ var UnusedGetInitialStateTest = createReactClass({
 `,n.jsx(e.h3,{children:"2.5 Refs"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5.1【强制】使用 ref 回调函数或 React.createRef()，不要使用字符串。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md",children:"react/no-string-refs"})]}),`
+`,n.jsxs(e.p,{children:["2.5.1 ",n.jsx(e.code,{children:"强制"})," 使用 ref 回调函数或 React.createRef()，不要使用字符串。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-string-refs.md",children:"react/no-string-refs"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - 使用字符串
 class MyComponent extends React.Component {
   componentDidMount() {
@@ -10685,7 +10685,7 @@ class MyComponent extends React.Component {
 `,n.jsx(e.h3,{children:"2.6 顺序"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6.1【参考】组件方法的排序规则。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md",children:"react/sort-comp"})]}),`
+`,n.jsxs(e.p,{children:["2.6.1 ",n.jsx(e.code,{children:"参考"})," 组件方法的排序规则。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md",children:"react/sort-comp"})]}),`
 `,n.jsx(e.p,{children:"React 组件内有声明周期方法、事件处理方法、render 方法等几类方法，指定这些方法按固定的顺序排序可以增强代码的一致性，方便查找和阅读。"}),`
 `,n.jsx(e.p,{children:"我们推荐的方法排序如下："}),`
 `,n.jsxs(e.ul,{children:[`
@@ -10709,17 +10709,17 @@ class MyComponent extends React.Component {
 `,n.jsx(e.h3,{children:"2.7 Mixins"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.7.1【强制】不要使用 mixins。"}),`
+`,n.jsxs(e.p,{children:["2.7.1 ",n.jsx(e.code,{children:"强制"})," 不要使用 mixins。"]}),`
 `,n.jsx(e.p,{children:"Mixins 引入了隐式依赖，可能导致命名冲突，并导致滚雪球式的复杂度。大多数使用 mixin 的场景都可以通过组件、高阶组件或工具模块以更好的方式完成。"}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h2,{children:"3 命名"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.1【强制】文件扩展名： 使用 .jsx、.tsx、.js 或 .ts 作为 React 组件的文件扩展名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md",children:"react/jsx-filename-extension"})]}),`
+`,n.jsxs(e.p,{children:["3.1 ",n.jsx(e.code,{children:"强制"})," 文件扩展名： 使用 .jsx、.tsx、.js 或 .ts 作为 React 组件的文件扩展名。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md",children:"react/jsx-filename-extension"})]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["3.2【强制】引用名：使用大驼峰风格命名引用的组件，使用小驼峰风格命名引用组件的实例。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md",children:"react/jsx-pascal-case"})]}),`
+`,n.jsxs(e.p,{children:["3.2 ",n.jsx(e.code,{children:"强制"})," 引用名：使用大驼峰风格命名引用的组件，使用小驼峰风格命名引用组件的实例。eslint: ",n.jsx(e.a,{href:"https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-pascal-case.md",children:"react/jsx-pascal-case"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 import reservationCard from './reservation-card';
 
@@ -10734,7 +10734,7 @@ const reservationItem = <ReservationCard />;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.3【推荐】高阶组件命名：将高阶组件名和传入组件名组合作为 displayName。"}),`
+`,n.jsxs(e.p,{children:["3.3 ",n.jsx(e.code,{children:"推荐"})," 高阶组件命名：将高阶组件名和传入组件名组合作为 displayName。"]}),`
 `,n.jsxs(e.p,{children:["例如，高阶组件 ",n.jsx(e.code,{children:"withFoo()"})," ，当传入组件 ",n.jsx(e.code,{children:"Bar"})," 时，应该产生一个组件，应使用 withFoo(Bar) 作为生成组件的  displayName。"]}),`
 `,n.jsxs(e.p,{children:["组件的 ",n.jsx(e.code,{children:"displayName"})," 可被开发者工具和报错信息使用，这种组合的命名方式能清晰地表达高阶组件和被包裹组件的关系。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
@@ -10763,7 +10763,7 @@ export default function withFoo(WrappedComponent) {
 `,n.jsx(e.h2,{children:"4 Hooks"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.1【强制】只在最顶层调用 Hooks，不要在循环、条件和嵌套函数中调用 Hooks。eslint: ",n.jsx(e.a,{href:"https://reactjs.org/docs/hooks-rules.html#only-call-hooks-at-the-top-level",children:"rules of Hooks - only call Hooks at the top level"})]}),`
+`,n.jsxs(e.p,{children:["4.1 ",n.jsx(e.code,{children:"强制"})," 只在最顶层调用 Hooks，不要在循环、条件和嵌套函数中调用 Hooks。eslint: ",n.jsx(e.a,{href:"https://reactjs.org/docs/hooks-rules.html#only-call-hooks-at-the-top-level",children:"rules of Hooks - only call Hooks at the top level"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - call Hooks inside conditions
 function ComponentWithConditionalHook() {
   if (cond) {
@@ -10792,7 +10792,7 @@ function ComponentWithHook() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.2【强制】Hooks 命名必须以 ",n.jsx(e.code,{children:"use"})," 开头，小驼峰形式"]}),`
+`,n.jsxs(e.p,{children:["4.2 ",n.jsx(e.code,{children:"强制"})," Hooks 命名必须以 ",n.jsx(e.code,{children:"use"})," 开头，小驼峰形式"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 const customHook = () => {}
 
@@ -10801,7 +10801,7 @@ const useCustomHook = () => {}
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.3【强制】只在 React 函数组件和自定义 Hooks 中调用 Hooks，不能在普通的 JavaScript 函数中调用 Hooks。eslint: ",n.jsx(e.a,{href:"https://reactjs.org/docs/hooks-rules.html#only-call-hooks-from-react-functions",children:"rules of Hooks - only call Hooks from React functions"})]}),`
+`,n.jsxs(e.p,{children:["4.3 ",n.jsx(e.code,{children:"强制"})," 只在 React 函数组件和自定义 Hooks 中调用 Hooks，不能在普通的 JavaScript 函数中调用 Hooks。eslint: ",n.jsx(e.a,{href:"https://reactjs.org/docs/hooks-rules.html#only-call-hooks-from-react-functions",children:"rules of Hooks - only call Hooks from React functions"})]}),`
 `,n.jsx(e.pre,{imports:{},children:n.jsx(e.code,{className:"language-jsx",children:`// bad - call Hooks inside class componennt
 class ClassComponentWithHook extends React.Component {
   render() {
@@ -10826,7 +10826,7 @@ function useHookWithHook() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["4.4【推荐】",n.jsx(e.code,{children:"useEffect"})," 及",n.jsx(e.a,{href:"https://github.com/facebook/react/blob/3c1a7ac87c5b4903aa0de02d11bd9ec2590ad598/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js#L1518",children:"类似 Hooks "}),"需要声明所有依赖。eslint: ",n.jsx(e.a,{href:"https://github.com/facebook/react/issues/14920",children:"exhaustive-deps"})]}),`
+`,n.jsxs(e.p,{children:["4.4 ",n.jsx(e.code,{children:"推荐"})," ",n.jsx(e.code,{children:"useEffect"})," 及",n.jsx(e.a,{href:"https://github.com/facebook/react/blob/3c1a7ac87c5b4903aa0de02d11bd9ec2590ad598/packages/eslint-plugin-react-hooks/src/ExhaustiveDeps.js#L1518",children:"类似 Hooks "}),"需要声明所有依赖。eslint: ",n.jsx(e.a,{href:"https://github.com/facebook/react/issues/14920",children:"exhaustive-deps"})]}),`
 `,n.jsxs(e.p,{children:["此规则在某些场景下可能过于严格，并且 ESLint autofix 可能会造成一些",n.jsx(e.a,{href:"https://github.com/facebook/react/issues/16313",children:"问题"}),"，因此需注意："]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["升级 ",n.jsx(e.code,{children:"eslint-plugin-react-hooks"})," 到 2.4.0 版本及以上，因为 ",n.jsx(e.a,{href:"https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/CHANGELOG.md#240",children:"2.4.0 版本后该规则的 autofix 被默认禁用"})]}),`
@@ -10861,7 +10861,7 @@ function MyComponent() {
 `,n.jsxs(e.p,{children:[n.jsx(e.a,{href:"https://developer.mozilla.org/zh-CN/docs/Learn/Accessibility/WAI-ARIA_basics",children:"这篇文档"}),"对 WAI-ARIA 规范的内容和使用做了初步介绍。"]}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.1【推荐】img 标签应包含 alt 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md",children:"jsx-a11y/alt-text"})]}),`
+`,n.jsxs(e.p,{children:["5.1 ",n.jsx(e.code,{children:"推荐"})," img 标签应包含 alt 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/alt-text.md",children:"jsx-a11y/alt-text"})]}),`
 `,n.jsxs(e.p,{children:["如果图片无需被无障碍阅读器识别(如作为 button 的 icon 使用)，你可以将 ",n.jsx(e.code,{children:"alt"})," 属性写为空字符串"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <img src="hello.jpg" />
@@ -10877,7 +10877,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:['5.2【推荐】img 标签的 alt 属性不要使用 "image"，"photo"，"picture" 之类的关键词。eslint: ',n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md",children:"jsx-a11y/img-redundant-alt"})]}),`
+`,n.jsxs(e.p,{children:["5.2 ",n.jsx(e.code,{children:"推荐"}),' img 标签的 alt 属性不要使用 "image"，"photo"，"picture" 之类的关键词。eslint: ',n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/img-redundant-alt.md",children:"jsx-a11y/img-redundant-alt"})]}),`
 `,n.jsxs(e.p,{children:["屏幕阅读器已会将 ",n.jsx(e.code,{children:"img"})," 元素识别成图片，再在 alt 中包含这类关键词没有意义。"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <img src="hello.jpg" alt="Picture of me waving hello" />
@@ -10887,7 +10887,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.3【推荐】锚元素(即 ",n.jsx(e.code,{children:"<a>"})," 元素)必须含有内容，且内容必须对屏幕阅读器可见(这里指内容不能通过设置 ",n.jsx(e.code,{children:"aria-hidden"})," 属性隐藏)。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md",children:"jsx-a11y/anchor-has-content"})]}),`
+`,n.jsxs(e.p,{children:["5.3 ",n.jsx(e.code,{children:"推荐"})," 锚元素(即 ",n.jsx(e.code,{children:"<a>"})," 元素)必须含有内容，且内容必须对屏幕阅读器可见(这里指内容不能通过设置 ",n.jsx(e.code,{children:"aria-hidden"})," 属性隐藏)。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md",children:"jsx-a11y/anchor-has-content"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - empty content
 <a />
 
@@ -10900,7 +10900,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.4【推荐】禁止使用无效的 ARIA 属性，只能使用列在 ",n.jsx(e.a,{href:"https://www.w3.org/WAI/PF/aria-1.1/states_and_properties",children:"WAI-ARIA States and Properties spec"})," 中的 ",n.jsx(e.code,{children:"aria-*"})," 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-props.md",children:"jsx-a11y/aria-props"})]}),`
+`,n.jsxs(e.p,{children:["5.4 ",n.jsx(e.code,{children:"推荐"})," 禁止使用无效的 ARIA 属性，只能使用列在 ",n.jsx(e.a,{href:"https://www.w3.org/WAI/PF/aria-1.1/states_and_properties",children:"WAI-ARIA States and Properties spec"})," 中的 ",n.jsx(e.code,{children:"aria-*"})," 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-props.md",children:"jsx-a11y/aria-props"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - Labeled using incorrectly spelled aria-labeledby
 <div id="address_label">Enter your address</div>
 <input aria-labeledby="address_label">
@@ -10911,7 +10911,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.5【推荐】ARIA 属性、状态的值必须为有效值。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-proptypes.md",children:"jsx-a11y/aria-proptypes"})]}),`
+`,n.jsxs(e.p,{children:["5.5 ",n.jsx(e.code,{children:"推荐"})," ARIA 属性、状态的值必须为有效值。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-proptypes.md",children:"jsx-a11y/aria-proptypes"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - the aria-hidden state is of type true/false
 <span aria-hidden="yes">foo</span>
 
@@ -10920,7 +10920,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.6【推荐】禁止特定元素包含 ",n.jsx(e.code,{children:"role"})," 和 ",n.jsx(e.code,{children:"aria-*"})," 属性。一些保留的 DOM 元素不支持设置 ARIA 角色或者属性，通常是因为这些元素是不可见的，例如 ",n.jsx(e.code,{children:"meta, html, script, style"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md",children:"jsx-a11y/aria-unsupported-elements"})]}),`
+`,n.jsxs(e.p,{children:["5.6 ",n.jsx(e.code,{children:"推荐"})," 禁止特定元素包含 ",n.jsx(e.code,{children:"role"})," 和 ",n.jsx(e.code,{children:"aria-*"})," 属性。一些保留的 DOM 元素不支持设置 ARIA 角色或者属性，通常是因为这些元素是不可见的，例如 ",n.jsx(e.code,{children:"meta, html, script, style"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-unsupported-elements.md",children:"jsx-a11y/aria-unsupported-elements"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - the meta element should not be given any ARIA attributes
 <meta charset="UTF-8" aria-hidden="false" />
 
@@ -10929,7 +10929,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.7【推荐】仅使用有效的、非抽象的 ARIA roles，",n.jsx(e.a,{href:"https://www.w3.org/TR/wai-aria/#roles_categorization",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md",children:"jsx-a11y/aria-role"})]}),`
+`,n.jsxs(e.p,{children:["5.7 ",n.jsx(e.code,{children:"推荐"})," 仅使用有效的、非抽象的 ARIA roles，",n.jsx(e.a,{href:"https://www.w3.org/TR/wai-aria/#roles_categorization",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md",children:"jsx-a11y/aria-role"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - not an ARIA role
 <div role="datepicker" />
 
@@ -10941,7 +10941,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.8【推荐】有 ARIA role 的元素必须也声明该 role 需要的属性，",n.jsx(e.a,{href:"https://www.w3.org/TR/wai-aria/#requiredState",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-has-required-aria-props.md",children:"jsx-a11y/role-has-required-aria-props"})]}),`
+`,n.jsxs(e.p,{children:["5.8 ",n.jsx(e.code,{children:"推荐"})," 有 ARIA role 的元素必须也声明该 role 需要的属性，",n.jsx(e.a,{href:"https://www.w3.org/TR/wai-aria/#requiredState",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-has-required-aria-props.md",children:"jsx-a11y/role-has-required-aria-props"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - the checkbox role requires the aria-checked state
 <span role="checkbox" aria-labelledby="foo" tabindex="0"></span>
 
@@ -10950,7 +10950,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.9【推荐】强制拥有显式或隐式 role 的元素，只能含有该 role 支持的 ",n.jsx(e.code,{children:"aria-*"})," 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-supports-aria-props.md",children:"jsx-a11y/role-supports-aria-props"})]}),`
+`,n.jsxs(e.p,{children:["5.9 ",n.jsx(e.code,{children:"推荐"})," 强制拥有显式或隐式 role 的元素，只能含有该 role 支持的 ",n.jsx(e.code,{children:"aria-*"})," 属性。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/role-supports-aria-props.md",children:"jsx-a11y/role-supports-aria-props"})]}),`
 `,n.jsxs(e.p,{children:["一些元素会有隐式的 role ，譬如 ",n.jsx(e.code,{children:'<a href="#">'})," ，会被解析为 ",n.jsx(e.code,{children:'role="link"'}),"。很多 ARIA 属性只能在具有特定 role 的元素上使用"]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad - the radio role does not support the aria-required property
 <ul role="radiogroup" aria-labelledby="foo">
@@ -10968,7 +10968,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.10【推荐】",n.jsx(e.code,{children:"<iframe>"})," 元素必须有一个唯一的 title 属性，表示其内容。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/iframe-has-title.md",children:"jsx-a11y/iframe-has-title"})]}),`
+`,n.jsxs(e.p,{children:["5.10 ",n.jsx(e.code,{children:"推荐"})," ",n.jsx(e.code,{children:"<iframe>"})," 元素必须有一个唯一的 title 属性，表示其内容。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/iframe-has-title.md",children:"jsx-a11y/iframe-has-title"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <iframe />
 <iframe {...props} />
@@ -10983,7 +10983,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.11【推荐】不要使用 accessKey 属性。accessKey 属性提供了为当前元素生成快捷键的方式，不过 accessKey 值可能与系统或浏览器键盘快捷键或辅助技术功能相冲突，所以不建议使用。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md",children:"jsx-a11y/no-access-key"})]}),`
+`,n.jsxs(e.p,{children:["5.11 ",n.jsx(e.code,{children:"推荐"})," 不要使用 accessKey 属性。accessKey 属性提供了为当前元素生成快捷键的方式，不过 accessKey 值可能与系统或浏览器键盘快捷键或辅助技术功能相冲突，所以不建议使用。eslint: ",n.jsx(e.a,{href:"https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-access-key.md",children:"jsx-a11y/no-access-key"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div accessKey="h" />
 
@@ -10992,7 +10992,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.12【推荐】禁止使用会造成视觉分散的元素。一些会引起视觉注意力分散的元素对视觉障碍的用户会造成问题，例如 ",n.jsx(e.code,{children:"<marquee>"})," 和 ",n.jsx(e.code,{children:"<blink>"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-distracting-elements.md",children:"jsx-a11y/no-distracting-elements"})]}),`
+`,n.jsxs(e.p,{children:["5.12 ",n.jsx(e.code,{children:"推荐"})," 禁止使用会造成视觉分散的元素。一些会引起视觉注意力分散的元素对视觉障碍的用户会造成问题，例如 ",n.jsx(e.code,{children:"<marquee>"})," 和 ",n.jsx(e.code,{children:"<blink>"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-distracting-elements.md",children:"jsx-a11y/no-distracting-elements"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <marquee />
 <blink />
@@ -11002,7 +11002,7 @@ function MyComponent() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["5.13【推荐】scope 属性只能在 ",n.jsx(e.code,{children:"<th>"})," 元素上使用，",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced#The_scope_attribute",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/scope.md",children:"jsx-a11y/scope"})]}),`
+`,n.jsxs(e.p,{children:["5.13 ",n.jsx(e.code,{children:"推荐"})," scope 属性只能在 ",n.jsx(e.code,{children:"<th>"})," 元素上使用，",n.jsx(e.a,{href:"https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced#The_scope_attribute",children:"了解更多"}),"。eslint: ",n.jsx(e.a,{href:"https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/scope.md",children:"jsx-a11y/scope"})]}),`
 `,n.jsx(e.pre,{static:!0,children:n.jsx(e.code,{className:"language-jsx",children:`// bad
 <div scope />
 
@@ -11031,7 +11031,7 @@ function MyComponent() {
 `,n.jsx(e.p,{children:n.jsx(e.img,{src:"https://img.alicdn.com/imgextra/i3/O1CN01xiw6bP1oMEFb7VtuO_!!6000000005210-55-tps-663-378.svg",alt:"示例代码标注图"})}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】重载的函数必须写在一起 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/adjacent-overload-signatures.md",children:"@typescript-eslint/adjacent-overload-signatures"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 重载的函数必须写在一起 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/adjacent-overload-signatures.md",children:"@typescript-eslint/adjacent-overload-signatures"})]}),`
 `,n.jsx(e.p,{children:"自然相关的项组合在一起将提高代码可读性和组织性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 declare namespace Foo {
@@ -11107,7 +11107,7 @@ export function foo(sn: string | number): void;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】简单数组类型的定义使用 ",n.jsx(e.code,{children:"T[]"}),"，复杂类型使用 ",n.jsx(e.code,{children:"Array<T>"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md",children:"@typescript-eslint/array-type"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 简单数组类型的定义使用 ",n.jsx(e.code,{children:"T[]"}),"，复杂类型使用 ",n.jsx(e.code,{children:"Array<T>"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md",children:"@typescript-eslint/array-type"})]}),`
 `,n.jsx(e.p,{children:"对数组类型的定义使用相同的规范将帮助开发者更快地理解和阅读类型。"}),`
 `,n.jsxs(e.p,{children:["简单类型（数字、字符串、布尔等）请使用 ",n.jsx(e.code,{children:"T[]"})," 或 ",n.jsx(e.code,{children:"readonly T[]"})," ，其他复杂类型（联合、交叉、对象、函数等）请使用 ",n.jsx(e.code,{children:"Array<T>"})," 或 ",n.jsx(e.code,{children:"ReadonlyArray<T>"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
@@ -11128,7 +11128,7 @@ const f: readonly string[] = ['a', 'b'];
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】使用 TypeScript 注释指令时需跟随描述说明 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-ts-comment.md",children:"@typescript-eslint/ban-ts-comment"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 使用 TypeScript 注释指令时需跟随描述说明 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-ts-comment.md",children:"@typescript-eslint/ban-ts-comment"})]}),`
 `,n.jsx(e.p,{children:"TS 提供了一些指令注释，可用于忽略 TypeScript 编译器在编译阶段的错误，如下："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// @ts-expect-error
 // @ts-ignore
@@ -11152,7 +11152,7 @@ console.log('my code');
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止使用 ",n.jsx(e.code,{children:"// tslint:<rule-flag>"})," 等 tslint 注释 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-tslint-comment.md",children:"@typescript-eslint/ban-tslint-comment"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 禁止使用 ",n.jsx(e.code,{children:"// tslint:<rule-flag>"})," 等 tslint 注释 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-tslint-comment.md",children:"@typescript-eslint/ban-tslint-comment"})]}),`
 `,n.jsx(e.p,{children:"tslint 已经被废弃，对应的指令注释也不应再出现。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 /* tslint:disable */
@@ -11165,7 +11165,7 @@ someCode(); // tslint:disable-line
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】如果类的属性是一个字面量，则推荐使用只读属性 ",n.jsx(e.code,{children:"readonly"})," 而不是 ",n.jsx(e.code,{children:"getter"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-literal-property-style.md",children:"@typescript-eslint/class-literal-property-style"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 如果类的属性是一个字面量，则推荐使用只读属性 ",n.jsx(e.code,{children:"readonly"})," 而不是 ",n.jsx(e.code,{children:"getter"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-literal-property-style.md",children:"@typescript-eslint/class-literal-property-style"})]}),`
 `,n.jsx(e.p,{children:"类上所有返回「字面量」的 getter 方法，都推荐使用 readonly 修饰符来代替，字面量包含字符串、模板字符串、数字、bigint、正则和 null。"}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsx(e.p,{children:"说明：在一些特殊场景，编写代码的最终用户是 JavaScript 开发者时，可以使用 getter 来保证字段无法被重新定义和覆盖，因为 readonly 修饰符只作用于 TypeScript 编译阶段。"}),`
@@ -11192,7 +11192,7 @@ class Mx {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】类型断言必须使用 ",n.jsx(e.code,{children:"as Type"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md",children:"@typescript-eslint/consistent-type-assertions"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 类型断言必须使用 ",n.jsx(e.code,{children:"as Type"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md",children:"@typescript-eslint/consistent-type-assertions"})]}),`
 `,n.jsx(e.p,{children:"类型断言（type assertiions）也可称作类型转换（type casting），本质上是对 TypeScript 类型系统的人为干预："}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsxs(e.li,{children:[`
@@ -11222,7 +11222,7 @@ const z = { ... } as unknown;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】优先使用 ",n.jsx(e.code,{children:"interface"})," 定义类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md",children:"@typescript-eslint/consistent-type-definitions"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 优先使用 ",n.jsx(e.code,{children:"interface"})," 定义类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md",children:"@typescript-eslint/consistent-type-definitions"})]}),`
 `,n.jsx(e.p,{children:"interface 支持 extend/implement/union 等等类型能力，同时也可以用于描述普通对象。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 type T = { x: number };
@@ -11236,7 +11236,7 @@ interface T {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】设置类成员的可访问性 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md",children:"@typescript-eslint/explicit-member-accessibility"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 设置类成员的可访问性 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md",children:"@typescript-eslint/explicit-member-accessibility"})]}),`
 `,n.jsxs(e.p,{children:["将非公开成员的可访问性设置为「私有」，可以增强代码可理解性，同时也能避免一些非法调用，公开的成员可省略 ",n.jsx(e.code,{children:"public"})," 修饰符。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 class Foo {
@@ -11275,7 +11275,7 @@ class Foo {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】interface/type 类型中使用一致的成员分隔符 ",n.jsx(e.code,{children:";"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md",children:"@typescript-eslint/member-delimiter-style"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," interface/type 类型中使用一致的成员分隔符 ",n.jsx(e.code,{children:";"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md",children:"@typescript-eslint/member-delimiter-style"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad: comma style(JSON style)
 interface Foo {
   name: string,
@@ -11312,7 +11312,7 @@ type Bar = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】类的成员应按照固定的先后顺序排列 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md",children:"@typescript-eslint/member-ordering"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 类的成员应按照固定的先后顺序排列 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md",children:"@typescript-eslint/member-ordering"})]}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsx(e.li,{children:"类的静态方法 / 属性（static）优先于实例的方法 / 属性（instance）"}),`
 `,n.jsx(e.li,{children:"属性（field）优先于构造函数（constructor），优先于方法（method）"}),`
@@ -11344,7 +11344,7 @@ class Foo {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】接口中的方法使用属性的方式定义 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md",children:"@typescript-eslint/method-signature-style"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 接口中的方法使用属性的方式定义 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md",children:"@typescript-eslint/method-signature-style"})]}),`
 `,n.jsx(e.p,{children:"使用属性去定义接口中的方法，可以获得更严格的检查。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 interface T1 {
@@ -11375,7 +11375,7 @@ interface T3 {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】禁止使用容易混淆的非空断言 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.md",children:"@typescript-eslint/no-confusing-non-null-assertion"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 禁止使用容易混淆的非空断言 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.md",children:"@typescript-eslint/no-confusing-non-null-assertion"})]}),`
 `,n.jsxs(e.p,{children:["在相等比较运算符（",n.jsx(e.code,{children:"=="})," 或 ",n.jsx(e.code,{children:"==="}),"）前使用非空断言（",n.jsx(e.code,{children:"!"}),"）很容易和不等运算符（",n.jsx(e.code,{children:"!="})," 或 ",n.jsx(e.code,{children:"!=="}),"）混淆，不建议使用。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`interface Foo {
   bar?: string;
@@ -11394,7 +11394,7 @@ const isEqualsNum = (1 + foo.num!) == 2;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】避免定义空的接口类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-interface.md",children:"@typescript-eslint/no-empty-interface"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 避免定义空的接口类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-interface.md",children:"@typescript-eslint/no-empty-interface"})]}),`
 `,n.jsx(e.p,{children:"空的接口类型等效于空对象，若它只继承另一个接口类型，那么该类型与被继承的类型等效。在代码中应减少定义无意义的接口类型。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 // an empty interface
@@ -11423,7 +11423,7 @@ interface Baz extends Foo, Bar {}
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】初始化为 ",n.jsx(e.code,{children:"number/string/boolean"})," 的变量或参数应避免显式的类型声明 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md",children:"@typescript-eslint/no-inferrable-types"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 初始化为 ",n.jsx(e.code,{children:"number/string/boolean"})," 的变量或参数应避免显式的类型声明 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md",children:"@typescript-eslint/no-inferrable-types"})]}),`
 `,n.jsx(e.p,{children:"对于容易类型推倒出的变量、参数，再次的显式声明类型会带来代码冗余。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 const foo: number = 1;
@@ -11443,7 +11443,7 @@ function fn(a = 5, b = true) {}
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止无意义的 ",n.jsx(e.code,{children:"void"})," 类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-void-type.md",children:"@typescript-eslint/no-invalid-void-type"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 禁止无意义的 ",n.jsx(e.code,{children:"void"})," 类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-void-type.md",children:"@typescript-eslint/no-invalid-void-type"})]}),`
 `,n.jsx(e.p,{children:"禁止在返回类型或泛型类型参数之外使用 void 类型，而且在返回类型中不应再与其他类型做联合或交叉。"}),`
 `,n.jsx(e.p,{children:"void 类型代表「无」或函数「不返回任何值」，隐式未定义类型代表函数返回「未定义的值 undefined」，所以 void 类型无法与除了 never 外的其他类型做联合、交叉。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
@@ -11469,7 +11469,7 @@ type stillVoid = void | never;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止使用 namespace 来定义命名空间 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-namespace.md",children:"@typescript-eslint/no-namespace"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 禁止使用 namespace 来定义命名空间 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-namespace.md",children:"@typescript-eslint/no-namespace"})]}),`
 `,n.jsx(e.p,{children:"自定义 TypeScript 模块（module）和命名空间（namespace）已经不再推荐使用，首选 ES2015 的模块语法来导入导出。此规则仍然允许定义外部的模块或命名空间。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 module foo {}
@@ -11488,7 +11488,7 @@ declare module foo {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止在 ",n.jsx(e.code,{children:"optional chaining"})," 之后使用 ",n.jsx(e.code,{children:"non-null"})," 断言 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md",children:"@typescript-eslint/no-non-null-asserted-optional-chain"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 禁止在 ",n.jsx(e.code,{children:"optional chaining"})," 之后使用 ",n.jsx(e.code,{children:"non-null"})," 断言 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md",children:"@typescript-eslint/no-non-null-asserted-optional-chain"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"optional chaining"})," 被设计为返回 ",n.jsx(e.code,{children:"undefined"}),"，在之后使用非空断言是错误的，会引入严重的类型安全问题。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 foo?.bar!;
@@ -11511,7 +11511,7 @@ foo?.bar!().baz;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】使用 ES2015 import 语法引入模块 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-require-imports.md",children:"@typescript-eslint/no-require-imports"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 使用 ES2015 import 语法引入模块 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-require-imports.md",children:"@typescript-eslint/no-require-imports"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 const fs = require('fs');
 
@@ -11520,7 +11520,7 @@ import * as fs from 'fs';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】不建议将 this 赋值给其他变量 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-this-alias.md",children:"@typescript-eslint/no-this-alias"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 不建议将 this 赋值给其他变量 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-this-alias.md",children:"@typescript-eslint/no-this-alias"})]}),`
 `,n.jsx(e.p,{children:"通过变量赋值为 this 的方式来管理函数作用域不是我们推荐的最佳实践，应使用箭头函数保留函数作用域。此规则中允许对 this 的解构赋值。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 function foo() {
@@ -11539,7 +11539,7 @@ function foo() {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】当变量的值与类型声明相等时，优先使用 ",n.jsx(e.code,{children:"as const"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md",children:"@typescript-eslint/prefer-as-const"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 当变量的值与类型声明相等时，优先使用 ",n.jsx(e.code,{children:"as const"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md",children:"@typescript-eslint/prefer-as-const"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 let bar: 2 = 2;
 let foo = <'bar'>'bar';
@@ -11555,7 +11555,7 @@ let foo = { bar: 'baz' };
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止使用 module 来定义命名空间 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-namespace-keyword.md",children:"@typescript-eslint/prefer-namespace-keyword"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 禁止使用 module 来定义命名空间 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-namespace-keyword.md",children:"@typescript-eslint/prefer-namespace-keyword"})]}),`
 `,n.jsxs(e.p,{children:["module 已经成为 JS 语言的关键字，应避免 TypeScript 模块与 ES2015 模块混淆。",n.jsx(e.code,{children:"declare module"})," 不做限制。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 module Foo {}
@@ -11566,7 +11566,7 @@ declare namespace Foo {}
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】字符串字面量使用单引号包裹 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md",children:"@typescript-eslint/quotes"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 字符串字面量使用单引号包裹 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md",children:"@typescript-eslint/quotes"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 const foo = "bar";
 
@@ -11575,7 +11575,7 @@ const foo = 'bar';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】 加号 ",n.jsx(e.code,{children:"+"})," 连接的两侧同为数字或同为字符串 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-plus-operands.md",children:"@typescript-eslint/restrict-plus-operands"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"}),"  加号 ",n.jsx(e.code,{children:"+"})," 连接的两侧同为数字或同为字符串 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-plus-operands.md",children:"@typescript-eslint/restrict-plus-operands"})]}),`
 `,n.jsx(e.p,{children:"数字与字符串的连接往往会导致一些预期外的问题。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 var foo = '5.5' + 5;
@@ -11587,7 +11587,7 @@ var foo = 1n + 1n;
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止使用三斜杠语法 ",n.jsx(e.code,{children:"///"})," 导入文件 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/triple-slash-reference.md",children:"@typescript-eslint/triple-slash-reference"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 禁止使用三斜杠语法 ",n.jsx(e.code,{children:"///"})," 导入文件 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/triple-slash-reference.md",children:"@typescript-eslint/triple-slash-reference"})]}),`
 `,n.jsx(e.p,{children:"三斜杠语法已经被废弃，声明文件（d.ts）以外禁止使用。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 /// <reference path="./my-module" />
@@ -11597,7 +11597,7 @@ import myModule from './my-module';
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】类型声明时应正确添加空格间距 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/type-annotation-spacing.md",children:"@typescript-eslint/type-annotation-spacing"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," 类型声明时应正确添加空格间距 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/type-annotation-spacing.md",children:"@typescript-eslint/type-annotation-spacing"})]}),`
 `,n.jsx(e.p,{children:"TypeScript 类型声明周围添加合适的间距可以有效的提升代码可读性，我们约定："}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsx(e.li,{children:"冒号前无空格，冒号后保留一个空格"}),`
@@ -11639,7 +11639,7 @@ type Foo = () => {};
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】interface 和 type 定义时必须声明成员的类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/typedef.md",children:"@typescript-eslint/typedef"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"mandatory"})," interface 和 type 定义时必须声明成员的类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/typedef.md",children:"@typescript-eslint/typedef"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 type Members = {
   member;
@@ -11654,7 +11654,7 @@ type Members = {
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】定义函数时，优先使用参数的联合类型而不是函数的类型重载 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unified-signatures.md",children:"@typescript-eslint/unified-signatures"})]}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"recommended"})," 定义函数时，优先使用参数的联合类型而不是函数的类型重载 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unified-signatures.md",children:"@typescript-eslint/unified-signatures"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 function f(x: number): void;
 function f(x: string): void;
@@ -11677,8 +11677,8 @@ function f(x?: ...number[]): void;
 `,n.jsx(e.h2,{children:"编码风格"}),`
 `,n.jsx(e.p,{children:n.jsx(e.img,{src:"https://img.alicdn.com/imgextra/i3/O1CN01xiw6bP1oMEFb7VtuO_!!6000000005210-55-tps-663-378.svg",alt:"示例代码标注图"})}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】重载的函数必须写在一起 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/adjacent-overload-signatures.md",children:"@typescript-eslint/adjacent-overload-signatures"})]}),`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 重载的函数必须写在一起 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/adjacent-overload-signatures.md",children:"@typescript-eslint/adjacent-overload-signatures"})]}),`
+`]}),`
 `,n.jsx(e.p,{children:"自然相关的项组合在一起将提高代码可读性和组织性。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 declare namespace Foo {
@@ -11752,9 +11752,9 @@ export function foo(s: string): void;
 export function foo(n: number): void;
 export function foo(sn: string | number): void;
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 简单数组类型的定义使用 ",n.jsx(e.code,{children:"T[]"}),"，复杂类型使用 ",n.jsx(e.code,{children:"Array<T>"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md",children:"@typescript-eslint/array-type"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】简单数组类型的定义使用 ",n.jsx(e.code,{children:"T[]"}),"，复杂类型使用 ",n.jsx(e.code,{children:"Array<T>"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/array-type.md",children:"@typescript-eslint/array-type"})]}),`
 `,n.jsx(e.p,{children:"对数组类型的定义使用相同的规范将帮助开发者更快地理解和阅读类型。"}),`
 `,n.jsxs(e.p,{children:["简单类型（数字、字符串、布尔等）请使用 ",n.jsx(e.code,{children:"T[]"})," 或 ",n.jsx(e.code,{children:"readonly T[]"})," ，其他复杂类型（联合、交叉、对象、函数等）请使用 ",n.jsx(e.code,{children:"Array<T>"})," 或 ",n.jsx(e.code,{children:"ReadonlyArray<T>"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
@@ -11773,9 +11773,9 @@ const d: MyType[] = ['a', 'b'];
 const e: string[] = ['a', 'b'];
 const f: readonly string[] = ['a', 'b'];
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 使用 TypeScript 注释指令时需跟随描述说明 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-ts-comment.md",children:"@typescript-eslint/ban-ts-comment"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】使用 TypeScript 注释指令时需跟随描述说明 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-ts-comment.md",children:"@typescript-eslint/ban-ts-comment"})]}),`
 `,n.jsx(e.p,{children:"TS 提供了一些指令注释，可用于忽略 TypeScript 编译器在编译阶段的错误，如下："}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// @ts-expect-error
 // @ts-ignore
@@ -11797,9 +11797,9 @@ console.log('my code');
 // @ts-ignore: It's ok to ignore this compile error
 console.log('my code');
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 禁止使用 ",n.jsx(e.code,{children:"// tslint:<rule-flag>"})," 等 tslint 注释 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-tslint-comment.md",children:"@typescript-eslint/ban-tslint-comment"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止使用 ",n.jsx(e.code,{children:"// tslint:<rule-flag>"})," 等 tslint 注释 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/ban-tslint-comment.md",children:"@typescript-eslint/ban-tslint-comment"})]}),`
 `,n.jsx(e.p,{children:"tslint 已经被废弃，对应的指令注释也不应再出现。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 /* tslint:disable */
@@ -11810,9 +11810,9 @@ console.log('my code');
 someCode(); // tslint:disable-line
 // tslint:disable-next-line:rule1 rule2 rule3...
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 如果类的属性是一个字面量，则推荐使用只读属性 ",n.jsx(e.code,{children:"readonly"})," 而不是 ",n.jsx(e.code,{children:"getter"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-literal-property-style.md",children:"@typescript-eslint/class-literal-property-style"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】如果类的属性是一个字面量，则推荐使用只读属性 ",n.jsx(e.code,{children:"readonly"})," 而不是 ",n.jsx(e.code,{children:"getter"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-literal-property-style.md",children:"@typescript-eslint/class-literal-property-style"})]}),`
 `,n.jsx(e.p,{children:"类上所有返回「字面量」的 getter 方法，都推荐使用 readonly 修饰符来代替，字面量包含字符串、模板字符串、数字、bigint、正则和 null。"}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsx(e.p,{children:"说明：在一些特殊场景，编写代码的最终用户是 JavaScript 开发者时，可以使用 getter 来保证字段无法被重新定义和覆盖，因为 readonly 修饰符只作用于 TypeScript 编译阶段。"}),`
@@ -11837,17 +11837,13 @@ class Mx {
   }
 }
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 类型断言必须使用 ",n.jsx(e.code,{children:"as Type"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md",children:"@typescript-eslint/consistent-type-assertions"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】类型断言必须使用 ",n.jsx(e.code,{children:"as Type"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-assertions.md",children:"@typescript-eslint/consistent-type-assertions"})]}),`
 `,n.jsx(e.p,{children:"类型断言（type assertiions）也可称作类型转换（type casting），本质上是对 TypeScript 类型系统的人为干预："}),`
 `,n.jsxs(e.ol,{children:[`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["强制对类型的断言统一使用 ",n.jsx(e.code,{children:"as Type"})," 风格而非 ",n.jsx(e.code,{children:"<Type>"})," ，后者容易与 ",n.jsx(e.code,{children:"JSX"})," 产生混淆。"]}),`
-`]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"对象字面量禁止类型断言，断言成 any 除外，对象字面量应该直接声明。"}),`
-`]}),`
+`,n.jsxs(e.li,{children:["强制对类型的断言统一使用 ",n.jsx(e.code,{children:"as Type"})," 风格而非 ",n.jsx(e.code,{children:"<Type>"})," ，后者容易与 ",n.jsx(e.code,{children:"JSX"})," 产生混淆。"]}),`
+`,n.jsx(e.li,{children:"对象字面量禁止类型断言，断言成 any 除外，对象字面量应该直接声明。"}),`
 `]}),`
 `,n.jsxs(e.blockquote,{children:[`
 `,n.jsxs(e.p,{children:["TypeScript 3.4 中引入的 const 断言在本规则中不受约束，",n.jsx(e.code,{children:"let x = 'hello' as const;"})," 和 ",n.jsx(e.code,{children:"let x = <const>'hello';"})," 都是允许的。"]}),`
@@ -11867,9 +11863,9 @@ const x: T = { ... };
 const y = { ... } as any;
 const z = { ... } as unknown;
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 优先使用 ",n.jsx(e.code,{children:"interface"})," 定义类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md",children:"@typescript-eslint/consistent-type-definitions"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】优先使用 ",n.jsx(e.code,{children:"interface"})," 定义类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/consistent-type-definitions.md",children:"@typescript-eslint/consistent-type-definitions"})]}),`
 `,n.jsx(e.p,{children:"interface 支持 extend/implement/union 等等类型能力，同时也可以用于描述普通对象。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 type T = { x: number };
@@ -11881,9 +11877,9 @@ interface T {
   x: number;
 }
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 设置类成员的可访问性 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md",children:"@typescript-eslint/explicit-member-accessibility"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】设置类成员的可访问性 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md",children:"@typescript-eslint/explicit-member-accessibility"})]}),`
 `,n.jsxs(e.p,{children:["将非公开成员的可访问性设置为「私有」，可以增强代码可理解性，同时也能避免一些非法调用，公开的成员可省略 ",n.jsx(e.code,{children:"public"})," 修饰符。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 class Foo {
@@ -11920,9 +11916,9 @@ class Foo {
 }
 
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," interface/type 类型中使用一致的成员分隔符 ",n.jsx(e.code,{children:";"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md",children:"@typescript-eslint/member-delimiter-style"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】interface/type 类型中使用一致的成员分隔符 ",n.jsx(e.code,{children:";"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md",children:"@typescript-eslint/member-delimiter-style"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad: comma style(JSON style)
 interface Foo {
   name: string,
@@ -11957,9 +11953,9 @@ type Bar = {
 };
 
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 类的成员应按照固定的先后顺序排列 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md",children:"@typescript-eslint/member-ordering"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】类的成员应按照固定的先后顺序排列 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-ordering.md",children:"@typescript-eslint/member-ordering"})]}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsx(e.li,{children:"类的静态方法 / 属性（static）优先于实例的方法 / 属性（instance）"}),`
 `,n.jsx(e.li,{children:"属性（field）优先于构造函数（constructor），优先于方法（method）"}),`
@@ -11989,9 +11985,9 @@ class Foo {
   }
 }
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 接口中的方法使用属性的方式定义 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md",children:"@typescript-eslint/method-signature-style"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】接口中的方法使用属性的方式定义 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/method-signature-style.md",children:"@typescript-eslint/method-signature-style"})]}),`
 `,n.jsx(e.p,{children:"使用属性去定义接口中的方法，可以获得更严格的检查。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 interface T1 {
@@ -12020,9 +12016,9 @@ interface T3 {
     ((arg: boolean) => void);
 }
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 禁止使用容易混淆的非空断言 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.md",children:"@typescript-eslint/no-confusing-non-null-assertion"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】禁止使用容易混淆的非空断言 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.md",children:"@typescript-eslint/no-confusing-non-null-assertion"})]}),`
 `,n.jsxs(e.p,{children:["在相等比较运算符（",n.jsx(e.code,{children:"=="})," 或 ",n.jsx(e.code,{children:"==="}),"）前使用非空断言（",n.jsx(e.code,{children:"!"}),"）很容易和不等运算符（",n.jsx(e.code,{children:"!="})," 或 ",n.jsx(e.code,{children:"!=="}),"）混淆，不建议使用。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`interface Foo {
   bar?: string;
@@ -12039,9 +12035,9 @@ const foo: Foo = getFoo();
 const isEqualsBar = foo.bar == 'hello';
 const isEqualsNum = (1 + foo.num!) == 2;
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 避免定义空的接口类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-interface.md",children:"@typescript-eslint/no-empty-interface"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】避免定义空的接口类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-interface.md",children:"@typescript-eslint/no-empty-interface"})]}),`
 `,n.jsx(e.p,{children:"空的接口类型等效于空对象，若它只继承另一个接口类型，那么该类型与被继承的类型等效。在代码中应减少定义无意义的接口类型。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 // an empty interface
@@ -12068,9 +12064,9 @@ interface Bar {
 // in this case the interface can be used as a replacement of a union type.
 interface Baz extends Foo, Bar {}
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 初始化为 ",n.jsx(e.code,{children:"number/string/boolean"})," 的变量或参数应避免显式的类型声明 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md",children:"@typescript-eslint/no-inferrable-types"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】初始化为 ",n.jsx(e.code,{children:"number/string/boolean"})," 的变量或参数应避免显式的类型声明 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-inferrable-types.md",children:"@typescript-eslint/no-inferrable-types"})]}),`
 `,n.jsx(e.p,{children:"对于容易类型推倒出的变量、参数，再次的显式声明类型会带来代码冗余。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 const foo: number = 1;
@@ -12088,9 +12084,9 @@ class Foo {
 }
 function fn(a = 5, b = true) {}
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 禁止无意义的 ",n.jsx(e.code,{children:"void"})," 类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-void-type.md",children:"@typescript-eslint/no-invalid-void-type"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止无意义的 ",n.jsx(e.code,{children:"void"})," 类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-invalid-void-type.md",children:"@typescript-eslint/no-invalid-void-type"})]}),`
 `,n.jsx(e.p,{children:"禁止在返回类型或泛型类型参数之外使用 void 类型，而且在返回类型中不应再与其他类型做联合或交叉。"}),`
 `,n.jsx(e.p,{children:"void 类型代表「无」或函数「不返回任何值」，隐式未定义类型代表函数返回「未定义的值 undefined」，所以 void 类型无法与除了 never 外的其他类型做联合、交叉。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
@@ -12114,9 +12110,9 @@ let trulyUndefined = void 0;
 async function promiseMeSomething(): Promise<void> {}
 type stillVoid = void | never;
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 禁止使用 namespace 来定义命名空间 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-namespace.md",children:"@typescript-eslint/no-namespace"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止使用 namespace 来定义命名空间 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-namespace.md",children:"@typescript-eslint/no-namespace"})]}),`
 `,n.jsx(e.p,{children:"自定义 TypeScript 模块（module）和命名空间（namespace）已经不再推荐使用，首选 ES2015 的模块语法来导入导出。此规则仍然允许定义外部的模块或命名空间。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 module foo {}
@@ -12133,9 +12129,9 @@ declare module foo {
   namespace foo {}
 }
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 禁止在 ",n.jsx(e.code,{children:"optional chaining"})," 之后使用 ",n.jsx(e.code,{children:"non-null"})," 断言 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md",children:"@typescript-eslint/no-non-null-asserted-optional-chain"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止在 ",n.jsx(e.code,{children:"optional chaining"})," 之后使用 ",n.jsx(e.code,{children:"non-null"})," 断言 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-non-null-asserted-optional-chain.md",children:"@typescript-eslint/no-non-null-asserted-optional-chain"})]}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.code,{children:"optional chaining"})," 被设计为返回 ",n.jsx(e.code,{children:"undefined"}),"，在之后使用非空断言是错误的，会引入严重的类型安全问题。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 foo?.bar!;
@@ -12156,18 +12152,18 @@ foo?.bar!.baz;
 foo?.bar!();
 foo?.bar!().baz;
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 使用 ES2015 import 语法引入模块 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-require-imports.md",children:"@typescript-eslint/no-require-imports"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】使用 ES2015 import 语法引入模块 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-require-imports.md",children:"@typescript-eslint/no-require-imports"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 const fs = require('fs');
 
 // good
 import * as fs from 'fs';
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 不建议将 this 赋值给其他变量 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-this-alias.md",children:"@typescript-eslint/no-this-alias"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】不建议将 this 赋值给其他变量 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-this-alias.md",children:"@typescript-eslint/no-this-alias"})]}),`
 `,n.jsx(e.p,{children:"通过变量赋值为 this 的方式来管理函数作用域不是我们推荐的最佳实践，应使用箭头函数保留函数作用域。此规则中允许对 this 的解构赋值。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 function foo() {
@@ -12184,9 +12180,9 @@ function foo() {
   });
 }
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 当变量的值与类型声明相等时，优先使用 ",n.jsx(e.code,{children:"as const"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md",children:"@typescript-eslint/prefer-as-const"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】当变量的值与类型声明相等时，优先使用 ",n.jsx(e.code,{children:"as const"})," ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-as-const.md",children:"@typescript-eslint/prefer-as-const"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 let bar: 2 = 2;
 let foo = <'bar'>'bar';
@@ -12200,9 +12196,9 @@ let bar = 'bar' as string;
 let foo = <string>'bar';
 let foo = { bar: 'baz' };
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 禁止使用 module 来定义命名空间 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-namespace-keyword.md",children:"@typescript-eslint/prefer-namespace-keyword"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止使用 module 来定义命名空间 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/prefer-namespace-keyword.md",children:"@typescript-eslint/prefer-namespace-keyword"})]}),`
 `,n.jsxs(e.p,{children:["module 已经成为 JS 语言的关键字，应避免 TypeScript 模块与 ES2015 模块混淆。",n.jsx(e.code,{children:"declare module"})," 不做限制。"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 module Foo {}
@@ -12211,18 +12207,18 @@ module Foo {}
 declare module Foo {}
 declare namespace Foo {}
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 字符串字面量使用单引号包裹 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md",children:"@typescript-eslint/quotes"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】字符串字面量使用单引号包裹 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/quotes.md",children:"@typescript-eslint/quotes"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 const foo = "bar";
 
 // good
 const foo = 'bar';
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"}),"  加号 ",n.jsx(e.code,{children:"+"})," 连接的两侧同为数字或同为字符串 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-plus-operands.md",children:"@typescript-eslint/restrict-plus-operands"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】 加号 ",n.jsx(e.code,{children:"+"})," 连接的两侧同为数字或同为字符串 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/restrict-plus-operands.md",children:"@typescript-eslint/restrict-plus-operands"})]}),`
 `,n.jsx(e.p,{children:"数字与字符串的连接往往会导致一些预期外的问题。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 var foo = '5.5' + 5;
@@ -12232,9 +12228,9 @@ var foo = 1n + 1;
 var foo = parseInt('5.5', 10) + 10;
 var foo = 1n + 1n;
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 禁止使用三斜杠语法 ",n.jsx(e.code,{children:"///"})," 导入文件 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/triple-slash-reference.md",children:"@typescript-eslint/triple-slash-reference"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】禁止使用三斜杠语法 ",n.jsx(e.code,{children:"///"})," 导入文件 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/triple-slash-reference.md",children:"@typescript-eslint/triple-slash-reference"})]}),`
 `,n.jsx(e.p,{children:"三斜杠语法已经被废弃，声明文件（d.ts）以外禁止使用。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 /// <reference path="./my-module" />
@@ -12242,9 +12238,9 @@ var foo = 1n + 1n;
 // good
 import myModule from './my-module';
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," 类型声明时应正确添加空格间距 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/type-annotation-spacing.md",children:"@typescript-eslint/type-annotation-spacing"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】类型声明时应正确添加空格间距 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/type-annotation-spacing.md",children:"@typescript-eslint/type-annotation-spacing"})]}),`
 `,n.jsx(e.p,{children:"TypeScript 类型声明周围添加合适的间距可以有效的提升代码可读性，我们约定："}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsx(e.li,{children:"冒号前无空格，冒号后保留一个空格"}),`
@@ -12284,9 +12280,9 @@ class Foo {
 
 type Foo = () => {};
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"强制"})," interface 和 type 定义时必须声明成员的类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/typedef.md",children:"@typescript-eslint/typedef"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【强制】interface 和 type 定义时必须声明成员的类型 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/typedef.md",children:"@typescript-eslint/typedef"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 type Members = {
   member;
@@ -12299,9 +12295,9 @@ type Members = {
   otherMember: string;
 };
 `})}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsxs(e.li,{children:[n.jsx(e.code,{children:"推荐"})," 定义函数时，优先使用参数的联合类型而不是函数的类型重载 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unified-signatures.md",children:"@typescript-eslint/unified-signatures"})]}),`
 `]}),`
-`,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["【推荐】定义函数时，优先使用参数的联合类型而不是函数的类型重载 ",n.jsx(e.a,{href:"https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/unified-signatures.md",children:"@typescript-eslint/unified-signatures"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-ts",children:`// bad
 function f(x: number): void;
 function f(x: string): void;
@@ -12312,8 +12308,6 @@ f(...x: number[]): void;
 function f(x: number | string): void;
 function f(x?: ...number[]): void;
 `})}),`
-`]}),`
-`]}),`
 `,n.jsx(e.h2,{children:"配套工具"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[n.jsx(e.a,{href:"https://www.npmjs.com/package/eslint-config-ali",children:"eslint-config-ali"}),"：本规约配套的 ",n.jsx(e.a,{href:"http://eslint.org/",children:"ESLint"})," 规则包，可使用 ",n.jsx(e.code,{children:"eslint-config-ali/typescript"})," 或 ",n.jsx(e.code,{children:"eslint-config-ali/typescript/xx"})," 引入本文介绍的规则"]}),`
@@ -12332,7 +12326,7 @@ function f(x?: ...number[]): void;
 `,n.jsx(e.h2,{children:"1 文件"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1【强制】Changelog 文件必须取名为 ",n.jsx(e.code,{children:"CHANGELOG.md"})]}),`
+`,n.jsxs(e.p,{children:["1.1 ",n.jsx(e.code,{children:"mandatory"})," Changelog 文件必须取名为 ",n.jsx(e.code,{children:"CHANGELOG.md"})]}),`
 `,n.jsx(e.p,{children:"使用大写来表明本文件的重要性，相当于是项目仓库元信息的一部分。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
@@ -12347,7 +12341,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2【强制】Changelog 文件必须是使用标准 Markdown 语法的文本文件，并以 ",n.jsx(e.code,{children:".md"})," 作为后缀"]}),`
+`,n.jsxs(e.p,{children:["1.2 ",n.jsx(e.code,{children:"mandatory"})," Changelog 文件必须是使用标准 Markdown 语法的文本文件，并以 ",n.jsx(e.code,{children:".md"})," 作为后缀"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 CHANGELOG.txt
@@ -12359,7 +12353,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3【强制】Changelog 文件必须存放在项目根目录下，和 ",n.jsx(e.code,{children:"README.md"}),"、",n.jsx(e.code,{children:"CONTRIBUTING.md"})," 等并列"]}),`
+`,n.jsxs(e.p,{children:["1.3 ",n.jsx(e.code,{children:"mandatory"})," Changelog 文件必须存放在项目根目录下，和 ",n.jsx(e.code,{children:"README.md"}),"、",n.jsx(e.code,{children:"CONTRIBUTING.md"})," 等并列"]}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h2,{children:"2 格式"}),`
@@ -12381,7 +12375,7 @@ CHANGELOG.md
 `,n.jsx(e.p,{children:"详细规则如下："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1【强制】文章标题使用「更新日志」作为固定文案。国际化场景使用英文「Change Log」作为固定文案"}),`
+`,n.jsxs(e.p,{children:["2.1 ",n.jsx(e.code,{children:"mandatory"})," 文章标题使用「更新日志」作为固定文案。国际化场景使用英文「Change Log」作为固定文案"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 # 修改日志
@@ -12396,7 +12390,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2【强制】Changelog 内容按版本号降序排列，最新版本放在最前面"}),`
+`,n.jsxs(e.p,{children:["2.2 ",n.jsx(e.code,{children:"mandatory"})," Changelog 内容按版本号降序排列，最新版本放在最前面"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 ## 1.0.0
@@ -12411,7 +12405,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3【强制】版本号 ",n.jsx(e.code,{children:"version"})," 需遵循 ",n.jsx(e.a,{href:"https://semver.org/lang/zh-CN/",children:"SemVer 规范"})]}),`
+`,n.jsxs(e.p,{children:["2.3 ",n.jsx(e.code,{children:"mandatory"})," 版本号 ",n.jsx(e.code,{children:"version"})," 需遵循 ",n.jsx(e.a,{href:"https://semver.org/lang/zh-CN/",children:"SemVer 规范"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 ## 2.0
@@ -12444,7 +12438,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4【推荐】版本号增加一个超链接，指向当前版本和上一个版本之间的 diff"}),`
+`,n.jsxs(e.p,{children:["2.4 ",n.jsx(e.code,{children:"recommended"})," 版本号增加一个超链接，指向当前版本和上一个版本之间的 diff"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 ## 2.0.0
@@ -12455,7 +12449,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5【强制】更新日期 ",n.jsx(e.code,{children:"date"})," 采用 ",n.jsx(e.code,{children:"yyyy-MM-dd"})," 格式"]}),`
+`,n.jsxs(e.p,{children:["2.5 ",n.jsx(e.code,{children:"mandatory"})," 更新日期 ",n.jsx(e.code,{children:"date"})," 采用 ",n.jsx(e.code,{children:"yyyy-MM-dd"})," 格式"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 ## [2.0.0](https://version-diff-url) (20200905)
@@ -12468,7 +12462,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6【推荐】更新类型 ",n.jsx(e.code,{children:"type"})," 与 Git message header 中的 ",n.jsx(e.a,{href:"./1.git.md#1.3.1-type",children:n.jsx(e.code,{children:"type"})})," 相关联，可以不一一对应"]}),`
+`,n.jsxs(e.p,{children:["2.6 ",n.jsx(e.code,{children:"recommended"})," 更新类型 ",n.jsx(e.code,{children:"type"})," 与 Git message header 中的 ",n.jsx(e.a,{href:"./1.git.md#1.3.1-type",children:n.jsx(e.code,{children:"type"})})," 相关联，可以不一一对应"]}),`
 `,n.jsx(e.p,{children:"type 用以说明更新的类型，推荐值如下："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"新增（Features）：新增功能。"}),`
@@ -12482,7 +12476,7 @@ CHANGELOG.md
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7【推荐】更新描述 ",n.jsx(e.code,{children:"desc"})," 内容需要注意以下几点："]}),`
+`,n.jsxs(e.p,{children:["2.7 ",n.jsx(e.code,{children:"recommended"})," 更新描述 ",n.jsx(e.code,{children:"desc"})," 内容需要注意以下几点："]}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsx(e.li,{children:"使用完整的句子。即在标点方面遵循一般的文档格式规约；如果使用英语，则句首大写。"}),`
 `,n.jsx(e.li,{children:"时态方面使用一般现在时，不要用过去时态。虽然查看 Changelog 时，Changelog 内容本身都发生在过去，然而使用现在时的时态更简洁明确，并且更易达成一致性。"}),`
@@ -12541,7 +12535,7 @@ CHANGELOG.md
 `,n.jsx(e.h2,{children:"1 文件"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.1【强制】Changelog 文件必须取名为 ",n.jsx(e.code,{children:"CHANGELOG.md"})]}),`
+`,n.jsxs(e.p,{children:["1.1 ",n.jsx(e.code,{children:"强制"})," Changelog 文件必须取名为 ",n.jsx(e.code,{children:"CHANGELOG.md"})]}),`
 `,n.jsx(e.p,{children:"使用大写来表明本文件的重要性，相当于是项目仓库元信息的一部分。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
@@ -12556,7 +12550,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.2【强制】Changelog 文件必须是使用标准 Markdown 语法的文本文件，并以 ",n.jsx(e.code,{children:".md"})," 作为后缀"]}),`
+`,n.jsxs(e.p,{children:["1.2 ",n.jsx(e.code,{children:"强制"})," Changelog 文件必须是使用标准 Markdown 语法的文本文件，并以 ",n.jsx(e.code,{children:".md"})," 作为后缀"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 CHANGELOG.txt
@@ -12568,7 +12562,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["1.3【强制】Changelog 文件必须存放在项目根目录下，和 ",n.jsx(e.code,{children:"README.md"}),"、",n.jsx(e.code,{children:"CONTRIBUTING.md"})," 等并列"]}),`
+`,n.jsxs(e.p,{children:["1.3 ",n.jsx(e.code,{children:"强制"})," Changelog 文件必须存放在项目根目录下，和 ",n.jsx(e.code,{children:"README.md"}),"、",n.jsx(e.code,{children:"CONTRIBUTING.md"})," 等并列"]}),`
 `]}),`
 `]}),`
 `,n.jsx(e.h2,{children:"2 格式"}),`
@@ -12590,7 +12584,7 @@ CHANGELOG.md
 `,n.jsx(e.p,{children:"详细规则如下："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1【强制】文章标题使用「更新日志」作为固定文案。国际化场景使用英文「Change Log」作为固定文案"}),`
+`,n.jsxs(e.p,{children:["2.1 ",n.jsx(e.code,{children:"强制"})," 文章标题使用「更新日志」作为固定文案。国际化场景使用英文「Change Log」作为固定文案"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 # 修改日志
@@ -12605,7 +12599,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2【强制】Changelog 内容按版本号降序排列，最新版本放在最前面"}),`
+`,n.jsxs(e.p,{children:["2.2 ",n.jsx(e.code,{children:"强制"})," Changelog 内容按版本号降序排列，最新版本放在最前面"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 ## 1.0.0
@@ -12620,7 +12614,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.3【强制】版本号 ",n.jsx(e.code,{children:"version"})," 需遵循 ",n.jsx(e.a,{href:"https://semver.org/lang/zh-CN/",children:"SemVer 规范"})]}),`
+`,n.jsxs(e.p,{children:["2.3 ",n.jsx(e.code,{children:"强制"})," 版本号 ",n.jsx(e.code,{children:"version"})," 需遵循 ",n.jsx(e.a,{href:"https://semver.org/lang/zh-CN/",children:"SemVer 规范"})]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 ## 2.0
@@ -12653,7 +12647,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.4【推荐】版本号增加一个超链接，指向当前版本和上一个版本之间的 diff"}),`
+`,n.jsxs(e.p,{children:["2.4 ",n.jsx(e.code,{children:"推荐"})," 版本号增加一个超链接，指向当前版本和上一个版本之间的 diff"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 ## 2.0.0
@@ -12664,7 +12658,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.5【强制】更新日期 ",n.jsx(e.code,{children:"date"})," 采用 ",n.jsx(e.code,{children:"yyyy-MM-dd"})," 格式"]}),`
+`,n.jsxs(e.p,{children:["2.5 ",n.jsx(e.code,{children:"强制"})," 更新日期 ",n.jsx(e.code,{children:"date"})," 采用 ",n.jsx(e.code,{children:"yyyy-MM-dd"})," 格式"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 ## [2.0.0](https://version-diff-url) (20200905)
@@ -12677,7 +12671,7 @@ CHANGELOG.md
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.6【推荐】更新类型 ",n.jsx(e.code,{children:"type"})," 与 Git message header 中的 ",n.jsx(e.a,{href:"./1.git.md#1.3.1-type",children:n.jsx(e.code,{children:"type"})})," 相关联，可以不一一对应"]}),`
+`,n.jsxs(e.p,{children:["2.6 ",n.jsx(e.code,{children:"推荐"})," 更新类型 ",n.jsx(e.code,{children:"type"})," 与 Git message header 中的 ",n.jsx(e.a,{href:"./1.git.md#1.3.1-type",children:n.jsx(e.code,{children:"type"})})," 相关联，可以不一一对应"]}),`
 `,n.jsx(e.p,{children:"type 用以说明更新的类型，推荐值如下："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"新增（Features）：新增功能。"}),`
@@ -12691,7 +12685,7 @@ CHANGELOG.md
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsxs(e.p,{children:["2.7【推荐】更新描述 ",n.jsx(e.code,{children:"desc"})," 内容需要注意以下几点："]}),`
+`,n.jsxs(e.p,{children:["2.7 ",n.jsx(e.code,{children:"推荐"})," 更新描述 ",n.jsx(e.code,{children:"desc"})," 内容需要注意以下几点："]}),`
 `,n.jsxs(e.ol,{children:[`
 `,n.jsx(e.li,{children:"使用完整的句子。即在标点方面遵循一般的文档格式规约；如果使用英语，则句首大写。"}),`
 `,n.jsx(e.li,{children:"时态方面使用一般现在时，不要用过去时态。虽然查看 Changelog 时，Changelog 内容本身都发生在过去，然而使用现在时的时态更简洁明确，并且更易达成一致性。"}),`
@@ -13143,7 +13137,7 @@ Resolve #1, close #2, close #3
 `,n.jsx(e.h2,{children:"1 空格"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.1【强制】中英文之间需要增加空格"}),`
+`,n.jsxs(e.p,{children:["1.1 ",n.jsx(e.code,{children:"mandatory"})," 中英文之间需要增加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 HTML定义网页的结构与内容，CSS定义其格式与样式，而JavaScript则为网页增加可交互性，创作功能丰富的Web应用。
@@ -13154,7 +13148,7 @@ HTML 定义网页的结构与内容，CSS 定义其格式与样式，而 JavaScr
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.2【强制】中英文与数字之间需要增加空格"}),`
+`,n.jsxs(e.p,{children:["1.2 ",n.jsx(e.code,{children:"mandatory"})," 中英文与数字之间需要增加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 截至2012年，所有的现代浏览器都完整的支持 ECMAScript5.1，旧版本的浏览器至少支持 ECMAScript3 标准。
@@ -13165,7 +13159,7 @@ HTML 定义网页的结构与内容，CSS 定义其格式与样式，而 JavaScr
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.3【强制】全角标点与其他字符之间不加空格"}),`
+`,n.jsxs(e.p,{children:["1.3 ",n.jsx(e.code,{children:"mandatory"})," 全角标点与其他字符之间不加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 不像 UDP， HTTP 是一个不会静默丢失消息的协议。
@@ -13176,7 +13170,7 @@ HTML 定义网页的结构与内容，CSS 定义其格式与样式，而 JavaScr
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4【强制】半角标点与其他字符之间需要增加空格"}),`
+`,n.jsxs(e.p,{children:["1.4 ",n.jsx(e.code,{children:"mandatory"})," 半角标点与其他字符之间需要增加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 Cookie 主要用于以下三个方面：
@@ -13201,7 +13195,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.5【推荐】链接文字前后不需要增加空格"}),`
+`,n.jsxs(e.p,{children:["1.5 ",n.jsx(e.code,{children:"recommended"})," 链接文字前后不需要增加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 [了解更多](https://developer.mozilla.org/zh-CN/docs/Web) 开发技术相关知识。
@@ -13215,7 +13209,7 @@ Cookie 主要用于以下三个方面：
 `,n.jsx(e.h2,{children:"2 标点符号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1【推荐】正确使用引号"}),`
+`,n.jsxs(e.p,{children:["2.1 ",n.jsx(e.code,{children:"recommended"})," 正确使用引号"]}),`
 `,n.jsx(e.p,{children:"中文句子内夹用英文句子时，该英文句子用中文双引号标示，保留英文句子内部的英文标点符号，句末使用中文标点。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad - 英文句子不建议使用英文引号标示 -->
 
@@ -13235,7 +13229,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2【推荐】正确使用省略号"}),`
+`,n.jsxs(e.p,{children:["2.2 ",n.jsx(e.code,{children:"recommended"})," 正确使用省略号"]}),`
 `,n.jsx(e.p,{children:"中文省略号的形式为“……”（中文输入法下 SHIFT + 6），6 个居中小圆点；英文省略号的形式为“...”，3 个齐线小圆点。"}),`
 `,n.jsx(e.p,{children:"夹用英文的中文句子里，英文内部的省略使用英文省略号；中文内部的省略使用中文省略号。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
@@ -13250,7 +13244,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3【推荐】正确使用破折号"}),`
+`,n.jsxs(e.p,{children:["2.3 ",n.jsx(e.code,{children:"recommended"})," 正确使用破折号"]}),`
 `,n.jsx(e.p,{children:"中文破折号的形式为“——”，长度相当于两个汉字的长度。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad - 破折号不推荐使用两个中横线 -->
 
@@ -13265,7 +13259,7 @@ Cookie 主要用于以下三个方面：
 `,n.jsx(e.h2,{children:"3 全角和半角"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.1【强制】中文标点符号使用全角"}),`
+`,n.jsxs(e.p,{children:["3.1 ",n.jsx(e.code,{children:"mandatory"})," 中文标点符号使用全角"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad - 中文句子冒号未使用全角 -->
 
 前端框架: React、Vue、Angular。
@@ -13288,7 +13282,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.2【强制】英文和数字使用半角"}),`
+`,n.jsxs(e.p,{children:["3.2 ",n.jsx(e.code,{children:"mandatory"})," 英文和数字使用半角"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad - 英文和数字不应该使用全角 -->
 
 该版本正式名称为 ＥＣＭＡＳｃｒｉｐｔ ２０１５，但通常被称为 ＥＣＭＡＳｃｒｉｐｔ ６ 或者 ＥＳ６。
@@ -13299,7 +13293,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.3【强制】完整的英文整句和特殊名词使用半角标点"}),`
+`,n.jsxs(e.p,{children:["3.3 ",n.jsx(e.code,{children:"mandatory"})," 完整的英文整句和特殊名词使用半角标点"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 乔布斯那句话是怎么说的？「Stay hungry，stay foolish。」
@@ -13315,7 +13309,7 @@ Cookie 主要用于以下三个方面：
 `,n.jsx(e.h2,{children:"4 名词"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"4.1【强制】正确地拼写英文专有词汇"}),`
+`,n.jsxs(e.p,{children:["4.1 ",n.jsx(e.code,{children:"mandatory"})," 正确地拼写英文专有词汇"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 我们需要一位熟悉 Js、h5，至少理解一种框架（如 backbone、angular、RJS 等）的 FED。
@@ -13359,7 +13353,7 @@ FPS, UI, URL, URI, URLs, URIs
 `,n.jsx(e.h2,{children:"1 空格"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.1【强制】中英文之间需要增加空格"}),`
+`,n.jsxs(e.p,{children:["1.1 ",n.jsx(e.code,{children:"强制"})," 中英文之间需要增加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 HTML定义网页的结构与内容，CSS定义其格式与样式，而JavaScript则为网页增加可交互性，创作功能丰富的Web应用。
@@ -13370,7 +13364,7 @@ HTML 定义网页的结构与内容，CSS 定义其格式与样式，而 JavaScr
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.2【强制】中英文与数字之间需要增加空格"}),`
+`,n.jsxs(e.p,{children:["1.2 ",n.jsx(e.code,{children:"强制"})," 中英文与数字之间需要增加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 截至2012年，所有的现代浏览器都完整的支持 ECMAScript5.1，旧版本的浏览器至少支持 ECMAScript3 标准。
@@ -13381,7 +13375,7 @@ HTML 定义网页的结构与内容，CSS 定义其格式与样式，而 JavaScr
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.3【强制】全角标点与其他字符之间不加空格"}),`
+`,n.jsxs(e.p,{children:["1.3 ",n.jsx(e.code,{children:"强制"})," 全角标点与其他字符之间不加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 不像 UDP， HTTP 是一个不会静默丢失消息的协议。
@@ -13392,7 +13386,7 @@ HTML 定义网页的结构与内容，CSS 定义其格式与样式，而 JavaScr
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.4【强制】半角标点与其他字符之间需要增加空格"}),`
+`,n.jsxs(e.p,{children:["1.4 ",n.jsx(e.code,{children:"强制"})," 半角标点与其他字符之间需要增加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 Cookie 主要用于以下三个方面：
@@ -13417,7 +13411,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"1.5【推荐】链接文字前后不需要增加空格"}),`
+`,n.jsxs(e.p,{children:["1.5 ",n.jsx(e.code,{children:"推荐"})," 链接文字前后不需要增加空格"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 [了解更多](https://developer.mozilla.org/zh-CN/docs/Web) 开发技术相关知识。
@@ -13431,7 +13425,7 @@ Cookie 主要用于以下三个方面：
 `,n.jsx(e.h2,{children:"2 标点符号"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.1【推荐】正确使用引号"}),`
+`,n.jsxs(e.p,{children:["2.1 ",n.jsx(e.code,{children:"推荐"})," 正确使用引号"]}),`
 `,n.jsx(e.p,{children:"中文句子内夹用英文句子时，该英文句子用中文双引号标示，保留英文句子内部的英文标点符号，句末使用中文标点。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad - 英文句子不建议使用英文引号标示 -->
 
@@ -13451,7 +13445,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.2【推荐】正确使用省略号"}),`
+`,n.jsxs(e.p,{children:["2.2 ",n.jsx(e.code,{children:"推荐"})," 正确使用省略号"]}),`
 `,n.jsx(e.p,{children:"中文省略号的形式为“……”（中文输入法下 SHIFT + 6），6 个居中小圆点；英文省略号的形式为“...”，3 个齐线小圆点。"}),`
 `,n.jsx(e.p,{children:"夹用英文的中文句子里，英文内部的省略使用英文省略号；中文内部的省略使用中文省略号。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
@@ -13466,7 +13460,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"2.3【推荐】正确使用破折号"}),`
+`,n.jsxs(e.p,{children:["2.3 ",n.jsx(e.code,{children:"推荐"})," 正确使用破折号"]}),`
 `,n.jsx(e.p,{children:"中文破折号的形式为“——”，长度相当于两个汉字的长度。"}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad - 破折号不推荐使用两个中横线 -->
 
@@ -13481,7 +13475,7 @@ Cookie 主要用于以下三个方面：
 `,n.jsx(e.h2,{children:"3 全角和半角"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.1【强制】中文标点符号使用全角"}),`
+`,n.jsxs(e.p,{children:["3.1 ",n.jsx(e.code,{children:"强制"})," 中文标点符号使用全角"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad - 中文句子冒号未使用全角 -->
 
 前端框架: React、Vue、Angular。
@@ -13504,7 +13498,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.2【强制】英文和数字使用半角"}),`
+`,n.jsxs(e.p,{children:["3.2 ",n.jsx(e.code,{children:"强制"})," 英文和数字使用半角"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad - 英文和数字不应该使用全角 -->
 
 该版本正式名称为 ＥＣＭＡＳｃｒｉｐｔ ２０１５，但通常被称为 ＥＣＭＡＳｃｒｉｐｔ ６ 或者 ＥＳ６。
@@ -13515,7 +13509,7 @@ Cookie 主要用于以下三个方面：
 `})}),`
 `]}),`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"3.3【强制】完整的英文整句和特殊名词使用半角标点"}),`
+`,n.jsxs(e.p,{children:["3.3 ",n.jsx(e.code,{children:"强制"})," 完整的英文整句和特殊名词使用半角标点"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 乔布斯那句话是怎么说的？「Stay hungry，stay foolish。」
@@ -13531,7 +13525,7 @@ Cookie 主要用于以下三个方面：
 `,n.jsx(e.h2,{children:"4 名词"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:[`
-`,n.jsx(e.p,{children:"4.1【强制】正确地拼写英文专有词汇"}),`
+`,n.jsxs(e.p,{children:["4.1 ",n.jsx(e.code,{children:"强制"})," 正确地拼写英文专有词汇"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-markdown",children:`<!-- bad -->
 
 我们需要一位熟悉 Js、h5，至少理解一种框架（如 backbone、angular、RJS 等）的 FED。
