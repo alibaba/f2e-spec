@@ -72,7 +72,7 @@ function foo() {
 Document writing & review (in no particular order):
 
 - 邦彦
-- [尘弦（王光奇）](https://github.com/lakerswgq)
+- 尘弦, [@lakerswgq](https://github.com/lakerswgq)
 - 迟帆
 - 大果
 - 氐宿
@@ -87,13 +87,13 @@ Document writing & review (in no particular order):
 - 霂之
 - 年翼
 - 清锐
-- [萨波](https://github.com/bowei-jbw)
+- 萨波, [@bowei-jbw](https://github.com/bowei-jbw)
 - 释然
 - 湘粤（双龙）
 - 苏青
 - 阎罗
 - 扬炀
-- [Guo Yunhe](https://github.com/guoyunhe)
+- Guo Yunhe, [@guoyunhe](https://github.com/guoyunhe)
 - 洋风
 - 云谦
 - 载天
@@ -116,7 +116,7 @@ Document writing & review (in no particular order):
 
 Tool development & review (in no particular order):
 
-- 尘弦（王光奇）, [@lakerswgq](https://github.com/lakerswgq)
+- 尘弦, [@lakerswgq](https://github.com/lakerswgq)
 - Guo Yunhe, [@guoyunhe](https://github.com/guoyunhe)
 - 连木
 - 牧曈

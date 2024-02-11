@@ -72,7 +72,7 @@ function foo() {
 文档撰写与审阅（排名不分先后）：
 
 - 邦彦
-- [尘弦（王光奇）](https://github.com/lakerswgq)
+- 尘弦, [@lakerswgq](https://github.com/lakerswgq)
 - 迟帆
 - 大果
 - 氐宿
@@ -87,7 +87,7 @@ function foo() {
 - 霂之
 - 年翼
 - 清锐
-- [萨波](https://github.com/bowei-jbw)
+- 萨波, [@bowei-jbw](https://github.com/bowei-jbw)
 - 释然
 - 湘粤（双龙）
 - 苏青
@@ -116,13 +116,13 @@ function foo() {
 
 工具开发与审阅（排名不分先后）：
 
-- [尘弦（王光奇）](https://github.com/lakerswgq)
+- 尘弦, [@lakerswgq](https://github.com/lakerswgq)
 - [鹤仙（郭云鹤）](https://github.com/guoyunhe)
 - 连木
 - 牧曈
 - 年翼
 - 秦粤
-- [萨波](https://github.com/bowei-jbw)
+- 萨波, [@bowei-jbw](https://github.com/bowei-jbw)
 - 湘粤（双龙）
 - 扬炀
 - 洋风
