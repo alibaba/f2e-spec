@@ -66,3 +66,66 @@ function foo() {
 ## 如何参与
 
 非常欢迎大家通过 [Issues](https://github.com/alibaba/f2e-spec/issues) 反馈问题和需求，或者通过 [PRs](https://github.com/alibaba/f2e-spec/pulls) 参与贡献，请参考 [CONTRIBUTING.md](/CONTRIBUTING.md)。
+
+## Contribution Credits
+
+Document writing & review (in no particular order):
+
+- 邦彦
+- [尘弦（王光奇）](https://github.com/lakerswgq)
+- 迟帆
+- 大果
+- 氐宿
+- 法海
+- 姬无
+- 倞羽
+- 连木
+- 林熠
+- 零弌
+- 墨止
+- 牧曈
+- 霂之
+- 年翼
+- 清锐
+- [萨波](https://github.com/bowei-jbw)
+- 释然
+- 湘粤（双龙）
+- 苏青
+- 阎罗
+- 扬炀
+- [Guo Yunhe](https://github.com/guoyunhe)
+- 洋风
+- 云谦
+- 载天
+- 梓骞
+- 大貘
+- 九十
+- 狼叔
+- 龙归
+- 秦粤
+- 上坡
+- 死月
+- 苏千
+- 吞吞
+- 潕量
+- 艺璇
+- 游鹿
+- 裕波
+- 张挺
+- 知忧
+
+Tool development & review (in no particular order):
+
+- 尘弦（王光奇）, [@lakerswgq](https://github.com/lakerswgq)
+- Guo Yunhe, [@guoyunhe](https://github.com/guoyunhe)
+- 连木
+- 牧曈
+- 年翼
+- 秦粤
+- 萨波, [@bowei-jbw](https://github.com/bowei-jbw)
+- 湘粤（双龙）
+- 扬炀
+- 洋风
+
+Thanks for everyone who contributed to this project! If we missed someone, please let us know via [issues](https://github.com/alibaba/f2e-spec/issues) or
+[pull requests](https://github.com/alibaba/f2e-spec/pulls)!
