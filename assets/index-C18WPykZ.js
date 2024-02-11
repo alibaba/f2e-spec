@@ -286,7 +286,7 @@ function foo() {
 `,n.jsx(e.p,{children:"Document writing & review (in no particular order):"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"邦彦"}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/lakerswgq",children:"尘弦（王光奇）"})}),`
+`,n.jsxs(e.li,{children:["尘弦, ",n.jsx(e.a,{href:"https://github.com/lakerswgq",children:"@lakerswgq"})]}),`
 `,n.jsx(e.li,{children:"迟帆"}),`
 `,n.jsx(e.li,{children:"大果"}),`
 `,n.jsx(e.li,{children:"氐宿"}),`
@@ -301,13 +301,13 @@ function foo() {
 `,n.jsx(e.li,{children:"霂之"}),`
 `,n.jsx(e.li,{children:"年翼"}),`
 `,n.jsx(e.li,{children:"清锐"}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/bowei-jbw",children:"萨波"})}),`
+`,n.jsxs(e.li,{children:["萨波, ",n.jsx(e.a,{href:"https://github.com/bowei-jbw",children:"@bowei-jbw"})]}),`
 `,n.jsx(e.li,{children:"释然"}),`
 `,n.jsx(e.li,{children:"湘粤（双龙）"}),`
 `,n.jsx(e.li,{children:"苏青"}),`
 `,n.jsx(e.li,{children:"阎罗"}),`
 `,n.jsx(e.li,{children:"扬炀"}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/guoyunhe",children:"Guo Yunhe"})}),`
+`,n.jsxs(e.li,{children:["Guo Yunhe, ",n.jsx(e.a,{href:"https://github.com/guoyunhe",children:"@guoyunhe"})]}),`
 `,n.jsx(e.li,{children:"洋风"}),`
 `,n.jsx(e.li,{children:"云谦"}),`
 `,n.jsx(e.li,{children:"载天"}),`
@@ -330,7 +330,7 @@ function foo() {
 `]}),`
 `,n.jsx(e.p,{children:"Tool development & review (in no particular order):"}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["尘弦（王光奇）, ",n.jsx(e.a,{href:"https://github.com/lakerswgq",children:"@lakerswgq"})]}),`
+`,n.jsxs(e.li,{children:["尘弦, ",n.jsx(e.a,{href:"https://github.com/lakerswgq",children:"@lakerswgq"})]}),`
 `,n.jsxs(e.li,{children:["Guo Yunhe, ",n.jsx(e.a,{href:"https://github.com/guoyunhe",children:"@guoyunhe"})]}),`
 `,n.jsx(e.li,{children:"连木"}),`
 `,n.jsx(e.li,{children:"牧曈"}),`
@@ -405,7 +405,7 @@ function foo() {
 `,n.jsx(e.p,{children:"文档撰写与审阅（排名不分先后）："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"邦彦"}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/lakerswgq",children:"尘弦（王光奇）"})}),`
+`,n.jsxs(e.li,{children:["尘弦, ",n.jsx(e.a,{href:"https://github.com/lakerswgq",children:"@lakerswgq"})]}),`
 `,n.jsx(e.li,{children:"迟帆"}),`
 `,n.jsx(e.li,{children:"大果"}),`
 `,n.jsx(e.li,{children:"氐宿"}),`
@@ -420,7 +420,7 @@ function foo() {
 `,n.jsx(e.li,{children:"霂之"}),`
 `,n.jsx(e.li,{children:"年翼"}),`
 `,n.jsx(e.li,{children:"清锐"}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/bowei-jbw",children:"萨波"})}),`
+`,n.jsxs(e.li,{children:["萨波, ",n.jsx(e.a,{href:"https://github.com/bowei-jbw",children:"@bowei-jbw"})]}),`
 `,n.jsx(e.li,{children:"释然"}),`
 `,n.jsx(e.li,{children:"湘粤（双龙）"}),`
 `,n.jsx(e.li,{children:"苏青"}),`
@@ -449,13 +449,13 @@ function foo() {
 `]}),`
 `,n.jsx(e.p,{children:"工具开发与审阅（排名不分先后）："}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/lakerswgq",children:"尘弦（王光奇）"})}),`
+`,n.jsxs(e.li,{children:["尘弦, ",n.jsx(e.a,{href:"https://github.com/lakerswgq",children:"@lakerswgq"})]}),`
 `,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/guoyunhe",children:"鹤仙（郭云鹤）"})}),`
 `,n.jsx(e.li,{children:"连木"}),`
 `,n.jsx(e.li,{children:"牧曈"}),`
 `,n.jsx(e.li,{children:"年翼"}),`
 `,n.jsx(e.li,{children:"秦粤"}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/bowei-jbw",children:"萨波"})}),`
+`,n.jsxs(e.li,{children:["萨波, ",n.jsx(e.a,{href:"https://github.com/bowei-jbw",children:"@bowei-jbw"})]}),`
 `,n.jsx(e.li,{children:"湘粤（双龙）"}),`
 `,n.jsx(e.li,{children:"扬炀"}),`
 `,n.jsx(e.li,{children:"洋风"}),`
