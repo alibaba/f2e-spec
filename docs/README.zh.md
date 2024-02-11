@@ -47,7 +47,7 @@
 
 一条规约的级别会在规约描述的开头标注，如有对应的 Lint 规则会在结尾标注，例如：
 
-> 1.1.1【强制】使用 2 个空格缩进。eslint: [indent](https://eslint.org/docs/rules/indent)
+> 1.1.1 `强制` 使用 2 个空格缩进。eslint: [indent](https://eslint.org/docs/rules/indent)
 
 ### 代码示例
 

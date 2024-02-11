@@ -148,12 +148,12 @@
 ### 新增
 
 - 新增 eslint-config-ali/node。删除原有 base/node 规则内容，删除原因见 [nodejscommonjs-rules-have-been-deprecated](https://eslint.org/docs/user-guide/migrating-to-7.0.0#nodejscommonjs-rules-have-been-deprecated)。修改后继承 [eslint-config-egg/lib/rules/node](https://github.com/eggjs/eslint-config-egg/blob/master/lib/rules/node.js) 规则。具体规则如下：
-  - 【强制】node/no-new-require
-  - 【强制】node/prefer-global/buffer
-  - 【强制】node/prefer-global/console
-  - 【强制】node/prefer-global/process
-  - 【强制】node/prefer-promises/dns
-  - 【强制】node/prefer-promises/fs
+  - `mandatory` node/no-new-require
+  - `mandatory` node/prefer-global/buffer
+  - `mandatory` node/prefer-global/console
+  - `mandatory` node/prefer-global/process
+  - `mandatory` node/prefer-promises/dns
+  - `mandatory` node/prefer-promises/fs
 - 新增 eslint-config-ali/typescript/node，继承 Node 规则和 Typescript 规则。
 
 ## 11.2.0 (2020-11-10)
@@ -190,34 +190,36 @@
 
 ### 新增
 
-- 【推荐】使用 @ts-expect-error/@ts-ignore/@ts-nocheck/@ts-check 等指令时需跟随注释描述
-- 【强制】禁止使用 tslint:<rule-flag> 等相关注释
-- 【推荐】类的属性如果是字面量，则必须是只读属性而不能用 getter
-- 【强制】类型断言必须使用 as Type 而非 <T>，对象字面量禁止类型断言（断言成 any 除外）
-- 【推荐】优先使用 interface 而不是 type 定义对象类型
-- 【强制】优先使用 . 访问对象的属性
-- 【推荐】设置类的成员的可访问性，public 可省略
-- 【强制】interface/type 类型中保持一致的成员分隔符分号「;」，单行类型的最后一个元素不加分号
-- 【推荐】类成员的遵循一定的排序规则
-  1. 类的静态方法/属性(static)优先于实例的方法/属性(instance)
-  2. 属性(field)优先于构造函数(constructor)，优先于方法(method)
-  3. 公开的项(public)优先于受保护的(protected)，优先于私有的(private)
-- 【推荐】interface 中的方法用属性的方式定义
-- 【推荐】禁止使用容易混淆的非空断言
-- 【推荐】禁止出现空的 interface
+- `recommended` 使用 @ts-expect-error/@ts-ignore/@ts-nocheck/@ts-check 等指令时需跟随注释描述
+- `mandatory` 禁止使用 tslint:<rule-flag> 等相关注释
+- `recommended` 类的属性如果是字面量，则必须是只读属性而不能用 getter
+- `mandatory` 类型断言必须使用 as Type 而非 <T>，对象字面量禁止类型断言（断言成 any 除外）
+- `recommended` 优先使用 interface 而不是 type 定义对象类型
+- `mandatory` 优先使用 . 访问对象的属性
+- `recommended` 设置类的成员的可访问性，public 可省略
+- `mandatory` interface/type 类型中保持一致的成员分隔符分号「;」，单行类型的最后一个元素不加分号
+- `recommended` 类成员的遵循一定的排序规则
+
+1. 类的静态方法/属性(static)优先于实例的方法/属性(instance)
+2. 属性(field)优先于构造函数(constructor)，优先于方法(method)
+3. 公开的项(public)优先于受保护的(protected)，优先于私有的(private)
+
+- `recommended` interface 中的方法用属性的方式定义
+- `recommended` 禁止使用容易混淆的非空断言
+- `recommended` 禁止出现空的 interface
 - 【关闭】禁止多余的 non-null 断言
-- 【推荐】禁止给一个初始化时直接赋值为 number, string 的变量显式的声明类型
-- 【强制】禁止使用无意义的 void 类型，void 只能用在函数的返回值中
-- 【强制】禁止使用 namespace 来定义命名空间，但允许使用 declare namespace 定义外部命名空间
-- 【强制】禁止在 optional chaining 之后使用 non-null 断言
-- 【推荐】不建议将 this 赋值给其他变量，解构赋值除外
-- 【推荐】当设定当前值为当前类型时，推荐使用 as const 替代 as 'bar'
-- 【强制】禁止使用 module 来定义命名空间，declare module 是允许的
-- 【推荐】使用加号时，两者必须同为数字或同为字符串
-- 【强制】三斜杠导入语法已废弃，在非 dts 文件中禁止使用
-- 【强制】定义类型时应正确添加空格
-- 【强制】interface 和 type 定义时必须声明成员的类型
-- 【推荐】定义函数时，优先使用参数的联合类型而不是函数的类型重载
+- `recommended` 禁止给一个初始化时直接赋值为 number, string 的变量显式的声明类型
+- `mandatory` 禁止使用无意义的 void 类型，void 只能用在函数的返回值中
+- `mandatory` 禁止使用 namespace 来定义命名空间，但允许使用 declare namespace 定义外部命名空间
+- `mandatory` 禁止在 optional chaining 之后使用 non-null 断言
+- `recommended` 不建议将 this 赋值给其他变量，解构赋值除外
+- `recommended` 当设定当前值为当前类型时，推荐使用 as const 替代 as 'bar'
+- `mandatory` 禁止使用 module 来定义命名空间，declare module 是允许的
+- `recommended` 使用加号时，两者必须同为数字或同为字符串
+- `mandatory` 三斜杠导入语法已废弃，在非 dts 文件中禁止使用
+- `mandatory` 定义类型时应正确添加空格
+- `mandatory` interface 和 type 定义时必须声明成员的类型
+- `recommended` 定义函数时，优先使用参数的联合类型而不是函数的类型重载
 
 ### 变更
 

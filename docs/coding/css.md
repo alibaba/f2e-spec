@@ -15,7 +15,7 @@ order: 2
 
 上图是一张符合规约要求编码风格的速览图，详细规则如下：
 
-- 1.1.1【强制】所有声明都应该以分号结尾，不能省略。stylelint: [declaration-block-trailing-semicolon](https://stylelint.io/user-guide/rules/declaration-block-trailing-semicolon)
+- 1.1.1 `mandatory` 所有声明都应该以分号结尾，不能省略。stylelint: [declaration-block-trailing-semicolon](https://stylelint.io/user-guide/rules/declaration-block-trailing-semicolon)
 
   虽然 CSS 语法中最后一条声明的分号是可选的，但是使用分号可以增加代码的一致性和易用性。
 
@@ -33,7 +33,7 @@ order: 2
   }
   ```
 
-- 1.1.2【推荐】使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。stylelint: [indentation](https://stylelint.io/user-guide/rules/indentation)
+- 1.1.2 `recommended` 使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。stylelint: [indentation](https://stylelint.io/user-guide/rules/indentation)
 
   ```css
   /* bad */
@@ -47,7 +47,7 @@ order: 2
   }
   ```
 
-- 1.1.3【推荐】选择器和 `{` 之间保留一个空格。stylelint: [block-opening-brace-space-before](https://stylelint.io/user-guide/rules/block-opening-brace-space-before)
+- 1.1.3 `recommended` 选择器和 `{` 之间保留一个空格。stylelint: [block-opening-brace-space-before](https://stylelint.io/user-guide/rules/block-opening-brace-space-before)
 
   ```css
   /* bad */
@@ -61,7 +61,7 @@ order: 2
   }
   ```
 
-- 1.1.4【推荐】属性名和 `:` 之前无空格，`:` 和属性值之间保留一个空格。stylelint: [declaration-colon-space-after](https://stylelint.io/user-guide/rules/declaration-colon-space-after) [declaration-colon-space-before](https://stylelint.io/user-guide/rules/declaration-colon-space-before)
+- 1.1.4 `recommended` 属性名和 `:` 之前无空格，`:` 和属性值之间保留一个空格。stylelint: [declaration-colon-space-after](https://stylelint.io/user-guide/rules/declaration-colon-space-after) [declaration-colon-space-before](https://stylelint.io/user-guide/rules/declaration-colon-space-before)
 
   ```css
   /* bad */
@@ -77,7 +77,7 @@ order: 2
   }
   ```
 
-- 1.1.5【推荐】`>`、`+`、`~` 、`||` 等组合器前后各保留一个空格。stylelint: [selector-combinator-space-before](https://stylelint.io/user-guide/rules/selector-combinator-space-before) [selector-combinator-space-after](https://stylelint.io/user-guide/rules/selector-combinator-space-after)
+- 1.1.5 `recommended` `>`、`+`、`~` 、`||` 等组合器前后各保留一个空格。stylelint: [selector-combinator-space-before](https://stylelint.io/user-guide/rules/selector-combinator-space-before) [selector-combinator-space-after](https://stylelint.io/user-guide/rules/selector-combinator-space-after)
 
   ```css
   /* bad */
@@ -97,7 +97,7 @@ order: 2
   }
   ```
 
-- 1.1.6【推荐】在使用 `,` 分隔的属性值中，`,` 之后保留一个空格。stylelint: [value-list-comma-space-after](https://stylelint.io/user-guide/rules/value-list-comma-space-after)
+- 1.1.6 `recommended` 在使用 `,` 分隔的属性值中，`,` 之后保留一个空格。stylelint: [value-list-comma-space-after](https://stylelint.io/user-guide/rules/value-list-comma-space-after)
 
   ```css
   /* bad */
@@ -113,7 +113,7 @@ order: 2
   }
   ```
 
-- 1.1.7【推荐】注释内容和注释符之间留有一个空格。stylelint: [comment-whitespace-inside](https://stylelint.io/user-guide/rules/comment-whitespace-inside)
+- 1.1.7 `recommended` 注释内容和注释符之间留有一个空格。stylelint: [comment-whitespace-inside](https://stylelint.io/user-guide/rules/comment-whitespace-inside)
 
   ```css
   /* bad */
@@ -136,7 +136,7 @@ order: 2
   }
   ```
 
-- 1.1.8【推荐】声明块的右大括号 `}` 应单独成行。
+- 1.1.8 `recommended` 声明块的右大括号 `}` 应单独成行。
 
   ```css
   /* bad */
@@ -149,7 +149,7 @@ order: 2
   }
   ```
 
-- 1.1.9【推荐】属性声明应单独成行。stylelint: [declaration-block-single-line-max-declarations](https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations)
+- 1.1.9 `recommended` 属性声明应单独成行。stylelint: [declaration-block-single-line-max-declarations](https://stylelint.io/user-guide/rules/declaration-block-single-line-max-declarations)
 
   ```css
   /* bad */
@@ -165,7 +165,7 @@ order: 2
   ```
 
 
-- 1.1.10【推荐】单行代码最多不要超过 100 个字符。 stylelint: [max-line-length](https://stylelint.io/user-guide/rules/max-line-length) 除了以下两种情况：
+- 1.1.10 `recommended` 单行代码最多不要超过 100 个字符。 stylelint: [max-line-length](https://stylelint.io/user-guide/rules/max-line-length) 除了以下两种情况：
 
   - 使用 [`url()`](https://developer.mozilla.org/en-US/docs/Web/CSS/url) 函数时
   - CSS 属性值本身无法换行时，即属性值内无空格或逗号时
@@ -184,7 +184,7 @@ order: 2
   );
   ```
 
-- 1.1.11【参考】使用多个选择器时，每个选择器应该单独成行。stylelint: [selector-list-comma-newline-after](https://stylelint.io/user-guide/rules/selector-list-comma-newline-after)
+- 1.1.11 `referenced` 使用多个选择器时，每个选择器应该单独成行。stylelint: [selector-list-comma-newline-after](https://stylelint.io/user-guide/rules/selector-list-comma-newline-after)
 
   ```css
   /* bad */
@@ -202,7 +202,7 @@ order: 2
   }
   ```
 
-- 1.1.12【参考】声明块内只有一条语句时，也应该写成多行。
+- 1.1.12 `referenced` 声明块内只有一条语句时，也应该写成多行。
 
   ```css
   /* bad */
@@ -214,7 +214,7 @@ order: 2
   }
   ```
 
-- 1.1.13【参考】注释行上方需留有一行空行，除非上一行是注释或块的顶部。stylelint: [comment-empty-line-before](https://stylelint.io/user-guide/rules/comment-empty-line-before)
+- 1.1.13 `referenced` 注释行上方需留有一行空行，除非上一行是注释或块的顶部。stylelint: [comment-empty-line-before](https://stylelint.io/user-guide/rules/comment-empty-line-before)
 
   ```css
   /* bad */
@@ -238,7 +238,7 @@ order: 2
 
 ### 1.2 选择器
 
-- 1.2.1【参考】不要使用 id 选择器。stylelint: [selector-max-id](https://stylelint.io/user-guide/rules/selector-max-id)
+- 1.2.1 `referenced` 不要使用 id 选择器。stylelint: [selector-max-id](https://stylelint.io/user-guide/rules/selector-max-id)
 
   id 会带来过高的[选择器优先级](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)，使得后续很难进行样式覆盖（继而引发使用 `!important` 覆盖样式的恶性循环）。
 
@@ -260,7 +260,7 @@ order: 2
   }
   ```
 
-- 1.2.2【参考】属性选择器的值始终用双引号包裹。stylelint: [selector-attribute-quotes](https://stylelint.io/user-guide/rules/selector-attribute-quotes)
+- 1.2.2 `referenced` 属性选择器的值始终用双引号包裹。stylelint: [selector-attribute-quotes](https://stylelint.io/user-guide/rules/selector-attribute-quotes)
 
   属性选择器的值的引号只有在[某些情况下](https://mathiasbynens.be/notes/unquoted-attribute-values#css)可以省略。
 
@@ -276,7 +276,7 @@ order: 2
   }
   ```
 
-- 1.2.3【参考】使用 CSS 选择器时，应注意以下性能问题：
+- 1.2.3 `referenced` 使用 CSS 选择器时，应注意以下性能问题：
 
   - 使用 class 而不是原生元素标签
   - 减少在经常出现的组件中使用个别属性选择器（如 `[class^="..."]`）
@@ -296,7 +296,7 @@ order: 2
 
 ### 1.3 属性和属性值
 
-- 1.3.1【推荐】使用尽可能短的十六进制值。stylelint: [color-hex-length](https://stylelint.io/user-guide/rules/color-hex-length)
+- 1.3.1 `recommended` 使用尽可能短的十六进制值。stylelint: [color-hex-length](https://stylelint.io/user-guide/rules/color-hex-length)
 
   ```css
   /* bad */
@@ -310,9 +310,9 @@ order: 2
   }
   ```
 
-- 1.3.2【推荐】不要使用 !important 重写样式。
+- 1.3.2 `recommended` 不要使用 !important 重写样式。
 
-- 1.3.3【推荐】十六进制值统一使用小写字母（小写字母更容易分辨）。stylelint: [color-hex-case](https://stylelint.io/user-guide/rules/color-hex-case)
+- 1.3.3 `recommended` 十六进制值统一使用小写字母（小写字母更容易分辨）。stylelint: [color-hex-case](https://stylelint.io/user-guide/rules/color-hex-case)
 
   ```css
   /* bad */
@@ -326,7 +326,7 @@ order: 2
   }
   ```
 
-- 1.3.4【推荐】长度值为 0 时，省略掉长度单位。stylelint: [length-zero-no-unit](https://stylelint.io/user-guide/rules/length-zero-no-unit)
+- 1.3.4 `recommended` 长度值为 0 时，省略掉长度单位。stylelint: [length-zero-no-unit](https://stylelint.io/user-guide/rules/length-zero-no-unit)
 
   在 CSS 中，长度值为 0 时，它的单位是可选的（长度单位包括：em, ex, ch, vw, vh, cm, mm, in, pt, pc, px, rem, vmin, and vmax）。省略长度单位可以使代码更简洁：
 
@@ -344,7 +344,7 @@ order: 2
   }
   ```
 
-- 1.3.5【参考】保留小数点前的 0。stylelint: [number-leading-zero](https://stylelint.io/user-guide/rules/number-leading-zero)
+- 1.3.5 `referenced` 保留小数点前的 0。stylelint: [number-leading-zero](https://stylelint.io/user-guide/rules/number-leading-zero)
 
   在 CSS 中，大于 -1 小于 1 的小数，小数点前的 0 可以省略：
 
@@ -371,7 +371,7 @@ order: 2
 
   我们推荐保留 0，因为当今很多 CSS 压缩工具会在压缩时帮我们去掉 0，不存在多占用一个字符的问题。保留 0 能增强代码的可读性和一致性。
 
-- 1.3.6【参考】属性声明的顺序。
+- 1.3.6 `referenced` 属性声明的顺序。
 
   相关联的属性声明最好写成一组，并按如下顺序排序：
 
@@ -441,7 +441,7 @@ order: 2
   |overflow*|||||||
   |clip|||||||
 
-- 1.3.7【参考】适时使用简写属性。stylelint: [declaration-block-no-shorthand-property-overrides](https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides) [declaration-block-no-redundant-longhand-properties](https://stylelint.io/user-guide/rules/declaration-block-no-redundant-longhand-properties)
+- 1.3.7 `referenced` 适时使用简写属性。stylelint: [declaration-block-no-shorthand-property-overrides](https://stylelint.io/user-guide/rules/declaration-block-no-shorthand-property-overrides) [declaration-block-no-redundant-longhand-properties](https://stylelint.io/user-guide/rules/declaration-block-no-redundant-longhand-properties)
 
 
   常见的[简写属性](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)包括：
@@ -471,7 +471,7 @@ order: 2
 
 ### 1.4 其他
 
-- 1.4.1【推荐】不要使用 CSS 的 @import。
+- 1.4.1 `recommended` 不要使用 CSS 的 @import。
 
   与 `<link>` 相比，`@import` 会在关键渲染路径上增加更多的往返（即关键路径的深度变长），这样会导致浏览器处理 CSS 文件速度变慢，因此我们应该避免使用 `@import`。
 
@@ -493,7 +493,7 @@ order: 2
 >* 更建议使用 PostCSS 处理器，它类似于 CSS 中的 Babel，不但具备 Sass 和 Less 的功能，而且社区繁荣，同时还可以根据自己的需求扩展相关的插件。
 >* 随着 CSS 的一些新特性出现，Sass 和 Less 以往的优势也会慢慢消失。
 
-- 2.1【推荐】四则运算符两侧各保留一个空格：
+- 2.1 `recommended` 四则运算符两侧各保留一个空格：
 
   ```css
   /* bad */
@@ -507,7 +507,7 @@ order: 2
   }
   ```
 
-- 2.2【推荐】Mixin 名称和括号 `()` 间无空格，在拥有多个参数的表达式中， `,` 之前无空格，`,` 之后保留一个空格：
+- 2.2 `recommended` Mixin 名称和括号 `()` 间无空格，在拥有多个参数的表达式中， `,` 之前无空格，`,` 之后保留一个空格：
 
   ```css
   /* bad */
@@ -523,7 +523,7 @@ order: 2
   }
   ```
 
-- 2.3【推荐】按如下顺序组织 Sass / Less 代码：
+- 2.3 `recommended` 按如下顺序组织 Sass / Less 代码：
 
   - `@import` 语句
   - 全局变量声明
@@ -539,7 +539,7 @@ order: 2
   }
   ```
 
-- 2.4【推荐】对于 Sass 和 Less，块内的属性声明按如下顺序排序：
+- 2.4 `recommended` 对于 Sass 和 Less，块内的属性声明按如下顺序排序：
 
   - 标准属性声明：除了 mixin 调用、extend 子级选择器的声明，其他属性声明的顺序与「属性声明的顺序」章节的规则一致
   - mixin 调用：Sass 的 `@include` 声明、Less 的 mixin 调用
@@ -557,7 +557,7 @@ order: 2
   }
   ```
 
-- 2.5【推荐】嵌套选择器的深度不要超过 3 层，否则可能带来一些副作用：
+- 2.5 `recommended` 嵌套选择器的深度不要超过 3 层，否则可能带来一些副作用：
 
   - 与 HTML 结构强耦合，难以复用
   - 过高的[选择器优先级](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
@@ -572,7 +572,7 @@ order: 2
   }
   ```
 
-- 2.6【推荐】可以使用双斜杠注释。但需要注意的是，编译为 CSS 后，代码中的双斜杠注释会被删除，而 `/* */` 会被保留。
+- 2.6 `recommended` 可以使用双斜杠注释。但需要注意的是，编译为 CSS 后，代码中的双斜杠注释会被删除，而 `/* */` 会被保留。
 
   ```css
   // 单行注释
@@ -605,7 +605,7 @@ order: 2
   }
   ```
 
-- 2.7【推荐】使用 Mixin (@mixin 和 @include 指令) 来让代码遵循 DRY 原则（Don't Repeat Yourself）、增加抽象性和降低复杂度。
+- 2.7 `recommended` 使用 Mixin (@mixin 和 @include 指令) 来让代码遵循 DRY 原则（Don't Repeat Yourself）、增加抽象性和降低复杂度。
 
   应避免使用 @extend 指令，它不够直观且具有潜在风险，尤其是在嵌套选择器中。即使继承的是顶层选择器，如果选择器的顺序发生变化，也可能引起问题（比如，如果它们存在于其他文件，而加载顺序发生了变化）。
 

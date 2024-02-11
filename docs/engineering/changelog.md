@@ -19,7 +19,7 @@ order: 1.2
 
 ## 1 文件
 
-- 1.1【强制】Changelog 文件必须取名为 `CHANGELOG.md`
+- 1.1 `mandatory` Changelog 文件必须取名为 `CHANGELOG.md`
 
   使用大写来表明本文件的重要性，相当于是项目仓库元信息的一部分。
 
@@ -36,7 +36,7 @@ order: 1.2
   CHANGELOG.md
   ```
 
-- 1.2【强制】Changelog 文件必须是使用标准 Markdown 语法的文本文件，并以 `.md` 作为后缀
+- 1.2 `mandatory` Changelog 文件必须是使用标准 Markdown 语法的文本文件，并以 `.md` 作为后缀
 
   ```markdown
   <!-- bad -->
@@ -49,7 +49,7 @@ order: 1.2
   CHANGELOG.md
   ```
 
-- 1.3【强制】Changelog 文件必须存放在项目根目录下，和 `README.md`、`CONTRIBUTING.md` 等并列
+- 1.3 `mandatory` Changelog 文件必须存放在项目根目录下，和 `README.md`、`CONTRIBUTING.md` 等并列
 
 ## 2 格式
 
@@ -73,7 +73,7 @@ order: 1.2
 
 详细规则如下：
 
-- 2.1【强制】文章标题使用「更新日志」作为固定文案。国际化场景使用英文「Change Log」作为固定文案
+- 2.1 `mandatory` 文章标题使用「更新日志」作为固定文案。国际化场景使用英文「Change Log」作为固定文案
 
   ```markdown
   <!-- bad -->
@@ -89,7 +89,7 @@ order: 1.2
   # Change Log
   ```
 
-- 2.2【强制】Changelog 内容按版本号降序排列，最新版本放在最前面
+- 2.2 `mandatory` Changelog 内容按版本号降序排列，最新版本放在最前面
 
   ```markdown
   <!-- bad -->
@@ -105,7 +105,7 @@ order: 1.2
   ## 1.0.0
   ```
 
-- 2.3【强制】版本号 `version` 需遵循 [SemVer 规范](https://semver.org/lang/zh-CN/)
+- 2.3 `mandatory` 版本号 `version` 需遵循 [SemVer 规范](https://semver.org/lang/zh-CN/)
 
   ```markdown
   <!-- bad -->
@@ -139,7 +139,7 @@ order: 1.2
   ## 1.0.0-alpha
   ```
 
-- 2.4【推荐】版本号增加一个超链接，指向当前版本和上一个版本之间的 diff
+- 2.4 `recommended` 版本号增加一个超链接，指向当前版本和上一个版本之间的 diff
 
   ```markdown
   <!-- bad -->
@@ -151,7 +151,7 @@ order: 1.2
   ## [2.0.0](https://version-diff-url)
   ```
 
-- 2.5【强制】更新日期 `date` 采用 `yyyy-MM-dd` 格式
+- 2.5 `mandatory` 更新日期 `date` 采用 `yyyy-MM-dd` 格式
 
   ```markdown
   <!-- bad -->
@@ -165,7 +165,7 @@ order: 1.2
   ## [2.0.0](https://version-diff-url) (2020-09-05)
   ```
 
-- 2.6【推荐】更新类型 `type` 与 Git message header 中的 [`type`](./1.git.md#1.3.1-type) 相关联，可以不一一对应
+- 2.6 `recommended` 更新类型 `type` 与 Git message header 中的 [`type`](./1.git.md#1.3.1-type) 相关联，可以不一一对应
 
   type 用以说明更新的类型，推荐值如下：
 
@@ -178,7 +178,7 @@ order: 1.2
   - 删除（Removed）：已删除的功能。
   - 重大变更（Breaking Changes）：破坏性变动。
 
-- 2.7【推荐】更新描述 `desc` 内容需要注意以下几点：
+- 2.7 `recommended` 更新描述 `desc` 内容需要注意以下几点：
 
   1. 使用完整的句子。即在标点方面遵循一般的文档格式规约；如果使用英语，则句首大写。
   2. 时态方面使用一般现在时，不要用过去时态。虽然查看 Changelog 时，Changelog 内容本身都发生在过去，然而使用现在时的时态更简洁明确，并且更易达成一致性。
