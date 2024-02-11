@@ -1,25 +1,36 @@
 # Alibaba Front-end Specification
 
 **Alibaba Front-end Specification** is a practical coding and engineering standard that is widely
-used in Alibaba Group. It aims to improve collaboration efficiency, project maintainability and stability,
-by adopting unified coding style, best practices and defect checking.
+used in Alibaba Group. It aims to improve collaboration efficiency, project maintainability and
+stability, by adopting unified coding style, best practices and defect checking.
 
-「阿里巴巴前端规约」主要包括「规约文档」和「配套工具」两部分。你可以通过阅读规约文档了解各前端语言、框架及工程规范，并使用 [F2ELint](https://www.npmjs.com/package/f2elint) 等配套工具来为项目接入规约检查。
+The specification consists of two parts: **documents** and **tools**.
 
-「规约文档」分为编码规约和工程规约两大类，包括：
+Documents help you to understand the specification and write high quality code. Documents include
+the following:
 
-- 编码规约
-  - [HTML 编码规约](docs/coding/1.html-style-guide.md)
-  - [CSS 编码规约](docs/coding/2.css-style-guide.md)
-  - [JavaScript 编码规约](docs/coding/3.javascript-style-guide.md)
-  - [React 编码规约](docs/coding/4.react-style-guide.md)
-  - [Node.js 开发规约](docs/coding/5.node-style-guide.md)
-  - [TypeScript 编码规约](docs/coding/6.typescript-style-guide.md)
-  - [Rax 编码规约](docs/coding/7.rax-style-guide.md)
-- 工程规约
-  - [Git 规约](docs/engineering/1.git.md)
-  - [文档通用规约](docs/engineering/2.doc-writing-practice.md)
-  - [更新日志规约](docs/engineering/3.doc-changelog.md)
+- Coding style
+  - [HTML Coding Specification](coding/html.md)
+  - [CSS Coding Specification](coding/css.md)
+  - [JavaScript Coding Specification](coding/javascript.md)
+  - [React Coding Specification](coding/react.md)
+  - [Node.js 开发规约](coding/node.md)
+  - [TypeScript Coding Specification](coding/typescript.md)
+  - [Rax Coding Specification](coding/rax.md)
+- Engineering
+  - [Git Specification](engineering/git.md)
+  - [Writing Specification](engineering/writing.md)
+  - [Changelog Specification](engineering/changelog.md)
+
+Tools help you to quickly integrate code checking into your projects. Tools include the following:
+
+- [f2elint](https://www.npmjs.com/package/f2elint)
+- [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali)
+- [eslint-plugin-ali](https://www.npmjs.com/package/eslint-plugin-ali)
+- [stylelint-config-ali](https://www.npmjs.com/package/stylelint-config-ali)
+- [prettier-config-ali](https://www.npmjs.com/package/prettier-config-ali)
+- [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali)
+- [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali)
 
 ## 单条规约格式说明
 
