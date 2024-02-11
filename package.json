@@ -59,9 +59,7 @@
     "doc": {
       "title": "阿里巴巴前端规约",
       "basename": "/f2e-spec/",
-      "include": [
-        "docs/**/*.md"
-      ],
+      "root": "docs",
       "languages": [
         {
           "code": "en",
