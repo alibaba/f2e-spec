@@ -1,8 +1,8 @@
 # Alibaba Front-end Specification
 
-## 前言
-
-「阿里巴巴前端规约」是在阿里经济体内广泛使用的一套前端编码和工程规范，致力于通过统一编码风格、普及最佳实践和代码缺陷检查帮助团队降低协作成本、提升前端项目的可维护性和稳定性。
+**Alibaba Front-end Specification** is a practical coding and engineering standard that is widely
+used in Alibaba Group. It aims to improve collaboration efficiency, project maintainability and stability,
+by adopting unified coding style, best practices and defect checking.
 
 「阿里巴巴前端规约」主要包括「规约文档」和「配套工具」两部分。你可以通过阅读规约文档了解各前端语言、框架及工程规范，并使用 [F2ELint](https://www.npmjs.com/package/f2elint) 等配套工具来为项目接入规约检查。
 
