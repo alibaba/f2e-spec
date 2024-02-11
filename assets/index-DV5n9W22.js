@@ -225,29 +225,40 @@ ${r.map(({variableName:o,uniqueLocalName:l})=>`  reactHotLoader.register(${o}, "
 `,r="\r",o=function(){function l(c){this.string=c;for(var a=[0],s=0;s<c.length;)switch(c[s]){case e:s+=e.length,a.push(s);break;case r:s+=r.length,c[s]===e&&(s+=e.length),a.push(s);break;default:s++;break}this.offsets=a}return l.prototype.locationForIndex=function(c){if(c<0||c>this.string.length)return null;for(var a=0,s=this.offsets;s[a+1]<=c;)a++;var d=c-s[a];return{line:a,column:d}},l.prototype.indexForLocation=function(c){var a=c.line,s=c.column;return a<0||a>=this.offsets.length||s<0||s>this.lengthOfLine(a)?null:this.offsets[a]+s},l.prototype.lengthOfLine=function(c){var a=this.offsets[c],s=c===this.offsets.length-1?this.string.length:this.offsets[c+1];return s-a},l}();t.LinesAndColumns=o,t.default=o})(TE);function AE(t){const e=new Set;for(let r=0;r<t.tokens.length;r++)t.matches1AtIndex(r,i._import)&&!t.matches3AtIndex(r,i._import,i.name,i.eq)&&RE(t,r,e);return e}function RE(t,e,r){e++,!t.matches1AtIndex(e,i.parenL)&&(t.matches1AtIndex(e,i.name)&&(r.add(t.identifierNameAtIndex(e)),e++,t.matches1AtIndex(e,i.comma)&&e++),t.matches1AtIndex(e,i.star)&&(e+=2,r.add(t.identifierNameAtIndex(e)),e++),t.matches1AtIndex(e,i.braceL)&&(e++,LE(t,e,r)))}function LE(t,e,r){for(;;){if(t.matches1AtIndex(e,i.braceR))return;const o=Ol(t,e);if(e=o.endIndex,o.isType||r.add(o.rightName),t.matches2AtIndex(e,i.comma,i.braceR))return;if(t.matches1AtIndex(e,i.braceR))return;if(t.matches1AtIndex(e,i.comma))e++;else throw new Error(`Unexpected token: ${JSON.stringify(t.tokens[e])}`)}}function FE(t,e){Yw(e);try{const r=ME(t,e),l=new ac(r,e.transforms,!!e.enableLegacyBabel5ModuleInterop,e).transform();let c={code:l.code};if(e.sourceMapOptions){if(!e.filePath)throw new Error("filePath must be specified when generating a source map.");c={...c,sourceMap:Dw(l,e.filePath,e.sourceMapOptions,t,r.tokenProcessor.tokens)}}return c}catch(r){throw e.filePath&&(r.message=`Error transforming ${e.filePath}: ${r.message}`),r}}function ME(t,e){const r=e.transforms.includes("jsx"),o=e.transforms.includes("typescript"),l=e.transforms.includes("flow"),c=e.disableESTransforms===!0,a=OE(t,r,o,l),s=a.tokens,d=a.scopes,u=new pd(t,s),y=new ec(u),p=new Go(t,s,l,c,y),h=!!e.enableLegacyTypeScriptModuleInterop;let S=null;return e.transforms.includes("imports")?(S=new ir(u,p,h,e,e.transforms.includes("typescript"),!!e.keepUnusedImports,y),S.preprocessTokens(),Ip(p,d,S.getGlobalNames()),e.transforms.includes("typescript")&&!e.keepUnusedImports&&S.pruneTypeOnlyImports()):e.transforms.includes("typescript")&&!e.keepUnusedImports&&Ip(p,d,AE(p)),{tokenProcessor:p,scopes:d,nameManager:u,importProcessor:S,helperManager:y}}var DE=Object.defineProperty,BE=Object.defineProperties,$E=Object.getOwnPropertyDescriptors,sc=Object.getOwnPropertySymbols,xm=Object.prototype.hasOwnProperty,vm=Object.prototype.propertyIsEnumerable,Hp=(t,e,r)=>e in t?DE(t,e,{enumerable:!0,configurable:!0,writable:!0,value:r}):t[e]=r,lt=(t,e)=>{for(var r in e||(e={}))xm.call(e,r)&&Hp(t,r,e[r]);if(sc)for(var r of sc(e))vm.call(e,r)&&Hp(t,r,e[r]);return t},Rl=(t,e)=>BE(t,$E(e)),zE=(t,e)=>{var r={};for(var o in t)xm.call(t,o)&&e.indexOf(o)<0&&(r[o]=t[o]);if(t!=null&&sc)for(var o of sc(t))e.indexOf(o)<0&&vm.call(t,o)&&(r[o]=t[o]);return r},UE=(t,e,r)=>new Promise((o,l)=>{var c=d=>{try{s(r.next(d))}catch(u){l(u)}},a=d=>{try{s(r.throw(d))}catch(u){l(u)}},s=d=>d.done?o(d.value):Promise.resolve(d.value).then(c,a);s((r=r.apply(t,e)).next())}),HE=t=>{const{tabMode:e="indentation"}=t,r=H.useRef(null),[o,l]=H.useState(t.code||""),{theme:c}=t;return H.useEffect(()=>{l(t.code)},[t.code]),Z0(r,a=>l(a.slice(0,-1)),{disabled:t.disabled,indentation:e==="indentation"?2:void 0}),H.useEffect(()=>{t.onChange&&t.onChange(o)},[o]),n.jsx("div",{className:t.className,style:t.style,children:n.jsx(oO,{code:o,theme:t.theme||tO.nightOwl,language:t.language,children:({className:a,tokens:s,getLineProps:d,getTokenProps:u,style:y})=>n.jsx("pre",{className:a,style:lt(lt({margin:0,outline:"none",padding:10,fontFamily:"inherit"},c&&typeof c.plain=="object"?c.plain:{}),y),ref:r,spellCheck:"false",children:s.map((p,h)=>n.jsxs("span",Rl(lt({},d({line:p})),{children:[p.filter(S=>!S.empty).map((S,g)=>n.jsx("span",lt({},u({token:S})),`token-${g}`)),`
 `]}),`line-${h}`))})})})},qE=HE,WE=H.createContext({}),$c=WE,VE=["jsx","imports"];function yf(t={}){const e=Array.isArray(t.transforms)?t.transforms.filter(Boolean):VE;return r=>FE(r,{transforms:e}).code}var GE=(t,e)=>class extends H.Component{componentDidCatch(o){e(o)}render(){return typeof t=="function"?n.jsx(t,{}):Gt.isValidElement(t)?t:null}},wm=GE,JE=(t,e)=>{const r=Object.keys(e),o=r.map(l=>e[l]);return new Function(...r,t)(...o)},Pm=JE;function XE(...t){return t.reduce((e,r)=>(...o)=>e(r(...o)))}var Sm='const _jsxFileName = "";',qp=t=>t.trim().replace(/;$/,""),KE=t=>t.replace(Sm,"").trim(),QE=t=>Sm+t,YE=t=>`return (${t})`,ZE=({code:t="",scope:e={},enableTypeScript:r=!0},o)=>{const l=["jsx"];r&&l.push("typescript");const c=XE(QE,yf({transforms:["imports"]}),YE,KE,qp,yf({transforms:l}),qp)(t);return wm(Pm(c,lt({React:Gt},e)),o)},eI=({code:t="",scope:e={},enableTypeScript:r=!0},o,l)=>{const c=s=>{typeof s>"u"?l(new SyntaxError("`render` must be called with valid JSX.")):o(wm(s,l))};if(!/render\s*\(/.test(t))return l(new SyntaxError("No-Inline evaluations must call `render`."));const a=["jsx","imports"];r&&a.splice(1,0,"typescript"),Pm(yf({transforms:a})(t),Rl(lt({React:Gt},e),{render:c}))};function nI({children:t,code:e="",language:r="tsx",theme:o,enableTypeScript:l=!0,disabled:c=!1,scope:a,transformCode:s,noInline:d=!1}){const[u,y]=H.useState({error:void 0,element:void 0});function p(g){return UE(this,null,function*(){const x=P=>{y({error:P.toString(),element:void 0})};try{const P=s?s(g):g;try{const m=yield Promise.resolve(P),b=v=>y({error:void 0,element:v});if(typeof m!="string")throw new Error("Code failed to transform");const O={code:m,scope:a,enableTypeScript:l};d?(y({error:void 0,element:null}),eI(O,b,x)):b(ZE(O,x))}catch(m){return x(m)}}catch(P){return x(P),Promise.resolve()}})}const h=g=>y({error:g.toString()});H.useEffect(()=>{p(e).catch(h)},[e,a,d,s]);const S=g=>{p(g).catch(h)};return n.jsx($c.Provider,{value:Rl(lt({},u),{code:e,language:r,theme:o,disabled:c,onError:h,onChange:S}),children:t})}var tI=nI;function rI(t){const{code:e,language:r,theme:o,disabled:l,onChange:c}=H.useContext($c);return n.jsx(qE,lt({theme:o,code:e,language:r,disabled:l,onChange:c},t))}function oI(t){const{error:e}=H.useContext($c);return e?n.jsx("pre",Rl(lt({},t),{children:e})):null}function lI(t){var e=t,{Component:r="div"}=e,o=zE(e,["Component"]);const{element:l}=H.useContext($c);return n.jsx(r,Rl(lt({},o),{children:l?n.jsx(l,{}):null}))}var iI=lI;function cI({value:t,onChange:e,options:r,className:o,style:l}){const[c,a]=H.useState(!1),s=r.find(d=>d.value===t);return n.jsxs("div",{className:Ze("doc-ui-select",o),style:l,children:[n.jsx(hl,{icon:s==null?void 0:s.icon,onClick:()=>a(d=>!d),children:s==null?void 0:s.label}),n.jsx("div",{className:Ze("doc-ui-select-dropdown",c&&"doc-ui-select-dropdown-open"),children:r.map(d=>n.jsx(hl,{icon:d.icon,onClick:()=>{e(d.value),a(!1)},children:d.label},d.value))})]})}const aI=/import[\w_,{}$\s]+from\s['"]([.@\w/_-]+)['"];?/gm;function sI(t){return t.replace(aI,"")}function fI({code:t,filename:e,language:r="jsx",device:o="responsive",disablePadding:l,className:c,style:a,imports:s}){const d=H.useMemo(()=>[{value:"mobile",label:"Mobile",icon:n.jsx(qv,{})},{value:"tablet",label:"Tablet",icon:n.jsx(Vv,{})},{value:"laptop",label:"Laptop",icon:n.jsx(Uv,{})}],[]),[u,y]=H.useState(o==="responsive"?"laptop":o),p=H.useMemo(()=>d.find(h=>h.value===u),[u,d]);return n.jsxs("div",{className:Ze("doc-ui-demo-block","doc-ui-demo-block-"+u,c),style:a,children:[n.jsxs(aO,{children:[n.jsx(iO,{language:r,filename:e}),n.jsx(cO,{}),o==="responsive"?n.jsx(cI,{value:u,onChange:y,options:d}):n.jsx(hl,{icon:p==null?void 0:p.icon,children:p==null?void 0:p.label}),n.jsx(lO,{code:t})]}),n.jsx(tI,{code:t,theme:{plain:{},styles:[]},enableTypeScript:r==="tsx",transformCode:sI,scope:s,noInline:t==null?void 0:t.includes("render("),children:n.jsxs("div",{className:"doc-ui-demo-block-main",children:[n.jsx(iI,{className:Ze("doc-ui-demo-block-preview",l&&"doc-ui-demo-block-preview-disable-padding")}),n.jsxs("div",{className:"doc-ui-demo-block-develop",children:[n.jsx(oI,{className:"doc-ui-demo-block-error"}),n.jsx(rI,{className:"doc-ui-demo-block-editor"})]})]})})]})}function dI(t){return n.jsx("div",{className:"doc-ui-table",children:n.jsx("table",{...t})})}const uI={code:Q0,pre:({children:t,...e})=>{var c,a,s;const r=H.Children.only(t),o=((c=r.props.className)==null?void 0:c.substring(9))||"bash",l=(s=(a=r.props.children)==null?void 0:a.trim)==null?void 0:s.call(a);return["jsx","tsx"].includes(o)&&!e.static?n.jsx(fI,{language:o,code:l,...e}):n.jsx(K0,{language:o,code:l,...e})},table:dI,Alert:Xv};function pI({docs:t=[],basename:e,languages:r,className:o,style:l}){const c=H.useMemo(()=>{const a=f1({fallbackLng:"en",supportedLngs:r==null?void 0:r.map(s=>s.code),debug:!0,interpolation:{escapeValue:!1},resources:{en:{translation:{hello:"Hello from other i18n instance"}},de:{translation:{hello:"Hallo aus einer anderen i18n Instanz"}}}});return a.init(),a},[r]);return n.jsx(_1,{i18n:c,children:n.jsx(vv,{basename:e,children:n.jsxs("div",{className:Ze("doc-ui",o),style:l,children:[n.jsx(Av,{languages:r,docs:t}),n.jsx("main",{className:"doc-ui-main",children:n.jsx("article",{className:"doc-ui-content",children:n.jsx(Bx,{components:uI,children:n.jsx(yv,{children:t.map(a=>n.jsx(Jb,{index:a.filepath==="README.md",path:Oi(a.filepath),Component:a.default},a.filepath))})})})})]})})})}const yI="README.md",hI="Alibaba Front-end Specification",bI=void 0;function Wp(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"Alibaba Front-end Specification"}),`
 `,n.jsxs(e.p,{children:[n.jsx(e.strong,{children:"Alibaba Front-end Specification"}),` is a practical coding and engineering standard that is widely
-used in Alibaba Group. It aims to improve collaboration efficiency, project maintainability and stability,
-by adopting unified coding style, best practices and defect checking.`]}),`
-`,n.jsxs(e.p,{children:["「阿里巴巴前端规约」主要包括「规约文档」和「配套工具」两部分。你可以通过阅读规约文档了解各前端语言、框架及工程规范，并使用 ",n.jsx(e.a,{href:"https://www.npmjs.com/package/f2elint",children:"F2ELint"})," 等配套工具来为项目接入规约检查。"]}),`
-`,n.jsx(e.p,{children:"「规约文档」分为编码规约和工程规约两大类，包括："}),`
+used in Alibaba Group. It aims to improve collaboration efficiency, project maintainability and
+stability, by adopting unified coding style, best practices and defect checking.`]}),`
+`,n.jsxs(e.p,{children:["The specification consists of two parts: ",n.jsx(e.strong,{children:"documents"})," and ",n.jsx(e.strong,{children:"tools"}),"."]}),`
+`,n.jsx(e.p,{children:`Documents help you to understand the specification and write high quality code. Documents include
+the following:`}),`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsxs(e.li,{children:["编码规约",`
+`,n.jsxs(e.li,{children:["Coding style",`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/1.html-style-guide.md",children:"HTML 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/2.css-style-guide.md",children:"CSS 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/3.javascript-style-guide.md",children:"JavaScript 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/4.react-style-guide.md",children:"React 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/5.node-style-guide.md",children:"Node.js 开发规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/6.typescript-style-guide.md",children:"TypeScript 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/7.rax-style-guide.md",children:"Rax 编码规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/html.md",children:"HTML Coding Specification"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/css.md",children:"CSS Coding Specification"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/javascript.md",children:"JavaScript Coding Specification"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/react.md",children:"React Coding Specification"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/node.md",children:"Node.js 开发规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/typescript.md",children:"TypeScript Coding Specification"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/rax.md",children:"Rax Coding Specification"})}),`
 `]}),`
 `]}),`
-`,n.jsxs(e.li,{children:["工程规约",`
+`,n.jsxs(e.li,{children:["Engineering",`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/engineering/1.git.md",children:"Git 规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/engineering/2.doc-writing-practice.md",children:"文档通用规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/engineering/3.doc-changelog.md",children:"更新日志规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"engineering/git.md",children:"Git Specification"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"engineering/writing.md",children:"Writing Specification"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"engineering/changelog.md",children:"Changelog Specification"})}),`
 `]}),`
 `]}),`
+`]}),`
+`,n.jsx(e.p,{children:"Tools help you to quickly integrate code checking into your projects. Tools include the following:"}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/f2elint",children:"f2elint"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/eslint-config-ali",children:"eslint-config-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/eslint-plugin-ali",children:"eslint-plugin-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/stylelint-config-ali",children:"stylelint-config-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/prettier-config-ali",children:"prettier-config-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/commitlint-config-ali",children:"commitlint-config-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/markdownlint-config-ali",children:"markdownlint-config-ali"})}),`
 `]}),`
 `,n.jsx(e.h2,{children:"单条规约格式说明"}),`
 `,n.jsx(e.h3,{children:"规约级别和对应的 Lint 规则"}),`
@@ -343,30 +354,39 @@ function foo() {
 `,n.jsx(e.li,{children:"洋风"}),`
 `]}),`
 `,n.jsxs(e.p,{children:["Thanks for everyone who contributed to this project! If we missed someone, please let us know via ",n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/issues",children:"issues"}),` or
-`,n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/pulls",children:"pull requests"}),"!"]})]})}function _m(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Wp,{...t})}):Wp(t)}_m.displayName="MDXContent";const OI=Object.freeze(Object.defineProperty({__proto__:null,default:_m,filepath:yI,frontmatter:bI,title:hI},Symbol.toStringTag,{value:"Module"})),mI="README.zh.md",jI="阿里巴巴前端规约",gI=void 0;function Vp(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",ul:"ul",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"阿里巴巴前端规约"}),`
-`,n.jsx(e.h2,{children:"前言"}),`
+`,n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/pulls",children:"pull requests"}),"!"]})]})}function _m(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Wp,{...t})}):Wp(t)}_m.displayName="MDXContent";const OI=Object.freeze(Object.defineProperty({__proto__:null,default:_m,filepath:yI,frontmatter:bI,title:hI},Symbol.toStringTag,{value:"Module"})),mI="README.zh.md",jI="阿里巴巴前端规约",gI=void 0;function Vp(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",h3:"h3",li:"li",p:"p",pre:"pre",strong:"strong",ul:"ul",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"阿里巴巴前端规约"}),`
 `,n.jsx(e.p,{children:"**《阿里巴巴前端规约》**是在阿里巴巴集团内广泛使用的一套前端编码和工程规范，致力于通过统一编码风格、普及最佳实践和代码缺陷检查帮助团队降低协作成本、提升前端项目的可维护性和稳定性。"}),`
-`,n.jsxs(e.p,{children:["「阿里巴巴前端规约」主要包括「规约文档」和「配套工具」两部分。你可以通过阅读规约文档了解各前端语言、框架及工程规范，并使用 ",n.jsx(e.a,{href:"https://www.npmjs.com/package/f2elint",children:"F2ELint"})," 等配套工具来为项目接入规约检查。"]}),`
-`,n.jsx(e.p,{children:"「规约文档」分为编码规约和工程规约两大类，包括："}),`
+`,n.jsxs(e.p,{children:["本规约主要包括",n.jsx(e.strong,{children:"规约文档"}),"和",n.jsx(e.strong,{children:"规约工具"}),"两部分。您可以通过阅读规约文档了解各前端语言、框架及工程规范，并使用  等配套工具来为项目接入规约检查。"]}),`
+`,n.jsx(e.p,{children:"规约文档帮助您理解规约细节并编写高质量的代码。规约文档包括："}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsxs(e.li,{children:["编码规约",`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/1.html-style-guide.md",children:"HTML 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/2.css-style-guide.md",children:"CSS 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/3.javascript-style-guide.md",children:"JavaScript 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/4.react-style-guide.md",children:"React 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/5.node-style-guide.md",children:"Node.js 开发规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/6.typescript-style-guide.md",children:"TypeScript 编码规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/coding/7.rax-style-guide.md",children:"Rax 编码规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/html.md",children:"HTML 编码规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/css.md",children:"CSS 编码规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/javascript.md",children:"JavaScript 编码规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/react.md",children:"React 编码规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/node.md",children:"Node.js 开发规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/typescript.md",children:"TypeScript 编码规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"coding/rax.md",children:"Rax 编码规约"})}),`
 `]}),`
 `]}),`
 `,n.jsxs(e.li,{children:["工程规约",`
 `,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/engineering/1.git.md",children:"Git 规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/engineering/2.doc-writing-practice.md",children:"文档通用规约"})}),`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"docs/engineering/3.doc-changelog.md",children:"更新日志规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"engineering/git.md",children:"Git 规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"engineering/writing.md",children:"文档通用规约"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"engineering/changelog.md",children:"更新日志规约"})}),`
 `]}),`
 `]}),`
+`]}),`
+`,n.jsx(e.p,{children:"规约工具帮助您将代码检查能力快速集成到项目中。规约工具包括："}),`
+`,n.jsxs(e.ul,{children:[`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/f2elint",children:"f2elint"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/eslint-config-ali",children:"eslint-config-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/eslint-plugin-ali",children:"eslint-plugin-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/stylelint-config-ali",children:"stylelint-config-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/prettier-config-ali",children:"prettier-config-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/commitlint-config-ali",children:"commitlint-config-ali"})}),`
+`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/markdownlint-config-ali",children:"markdownlint-config-ali"})}),`
 `]}),`
 `,n.jsx(e.h2,{children:"单条规约格式说明"}),`
 `,n.jsx(e.h3,{children:"规约级别和对应的 Lint 规则"}),`
