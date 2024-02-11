@@ -260,7 +260,7 @@ the following:`}),`
 `,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/commitlint-config-ali",children:"commitlint-config-ali"})}),`
 `,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://www.npmjs.com/package/markdownlint-config-ali",children:"markdownlint-config-ali"})}),`
 `]}),`
-`,n.jsx(e.h2,{children:"Getting Started"}),`
+`,n.jsx(e.h2,{children:"Getting started"}),`
 `,n.jsxs(e.p,{children:["Run ",n.jsx(e.code,{children:"npx f2elint"})," (if you use pnpm, run ",n.jsx(e.code,{children:"pnpx f2elint"}),") in project root, and follow the promption:"]}),`
 `,n.jsx(e.p,{children:n.jsx(e.img,{src:"https://github.com/alibaba/f2e-spec/assets/5836790/80b5c4fd-6ab1-4423-8ae5-0572777db0a7",alt:"screenshot"})}),`
 `,n.jsx(e.h2,{children:"单条规约格式说明"}),`
@@ -295,9 +295,10 @@ function foo() {
 // good - 正例
 // best - 最佳正例（多个正例中最好的实现）
 `})}),`
-`,n.jsx(e.h2,{children:"如何参与"}),`
-`,n.jsxs(e.p,{children:["非常欢迎大家通过 ",n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/issues",children:"Issues"})," 反馈问题和需求，或者通过 ",n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/pulls",children:"PRs"})," 参与贡献，请参考 ",n.jsx(e.a,{href:"/CONTRIBUTING.md",children:"CONTRIBUTING.md"}),"。"]}),`
-`,n.jsx(e.h2,{children:"Contribution Credits"}),`
+`,n.jsx(e.h2,{children:"How to participate"}),`
+`,n.jsxs(e.p,{children:[n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/issues",children:"Issues"})," and ",n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/pulls",children:"pull requests"}),`
+are welcome. You can read more information at `,n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/blob/main/CONTRIBUTING.md",children:"CONTRIBUTING.md"}),"."]}),`
+`,n.jsx(e.h2,{children:"Contribution credits"}),`
 `,n.jsx(e.p,{children:"Document writing & review (in no particular order):"}),`
 `,n.jsxs(e.ul,{children:[`
 `,n.jsx(e.li,{children:"邦彦"}),`
@@ -427,7 +428,9 @@ function foo() {
 // best - 最佳正例（多个正例中最好的实现）
 `})}),`
 `,n.jsx(e.h2,{children:"如何参与"}),`
-`,n.jsxs(e.p,{children:["非常欢迎大家通过 ",n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/issues",children:"Issues"})," 反馈问题和需求，或者通过 ",n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/pulls",children:"PRs"})," 参与贡献，请参考 ",n.jsx(e.a,{href:"/CONTRIBUTING.md",children:"CONTRIBUTING.md"}),"。"]}),`
+`,n.jsxs(e.p,{children:["非常欢迎大家通过 ",n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/issues",children:"Issues"}),` 反馈问题和需求，或者通过
+`,n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/pulls",children:"PRs"}),` 参与贡献，请参考
+`,n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/blob/main/CONTRIBUTING.md",children:"CONTRIBUTING.md"}),"。"]}),`
 `,n.jsx(e.h2,{children:"贡献署名"}),`
 `,n.jsx(e.p,{children:"文档撰写与审阅（排名不分先后）："}),`
 `,n.jsxs(e.ul,{children:[`
