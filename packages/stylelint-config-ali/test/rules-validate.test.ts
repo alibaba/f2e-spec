@@ -29,8 +29,8 @@ describe('test/rules-validate.test.js', () => {
     });
 
     if (result && result.errored) {
+      console.log(result.results);
     }
-    console.log(result.results);
     expect(result.results.length).toBeGreaterThan(0);
   });
 

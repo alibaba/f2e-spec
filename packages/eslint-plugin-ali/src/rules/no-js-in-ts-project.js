@@ -5,7 +5,12 @@ const RULE_NAME = 'no-js-in-ts-project';
 
 const JS_REG = /\.jsx?$/;
 
-const DEFAULT_WHITE_LIST = ['commitlint.config.js', 'eslintrc.js', 'prettierrc.js', 'stylelintrc.js'];
+const DEFAULT_WHITE_LIST = [
+  'commitlint.config.js',
+  'eslintrc.js',
+  'prettierrc.js',
+  'stylelintrc.js',
+];
 
 module.exports = {
   name: RULE_NAME,
@@ -24,11 +29,12 @@ module.exports = {
     const fileName = context.getFilename();
     const extName = path.extname(fileName);
     const ruleOptions = context.options[0] || {};
-    let { whiteList = [], autoMerge = true } = ruleOptions;
+    let { whiteList = [] } = ruleOptions;
+    const { autoMerge = true } = ruleOptions;
     if (whiteList.length === 0) {
       whiteList = DEFAULT_WHITE_LIST;
     } else if (autoMerge) {
-      whiteList = [...new Set([...DEFAULT_WHITE_LIST, ...whiteList])]
+      whiteList = [...new Set([...DEFAULT_WHITE_LIST, ...whiteList])];
     }
     const whiteListReg = new RegExp(`(${whiteList.join('|')})$`);
 

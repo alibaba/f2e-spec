@@ -22,8 +22,6 @@ module.exports = {
       return {};
     }
 
-    const cwd = context.getCwd();
-
     return {
       Property: function handleRequires(node) {
         if (
