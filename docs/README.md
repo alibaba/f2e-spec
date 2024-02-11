@@ -38,23 +38,27 @@ Run `npx f2elint` (if you use pnpm, run `pnpx f2elint`) in project root, and fol
 
 ![screenshot](https://github.com/alibaba/f2e-spec/assets/5836790/80b5c4fd-6ab1-4423-8ae5-0572777db0a7)
 
-## 单条规约格式说明
+## Specification format
 
-### 规约级别和对应的 Lint 规则
+### Specification level and lint rules
 
-根据约束力强弱，一条规约依次分为强制、推荐、参考三个级别：
+According to the strength of the strictness, specification rules are classified into three levels:
 
-- 【强制】必须遵守。是不得不遵守的约定，违反本约定或将会引起严重的后果。如有对应 Lint 规则，配套规则包中级别为 `error`。
-- 【推荐】尽量遵守。长期遵守这样的规定，有助于系统稳定性和合作效率的提升。如有对应 Lint 规则，配套规则包中级别为 `warn`。
-- 【参考】充分理解。技术意识的引导，是个人学习、团队沟通、项目合作的方向。如有对应 Lint 规则，配套规则包中默认不开启，开发者可根据需要自行开启。
+- `mandatory`: must follow. Breaking the rule can cause serious defects. And the rule itself doesn't
+  cause any defects (false positive, etc.). Lint tool severity is `error`.
+- `recommended`: follow whenever possible. Breaking the rule can affect code quality but not serious.
+  Or the rule itself may cause defects (false positive, etc.). Lint tool severity is `warn`.
+- `referenced`: understand and keep in mind. Breaking the rule is not always bad. Lint tools is not
+  smart enough to evaludate your code. Developers need to make decision on their own. Lint tool
+  severity is `off` or not supportted.
 
-一条规约的级别会在规约描述的开头标注，如有对应的 Lint 规则会在结尾标注，例如：
+Rule strictness level is marked at the beginning, while lint tool rule, if exists, is marked at the end.
 
-- 1.1.1【强制】使用 2 个空格缩进。eslint: [indent](https://eslint.org/docs/rules/indent)
+> 1.1.1 `mandatory` Use 2 space indent eslint: [indent](https://eslint.org/docs/rules/indent)
 
-### 代码示例
+### Code example
 
-为了更加直观，规约描述之后通常会配上代码示例，例如：
+To make it more intuitive, the specification description is usually followed by code examples. For example:
 
 ```js
 // bad
@@ -68,17 +72,9 @@ function foo() {
 }
 ```
 
-我们约定用 `bad` 注释表示反例，用 `good` 注释表示正例。
-
-除了 `bad` 和 `good`，有时你还会看到 `disallowed`、`allowed`、`best` 这几种注释，它们的含义如下：
-
-```js
-// disallowed - 禁止（用于部分明令禁止的用法）
-// bad - 反例
-// allowed - 中例（用于允许但不推荐的用法）
-// good - 正例
-// best - 最佳正例（多个正例中最好的实现）
-```
+1. `bad` for NOT recommended practice
+2. `good` for recommended practice
+3. spaces may be replaced with `∙` to make it easier to count
 
 ## How to participate
 
