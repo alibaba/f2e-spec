@@ -489,7 +489,7 @@ function foo() {
 `,n.jsx(e.li,{children:"洋风"}),`
 `]}),`
 `,n.jsxs(e.p,{children:["诚挚感谢每一位大佬对本项目的贡献！如有遗漏，请通过 ",n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/issues",children:"Issues"}),` 或
-`,n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/pulls",children:"Pull Requests"})," 告诉我们！"]})]})}function Em(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Vp,{...t})}):Vp(t)}Em.displayName="MDXContent";const xI=Object.freeze(Object.defineProperty({__proto__:null,default:Em,filepath:mI,frontmatter:gI,title:jI},Symbol.toStringTag,{value:"Module"})),vI="coding/common.md",wI="Common Coding Specification",PI={group:"Coding Style",order:0};function Gp(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",ul:"ul",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"Common Coding Specification"}),`
+`,n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/pulls",children:"Pull Requests"})," 告诉我们！"]})]})}function Em(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Vp,{...t})}):Vp(t)}Em.displayName="MDXContent";const xI=Object.freeze(Object.defineProperty({__proto__:null,default:Em,filepath:mI,frontmatter:gI,title:jI},Symbol.toStringTag,{value:"Module"})),vI="coding/common.md",wI="Common Coding Specification",PI={group:"Coding Style",order:0};function Gp(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"Common Coding Specification"}),`
 `,n.jsxs(e.p,{children:[`Common guidelines that apply to various programming languages. Linting tools like
 `,n.jsx(e.a,{href:"https://editorconfig.org/",children:"EditorConfig"})," and ",n.jsx(e.a,{href:"https://prettier.io/",children:"Prettier"})," can be used."]}),`
 `,n.jsxs(e.h2,{children:[n.jsx(e.code,{children:"mandatory"})," Use 2 space indent"]}),`
@@ -518,26 +518,23 @@ have very deep nesting structure.`]}),`
 `,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`indent_style = space
 indent_size = 2
 `})}),`
-`,n.jsx(e.h2,{children:"Max line length"}),`
-`,n.jsx(e.p,{children:"100 chars."}),`
+`,n.jsxs(e.h2,{children:[n.jsx(e.code,{children:"recommended"})," Max line length 100 chars"]}),`
+`,n.jsx(e.p,{children:`Hard line wrap helps reading and debuging code more effiently. We considered diff code side by side
+on a equivalent 1600px wide screen. For smaller screens, we suggest to decrease font size or display
+scale factor.`}),`
+`,n.jsx(e.p,{children:"EditorConfig:"}),`
 `,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`max_line_length = 100
 `})}),`
+`,n.jsx(e.p,{children:"VS Code settings:"}),`
 `,n.jsx(e.pre,{filename:".vscode/settings.json",children:n.jsx(e.code,{className:"language-json",children:`{
   "editor.rulers": [100]
 }
 `})}),`
-`,n.jsx(e.p,{children:`Hard line wrap helps reading and debuging code more effiently. We considered diff code side by side
-on a equivalent 1600px wide screen. For smaller screens, we suggest to decrease font size or display
-scale factor.`}),`
-`,n.jsx(e.h2,{children:"Charset encoding"}),`
-`,n.jsxs(e.p,{children:["All source code and text files should use ",n.jsx(e.code,{children:"utf-8"})," charset when encoding and decoding."]}),`
+`,n.jsxs(e.h2,{children:[n.jsx(e.code,{children:"mandatory"})," Use UTF-8 charset"]}),`
+`,n.jsx(e.p,{children:"All source code and text files should use UTF-8 charset when encoding and decoding."}),`
+`,n.jsx(e.p,{children:"EditorConfig:"}),`
 `,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`charset = utf-8
-`})}),`
-`,n.jsx(e.h2,{children:"Authors and contributors"}),`
-`,n.jsx(e.p,{children:"Authors:"}),`
-`,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/guoyunhe",children:"Guo Yunhe"})}),`
-`]})]})}function Im(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Gp,{...t})}):Gp(t)}Im.displayName="MDXContent";const SI=Object.freeze(Object.defineProperty({__proto__:null,default:Im,filepath:vI,frontmatter:PI,title:wI},Symbol.toStringTag,{value:"Module"})),_I="coding/common.zh.md",EI="通用编码规约",II={group:"代码风格",order:0};function Jp(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",ul:"ul",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"通用编码规约"}),`
+`})})]})}function Im(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Gp,{...t})}):Gp(t)}Im.displayName="MDXContent";const SI=Object.freeze(Object.defineProperty({__proto__:null,default:Im,filepath:vI,frontmatter:PI,title:wI},Symbol.toStringTag,{value:"Module"})),_I="coding/common.zh.md",EI="通用编码规约",II={group:"代码风格",order:0};function Jp(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"通用编码规约"}),`
 `,n.jsxs(e.p,{children:["适用于多种编程语言的编码规约。对应的规约工具主要是 ",n.jsx(e.a,{href:"https://editorconfig.org/",children:"EditorConfig"})," 和 ",n.jsx(e.a,{href:"https://prettier.io/",children:"Prettier"}),"。"]}),`
 `,n.jsxs(e.h2,{children:[n.jsx(e.code,{children:"强制"})," 使用 2 个空格缩进"]}),`
 `,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
@@ -564,24 +561,21 @@ scale factor.`}),`
 `,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`indent_style = space
 indent_size = 2
 `})}),`
-`,n.jsx(e.h2,{children:"行宽"}),`
-`,n.jsx(e.p,{children:"100 字符。"}),`
+`,n.jsxs(e.h2,{children:[n.jsx(e.code,{children:"推荐"})," 折行行宽 100 字符"]}),`
+`,n.jsx(e.p,{children:"硬换行能提高代码阅读和调试的效率。我们考虑了在等效 1600px 宽的屏幕，左右分屏对比代码的情况。对于更小的屏幕，我们建议调小字体或者缩放比例。"}),`
+`,n.jsx(e.p,{children:"EditorConfig："}),`
 `,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`max_line_length = 100
 `})}),`
+`,n.jsx(e.p,{children:"VS Code 设置："}),`
 `,n.jsx(e.pre,{filename:".vscode/settings.json",children:n.jsx(e.code,{className:"language-json",children:`{
   "editor.rulers": [100]
 }
 `})}),`
-`,n.jsx(e.p,{children:"硬换行能提高代码阅读和调试的效率。我们考虑了在等效 1600px 宽的屏幕，左右分屏对比代码的情况。对于更小的屏幕，我们建议调小字体或者缩放比例。"}),`
-`,n.jsx(e.h2,{children:"编码"}),`
-`,n.jsxs(e.p,{children:["所有源代码和纯文本文件都应使用 ",n.jsx(e.code,{children:"utf-8"})," 编码。"]}),`
+`,n.jsxs(e.h2,{children:[n.jsx(e.code,{children:"强制"})," 使用 UTF-8 字符集"]}),`
+`,n.jsx(e.p,{children:"所有源代码和纯文本文件都应使用 UTF-8 字符集来编码和解码。"}),`
+`,n.jsx(e.p,{children:"EditorConfig 配置："}),`
 `,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`charset = utf-8
-`})}),`
-`,n.jsx(e.h2,{children:"作者及贡献者"}),`
-`,n.jsx(e.p,{children:"作者："}),`
-`,n.jsxs(e.ul,{children:[`
-`,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/guoyunhe",children:"郭云鹤"})}),`
-`]})]})}function km(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Jp,{...t})}):Jp(t)}km.displayName="MDXContent";const kI=Object.freeze(Object.defineProperty({__proto__:null,default:km,filepath:_I,frontmatter:II,title:EI},Symbol.toStringTag,{value:"Module"})),NI="coding/css.md",CI="CSS Coding Specification",TI={group:"Coding Style",order:2};function Xp(t){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"CSS Coding Specification"}),`
+`})})]})}function km(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Jp,{...t})}):Jp(t)}km.displayName="MDXContent";const kI=Object.freeze(Object.defineProperty({__proto__:null,default:km,filepath:_I,frontmatter:II,title:EI},Symbol.toStringTag,{value:"Module"})),NI="coding/css.md",CI="CSS Coding Specification",TI={group:"Coding Style",order:2};function Xp(t){const e={a:"a",blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",img:"img",li:"li",ol:"ol",p:"p",pre:"pre",strong:"strong",table:"table",tbody:"tbody",td:"td",th:"th",thead:"thead",tr:"tr",ul:"ul",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"CSS Coding Specification"}),`
 `,n.jsxs(e.p,{children:["本规约涉及 CSS 及其预编译语言（Sass、Less）的编码风格和最佳实践，部分规则可通过 ",n.jsx(e.a,{href:"https://stylelint.io/",children:"stylelint"})," 工具落地。"]}),`
 `,n.jsx(e.h2,{children:"1 CSS"}),`
 `,n.jsx(e.h3,{children:"1.1 编码风格"}),`
