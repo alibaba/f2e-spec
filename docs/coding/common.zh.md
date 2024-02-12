@@ -38,13 +38,17 @@ indent_style = space
 indent_size = 2
 ```
 
-## 行宽
+## `推荐` 折行行宽 100 字符
 
-100 字符。
+硬换行能提高代码阅读和调试的效率。我们考虑了在等效 1600px 宽的屏幕，左右分屏对比代码的情况。对于更小的屏幕，我们建议调小字体或者缩放比例。
+
+EditorConfig：
 
 ```ini filename=".editorconfig"
 max_line_length = 100
 ```
+
+VS Code 设置：
 
 ```json filename=".vscode/settings.json"
 {
@@ -52,18 +56,13 @@ max_line_length = 100
 }
 ```
 
-硬换行能提高代码阅读和调试的效率。我们考虑了在等效 1600px 宽的屏幕，左右分屏对比代码的情况。对于更小的屏幕，我们建议调小字体或者缩放比例。
 
-## 编码
+## `强制` 使用 UTF-8 字符集
 
-所有源代码和纯文本文件都应使用 `utf-8` 编码。
+所有源代码和纯文本文件都应使用 UTF-8 字符集来编码和解码。
+
+EditorConfig 配置：
 
 ```ini filename=".editorconfig"
 charset = utf-8
 ```
-
-## 作者及贡献者
-
-作者：
-
-- [郭云鹤](https://github.com/guoyunhe)

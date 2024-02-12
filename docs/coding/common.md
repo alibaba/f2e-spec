@@ -40,13 +40,19 @@ indent_style = space
 indent_size = 2
 ```
 
-## Max line length
+## `recommended` Max line length 100 chars
 
-100 chars.
+Hard line wrap helps reading and debuging code more effiently. We considered diff code side by side
+on a equivalent 1600px wide screen. For smaller screens, we suggest to decrease font size or display
+scale factor.
+
+EditorConfig:
 
 ```ini filename=".editorconfig"
 max_line_length = 100
 ```
+
+VS Code settings:
 
 ```json filename=".vscode/settings.json"
 {
@@ -54,20 +60,12 @@ max_line_length = 100
 }
 ```
 
-Hard line wrap helps reading and debuging code more effiently. We considered diff code side by side
-on a equivalent 1600px wide screen. For smaller screens, we suggest to decrease font size or display
-scale factor.
+## `mandatory` Use UTF-8 charset
 
-## Charset encoding
+All source code and text files should use UTF-8 charset when encoding and decoding.
 
-All source code and text files should use `utf-8` charset when encoding and decoding.
+EditorConfig:
 
 ```ini filename=".editorconfig"
 charset = utf-8
 ```
-
-## Authors and contributors
-
-Authors:
-
-- [Guo Yunhe](https://github.com/guoyunhe)
