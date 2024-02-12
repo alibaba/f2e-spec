@@ -492,10 +492,20 @@ function foo() {
 `,n.jsx(e.a,{href:"https://github.com/alibaba/f2e-spec/pulls",children:"Pull Requests"})," 告诉我们！"]})]})}function Em(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Vp,{...t})}):Vp(t)}Em.displayName="MDXContent";const xI=Object.freeze(Object.defineProperty({__proto__:null,default:Em,filepath:mI,frontmatter:gI,title:jI},Symbol.toStringTag,{value:"Module"})),vI="coding/common.md",wI="Common Coding Specification",PI={group:"Coding Style",order:0};function Gp(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",ul:"ul",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"Common Coding Specification"}),`
 `,n.jsxs(e.p,{children:[`Common guidelines that apply to various programming languages. Linting tools like
 `,n.jsx(e.a,{href:"https://editorconfig.org/",children:"EditorConfig"})," and ",n.jsx(e.a,{href:"https://prettier.io/",children:"Prettier"})," can be used."]}),`
-`,n.jsx(e.h2,{children:"Indention"}),`
-`,n.jsx(e.p,{children:"2 spaces."}),`
-`,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`indent_style = space
-indent_size = 2
+`,n.jsxs(e.h2,{children:[n.jsx(e.code,{children:"mandatory"})," Use 2 space indent"]}),`
+`,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
+<html>
+∙∙∙∙<head>
+∙∙∙∙∙∙∙∙<title></title>
+∙∙∙∙</head>
+</html>
+
+<!-- good -->
+<html>
+∙∙<head>
+∙∙∙∙<title></title>
+∙∙</head>
+</html>
 `})}),`
 `,n.jsx(e.p,{children:"The decision is made based on the following reasons:"}),`
 `,n.jsxs(e.ol,{children:[`
@@ -504,6 +514,10 @@ indent_size = 2
 `,n.jsxs(e.li,{children:["2 spaces saves more spaces than 3 or 4 spaces, espacially for ",n.jsx(e.code,{children:"html"})," and ",n.jsx(e.code,{children:"jsx"}),` syntax which can
 have very deep nesting structure.`]}),`
 `]}),`
+`,n.jsx(e.p,{children:"EditorConfig:"}),`
+`,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`indent_style = space
+indent_size = 2
+`})}),`
 `,n.jsx(e.h2,{children:"Max line length"}),`
 `,n.jsx(e.p,{children:"100 chars."}),`
 `,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`max_line_length = 100
@@ -525,10 +539,20 @@ scale factor.`}),`
 `,n.jsx(e.li,{children:n.jsx(e.a,{href:"https://github.com/guoyunhe",children:"Guo Yunhe"})}),`
 `]})]})}function Im(t={}){const{wrapper:e}={...se(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(Gp,{...t})}):Gp(t)}Im.displayName="MDXContent";const SI=Object.freeze(Object.defineProperty({__proto__:null,default:Im,filepath:vI,frontmatter:PI,title:wI},Symbol.toStringTag,{value:"Module"})),_I="coding/common.zh.md",EI="通用编码规约",II={group:"代码风格",order:0};function Jp(t){const e={a:"a",code:"code",h1:"h1",h2:"h2",li:"li",ol:"ol",p:"p",pre:"pre",ul:"ul",...se(),...t.components};return n.jsxs(n.Fragment,{children:[n.jsx(e.h1,{children:"通用编码规约"}),`
 `,n.jsxs(e.p,{children:["适用于多种编程语言的编码规约。对应的规约工具主要是 ",n.jsx(e.a,{href:"https://editorconfig.org/",children:"EditorConfig"})," 和 ",n.jsx(e.a,{href:"https://prettier.io/",children:"Prettier"}),"。"]}),`
-`,n.jsx(e.h2,{children:"缩进"}),`
-`,n.jsx(e.p,{children:"两个空格。"}),`
-`,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`indent_style = space
-indent_size = 2
+`,n.jsxs(e.h2,{children:[n.jsx(e.code,{children:"强制"})," 使用 2 个空格缩进"]}),`
+`,n.jsx(e.pre,{children:n.jsx(e.code,{className:"language-html",children:`<!-- bad -->
+<html>
+∙∙∙∙<head>
+∙∙∙∙∙∙∙∙<title></title>
+∙∙∙∙</head>
+</html>
+
+<!-- good -->
+<html>
+∙∙<head>
+∙∙∙∙<title></title>
+∙∙</head>
+</html>
 `})}),`
 `,n.jsx(e.p,{children:"之所以选择两个空格，是有以下考虑："}),`
 `,n.jsxs(e.ol,{children:[`
@@ -536,6 +560,10 @@ indent_size = 2
 `,n.jsx(e.li,{children:"2 个空格相比 1 个空格更加明显。"}),`
 `,n.jsxs(e.li,{children:["2 个空格相比 3 个空格或 4 个空格更节约空间，适合 ",n.jsx(e.code,{children:"html"})," 和 ",n.jsx(e.code,{children:"jsx"})," 等层级较深的语法。"]}),`
 `]}),`
+`,n.jsx(e.p,{children:"EditorConfig 配置:"}),`
+`,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`indent_style = space
+indent_size = 2
+`})}),`
 `,n.jsx(e.h2,{children:"行宽"}),`
 `,n.jsx(e.p,{children:"100 字符。"}),`
 `,n.jsx(e.pre,{filename:".editorconfig",children:n.jsx(e.code,{className:"language-ini",children:`max_line_length = 100
