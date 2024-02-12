@@ -8,13 +8,22 @@ order: 0
 Common guidelines that apply to various programming languages. Linting tools like
 [EditorConfig](https://editorconfig.org/) and [Prettier](https://prettier.io/) can be used.
 
-## Indention
+## `mandatory` Use 2 space indent
 
-2 spaces.
+```html
+<!-- bad -->
+<html>
+∙∙∙∙<head>
+∙∙∙∙∙∙∙∙<title></title>
+∙∙∙∙</head>
+</html>
 
-```ini filename=".editorconfig"
-indent_style = space
-indent_size = 2
+<!-- good -->
+<html>
+∙∙<head>
+∙∙∙∙<title></title>
+∙∙</head>
+</html>
 ```
 
 The decision is made based on the following reasons:
@@ -23,6 +32,13 @@ The decision is made based on the following reasons:
 2. 2 spaces is more obvious than 1 space.
 3. 2 spaces saves more spaces than 3 or 4 spaces, espacially for `html` and `jsx` syntax which can
    have very deep nesting structure.
+
+EditorConfig:
+
+```ini filename=".editorconfig"
+indent_style = space
+indent_size = 2
+```
 
 ## Max line length
 

@@ -7,13 +7,22 @@ order: 0
 
 适用于多种编程语言的编码规约。对应的规约工具主要是 [EditorConfig](https://editorconfig.org/) 和 [Prettier](https://prettier.io/)。
 
-## 缩进
+## `强制` 使用 2 个空格缩进
 
-两个空格。
+```html
+<!-- bad -->
+<html>
+∙∙∙∙<head>
+∙∙∙∙∙∙∙∙<title></title>
+∙∙∙∙</head>
+</html>
 
-```ini filename=".editorconfig"
-indent_style = space
-indent_size = 2
+<!-- good -->
+<html>
+∙∙<head>
+∙∙∙∙<title></title>
+∙∙</head>
+</html>
 ```
 
 之所以选择两个空格，是有以下考虑：
@@ -21,6 +30,13 @@ indent_size = 2
 1. 空格在所有编辑器和网页中展示的效果均一致，而 Tab 则无法控制实际展示的缩进宽度。
 2. 2 个空格相比 1 个空格更加明显。
 3. 2 个空格相比 3 个空格或 4 个空格更节约空间，适合 `html` 和 `jsx` 等层级较深的语法。
+
+EditorConfig 配置:
+
+```ini filename=".editorconfig"
+indent_style = space
+indent_size = 2
+```
 
 ## 行宽
 
