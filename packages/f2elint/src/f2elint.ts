@@ -13,18 +13,18 @@ import { TemplateType } from './types';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const packageJson = JSON.parse(readFileSync(join(__dirname, '../package.json'), 'utf-8'));
 
-if (process.argv.length > 2) {
+if (process.argv.length > 2 && !process.argv.includes('init')) {
   // Non-interactive
 
   const program = new Command('f2elint');
 
   program
     .argument('[project]', '项目位置')
-    .option('--template <template>', '模版类型')
-    .option('--stylelint', '启用 Stylelint')
-    .option('--prettier', '启用 Prettier')
-    .option('--lint-staged', '启用 Lint-Staged')
-    .option('--commitlint', '启用 Commitlint')
+    .option('--template <template>', '模版类型', 'react-ts')
+    .option('--stylelint', '启用 Stylelint', false)
+    .option('--prettier', '启用 Prettier', false)
+    .option('--lint-staged', '启用 Lint-Staged', false)
+    .option('--commitlint', '启用 Commitlint', false)
     .action(f2elint);
 
   program.helpOption('-h, --help', '显示帮助');
