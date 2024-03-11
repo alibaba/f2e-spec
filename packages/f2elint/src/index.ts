@@ -11,6 +11,7 @@ export interface F2elintOptions {
   prettier?: boolean;
   commitlint?: boolean;
   lintStaged?: boolean;
+  disableLog?: boolean;
 }
 
 export async function f2elint(project: string | null, options: F2elintOptions = {}) {
@@ -18,7 +19,10 @@ export async function f2elint(project: string | null, options: F2elintOptions = 
 
   const __dirname = dirname(fileURLToPath(import.meta.url));
   const template = options?.template || 'base-js';
-  const initTemplate = (t: string) => init(join(__dirname, '..', 'templates', t), projectFullPath, options);
+  const initTemplate = (t: string) =>
+    init(join(__dirname, '..', 'templates', t), projectFullPath, options, {
+      disableLog: options.disableLog,
+    });
 
   await initTemplate('base');
   await initTemplate(template);

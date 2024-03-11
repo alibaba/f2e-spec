@@ -121,7 +121,14 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
     s1.start('🚧 正在初始化项目');
 
     try {
-      await f2elint(projectPath, { template, stylelint, prettier, lintStaged, commitlint });
+      await f2elint(projectPath, {
+        template,
+        stylelint,
+        prettier,
+        lintStaged,
+        commitlint,
+        disableLog: true,
+      });
       s1.stop('✅ 初始化项目完成');
     } catch (error) {
       s1.stop('❌ 初始化项目失败');
