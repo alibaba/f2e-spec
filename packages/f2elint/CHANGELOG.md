@@ -3,6 +3,7 @@
 ## 4.3.0 - 2024-04-03
 
 - 升级 `@commitlint/cli` 18.x 到 19.x
+- `lint-staged` 配置增加 `prettier --write` 并为 `eslint` 和 `stylelint` 增加 `--fix` 参数
 
 ## 4.2.2 - 2024-04-03
 
