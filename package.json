@@ -38,7 +38,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.6.1",
     "@mdx-js/react": "^3.0.1",
-    "@types/node": "^20.11.28",
+    "@types/node": "^20.12.3",
     "commitlint-config-ali": "link:packages/commitlint-config-ali",
     "eslint": "^8.57.0",
     "eslint-config-ali": "link:packages/eslint-config-ali",
@@ -54,7 +54,7 @@
     "react-doc-ui": "^2.2.6",
     "react-dom": "^18.2.0",
     "rive": "^2.0.33",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "rive": {
     "doc": {
