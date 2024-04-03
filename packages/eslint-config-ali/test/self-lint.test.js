@@ -8,7 +8,7 @@ describe('test/self-lint.test.js', () => {
         extends: require.resolve('../index'),
       },
       ignore: true,
-      ignorePath: './.eslintignore',
+      ignorePath: '../../.eslintignore',
     });
 
     const reports = await cli.lintFiles(['.']);
