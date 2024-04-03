@@ -2112,7 +2112,7 @@ JavaScript 编码规约主要包含编码风格、语言特性、注释、命名
   ```
 
 
-- 2.7.12 `参考` 模块开发者选择EMS和CJS时，需要判断运行时环境：如果你的模块是只面向浏览器的则选择ESM；如果你的模块是只面向Node.js的则选择CJS，并且确定遵循[CJS命名空间规则](https://nodejs.org/api/esm.html#esm_commonjs_namespaces)；如果你的模块是2者都要兼容的，则ESM和CJS都要支持。
+- 2.7.12 `参考` 模块开发者选择ESM和CJS时，需要判断运行时环境：如果你的模块是只面向浏览器的则选择ESM；如果你的模块是只面向Node.js的则选择CJS，并且确定遵循[CJS命名空间规则](https://nodejs.org/api/esm.html#esm_commonjs_namespaces)；如果你的模块是2者都要兼容的，则ESM和CJS都要支持。
 
   Node.js的模块，历史上Node.js遵循的是CommonJS，因此ES6 Module会有比较严重的兼容性问题。暂时没有特别好的解法，只能在Node.js中跟进运行时环境，判断使用模块标准。[讨论issue](https://github.com/nodejs/node/issues/33954)
 
