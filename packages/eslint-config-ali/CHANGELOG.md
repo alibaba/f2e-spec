@@ -1,5 +1,9 @@
 # 更新日志
 
+## 15.0.1 - 2024-04-03
+
+- 修复 `typescript/egg` 导入规则路径错误
+
 ## 15.0.0 - 2024-02-06
 
 - **BREAKING CHANGE** `node` 和 `typescript/node` 不再提供 egg 相关的配置，请使用 `egg` 和 `typescript/egg` 替代
