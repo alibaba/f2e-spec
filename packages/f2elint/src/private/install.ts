@@ -2,20 +2,28 @@ import { spawn } from 'child_process';
 import commandExists from 'command-exists';
 
 export async function install(projectPath: string) {
-  let npm_command = 'npm';
+  let npm_command = 'npm update -f';
   if (process.env.npm_command) {
     // pnpm, yarn support npm_command environment variable
     npm_command = process.env.npm_command;
-  } else if (await commandExists('tnpm')) {
+  } else {
     // tnpm of Alibaba and Ant Group
-    npm_command = 'tnpm';
-  } else if (await commandExists('cnpm')) {
-    // cnpm of China
-    npm_command = 'cnpm';
+    try {
+      await commandExists('tnpm');
+      npm_command = 'tnpm update -f';
+    } catch (e1) {
+      // cnpm of China
+      try {
+        await commandExists('cnpm');
+        npm_command = 'cnpm update -f';
+      } catch (e2) {
+        npm_command = 'npm update -f';
+      }
+    }
   }
 
   await new Promise<void>((res, rej) => {
-    const child = spawn(`${npm_command} update -f`, {
+    const child = spawn(npm_command, {
       cwd: projectPath,
       shell: true,
     });
