@@ -3,9 +3,12 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint",
+    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint --fix",
     <% if (stylelint) { %>
-    "*.{css,less,scss}": "stylelint",
+    "*.{css,less,scss}": "stylelint --fix",
+    <% } %>
+    <% if (prettier) { %>
+    "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "prettier --write",
     <% } %>
   },
   "devDependencies": {
