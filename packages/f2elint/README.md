@@ -29,7 +29,7 @@ cd ../server
 npx f2elint # 选择 Node (TypeScript) 模板
 ```
 
-示例 1：多包项目
+示例 2：多包项目
 
 ```bash
 npx f2elint # 选择 Base (JavaScript) 模板
