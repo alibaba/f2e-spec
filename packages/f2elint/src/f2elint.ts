@@ -7,7 +7,7 @@ import { readFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { f2elint } from '.';
-import { install } from './private/install';
+import { runCommand } from './private/runCommand';
 import { TemplateType } from './types';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -136,16 +136,33 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
       process.exit(1);
     }
 
-    const s2 = spinner();
-    s2.start('🚧 正在安装依赖');
+    const npmCommand = await select<any, string>({
+      message: '📦 安装或更新依赖',
+      options: [
+        'npm update',
+        'pnpm update',
+        'yarn update',
+        'tnpm update',
+        'cnpm update',
+        { value: 'skip', label: '跳过' },
+      ],
+    });
 
-    try {
-      await install(projectPath);
-      s2.stop('✅ 安装依赖成功');
-    } catch (error) {
-      s2.stop('❌ 安装依赖失败');
-      console.error(error);
-      process.exit(1);
+    if (isCancel(npmCommand)) {
+      cancel('👋 已取消');
+      process.exit(0);
+    }
+
+    if (npmCommand !== 'skip') {
+      const s2 = spinner();
+      s2.start('🚧 正在安装依赖');
+      try {
+        await runCommand(projectPath, npmCommand);
+        s2.stop('✅ 安装依赖成功');
+      } catch (error) {
+        s2.stop('❌ 安装依赖失败，请尝试手动运行命令');
+        process.exit(1);
+      }
     }
 
     outro('🎉 规约初始化完成，建议安装推荐插件并重启 VS Code');
