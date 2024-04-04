@@ -35,7 +35,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "prettier --write . && eslint --fix ."
   },
   "prettier": "prettier-config-ali",
   "eslintConfig": {
