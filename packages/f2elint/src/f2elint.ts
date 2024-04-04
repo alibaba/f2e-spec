@@ -3,7 +3,7 @@
 import { cancel, confirm, intro, isCancel, outro, select, spinner, text } from '@clack/prompts';
 import chalk from 'chalk';
 import { Command } from 'commander';
-import { readFileSync } from 'fs';
+import { existsSync, readFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import { f2elint } from '.';
@@ -59,6 +59,7 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
     }
 
     const projectPath = resolve(project || '.');
+    const isGitRoot = existsSync(join(projectPath, '.git'));
 
     const template = await select<any, TemplateType>({
       message: '🧰 选择预设模版',
@@ -99,22 +100,27 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
       process.exit(0);
     }
 
-    const lintStaged = await confirm({
-      message: '👮‍ 启用 Lint Staged 检查',
-    });
+    let lintStaged: boolean | symbol = false;
+    let commitlint: boolean | symbol = false;
 
-    if (isCancel(lintStaged)) {
-      cancel('👋 已取消');
-      process.exit(0);
-    }
+    if (isGitRoot) {
+      lintStaged = await confirm({
+        message: '👮‍ 启用 Lint Staged 检查',
+      });
 
-    const commitlint = await confirm({
-      message: '👮‍ 启用 Commitlint 检查',
-    });
+      if (isCancel(lintStaged)) {
+        cancel('👋 已取消');
+        process.exit(0);
+      }
 
-    if (isCancel(commitlint)) {
-      cancel('👋 已取消');
-      process.exit(0);
+      commitlint = await confirm({
+        message: '👮‍ 启用 Commitlint 检查',
+      });
+
+      if (isCancel(commitlint)) {
+        cancel('👋 已取消');
+        process.exit(0);
+      }
     }
 
     const s1 = spinner();

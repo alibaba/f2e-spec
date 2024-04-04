@@ -1,5 +1,9 @@
 # 更新日志
 
+## 4.5.0 - 2024-04-04
+
+- Monorepo 子应用/子包初始化时跳过 lint-staged 和 commitlint
+
 ## 4.4.0 - 2024-04-04
 
 - 支持手动选择 npm/pnpm/yarn/tnpm/cnpm update
