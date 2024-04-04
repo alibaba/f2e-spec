@@ -2,21 +2,21 @@
   "name": "commitlint-config-ali",
   "version": "1.0.0",
   "description": "Commitlint shareable configuration for Alibaba F2E Guidelines",
-  "main": "index.js",
   "keywords": [
     "commitlint",
     "commitlint-config",
     "f2elint",
     "Alibaba F2E Guidelines"
   ],
+  "homepage": "https://github.com/alibaba/f2e-spec",
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/alibaba/f2e-spec"
   },
-  "bugs": {
-    "url": "https://github.com/alibaba/f2e-spec/issues"
-  },
-  "homepage": "https://github.com/alibaba/f2e-spec",
+  "license": "MIT",
   "author": {
     "name": "Sabo",
     "email": "bowei.jbw@gmail.com"
@@ -32,8 +32,27 @@
       "email": "xxat.massacre@gmail.com"
     }
   ],
-  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "prettier": "prettier-config-ali",
+  "eslintConfig": {
+    "extends": [
+      "ali/node",
+      "plugin:prettier/recommended"
+    ]
+  },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^4.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-ali": "workspace:^",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.1",
+    "prettier-config-ali": "workspace:^"
   }
 }
