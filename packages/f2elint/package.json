@@ -52,8 +52,8 @@
   "scripts": {
     "build": "rive build",
     "build:watch": "rive build --watch",
-    "lint": "rive lint",
-    "lint:fix": "rive lint --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "start": "rive start",
     "test": "rive test",
     "test:ui": "rive test --ui",
@@ -61,7 +61,10 @@
   },
   "prettier": "prettier-config-ali",
   "eslintConfig": {
-    "extends": "eslint-config-ali/typescript"
+    "extends": [
+      "ali/typescript/node",
+      "plugin:prettier/recommended"
+    ]
   },
   "dependencies": {
     "@clack/prompts": "^0.7.0",
@@ -73,6 +76,12 @@
   "devDependencies": {
     "@types/command-exists": "^1.2.3",
     "@types/node": "^20.12.3",
+    "eslint": "^8.56.0",
+    "eslint-config-ali": "workspace:^",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.1",
+    "prettier-config-ali": "workspace:^",
     "rive": "^2.0.33"
   },
   "rive": {
