@@ -139,12 +139,12 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
     const npmCommand = await select<any, string>({
       message: '📦 安装或更新依赖',
       options: [
-        'npm update',
-        'pnpm update',
-        'yarn update',
-        'tnpm update',
-        'cnpm update',
-        { value: 'skip', label: '跳过' },
+        { value: 'npm update', label: 'npm' },
+        { value: 'pnpm update', label: 'pnpm' },
+        { value: 'yarn update', label: 'yarn' },
+        { value: 'tnpm update', label: 'tnpm' },
+        { value: 'cnpm update', label: 'cnpm' },
+        { value: '', label: '跳过' },
       ],
     });
 
@@ -153,7 +153,7 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
       process.exit(0);
     }
 
-    if (npmCommand !== 'skip') {
+    if (npmCommand) {
       const s2 = spinner();
       s2.start('🚧 正在安装依赖');
       try {
