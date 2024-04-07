@@ -1,5 +1,6 @@
 import { init } from 'init-roll';
 import { dirname, isAbsolute, join } from 'path';
+import prettier from 'prettier-config-ali';
 import { fileURLToPath } from 'url';
 import { TemplateType } from './types';
 
@@ -22,6 +23,7 @@ export async function f2elint(project: string | null = '.', options: F2elintOpti
   const initTemplate = (t: string) =>
     init(join(__dirname, '..', 'templates', t), projectFullPath, options, {
       disableLog: options.disableLog,
+      prettier,
     });
 
   await initTemplate('base');

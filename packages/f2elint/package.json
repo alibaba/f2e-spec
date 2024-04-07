@@ -71,17 +71,17 @@
     "chalk": "^5.3.0",
     "command-exists": "^1.2.9",
     "commander": "^12.0.0",
-    "init-roll": "^1.1.1"
+    "init-roll": "^1.2.0",
+    "prettier-config-ali": "workspace:^"
   },
   "devDependencies": {
     "@types/command-exists": "^1.2.3",
-    "@types/node": "^20.12.4",
+    "@types/node": "^20.12.5",
     "eslint": "^8.57.0",
     "eslint-config-ali": "workspace:^",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
     "prettier": "^3.2.5",
-    "prettier-config-ali": "workspace:^",
     "rive": "^2.0.33"
   },
   "rive": {
