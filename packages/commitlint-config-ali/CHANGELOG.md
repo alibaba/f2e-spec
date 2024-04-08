@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.1.0 - 2024-04-08
+
+- 升级 conventional-changelog-conventionalcommits 4.x 到 7.x
+
 ## 1.0.0 (2023-12-18)
 
 - 稳定版
