@@ -38,7 +38,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.2.1",
     "@mdx-js/react": "^3.0.1",
-    "@types/node": "^20.12.5",
+    "@types/node": "^20.12.6",
     "commitlint-config-ali": "link:packages/commitlint-config-ali",
     "eslint": "^8.57.0",
     "eslint-config-ali": "link:packages/eslint-config-ali",
