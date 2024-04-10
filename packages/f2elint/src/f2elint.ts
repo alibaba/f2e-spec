@@ -171,6 +171,6 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
       }
     }
 
-    outro('🎉 规约初始化完成，建议安装推荐插件并重启 VS Code');
+    outro('🎉 规约初始化完成，建议安装推荐的 VS Code 插件并重启 VS Code');
   })();
 }
