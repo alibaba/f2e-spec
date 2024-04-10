@@ -14,8 +14,9 @@ const config = {
   endOfLine: 'lf',
   // 从 Prettier 3.x 开始，插件必须配置才能生效
   plugins: [
+    // VS Code 的 Prettier 插件目前有问题，不支持 import.meta.resolve
     // 排序 package.json 中的属性
-    import.meta.resolve('prettier-plugin-packagejson'),
+    // import.meta.resolve('prettier-plugin-packagejson'),
   ],
 };
 
