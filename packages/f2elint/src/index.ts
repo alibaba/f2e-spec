@@ -24,6 +24,7 @@ export async function f2elint(project: string | null = '.', options: F2elintOpti
     init(join(__dirname, '..', 'templates', t), projectFullPath, options, {
       disableLog: options.disableLog,
       prettier,
+      bumpDependencies: true,
     });
 
   await initTemplate('base');
