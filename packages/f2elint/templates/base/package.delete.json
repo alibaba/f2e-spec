@@ -1,8 +1,5 @@
 {
   "husky": null,
-  "jest": null,
-  "just": null,
-  "teleport": null,
   "eslintConfig": {
     "extends": null
   },
