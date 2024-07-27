@@ -1,5 +1,10 @@
 # 更新日志
 
+## 15.1.0 - 2024-07-27
+
+- 升级 `@typescript-eslint/eslint-plugin` 6.x 到 7.x
+- 升级 `@typescript-eslint/parser` 6.x 到 7.x
+
 ## 15.0.1 - 2024-04-03
 
 - 修复 `typescript/egg` 导入规则路径错误

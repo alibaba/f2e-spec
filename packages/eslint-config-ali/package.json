@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ali",
-  "version": "15.0.1",
+  "version": "15.1.0",
   "description": "ESLint Shareable Config for Alibaba F2E Guidelines",
   "main": "index.js",
   "keywords": [
@@ -60,8 +60,8 @@
     "@babel/core": "^7.23.9",
     "@babel/eslint-parser": "^7.23.10",
     "@babel/preset-react": "^7.23.3",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
     "eslint-config-egg": "^13.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.1",
