@@ -1,6 +1,6 @@
 {
   "name": "f2elint",
-  "version": "4.7.1",
+  "version": "4.8.0",
   "description": "Linter for Alibaba F2E Guidelines",
   "keywords": [
     "f2elint",
@@ -57,7 +57,8 @@
     "start": "rive start",
     "test": "rive test",
     "test:ui": "rive test --ui",
-    "test:watch": "rive test --watch"
+    "test:watch": "rive test --watch",
+    "prepare": "husky"
   },
   "prettier": "prettier-config-ali",
   "eslintConfig": {
