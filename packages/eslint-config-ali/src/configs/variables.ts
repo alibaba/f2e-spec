@@ -1,15 +1,7 @@
-module.exports = {
-  // 预设的环境，使用这些环境中的全局变量不会被 no-undef 报错
-  // @link https://eslint.org/docs/user-guide/configuring#specifying-environments
-  env: {
-    browser: true,
-    es6: true,
-    jasmine: true,
-    jest: true,
-    jquery: true,
-    mocha: true,
-    node: true,
-  },
+import type { Linter } from 'eslint';
+
+/** Variables */
+const variables: Linter.Config = {
   rules: {
     // 强制或禁止在变量声明时进行赋值
     'init-declarations': 'off',
@@ -46,3 +38,5 @@ module.exports = {
     'no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
   },
 };
+
+export default variables;

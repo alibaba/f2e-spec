@@ -1,4 +1,7 @@
-module.exports = {
+import type { Linter } from 'eslint';
+
+/** ES6 */
+const es6: Linter.Config = {
   rules: {
     // 箭头函数-函数体风格
     // @reason 允许灵活使用
@@ -166,3 +169,5 @@ module.exports = {
     'yield-star-spacing': ['error', 'after'],
   },
 };
+
+export default es6;

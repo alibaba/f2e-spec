@@ -1,4 +1,7 @@
-module.exports = {
+import type { Linter } from 'eslint';
+
+const possibleErrors: Linter.Config = {
+  name: 'ali/possible-errors',
   rules: {
     // for 循环中的计数器应朝着正确方向移动
     'for-direction': 'error',
@@ -18,7 +21,7 @@ module.exports = {
     // 不要在条件表达式中使用赋值语句
     'no-cond-assign': ['error', 'always'],
 
-    // 生产环境禁止使用 console
+    // 生产环境禁止使用 console
     'no-console': 'warn',
 
     // 不要在条件表达式中使用常量
@@ -124,3 +127,5 @@ module.exports = {
     'valid-typeof': ['error', { requireStringLiterals: true }],
   },
 };
+
+export default possibleErrors;

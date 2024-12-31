@@ -1,4 +1,6 @@
-module.exports = {
+import type { Linter } from 'eslint';
+
+const style: Linter.Config = {
   rules: {
     // 强制在数组开括号后和闭括号前换行
     'array-bracket-newline': 'off',
@@ -349,7 +351,7 @@ module.exports = {
     // 强制操作符使用一致的换行符
     'operator-linebreak': 'off',
 
-    // 块的开始和结束不能是空行
+    // 块的开始和结束不能是空行
     'padded-blocks': ['warn', { blocks: 'never', classes: 'never', switches: 'never' }],
 
     // 要求或禁止在语句间填充空行
@@ -443,3 +445,5 @@ module.exports = {
     'wrap-regex': 'off',
   },
 };
+
+export default style;

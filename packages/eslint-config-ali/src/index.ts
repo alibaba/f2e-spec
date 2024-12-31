@@ -1,3 +1,11 @@
-const ali = {};
+import jsBase from './presets/js/base';
+import tsBase from './presets/ts/base';
 
-export default ali;
+export default {
+  js: {
+    base: jsBase,
+  },
+  ts: {
+    base: tsBase,
+  },
+};

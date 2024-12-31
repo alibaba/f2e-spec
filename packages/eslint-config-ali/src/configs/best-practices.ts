@@ -1,4 +1,8 @@
-module.exports = {
+import type { Linter } from 'eslint';
+
+/** Best practices */
+const bestPractices: Linter.Config = {
+  name: 'ali/best-practices',
   rules: {
     // 强制 getter 和 setter 在对象中成对出现
     'accessor-pairs': 'off',
@@ -282,3 +286,5 @@ module.exports = {
     yoda: 'warn',
   },
 };
+
+export default bestPractices;
