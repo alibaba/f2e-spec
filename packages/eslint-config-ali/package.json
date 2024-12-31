@@ -2,21 +2,22 @@
   "name": "eslint-config-ali",
   "version": "15.1.0",
   "description": "ESLint Shareable Config for Alibaba F2E Guidelines",
-  "main": "index.js",
   "keywords": [
     "eslint",
     "eslintconfig",
     "f2elint",
     "Alibaba F2E Guidelines"
   ],
+  "homepage": "https://github.com/alibaba/f2e-spec",
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/alibaba/f2e-spec"
   },
-  "bugs": {
-    "url": "https://github.com/alibaba/f2e-spec/issues"
-  },
-  "homepage": "https://github.com/alibaba/f2e-spec",
+  "funding": "https://github.com/sponsors/alibaba",
+  "license": "MIT",
   "author": {
     "name": "Sabo",
     "email": "bowei.jbw@gmail.com"
@@ -40,22 +41,28 @@
       "email": "cstyles@qq.com"
     }
   ],
-  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "lint": "eslint ./",
-    "test": "rive test",
+    "build": "rive build",
+    "build:watch": "rive build --watch",
+    "lint": "rive lint",
+    "lint:fix": "rive lint --fix",
+    "prepublishOnly": "npm run test",
     "print-config": "eslint --print-config ./index.js > ./print-config.json",
-    "prepublishOnly": "npm run test"
+    "start": "rive start",
+    "test": "rive test",
+    "test:ui": "rive test --ui",
+    "test:watch": "rive test --watch"
   },
-  "eslintConfig": {
-    "extends": [
-      "ali/node",
-      "plugin:prettier/recommended"
-    ]
-  },
-  "peerDependencies": {
-    "eslint": ">=6.8.0"
-  },
+  "prettier": "prettier-config-rive",
   "dependencies": {
     "@babel/core": "^7.23.9",
     "@babel/eslint-parser": "^7.23.10",
@@ -72,9 +79,24 @@
     "vue-eslint-parser": "^9.4.2"
   },
   "devDependencies": {
-    "@types/node": "^20.11.16",
-    "eslint": "^8.56.0",
+    "@mdx-js/react": "^3.1.0",
+    "@types/node": "^20.17.10",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
     "eslint-plugin-jsx-plus": "^0.1.0",
-    "typescript": "^5.4.4"
+    "react": "^18.3.1",
+    "react-doc-ui": "^2.3.0",
+    "react-dom": "^18.3.1",
+    "rive": "^3.0.1",
+    "typescript": "^5.7.2"
+  },
+  "peerDependencies": {
+    "eslint": ">=6.8.0"
+  },
+  "rive": {
+    "template": "node",
+    "doc": {
+      "disabled": true
+    }
   }
 }
