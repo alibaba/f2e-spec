@@ -1,5 +1,8 @@
 # eslint-config-ali
 
+![Version](https://img.shields.io/npm/v/eslint-config-ali)
+![Downloads](https://img.shields.io/npm/dw/eslint-config-ali)
+
 本包是[《阿里巴巴前端规约》](https://github.com/alibaba/f2e-spec)配套的 [ESLint 可共享配置](http://eslint.org/docs/developer-guide/shareable-configs.html)，提供了多套配置文件以支持 JavaScript、TypeScript、React、Vue、Node.js 等多种项目类型。
 
 ## f2elint 接入（推荐）
@@ -11,173 +14,45 @@ npx f2elint
 ## 手动接入
 
 ```bash
-npm install --save-dev eslint eslint-config-ali
+npm install --save-dev eslint@^9 eslint-config-ali
 ```
 
 ## 项目配置
 
-### 基础 JavaScript 项目
+### 基础 JavaScript/TypeScript 项目
 
-针对未使用 React 或 Vue 的原生 JavaScript 项目，使用 ESLint 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 parser，是本包的默认配置。
+```js
+// eslint.config.mjs
+import { base } from 'eslint-config-ali';
 
-ESLint 配置：
-
-```json
-{
-  "extends": ["eslint-config-ali"]
-}
+export default [...base];
 ```
 
-### 基础 TypeScript 项目
-
-针对未使用 React 或 Vue 的 TypeScript 项目，继承了默认配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
-
-ESLint 配置：
-
-```json
-{
-  "extends": ["eslint-config-ali/typescript"]
-}
-```
-
-注意：需要保证项目安装了 `typescript@5` 依赖，同时根目录下有 `tsconfig.json` 文件。
-
-### React JavaScript 项目
+### React JavaScript/TypeScript 项目
 
 针对 JS React 项目，继承了默认配置，并启用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) 和 [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) 的规则。
 
 ESLint 配置：
 
-```json
-{
-  "extends": ["eslint-config-ali/react"]
-}
+```js
+// eslint.config.mjs
+import { react } from 'eslint-config-ali';
+
+export default [...react];
 ```
 
-如果需要无障碍能力：
-
-```json
-{
-  "extends": ["eslint-config-ali/react", "eslint-config-ali/jsx-a11y"]
-}
-```
-
-### TypeScript + React 项目
-
-针对 TS React 项目，继承了 JS React 的配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
-
-ESLint 配置：
-
-```json
-{
-  "extends": ["eslint-config-ali/typescript/react"]
-}
-```
-
-如果需要无障碍能力：
-
-```json
-{
-  "extends": [
-    "eslint-config-ali/typescript/react",
-    "eslint-config-ali/jsx-a11y"
-  ]
-}
-```
-
-### Vue JavaScript 项目
+### Vue JavaScript/TypeScript 项目
 
 针对 JS Vue 的项目，继承了默认配置，并启用了 [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) 插件的规则，使用 [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser) 作为 parser。
 
 ESLint 配置：
 
-```json
-{
-  "extends": ["eslint-config-ali/vue"]
-}
+```js
+// eslint.config.mjs
+import { vue } from 'eslint-config-ali';
+
+export default [...vue];
 ```
-
-### Vue TypeScript
-
-针对 TS Vue 项目，继承了 JS Vue 的配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
-
-ESLint 配置：
-
-```json
-{
-  "extends": ["eslint-config-ali/typescript/vue"]
-}
-```
-
-### Node.js JavaScript 项目
-
-针对 Node.js 项目，规则由 ESLint 原生规则和 [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) 提供。
-
-ESLint 配置：
-
-```json
-{
-  "extends": ["eslint-config-ali/node"]
-}
-```
-
-### Node.js TypeScript 项目
-
-针对未使用 React 和 Vue 的 TypeScript(Node) 项目，继承了 JS Node.js 配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
-
-ESLint 配置：
-
-```json
-{
-  "extends": ["eslint-config-ali/typescript/node"]
-}
-```
-
-### Egg.js JavaScript 项目
-
-针对 Egg.js 项目，继承了 Node.js 配置和 [egg-config-egg 的 node 规则](https://github.com/eggjs/eslint-config-egg/blob/master/lib/rules/node.js)。
-
-ESLint 配置：
-
-```json
-{
-  "extends": ["eslint-config-ali/egg"]
-}
-```
-
-### Egg.js TypeScript 项目
-
-针对未使用 React 和 Vue 的 TypeScript(Node) 项目，继承了 JS Node.js 配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
-
-ESLint 配置：
-
-```json
-{
-  "extends": ["eslint-config-ali/typescript/egg"]
-}
-```
-
-### 配合 Prettier 使用
-
-如果你的项目使用 [Prettier](https://prettier.io/) 进行代码格式化，本包的一些规则可能会跟 Prettier 格式化结果有冲突，[例如这条规则](https://github.com/typescript-eslint/typescript-eslint/issues/372)。为了避免冲突，你需要手动安装 [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) 和 [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)：
-
-安装依赖：
-
-```sh
-npm install --save-dev eslint-config-prettier eslint-plugin-prettier
-```
-
-ESLint 配置：
-
-```json
-{
-  "extends": ["eslint-config-ali/typescript/react", "plugin:prettier/recommended"]
-}
-```
-
-## 将风格问题降级
-
-为了保证一致的编码风格，本包中大量风格相关的规则被设为了 error 级别，以引起开发者的足够重视。如果你觉得风格问题不足以是 error 级别（有些用户根据 ESLint error 进行流程卡点），本包还提供了一套名为 'essential' 的配置文件，这套配置将所有风格问题降级为 warn 级别，仅将必要问题报告为 error，引用方式为在相应配置的 `eslint-config-ali` 后面加上 `/essential`，如对 JS React 项目为 `eslint-config-ali/essential/react`、对 TS Vue 项目为 `eslint-config-ali/essential/typescript/vue`
 
 ## 了解更多
 
