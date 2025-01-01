@@ -40,7 +40,7 @@
     "@mdx-js/react": "^3.1.0",
     "@types/node": "^20.16.14",
     "commitlint-config-ali": "link:packages/commitlint-config-ali",
-    "eslint": "^8.57.1",
+    "eslint": "^9.0.0",
     "eslint-config-ali": "link:packages/eslint-config-ali",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",

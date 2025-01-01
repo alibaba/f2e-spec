@@ -1,6 +1,7 @@
 import type { Linter } from 'eslint';
 
 const style: Linter.Config = {
+  name: 'ali/style',
   rules: {
     // 强制在数组开括号后和闭括号前换行
     'array-bracket-newline': 'off',

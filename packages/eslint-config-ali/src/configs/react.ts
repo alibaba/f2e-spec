@@ -1,11 +1,12 @@
-/**
- * 本文件的规则由 eslint-plugin-react 和 eslint-plugin-react-hooks 提供
- * @link https://github.com/yannickcr/eslint-plugin-react
- * @link https://www.npmjs.com/package/eslint-plugin-react-hooks
- */
+import reactHooks from 'eslint-plugin-react-hooks';
+import globals from 'globals';
+import defineConfig from '../utils/defineConfig';
 
-module.exports = {
-  plugins: ['react', 'react-hooks'],
+export default defineConfig({
+  name: 'ali/react',
+  plugins: {
+    'react-hooks': reactHooks,
+  },
   rules: {
     // https://github.com/alibaba/f2e-spec/issues/95
     // 防止 React 组件定义中缺少 displayName
@@ -340,15 +341,5 @@ module.exports = {
     // @link https://reactjs.org/docs/hooks-rules.html
     'react-hooks/exhaustive-deps': 'warn',
   },
-  settings: {
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.json'],
-      },
-    },
-    react: {
-      pragma: 'React',
-      version: 'detect',
-    },
-  },
-};
+  languageOptions: { globals: globals.browser },
+});

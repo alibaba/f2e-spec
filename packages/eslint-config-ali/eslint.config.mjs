@@ -1,3 +1,3 @@
-import { base } from 'eslint-config-rive';
+import { base } from './dist';
 
 export default [...base, { ignores: ['fixtures'] }];

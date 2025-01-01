@@ -1,11 +1,8 @@
-/**
- * 本文件的规则由 eslint-plugin-vue 提供，使用 vue-eslint-parser 作为 parser
- * @link https://eslint.vuejs.org/rules/
- */
+import globals from 'globals';
+import defineConfig from '../utils/defineConfig';
 
-module.exports = {
-  parser: 'vue-eslint-parser',
-  plugins: ['vue'],
+export default defineConfig({
+  name: 'ali/vue',
   rules: {
     // 给 template 提供 eslint-disable 的能力，支持如下注释：
     // eslint-disable，eslint-enable，eslint-disable-line，eslint-disable-next-line
@@ -93,4 +90,5 @@ module.exports = {
     'vue/valid-v-pre': 'error',
     'vue/valid-v-show': 'error',
   },
-};
+  languageOptions: { globals: globals.browser },
+});

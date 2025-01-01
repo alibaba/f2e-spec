@@ -27,7 +27,6 @@
   "author": {
     "name": "lakerswgq",
     "email": "lakerswgq@gmail.com"
-
   },
   "contributors": [
     {
@@ -46,6 +45,6 @@
     "require-all": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.7.0"
+    "eslint": "^9.0.0"
   }
 }

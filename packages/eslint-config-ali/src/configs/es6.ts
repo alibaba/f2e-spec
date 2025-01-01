@@ -2,6 +2,7 @@ import type { Linter } from 'eslint';
 
 /** ES6 */
 const es6: Linter.Config = {
+  name: 'ali/es6',
   rules: {
     // 箭头函数-函数体风格
     // @reason 允许灵活使用

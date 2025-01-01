@@ -5,7 +5,7 @@
     "lint:fix": "<% if (prettier) { %>prettier --write . && <% } %>eslint --fix .<% if (stylelint) { %> && stylelint --fix \"**/*.{css,less,scss}\"<% } %>"
   },
   "devDependencies": {
-    "eslint": "^8.56.0",
-    "eslint-config-ali": "^15.0.0"
+    "eslint": "^9.0.0",
+    "eslint-config-ali": "^16.0.0"
   }
 }

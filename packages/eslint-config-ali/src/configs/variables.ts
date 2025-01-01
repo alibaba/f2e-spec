@@ -1,7 +1,7 @@
-import type { Linter } from 'eslint';
+import defineConfig from '../utils/defineConfig';
 
-/** Variables */
-const variables: Linter.Config = {
+export default defineConfig({
+  name: 'ali/variables',
   rules: {
     // 强制或禁止在变量声明时进行赋值
     'init-declarations': 'off',
@@ -37,6 +37,4 @@ const variables: Linter.Config = {
     // 不要在声明前就使用变量
     'no-use-before-define': ['error', { functions: false, classes: false, variables: false }],
   },
-};
-
-export default variables;
+});

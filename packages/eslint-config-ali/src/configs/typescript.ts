@@ -1,27 +1,26 @@
-/**
- * 本文件的规则由 @typescript-eslint/eslint-plugin 提供，使用 @typescript-eslint/parser 作为 parser
- * @link https://github.com/typescript-eslint/typescript-eslint
- */
+import stylisticTs from '@stylistic/eslint-plugin-ts';
+import { Linter } from 'eslint';
+import ts from 'typescript-eslint';
 
-module.exports = {
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
-  settings: {
-    // Apply special parsing for TypeScript files
-    'import/parsers': {
-      '@typescript-eslint/parser': ['.ts', '.d.ts', '.tsx'],
-    },
-    // Use eslint-import-resolver-typescript
-    'import/resolver': {
-      typescript: {},
-    },
-    // Append 'ts' extensions to 'import/extensions' setting
-    'import/extensions': ['.js', '.ts', '.mjs'],
+/** TypeScript */
+const typescript = ts.config({
+  name: 'ali/typescripts',
+  files: ['**/*.{cts,mts,ts,tsx,vue}'],
+  extends: [ts.configs.recommended],
+  plugins: {
+    '@stylistic/ts': stylisticTs,
   },
-  parserOptions: {
-    project: './tsconfig.json', // default project config
-    createDefaultProgram: true, // 兼容未在 tsconfig.json 中 provided 的文件
-    extraFileExtensions: ['.vue'],
+  languageOptions: {
+    parserOptions: {
+      project: true,
+      projectService: true,
+      ecmaFeatures: {
+        jsx: true,
+        globalReturn: true,
+      },
+      ecmaVersion: 'latest',
+      extraFileExtensions: ['.vue'],
+    },
   },
   rules: {
     /**
@@ -76,7 +75,7 @@ module.exports = {
      * @extend
      */
     'brace-style': 'off',
-    '@typescript-eslint/brace-style': ['error', '1tbs', { allowSingleLine: true }],
+    '@stylistic/ts/brace-style': ['error', '1tbs', { allowSingleLine: true }],
 
     /**
      * 【推荐】类的属性如果是字面量，则必须是只读属性而不能用 getter
@@ -90,7 +89,7 @@ module.exports = {
      * @extend
      */
     'comma-spacing': 'off',
-    '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
+    '@stylistic/ts/comma-spacing': ['error', { before: false, after: true }],
 
     /**
      * 【强制】类型断言必须使用 as Type 而非 <T>，对象字面量禁止类型断言（断言成 any 除外）
@@ -149,14 +148,14 @@ module.exports = {
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/func-call-spacing.md
      */
     'func-call-spacing': 'off',
-    '@typescript-eslint/func-call-spacing': ['error', 'never'],
+    '@stylistic/ts/func-call-spacing': ['error', 'never'],
 
     /**
      * 【强制】缩进为两个空格
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
      */
     indent: 'off',
-    '@typescript-eslint/indent': [
+    '@stylistic/ts/indent': [
       'error',
       2,
       {
@@ -213,7 +212,7 @@ module.exports = {
      * @extend
      */
     'keyword-spacing': 'off',
-    '@typescript-eslint/keyword-spacing': [
+    '@stylistic/ts/keyword-spacing': [
       'error',
       {
         before: true,
@@ -232,13 +231,13 @@ module.exports = {
      * @extend
      */
     'lines-between-class-members': 'off',
-    '@typescript-eslint/lines-between-class-members': 'off',
+    '@stylistic/ts/lines-between-class-members': 'off',
 
     /**
      * 【强制】interface/type 类型中保持一致的成员分隔符分号「;」，单行类型的最后一个元素不加分号
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md
      */
-    '@typescript-eslint/member-delimiter-style': 'error',
+    '@stylistic/ts/member-delimiter-style': 'error',
 
     /**
      * 【推荐】类成员的遵循一定的排序规则
@@ -367,7 +366,7 @@ module.exports = {
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
      */
     'no-extra-parens': 'off',
-    '@typescript-eslint/no-extra-parens': 'off',
+    '@stylistic/ts/no-extra-parens': 'off',
 
     /**
      * 【强制】禁止不必要的分号
@@ -375,7 +374,7 @@ module.exports = {
      * @extend
      */
     'no-extra-semi': 'off',
-    '@typescript-eslint/no-extra-semi': 'error',
+    '@stylistic/ts/no-extra-semi': 'error',
 
     /**
      * 【关闭】禁止定义没必要的类，比如只有静态方法的类
@@ -670,7 +669,7 @@ module.exports = {
      * 【强制】ts 文件字符串字面量优先使用单引号
      */
     quotes: 'off',
-    '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true }],
+    '@stylistic/ts/quotes': ['error', 'single', { avoidEscape: true }],
 
     /**
      * 【关闭】async 函数中必须存在 await 语句
@@ -700,14 +699,14 @@ module.exports = {
      * @extend
      */
     semi: 'off',
-    '@typescript-eslint/semi': ['error', 'always'],
+    '@stylistic/ts/semi': ['error', 'always'],
 
     /**
      * 【强制】命名函数的空格规则，遵循 JS 约定
      * @extend
      */
     'space-before-function-paren': 'off',
-    '@typescript-eslint/space-before-function-paren': [
+    '@stylistic/ts/space-before-function-paren': [
       'error',
       {
         anonymous: 'always',
@@ -741,7 +740,7 @@ module.exports = {
     /**
      * 【强制】定义类型时应正确添加空格
      */
-    '@typescript-eslint/type-annotation-spacing': 'error',
+    '@stylistic/ts/type-annotation-spacing': 'error',
 
     /**
      * 【强制】interface 和 type 定义时必须声明成员的类型
@@ -777,24 +776,6 @@ module.exports = {
     'no-redeclare': 'off',
     '@typescript-eslint/no-redeclare': ['error'],
   },
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      rules: {
-        /* Using TypeScript makes it safe enough to disable the checks below */
+}) as Linter.Config[];
 
-        /**
-         * ESLint has trouble when deal with TypeScript global declarations.
-         * According to ESLint's document:
-         * > It is safe to disable this rule when using TypeScript because
-         * > TypeScript's compiler enforces this check.
-         */
-        'no-undef': 'off',
-
-        // Disable ESLint-based module resolution check for improved monorepo support
-        // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md
-        'import/no-unresolved': 'off',
-      },
-    },
-  ],
-};
+export default typescript;
