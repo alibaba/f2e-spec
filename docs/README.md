@@ -24,13 +24,21 @@ the following:
 
 Tools help you to quickly integrate code checking into your projects. Tools include the following:
 
-- [f2elint](https://www.npmjs.com/package/f2elint)
-- [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali)
-- [eslint-plugin-ali](https://www.npmjs.com/package/eslint-plugin-ali)
-- [stylelint-config-ali](https://www.npmjs.com/package/stylelint-config-ali)
-- [prettier-config-ali](https://www.npmjs.com/package/prettier-config-ali)
-- [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali)
-- [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali)
+| Package name              | Package version                                                  | Weekly downloads                                                    |
+| ------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [f2elint]                 | ![version](https://img.shields.io/npm/v/f2elint)                 | ![downloads](https://img.shields.io/npm/dw/f2elint)                 |
+| [eslint-config-ali]       | ![version](https://img.shields.io/npm/v/eslint-config-ali)       | ![downloads](https://img.shields.io/npm/dw/eslint-config-ali)       |
+| [stylelint-config-ali]    | ![version](https://img.shields.io/npm/v/stylelint-config-ali)    | ![downloads](https://img.shields.io/npm/dw/stylelint-config-ali)    |
+| [prettier-config-ali]     | ![version](https://img.shields.io/npm/v/prettier-config-ali)     | ![downloads](https://img.shields.io/npm/dw/prettier-config-ali)     |
+| [commitlint-config-ali]   | ![version](https://img.shields.io/npm/v/commitlint-config-ali)   | ![downloads](https://img.shields.io/npm/dw/commitlint-config-ali)   |
+| [markdownlint-config-ali] | ![version](https://img.shields.io/npm/v/markdownlint-config-ali) | ![downloads](https://img.shields.io/npm/dw/markdownlint-config-ali) |
+
+[f2elint]: https://www.npmjs.com/package/f2elint
+[eslint-config-ali]: https://www.npmjs.com/package/eslint-config-ali
+[stylelint-config-ali]: https://www.npmjs.com/package/stylelint-config-ali
+[prettier-config-ali]: https://www.npmjs.com/package/prettier-config-ali
+[commitlint-config-ali]: https://www.npmjs.com/package/commitlint-config-ali
+[markdownlint-config-ali]: https://www.npmjs.com/package/markdownlint-config-ali
 
 ## Getting started
 

@@ -2,7 +2,7 @@
 
 **《阿里巴巴前端规约》**是在阿里巴巴集团内广泛使用的一套前端编码和工程规范，致力于通过统一编码风格、普及最佳实践和代码缺陷检查帮助团队降低协作成本、提升前端项目的可维护性和稳定性。
 
-本规约主要包括**规约文档**和**规约工具**两部分。您可以通过阅读规约文档了解各前端语言、框架及工程规范，并使用  等配套工具来为项目接入规约检查。
+本规约主要包括**规约文档**和**规约工具**两部分。您可以通过阅读规约文档了解各前端语言、框架及工程规范，并使用 等配套工具来为项目接入规约检查。
 
 规约文档帮助您理解规约细节并编写高质量的代码。规约文档包括：
 
@@ -21,13 +21,21 @@
 
 规约工具帮助您将代码检查能力快速集成到项目中。规约工具包括：
 
-- [f2elint](https://www.npmjs.com/package/f2elint)
-- [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali)
-- [eslint-plugin-ali](https://www.npmjs.com/package/eslint-plugin-ali)
-- [stylelint-config-ali](https://www.npmjs.com/package/stylelint-config-ali)
-- [prettier-config-ali](https://www.npmjs.com/package/prettier-config-ali)
-- [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali)
-- [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali)
+| 包名                      | 版本                                                             | 周下载量                                                            |
+| ------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [f2elint]                 | ![version](https://img.shields.io/npm/v/f2elint)                 | ![downloads](https://img.shields.io/npm/dw/f2elint)                 |
+| [eslint-config-ali]       | ![version](https://img.shields.io/npm/v/eslint-config-ali)       | ![downloads](https://img.shields.io/npm/dw/eslint-config-ali)       |
+| [stylelint-config-ali]    | ![version](https://img.shields.io/npm/v/stylelint-config-ali)    | ![downloads](https://img.shields.io/npm/dw/stylelint-config-ali)    |
+| [prettier-config-ali]     | ![version](https://img.shields.io/npm/v/prettier-config-ali)     | ![downloads](https://img.shields.io/npm/dw/prettier-config-ali)     |
+| [commitlint-config-ali]   | ![version](https://img.shields.io/npm/v/commitlint-config-ali)   | ![downloads](https://img.shields.io/npm/dw/commitlint-config-ali)   |
+| [markdownlint-config-ali] | ![version](https://img.shields.io/npm/v/markdownlint-config-ali) | ![downloads](https://img.shields.io/npm/dw/markdownlint-config-ali) |
+
+[f2elint]: https://www.npmjs.com/package/f2elint
+[eslint-config-ali]: https://www.npmjs.com/package/eslint-config-ali
+[stylelint-config-ali]: https://www.npmjs.com/package/stylelint-config-ali
+[prettier-config-ali]: https://www.npmjs.com/package/prettier-config-ali
+[commitlint-config-ali]: https://www.npmjs.com/package/commitlint-config-ali
+[markdownlint-config-ali]: https://www.npmjs.com/package/markdownlint-config-ali
 
 ## 快速开始
 
