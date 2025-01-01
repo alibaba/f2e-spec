@@ -18,21 +18,9 @@ export default defineConfig({
     // prop 值为 true 时，可以省略它的值
     'react/jsx-boolean-value': ['error', 'never', { always: [] }],
 
-    // 标签的属性有多行时，结束标签需另起一行
-    // @unessential
-    'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
-
     // JSX 语法闭合标签的缩进和换行
     // @unessential
     'react/jsx-closing-tag-location': 'error',
-
-    // JSX 行内属性间仅有一个空格
-    // @unessential
-    'react/jsx-props-no-multi-spaces': 'error',
-
-    // JSX 属性的大括号内部两侧无空格
-    // @unessential
-    'react/jsx-curly-spacing': ['error', 'never', { allowMultiline: true }],
 
     // JSX 中命名事件处理函数的前缀约定
     'react/jsx-handler-names': [
@@ -43,16 +31,8 @@ export default defineConfig({
       },
     ],
 
-    // JSX 属性使用 2 个空格缩进
-    // @unessential
-    'react/jsx-indent-props': ['error', 2],
-
     // JSX 语法检查数组和迭代器的 key
     'react/jsx-key': 'off',
-
-    // 标签属性的换行，如果标签有多个属性，且存在换行，则每个属性都需要换行独占一行
-    // @unessential
-    'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
 
     // 不要在 JSX 属性中使用 .bind()
     'react/jsx-no-bind': [
@@ -73,15 +53,6 @@ export default defineConfig({
     // 不要使用未声明的组件
     'react/jsx-no-undef': 'error',
 
-    // 使用大驼峰风格命名组件
-    'react/jsx-pascal-case': [
-      'error',
-      {
-        allowAllCaps: true,
-        ignore: [],
-      },
-    ],
-
     // 类型检查器的属性名按首字母排序
     'react/sort-prop-types': [
       'off',
@@ -89,22 +60,6 @@ export default defineConfig({
         ignoreCase: true,
         callbacksLast: false,
         requiredFirst: false,
-      },
-    ],
-
-    // 本条废弃，用新规则代替 react/jsx-sort-props
-    'react/jsx-sort-prop-types': 'off',
-
-    // 属性按首字母排序
-    'react/jsx-sort-props': [
-      'off',
-      {
-        ignoreCase: true,
-        callbacksLast: false,
-        shorthandFirst: false,
-        shorthandLast: false,
-        noSortAlphabetically: false,
-        reservedFirst: true,
       },
     ],
 
@@ -213,30 +168,6 @@ export default defineConfig({
       },
     ],
 
-    // 多行的 JSX 标签需用小括号包裹
-    // @unessential
-    'react/jsx-wrap-multilines': [
-      'error',
-      {
-        declaration: true,
-        assignment: true,
-        return: true,
-        arrow: true,
-      },
-    ],
-
-    // 设置第一个属性的位置。multiline-multiprop：如果JSX标签占用多行并且有多个属性，则第一个属性应始终放在新行上
-    // @unessential
-    'react/jsx-first-prop-new-line': ['error', 'multiline-multiprop'],
-
-    // 不要在 JSX 属性的等号两边加空格
-    // @unessential
-    'react/jsx-equals-spacing': ['error', 'never'],
-
-    // JSX 使用 2 个空格缩进
-    // @unessential
-    'react/jsx-indent': ['error', 2],
-
     // 不要单独使用 target='_blank'
     'react/jsx-no-target-blank': 'warn',
 
@@ -289,20 +220,6 @@ export default defineConfig({
     // 禁止将 children 作为属性名
     'react/no-children-prop': 'error',
 
-    // 自闭合标签的斜线前有且仅有一个空格
-    // @unessential
-    'react/jsx-tag-spacing': [
-      'error',
-      {
-        closingSlash: 'never',
-        beforeSelfClosing: 'always',
-        afterOpening: 'never',
-      },
-    ],
-
-    // 该条废弃，被替代为 jsx-tag-spacing
-    'react/jsx-space-before-closing': ['off', 'always'],
-
     // 不要用数组索引作为 map 元素的 key
     'react/no-array-index-key': 'warn',
 
@@ -329,9 +246,6 @@ export default defineConfig({
 
     // 禁止大小写拼写错误，该检测规则未写入规约
     'react/no-typos': 'error',
-
-    // JSX 属性或子元素强制使用花括号或禁止使用不必要的花括号
-    'react/jsx-curly-brace-presence': 'off',
 
     // Checks rules of Hooks
     // @link https://reactjs.org/docs/hooks-rules.html

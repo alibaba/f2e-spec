@@ -6,6 +6,7 @@
 - **破坏性变更**: 产物改为 ESM，移除了原有文件导出，只导出单一默认对象
 - **破坏性变更**: 移除 `rax`, `jsx-a11y`, `es5`, `node`, `egg` 配置
 - 支持 `.gitignore` (仅限项目根目录)，不再需要 `.eslintignore` 文件
+- 引入 `@stylistic/eslint-plugin` 统一 JS/TS/JSX 代码风格类规则
 
 ## 15.1.0 - 2024-07-27
 

@@ -34,10 +34,6 @@ const bestPractices: Linter.Config = {
     // switch 语句需要始终包含 default 分支
     'default-case': ['warn', { commentPattern: '^no default$' }],
 
-    // 统一在点号之前换行
-    // @unessential
-    'dot-location': ['error', 'property'],
-
     // 优先使用 . 访问对象的属性
     'dot-notation': ['error', { allowKeywords: true }],
 
@@ -96,9 +92,6 @@ const bestPractices: Linter.Config = {
     // 不要让 case 语句落空
     'no-fallthrough': 'error',
 
-    // 不要省略小数点前或小数点后的 0
-    'no-floating-decimal': 'error',
-
     // 禁止对原生对象或只读的全局对象进行赋值
     'no-global-assign': ['error', { exceptions: [] }],
 
@@ -144,15 +137,6 @@ const bestPractices: Linter.Config = {
         ignoreArrayIndexes: true,
         enforceConst: true,
         detectObjects: false,
-      },
-    ],
-
-    // 禁止出现多个连续空格
-    // @unessential
-    'no-multi-spaces': [
-      'error',
-      {
-        ignoreEOLComments: false,
       },
     ],
 
@@ -278,9 +262,6 @@ const bestPractices: Linter.Config = {
 
     // 要求所有的 var 声明出现在它们所在的作用域顶部
     'vars-on-top': 'off',
-
-    // 将立即执行函数表达式（IIFE）用小括号包裹
-    'wrap-iife': ['error', 'any', { functionPrototypeMethods: false }],
 
     // 使用 color === 'red' 而不是 'red' === color
     yoda: 'warn',

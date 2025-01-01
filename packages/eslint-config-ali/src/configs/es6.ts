@@ -14,27 +14,11 @@ const es6: Linter.Config = {
       },
     ],
 
-    // 箭头函数-函数参数始终加上小括号
-    // @reason 同 prettier 默认配置值一致：https://prettier.io/docs/en/options.html#arrow-function-parentheses
-    'arrow-parens': ['warn', 'always'],
-
-    // 箭头函数的箭头前后各留一个空格
-    // @unessential
-    'arrow-spacing': ['error', { before: true, after: true }],
-
     // 子类的 constructor 中必须使用 super，非子类的 constructor 中不能使用 super
     'constructor-super': 'error',
 
-    // generator 函数的 * 号前面无空格，后面有一个空格
-    // @unessential
-    'generator-star-spacing': ['error', { before: false, after: true }],
-
     // 禁止对类声明变量重新赋值
     'no-class-assign': 'error',
-
-    // 避免箭头函数与比较操作符产生混淆
-    // @unessential
-    'no-confusing-arrow': 'error',
 
     // 禁止修改 const 声明的变量
     'no-const-assign': 'error',
@@ -145,9 +129,6 @@ const es6: Linter.Config = {
     // generator 函数内必须有 yield 语句
     'require-yield': 'error',
 
-    // 剩余和扩展操作符与操作对象间不应有空格
-    'rest-spread-spacing': ['error', 'never'],
-
     // 为 import 排序
     'sort-imports': [
       'off',
@@ -160,14 +141,6 @@ const es6: Linter.Config = {
 
     // 创建 Symbol 时必须传入参数
     'symbol-description': 'warn',
-
-    // 模板字符串中的大括号内部两侧无空格
-    // @unessential
-    'template-curly-spacing': 'warn',
-
-    // yield* 表达式的 * 号前面无空格，后面有一个空格
-    // @unessential
-    'yield-star-spacing': ['error', 'after'],
   },
 };
 

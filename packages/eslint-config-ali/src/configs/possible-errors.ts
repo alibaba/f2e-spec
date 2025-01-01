@@ -54,22 +54,6 @@ const possibleErrors: Linter.Config = {
     // 避免不必要的布尔类型转换
     'no-extra-boolean-cast': 'error',
 
-    // 禁止不必要的小括号
-    'no-extra-parens': [
-      'off',
-      'all',
-      {
-        conditionalAssign: true,
-        nestedBinaryExpressions: false,
-        returnAssign: false,
-        ignoreJSX: 'all', // delegate to eslint-plugin-react
-        enforceForArrowConditionals: false,
-      },
-    ],
-
-    // 禁止不必要的分号
-    'no-extra-semi': 'error',
-
     // 不要对函数声明重新赋值
     'no-func-assign': 'error',
 

@@ -1,4 +1,3 @@
-import stylisticTs from '@stylistic/eslint-plugin-ts';
 import { Linter } from 'eslint';
 import ts from 'typescript-eslint';
 
@@ -7,9 +6,6 @@ const typescript = ts.config({
   name: 'ali/typescripts',
   files: ['**/*.{cts,mts,ts,tsx,vue}'],
   extends: [ts.configs.recommended],
-  plugins: {
-    '@stylistic/ts': stylisticTs,
-  },
   languageOptions: {
     parserOptions: {
       project: true,
@@ -70,26 +66,10 @@ const typescript = ts.config({
     '@typescript-eslint/ban-types': 'off',
 
     /**
-     * 【强制】大括号换行风格：one true brace style 风格，且单行代码块可不换行
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/brace-style.md
-     * @extend
-     */
-    'brace-style': 'off',
-    '@stylistic/ts/brace-style': ['error', '1tbs', { allowSingleLine: true }],
-
-    /**
      * 【推荐】类的属性如果是字面量，则必须是只读属性而不能用 getter
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/class-literal-property-style.md
      */
     '@typescript-eslint/class-literal-property-style': ['warn', 'fields'],
-
-    /**
-     * 【强制】逗号的前面无空格，后面有空格
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/comma-spacing.md
-     * @extend
-     */
-    'comma-spacing': 'off',
-    '@stylistic/ts/comma-spacing': ['error', { before: false, after: true }],
 
     /**
      * 【强制】类型断言必须使用 as Type 而非 <T>，对象字面量禁止类型断言（断言成 any 除外）
@@ -144,100 +124,12 @@ const typescript = ts.config({
     '@typescript-eslint/explicit-module-boundary-types': 'off',
 
     /**
-     * 【强制】函数名与调用它的括号间无空格
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/func-call-spacing.md
-     */
-    'func-call-spacing': 'off',
-    '@stylistic/ts/func-call-spacing': ['error', 'never'],
-
-    /**
-     * 【强制】缩进为两个空格
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/indent.md
-     */
-    indent: 'off',
-    '@stylistic/ts/indent': [
-      'error',
-      2,
-      {
-        SwitchCase: 1,
-        VariableDeclarator: 1,
-        outerIIFEBody: 1,
-        // MemberExpression: null,
-        FunctionDeclaration: {
-          parameters: 1,
-          body: 1,
-        },
-        FunctionExpression: {
-          parameters: 1,
-          body: 1,
-        },
-        CallExpression: {
-          arguments: 1,
-        },
-        ArrayExpression: 1,
-        ObjectExpression: 1,
-        ImportDeclaration: 1,
-        flatTernaryExpressions: false,
-        // list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
-        ignoredNodes: [
-          'JSXElement',
-          'JSXElement > *',
-          'JSXAttribute',
-          'JSXIdentifier',
-          'JSXNamespacedName',
-          'JSXMemberExpression',
-          'JSXSpreadAttribute',
-          'JSXExpressionContainer',
-          'JSXOpeningElement',
-          'JSXClosingElement',
-          'JSXText',
-          'JSXEmptyExpression',
-          'JSXSpreadChild',
-        ],
-        ignoreComments: false,
-      },
-    ],
-
-    /**
      * 【关闭】变量必须在定义的时候赋值
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/init-declarations.md
      * @extend
      */
     'init-declarations': 'off',
     '@typescript-eslint/init-declarations': 'off',
-
-    /**
-     * 【强制】关键字前后有一个空格
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/keyword-spacing.md
-     * @extend
-     */
-    'keyword-spacing': 'off',
-    '@stylistic/ts/keyword-spacing': [
-      'error',
-      {
-        before: true,
-        after: true,
-        overrides: {
-          return: { after: true },
-          throw: { after: true },
-          case: { after: true },
-        },
-      },
-    ],
-
-    /**
-     * 【关闭】类成员之间保留一个空行
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/lines-between-class-members.md
-     * @extend
-     */
-    'lines-between-class-members': 'off',
-    '@stylistic/ts/lines-between-class-members': 'off',
-
-    /**
-     * 【强制】interface/type 类型中保持一致的成员分隔符分号「;」，单行类型的最后一个元素不加分号
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/member-delimiter-style.md
-     */
-    '@stylistic/ts/member-delimiter-style': 'error',
 
     /**
      * 【推荐】类成员的遵循一定的排序规则
@@ -360,21 +252,6 @@ const typescript = ts.config({
      * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-non-null-assertion.md
      */
     '@typescript-eslint/no-extra-non-null-assertion': 'off',
-
-    /**
-     * 【关闭】禁止不必要的小括号
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-parens.md
-     */
-    'no-extra-parens': 'off',
-    '@stylistic/ts/no-extra-parens': 'off',
-
-    /**
-     * 【强制】禁止不必要的分号
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-extra-semi.md
-     * @extend
-     */
-    'no-extra-semi': 'off',
-    '@stylistic/ts/no-extra-semi': 'error',
 
     /**
      * 【关闭】禁止定义没必要的类，比如只有静态方法的类
@@ -666,12 +543,6 @@ const typescript = ts.config({
     '@typescript-eslint/promise-function-async': 'off',
 
     /**
-     * 【强制】ts 文件字符串字面量优先使用单引号
-     */
-    quotes: 'off',
-    '@stylistic/ts/quotes': ['error', 'single', { avoidEscape: true }],
-
-    /**
      * 【关闭】async 函数中必须存在 await 语句
      */
     'require-await': 'off',
@@ -695,27 +566,6 @@ const typescript = ts.config({
     '@typescript-eslint/return-await': 'off',
 
     /**
-     * 【强制】添加分号
-     * @extend
-     */
-    semi: 'off',
-    '@stylistic/ts/semi': ['error', 'always'],
-
-    /**
-     * 【强制】命名函数的空格规则，遵循 JS 约定
-     * @extend
-     */
-    'space-before-function-paren': 'off',
-    '@stylistic/ts/space-before-function-paren': [
-      'error',
-      {
-        anonymous: 'always',
-        named: 'never',
-        asyncArrow: 'always',
-      },
-    ],
-
-    /**
      * 【关闭】条件判断必须传入布尔值
      */
     '@typescript-eslint/strict-boolean-expressions': 'off',
@@ -736,11 +586,6 @@ const typescript = ts.config({
         lib: 'always',
       },
     ],
-
-    /**
-     * 【强制】定义类型时应正确添加空格
-     */
-    '@stylistic/ts/type-annotation-spacing': 'error',
 
     /**
      * 【强制】interface 和 type 定义时必须声明成员的类型
