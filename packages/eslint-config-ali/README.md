@@ -17,8 +17,6 @@ npx f2elint
 npm install --save-dev eslint@^9 eslint-config-ali
 ```
 
-## 项目配置
-
 ### 基础 JavaScript/TypeScript 项目
 
 ```js
