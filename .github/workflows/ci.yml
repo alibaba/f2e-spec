@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
       - uses: pnpm/action-setup@v3
         with:
-          version: 8
+          version: latest
       - run: pnpm install
       - run: pnpm run lint
   test:
@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v4
       - uses: pnpm/action-setup@v3
         with:
-          version: 8
+          version: latest
       - run: pnpm install
       - run: pnpm run test
   build:
@@ -35,7 +35,7 @@ jobs:
       - uses: actions/setup-node@v4
       - uses: pnpm/action-setup@v3
         with:
-          version: 8
+          version: latest
       - run: pnpm install
       - run: pnpm run build
       - run: cd packages/f2elint && pnpm run build

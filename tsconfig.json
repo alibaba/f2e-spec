@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "es2015",
+    "target": "es2017",
     "module": "esnext",
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "types": ["node", "rive/globals"],
     "lib": ["esnext"],
-    "allowJs": false,
+    "allowJs": true,
     "checkJs": false,
     "skipLibCheck": true,
     "moduleResolution": "node",
