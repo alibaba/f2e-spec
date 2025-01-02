@@ -1,3 +1,3 @@
 import { base } from './dist';
 
-export default [...base, { ignores: ['fixtures'] }];
+export default [...base, { ignores: ['bad/'] }];

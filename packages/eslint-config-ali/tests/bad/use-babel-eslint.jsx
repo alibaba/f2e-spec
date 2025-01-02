@@ -1,17 +1,17 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { bindActionCreators } from "redux";
 import {
   Breadcrumb,
   Button,
-  Search,
-  Select,
   Dropdown,
   Menu,
   Notice,
+  Search,
+  Select,
 } from "antd";
-import Layout from "layout";
 import { Translate } from "antd-i18n";
+import Layout from "layout";
+import { Component } from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 import * as actions from "../actions/index";
 
 function scoreAudioCoverFile(imgFile) {

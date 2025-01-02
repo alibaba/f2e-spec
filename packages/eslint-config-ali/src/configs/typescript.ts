@@ -5,7 +5,7 @@ import ts from 'typescript-eslint';
 const typescript = ts.config({
   name: 'ali/typescripts',
   files: ['**/*.{cts,mts,ts,tsx,vue}'],
-  extends: [ts.configs.recommended],
+  extends: [ts.configs.recommendedTypeChecked],
   languageOptions: {
     parserOptions: {
       project: true,
@@ -103,7 +103,7 @@ const typescript = ts.config({
      * @extend
      */
     'dot-notation': 'off',
-    '@typescript-eslint/dot-notation': ['error', { allowKeywords: true }],
+    '@typescript-eslint/dot-notation': 'error',
 
     /**
      * 【关闭】函数返回值必须与声明的类型一致
