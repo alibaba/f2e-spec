@@ -252,5 +252,11 @@ export default defineConfig({
     // @link https://reactjs.org/docs/hooks-rules.html
     'react-hooks/exhaustive-deps': 'warn',
   },
+  settings: {
+    react: {
+      version: 'detect',
+      defaultVersion: '18.3',
+    },
+  },
   languageOptions: { globals: globals.browser },
 });
