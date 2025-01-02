@@ -16,7 +16,7 @@
     "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare": "husky",
+    "prepare": "husky && cd packages/eslint-config-ali && npm run build",
     "start": "rive start",
     "test": "rive test"
   },
