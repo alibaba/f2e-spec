@@ -1,15 +1,13 @@
-const assert = require('assert');
-const eslint = require('eslint');
-const path = require('path');
+import { ESLint } from 'eslint';
+import path from 'node:path';
 
 describe('test/use-babel-eslint.test.js', () => {
   it('babel-eslint parser run well for react', async () => {
     const configPath = './react.js';
-    const filePath = path.join(__dirname, './fixtures/use-babel-eslint.jsx');
+    const filePath = path.join(import.meta.dirname, './fixtures/use-babel-eslint.jsx');
 
-    const cli = new eslint.ESLint({
+    const cli = new ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
       ignore: false,
     });
 
@@ -29,11 +27,10 @@ describe('test/use-babel-eslint.test.js', () => {
 
   it('babel-eslint parser run well for vue', async () => {
     const configPath = './vue.js';
-    const filePath = path.join(__dirname, './fixtures/vue.vue');
+    const filePath = path.join(import.meta.dirname, './fixtures/vue.vue');
 
-    const cli = new eslint.ESLint({
+    const cli = new ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
       ignore: false,
     });
 

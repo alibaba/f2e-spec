@@ -22,7 +22,6 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false, // 如果不关这个参数，会将目录下的 eslintrc 与 overrideConfigFile merge
       ignore: false,
     });
 
@@ -43,7 +42,7 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 
@@ -71,7 +70,7 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 
@@ -116,7 +115,7 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 
@@ -137,7 +136,7 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 
@@ -165,7 +164,7 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 
@@ -201,7 +200,7 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 
@@ -234,7 +233,7 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 
@@ -267,7 +266,7 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 
@@ -301,7 +300,7 @@ describe('Validate JS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 

@@ -21,7 +21,7 @@ describe('Validate TS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
       overrideConfig: {
         parserOptions: {
@@ -63,7 +63,7 @@ describe('Validate TS configs', () => {
     const configPath = './typescript/react.js';
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
       overrideConfig: {
         parserOptions: {
@@ -111,7 +111,7 @@ describe('Validate TS configs', () => {
     const configPath = './typescript/rax.js';
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
       overrideConfig: {
         parserOptions: {
@@ -139,7 +139,7 @@ describe('Validate TS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
       overrideConfig: {
         parserOptions: {
@@ -176,7 +176,7 @@ describe('Validate TS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
       overrideConfig: {
         parserOptions: {
@@ -217,7 +217,7 @@ describe('Validate TS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
       overrideConfig: {
         parserOptions: {
@@ -266,7 +266,7 @@ describe('Validate TS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
       overrideConfig: {
         parserOptions: {
@@ -305,7 +305,7 @@ describe('Validate TS configs', () => {
 
     const cli = new eslint.ESLint({
       overrideConfigFile: configPath,
-      useEslintrc: false,
+
       ignore: false,
     });
 

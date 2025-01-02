@@ -56,7 +56,6 @@
     "lint": "rive lint",
     "lint:fix": "rive lint --fix",
     "prepublishOnly": "npm run test",
-    "print-config": "eslint --print-config ./index.js > ./print-config.json",
     "start": "rive start",
     "test": "rive test",
     "test:ui": "rive test --ui",
