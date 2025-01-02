@@ -4,7 +4,7 @@ import ts from 'typescript-eslint';
 /** TypeScript */
 const typescript = ts.config({
   name: 'ali/typescripts',
-  files: ['**/*.{cts,mts,ts,tsx,vue}'],
+  files: ['**/*.{cts,mts,ts,tsx}'],
   extends: [ts.configs.recommendedTypeChecked],
   languageOptions: {
     parserOptions: {
@@ -15,7 +15,6 @@ const typescript = ts.config({
         globalReturn: true,
       },
       ecmaVersion: 'latest',
-      extraFileExtensions: ['.vue'],
     },
   },
   rules: {

@@ -39,19 +39,6 @@ import { react } from 'eslint-config-ali';
 export default [...react];
 ```
 
-### Vue JavaScript/TypeScript 项目
-
-针对 JS Vue 的项目，继承了默认配置，并启用了 [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) 插件的规则，使用 [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser) 作为 parser。
-
-ESLint 配置：
-
-```js
-// eslint.config.mjs
-import { vue } from 'eslint-config-ali';
-
-export default [...vue];
-```
-
 ## 了解更多
 
 - 如果你对 ESLint 还不熟悉，可以阅读官网的 [Getting Started](https://eslint.org/docs/user-guide/getting-started) 快速入门。

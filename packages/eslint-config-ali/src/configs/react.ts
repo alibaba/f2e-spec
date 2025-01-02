@@ -175,10 +175,7 @@ export default defineConfig({
     'react/no-access-state-in-setstate': 'error',
 
     // 指定 React 组件的文件扩展名
-    'react/jsx-filename-extension': [
-      'error',
-      { extensions: ['.jsx', '.js', '.tsx', '.ts', '.vue'] },
-    ],
+    'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.js', '.tsx', '.ts'] }],
 
     // JSX 语句的文本节点中不要使用注释字符串（例如，以//或/ *开头）
     'react/jsx-no-comment-textnodes': 'error',
