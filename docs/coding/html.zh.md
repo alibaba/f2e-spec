@@ -133,7 +133,7 @@ order: 1
 </html>
 ```
 
-### 2.3. `mandatory` `<html>` 元素的内容必须有且仅有一个 `<head>` 和一个 `<body>`
+### 2.3. `强制` `<html>` 元素的内容必须有且仅有一个 `<head>` 和一个 `<body>`
 
 ```html
 <!-- ❌ 缺少 <head> -->
@@ -170,6 +170,32 @@ order: 1
 ```
 
 ## 3. `<meta>` 元素
+
+### 3.1. `强制` `<meta>` 元素必须包含在 `<head>` 元素内
+
+```html
+<!-- ❌ <meta> 在 <body> 里 -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    <meta charset="utf-8" />
+  </body>
+</html>
+
+<!-- ✅ 正确 -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
 
 - 1.3.1 `推荐` 使用 UTF-8 字符编码。
 

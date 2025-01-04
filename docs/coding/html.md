@@ -174,7 +174,7 @@ If a part of the document is written in another language, add `lang` attribute t
 ### 3.1. `mandatory` `<meta>` element must be contained in `<head>` element
 
 ```html
-<!-- ❌ meta in body -->
+<!-- ❌ <meta> in <body> -->
 <!doctype html>
 <html lang="zh-CN">
   <head>
