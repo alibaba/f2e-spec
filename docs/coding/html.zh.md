@@ -5,7 +5,7 @@ order: 1
 
 # HTML 编码规约
 
-## 0. 文件样板
+## 文件样板
 
 ```html
 <!doctype html>
@@ -25,9 +25,9 @@ order: 1
 </html>
 ```
 
-## 1. DOCTYPE
+## DOCTYPE
 
-### 1.1. `强制` 文档开头必须有 doctype
+### `强制` 文档开头必须有 doctype
 
 ```html
 <!-- ❌ 缺少 doctype -->
@@ -43,7 +43,7 @@ order: 1
 <html lang="zh-CN"></html>
 ```
 
-### 1.2. `强制` 必须使用 HTML5 小写 doctype
+### `强制` 必须使用 HTML5 小写 doctype
 
 ```html
 <!-- ❌ xhtml doctype -->
@@ -64,9 +64,9 @@ order: 1
 <html lang="zh-CN"></html>
 ```
 
-## 2. HTML 元素
+## `<html>` 元素
 
-### 2.1. `强制` 必须有且仅有一个位于顶层的 HTML 元素
+### `强制` 必须有且仅有一个位于顶层的 `<html>` 元素
 
 ```html
 <!-- ❌ 缺少 <html> -->
@@ -99,7 +99,7 @@ order: 1
 </html>
 ```
 
-## 2.2. `强制` HTML 元素必须有 `lang` 属性
+## `强制` HTML 元素必须有 `lang` 属性
 
 `lang` 属性有助于搜索殷勤，屏幕阅读器、翻译工具的正常工作。属性的值通常是 `语言-地区` 格式，如 `en-US`, `zh-CN`。
 
@@ -133,7 +133,7 @@ order: 1
 </html>
 ```
 
-### 2.3. `强制` `<html>` 元素的内容必须有且仅有一个 `<head>` 和一个 `<body>`
+### `强制` `<html>` 元素的内容必须有且仅有一个 `<head>` 和一个 `<body>`
 
 ```html
 <!-- ❌ 缺少 <head> -->
@@ -169,9 +169,9 @@ order: 1
 </html>
 ```
 
-## 3. `<meta>` 元素
+## `<meta>` 元素
 
-### 3.1. `强制` `<meta>` 元素必须包含在 `<head>` 元素内
+### `强制` `<meta>` 元素必须包含在 `<head>` 元素内
 
 ```html
 <!-- ❌ <meta> 在 <body> 里 -->
@@ -197,19 +197,13 @@ order: 1
 </html>
 ```
 
-- 1.3.1 `推荐` 使用 UTF-8 字符编码。
+### `强制` 必须使用 UTF-8 字符编码
 
-  声明一个明确的字符编码，可以让浏览器更快速高效地确定适合网页内容的渲染方式。
-
-  由于历史原因，不同浏览器采用了不同的字符编码。但对于新业务，如无特殊要求，统一使用 UTF-8 字符编码，以便统一。
-
-  在 HTML 中使用 `<meta charset="utf-8" />` 声明文档的编码方式：
-
-  ```html
-  <head>
-    <meta charset="utf-8" />
-  </head>
-  ```
+```html
+<head>
+  <meta charset="utf-8" />
+</head>
+```
 
 - 1.3.2 `推荐` 页面提供给移动设备使用时，需要设置 [viewport](https://drafts.csswg.org/css-device-adapt/#viewport-meta)。
 

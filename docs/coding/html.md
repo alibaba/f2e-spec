@@ -5,7 +5,7 @@ order: 1
 
 # HTML Coding Specification
 
-## 0. Boilerplate
+## Boilerplate
 
 ```html
 <!doctype html>
@@ -25,9 +25,9 @@ order: 1
 </html>
 ```
 
-## 1. DOCTYPE
+## DOCTYPE
 
-### 1.1. `mandatory` Must have doctype at the beginning
+### `mandatory` Must have doctype at the beginning
 
 ```html
 <!-- ❌ missing doctype -->
@@ -43,7 +43,7 @@ order: 1
 <html lang="zh-CN"></html>
 ```
 
-### 1.2. `mandatory` Must use HTML5 lowercase doctype
+### `mandatory` Must use HTML5 lowercase doctype
 
 ```html
 <!-- ❌ xhtml doctype -->
@@ -64,9 +64,9 @@ order: 1
 <html lang="zh-CN"></html>
 ```
 
-## 2. `<html>` element
+## `<html>` element
 
-### 2.1. `mandatory` Must have and only have one `<html>` element at root
+### `mandatory` Must have and only have one `<html>` element at root
 
 ```html
 <!-- ❌ missing <html> -->
@@ -99,7 +99,7 @@ order: 1
 </html>
 ```
 
-## 2.2. `mandatory` `<html>` element must have `lang` attribute
+## `mandatory` `<html>` element must have `lang` attribute
 
 `lang` attribute is important for search engines, screen readers and translation tools. The value is usually in `language-REGION` format, e.g. `en-US`, `zh-CN`.
 
@@ -133,7 +133,7 @@ If a part of the document is written in another language, add `lang` attribute t
 </html>
 ```
 
-### 2.3. `mandatory` `<html>` must have and only have one `<head>` and one `<body>` as children
+### `mandatory` `<html>` must have and only have one `<head>` and one `<body>` as children
 
 ```html
 <!-- ❌ missing <head> -->
@@ -169,9 +169,9 @@ If a part of the document is written in another language, add `lang` attribute t
 </html>
 ```
 
-## 3. `<meta>` elements
+## `<meta>` elements
 
-### 3.1. `mandatory` `<meta>` element must be contained in `<head>` element
+### `mandatory` `<meta>` element must be contained in `<head>` element
 
 ```html
 <!-- ❌ <meta> in <body> -->
@@ -197,13 +197,7 @@ If a part of the document is written in another language, add `lang` attribute t
 </html>
 ```
 
-### 3.2. `mandatory` 使用 UTF-8 字符编码
-
-声明一个明确的字符编码，可以让浏览器更快速高效地确定适合网页内容的渲染方式。
-
-由于历史原因，不同浏览器采用了不同的字符编码。但对于新业务，如无特殊要求，统一使用 UTF-8 字符编码，以便统一。
-
-在 HTML 中使用 `<meta charset="utf-8" />` 声明文档的编码方式：
+### `mandatory` Must use UTF-8 charset
 
 ```html
 <head>
