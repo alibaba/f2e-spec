@@ -5,27 +5,28 @@ order: 1
 
 # HTML Coding Specification
 
-> 注：本篇规约无配套的 Lint 工具包
+## 1 `mandatory` Must use HTML5 doctype
 
-## 1 文档
+The beginning of HTML document must be `<!doctype html>` to declare HTML version.
 
-### 1.1 文档类型
+```html
+<!-- ❌ xhtml doctype -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html></html>
 
-- 1.1.1 `mandatory` 使用 HTML5 DOCTYPE。
+<!-- ❌ html4 doctype -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html></html>
 
-  在 HTML 文档的开头使用 `<!DOCTYPE html>` 来声明文档的 HTML 版本。
+<!-- ✅ html5 upper case (old) -->
+<!-- prettier-ignore -->
+<!DOCTYPE html>
+<html></html>
 
-  ```html
-  <!-- bad - 非 HTML 5 DOCTYPE -->
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html>
-  </html>
-
-  <!-- good -->
-  <!DOCTYPE html>
-  <html>
-  </html>
-  ```
+<!-- ✅ html5 lower case (new) -->
+<!doctype html>
+<html></html>
+```
 
 ### 1.2 语言
 
@@ -63,7 +64,6 @@ order: 1
 
   设置 viewport-fit 设置为“cover”来兼容 iPhone X 的刘海屏，[了解更多](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) 。
 
-
   ```html
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
   ```
@@ -97,10 +97,9 @@ order: 1
 
   除了基础库等必须要在 DOM 加载之前运行的 JavaScript 脚本，其他都在靠近 `body` 结束标签前引入，以防止出现页面渲染的阻塞，[了解更多](https://developer.yahoo.com/performance/rules.html#js_bottom)。
 
-
   ```html
   <!-- bad -->
-  <!DOCTYPE html>
+  <!doctype html>
   <html>
     <head>
       <script src="mod-a.js"></script>
@@ -116,7 +115,7 @@ order: 1
   </html>
 
   <!-- good -->
-  <!DOCTYPE html>
+  <!doctype html>
   <html>
     <head>
       <style>
@@ -170,7 +169,7 @@ order: 1
 - 2.1.1 `recommended` 统一使用 2 个空格缩进，不要使用 4 个空格或 tab 缩进。
 
   ```html
-  <!DOCTYPE html>
+  <!doctype html>
   <html>
     <head>
       <title>Page title</title>
@@ -216,7 +215,7 @@ order: 1
 
   ```html
   <!-- bad -->
-  <H1>Hello, world!</H1>
+  <h1>Hello, world!</h1>
 
   <!-- good -->
   <h1>Hello, world!</h1>
@@ -230,8 +229,8 @@ order: 1
 
   ```html
   <!-- bad -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <img src="images/foo.png" alt="foo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <img src="images/foo.png" alt="foo" />
 
   <!-- good -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -244,7 +243,7 @@ order: 1
 
   ```html
   <!-- bad -->
-  <link rel='stylesheet' href='example.css'>
+  <link rel="stylesheet" href="example.css" />
 
   <!-- good -->
   <link rel="stylesheet" href="example.css" />
@@ -276,14 +275,10 @@ order: 1
 
   ```html
   <!-- bad -->
-  <a modal="toggle" href="#">
-    Example link
-  </a>
+  <a modal="toggle" href="#"> Example link </a>
 
   <!-- good -->
-  <a data-modal="toggle" href="#">
-    Example link
-  </a>
+  <a data-modal="toggle" href="#"> Example link </a>
   ```
 
 ### 2.5 语义化
@@ -339,7 +334,7 @@ order: 1
 根据以上规约，建议的 HTML 脚手架模板如下：
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
