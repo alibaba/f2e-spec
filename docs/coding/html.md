@@ -5,6 +5,26 @@ order: 1
 
 # HTML Coding Specification
 
+## 0. Boilerplate
+
+```html
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
+    <title>My Site - There are a lot of fun!</title>
+    <meta name="description" content="web front-end coding and engineering specification" />
+    <meta name="keyword" content="code,html,css,javascript,typescript,react,node" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
+```
+
 ## 1. DOCTYPE
 
 ### 1.1. `mandatory` Must have doctype at the beginning
@@ -149,19 +169,47 @@ If a part of the document is written in another language, add `lang` attribute t
 </html>
 ```
 
-- 1.3.1 `recommended` 使用 UTF-8 字符编码。
+## 3. `<meta>` elements
 
-  声明一个明确的字符编码，可以让浏览器更快速高效地确定适合网页内容的渲染方式。
+### 3.1. `mandatory` `<meta>` element must be contained in `<head>` element
 
-  由于历史原因，不同浏览器采用了不同的字符编码。但对于新业务，如无特殊要求，统一使用 UTF-8 字符编码，以便统一。
+```html
+<!-- ❌ meta in body -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    <meta charset="utf-8" />
+  </body>
+</html>
 
-  在 HTML 中使用 `<meta charset="utf-8" />` 声明文档的编码方式：
-
-  ```html
+<!-- ✅ good -->
+<!doctype html>
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
   </head>
-  ```
+  <body>
+    ...
+  </body>
+</html>
+```
+
+### 3.2. `mandatory` 使用 UTF-8 字符编码
+
+声明一个明确的字符编码，可以让浏览器更快速高效地确定适合网页内容的渲染方式。
+
+由于历史原因，不同浏览器采用了不同的字符编码。但对于新业务，如无特殊要求，统一使用 UTF-8 字符编码，以便统一。
+
+在 HTML 中使用 `<meta charset="utf-8" />` 声明文档的编码方式：
+
+```html
+<head>
+  <meta charset="utf-8" />
+</head>
+```
 
 - 1.3.2 `recommended` 页面提供给移动设备使用时，需要设置 [viewport](https://drafts.csswg.org/css-device-adapt/#viewport-meta)。
 
@@ -431,28 +479,6 @@ If a part of the document is written in another language, add `lang` attribute t
   ```
 
   了解更多 HTML 可访问性的知识，可以阅读[这篇 MDN 的文章](https://developer.mozilla.org/zh-CN/docs/learn/Accessibility)。
-
-## 3. 脚手架模板
-
-根据以上规约，建议的 HTML 脚手架模板如下：
-
-```html
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="淘宝网 - 亚洲较大的网上交易平台" />
-    <meta name="keyword" content="淘宝,掏宝,网上购物,C2C" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
-    <title>淘宝网</title>
-    <link rel="stylesheet" href="example.css" />
-  </head>
-  <body>
-    <div id="container"></div>
-    <script src="example.js"></script>
-  </body>
-</html>
-```
 
 ## Credits
 

@@ -5,6 +5,26 @@ order: 1
 
 # HTML 编码规约
 
+## 0. 文件样板
+
+```html
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
+    <title>My Site - There are a lot of fun!</title>
+    <meta name="description" content="web front-end coding and engineering specification" />
+    <meta name="keyword" content="code,html,css,javascript,typescript,react,node" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
+```
+
 ## 1. DOCTYPE
 
 ### 1.1. `强制` 文档开头必须有 doctype
@@ -149,7 +169,7 @@ order: 1
 </html>
 ```
 
-## 3.
+## 3. `<meta>` 元素
 
 - 1.3.1 `推荐` 使用 UTF-8 字符编码。
 
@@ -433,28 +453,6 @@ order: 1
   ```
 
   了解更多 HTML 可访问性的知识，可以阅读[这篇 MDN 的文章](https://developer.mozilla.org/zh-CN/docs/learn/Accessibility)。
-
-## 3. 脚手架模板
-
-根据以上规约，建议的 HTML 脚手架模板如下：
-
-```html
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="淘宝网 - 亚洲较大的网上交易平台" />
-    <meta name="keyword" content="淘宝,掏宝,网上购物,C2C" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
-    <title>淘宝网</title>
-    <link rel="stylesheet" href="example.css" />
-  </head>
-  <body>
-    <div id="container"></div>
-    <script src="example.js"></script>
-  </body>
-</html>
-```
 
 ## 作者署名
 
