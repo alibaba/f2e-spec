@@ -5,45 +5,151 @@ order: 1
 
 # HTML 编码规约
 
-## 1. `强制` 必须使用 HTML5 doctype
+## 1. DOCTYPE
 
-在 HTML 文档的开头必须使用 `<!doctype html>` 来声明文档的 HTML 版本。
+### 1.1. `强制` 文档开头必须有 doctype
+
+```html
+<!-- ❌ 缺少 doctype -->
+<html lang="zh-CN"></html>
+
+<!-- ❌ doctype 位置错误 -->
+<html lang="zh-CN">
+  <!doctype html>
+</html>
+
+<!-- ✅ 正确 -->
+<!doctype html>
+<html lang="zh-CN"></html>
+```
+
+### 1.2. `强制` 必须使用 HTML5 小写 doctype
 
 ```html
 <!-- ❌ xhtml doctype -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html></html>
+<html lang="zh-CN"></html>
 
 <!-- ❌ html4 doctype -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="zh-CN"></html>
 
-<!-- ✅ html5 大写 (旧) -->
+<!-- ❌ html5 大写 (旧) -->
 <!-- prettier-ignore -->
 <!DOCTYPE html>
-<html></html>
+<html lang="zh-CN"></html>
 
 <!-- ✅ html5 小写 (新) -->
 <!doctype html>
-<html></html>
+<html lang="zh-CN"></html>
 ```
 
-### 1.2 语言
+## 2. HTML 元素
 
-- 1.2.1 `推荐` 指定 `html` 标签上的 `lang` 属性。
+### 2.1. `强制` 必须有且仅有一个位于顶层的 HTML 元素
 
-  [HTML5 规范](http://w3c.github.io/html/semantics.html#the-html-element)中提到：
+```html
+<!-- ❌ 缺少 <html> -->
+<script></script>
+<div>...</div>
 
-  > 推荐开发者在 `html` 元素上指定 `lang` 属性，以指出文档的语言。这有助于读屏、翻译等工具的工作。
+<!-- ❌ 多个 <html> -->
+<html lang="zh-CN"></html>
+<html lang="zh-CN"></html>
 
-  `lang` 属性的值由 `language-subtags` 组成，在 [BCP47](http://www.ietf.org/rfc/bcp/bcp47.txt#) 中定义，[了解更多](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)。
+<!-- ❌ <html> 嵌入了其他元素中 -->
+<div>
+  <html lang="zh-CN"></html>
+</div>
 
-  ```html
-  <html lang="zh-CN">
-    <!-- ... -->
-  </html>
-  ```
+<!-- ❌ 其他元素插入到了 <html> 之外 -->
+<html lang="zh-CN"></html>
+<script></script>
+<div>...</div>
 
-### 1.3 元数据
+<!-- ✅ 正确 -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
+
+## 2.2. `强制` HTML 元素必须有 `lang` 属性
+
+`lang` 属性有助于搜索殷勤，屏幕阅读器、翻译工具的正常工作。属性的值通常是 `语言-地区` 格式，如 `en-US`, `zh-CN`。
+
+```html
+<!-- ❌ 缺少 lang -->
+<html></html>
+
+<!-- ❌ 大小写错误 -->
+<html lang="zh-cn"></html>
+
+<!-- ❌ 不要使用下划线 -->
+<html lang="zh_CN"></html>
+
+<!-- ✅ 正确 -->
+<html lang="zh-CN"></html>
+```
+
+如果文档中的部分内容是其他语言，则应该在其根元素上添加的 `lang` 属性。
+
+```html
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    <header>...</header>
+    <main>...</main>
+    <footer lang="en-US">...</footer>
+  </body>
+</html>
+```
+
+### 2.3. `mandatory` `<html>` 元素的内容必须有且仅有一个 `<head>` 和一个 `<body>`
+
+```html
+<!-- ❌ 缺少 <head> -->
+<!doctype html>
+<html lang="zh-CN">
+  <body>
+    ...
+  </body>
+</html>
+
+<!-- ❌ 其他元素作为内容 -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
+  <!-- script 只能放在 <head> 或 <body> 中 -->
+  <script></script>
+</html>
+
+<!-- ✅ 正确 -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
+
+## 3.
 
 - 1.3.1 `推荐` 使用 UTF-8 字符编码。
 
@@ -349,6 +455,10 @@ order: 1
   </body>
 </html>
 ```
+
+## 作者署名
+
+- [郭云鹤（鹤仙）](https://github.com/guoyunhe)
 
 ## 参考资料
 

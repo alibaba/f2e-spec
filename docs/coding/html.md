@@ -5,46 +5,149 @@ order: 1
 
 # HTML Coding Specification
 
-## 1 `mandatory` Must use HTML5 doctype
+## 1. DOCTYPE
 
-The beginning of HTML document must be `<!doctype html>` to declare HTML version.
+### 1.1. `mandatory` Must have doctype at the beginning
+
+```html
+<!-- ❌ missing doctype -->
+<html lang="zh-CN"></html>
+
+<!-- ❌ doctype at wrong place -->
+<html lang="zh-CN">
+  <!doctype html>
+</html>
+
+<!-- ✅ good -->
+<!doctype html>
+<html lang="zh-CN"></html>
+```
+
+### 1.2. `mandatory` Must use HTML5 lowercase doctype
 
 ```html
 <!-- ❌ xhtml doctype -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html></html>
+<html lang="zh-CN"></html>
 
 <!-- ❌ html4 doctype -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html></html>
+<html lang="zh-CN"></html>
 
-<!-- ✅ html5 upper case (old) -->
+<!-- ❌ html5 upper case (old) -->
 <!-- prettier-ignore -->
 <!DOCTYPE html>
-<html></html>
+<html lang="zh-CN"></html>
 
 <!-- ✅ html5 lower case (new) -->
 <!doctype html>
-<html></html>
+<html lang="zh-CN"></html>
 ```
 
-### 1.2 语言
+## 2. `<html>` element
 
-- 1.2.1 `recommended` 指定 `html` 标签上的 `lang` 属性。
+### 2.1. `mandatory` Must have and only have one `<html>` element at root
 
-  [HTML5 规范](http://w3c.github.io/html/semantics.html#the-html-element)中提到：
+```html
+<!-- ❌ missing <html> -->
+<script></script>
+<div>...</div>
 
-  > 推荐开发者在 `html` 元素上指定 `lang` 属性，以指出文档的语言。这有助于读屏、翻译等工具的工作。
+<!-- ❌ multiple <html> -->
+<html lang="zh-CN"></html>
+<html lang="zh-CN"></html>
 
-  `lang` 属性的值由 `language-subtags` 组成，在 [BCP47](http://www.ietf.org/rfc/bcp/bcp47.txt#) 中定义，[了解更多](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang)。
+<!-- ❌ <html> nested in other element -->
+<div>
+  <html lang="zh-CN"></html>
+</div>
 
-  ```html
-  <html lang="zh-CN">
-    <!-- ... -->
-  </html>
-  ```
+<!-- ❌ other elements outside of <html> -->
+<html lang="zh-CN"></html>
+<script></script>
+<div>...</div>
 
-### 1.3 元数据
+<!-- ✅ good -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
+
+## 2.2. `mandatory` `<html>` element must have `lang` attribute
+
+`lang` attribute is important for search engines, screen readers and translation tools. The value is usually in `language-REGION` format, e.g. `en-US`, `zh-CN`.
+
+```html
+<!-- ❌ missing lang -->
+<html></html>
+
+<!-- ❌ wrong case -->
+<html lang="zh-cn"></html>
+
+<!-- ❌ no underscore -->
+<html lang="zh_CN"></html>
+
+<!-- ✅ good -->
+<html lang="zh-CN"></html>
+```
+
+If a part of the document is written in another language, add `lang` attribute to the root element.
+
+```html
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    <header>...</header>
+    <main>...</main>
+    <footer lang="en-US">...</footer>
+  </body>
+</html>
+```
+
+### 2.3. `mandatory` `<html>` must have and only have one `<head>` and one `<body>` as children
+
+```html
+<!-- ❌ missing <head> -->
+<!doctype html>
+<html lang="zh-CN">
+  <body>
+    ...
+  </body>
+</html>
+
+<!-- ❌ other elements as children -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
+  <!-- scripts should be in either head or body -->
+  <script></script>
+</html>
+
+<!-- ✅ good -->
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
+</html>
+```
 
 - 1.3.1 `recommended` 使用 UTF-8 字符编码。
 
@@ -350,6 +453,10 @@ The beginning of HTML document must be `<!doctype html>` to declare HTML version
   </body>
 </html>
 ```
+
+## Credits
+
+- [Guo Yunhe](https://github.com/guoyunhe)
 
 ## 参考资料
 
