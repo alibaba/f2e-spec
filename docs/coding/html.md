@@ -12,7 +12,7 @@ order: 1
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>My Site - There are a lot of fun!</title>
     <meta name="description" content="web front-end coding and engineering specification" />
     <meta name="keyword" content="code,html,css,javascript,typescript,react,node" />
