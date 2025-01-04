@@ -205,13 +205,33 @@ If a part of the document is written in another language, add `lang` attribute t
 </head>
 ```
 
-- 1.3.2 `recommended` 页面提供给移动设备使用时，需要设置 [viewport](https://drafts.csswg.org/css-device-adapt/#viewport-meta)。
+### `recommended` Responsive web page should have viewport meta
 
-  设置 viewport-fit 设置为“cover”来兼容 iPhone X 的刘海屏，[了解更多](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) 。
+The following settings match the actual device size. Users can scale the content with touch gestures.
 
-  ```html
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
-  ```
+```html
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+```
+
+The following settings disable downscale, which is not useful and even troublesome.
+
+```html
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+</head>
+```
+
+In case you have implemented scaleable UI in the web page, you may want to totally disable browser scale support.
+
+```html
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+```
+
+To fit iPhone's notch screen, you may need some extra configuration. [Learn more](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) .
 
 ### 1.4 资源加载
 

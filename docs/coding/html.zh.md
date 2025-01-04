@@ -205,13 +205,33 @@ order: 1
 </head>
 ```
 
-- 1.3.2 `推荐` 页面提供给移动设备使用时，需要设置 [viewport](https://drafts.csswg.org/css-device-adapt/#viewport-meta)。
+### `推荐` 响应式页面应当设置 viewport
 
-  设置 viewport-fit 设置为“cover”来兼容 iPhone X 的刘海屏，[了解更多](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) 。
+让页面大小适配设备实际尺寸，用户可以用手势缩放页面内容。
 
-  ```html
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
-  ```
+```html
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+```
+
+以下设置禁用了缩小，因为缩小通常用处不大，且容易带来问题。
+
+```html
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+</head>
+```
+
+如果网页内 UI 支持缩放手势，则你需要完全禁用浏览器的缩放手势支持。
+
+```html
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+```
+
+要适配 iPhone 的刘海屏，可能需要额外的配置。[了解更多](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) .
 
 ### 1.4 资源加载
 
