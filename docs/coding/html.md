@@ -528,6 +528,24 @@ Level: **Mandatory**
 {{ username }} {{ tags | join(',') }}
 ```
 
+### Unfiltered user input MUST be HTML escaped
+
+Level: **Mandatory**
+
+```jinja
+{# ❌ bad #}
+<p>{{ description }}</p>
+<script>
+  window.user = {{ user | dump }}
+</script>
+
+{# ✅ good #}
+{{ description | escaped }}
+<script>
+  window.user = {{ user | dump | escaped }}
+</script>
+```
+
 ## Credits
 
 - [Guo Yunhe](https://github.com/guoyunhe)

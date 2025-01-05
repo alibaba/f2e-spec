@@ -529,6 +529,24 @@ order: 1
 {{ username }} {{ tags | join(',') }}
 ```
 
+### 未过滤的用户输入必须 HTML 转义
+
+等级: **强制**
+
+```jinja
+{# ❌ 错误 #}
+<p>{{ description }}</p>
+<script>
+  window.user = {{ user | dump }}
+</script>
+
+{# ✅ 正确 #}
+{{ description | escaped }}
+<script>
+  window.user = {{ user | dump | escaped }}
+</script>
+```
+
 ## 作者署名
 
 - [郭云鹤（鹤仙）](https://github.com/guoyunhe)
