@@ -27,7 +27,9 @@ order: 1
 
 ## DOCTYPE
 
-### `mandatory` Must have doctype at the beginning
+### Must have doctype at the beginning
+
+Level: **Mandatory**
 
 ```html
 <!-- ❌ missing doctype -->
@@ -43,7 +45,9 @@ order: 1
 <html lang="zh-CN"></html>
 ```
 
-### `mandatory` Must use HTML5 lowercase doctype
+### Must use HTML5 lowercase doctype
+
+Level: **Mandatory**
 
 ```html
 <!-- ❌ xhtml doctype -->
@@ -66,7 +70,9 @@ order: 1
 
 ## `<html>` element
 
-### `mandatory` Must have and only have one `<html>` element at root
+### Must have and only have one `<html>` element at root
+
+Level: **Mandatory**
 
 ```html
 <!-- ❌ missing <html> -->
@@ -99,7 +105,9 @@ order: 1
 </html>
 ```
 
-## `mandatory` `<html>` element must have `lang` attribute
+### `<html>` element must have `lang` attribute
+
+Level: **Mandatory**
 
 `lang` attribute is important for search engines, screen readers and translation tools. The value is usually in `language-REGION` format, e.g. `en-US`, `zh-CN`.
 
@@ -133,7 +141,9 @@ If a part of the document is written in another language, add `lang` attribute t
 </html>
 ```
 
-### `mandatory` `<html>` must have and only have one `<head>` and one `<body>` as children
+### `<html>` must have and only have one `<head>` and one `<body>` as children
+
+Level: **Mandatory**
 
 ```html
 <!-- ❌ missing <head> -->
@@ -171,7 +181,9 @@ If a part of the document is written in another language, add `lang` attribute t
 
 ## `<meta>` elements
 
-### `mandatory` `<meta>` element must be contained in `<head>` element
+### `<meta>` element must be contained in `<head>` element
+
+Level: **Mandatory**
 
 ```html
 <!-- ❌ <meta> in <body> -->
@@ -197,7 +209,9 @@ If a part of the document is written in another language, add `lang` attribute t
 </html>
 ```
 
-### `mandatory` Must use UTF-8 charset
+### Must use UTF-8 charset
+
+Level: **Mandatory**
 
 ```html
 <head>
@@ -205,7 +219,9 @@ If a part of the document is written in another language, add `lang` attribute t
 </head>
 ```
 
-### `recommended` Responsive web page should have viewport meta
+### Responsive web page should have viewport meta
+
+Level: **Recommended**
 
 The following settings match the actual device size. Users can scale the content with touch gestures.
 
