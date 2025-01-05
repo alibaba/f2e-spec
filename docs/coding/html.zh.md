@@ -511,6 +511,24 @@ order: 1
 
   了解更多 HTML 可访问性的知识，可以阅读[这篇 MDN 的文章](https://developer.mozilla.org/zh-CN/docs/learn/Accessibility)。
 
+## 模板语言
+
+有非常多不同的模板语言被用来动态生成 HTML 文件，例如 [Nunjucks], [EJS]。编写模板语言代码时，也应该遵循一些常见规约。
+
+此部分以 [Nunjucks] 作为示例，但是同样也适用于其他模板语言。
+
+### 变量，过滤器和关键字必须有前后空格
+
+等级: **强制**
+
+```jinja
+{# ❌ 错误，没有空格 #}
+{{username}} {{tags|join(',')}}
+
+{# ✅ 正确 #}
+{{ username }} {{ tags | join(',') }}
+```
+
 ## 作者署名
 
 - [郭云鹤（鹤仙）](https://github.com/guoyunhe)

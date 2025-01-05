@@ -510,11 +510,32 @@ To fit iPhone's notch screen, you may need some extra configuration. [Learn more
 
   了解更多 HTML 可访问性的知识，可以阅读[这篇 MDN 的文章](https://developer.mozilla.org/zh-CN/docs/learn/Accessibility)。
 
+## Template languages
+
+There are many template languages to generate HTML files, e.g. [Nunjucks], [EJS]. Writting template language syntax should also follow some common specification.
+
+This part uses [Nunjucks] as an example. But it should fit other template languages, too.
+
+### Variables, filters and keywords MUST have spaces around
+
+Level: **Mandatory**
+
+```jinja
+{# ❌ bad, no spaces #}
+{{username}} {{tags|join(',')}}
+
+{# ✅ good #}
+{{ username }} {{ tags | join(',') }}
+```
+
 ## Credits
 
 - [Guo Yunhe](https://github.com/guoyunhe)
 
-## 参考资料
+## References
 
 - [Code Guide by @mdo](http://codeguide.co)
 - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+
+[EJS]: https://ejs.co/
+[Nunjucks]: https://mozilla.github.io/nunjucks/
