@@ -1,7 +1,7 @@
 {
   "name": "f2e-spec",
   "private": true,
-  "description": "阿里巴巴前端规约及配套工具",
+  "description": "Alibaba Front-end Specification",
   "homepage": "https://github.com/alibaba/f2e-spec#readme",
   "bugs": {
     "url": "https://github.com/alibaba/f2e-spec/issues"
@@ -58,17 +58,17 @@
   },
   "rive": {
     "doc": {
-      "title": "阿里巴巴前端规约",
+      "title": "Alibaba Front-end Specification",
       "basename": "/f2e-spec/",
       "root": "docs",
       "languages": [
         {
           "code": "en",
-          "name": "🇬🇧 English"
+          "name": "English"
         },
         {
           "code": "zh",
-          "name": "🇨🇳 中文"
+          "name": "中文"
         }
       ]
     }
