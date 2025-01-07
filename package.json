@@ -36,25 +36,25 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
+    "@commitlint/cli": "^19.6.1",
     "@mdx-js/react": "^3.1.0",
-    "@types/node": "^20.16.14",
+    "@types/node": "^20.17.12",
     "commitlint-config-ali": "link:packages/commitlint-config-ali",
-    "eslint": "^9.0.0",
+    "eslint": "^9.17.0",
     "eslint-config-ali": "link:packages/eslint-config-ali",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "gh-pages": "^6.2.0",
-    "husky": "^9.1.6",
-    "lint-staged": "^15.2.10",
+    "gh-pages": "^6.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
     "markdownlint": "~0.33.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "prettier-config-ali": "link:packages/prettier-config-ali",
     "react": "^18.3.1",
-    "react-doc-ui": "^2.2.6",
+    "react-doc-ui": "^2.3.0",
     "react-dom": "^18.3.1",
     "rive": "^3.0.1",
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.2"
   },
   "rive": {
     "doc": {
