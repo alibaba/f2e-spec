@@ -549,7 +549,9 @@ order: 1
 
 ## 作者署名
 
-- [郭云鹤（鹤仙）](https://github.com/guoyunhe)
+> 如果您为本文档编写做出过贡献，但您的名字却没有列出，请[创建 Issue](https://github.com/alibaba/f2e-spec/issues/new) 告诉我们！
+
+- TODO
 
 ## 参考资料
 

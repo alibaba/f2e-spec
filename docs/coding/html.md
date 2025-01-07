@@ -548,7 +548,9 @@ Level: **Mandatory**
 
 ## Credits
 
-- [Guo Yunhe](https://github.com/guoyunhe)
+> If you have contributed to this document but your name isn't listed, please [create an issue](https://github.com/alibaba/f2e-spec/issues/new) to let us know!
+
+- TODO
 
 ## References
 
