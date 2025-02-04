@@ -6,7 +6,7 @@
   },
   <% } %>
   "devDependencies": {
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.1.1",
     "prettier-config-ali": "^1.0.0",

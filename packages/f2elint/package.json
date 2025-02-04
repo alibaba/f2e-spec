@@ -74,7 +74,7 @@
     "@types/node": "^20.12.7",
     "eslint": "^9.0.0",
     "eslint-config-ali": "workspace:^",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.2.5",
     "rive": "^3.0.1"
