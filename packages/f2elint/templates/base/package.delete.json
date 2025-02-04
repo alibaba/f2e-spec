@@ -10,6 +10,10 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": null,
     "@typescript-eslint/parser": null,
+    "eslint-import-resolver-typescript": null,
+    "eslint-plugin-import": null,
+    "eslint-plugin-react": null,
+    "eslint-plugin-react-hooks": null,
     "f2elint": null,
     "tslint": null
   }
