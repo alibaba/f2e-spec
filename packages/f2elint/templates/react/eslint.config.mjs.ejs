@@ -1,3 +1,4 @@
 import { react } from 'eslint-config-ali';
+<% if (prettier) { %>import prettier from 'eslint-plugin-prettier/recommended';<% } %>
 
-export default [...react];
+export default [...react<% if (prettier) { %>, prettier<% } %>];

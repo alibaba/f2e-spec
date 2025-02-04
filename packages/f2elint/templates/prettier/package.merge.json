@@ -1,8 +1,5 @@
 {
   "prettier": "prettier-config-ali",
-  "eslintConfig": {
-    "extends": ["plugin:prettier/recommended"]
-  },
   <% if (stylelint) { %>
   "stylelint": {
     "extends": ["stylelint-config-ali", "stylelint-prettier/recommended"]
@@ -10,7 +7,7 @@
   <% } %>
   "devDependencies": {
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.1.1",
     "prettier-config-ali": "^1.0.0",
     <% if (stylelint) { %>

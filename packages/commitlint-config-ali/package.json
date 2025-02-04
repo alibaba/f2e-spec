@@ -38,12 +38,6 @@
     "lint:fix": "prettier --write . && eslint --fix ."
   },
   "prettier": "prettier-config-ali",
-  "eslintConfig": {
-    "extends": [
-      "ali/node",
-      "plugin:prettier/recommended"
-    ]
-  },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^7.0.2"
   },
@@ -51,7 +45,7 @@
     "eslint": "^9.0.0",
     "eslint-config-ali": "workspace:^",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.2.5",
     "prettier-config-ali": "workspace:^"
   }
