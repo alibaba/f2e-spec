@@ -8,6 +8,8 @@
     "extends": null
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": null,
+    "@typescript-eslint/parser": null,
     "f2elint": null,
     "tslint": null
   }
