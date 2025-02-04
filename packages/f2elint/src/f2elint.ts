@@ -20,7 +20,7 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
 
   program
     .argument('[project]', '项目位置')
-    .option('--template <template>', '模版类型', 'react-ts')
+    .option('--template <template>', '模版类型', 'react')
     .option('--stylelint', '启用 Stylelint', false)
     .option('--prettier', '启用 Prettier', false)
     .option('--lint-staged', '启用 Lint-Staged', false)
@@ -29,7 +29,7 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
 
   program.helpOption('-h, --help', '显示帮助');
 
-  program.version(packageJson.version, '-v, --version', '显示版本');
+  program.version(packageJson.version as string, '-v, --version', '显示版本');
 
   program.parse();
 } else {
@@ -64,16 +64,8 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
     const template = await select<any, TemplateType>({
       message: '🧰 选择预设模版',
       options: [
-        { value: 'react-ts', label: 'React (TypeScript)' },
-        { value: 'react-js', label: 'React (JavaScript)' },
-        { value: 'vue-ts', label: 'Vue (TypeScript)' },
-        { value: 'vue-js', label: 'Vue (JavaScript)' },
-        { value: 'egg-ts', label: 'Egg (TypeScript)' },
-        { value: 'egg-js', label: 'Egg (JavaScript)' },
-        { value: 'node-ts', label: 'Node (TypeScript)' },
-        { value: 'node-js', label: 'Node (JavaScript)' },
-        { value: 'base-ts', label: 'Base (TypeScript)' },
-        { value: 'base-js', label: 'Base (JavaScript)' },
+        { value: 'react', label: 'React' },
+        { value: 'base', label: 'Base' },
       ],
     });
 
@@ -167,6 +159,7 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
         s2.stop('✅ 安装依赖成功');
       } catch (error) {
         s2.stop('❌ 安装依赖失败，请尝试手动运行命令');
+        console.error(error);
         process.exit(1);
       }
     }

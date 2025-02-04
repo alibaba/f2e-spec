@@ -19,7 +19,7 @@ export async function f2elint(project: string | null = '.', options: F2elintOpti
   const projectFullPath = isAbsolute(project) ? project : join(process.cwd(), project);
 
   const __dirname = dirname(fileURLToPath(import.meta.url));
-  const template = options?.template || 'base-js';
+  const template = options?.template || 'base';
   const initTemplate = (t: string) =>
     init(join(__dirname, '..', 'templates', t), projectFullPath, options, {
       disableLog: options.disableLog,
@@ -28,7 +28,9 @@ export async function f2elint(project: string | null = '.', options: F2elintOpti
     });
 
   await initTemplate('base');
-  await initTemplate(template);
+  if (template !== 'base') {
+    await initTemplate(template);
+  }
   if (options.stylelint) {
     await initTemplate('stylelint');
   }

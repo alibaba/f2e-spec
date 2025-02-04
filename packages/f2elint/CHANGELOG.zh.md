@@ -1,5 +1,9 @@
 # 更新日志
 
+## 5.0.0 - 2025-02-04
+
+- **BREAKING CHANGE** feat(eslint): 升级 ESLint 9 改用最新配置文件 eslint.config.mjs
+
 ## 4.9.1 - 2024-12-09
 
 - fix(husky): 去除 husky 的 Git 钩子脚本中应该废弃的 `. "$(dirname -- "$0")/_/husky.sh"`

@@ -1,8 +1,6 @@
 {
   "husky": null,
-  "eslintConfig": {
-    "extends": null
-  },
+  "eslintConfig": null,
   "stylelint": {
     "extends": null
   },
