@@ -5,7 +5,7 @@ import ts from 'typescript-eslint';
 const typescript = ts.config({
   name: 'ali/typescripts',
   files: ['**/*.{cts,mts,ts,tsx}'],
-  extends: [ts.configs.recommendedTypeChecked],
+  extends: [ts.configs.recommended],
   languageOptions: {
     parserOptions: {
       project: true,
