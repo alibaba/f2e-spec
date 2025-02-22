@@ -1,6 +1,6 @@
 # 更新日志
 
-## 5.0.0 - 2025-02-04
+## 5.0.0 - 2025-02-22
 
 - **BREAKING CHANGE** feat(eslint): 升级 ESLint 9 改用最新配置文件 eslint.config.mjs
 

@@ -1,6 +1,6 @@
 {
   "name": "f2elint",
-  "version": "5.0.0-beta.6",
+  "version": "5.0.0",
   "description": "Linter for Alibaba F2E Guidelines",
   "keywords": [
     "f2elint",
