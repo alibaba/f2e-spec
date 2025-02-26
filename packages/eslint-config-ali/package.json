@@ -55,7 +55,6 @@
     "build:watch": "rive build --watch",
     "lint": "rive lint",
     "lint:fix": "rive lint --fix",
-    "prepublishOnly": "npm run test",
     "start": "rive start",
     "test": "rive test",
     "test:ui": "rive test --ui",
