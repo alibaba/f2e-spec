@@ -1,4 +1,14 @@
-const miniappTags = require('./miniapp-tags');
+const miniappTags = [
+  'page',
+  'swiper',
+  'icon',
+  'radio',
+  'checkbox',
+  'slider',
+  'picker',
+  'navigator',
+  'lifestyle',
+];
 
 module.exports = {
   defaultSeverity: 'warning',
