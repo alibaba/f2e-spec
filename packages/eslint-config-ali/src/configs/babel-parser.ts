@@ -1,5 +1,6 @@
 import parser from '@babel/eslint-parser';
 import type { Linter } from 'eslint';
+import { fileURLToPath } from 'url';
 import gitignore from './gitignore';
 
 /** Use babel as eslint parser to support more styntax and features */
@@ -20,7 +21,10 @@ const babelParser: Linter.Config = {
       babelOptions: {
         babelrc: false,
         configFile: false,
-        presets: ['@babel/preset-env', '@babel/preset-react'],
+        presets: [
+          fileURLToPath(import.meta.resolve('@babel/preset-env')),
+          fileURLToPath(import.meta.resolve('@babel/preset-react')),
+        ],
       },
     },
   },
