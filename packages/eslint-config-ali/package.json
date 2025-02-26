@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ali",
-  "version": "16.0.2",
+  "version": "16.0.3",
   "description": "ESLint Shareable Config for Alibaba F2E Guidelines",
   "keywords": [
     "eslint",
@@ -72,6 +72,7 @@
     "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-react-hooks": "^5.1.0",
     "globals": "^15.14.0",
+    "typescript": "^5.7.3",
     "typescript-eslint": "^8.19.0"
   },
   "devDependencies": {
