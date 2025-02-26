@@ -76,8 +76,8 @@ module.exports = {
     // scss language support
     {
       files: ['*.scss', '**/*.scss'],
-      customSyntax: 'postcss-scss',
-      plugins: ['stylelint-scss'],
+      customSyntax: require.resolve('postcss-scss'),
+      plugins: [require.resolve('stylelint-scss')],
       rules: {
         // conflict css rules to disable
         // turn off CSS @ rule check, to support @include, @mixin usage in scss
@@ -92,8 +92,8 @@ module.exports = {
     // less language support
     {
       files: ['*.less', '**/*.less'],
-      customSyntax: 'postcss-less',
-      plugins: ['stylelint-less'],
+      customSyntax: require.resolve('postcss-less'),
+      plugins: [require.resolve('stylelint-less')],
       rules: {
         // conflict css rules to disable
         // turn off CSS @ rule check, to support @ variable usage in less
