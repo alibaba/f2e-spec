@@ -235,10 +235,10 @@ const typescript = ts.config({
     ],
 
     /**
-     * 【推荐】禁止出现空的 interface
-     * @link https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-empty-interface.md
+     * 【推荐】禁止出现空的 interface，但有继承的 interface 除外
+     * @see https://typescript-eslint.io/rules/no-empty-object-type
      */
-    '@typescript-eslint/no-empty-interface': 'warn',
+    '@typescript-eslint/no-empty-object-type': ['warn', { allowInterfaces: 'with-single-extends' }],
 
     /**
      * 【关闭】禁止使用 any

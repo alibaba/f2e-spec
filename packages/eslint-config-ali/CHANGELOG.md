@@ -1,5 +1,10 @@
 # 更新日志
 
+## 16.1.0 - 2025-03-03
+
+- 将 `@typescript-eslint/no-empty-interface` 更改为 `@typescript-eslint/no-empty-object-type` 并增加
+  `{ allowInterfaces: 'with-single-extends' }` 选项
+
 ## 16.0.3 - 2025-02-26
 
 - 修复 `typescript` 不存在时报错
