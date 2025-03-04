@@ -1,5 +1,4 @@
 import reactHooks from 'eslint-plugin-react-hooks';
-import globals from 'globals';
 import defineConfig from '../utils/defineConfig';
 
 export default defineConfig({
@@ -258,5 +257,4 @@ export default defineConfig({
       defaultVersion: '18.3',
     },
   },
-  languageOptions: { globals: globals.browser },
 });

@@ -1,5 +1,9 @@
 # 更新日志
 
+## 16.1.1 - 2025-03-04
+
+- 修复 Node 全局变量 module 和 require 等未定义错误
+
 ## 16.1.0 - 2025-03-03
 
 - 将 `@typescript-eslint/no-empty-interface` 更改为 `@typescript-eslint/no-empty-object-type` 并增加

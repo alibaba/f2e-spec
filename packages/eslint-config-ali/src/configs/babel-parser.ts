@@ -1,5 +1,6 @@
 import parser from '@babel/eslint-parser';
 import type { Linter } from 'eslint';
+import globals from 'globals';
 import { fileURLToPath } from 'url';
 import gitignore from './gitignore';
 
@@ -26,6 +27,10 @@ const babelParser: Linter.Config = {
           fileURLToPath(import.meta.resolve('@babel/preset-react')),
         ],
       },
+    },
+    globals: {
+      ...globals.node,
+      ...globals.browser,
     },
   },
   ...gitignore,

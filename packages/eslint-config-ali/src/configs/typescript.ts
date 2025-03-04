@@ -1,4 +1,5 @@
 import { Linter } from 'eslint';
+import globals from 'globals';
 import ts from 'typescript-eslint';
 
 /** TypeScript */
@@ -15,6 +16,10 @@ const typescript = ts.config({
         globalReturn: true,
       },
       ecmaVersion: 'latest',
+    },
+    globals: {
+      ...globals.node,
+      ...globals.browser,
     },
   },
   rules: {
