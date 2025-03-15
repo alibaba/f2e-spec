@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "ci:eslint": "eslint -f json src -o ./.ci/eslint.json",
+    "lint": "eslint .<% if (stylelint) { %> && stylelint \"**/*.{css,less,scss}\"<% } %>",
+    "lint:fix": "<% if (prettier) { %>prettier --write . && <% } %>eslint --fix .<% if (stylelint) { %> && stylelint --fix \"**/*.{css,less,scss}\"<% } %>"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "eslint-config-ali": "^16.0.0"
+  }
+}
