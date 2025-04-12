@@ -1,20 +1,28 @@
 {
-  "husky": null,
-  "eslintConfig": null,
-  "stylelint": {
-    "extends": null
-  },
-  "commitlint": {
-    "extends": null
-  },
+  "commitlint": null,
   "devDependencies": {
+    "@commitlint/cli": null,
     "@typescript-eslint/eslint-plugin": null,
     "@typescript-eslint/parser": null,
+    "commitlint-config-ali": null,
     "eslint-import-resolver-typescript": null,
     "eslint-plugin-import": null,
     "eslint-plugin-react": null,
     "eslint-plugin-react-hooks": null,
+    "eslint-config-prettier": null,
+    "eslint-plugin-prettier": null,
     "f2elint": null,
+    "husky": null,
+    "lint-staged": null,
+    "prettier": null,
+    "prettier-config-ali": null,
+    "stylelint": null,
+    "stylelint-config-ali": null,
+    "stylelint-prettier": null,
     "tslint": null
-  }
+  },
+  "eslintConfig": null,
+  "husky": null,
+  "lint-staged": null,
+  "stylelint": null
 }
