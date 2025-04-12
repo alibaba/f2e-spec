@@ -1,5 +1,9 @@
 # 更新日志
 
+## 5.0.1 - 2025-04-12
+
+- fix(types): 将 `TemplateType` 从 enum 改为 union
+
 ## 5.0.0 - 2025-02-22
 
 - **BREAKING CHANGE** feat(eslint): 升级 ESLint 9 改用最新配置文件 eslint.config.mjs

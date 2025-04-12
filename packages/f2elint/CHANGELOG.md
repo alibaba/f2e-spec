@@ -1,4 +1,8 @@
-# 更新日志
+# Changelog
+
+## 5.0.1 - 2025-04-12
+
+- fix(types): changed `TemplateType` from enum to union
 
 ## 5.0.0 - 2025-02-22
 

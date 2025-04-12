@@ -61,7 +61,7 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
     const projectPath = resolve(project || '.');
     const isGitRoot = existsSync(join(projectPath, '.git'));
 
-    const template = await select<any, TemplateType>({
+    const template = await select<TemplateType>({
       message: '🧰 选择预设模版',
       options: [
         { value: 'react', label: 'React' },
@@ -134,7 +134,7 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
       process.exit(1);
     }
 
-    const npmCommand = await select<any, string>({
+    const npmCommand = await select<string>({
       message: '📦 安装或更新依赖',
       options: [
         { value: 'npm update', label: 'npm' },

@@ -4,7 +4,7 @@ import prettier from 'prettier-config-ali';
 import { fileURLToPath } from 'url';
 import { TemplateType } from './types';
 
-export { TemplateType };
+export type { TemplateType };
 
 export interface F2elintOptions {
   template?: TemplateType;
