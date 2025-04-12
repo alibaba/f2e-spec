@@ -40,7 +40,7 @@ export async function f2elint(project: string | null = '.', options: F2elintOpti
   if (options.lintStaged) {
     await initTemplate('lint-staged');
   }
-  if (options.lintStaged) {
+  if (options.commitlint) {
     await initTemplate('commitlint');
   }
 }
