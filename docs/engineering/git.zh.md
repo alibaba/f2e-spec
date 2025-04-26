@@ -189,11 +189,11 @@ Signed-off-by: Author <author@example.com>
 
 ### 常驻分支
 
-[GitHub Flow] / [One Flow]:
+单分支维护模式:
 
 - `main`: 主分支
 
-[Git Flow]:
+多分支维护模式:
 
 - `main`: 主分支，最新的稳定版本，修复分支从此创建，再合并回此分支
 - `feature`: 特性分支，新功能从此创建，再合并回此分支，正式发布时再合并到 `main`
@@ -223,15 +223,6 @@ refactor/class-renaming
 feat/1023-crash-on-search
 fix/3012-crash-on-search
 ```
-
-### 2.3 多版本分支命名
-
-在需要同时维护多个版本的项目中，只使用 master 作为主干分支显然是无法满足需求的，但是又不想使用 Git Flow 这种复杂、繁琐的分支结构，那么就可以每发布一个新的版本就单独拉一个新的分支，例如：
-
-> - `1.0.0-stable`
-> - `2.0.0-stable`
-
-其他开发过程中的分支命名参考上节 2.2 的分支命名规约。
 
 ## 标签命名/Tag Naming
 
