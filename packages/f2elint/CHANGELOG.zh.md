@@ -1,5 +1,9 @@
 # 更新日志
 
+## 5.1.2 - 2025-04-26
+
+- fix(install): 更改了 `npm update` 命令为 `npm install`，使集成更平滑
+
 ## 5.1.1 - 2025-04-26
 
 - fix(editorconfig): 排序配置选项

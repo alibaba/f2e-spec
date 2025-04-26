@@ -137,11 +137,11 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
     const npmCommand = await select<string>({
       message: '📦 安装或更新依赖',
       options: [
-        { value: 'npm update', label: 'npm' },
-        { value: 'pnpm update', label: 'pnpm' },
-        { value: 'yarn update', label: 'yarn' },
-        { value: 'tnpm update', label: 'tnpm' },
-        { value: 'cnpm update', label: 'cnpm' },
+        { value: 'npm i', label: 'npm' },
+        { value: 'pnpm i', label: 'pnpm' },
+        { value: 'yarn', label: 'yarn' },
+        { value: 'tnpm i', label: 'tnpm' },
+        { value: 'cnpm i', label: 'cnpm' },
         { value: '', label: '跳过' },
       ],
     });

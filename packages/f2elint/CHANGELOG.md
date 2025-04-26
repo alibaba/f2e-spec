@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.2 - 2025-04-26
+
+- fix(install): change `npm update` to `npm install` for smoother integration
+
 ## 5.1.1 - 2025-04-26
 
 - fix(editorconfig): sort config options
