@@ -1,6 +1,8 @@
 {
   "commitlint": null,
   "devDependencies": {
+    "@ali/eslint-config-att": null,
+    "@alife/eslint-config-att": null,
     "@commitlint/cli": null,
     "@typescript-eslint/eslint-plugin": null,
     "@typescript-eslint/parser": null,
