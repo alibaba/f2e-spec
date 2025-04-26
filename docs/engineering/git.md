@@ -9,8 +9,15 @@ order: 1.0
 
 ### Format
 
-- **推荐**使用《[Convertional Commits]》格式书写 Commit Message。（请完整阅读后再继续以下内容）
-- 如果你在使用 `npx f2elint@latest` 初始化项目时启用了 `Commitlint`, 那么约定式提交规则也将一并启用。
+**Recommend** using [Convertional Commits] format to write commit messages. (Please read the full doc before continue) If you initialize project with `npx f2elint@latest` and enabled `Commitlint`, then convertional commits rules are already enabled.
+
+```
+<type>[scope]: <description>
+
+[body]
+
+[footer]
+```
 
 ### Language
 
