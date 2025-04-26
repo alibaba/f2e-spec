@@ -5,7 +5,7 @@ import base from './base';
 
 export default defineConfigArray([
   ...base,
-  reactPlugin.configs.flat.recommended,
-  reactPlugin.configs.flat['jsx-runtime'],
+  reactPlugin.configs.flat!.recommended,
+  reactPlugin.configs.flat!['jsx-runtime'],
   react,
 ]);

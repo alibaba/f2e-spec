@@ -1,5 +1,9 @@
 # 更新日志
 
+## 16.2.0 - 2025-04-26
+
+- 升级了 `@stylistic/eslint-plugin` 2.x 到 4.x
+
 ## 16.1.1 - 2025-03-04
 
 - 修复 Node 全局变量 module 和 require 等未定义错误
