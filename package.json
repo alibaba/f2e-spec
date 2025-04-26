@@ -12,43 +12,47 @@
   },
   "license": "Apache-2.0",
   "scripts": {
-    "build": "rive build --no-lib",
+    "build": "rive build",
+    "build:watch": "rive build --watch",
     "deploy": "gh-pages -d build",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "prepare": "husky && cd packages/eslint-config-ali && npm run build",
+    "lint:fix": "prettier --write . && eslint --fix .",
+    "prepare": "husky",
     "start": "rive start",
-    "test": "rive test"
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest"
   },
   "commitlint": {
     "extends": [
-      "ali"
+      "@commitlint/config-conventional"
     ]
   },
   "lint-staged": {
-    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint"
+    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint --fix",
+    "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "prettier --write"
   },
   "prettier": "prettier-config-ali",
   "devDependencies": {
-    "@commitlint/cli": "^19.7.1",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
     "@mdx-js/react": "^3.1.0",
-    "@types/node": "^20.17.19",
-    "commitlint-config-ali": "link:packages/commitlint-config-ali",
-    "eslint": "^9.21.0",
-    "eslint-config-ali": "link:packages/eslint-config-ali",
-    "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-prettier": "^5.2.3",
-    "gh-pages": "^6.3.0",
+    "@types/node": "^20.17.31",
+    "@vitest/ui": "^3.1.2",
+    "eslint": "^9.25.1",
+    "eslint-config-ali": "^16.1.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
     "husky": "^9.1.7",
-    "lint-staged": "^15.4.3",
-    "markdownlint": "~0.33.0",
-    "prettier": "^3.5.2",
-    "prettier-config-ali": "link:packages/prettier-config-ali",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "prettier-config-ali": "^1.3.2",
     "react": "^18.3.1",
-    "react-doc-ui": "^2.3.0",
+    "react-doc-ui": "^2.3.3",
     "react-dom": "^18.3.1",
-    "rive": "^3.0.1",
-    "typescript": "^5.7.3"
+    "rive": "^3.1.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
   },
   "rive": {
     "doc": {
@@ -65,7 +69,7 @@
           "name": "中文"
         }
       ]
-    }
-  },
-  "version": "0.0.1"
+    },
+    "template": "node"
+  }
 }
