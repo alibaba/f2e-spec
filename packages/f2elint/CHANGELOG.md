@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.1.1 - 2025-04-26
+
+- fix(vscode): remove other rulers
+- fix(editorconfig): sort config options
+
 ## 5.1.0 - 2025-04-26
 
 - feat(template/commitlint): switch to `@commitlint/config-conventional`
