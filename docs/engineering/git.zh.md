@@ -187,22 +187,42 @@ Signed-off-by: Author <author@example.com>
 
 ## 分支命名/Branch Naming
 
-### 2.1 分支模型选择的说明
+### 常驻分支
 
-### 2.2 分支命名
+[GitHub Flow] / [One Flow]:
 
-新建分支的命名格式为：`{type}-{issue id}-the-thing-you-do`
+- `main`: 主分支
 
-- `type`：和上文 1.3.1 章节中的 type 保持一致
-- `issue id`：与分支内容相关的 issue id，如果无关，则可以忽略
+[Git Flow]:
 
-比如以下格式都满足规范：
+- `main`: 主分支，最新的稳定版本，修复分支从此创建，再合并回此分支
+- `feature`: 特性分支，新功能从此创建，再合并回此分支，正式发布时再合并到 `main`
+- `next`: 下个大版本分支，破坏性变更从此创建，再合并会此分支，正式发布时再合并到 `main`
+- `x`/`x.y`: 之前版本的维护分支，修复分支从此创建，再合并回此分支，这些分支不能合并回 `main`
 
-- `feat-ssr-prefetch`：新增 ssr prefetch 功能
-- `fix-1379-component-insert-order`：修复 issue 1379 中提到的组件插入顺序 bug
-- `revert-14218-memory-leak-on-unmount`：回退版本解决 issue 14218 提到的组件卸载时内存泄露的问题
+### 临时分支
 
-> 注：该命名规约只针对新建的临时分支，不包括如 master、develop 等常驻分支
+格式：
+
+```
+<类型>/[问题编号][处理人]<描述>
+```
+
+类型 (type) 与[约定式提交 (Convertional Commits)]中的一致。
+
+最简单的例子，仅有类型和描述：
+
+```
+feat/shopping-cart
+refactor/class-renaming
+```
+
+带上问题编号（GitHub Issue 或 JIRA Task）：
+
+```
+feat/1023-crash-on-search
+fix/3012-crash-on-search
+```
 
 ### 2.3 多版本分支命名
 
