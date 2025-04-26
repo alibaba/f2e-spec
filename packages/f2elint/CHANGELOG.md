@@ -2,8 +2,9 @@
 
 ## 5.1.1 - 2025-04-26
 
-- fix(vscode): remove other rulers
 - fix(editorconfig): sort config options
+- fix(ignore): remove .ci folder
+- fix(vscode): remove other rulers
 
 ## 5.1.0 - 2025-04-26
 

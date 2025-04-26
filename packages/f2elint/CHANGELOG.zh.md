@@ -1,5 +1,11 @@
 # 更新日志
 
+## 5.1.1 - 2025-04-26
+
+- fix(editorconfig): 排序配置选项
+- fix(ignore): 移除 .ci 文件夹
+- fix(vscode): 移除其他标尺
+
 ## 5.1.0 - 2025-04-26
 
 - feat(template/commitlint): 改用 `@commitlint/config-conventional`
