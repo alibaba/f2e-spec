@@ -21,10 +21,10 @@ order: 1.0
 
 ### Language
 
-- 国际化项目和开源项目**推荐**使用英文书写 Commit Message，以增强协作。
-- 其他项目**推荐**使用开发团队最普遍使用的语言，以提升效率。
-- **不要**使用其他人无法理解的语言书写 Commit Message。
-- **不要**使用拼音或不常见的缩写书写 Commit Message，以避免歧义。
+- For international or open source projects, **recommend** using English to write commit messages, for better collaboration.
+- Other projects, **reommend** using the language that team members are most familiar with, to improve efficiency.
+- Do **NOT** use language that other team members cannot understand.
+- Do **NOT** use pinyin or uncommon abbreviation, which may lead misunderstanding.
 
 ### Type
 
