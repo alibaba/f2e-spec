@@ -17,7 +17,7 @@
     "deploy": "gh-pages -d build",
     "lint": "eslint .",
     "lint:fix": "prettier --write . && eslint --fix .",
-    "prepare": "husky",
+    "prepare": "husky && cd packages/eslint-config-ali && pnpm build",
     "start": "rive start",
     "test": "vitest run",
     "test:ui": "vitest --ui",
