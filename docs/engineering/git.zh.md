@@ -167,7 +167,7 @@ Signed-off-by: Author <author@example.com>
 
 如果项目仅有一人维护，则**不需要创建任何分支**，直接在 main/master 分支上提交代码即可。
 
-### [GitHub Flow] / [One Flow]
+### GitHub Flow / One Flow
 
 [GitHub Flow] 和 [One Flow] 类似，在敏捷开发项目中获得了广泛使用。
 
@@ -175,7 +175,7 @@ Signed-off-by: Author <author@example.com>
 
 这种模式的优点在于解放了开发者，能够更快地交付迭代。而缺点则在于用户不得不更频繁地处理破坏性变更，以获取想要的功能更新或安全补丁。
 
-### [Git Flow]
+### Git Flow
 
 [Git Flow] 是 2010 年被总结出来的。当时的软件行业模式是由微软 IBM 等传统软件公司企业所主导的，SaaS 产品开发是主流。
 
