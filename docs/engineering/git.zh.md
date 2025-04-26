@@ -220,7 +220,7 @@ Signed-off-by: Author <author@example.com>
 
 ## 标签命名/Tag Naming
 
-Git Tag 通常用来标记版本。
+Git Tag 通常用来标记发布的版本。
 
 1. 版本号**必须**符合《[语义化版本 (Semantic Versioning)]》约定。
 
