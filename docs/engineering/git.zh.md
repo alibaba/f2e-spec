@@ -9,8 +9,15 @@ order: 1.0
 
 ### 格式
 
-- **推荐**使用《[约定式提交 (Convertional Commits)]》格式书写 Commit Message。（请完整阅读后再继续以下内容）
-- 如果你在使用 `npx f2elint@latest` 初始化项目时启用了 `Commitlint`, 那么约定式提交规则也将一并启用。
+**推荐**使用《[约定式提交 (Convertional Commits)]》格式书写 Commit Message。（请完整阅读后再继续以下内容）如果你在使用 `npx f2elint@latest` 初始化项目时启用了 `Commitlint`, 那么约定式提交规则也将一并启用。
+
+```
+<类型>[范围]: <描述>
+
+[正文]
+
+[脚注]
+```
 
 ### 语言
 
