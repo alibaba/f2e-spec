@@ -167,7 +167,7 @@ Signed-off-by: Author <author@example.com>
 
 如果项目仅有一人维护，则**不需要创建任何分支**，直接在 main/master 分支上提交代码即可。
 
-### [GitHub Flow] or [One Flow]
+### [GitHub Flow] / [One Flow]
 
 [GitHub Flow] 和 [One Flow] 类似，在敏捷开发项目中获得了广泛使用。
 
