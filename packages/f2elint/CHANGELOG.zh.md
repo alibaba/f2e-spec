@@ -1,5 +1,9 @@
 # 更新日志
 
+## 5.1.0 - 2025-04-26
+
+- feat(template/commitlint): 改用 `@commitlint/config-conventional`
+
 ## 5.0.6 - 2025-04-26
 
 - fix(template/base): 新增 `@ali/eslint-config-att` 删除规则

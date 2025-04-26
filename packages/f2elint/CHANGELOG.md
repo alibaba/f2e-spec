@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.1.0 - 2025-04-26
+
+- feat(template/commitlint): switch to `@commitlint/config-conventional`
+
 ## 5.0.6 - 2025-04-26
 
 - fix(template/base): add delete rule of `@ali/eslint-config-att` dependency
