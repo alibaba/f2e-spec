@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "es2020",
     "lib": ["esnext"],
-    "allowJs": false,
+    "allowJs": true,
     "checkJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -10,9 +10,10 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "types": ["node", "rive/globals"],
+    "types": ["node", "rive/globals", "vitest/globals"],
     "jsx": "react-jsx",
-    "noEmit": true
+    "noEmit": true,
+    "strict": true
   },
   "exclude": [".rive", "build", "coverage", "dist", "node_modules"]
 }

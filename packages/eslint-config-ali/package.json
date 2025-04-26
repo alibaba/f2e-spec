@@ -53,14 +53,14 @@
   "scripts": {
     "build": "rive build",
     "build:watch": "rive build --watch",
-    "lint": "rive lint",
-    "lint:fix": "rive lint --fix",
+    "lint": "eslint .",
+    "lint:fix": "prettier --write . && eslint --fix .",
     "start": "rive start",
-    "test": "rive test",
-    "test:ui": "rive test --ui",
-    "test:watch": "rive test --watch"
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest"
   },
-  "prettier": "prettier-config-rive",
+  "prettier": "prettier-config-ali",
   "dependencies": {
     "@babel/core": "^7.26.0",
     "@babel/eslint-parser": "^7.25.9",
@@ -78,15 +78,22 @@
   "devDependencies": {
     "@mdx-js/react": "^3.1.0",
     "@types/eslint": "^9.6.1",
-    "@types/node": "^20.17.11",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "eslint": "^9.17.0",
+    "@types/node": "^20.17.31",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.6",
+    "@vitest/ui": "^3.1.2",
+    "eslint": "^9.25.1",
+    "eslint-config-ali": "^16.1.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "prettier": "^3.5.3",
+    "prettier-config-ali": "workspace:^",
     "react": "^18.3.1",
-    "react-doc-ui": "^2.3.0",
+    "react-doc-ui": "^2.3.3",
     "react-dom": "^18.3.1",
-    "rive": "^3.0.1",
-    "typescript": "^5.7.2"
+    "rive": "^3.1.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.2"
   },
   "peerDependencies": {
     "eslint": "^9.0.0"
