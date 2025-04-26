@@ -1,5 +1,9 @@
 # 更新日志
 
+## 5.0.6 - 2025-04-26
+
+- fix(template/base): 新增 `@ali/eslint-config-att` 删除规则
+
 ## 5.0.1 - 2025-04-12
 
 - fix(types): 将 `TemplateType` 从 enum 改为 union

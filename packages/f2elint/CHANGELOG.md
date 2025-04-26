@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.0.6 - 2025-04-26
+
+- fix(template/base): add delete rule of `@ali/eslint-config-att` dependency
+
 ## 5.0.1 - 2025-04-12
 
 - fix(types): changed `TemplateType` from enum to union
