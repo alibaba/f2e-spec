@@ -1,5 +1,9 @@
 # 更新日志
 
+## 6.0.0 - 2025-04-27
+
+- feat(export)!: 改为默认导出
+
 ## 5.1.2 - 2025-04-26
 
 - fix(install): 更改了 `npm update` 命令为 `npm install`，使集成更平滑

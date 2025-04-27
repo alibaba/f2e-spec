@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.0 - 2025-04-27
+
+- feat(export)!: changed to default export
+
 ## 5.1.2 - 2025-04-26
 
 - fix(install): change `npm update` to `npm install` for smoother integration
