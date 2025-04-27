@@ -9,11 +9,10 @@
     "allowJs": true,
     "checkJs": false,
     "skipLibCheck": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "isolatedModules": true,
     "noEmit": true,
     "strict": true
   },
-  "include": ["src"],
   "exclude": [".rive", "build", "coverage", "dist", "node_modules"]
 }
