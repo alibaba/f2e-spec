@@ -10,7 +10,7 @@ export interface F2etestOptions {
   disableLog?: boolean;
 }
 
-export async function f2etest(project: string, options: F2etestOptions = {}) {
+export default async function f2etest(project: string, options: F2etestOptions = {}) {
   const { template = 'base' } = options;
   const projectFullPath = isAbsolute(project) ? project : join(process.cwd(), project);
 

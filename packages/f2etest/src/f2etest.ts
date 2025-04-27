@@ -6,7 +6,7 @@ import { Command } from 'commander';
 import { readFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
-import { f2etest, TemplateType } from '.';
+import f2etest, { TemplateType } from '.';
 import { runCommand } from './private/runCommand';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
