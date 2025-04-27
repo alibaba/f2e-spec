@@ -6,7 +6,7 @@ import { Command } from 'commander';
 import { existsSync, readFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
-import { f2elint } from '.';
+import f2elint from '.';
 import { runCommand } from './private/runCommand';
 import { TemplateType } from './types';
 

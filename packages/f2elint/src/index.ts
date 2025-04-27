@@ -15,7 +15,7 @@ export interface F2elintOptions {
   disableLog?: boolean;
 }
 
-export async function f2elint(project: string | null = '.', options: F2elintOptions = {}) {
+export default async function f2elint(project: string, options: F2elintOptions = {}) {
   const projectFullPath = isAbsolute(project) ? project : join(process.cwd(), project);
 
   const __dirname = dirname(fileURLToPath(import.meta.url));
