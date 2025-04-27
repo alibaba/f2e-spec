@@ -1,0 +1,10 @@
+/.rive
+/build
+/coverage
+/dist
+node_modules
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+*.min.css
+*.min.js
