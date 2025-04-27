@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@types/enzyme": null,
+    "enzyme": null,
+    "enzyme-matchers": null,
+    "enzyme-to-json": null,
+    "jest-environment-enzyme": null,
+    "jest-enzyme": null
+  }
+}

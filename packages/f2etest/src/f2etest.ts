@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-import { cancel, confirm, intro, isCancel, outro, select, spinner, text } from '@clack/prompts';
+import { cancel, intro, isCancel, outro, select, spinner, text } from '@clack/prompts';
 import chalk from 'chalk';
 import { Command } from 'commander';
 import { readFileSync } from 'fs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
-import { f2etest } from '.';
+import { f2etest, TemplateType } from '.';
 import { runCommand } from './private/runCommand';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -57,50 +57,17 @@ if (process.argv.length > 2) {
 
     const projectPath = resolve(project || '.');
 
-    const template = await select<'react' | 'base'>({
+    const template = await select<TemplateType>({
       message: '🧰 选择预设模版',
       options: [
         { value: 'react', label: 'React' },
+        { value: 'preact', label: 'Preact' },
+        { value: 'web', label: 'Web' },
         { value: 'base', label: 'Base' },
       ],
     });
 
     if (isCancel(template)) {
-      cancel('👋 已取消');
-      process.exit(0);
-    }
-
-    const unitTest = await select<'vitest' | 'none'>({
-      message: '🔬 选择单元测试框架',
-      options: [
-        { value: 'vitest', label: 'Vitest' },
-        { value: 'none', label: 'None' },
-      ],
-    });
-
-    if (isCancel(unitTest)) {
-      cancel('👋 已取消');
-      process.exit(0);
-    }
-
-    const e2eTest = await select<'playwright' | 'none'>({
-      message: '🚑 选择端到端测试框架',
-      options: [
-        { value: 'playwright', label: 'Playwright' },
-        { value: 'none', label: 'None' },
-      ],
-    });
-
-    if (isCancel(e2eTest)) {
-      cancel('👋 已取消');
-      process.exit(0);
-    }
-
-    const prettier = await confirm({
-      message: '💅 启用 Prettier 代码格式化',
-    });
-
-    if (isCancel(prettier)) {
       cancel('👋 已取消');
       process.exit(0);
     }
@@ -111,8 +78,6 @@ if (process.argv.length > 2) {
     try {
       await f2etest(projectPath, {
         template,
-        unitTest,
-        e2eTest,
         disableLog: true,
       });
       s1.stop('✅ 初始化项目完成');
@@ -125,11 +90,11 @@ if (process.argv.length > 2) {
     const npmCommand = await select<string>({
       message: '📦 安装或更新依赖',
       options: [
-        { value: 'npm update', label: 'npm' },
-        { value: 'pnpm update', label: 'pnpm' },
-        { value: 'yarn update', label: 'yarn' },
-        { value: 'tnpm update', label: 'tnpm' },
-        { value: 'cnpm update', label: 'cnpm' },
+        { value: 'npm i', label: 'npm' },
+        { value: 'pnpm i', label: 'pnpm' },
+        { value: 'yarn', label: 'yarn' },
+        { value: 'tnpm i', label: 'tnpm' },
+        { value: 'cnpm i', label: 'cnpm' },
         { value: '', label: '跳过' },
       ],
     });

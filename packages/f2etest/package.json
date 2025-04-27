@@ -44,11 +44,11 @@
     "build:watch": "rive build --watch",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "prepare": "husky",
     "start": "rive start",
     "test": "rive test",
     "test:ui": "rive test --ui",
-    "test:watch": "rive test --watch",
-    "prepare": "husky"
+    "test:watch": "rive test --watch"
   },
   "prettier": "prettier-config-ali",
   "dependencies": {
@@ -56,7 +56,7 @@
     "chalk": "^5.4.1",
     "command-exists": "^1.2.9",
     "commander": "^13.1.0",
-    "init-roll": "^1.3.0",
+    "init-roll": "^1.4.0",
     "prettier-config-ali": "workspace:^"
   },
   "devDependencies": {

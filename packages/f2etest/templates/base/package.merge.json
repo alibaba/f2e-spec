@@ -1,11 +1,14 @@
 {
   "scripts": {
-    "ci:eslint": "eslint -f json src -o ./.ci/eslint.json",
-    "lint": "eslint .<% if (stylelint) { %> && stylelint \"**/*.{css,less,scss}\"<% } %>",
-    "lint:fix": "<% if (prettier) { %>prettier --write . && <% } %>eslint --fix .<% if (stylelint) { %> && stylelint --fix \"**/*.{css,less,scss}\"<% } %>"
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest"
   },
   "devDependencies": {
-    "eslint": "^9.0.0",
+    "@vitest/coverage-v8": "^3.0.0",
+    "@vitest/ui": "^3.0.0",
+    "vitest": "^3.0.0",
     "eslint-config-ali": "^16.0.0"
   }
 }

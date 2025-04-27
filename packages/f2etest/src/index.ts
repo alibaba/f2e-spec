@@ -3,15 +3,15 @@ import { dirname, isAbsolute, join } from 'path';
 import prettier from 'prettier-config-ali';
 import { fileURLToPath } from 'url';
 
+export type TemplateType = 'base' | 'web' | 'react' | 'preact';
+
 export interface F2etestOptions {
-  template?: 'react' | 'base';
-  unitTest?: 'vitest' | 'none';
-  e2eTest?: 'playwright' | 'none';
+  template?: TemplateType;
   disableLog?: boolean;
 }
 
-export async function f2etest(project: string | null = '.', options: F2etestOptions = {}) {
-  const { template = 'base', unitTest = 'vitest', e2eTest = 'playwright' } = options;
+export async function f2etest(project: string, options: F2etestOptions = {}) {
+  const { template = 'base' } = options;
   const projectFullPath = isAbsolute(project) ? project : join(process.cwd(), project);
 
   const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -22,11 +22,22 @@ export async function f2etest(project: string | null = '.', options: F2etestOpti
       bumpDependencies: true,
     });
 
-  await initTemplate(template);
-  if (unitTest !== 'none') {
-    await initTemplate(unitTest);
-  }
-  if (e2eTest !== 'none') {
-    await initTemplate(e2eTest);
+  switch (template) {
+    case 'preact':
+      await initTemplate('preact');
+      await initTemplate('web');
+      await initTemplate('base');
+      break;
+    case 'react':
+      await initTemplate('react');
+      await initTemplate('web');
+      await initTemplate('base');
+      break;
+    case 'web':
+      await initTemplate('web');
+      await initTemplate('base');
+      break;
+    default:
+      await initTemplate('base');
   }
 }
