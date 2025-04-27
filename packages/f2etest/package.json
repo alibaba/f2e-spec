@@ -1,6 +1,6 @@
 {
   "name": "f2etest",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alibaba front-end testing setup tools",
   "keywords": [
     "alibaba",
@@ -35,6 +35,8 @@
       "types": "./dist/index.d.ts"
     }
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "bin": "dist/f2etest.js",
   "files": [
     "dist",
