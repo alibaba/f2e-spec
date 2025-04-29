@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4 - 2025-04-29
+
+- fix: restrict coverage in src folder
+
 ## 1.0.3 - 2025-04-29
 
 - fix: template execution order
