@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.3 - 2025-04-29
+
+- fix: template execution order
+
 ## 1.0.2 - 2025-04-28
 
 - fix(base): added `vitest/globals` into `types` option of `tsconfig.json`

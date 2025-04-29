@@ -22,22 +22,21 @@ export default async function f2etest(project: string, options: F2etestOptions =
       bumpDependencies: true,
     });
 
+  await initTemplate('base');
+
   switch (template) {
     case 'preact':
-      await initTemplate('preact');
       await initTemplate('web');
-      await initTemplate('base');
+      await initTemplate('preact');
       break;
     case 'react':
-      await initTemplate('react');
       await initTemplate('web');
-      await initTemplate('base');
+      await initTemplate('react');
       break;
     case 'web':
       await initTemplate('web');
-      await initTemplate('base');
       break;
     default:
-      await initTemplate('base');
+      break;
   }
 }
