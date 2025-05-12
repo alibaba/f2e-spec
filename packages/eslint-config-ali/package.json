@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ali",
-  "version": "16.2.0",
+  "version": "16.3.0",
   "description": "ESLint Shareable Config for Alibaba F2E Guidelines",
   "keywords": [
     "eslint",
@@ -64,6 +64,7 @@
   "dependencies": {
     "@babel/core": "^7.26.0",
     "@babel/eslint-parser": "^7.25.9",
+    "@babel/plugin-proposal-decorators": "^7.27.1",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
     "@eslint/compat": "^1.2.4",

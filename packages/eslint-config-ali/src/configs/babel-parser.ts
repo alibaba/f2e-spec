@@ -26,6 +26,13 @@ const babelParser: Linter.Config = {
           fileURLToPath(import.meta.resolve('@babel/preset-env')),
           fileURLToPath(import.meta.resolve('@babel/preset-react')),
         ],
+        plugins: [
+          [
+            // https://babeljs.io/docs/babel-plugin-proposal-decorators
+            fileURLToPath(import.meta.resolve('@babel/plugin-proposal-decorators')),
+            { version: '2023-11' },
+          ],
+        ],
       },
     },
     globals: {
