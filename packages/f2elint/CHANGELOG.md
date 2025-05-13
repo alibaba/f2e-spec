@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.1.0 - 2025-05-13
+
+- feat(lint-staged): update `lint-staged` from 15.x to 16.x
+
 ## 6.0.0 - 2025-04-27
 
 - feat(export)!: changed to default export

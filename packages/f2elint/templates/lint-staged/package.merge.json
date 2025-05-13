@@ -13,6 +13,6 @@
   },
   "devDependencies": {
     "husky": "^9.1.3",
-    "lint-staged": "^15.2.2"
+    "lint-staged": "^16.0.0"
   }
 }
