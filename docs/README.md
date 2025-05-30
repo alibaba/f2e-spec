@@ -16,7 +16,6 @@ the following:
   - [React Coding Specification](coding/react.md)
   - [Node.js Coding Specification](coding/node.md)
   - [TypeScript Coding Specification](coding/typescript.md)
-  - [Rax Coding Specification](coding/rax.md)
 - Engineering
   - [Git Specification](engineering/git.md)
   - [Writing Specification](engineering/writing.md)

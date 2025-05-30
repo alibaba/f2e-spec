@@ -109,27 +109,6 @@ describe('Validate JS configs', () => {
     assert.notEqual(sumBy(displayNameResult, 'warningCount'), 0);
   });
 
-  it('Validate eslint-config-ali/rax', async () => {
-    const configPath = './rax.js';
-    const filePath = path.join(__dirname, './fixtures/rax.jsx');
-
-    const cli = new eslint.ESLint({
-      overrideConfigFile: configPath,
-
-      ignore: false,
-    });
-
-    // 验证导出的 config 是否正常
-    const config = await cli.calculateConfigForFile(filePath);
-    assert.ok(isObject(config));
-
-    // 验证 lint 工作是否正常
-    const results = await cli.lintFiles([filePath]);
-    assert.equal(sumBy(results, 'fatalErrorCount'), 0);
-    assert.notEqual(sumBy(results, 'errorCount'), 0);
-    assert.equal(sumBy(results, 'warningCount'), 0);
-  });
-
   it('Validate eslint-config-ali/vue', async () => {
     const configPath = './vue.js';
     const filePath = path.join(__dirname, './fixtures/vue.vue');

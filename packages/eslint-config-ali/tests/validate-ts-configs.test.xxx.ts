@@ -107,32 +107,6 @@ describe('Validate TS configs', () => {
     assert.equal(errorReportedByReactPlugin2.length, 2);
   });
 
-  it('Validate eslint-config-ali/typescript/rax', async () => {
-    const configPath = './typescript/rax.js';
-    const cli = new eslint.ESLint({
-      overrideConfigFile: configPath,
-
-      ignore: false,
-      overrideConfig: {
-        parserOptions: {
-          project: path.join(__dirname, './fixtures/tsconfig.json'),
-        },
-      },
-    });
-
-    // 验证导出的 config 是否正常
-    const filePath = path.join(__dirname, './fixtures/ts-rax.tsx');
-    const config = await cli.calculateConfigForFile(filePath);
-    assert.ok(isObject(config));
-
-    // 验证对 tsx 工作是否正常
-    const results = await cli.lintFiles([filePath]);
-
-    assert.equal(sumBy(results, 'fatalErrorCount'), 0);
-    assert.equal(sumBy(results, 'errorCount'), 0);
-    assert.equal(sumBy(results, 'warningCount'), 0);
-  });
-
   it('Validate eslint-config-ali/typescript/vue', async () => {
     const configPath = './typescript/vue.js';
     const filePath = path.join(__dirname, './fixtures/ts-vue.vue');

@@ -37,12 +37,12 @@ pnpm i
 
 4 个 `xx-config-ali` 是不同规约对应的 Linter 的规则配置包，它们和规约文档及 Lint 工具对应关系如下：
 
-| 规约                                                                                                                             | Lint 工具                                                  | 规则包                                                                           |
-| -------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| 《JavaScript 编码规约》 <br/> 《TypeScript 编码规约》 <br/> 《React 编码规约》 <br/> 《Rax 编码规约》 <br/> 《Node.js 开发规约》 | [ESLint](https://eslint.org/)                              | [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali)             |
-| 《CSS 编码规约》                                                                                                                 | [stylelint](https://stylelint.io/)                         | [stylelint-config-ali](https://www.npmjs.com/package/stylelint-config-ali)       |
-| 《Git 规约》                                                                                                                     | [commitlint](https://commitlint.js.org/#/)                 | [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali)     |
-| 《文档通用规约》                                                                                                                 | [markdownlint](https://github.com/DavidAnson/markdownlint) | [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali) |
+| 规约                                                                                                      | Lint 工具                                                  | 规则包                                                                           |
+| --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| 《JavaScript 编码规约》 <br/> 《TypeScript 编码规约》 <br/> 《React 编码规约》 <br/> 《Node.js 开发规约》 | [ESLint](https://eslint.org/)                              | [eslint-config-ali](https://www.npmjs.com/package/eslint-config-ali)             |
+| 《CSS 编码规约》                                                                                          | [stylelint](https://stylelint.io/)                         | [stylelint-config-ali](https://www.npmjs.com/package/stylelint-config-ali)       |
+| 《Git 规约》                                                                                              | [commitlint](https://commitlint.js.org/#/)                 | [commitlint-config-ali](https://www.npmjs.com/package/commitlint-config-ali)     |
+| 《文档通用规约》                                                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint) | [markdownlint-config-ali](https://www.npmjs.com/package/markdownlint-config-ali) |
 
 [f2elint](https://www.npmjs.com/package/f2elint) 是封装了 4 个 xx-config-ali 及相关依赖的一键工具。
 

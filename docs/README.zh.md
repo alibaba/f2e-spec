@@ -13,7 +13,6 @@
   - [React 编码规约](coding/react.md)
   - [Node.js 开发规约](coding/node.md)
   - [TypeScript 编码规约](coding/typescript.md)
-  - [Rax 编码规约](coding/rax.md)
 - 工程规约
   - [Git 规约](engineering/git.md)
   - [文档通用规约](engineering/writing.md)
