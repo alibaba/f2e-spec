@@ -1,5 +1,9 @@
 # 更新日志
 
+## 6.1.1 - 2025-06-08
+
+- fix(stylelint): 增加 `--allow-empty-input` 参数
+
 ## 6.1.0 - 2025-05-13
 
 - feat(lint-staged): 升级 `lint-staged` 15.x 到 16.x
