@@ -33,7 +33,7 @@
       "url": "https://guoyunhe.me/"
     }
   ],
-  "license": "MIT",
+  "license": "MPL-2.0",
   "scripts": {
     "test": "rive test"
   },

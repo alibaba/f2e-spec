@@ -16,7 +16,7 @@
     "type": "git",
     "url": "https://github.com/alibaba/f2e-spec"
   },
-  "license": "MIT",
+  "license": "MPL-2.0",
   "author": {
     "name": "Guo Yunhe",
     "email": "i@guoyunhe.me",

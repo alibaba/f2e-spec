@@ -21,7 +21,7 @@
     "name": "undead25",
     "email": "shuanglong525@gmail.com"
   },
-  "license": "MIT",
+  "license": "MPL-2.0",
   "peerDependencies": {
     "markdownlint": "0.x"
   }

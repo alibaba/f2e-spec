@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/alibaba/f2e-spec.git"
   },
-  "license": "Apache-2.0",
+  "license": "MPL-2.0",
   "scripts": {
     "build": "rive build",
     "build:watch": "rive build --watch",

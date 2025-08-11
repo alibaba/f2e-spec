@@ -39,7 +39,7 @@
       "email": "bowei.jbw@gmail.com"
     }
   ],
-  "license": "MIT",
+  "license": "MPL-2.0",
   "dependencies": {
     "fs-extra": "^9.0.1",
     "require-all": "^3.0.0"
