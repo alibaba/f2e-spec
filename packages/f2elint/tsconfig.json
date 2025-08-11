@@ -14,6 +14,5 @@
     "noEmit": true,
     "strict": true
   },
-  "include": ["src"],
   "exclude": [".rive", "build", "coverage", "dist", "node_modules"]
 }
