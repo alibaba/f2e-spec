@@ -18,8 +18,9 @@
   },
   "license": "MPL-2.0",
   "author": {
-    "name": "Sabo",
-    "email": "bowei.jbw@gmail.com"
+    "name": "Alibaba Open Source",
+    "email": "opensource@alibaba-inc.com",
+    "url": "https://opensource.alibaba.com/"
   },
   "contributors": [
     {
@@ -28,8 +29,14 @@
       "url": "https://guoyunhe.me/"
     },
     {
+      "name": "Sabo",
+      "email": "bowei.jbw@gmail.com",
+      "url": "https://github.com/bowei-jbw"
+    },
+    {
       "name": "Xat_MassacrE",
-      "email": "xxat.massacre@gmail.com"
+      "email": "xxat.massacre@gmail.com",
+      "url": "https://github.com/XatMassacrE"
     }
   ],
   "main": "index.js",

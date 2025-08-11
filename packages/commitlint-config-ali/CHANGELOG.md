@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.2.0 - 2025-08-11
+
+- 更改许可协议为 MPL-2.0
+
 ## 1.1.0 - 2024-04-08
 
 - 升级 conventional-changelog-conventionalcommits 4.x 到 7.x
