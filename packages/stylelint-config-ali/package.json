@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-ali",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "stylelint shareable config for Alibaba F2E Guidelines",
   "main": "index.cjs",
   "keywords": [
