@@ -55,5 +55,8 @@
     "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.2.5",
     "prettier-config-ali": "workspace:^"
+  },
+  "engines": {
+    "node": ">=20.8.0"
   }
 }

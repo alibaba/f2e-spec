@@ -2,7 +2,7 @@
 
 ## 1.3.0 - 2025-08-14
 
-- feat(commitlint-config-ali): restrict Node.js version to 20.8 or above
+- 限制 Node 版本为 20.8 以上
 
 ## 1.2.0 - 2025-08-11
 
