@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-ali",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Prettier shareable configuration for Alibaba F2E Guidelines",
   "keywords": [
     "prettier",
