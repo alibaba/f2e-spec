@@ -1,28 +1,32 @@
 # 更新日志
 
+## 1.5.0 - 2025-08-14
+
+- feat: 限制 Node.js 版本为 20.8 以上
+
 ## 2.2.0 - 2025-08-11
 
-- 更改许可协议为 MPL-2.0
+- feat: 更改许可协议为 MPL-2.0
 
 ## 2.1.2 - 2025-02-26
 
-- 修复 yarn 安装依赖解析 postcss-less 失败
+- fix: 修复 yarn 安装依赖解析 postcss-less 失败
 
 ## 2.1.1 - 2024-02-07
 
-- 更新依赖，解决版本冲突
+- fix: 更新依赖，解决版本冲突
 
 ## 2.1.0 (2023-12-18)
 
-- 将 postcss 从 peerDependencies 改为 dependencies
+- feat: 将 postcss 从 peerDependencies 改为 dependencies
 
 ## 2.0.0 (2023-12-15)
 
 **破坏性变更：**
 
-- 更新 stylelint 15.x 到 16.x
-- 更新 stylelint-scss 5.x 到 6.x
-- 更新 stylelint-less 2.x 到 3.x
+- feat!: 更新 stylelint 15.x 到 16.x
+- feat!: 更新 stylelint-scss 5.x 到 6.x
+- feat!: 更新 stylelint-less 2.x 到 3.x
 
 ## 1.1.0 (2023-10-11)
 

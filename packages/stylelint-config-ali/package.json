@@ -49,5 +49,8 @@
   },
   "devDependencies": {
     "stylelint": "^16.2.1"
+  },
+  "engines": {
+    "node": ">=20.8.0"
   }
 }
