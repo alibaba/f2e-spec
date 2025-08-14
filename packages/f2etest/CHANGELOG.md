@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.0 - 2025-08-14
+
+- feat: restrict Node.js version to 20.8 or above
+- feat: changed license to MPL-2.0
+
 ## 1.0.4 - 2025-04-29
 
 - fix: restrict coverage in src folder
