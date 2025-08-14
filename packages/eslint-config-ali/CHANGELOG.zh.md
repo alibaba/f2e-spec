@@ -1,37 +1,41 @@
 # 更新日志
 
+## 16.5.0 - 2025-08-14
+
+- feat: 限制 Node.js 版本为 20.8 以上
+
 ## 16.4.0 - 2025-08-11
 
-- 更改许可协议为 MPL-2.0
+- feat: 更改许可协议为 MPL-2.0
 
 ## 16.3.0 - 2025-05-12
 
-- 增加了对 JS 和 JSX 文件的修饰器 (Decorator) 支持
+- feat: 增加了对 JS 和 JSX 文件的修饰器 (Decorator) 支持
 
 ## 16.2.0 - 2025-04-26
 
-- 升级了 `@stylistic/eslint-plugin` 2.x 到 4.x
+- feat: 升级了 `@stylistic/eslint-plugin` 2.x 到 4.x
 
 ## 16.1.1 - 2025-03-04
 
-- 修复 Node 全局变量 module 和 require 等未定义错误
+- feat: 修复 Node 全局变量 module 和 require 等未定义错误
 
 ## 16.1.0 - 2025-03-03
 
-- 将 `@typescript-eslint/no-empty-interface` 更改为 `@typescript-eslint/no-empty-object-type` 并增加
+- feat: 将 `@typescript-eslint/no-empty-interface` 更改为 `@typescript-eslint/no-empty-object-type` 并增加
   `{ allowInterfaces: 'with-single-extends' }` 选项
 
 ## 16.0.3 - 2025-02-26
 
-- 修复 `typescript` 不存在时报错
+- feat: 修复 `typescript` 不存在时报错
 
 ## 16.0.2 - 2025-02-26
 
-- 修复 `.gitignore` 不存在时报错
+- feat: 修复 `.gitignore` 不存在时报错
 
 ## 16.0.1 - 2025-02-26
 
-- 修复 `@babel/eslint-parser` 找不到依赖的问题
+- feat: 修复 `@babel/eslint-parser` 找不到依赖的问题
 
 ## 16.0.0 - 2025-02-22
 
