@@ -1,20 +1,20 @@
-# 更新日志
+# Changelog
 
 ## 1.3.0 - 2025-08-14
 
-- feat(commitlint-config-ali): restrict Node.js version to 20.8 or above
+- feat: restrict Node.js version to 20.8 or above
 
 ## 1.2.0 - 2025-08-11
 
-- 更改许可协议为 MPL-2.0
+- feat: changed license to MPL-2.0
 
 ## 1.1.0 - 2024-04-08
 
-- 升级 conventional-changelog-conventionalcommits 4.x 到 7.x
+- feat: update conventional-changelog-conventionalcommits from 4.x to 7.x
 
 ## 1.0.0 (2023-12-18)
 
-- 稳定版
+- feat: first stable release
 
 ## 0.1.3 (2020-12-03)
 
