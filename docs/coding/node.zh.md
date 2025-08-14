@@ -5,9 +5,15 @@ order: 6
 
 # Node.js 编码规约
 
-## 前言
-
 Node.js 规约主要包含编码风格、安全规约、最佳实践等几个部分，目的是给业务同学提供研发过程中的实质性规范和指导。其中编码风格 follow [eslint-config-egg](https://github.com/eggjs/eslint-config-egg)。
+
+## 支持的 Node.js 版本
+
+仅支持 **Current**, **Active LTS** 和 **Maintenance LTS** 版本。不支持 **Unstable** 和 **EOL** 版本。不建议在任何生产项目中使用奇数 (19, 21, 23) 版本，因为他们的生命周期太短，只有六个月。
+
+![](https://raw.githubusercontent.com/nodejs/Release/main/schedule.svg)
+
+👉🏻 [了解更多](https://nodejs.org/zh-cn/about/previous-releases)
 
 ## 1 编码风格
 
@@ -155,7 +161,7 @@ const err = new Error();
 throw 'an ' + err;
 
 const err = new Error();
-throw `${err}`
+throw `${err}`;
 
 // good
 throw new Error();
@@ -288,8 +294,7 @@ class Jedi {
 
 const luke = new Jedi();
 
-luke.jump()
-  .setHeight(20);
+luke.jump().setHeight(20);
 ```
 
 - 3.8 `推荐` 使用 [阿里云 Node.js 性能平台](https://www.aliyun.com/product/nodejs) 作为应用的性能监控工具。
