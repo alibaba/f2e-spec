@@ -92,5 +92,8 @@
     "doc": {
       "disabled": true
     }
+  },
+  "engines": {
+    "node": ">=20.8.0"
   }
 }
