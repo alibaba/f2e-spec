@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.3.1 - 2025-08-28
+
+- fix(stylelint): remove `stylelint-scss` dependency
+
 ## 6.3.0 - 2025-08-14
 
 - feat: restrict Node.js version to 20.8 or above
