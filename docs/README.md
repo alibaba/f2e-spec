@@ -41,9 +41,40 @@ Tools help you to quickly integrate code checking into your projects. Tools incl
 
 ## Getting started
 
-Run `npx f2elint` (if you use pnpm, run `pnpx f2elint`) in project root, and follow the promption:
+```
+$ npx f2elint@latest
 
-![screenshot](https://github.com/alibaba/f2e-spec/assets/5836790/80b5c4fd-6ab1-4423-8ae5-0572777db0a7)
+┌  🚀 阿里巴巴前端规约 6.3.1
+│
+◇  📁 选择项目位置
+│  /Users/guo/git/logistics-tariffs
+│
+◇  🧰 选择预设模版
+│  React
+│
+◇  💅 启用 Stylelint 样式检查
+│  Yes
+│
+◇  💅 启用 Prettier 代码格式化
+│  Yes
+│
+◇  👮‍ 启用 Lint Staged 检查
+│  Yes
+│
+◇  👮‍ 启用 Commitlint 检查
+│  Yes
+│
+◇  ✅ 初始化项目完成
+│
+◇  📦 安装或更新依赖
+│  tnpm
+│
+◇  ✅ 安装依赖成功
+│
+└  🎉 规约初始化完成，建议安装推荐的 VS Code 插件并重启 VS Code
+```
+
+To upgrade in future, simply run the same command again.
 
 ## Specification format
 
