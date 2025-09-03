@@ -1,5 +1,9 @@
 # 更新日志
 
+## 6.3.2 - 2025-09-03
+
+- fix(eslint): 移除 `eslint-config-airbnb-base` 依赖
+
 ## 6.3.1 - 2025-08-28
 
 - fix(stylelint): 移除 `stylelint-scss` 依赖

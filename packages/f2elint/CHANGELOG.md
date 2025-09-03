@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.3.2 - 2025-09-03
+
+- fix(eslint): remove `eslint-config-airbnb-base` dependency
+
 ## 6.3.1 - 2025-08-28
 
 - fix(stylelint): remove `stylelint-scss` dependency
