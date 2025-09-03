@@ -1,5 +1,13 @@
 # Changelog
 
+## 6.3.3 - 2025-09-03
+
+- fix(eslint): remove `eslint-plugin-react-app` dependency
+- fix(eslint): remove `eslint-plugin-vue` dependency
+- fix(stylelint): remove `stylelint-config-rational-order` dependency
+- fix(stylelint): remove `stylelint-config-standard` dependency
+- fix(stylelint): remove `stylelint-order` dependency
+
 ## 6.3.2 - 2025-09-03
 
 - fix(eslint): remove `eslint-config-airbnb-base` dependency

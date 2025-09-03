@@ -1,5 +1,8 @@
 {
   "devDependencies": {
+    "stylelint-config-rational-order": null,
+    "stylelint-config-standard": null,
+    "stylelint-order": null,
     "stylelint-scss": null
   }
 }

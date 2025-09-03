@@ -1,5 +1,13 @@
 # 更新日志
 
+## 6.3.3 - 2025-09-03
+
+- fix(eslint): 移除 `eslint-plugin-react-app` 依赖
+- fix(eslint): 移除 `eslint-plugin-vue` 依赖
+- fix(stylelint): 移除 `stylelint-config-rational-order` 依赖
+- fix(stylelint): 移除 `stylelint-config-standard` 依赖
+- fix(stylelint): 移除 `stylelint-order` 依赖
+
 ## 6.3.2 - 2025-09-03
 
 - fix(eslint): 移除 `eslint-config-airbnb-base` 依赖
