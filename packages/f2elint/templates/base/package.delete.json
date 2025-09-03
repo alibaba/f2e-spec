@@ -7,6 +7,7 @@
     "@typescript-eslint/eslint-plugin": null,
     "@typescript-eslint/parser": null,
     "commitlint-config-ali": null,
+    "eslint-config-airbnb-base": null,
     "eslint-import-resolver-typescript": null,
     "eslint-plugin-import": null,
     "eslint-plugin-react": null,
