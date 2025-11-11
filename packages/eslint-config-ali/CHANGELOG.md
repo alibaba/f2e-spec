@@ -1,5 +1,9 @@
 # Changelog
 
+## 16.5.1 - 2025-11-11
+
+- fix: remove project option from typescript config
+
 ## 16.5.0 - 2025-08-14
 
 - feat: restrict Node.js version to 20.8 or above

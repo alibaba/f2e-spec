@@ -9,7 +9,6 @@ const typescript = ts.config({
   extends: [ts.configs.recommended],
   languageOptions: {
     parserOptions: {
-      project: true,
       projectService: true,
       ecmaFeatures: {
         jsx: true,

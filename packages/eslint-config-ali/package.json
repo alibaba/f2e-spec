@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ali",
-  "version": "16.5.0",
+  "version": "16.5.1",
   "description": "ESLint Shareable Config for Alibaba F2E Guidelines",
   "keywords": [
     "eslint",
