@@ -7,6 +7,11 @@ order: 2.3
 
 HTTP JSON API is a RESTful API specification based on HTTP protocol and JSON format. This specification is based on Alibaba's practical experience.
 
+## API Endpoints
+
+- Use exclusive sub domain or sub path for API endpoints. e.g. `api.example.com/users` or `example.com/api/users`.
+- No need to use `.json` as suffix.
+
 ## Common API
 
 ### Common API Request Format

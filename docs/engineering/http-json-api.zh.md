@@ -7,6 +7,11 @@ order: 2.3
 
 HTTP JSON API 是一种基于 HTTP 协议的 API 规范，使用 JSON 作为数据交换格式。本规范基于阿里巴巴实践经验编写。
 
+## API 端点
+
+- 使用专属子域名或子路径作为 API 端点。例如 `api.example.com/users` 或 `example.com/api/users`。
+- 不需要使用 `.json` 作为后缀。
+
 ## 响应格式
 
 ### 成功响应
