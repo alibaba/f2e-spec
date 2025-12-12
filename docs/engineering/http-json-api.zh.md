@@ -6,7 +6,11 @@ HTTP JSON API 是一种基于 HTTP 协议的 API 规范，使用 JSON 作为数�
 
 ### 成功响应
 
-成功响应的响应体必须包含 `success` 字段，且值为 `true`，同时必须包含 `data` 字段，且值为 JSON 对象（可以为 null 或 false 等）。
+成功响应的响应体必须包含：
+
+- `success` 字段，且值为 `true`
+- `data` 字段，且值为 JSON 对象
+  - 请不要在数据中包含未解码的 JSON 字符串，如 `{"name":"John Doe"}` 等，请直接返回 JSON 对象。
 
 ```json
 {
@@ -18,10 +22,6 @@ HTTP JSON API 是一种基于 HTTP 协议的 API 规范，使用 JSON 作为数�
   }
 }
 ```
-
-要点提示：
-
-- 请不要在数据中包含未解码的 JSON 字符串，如 `{"name":"John Doe"}` 等，请直接返回 JSON 对象。
 
 ### 失败响应
 
@@ -50,10 +50,6 @@ HTTP JSON API 是一种基于 HTTP 协议的 API 规范，使用 JSON 作为数�
   ]
 }
 ```
-
-要点提示：
-
-- 响应体中的 `code` 字段与 HTTP 状态码(可选 200, 400, 500 等)不同，`code` 是业务错误码（可自定义任意多种）。
 
 ## 分页接口
 
