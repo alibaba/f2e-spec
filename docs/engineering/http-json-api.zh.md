@@ -64,7 +64,10 @@ HTTP JSON API 是一种基于 HTTP 协议的 API 规范，使用 JSON 作为数�
   "currentPage": 1,
   "pageSize": 10
 }
-// -> ?currentPage=1&pageSize=10
+```
+
+```http
+GET /api/v1/users?currentPage=1&pageSize=10
 ```
 
 如果要启用排序功能，则必须包含 `orderBy` 和 `order` 字段，分别表示排序字段和排序方向。其中 `orderBy` 必须为字符串，`order` 必须为字符串，可选值为 `asc` (升序) 或 `desc` (降序)。
@@ -76,7 +79,10 @@ HTTP JSON API 是一种基于 HTTP 协议的 API 规范，使用 JSON 作为数�
   "orderBy": "createdAt",
   "order": "desc"
 }
-// -> ?currentPage=1&pageSize=10&orderBy=createdAt&order=desc
+```
+
+```http
+GET /api/v1/users?currentPage=1&pageSize=10&orderBy=createdAt&order=desc
 ```
 
 其他参数可以自由扩展，但不要影响分页功能。
@@ -87,7 +93,10 @@ HTTP JSON API 是一种基于 HTTP 协议的 API 规范，使用 JSON 作为数�
   "pageSize": 10,
   "search": "John"
 }
-// -> ?currentPage=1&pageSize=10&search=John
+```
+
+```http
+GET /api/v1/users?currentPage=1&pageSize=10&search=John
 ```
 
 复杂数据结构的参数使用 JSON 编码，而不是 URL 编码。
@@ -98,7 +107,10 @@ HTTP JSON API 是一种基于 HTTP 协议的 API 规范，使用 JSON 作为数�
   "pageSize": 10,
   "serviceIds": "[1,2,3]"
 }
-// -> ?currentPage=1&pageSize=10&serviceIds=%5B1%2C2%2C3%5D
+```
+
+```http
+GET /api/v1/users?currentPage=1&pageSize=10&serviceIds=%5B1%2C2%2C3%5D
 ```
 
 ### 分页接口响应格式
