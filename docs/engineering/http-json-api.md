@@ -14,16 +14,16 @@ HTTP JSON API is a RESTful API specification based on HTTP protocol and JSON for
 
 ## Common API
 
-### Common API Request Format
+### Request
 
-### Common API Response Format
+### Success Response
 
-#### Success Response
+The response status code must be 200.
 
 The response body must contain the following fields:
 
-- `success` field, and the value must be `true`
-- `data` field, and the value must be a JSON object
+- `success` field, and the value must be `true`.
+- `data` field, and the value must be a JSON object.
   - Please do not include undecoded JSON strings in the data, such as `{"name":"John Doe"}`, please return the JSON object directly.
 
 ```json
@@ -37,7 +37,9 @@ The response body must contain the following fields:
 }
 ```
 
-#### Error Response
+### Error Response
+
+The response status code should be 4XX or 5XX, idealy. In practice, we found some middlewares prevent us appending JSON body with 4XX or 5XX response. In these cases, server have to response 200 and client need to double check `success` field.
 
 The response body must contain the following fields:
 
