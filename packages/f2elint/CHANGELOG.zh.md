@@ -1,5 +1,9 @@
 # 更新日志
 
+## 6.3.4 - 2025-12-19
+
+- fix(vscode,prettier): 更新 prettier vs code 扩展名称从 `esbenp.prettier-vscode` 到 `prettier.prettier-vscode`
+
 ## 6.3.3 - 2025-09-03
 
 - fix(eslint): 移除 `eslint-plugin-react-app` 依赖
