@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.3.4 - 2025-12-19
+
+- fix(vscode,prettier): update prettier vs code extension name from `esbenp.prettier-vscode` to `prettier.prettier-vscode`
+
 ## 6.3.3 - 2025-09-03
 
 - fix(eslint): remove `eslint-plugin-react-app` dependency
