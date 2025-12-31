@@ -1,5 +1,9 @@
 # 更新日志
 
+## 16.6.0 - 2025-12-31
+
+- feat: 移除 `no-await-in-loop` 规则
+
 ## 16.5.1 - 2025-11-11
 
 - fix: 移除 typescript 配置中的 project 选项

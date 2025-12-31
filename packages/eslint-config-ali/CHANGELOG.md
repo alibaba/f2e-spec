@@ -1,5 +1,9 @@
 # Changelog
 
+## 16.6.0 - 2025-12-31
+
+- feat: remove `no-await-in-loop` rule
+
 ## 16.5.1 - 2025-11-11
 
 - fix: remove project option from typescript config
