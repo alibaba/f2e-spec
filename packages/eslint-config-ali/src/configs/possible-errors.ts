@@ -12,9 +12,6 @@ const possibleErrors: Linter.Config = {
     // 不要使用 async 函数作为 Promise 的 executor
     'no-async-promise-executor': 'error',
 
-    // 不要在循环中使用 await，应使用 Promise.all()
-    'no-await-in-loop': 'warn',
-
     // 不要与负零进行比较
     'no-compare-neg-zero': 'error',
 
