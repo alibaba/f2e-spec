@@ -27,7 +27,7 @@ describe('init', () => {
     const settings = require(`${outputPath}/.vscode/settings.json`);
 
     expect(pkg.scripts['f2elint-scan']).toBe('f2elint scan');
-    expect(settings['editor.defaultFormatter']).toBe('prettier.prettier-vscode');
+    expect(settings['editor.defaultFormatter']).toBe('esbenp.prettier-vscode');
     expect(settings['eslint.validate'].includes('233')).toBeTruthy();
     expect(settings.test).toBeTruthy();
   });
