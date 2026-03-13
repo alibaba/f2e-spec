@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0 - 2026-03-13
+
+- feat: update conventional-changelog-conventionalcommits from 7.x to 9.x
+
 ## 1.3.0 - 2025-08-14
 
 - feat: restrict Node.js version to 20.8 or above
