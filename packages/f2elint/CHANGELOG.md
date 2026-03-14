@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.3.6 - 2026-03-13
+
+- feat(commitlint): update `@commitlint/cli` and `@commitlint/config-conventional` from 19.x to 20.x
+
 ## 6.3.4 - 2025-12-19
 
 - fix(vscode,prettier): update prettier vs code extension name from `esbenp.prettier-vscode` to `prettier.prettier-vscode`

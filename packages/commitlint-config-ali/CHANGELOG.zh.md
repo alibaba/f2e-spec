@@ -1,5 +1,9 @@
 # 更新日志
 
+## 1.4.0 - 2026-03-13
+
+- feat: 升级 conventional-changelog-conventionalcommits 7.x 到 9.x
+
 ## 1.3.0 - 2025-08-14
 
 - feat: 限制 Node.js 版本为 20.8 以上

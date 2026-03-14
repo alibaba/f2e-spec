@@ -34,8 +34,8 @@
   },
   "prettier": "prettier-config-ali",
   "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/cli": "^20.4.4",
+    "@commitlint/config-conventional": "^20.4.4",
     "@mdx-js/react": "^3.1.1",
     "@types/node": "^20.19.11",
     "@vitest/ui": "^3.2.4",
