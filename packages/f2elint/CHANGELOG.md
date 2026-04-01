@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.0.0 - 2026-04-01
+
+- feat!: **BREAKING CHANGE** change stylelint configuration file to stylelint.config.mjs
+- feat: update stylelint-config-ali to 3.x
+- feat: update stylelint to 17.x
+
 ## 6.3.6 - 2026-03-13
 
 - feat(commitlint): update `@commitlint/cli` and `@commitlint/config-conventional` from 19.x to 20.x
