@@ -1,7 +1,7 @@
 import { readFile } from 'fs/promises';
 import { join } from 'path';
 import stylelint from 'stylelint';
-import config from '../index.cjs';
+import config from '../src/index.js';
 
 describe('test/rules-validate.test.js', () => {
   it('Validate default', async () => {

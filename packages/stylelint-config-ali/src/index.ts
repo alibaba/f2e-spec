@@ -1,3 +1,7 @@
+import type { Config } from 'stylelint';
+import less from './less.js';
+import scss from './scss.js';
+
 const miniappTags = [
   'page',
   'swiper',
@@ -10,7 +14,7 @@ const miniappTags = [
   'lifestyle',
 ];
 
-module.exports = {
+export default {
   defaultSeverity: 'warning',
   rules: {
     'block-no-empty': null,
@@ -72,41 +76,7 @@ module.exports = {
     ],
     'selector-max-id': 0,
   },
-  overrides: [
-    // scss language support
-    {
-      files: ['*.scss', '**/*.scss'],
-      customSyntax: require.resolve('postcss-scss'),
-      plugins: [require.resolve('stylelint-scss')],
-      rules: {
-        // conflict css rules to disable
-        // turn off CSS @ rule check, to support @include, @mixin usage in scss
-        'at-rule-no-unknown': null,
-
-        // stylelint-scss rules
-        // https://github.com/stylelint-less/stylelint-less
-
-        'scss/double-slash-comment-whitespace-inside': 'always',
-      },
-    },
-    // less language support
-    {
-      files: ['*.less', '**/*.less'],
-      customSyntax: require.resolve('postcss-less'),
-      plugins: [require.resolve('stylelint-less')],
-      rules: {
-        // conflict css rules to disable
-        // turn off CSS @ rule check, to support @ variable usage in less
-        'at-rule-no-unknown': null,
-
-        // stylelint-less rules
-        // https://github.com/stylelint-less/stylelint-less
-
-        // don't allow duplicate variable declarations
-        'less/no-duplicate-variables': true,
-      },
-    },
-  ],
+  overrides: [less, scss],
   // don't support css-in-js because there are too many different implementations
   ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
-};
+} satisfies Config;
