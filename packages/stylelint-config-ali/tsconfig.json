@@ -5,7 +5,7 @@
     "moduleResolution": "node16",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "types": ["node", "rive/globals", "vitest/globals"],
+    "types": ["node"],
     "lib": ["esnext"],
     "allowJs": true,
     "checkJs": false,
