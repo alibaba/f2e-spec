@@ -1,7 +1,4 @@
 {
-  "stylelint": {
-    "extends": ["stylelint-config-ali"]
-  },
   "devDependencies": {
     "stylelint": "^17.6.0",
     "stylelint-config-ali": "^3.0.0"

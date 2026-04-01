@@ -4,5 +4,6 @@
     "stylelint-config-standard": null,
     "stylelint-order": null,
     "stylelint-scss": null
-  }
+  },
+  "stylelint": null
 }
