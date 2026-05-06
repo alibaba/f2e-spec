@@ -1,6 +1,9 @@
 # oxfmt-config-ali
 
-适用于阿里巴巴前端规约的 Oxfmt 共享配置。
+[![npm version](https://img.shields.io/npm/v/oxfmt-config-ali)](https://www.npmjs.com/package/oxfmt-config-ali)
+[![npm downloads](https://img.shields.io/npm/dm/oxfmt-config-ali)](https://www.npmjs.com/package/oxfmt-config-ali)
+
+适用于阿里巴巴前端规约的 [Oxfmt](https://github.com/oxc-project/oxc) 共享配置。
 
 ## 安装
 

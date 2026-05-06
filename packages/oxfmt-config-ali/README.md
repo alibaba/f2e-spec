@@ -1,6 +1,9 @@
 # oxfmt-config-ali
 
-Oxfmt shareable configuration for Alibaba F2E Guidelines.
+[![npm version](https://img.shields.io/npm/v/oxfmt-config-ali)](https://www.npmjs.com/package/oxfmt-config-ali)
+[![npm downloads](https://img.shields.io/npm/dm/oxfmt-config-ali)](https://www.npmjs.com/package/oxfmt-config-ali)
+
+[Oxfmt](https://github.com/oxc-project/oxc) shareable configuration for Alibaba F2E Guidelines.
 
 ## Install
 
