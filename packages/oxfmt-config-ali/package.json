@@ -1,0 +1,53 @@
+{
+  "name": "oxfmt-config-ali",
+  "version": "0.1.0",
+  "description": "Oxfmt shareable configuration for Alibaba F2E Guidelines",
+  "keywords": [
+    "oxfmt",
+    "oxfmt-config",
+    "code-formatting",
+    "code-style",
+    "f2elint",
+    "Alibaba F2E Guidelines"
+  ],
+  "homepage": "https://github.com/alibaba/f2e-spec",
+  "bugs": {
+    "url": "https://github.com/alibaba/f2e-spec/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alibaba/f2e-spec"
+  },
+  "license": "MPL-2.0",
+  "author": {
+    "name": "Guo Yunhe",
+    "email": "i@guoyunhe.me",
+    "url": "https://guoyunhe.me/"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rive build"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.45.0",
+    "rive": "^3.4.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.8.0"
+  }
+}

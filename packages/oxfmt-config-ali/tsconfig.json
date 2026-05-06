@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "allowJs": true,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2020"
+  },
+  "exclude": ["dist", "node_modules"]
+}

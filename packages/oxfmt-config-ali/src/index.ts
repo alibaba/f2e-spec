@@ -1,0 +1,45 @@
+import { defineConfig } from 'oxfmt';
+
+export default defineConfig({
+  arrowParens: 'always',
+  bracketSameLine: false,
+  bracketSpacing: true,
+  embeddedLanguageFormatting: 'auto',
+  endOfLine: 'lf',
+  htmlWhitespaceSensitivity: 'css',
+  insertFinalNewline: true,
+  jsdoc: {},
+  jsxSingleQuote: false,
+  objectWrap: 'preserve',
+  printWidth: 100,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  semi: true,
+  singleAttributePerLine: false,
+  singleQuote: true,
+  sortImports: {},
+  sortPackageJson: {
+    sortScripts: true,
+  },
+  sortTailwindcss: false,
+  tabWidth: 2,
+  trailingComma: 'all',
+  useTabs: false,
+  vueIndentScriptAndStyle: false,
+
+  ignorePatterns: [
+    'build',
+    'coverage',
+    'dist',
+    'es',
+    'lib',
+    'node_modules',
+    'package-lock.json',
+    'pnpm-lock.yaml',
+    'yarn.lock',
+    '*.min.js',
+    '*.min.css',
+  ],
+
+  overrides: [],
+});
